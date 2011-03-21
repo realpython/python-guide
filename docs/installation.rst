@@ -1,6 +1,9 @@
 Properly Installing Python 
 ==========================
 
+Mac OS X
+::::::::
+
 *Or, "Installing Python 2.7 via Homebrew".*
 
 One of the reasons everybody loves Python is the interactive shell.	 It
@@ -10,10 +13,8 @@ interactive shell, because it does not require any specific setup upfront,
 just import your application and start playing around.
 
 
-
-
 Package Manager
-:::::::::::::::
+---------------
 
 While Snow Leopard comes with a large number of UNIX utilities, those 
 familiar with Linux systems will notice one key component missing: a 
@@ -31,7 +32,7 @@ It's basic commands are **update**, **install**, and **remove**.
 
 
 Python Interpreter
-::::::::::::::::::
+------------------
 
 And we can now install Python 2.7: ::
 
@@ -46,7 +47,7 @@ bugs.
 
 
 Distribute & Pip
-::::::::::::::::
+----------------
 
 *Distribute* is a fantastic drop-in replacement for *easy_install* and 
 *setuptools*. It allows you to install and manage python packages from 
@@ -74,7 +75,46 @@ If you have homebrew: ::
 
 To install ``pip``: ::
 
-
-
 Hopefully you'll never have to use **easy_install** again.
+
+
+
+Windows
+:::::::
+
+
+
+Prerequisites: 
+--------------
+
+* Python2.7 (x86) from Python.org
+* Microsoft Visual Studio
+
+
+Step 1: Install Distribute & Pip
+--------------------------------
+
+**Distribute** is a fantastic drop-in replacment for **easy_install** and **setuptools**. It allows you to install and manage python packages from PyPi, amongst a few other sources.
+
+To install it, run the python script available here: 
+<http://python-distribute.org/distribute_setup.py>
+
+Make sure that `C:\Python27\`, and  `C:\Python27\Scripts` are in your PATH.
+
+**easy_install** is considered by many to be a deprecated system, so we will install it's replacment: **pip**. Pip allows for uninstallation of packages, and is actively maintained, unlike setuptool's easy_install.
+
+To install pip, simply run:
+
+    easy_install pip
+
+
+Linux (Ubuntu)
+::::::::::::::
+
+
+
+Linux (Manual)
+::::::::::::::
+
+
 
