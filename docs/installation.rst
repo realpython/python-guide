@@ -102,14 +102,14 @@ Prerequisites:
 Step 1: Install Distribute & Pip
 --------------------------------
 
-**Distribute** is a fantastic drop-in replacment for **easy_install** and **setuptools**. It allows you to install and manage python packages from PyPi, amongst a few other sources.
+**Distribute** is a fantastic drop-in replacement for **easy_install** and **setuptools**. It allows you to install and manage python packages from PyPi, amongst a few other sources.
 
 To install it, run the python script available here: 
   <http://python-distribute.org/distribute_setup.py>
 
 Make sure that ```C:\Python27\```, and  ```C:\Python27\Scripts``` are in your PATH.
 
-**easy_install** is considered by many to be a deprecated system, so we will install it's replacment: **pip**. Pip allows for uninstallation of packages, and is actively maintained, unlike setuptool's easy_install.
+**easy_install** is considered by many to be a deprecated system, so we will install it's replacement: **pip**. Pip allows for uninstallation of packages, and is actively maintained, unlike setuptool's easy_install.
 
 To install pip, simply run: ::
 
