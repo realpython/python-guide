@@ -2,11 +2,9 @@
 * Get some rhyme and reason into the project
 * Setup basic skeleton
     - installation
-    - coding
-        + style
-    - distribution
-        + modules
-        + applications
+    - codingstyle
+    - module distribution
+    - applications distribution
     - virtualenv
     - webdev
     
