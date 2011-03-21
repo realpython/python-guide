@@ -6,7 +6,7 @@ Mac OS X
 
 *Or, "Installing Python 2.7 via Homebrew".*
 
-One of the reasons everybody loves Python is the interactive shell.	 It
+One of the reasons everybody loves Python is the interactive shell.  It
 basically allows you to execute Python commands in real time and
 immediately get results back.  Flask itself does not come with an
 interactive shell, because it does not require any specific setup upfront,
@@ -22,7 +22,7 @@ package manager. Mxcl's *Homebrew* is the answer.
 
 To install Homebrew, simply run: ::
 
-	$ ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)"
+    $ ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)"
 
 
 It's basic commands are **update**, **install**, and **remove**. 
@@ -36,7 +36,7 @@ Python Interpreter
 
 And we can now install Python 2.7: ::
 
-	$ brew install python --framework
+    $ brew install python --framework
 
 
 The ``--framework`` option tells Homebrew to compile a Framework-style Python build, rather than a UNIX-style build. The outdated version of Python that Snow Leopard comes packaged with 
@@ -62,14 +62,14 @@ To install *pip* and Distribute's *easy_install*:
 
 If you have homebrew: ::
 
-	$ brew install pip
-	
+    $ brew install pip
+    
 ...And, if you're a masochist: ::
 
-	$ curl -O http://python-distribute.org/distribute_setup.py
-	$ python distribute_setup.py
+    $ curl -O http://python-distribute.org/distribute_setup.py
+    $ python distribute_setup.py
 
-	$ easy_install pip
+    $ easy_install pip
 
 
 
@@ -77,6 +77,14 @@ To install ``pip``: ::
 
 Hopefully you'll never have to use **easy_install** again.
 
+
+Updating Python
+---------------
+
+Homebrew makes it simple. ::
+
+    $ brew update
+    $ brew install --force python
 
 
 Windows
@@ -97,15 +105,15 @@ Step 1: Install Distribute & Pip
 **Distribute** is a fantastic drop-in replacment for **easy_install** and **setuptools**. It allows you to install and manage python packages from PyPi, amongst a few other sources.
 
 To install it, run the python script available here: 
-<http://python-distribute.org/distribute_setup.py>
+  <http://python-distribute.org/distribute_setup.py>
 
-Make sure that `C:\Python27\`, and  `C:\Python27\Scripts` are in your PATH.
+Make sure that ```C:\Python27\```, and  ```C:\Python27\Scripts``` are in your PATH.
 
 **easy_install** is considered by many to be a deprecated system, so we will install it's replacment: **pip**. Pip allows for uninstallation of packages, and is actively maintained, unlike setuptool's easy_install.
 
-To install pip, simply run:
+To install pip, simply run: ::
 
-    easy_install pip
+    $ easy_install pip
 
 
 Linux (Ubuntu)
