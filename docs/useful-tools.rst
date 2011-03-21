@@ -1,23 +1,6 @@
 Useful Tools
 =================
 
-*For Python 2.7.*
-
-One of the reasons everybody loves Python is the interactive shell.  It
-basically allows you to execute Python commands in real time and
-immediately get results back.  Flask itself does not come with an
-interactive shell, because it does not require any specific setup upfront,
-just import your application and start playing around. ::
-
-    $ pip install bpython
-
-And we can now install Python 2.7: ::
-
-    $  
-
-
-The **--framework** option tells Python
-
 IPython
 -------------------------------
 
