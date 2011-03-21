@@ -35,16 +35,15 @@ Python Interpreter
 
 And we can now install Python 2.7: ::
 
-	$ sudo brew install python --framework
+	$ brew install python --framework
 
 
 The ``--framework`` option tells Homebrew to compile a Framework-style Python build, rather than a UNIX-style build. The outdated version of Python that Snow Leopard comes packaged with 
 is built as a Framework, so this helps avoid some future module installation 
 bugs. 
 
-*Don't forget to update your environment PATH.* ::
+*Don't forget to update your environment PATH.* 
 
-	$ echo 'EXPORT PATH=/usr/local/Cellar/python2.7/bin:$PATH' >> .profile
 
 Distribute & Pip
 ::::::::::::::::
