@@ -8,4 +8,6 @@ Welcome to python-guide!
 
 Welcome to Python-Guide. This site exists to provide both novice and expert Python developers a best-practice handbook to the installation, configuration, and usage of Python on a daily basis.
 
+And this is an auto-deploy test.
+
 .. include:: contents.rst.inc
