@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# osxpython documentation build configuration file, created by
+# pythonguide documentation build configuration file, created by
 # sphinx-quickstart on Wed Aug  4 22:51:11 2010.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'osxpython'
+project = u'pythonguide'
 copyright = u'2010, Kenneth Reitz'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'osxpythondoc'
+htmlhelp_basename = 'pythonguidedoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -178,7 +178,7 @@ htmlhelp_basename = 'osxpythondoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'osxpython.tex', u'osxpython Documentation',
+  ('index', 'pythonguide.tex', u'Pythong Guide Documentation',
    u'Kenneth Reitz', 'manual'),
 ]
 
@@ -211,7 +211,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'osxpython', u'osxpython Documentation',
+    ('index', 'pythonguide', u'Python Guide Documentation',
      [u'Kenneth Reitz'], 1)
 ]
 
@@ -219,7 +219,7 @@ man_pages = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'osxpython'
+epub_title = u'pythonguide'
 epub_author = u'Kenneth Reitz'
 epub_publisher = u'Kenneth Reitz'
 epub_copyright = u'2010, Kenneth Reitz'
