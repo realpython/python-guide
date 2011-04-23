@@ -8,8 +8,8 @@ The Basics
 ::::::::::
 
 
-Code Comments
--------------
+Unittest
+--------
 
 
 
@@ -17,15 +17,41 @@ Doc Strings
 -----------
 
 
+
+
 Tools
 :::::
 
 
+Doctest
+-------
+
+
+Nose
+----
+
+
+::
+
+    $ pip install tox
+
+
+
 Unittest2
 ---------
+
+A backport of Python 2.7's
+
+
+::
+
+    $ pip install tox
 
 
 tox
 ---
 
 
+::
+
+    $ pip install tox
