@@ -10,9 +10,13 @@ instructions for web development with Flask.
 
    foreword
    installation
+   which-python
+   dev-env
    useful-tools
    tutorial/index
    project-structure
+   documentation
+   testing
    packaging
    templating
    testing
