@@ -6,6 +6,6 @@
 The Hitchhikers Guide to Python!
 ================================
 
-Welcome to The Hitchhiker's Guide to Python. This guide is currently under heavy development. The guide exists to provide both novice and expert Python developers a best-practice handbook to the installation, configuration, and usage of Python on a daily basis.
+Welcome to The Hitchhiker's Guide to Python. This guide is currently under heavy development. The *opinionated* guide exists to provide both novice and expert Python developers a best-practice handbook to the installation, configuration, and usage of Python on a daily basis.
 
 .. include:: contents.rst.inc

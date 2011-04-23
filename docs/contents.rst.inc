@@ -63,7 +63,9 @@ different scenarios.
    :maxdepth: 2
 
    scenarios/web
+   scenarios/admin
    scenarios/ci
+
 
 
 Additional Notes
