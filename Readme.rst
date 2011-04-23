@@ -1,9 +1,13 @@
-python-guide: Python Best Practices Guidebook
-=============================================
+Hitchhiker's Guide to Python
+============================
+
+**Python Best Practices Guidebook**
+
+-----------
 
 **Work in progress.**
 
-The goal of this project is to establish a set of open source reference guides for Python developers. 
+The goal of this project is to establish a set of open source reference guides for Python developers.
 
 Topics will include:
 
