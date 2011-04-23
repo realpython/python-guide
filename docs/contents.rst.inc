@@ -74,5 +74,5 @@ Contibution notes and legal information are here (for those interested).
 .. toctree::
    :maxdepth: 2
 
-   contribute
-   license
+   notes/contribute
+   notes/license
