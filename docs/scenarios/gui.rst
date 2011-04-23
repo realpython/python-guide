@@ -12,8 +12,18 @@ PyQt
 ----
 
 
+Cocoa
+:::::
 
 PyObjC
 ------
 
 
+WXPython
+::::::::
+
+Gtk
+:::
+
+tk
+::
