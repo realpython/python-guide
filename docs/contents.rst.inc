@@ -29,6 +29,8 @@ This part of the guide focuses on setting up your Python environment.
 Writing Great Code
 ------------------
 
+This part of the guide focuses on best practices for writing Python code.
+
 .. toctree::
    :maxdepth: 2
 
@@ -59,7 +61,7 @@ This part of the guide focuses on deploying your Python code.
 Additional Notes
 ----------------
 
-Contibution notes and legal information are here for the interested.
+Contibution notes and legal information are here (for those interested).
 
 .. toctree::
    :maxdepth: 2
