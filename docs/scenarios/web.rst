@@ -6,23 +6,23 @@ Frameworks
 ::::::::::
 
 Django
-======
+------
 
 
 Flask
-=====
+-----
 
 
 Pyramid
-=======
+-------
 
 
 Pylons
-======
+------
 
 
 Web2Py
-======
+------
 
 
 Servers
