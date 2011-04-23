@@ -1,7 +1,7 @@
 Introduction
 ------------
 
-This part of the documentation, which is mostly prose, begins with some
+This part of the guide, which is mostly prose, begins with some
 background information about Python, then focuses on next steps.
 
 .. toctree::
@@ -12,15 +12,17 @@ background information about Python, then focuses on next steps.
    resources
 
 
-
 Getting Started
 ---------------
+
+This part of the guide focuses on setting up your Python environment.
 
 .. toctree::
    :maxdepth: 2
 
    which-python
    installation
+   dev-env
    getting-started-next
 
 
@@ -30,7 +32,6 @@ Writing Great Code
 .. toctree::
    :maxdepth: 2
 
-   dev-env
    project-structure
    code-style
    documentation
@@ -42,6 +43,8 @@ Writing Great Code
 Shipping Great Code
 -------------------
 
+This part of the guide focuses on deploying your Python code.
+
 .. toctree::
    :maxdepth: 2
 
@@ -49,6 +52,7 @@ Shipping Great Code
    documentation
    testing
    packaging
+   freezing
 
 
 
