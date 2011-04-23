@@ -7,9 +7,9 @@ background information about Python, then focuses on next steps.
 .. toctree::
    :maxdepth: 2
 
-   introduction
-   community
-   resources
+   intro/duction
+   intro/community
+   intro/resources
 
 
 Getting Started
@@ -20,10 +20,10 @@ This part of the guide focuses on setting up your Python environment.
 .. toctree::
    :maxdepth: 2
 
-   which-python
-   installation
-   dev-env
-   getting-started-next
+   starting/which-python
+   starting/installation
+   starting/dev-env
+   starting/next
 
 
 Writing Great Code
@@ -34,11 +34,10 @@ This part of the guide focuses on best practices for writing Python code.
 .. toctree::
    :maxdepth: 2
 
-   project-structure
-   code-style
-   documentation
-   testing
-   packaging
+   writing/structure
+   writing/style
+   starting/documentation
+   starting/tests
 
 
 
@@ -50,12 +49,21 @@ This part of the guide focuses on deploying your Python code.
 .. toctree::
    :maxdepth: 2
 
-   project-structure
-   documentation
-   testing
-   packaging
-   freezing
+   shipping/packaging
+   shipping/freezing
 
+
+Scenario Guide
+--------------
+
+This part of the guide focuses on tool and module advice based on
+different scenarios.
+
+.. toctree::
+   :maxdepth: 2
+
+   scenarios/web
+   scenarios/ci
 
 
 Additional Notes
