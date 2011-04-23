@@ -1,9 +1,18 @@
-Web Development
-===============
+Web Applicaitons
+================
+
+
+Context
+:::::::
+
+
+WSGI
+----
 
 
 Frameworks
 ::::::::::
+
 
 Django
 ------
@@ -39,6 +48,15 @@ Nginx + gunicorn
 ----------------
 
 
+Hosting
+:::::::
+
+
+ep.io
+-----
+
+WebFaction
+-----------
 
 
 Twisted
