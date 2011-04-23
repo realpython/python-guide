@@ -2,13 +2,21 @@ Introduction
 ============
 
 
-Idioms
-::::::
+Learning Python
+:::::::::::::::
+
+Beginners
+`````````
+
+Learn Python the Hard Way
+-------------------------
 
 
-Zen of Python
--------------
+Advanced
+````````
 
+Pro Python
+----------
 
-PEP-8
------
+Expert Python Programming
+-------------------------
