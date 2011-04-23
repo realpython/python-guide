@@ -65,6 +65,7 @@ different scenarios.
    scenarios/web
    scenarios/admin
    scenarios/ci
+   scenarios/speed
 
 
 
