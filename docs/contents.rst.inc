@@ -36,8 +36,9 @@ This part of the guide focuses on best practices for writing Python code.
 
    writing/structure
    writing/style
-   starting/documentation
-   starting/tests
+   writing/documentation
+   writing/tests
+   writing/license
 
 
 
@@ -62,6 +63,8 @@ different scenarios.
 .. toctree::
    :maxdepth: 2
 
+   scenarios/cli
+   scenarios/gui
    scenarios/web
    scenarios/admin
    scenarios/ci
