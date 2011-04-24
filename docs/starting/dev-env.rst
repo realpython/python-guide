@@ -4,12 +4,10 @@ Your Development Environment
 Testing your code is very important.
 
 
-Editors
-:::::::
-
 
 Text Editors
--------------
+::::::::::::
+
 
 VIM
 ---
@@ -57,9 +55,23 @@ the following lines into your vimrc::
 .. _PEP8: http://pypi.python.org/pypi/pep8/
 .. _vim-pep8: https://github.com/nvie/vim-pep8
 
+.. todo:: add supertab notes
+
 
 IDEs
-----
+::::
+
+PyCharm
+-------
+
+
+PyDev
+-----
+
+
+
+Komodo IDE
+-----------
 
 
 
