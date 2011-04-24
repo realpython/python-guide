@@ -11,7 +11,9 @@ Editors
 Text Editors
 -------------
 
-** VIM **
+VIM
+---
+
 
 There exist a couple of plugins and settings for the VIM editor to aid python
 development. If you only develop in Python, a good start is to set the default
