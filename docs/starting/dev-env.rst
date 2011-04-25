@@ -65,9 +65,11 @@ PyCharm
 -------
 
 
-PyDev
------
+Eclipse
+-------
 
+The most popular Eclipse plugin for Python development is Aptana's 
+`PyDev <http://pydev.org>`_.
 
 
 Komodo IDE
