@@ -7,8 +7,8 @@ executable with a bundled Python enterpreter.
 Many applications you use every day do this:
 
 - Dropbox
-- Others
-
+- BitTorrent
+-
 
 Windows
 :::::::
