@@ -51,6 +51,9 @@ I got fooled by that, one time. But if you feel that creating a folder called
 
 $ pip install  http://127.0.0.1:9000/MyPackage.tar.gz
 
+Chishop
++++++++
+
 
 For Linux Distributions
 ::::::::::::::::::::::::
