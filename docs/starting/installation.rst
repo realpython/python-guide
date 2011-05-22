@@ -1,6 +1,31 @@
 Properly Installing Python
 ==========================
 
+Any Platform (with Pythonbrew)
+::::::::::::::::::::::::::::::
+
+Pythonbrew is a version manager for Python which makes it easy to install
+Python and have multiple versions alongside each other, and switch between
+them. If you are familiar with RVM for Ruby, it's like that. To install Pythonbrew, ::
+
+    $ curl -kL http://github.com/utahta/pythonbrew/raw/master/pythonbrew-install | bash
+
+You are now presented with further setup instructions. Next, installing Pythons is simple: ::
+
+    $ pythonbrew install 2.7.1 # installs Python 2.7.1
+    $ pythonbrew install 3.1.2 # ... and Python 3, if you like
+
+And you can switch to a pythonbrew install and make it your default Python interpreter like so: ::
+
+    $ pythonbrew switch 2.7.1 # makes Python 2.7 default, ignoring any system defaults
+
+Finally, this lets you use a certain Python in your shell: ::
+
+    $ pythonbrew use 3.1.2
+
+And that's about it; pythonbrew will take care of the rest!
+
+
 Mac OS X
 ::::::::
 
