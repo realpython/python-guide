@@ -1,4 +1,4 @@
-Web Applicaitons
+Web Applications
 ================
 
 
