@@ -5,21 +5,29 @@ Which Python to use?
 
 
 2.x vs 3.x
-::::::::::
-http://wiki.python.org/moin/Python2orPython3
+~~~~~~~~~~
+
+**tl;dr**: Python 2.x is the status quo, Python 3.x is the shiny new thing.
 
 
-History
--------
-Python2.0 was released October 16, 2000.  Python3.0 was released on December 3,2008 and breaks backwards compatibility.
+`Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
 
 
 Today
 -----
 
-Use 2.7.
+If you're choosing a Python interpreter to use, I *highly* recommend you Use Python 2.7.x, unless you have a strong reason not to.
 
+
+The Future
+----------
+
+As more and more modules get ported over to Python3, the easier it will be for
+others to use it.
 
 
 Which Python to Support?
-::::::::::::::::::::::::
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you're starting work on a new Python module, I recommend you write it for
+Python 2.5 or 2.6, and add support for Python3 in a later iteration.
