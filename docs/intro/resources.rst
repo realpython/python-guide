@@ -4,7 +4,12 @@ Resources
 News
 ----
 
-- `Planet Python <http://planet.python.org>`_ is an aggregate of Python news from a growing number of developers.
+Planet Python
+~~~~~~~~~~~~~
+
+This is an aggregate of Python news from a growing number of developers.
+
+    `Planet Python <http://planet.python.org>`_
 
 
 Beginner's Guides
