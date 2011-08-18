@@ -123,8 +123,8 @@ Linux (Ubuntu)
 
 Natty Narwhal, the latest version of Ubuntu, **comes with Python 2.7 out of the box**. Python 3.0 can be installed and run with the following commands::
 
-    sudo apt-get install python3-minimal
-    python3
+    $ sudo apt-get install python3-minimal
+    $ python3
 
 Older versions of Python aren't available from the official repository. However, if it's needed (for example to support legacy code), we can add an unsupported repository and install an older version of Python (2.5 in the example below)::
 
