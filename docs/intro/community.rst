@@ -33,6 +33,7 @@ There are a few PEPs that could be considered required reading:
 
 - `PEP257 <http://www.python.org/dev/peps/pep-0257/>`_: Docstring Conventions. Gives guidelines for semantics and conventions associated with Python docstrings.
 
+You can read more at `The PEP Index <http://www.python.org/dev/peps/>`_.
 
  PEPs are peer-reviewed and accepted/rejected after much discussion. Anyone can write and submit a PEP for review.
 
