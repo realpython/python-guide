@@ -27,7 +27,7 @@ There are three different types of PEPs (as defined by `PEP1 <http://www.python.
 
 There are a few PEPs that could be considered required reading:
 
-- `PEP8 <http://www.python.org/dev/peps/pep-0008/>`_: The Python Style Guide.
+- `PEP8 <http://www.python.org/dev/peps/pep-0008/>`_: The Python Style Guide. Read this. All of it. Follow it.
 
 - `PEP20 <http://www.python.org/dev/peps/pep-0020/>`_: The Zen of Python. A list of 19 statements that briefly explain the philosophy behind Python.
 
