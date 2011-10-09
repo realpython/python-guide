@@ -85,11 +85,26 @@ Interpreter Tools
 virtualenv
 ----------
 
+Virtualenv is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.
+It solves the "Project X depends on version 1.x but, Project Y needs 4.x" dilemma and keeps your global site-packages directory clean and manageable.
 
 virtualenvwrapper
 -----------------
 
+Virtualenvwrapper makes virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
 
+::
+
+    pip install virtualenvwrapper
+
+
+Put this into your `~/.bash_profile` (Linux/Mac) file:
+
+::
+
+    export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+
+This will prevent your virtualenvs from relying on your (global) site packages directory, so that they are completely separate..
 
 Other Tools
 :::::::::::
