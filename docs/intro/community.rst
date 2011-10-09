@@ -62,7 +62,7 @@ Submitting a PEP
 Python Conferences 
 --------------------------
 
-The major venue of the Python community are developer conferences. The two most notable conferences are PyCon, which is held in the US and it's overseas sibling Europython.
+The major venue of the Python community are developer conferences. The two most notable conferences are PyCon, which is held in the US and it's overseas sibling EuroPython.
 
 A comprehensive list of conferences is maintained `here <http://www.pycon.org/>`_.
 
