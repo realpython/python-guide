@@ -57,3 +57,11 @@ Submitting a PEP
  Here's an overview of the PEP acceptance workflow:
 
  .. image:: http://www.python.org/dev/peps/pep-0001/pep-0001-1.png
+
+
+Python Conferences 
+--------------------------
+
+The major venue of the Python community are developer conferences. The two most notable conferences are PyCon, which is held in the US and it's overseas sibling Europython.
+
+A comprehensive list of conferences is maintained `here <http://www.pycon.org/>`_.
