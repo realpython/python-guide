@@ -1,8 +1,8 @@
 Freezing Your Code
 ==================
 
-An alterinative to shipping your code is freezing it — shipping it as an
-executable with a bundled Python enterpreter.
+An alternative to shipping your code is freezing it — shipping it as an
+executable with a bundled Python interpreter.
 
 Many applications you use every day do this:
 
