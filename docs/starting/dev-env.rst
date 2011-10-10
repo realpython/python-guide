@@ -1,9 +1,6 @@
 Your Development Environment
 ============================
 
-Testing your code is very important.
-
-
 
 Text Editors
 ::::::::::::
