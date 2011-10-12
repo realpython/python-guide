@@ -58,7 +58,8 @@ Multi-line docstrings: ::
     ...
 
 Sphinx
-::::::
+------
+Sphinx (http://sphinx.pocoo.org) is a tool  which converts documentation in the reStructured text markup language into a range of output formats including HTML, LaTeX (for printable PDF versions), manual pages and plain text.
 
 
 
