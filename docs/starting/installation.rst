@@ -150,7 +150,16 @@ Now, most Python packages can be installed using the ``pip`` command. For exampl
 A full list of ``pip``'s capabilities is available by typing ``pip --help``.
 
 Linux (Manual)
-::::::::::::::
+--------------
+
+While your system will quite likely already have Python installation, you might wish to install a different version. This is done in the typical Linux software source install procedure::
+
+    $ wget http://www.python.org/ftp/python/2.7.2/Python-2.7.2.tgz
+    $ tar -xvf Python-2.7.2.tgz
+    $ cd Python-2.7.2
+    $ ./configure
+    $ make
+    $ make install
 
 
 
