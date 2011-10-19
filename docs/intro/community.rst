@@ -62,12 +62,12 @@ Submitting a PEP
 Python Conferences 
 --------------------------
 
-The major venue of the Python community are developer conferences. The two most notable conferences are PyCon, which is held in the US and it's overseas sibling EuroPython.
+The major venue of the Python community are developer conferences. The two most notable conferences are PyCon, which is held in the US and it's european sibling, called EuroPython.
 
-A comprehensive list of conferences is maintained `here <http://www.pycon.org/>`_.
+A comprehensive list of conferences is maintained `at pycon.org <http://www.pycon.org/>`_.
 
 
 Python User Groups
 --------------------------
 
-User Groups are where a  bunch of Python developers meet to present or talk about python topics of interest. A list of local user groups is maintained in the `Python Software Foundation Wiki <http://wiki.python.org/moin/LocalUserGroups>`_.
+User Groups are where a bunch of Python developers meet to present or talk about Python topics of interest. A list of local user groups is maintained at the `Python Software Foundation Wiki <http://wiki.python.org/moin/LocalUserGroups>`_.
