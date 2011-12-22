@@ -51,6 +51,14 @@ Nginx + gunicorn
 Hosting
 :::::::
 
+Heroku
+------
+
+DotCloud
+--------
+
+gondor.io
+---------
 
 ep.io
 -----
