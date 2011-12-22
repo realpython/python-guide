@@ -27,6 +27,14 @@ Doctest
 -------
 
 
+py.test
+-------
+
+::
+
+    $ pip install pytest
+
+
 Nose
 ----
 
