@@ -1,7 +1,7 @@
 Speed
 =====
 
-Python isn't the fastest language around (yet)
+CPython, the most commonly used implementation of Python, is slow for CPU bound tasks. `PyPy`_ is fast.
 
 
 Context
@@ -54,3 +54,6 @@ Spanwing Processes
 
 Multiprocessing
 ---------------
+
+
+.. _`PyPy`: http://pypy.org
