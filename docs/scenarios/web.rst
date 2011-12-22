@@ -62,6 +62,12 @@ Hosting
 ep.io
 -----
 
+Gondor
+------
+
+Heroku
+------
+
 WebFaction
 -----------
 
