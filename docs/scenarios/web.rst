@@ -96,6 +96,9 @@ Apache + mod_python
 Nginx + gunicorn
 ----------------
 
+Mongrel2 + Brubeck
+------------------
+
 
 Hosting
 :::::::
