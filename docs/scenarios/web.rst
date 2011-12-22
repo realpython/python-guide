@@ -116,17 +116,11 @@ Heroku
 DotCloud
 --------
 
-gondor.io
----------
-
-ep.io
------
-
 Gondor
 ------
 
-Heroku
-------
+ep.io
+-----
 
 WebFaction
 -----------
