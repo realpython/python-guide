@@ -121,7 +121,7 @@ To install pip, simply run: ::
 Linux (Ubuntu)
 ::::::::::::::
 
-Natty Narwhal, the latest version of Ubuntu, **comes with Python 2.7 out of the box**. Python 3.0 can be installed and run with the following commands::
+Oneiric Ocelot, the latest version of Ubuntu, **comes with Python 2.7 out of the box**. Python 3.2 can be installed and run with the following commands::
 
     $ sudo apt-get install python3-minimal
     $ python3
@@ -138,10 +138,13 @@ Installing setuptools and pip
 
 While Python has an extensive standard library, the set of packages available from the Internet is even more extensive. In order to install them easily, we'll install the ``setuptools`` package and ``pip`` installer::
 
-    $ sudo apt-get install python-setuptools
-    $ sudo easy_install virtualenv
+.. XXX: sudo?
 
-(You could get ``pip`` by itself by typing ``sudo easy_install pip``, but it comes with ``virtualenv``, which you'll most likely use later anyway.)
+    $ wget http://python-distribute.org/distribute_setup.py
+    $ python distribute_setup.py
+    $ wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py 
+    $ python get-pip.py
+    $ rm get-pip.py distribute_setup.py
 
 Now, most Python packages can be installed using the ``pip`` command. For example, if we wanted to install Django::
 
