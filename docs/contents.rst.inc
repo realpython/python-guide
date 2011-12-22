@@ -9,7 +9,9 @@ background information about Python, then focuses on next steps.
 
    intro/duction
    intro/community
-   intro/resources
+   intro/learning
+   intro/documentation
+   intro/news
 
 
 Getting Started
