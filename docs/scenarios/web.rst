@@ -26,14 +26,6 @@ Pyramid
 -------
 
 
-Pylons
-------
-
-
-Web2Py
-------
-
-
 Servers
 :::::::
 
