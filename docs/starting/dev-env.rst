@@ -61,7 +61,7 @@ IDEs
 PyCharm / IntelliJ IDEA
 -----------------------
 
-PyCharm is developed by JetBrains, also known for IntelliJ IDEA. Both share the same code base and most of PyCharm's features can be brought to IntelliJ with the free `Python Plug-In<http://plugins.intellij.net/plugin/?id=631/>`_..
+PyCharm is developed by JetBrains, also known for IntelliJ IDEA. Both share the same code base and most of PyCharm's features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_..
 
 Eclipse
 -------
@@ -72,6 +72,8 @@ The most popular Eclipse plugin for Python development is Aptana's
 
 Komodo IDE
 -----------
+`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by ActiveState and is a commerical IDE for Windows, Mac
+and Linux.
 
 
 
