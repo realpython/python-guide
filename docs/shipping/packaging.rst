@@ -14,7 +14,7 @@ If you're writing an open source Python module, `PyPi <http://pypi.python.org>`_
 Pip vs. easy_install
 --------------------
 
-x y z
+Use pip.  More details `here <http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_
 
 
 Personal PyPi
