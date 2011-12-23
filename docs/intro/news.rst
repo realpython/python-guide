@@ -15,3 +15,11 @@ This is an aggregate of Python news from a growing number of developers.
 Python-related news.
 
     `/r/python <http://reddit.com/r/python>`_
+
+Python Weekly
+~~~~~~~~~
+
+Python Weekly is a free weekly newsletter featureing curated news, articles,
+new releases, jobs etc related to Python.
+
+    `Python Weekly <http://www.pythonweekly.com/>`_
