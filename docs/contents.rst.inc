@@ -68,6 +68,7 @@ different scenarios.
    scenarios/cli
    scenarios/gui
    scenarios/web
+   scenarios/db
    scenarios/admin
    scenarios/ci
    scenarios/speed
