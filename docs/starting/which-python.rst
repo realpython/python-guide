@@ -87,7 +87,7 @@ IronPython
 ----------
 
 `IronPython <http://ironpython.net/>`_  is an implementation of Python for .NET
-framework. It can use both Python a .NET framework libraries, and can also
+framework. It can use both Python and .NET framework libraries, and can also
 expose Python code to other .NET languages.
 
 `Python Tools for Visual Studio <http://ironpython.net/tools/>`_ integrate
