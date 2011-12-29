@@ -88,6 +88,22 @@ Apache + mod_python
 Nginx + gunicorn
 ----------------
 
+`Nginx <http://nginx.org/>`_ (pronounced "engine-x") is a web server and
+reverse-proxy for HTTP, SMTP and other protocols. It is known for its
+high performance, relative simplicity, and compatibility with many
+application servers (like WSGI servers). It also includes handy features
+like load-balancing, basic authentication, streaming, and others. Designed
+to serve high-load websites, Nginx is gradually becoming quite popular.
+
+`gUnicorn <http://gunicorn.org/>`_ (Green Unicorn) is a WSGI server used
+to serve Python applications. It is a Python fork of the Ruby
+`Unicorn <http://unicorn.bogomips.org/>`_ server. gUnicorn is designed to be
+lightweight, easy to use, and uses many UNIX idioms. gUnicorn is not designed
+to face the internet, in fact it was designed to run behind Nginx which buffers
+slow requests, and takes care of other important considerations. A sample
+setup for Nginx + gUnicorn can be found in the gUnicorn
+`help <http://gunicorn.org/deploy.html>`_.
+
 Mongrel2 + Brubeck
 ------------------
 
@@ -96,7 +112,7 @@ Mongrel2 + wsgid
 ----------------
 
 Mongrel2 is an application, language, and network architecture agnostic web server. It uses a high performance queue (zeromq) to communicate
-with you applications, all asynchronously. There is a well defined protocol to be used between mongrel2 and a backend handler (your app).
+with your applications, all asynchronously. There is a well defined protocol to be used between mongrel2 and a backend handler (your app).
 
 Wsgid is a generic mongrel2 handler that speaks both mongrel2 protocol and WSGI. This makes it possible to run your python webapp written with any
 WSGI compliant framework. Wsgid has built-in Django support but has also a generic way to load your WSGI application object directly. It's possible
