@@ -78,7 +78,7 @@ and Linux.
 Spyder 
 ------
 
-Spyder an IDE specifically geared toward working with scientific python libraries (namely `Scipy <http://www.scipy.org/>`_).
+`Spyder <http://code.google.com/p/spyderlib/>`_ an IDE specifically geared toward working with scientific python libraries (namely `Scipy <http://www.scipy.org/>`_).
 Includes integration with `pyflakes <http://pypi.python.org/pypi/pyflakes>`_, `pylint <http://www.logilab.org/857>`_, 
 and `rope <http://rope.sourceforge.net/>`_.
 
