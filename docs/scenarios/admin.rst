@@ -45,17 +45,17 @@ usage with:
     $ fab memory_usage
     [my_server1] Executing task 'memory'
     [my_server1] run: free -m
-    [my_server1] out:              total       used       free     shared    buffers     cached
-    [my_server1] out: Mem:          6964       1897       5067          0        166        222
-    [my_server1] out: -/+ buffers/cache:       1509       5455
-    [my_server1] out: Swap:            0          0          0
+    [my_server1] out:              total     used     free   shared  buffers   cached
+    [my_server1] out: Mem:          6964     1897     5067        0      166      222
+    [my_server1] out: -/+ buffers/cache:     1509     5455
+    [my_server1] out: Swap:            0        0        0
 
     [my_server2] Executing task 'memory'
     [my_server2] run: free -m
-    [my_server2] out:              total       used       free     shared    buffers     cached
-    [my_server2] out: Mem:          1666        902        764          0        180        572
-    [my_server2] out: -/+ buffers/cache:        148       1517
-    [my_server2] out: Swap:          895          1        894
+    [my_server2] out:              total     used     free   shared  buffers   cached
+    [my_server2] out: Mem:          1666      902      764        0      180      572
+    [my_server2] out: -/+ buffers/cache:      148     1517
+    [my_server2] out: Swap:          895        1      894
 
 and we can deploy with:
 
