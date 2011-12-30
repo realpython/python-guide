@@ -1,20 +1,26 @@
 Introduction
 ============
 
-Someone should write a general blurb introducing the Python language here
+Someone should write a general blurb introducing the Python language here.
 
 
 About the Hitchhiker's Guide
 ----------------------------
 
+Purpose
+~~~~~~~
+
+The Hitchhiker's Guide to Python exists to provide both novice and expert
+Python developers a best-practice handbook to the installation, configuration,
+and usage of Python on a daily basis.
+
+
 By the Community
 ~~~~~~~~~~~~~~~~
 
-The Hitchhiker's Guide to Python is hosted in `Kenneth Reitz's GitHub
-<https://github.com/kennethreitz/python-guide>`_, but it is not by him.
-Rather, it is a community-driven effort to document the best finds in
-Python, tips and tricks from, help for choosing frameworks, libraries, and
-licenses, and more.
+This guide is architected and maintained by `Kenneth Reitz
+<https://github.com/kennethreitz>`_ in an open fashion. This is a
+community-driven effort that serves one purpose: to serve the community.
 
 For the Community
 ~~~~~~~~~~~~~~~~~
@@ -28,3 +34,5 @@ appropriateness, completeness, or accuracy of a contribution.
 
 To get started working on The Hitchhiker's Guide, see
 the :doc:`/notes/contribute` page.
+
+
