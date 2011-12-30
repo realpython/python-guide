@@ -4,8 +4,8 @@ Introduction
 Someone should write a general blurb introducing the Python language here.
 
 
-About the Hitchhiker's Guide
-----------------------------
+About This Guide
+----------------
 
 Purpose
 ~~~~~~~
