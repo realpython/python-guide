@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-The Hitchhikers Guide to Python!
-================================
+The Hitchhiker's Guide to Python!
+=================================
 
 Welcome to The Hitchhiker's Guide to Python. **DON'T PANIC!**
 
