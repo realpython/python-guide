@@ -39,23 +39,23 @@ PEP 257 is the primary reference for docstrings. (http://www.python.org/dev/peps
 |One-line docstrings: ::
 
     def kos_root():
-    """Return the pathname of the KOS root directory."""
-    global _kos_root
-    if _kos_root: return _kos_root
-    ...
+        """Return the pathname of the KOS root directory."""
+        global _kos_root
+        if _kos_root: return _kos_root
+        ...
 
 Multi-line docstrings: ::
 
     def complex(real=0.0, imag=0.0):
-    """Form a complex number.
+        """Form a complex number.
 
-    Keyword arguments:
-    real -- the real part (default 0.0)
-    imag -- the imaginary part (default 0.0)
+        Keyword arguments:
+        real -- the real part (default 0.0)
+        imag -- the imaginary part (default 0.0)
 
-    """
-    if imag == 0.0 and real == 0.0: return complex_zero
-    ...
+        """
+        if imag == 0.0 and real == 0.0: return complex_zero
+        ...
 
 Sphinx
 ------
