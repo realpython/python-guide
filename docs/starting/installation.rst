@@ -15,7 +15,7 @@ package manager. Mxcl's `Homebrew <http://mxcl.github.com/homebrew/>`_ is the an
 
 To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_, simply run: ::
 
-    $ ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)"
+    $ ruby -e "$(curl -fsS https://raw.github.com/gist/323731)"
 
 
 It's basic commands are **update**, **install**, and **remove**.
