@@ -7,6 +7,12 @@ Idioms
 
 Idiomatic Python code is often referred to as being *pythonic*.
 
+A common idiom for creating strings is to use `join <http://docs.python.org/library/string.html#string.join>`_ on an empty string.::
+
+    letters = ['s', 'p', 'a', 'm']
+    word = ''.join(letters)
+
+This will set the value of the variable *word* to 'spam'. This idiom can be applied to lists and tuples.
 
 Zen of Python
 -------------
