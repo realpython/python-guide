@@ -5,6 +5,9 @@ Your Development Environment
 Text Editors
 ::::::::::::
 
+Just about anything which can edit plain text will work for writing Python code,
+however, using a more powerful editor may make your life a bit easier.
+
 
 VIM
 ---
@@ -62,9 +65,12 @@ TextMate
 Sublime Text
 ------------
 
-"`Sublime Text <http://www.sublimetext.com/>`_ is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features."
+"`Sublime Text <http://www.sublimetext.com/>`_ is a sophisticated text editor
+for code, html and prose. You'll love the slick user interface and
+extraordinary features."
 
-Sublime Text uses Python for its plugin API.
+Sublime Text has excellent support for editing Python code and uses Python for
+its plugin API.
 
 `Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_ is currently in beta.
 
