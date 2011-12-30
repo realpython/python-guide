@@ -36,6 +36,22 @@ experience programming in another language.
 
     `Dive Into Python 3 <http://diveintopython3.ep.io/>`_
 
+Think Python: How to Think Like a Computer Scientist
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Think Python attempts to give an introduction to basic concepts in computer science through the 
+use of the python language. The focus was to create a book with plenty of exercises, minimal jargon and 
+a section in each chapter devoted to the subject of debugging.
+
+While exploring the various features available in the python language the author weaves in various design
+patterns and best practices. 
+
+The book also inclused several case studies which have the reader explore the topics discussed in the book 
+in greater detail by applying those topics to real-world examples. Case studies include assingments in GUI
+and Markov Analysis.
+
+    `Think Python <http://greenteapress.com/thinkpython/html/index.html>`_
+
 
 Advanced
 --------
