@@ -6,13 +6,6 @@ Mac OS X
 
 *Or, "Installing Python 2.7 via Homebrew".*
 
-One of the reasons everybody loves Python is the interactive shell.  It
-basically allows you to execute Python commands in real time and
-immediately get results back.  Flask itself does not come with an
-interactive shell, because it does not require any specific setup upfront,
-just import your application and start playing around.
-
-
 Package Manager
 ---------------
 
@@ -142,7 +135,7 @@ While Python has an extensive standard library, the set of packages available fr
 
     $ wget http://python-distribute.org/distribute_setup.py
     $ python distribute_setup.py
-    $ wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py 
+    $ wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
     $ python get-pip.py
     $ rm get-pip.py distribute_setup.py
 
