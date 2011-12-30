@@ -84,4 +84,4 @@ Contibution notes and legal information are here (for those interested).
    :maxdepth: 2
 
    notes/contribute
-   notes/license
+   notes/license   
