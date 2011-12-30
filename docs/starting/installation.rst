@@ -11,9 +11,9 @@ Package Manager
 
 While Snow Leopard comes with a large number of UNIX utilities, those
 familiar with Linux systems will notice one key component missing: a
-package manager. Mxcl's *Homebrew* is the answer.
+package manager. Mxcl's `Homebrew <http://mxcl.github.com/homebrew/>`_ is the answer.
 
-To install Homebrew, simply run: ::
+To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_, simply run: ::
 
     $ ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)"
 
@@ -34,11 +34,10 @@ bugs.
 
 *Don't forget to update your environment PATH.*
 
-
 Building From Source
 --------------------
 
-
+.. todo:: Write "Building From Source"
 
 
 Distribute & Pip
