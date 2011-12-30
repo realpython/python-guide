@@ -46,7 +46,7 @@ a section in each chapter devoted to the subject of debugging.
 While exploring the various features available in the python language the author weaves in various design
 patterns and best practices. 
 
-The book also inclused several case studies which have the reader explore the topics discussed in the book 
+The book also includes several case studies which have the reader explore the topics discussed in the book 
 in greater detail by applying those topics to real-world examples. Case studies include assingments in GUI
 and Markov Analysis.
 

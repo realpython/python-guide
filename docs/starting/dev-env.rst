@@ -75,6 +75,16 @@ Komodo IDE
 `Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by ActiveState and is a commerical IDE for Windows, Mac
 and Linux.
 
+Spyder 
+------
+
+`Spyder <http://code.google.com/p/spyderlib/>`_ an IDE specifically geared toward working with scientific python libraries (namely `Scipy <http://www.scipy.org/>`_).
+Includes integration with `pyflakes <http://pypi.python.org/pypi/pyflakes>`_, `pylint <http://www.logilab.org/857>`_, 
+and `rope <http://rope.sourceforge.net/>`_.
+
+Spyder is open-source (free), offers code completion, syntax highlighting, class and function browser, and object
+inspection
+
 
 
 Interpreter Tools
