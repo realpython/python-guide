@@ -87,6 +87,12 @@ Apache + mod_wsgi
 Apache + mod_python
 -------------------
 
+For a long period Apache with mod_python was one of the most reccomended
+ways to deploy Python applications and thus you may see many tutorials
+about it on the web or in books, however Apache no longer supports
+mod_python and thus this deployment mechanism is strongly discouraged in
+favor of WSGI based ones.
+
 
 Nginx + gunicorn
 ----------------
