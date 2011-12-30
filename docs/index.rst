@@ -6,10 +6,7 @@
 The Hitchhikers Guide to Python!
 ================================
 
-Welcome to The Hitchhiker's Guide to Python.
-
-Don't panic!
-============
+Welcome to The Hitchhiker's Guide to Python. **Don't Panic!**
 
 **This guide is currently under heavy development, and is mostly a skeleton at the moment.**  If you'd like to help, `fork us on GitHub <https://github.com/kennethreitz/python-guide>`_!
 
