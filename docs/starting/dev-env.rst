@@ -79,7 +79,7 @@ PyCharm / IntelliJ IDEA
 Eclipse
 -------
 
-The most popular Eclipse plugin for Python development is Aptana's 
+The most popular Eclipse plugin for Python development is Aptana's
 `PyDev <http://pydev.org>`_.
 
 
@@ -88,7 +88,7 @@ Komodo IDE
 `Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by ActiveState and is a commerical IDE for Windows, Mac
 and Linux.
 
-Spyder 
+Spyder
 ------
 
 `Spyder <http://code.google.com/p/spyderlib/>`_ an IDE specifically geared toward working with scientific python libraries (namely `Scipy <http://www.scipy.org/>`_).
@@ -176,7 +176,7 @@ the current state of the environment packages. To do this, run
 
 ::
 
-    pip freeze > requirements.txt
+    $ pip freeze > requirements.txt
 
 This will create a ``requirements.txt`` file, which contains a simple
 list of all the packages in the current environment, and their respective
@@ -186,7 +186,7 @@ versions by running
 
 ::
 
-    pip install -r requirements.txt
+    $ pip install -r requirements.txt
 
 This can help ensure consistency across installations, across deployments,
 and across developers.
@@ -201,14 +201,14 @@ virtualenvwrapper
 
 ::
 
-    pip install virtualenvwrapper
+    $ pip install virtualenvwrapper
 
 
 Put this into your `~/.bash_profile` (Linux/Mac) file:
 
 ::
 
-    export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+    $ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
 This will prevent your virtualenvs from relying on your (global) site packages directory, so that they are completely separate..
 
@@ -228,7 +228,7 @@ IPython
 
 ::
 
-    pip install ipython
+    $ pip install ipython
 
 
 
@@ -237,6 +237,6 @@ BPython
 
 ::
 
-    pip install bpython
+    $ pip install bpython
 
 
