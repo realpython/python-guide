@@ -64,6 +64,6 @@ Multiprocessing
 
 .. _`PyPy`: http://pypy.org
 .. _`The GIL`: http://wiki.python.org/moin/GlobalInterpreterLock
-.. _`Understanding GIL`: http://www.dabeaz.com/python/UnderstandingGIL.pdf
+.. _`guide`: http://www.dabeaz.com/python/UnderstandingGIL.pdf
 .. _`New GIL`: http://www.dabeaz.com/python/NewGIL.pdf
-.. _`Thread State`: http://docs.python.org/c-api/init.html#threads
+.. _`Special care`: http://docs.python.org/c-api/init.html#threads
