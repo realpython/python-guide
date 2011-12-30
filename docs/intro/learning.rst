@@ -59,13 +59,9 @@ Advanced
 Pro Python
 ~~~~~~~~~~
 
-TODO: Write about this book
-
-    `Pro Python <http://propython.com/>`_
+.. todo:: Write about `Pro Python <http://propython.com/>`_
 
 Expert Python Programming
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-TODO: Write about this book
-
-    `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
+.. todo:: Write about `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
