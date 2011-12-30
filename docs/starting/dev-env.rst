@@ -97,6 +97,91 @@ virtualenv
 Virtualenv is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.
 It solves the "Project X depends on version 1.x but, Project Y needs 4.x" dilemma and keeps your global site-packages directory clean and manageable.
 
+`virtualenv <http://www.virtualenv.org/en/latest/index.html>`_ creates
+a folder which contains all the necessary executables to contain the
+packages that a Python project would need. An example workflow is given.
+
+Install virtualenv
+
+::
+
+    $ pip install virtualenv
+
+or, depending on what's available
+
+::
+
+    $ easy_install virtualenv
+
+Create a virtual environment for a project
+
+::
+
+    $ cd my_project
+    $ virtualenv venv
+
+``virtualenv venv`` will create a folder in the currect directory
+which will contain the Python executable files, and a copy of the ``pip``
+library which you can use to install other packages. The name of the
+virtual environment (in this case, it was ``venv``) can be anything;
+omitting the name will place the files in the current directory instead.
+
+In order the start using the virtual environment, run
+
+::
+
+    $ source venv/bin/activate
+
+or
+
+::
+
+    $ . venv/bin/activate
+
+The name of the current virtual environment will now appear on the left
+of the prompt (e.g. ``(venv)Your-Computer:your_project UserName$``) to
+let you know that it's active. From now on, any package that you install
+using ``pip`` will be placed in the venv folder, isolated from the global
+Python installation. Install packages as usual.
+
+::
+
+    $ pip install requests
+
+To stop using an environment simply type ``deactivate``. To remove the
+environment, just remove the directory it was installed into. (In this
+case, it would be ``rm -rf venv``).
+
+Other Notes
+~~~~~~~~~~~
+
+Running ``virtualenv`` with the option ``--no-site-packages`` will not
+include the packages that are installed globally. This can be useful
+for keeping the package list clean in case it needs to be accessed later.
+
+In order to keep your environment consistent, it's a good idea to "freeze"
+the current state of the environment packages. To do this, run
+
+::
+
+    pip freeze > requirements.txt
+
+This will create a ``requirements.txt`` file, which contains a simple
+list of all the packages in the current environment, and their respective
+versions. Later, when a different developer (or you, if you need to re-
+create the environment) can install the same packages, with the same
+versions by running
+
+::
+
+    pip install -r requirements.txt
+
+This can help ensure consistency across installations, across deployments,
+and across developers.
+
+Lastly, remember to exclude the virtual environment folder from source
+control by adding it to the ignore list.
+
 virtualenvwrapper
 -----------------
 
