@@ -14,9 +14,11 @@ Install Fabric:
 
     pip install fabric
 
-The following code will ssh into both of our servers, cd to our project
-directory, activate the virtual environment, pull the newest codebase,
-and restart the application server.
+The following code will create two tasks that we can use: ``memory_usage`` and
+``deploy``. The former will output the memory usage on each machine. The
+latter will ssh into each server, cd to our project directory, activate the
+virtual environment, pull the newest codebase, and restart the application
+server.
 
 ::
 
@@ -25,14 +27,37 @@ and restart the application server.
     env.hosts = ['my_server1', 'my_server2']
 
     @task
+    def memory_usage():
+        run('free -m')
+
+    @task
     def deploy():
         with cd('/var/www/project-env/project'):
             with prefix('. ../bin/activate'):
                 run('git pull')
                 run('touch app.wsgi')
 
-With the previous code saved in a file named fabfile.py, we merely need to run
-the following command to deploy our application to both of our servers.
+With the previous code saved in a file named fabfile.py, we can check memory
+usage with:
+
+::
+
+    $ fab memory_usage
+    [my_server1] Executing task 'memory'
+    [my_server1] run: free -m
+    [my_server1] out:              total       used       free     shared    buffers     cached
+    [my_server1] out: Mem:          6964       1897       5067          0        166        222
+    [my_server1] out: -/+ buffers/cache:       1509       5455
+    [my_server1] out: Swap:            0          0          0
+
+    [my_server2] Executing task 'memory'
+    [my_server2] run: free -m
+    [my_server2] out:              total       used       free     shared    buffers     cached
+    [my_server2] out: Mem:          1666        902        764          0        180        572
+    [my_server2] out: -/+ buffers/cache:        148       1517
+    [my_server2] out: Swap:          895          1        894
+
+and we can deploy with:
 
 ::
 
