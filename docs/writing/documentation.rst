@@ -59,9 +59,20 @@ Multi-line docstrings: ::
 
 Sphinx
 ------
-Sphinx (http://sphinx.pocoo.org) is a tool  which converts documentation in the reStructured text markup language into a range of output formats including HTML, LaTeX (for printable PDF versions), manual pages and plain text.
+Sphinx_ is a tool which converts documentation in the :ref:`restructuredtext-ref` markup language into a range of output formats including HTML, LaTeX (for printable PDF versions), manual pages and plain text.
 
+.. note:: This Guide is built with Sphinx_
 
+.. _Sphinx: http://sphinx.pocoo.org
+
+.. _restructuredtext-ref:
+
+reStructuredText
+----------------
+
+Most Python documentation is written with reStructuredText_. The `reStructuredText Primer <http://sphinx.pocoo.org/rest.html>`_ and the `reStructuredText Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_ should help you familiarize yourself with its syntax.
+
+.. _reStructuredText: http://docutils.sourceforge.net/rst.html
 
 Other Tools
 :::::::::::

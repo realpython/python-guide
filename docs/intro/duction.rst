@@ -3,6 +3,8 @@ Introduction
 
 .. todo:: write a general blurb introducing the Python language
 
+.. _about-ref:
+
 About This Guide
 ----------------
 

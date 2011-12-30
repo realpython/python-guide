@@ -8,6 +8,12 @@ issue on GitHub_. To submit patches, please send a pull request on GitHub_.
 Once your changes get merged back in, you'll automatically be added to the
 `Contributors List <https://github.com/kennethreitz/python-guide/contributors>`_.
 
+Style Guide
+-----------
+
+For all contributions, please follow the :ref:`guide-style-guide`.
+
+.. _todo-list-ref:
 
 Todo List
 ---------
