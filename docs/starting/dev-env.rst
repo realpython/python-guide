@@ -85,6 +85,13 @@ and `rope <http://rope.sourceforge.net/>`_.
 Spyder is open-source (free), offers code completion, syntax highlighting, class and function browser, and object
 inspection
 
+NINJA-IDE
+---------
+
+`NINJA-IDE <http://ninja-ide.org/>`_ (from the recursive acronym: "Ninja-IDE Is Not Just Another IDE"), is a cross-platform integrated development environment (IDE). NINJA-IDE runs on Linux/X11, Mac OS X and Windows desktop operating systems, and allows developers to create applications for several purposes using all the tools and utilities of NINJA-IDE, making the task of writing software easier and more enjoyable..
+
+NINJA-IDE is open-source (free), is highly extensible, and offers a lot of `features <http://ninja-ide.org/features/>`_ to speed up the development of programs.
+
 
 
 Interpreter Tools
