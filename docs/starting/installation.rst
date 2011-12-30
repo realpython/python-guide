@@ -128,15 +128,11 @@ Older versions of Python aren't available from the official repository. However,
 Installing setuptools and pip
 -----------------------------
 
-While Python has an extensive standard library, the set of packages available from the Internet is even more extensive. In order to install them easily, we'll install the ``setuptools`` package and ``pip`` installer::
-
-.. XXX: sudo?
+While Python has an extensive standard library, the set of packages available from the Internet is even more extensive. In order to install them easily, we'll install the ``distribute`` package and then ``pip``::
 
     $ wget http://python-distribute.org/distribute_setup.py
-    $ python distribute_setup.py
-    $ wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-    $ python get-pip.py
-    $ rm get-pip.py distribute_setup.py
+    $ sudo python distribute_setup.py
+    $ sudo easy_install pip
 
 Now, most Python packages can be installed using the ``pip`` command. For example, if we wanted to install Django::
 
