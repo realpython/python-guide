@@ -76,6 +76,28 @@ Pyramid
 
 .. todo:: Explian Pyramid
 
+web2py
+------
+
+Web2py is a full-stack web framework with focus on ease of use and rapid development. 
+It includes a web based IDE, a web based database administrative interface, a database abstraction layer (DAL)
+which supports 10 relational databases and the Google App Engine (both SQL and NoSQL), 
+a role based access control system, a ticketing system (all errors are logged for the administrator 
+and grouped by traceback) and a templating language allowing full python syntax within HTML. 
+web2py comes pre-packages in source and binary formats with libraries for single sign on, credit card payments, 
+csv, json, rss, rtf, pdf, xmlrpc, jsonrpc, and more.
+
+It comes with its own ssl-enabled web server but it works with third party servers (including apache, nginx, tornado).
+Some of its libraries (including the web server, the database abstracion layer, and the template parser)
+are comprised of a single file and can be used with other web frameworks.
+
+Read more here: http://web2py.com
+
+Web2py demo of admin: http://web2py.com/demo-admin
+
+Video tutorials: http://www.youtube.com/playlist?list=PL5E2E223FE3777851
+
+
 Servers
 :::::::
 
