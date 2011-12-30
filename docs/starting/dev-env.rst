@@ -145,6 +145,7 @@ using ``pip`` will be placed in the venv folder, isolated from the global
 Python installation. Install packages as usual.
 
 ::
+
     $ pip install requests
 
 To stop using an environment simply type ``deactivate``. To remove the
