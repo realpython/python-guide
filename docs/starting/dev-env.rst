@@ -99,21 +99,21 @@ It solves the "Project X depends on version 1.x but, Project Y needs 4.x" dilemm
 
 `virtualenv <http://www.virtualenv.org/en/latest/index.html>`_ creates
 a folder which contains all the necessary executables to contain the
-packages that a Python project would need. An example workflow:
+packages that a Python project would need. An example workflow is given.
 
-Install virtualenv:
+Install virtualenv
 
 ::
 
     $ pip install virtualenv
 
-or, depending on what's available:
+or, depending on what's available
 
 ::
 
     $ easy_install virtualenv
 
-Create a virtual environment for a project:
+Create a virtual environment for a project
 
 ::
 
@@ -142,11 +142,14 @@ The name of the current virtual environment will now appear on the left
 of the prompt (e.g. ``(venv)Your-Computer:your_project UserName$``) to
 let you know that it's active. From now on, any package that you install
 using ``pip`` will be placed in the venv folder, isolated from the global
-Python installation.
+Python installation. Install packages as usual.
+
+::
+    $ pip install requests
 
 To stop using an environment simply type ``deactivate``. To remove the
 environment, just remove the directory it was installed into. (In this
-case, it would be ``rm -rf venv``.
+case, it would be ``rm -rf venv``).
 
 Other Notes
 ~~~~~~~~~~~
