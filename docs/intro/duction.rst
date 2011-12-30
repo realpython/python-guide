@@ -1,8 +1,7 @@
 Introduction
 ============
 
-Someone should write a general blurb introducing the Python language here.
-
+.. todo:: write a general blurb introducing the Python language
 
 About This Guide
 ----------------

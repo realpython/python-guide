@@ -54,6 +54,19 @@ the following lines into your vimrc::
 
 .. todo:: add supertab notes
 
+TextMate
+--------
+
+"`TextMate <http://macromates.com/>`_ brings Apple's approach to operating systems into the world of text editors. By bridging UNIX underpinnings and GUI, TextMate cherry-picks the best of both worlds to the benefit of expert scripters and novice users alike."
+
+Sublime Text
+------------
+
+"`Sublime Text <http://www.sublimetext.com/>`_ is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features."
+
+Sublime Text uses Python for its plugin API.
+
+`Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_ is currently in beta.
 
 IDEs
 ::::
@@ -61,7 +74,7 @@ IDEs
 PyCharm / IntelliJ IDEA
 -----------------------
 
-PyCharm is developed by JetBrains, also known for IntelliJ IDEA. Both share the same code base and most of PyCharm's features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_..
+`PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also known for IntelliJ IDEA. Both share the same code base and most of PyCharm's features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
 
 Eclipse
 -------
@@ -82,8 +95,7 @@ Spyder
 Includes integration with `pyflakes <http://pypi.python.org/pypi/pyflakes>`_, `pylint <http://www.logilab.org/857>`_, 
 and `rope <http://rope.sourceforge.net/>`_.
 
-Spyder is open-source (free), offers code completion, syntax highlighting, class and function browser, and object
-inspection
+Spyder is open-source (free), offers code completion, syntax highlighting, class and function browser, and object inspection.
 
 
 
@@ -100,7 +112,7 @@ It solves the "Project X depends on version 1.x but, Project Y needs 4.x" dilemm
 virtualenvwrapper
 -----------------
 
-Virtualenvwrapper makes virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
+`Virtualenvwrapper <http://pypi.python.org/pypi/virtualenvwrapper>`_ makes virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
 
 ::
 
@@ -121,9 +133,17 @@ Other Tools
 IPython
 -------
 
+`IPython <http://ipython.org/>`_ provides a rich toolkit to help you make the most out of using Python interactively. Its main components are:
+
+* Powerful Python shells (terminal- and Qt-based).
+* A web-based notebook with the same core features but support for rich media, text, code, mathematical expressions and inline plots.
+* Support for interactive data visualization and use of GUI toolkits.
+* Flexible, embeddable interpreters to load into your own projects.
+* Tools for high level and interactive parallel computing.
+
 ::
 
-    $ pip install ipython
+    pip install ipython
 
 
 
@@ -132,6 +152,6 @@ BPython
 
 ::
 
-    $ pip install bpython
+    pip install bpython
 
 

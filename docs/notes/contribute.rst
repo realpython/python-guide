@@ -16,6 +16,7 @@ If you'd like to contribute, there's plenty to do. Here's a short todo_ list.
 
 
 .. _GitHub: http://github.com/kennethreitz/python-guide/
-.. _AUTHORS: http://github.com/kennethreitz/python-guide/blob/master/AUTHORS
+.. _AUTHORS: http://github.com/kennethreitz/python-guide/blob/master/AUTHORS.rst
 .. _todo: https://github.com/kennethreitz/python-guide/blob/master/TODO.rst
 
+.. include:: ../../AUTHORS.rst

@@ -3,6 +3,7 @@ Packaging Your Code
 
 Packaging your code is important.
 
+.. todo:: Write introduction for "Packaging Your Code"
 
 For Python Developers
 :::::::::::::::::::::
@@ -14,7 +15,7 @@ If you're writing an open source Python module, `PyPI <http://pypi.python.org>`_
 Pip vs. easy_install
 --------------------
 
-Use pip.  More details `here <http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_
+Use `pip <http://pypi.python.org/pypi/pip>`_.  More details `here <http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_
 
 
 Personal PyPI
@@ -54,9 +55,12 @@ $ pip install  http://127.0.0.1:9000/MyPackage.tar.gz
 Chishop
 +++++++
 
+`Chishop <https://github.com/benliles/djangopypi>`_ is a simple PyPI server written in django which allows you to register/upload with distutils and install with easy_install/pip.
 
 For Linux Distributions
 ::::::::::::::::::::::::
+
+.. todo:: Fill in "For Linux Distributions" packaging stub
 
 Useful Tools
 ------------
