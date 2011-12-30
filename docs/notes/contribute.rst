@@ -8,7 +8,7 @@ If you have a feature request, suggestion, or bug report, please open a new issu
 
 If you'd like to contribute, there's plenty to do. Here's a short todo_ list.
 
-    .. include:: ../TODO.rst
+    .. include:: ../../TODO.rst
 
 
 .. _GitHub: http://github.com/kennethreitz/python-guide/
