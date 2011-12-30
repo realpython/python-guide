@@ -74,9 +74,12 @@ already exist to suit your needs.
 Pyramid
 -------
 
+.. todo:: Explian Pyramid
 
 Servers
 :::::::
+
+.. todo:: Explain Apache deployment
 
 Apache + mod_wsgi
 -----------------
@@ -107,6 +110,7 @@ setup for Nginx + gUnicorn can be found in the gUnicorn
 Mongrel2 + Brubeck
 ------------------
 
+.. todo:: Explain Mongrel2 + Brubeck
 
 Mongrel2 + wsgid
 ----------------
@@ -208,6 +212,8 @@ Gondor publishes guides to deploying `Django projects
 
 Shared Web Hosting
 ------------------
+
+.. todo:: Fill in "Shared Web Hosting" stub
 
 WebFaction
 ~~~~~~~~~~~

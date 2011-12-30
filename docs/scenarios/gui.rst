@@ -12,16 +12,17 @@ http://developer.qt.nokia.com/wiki/PySideDownloads/
 
 PyQt
 ----
-*Note: If your software does not fully comply with the GPL you will need a commercial license!*
+.. note:: If your software does not fully comply with the GPL you will need a commercial license!
+
 http://www.riverbankcomputing.co.uk/software/pyqt/download
 
 Cocoa
 :::::
-*Note: The Cocoa framework is only available on Mac OSX. Don't pick this if you're writing a cross-platform application!*
+.. note:: The Cocoa framework is only available on Mac OSX. Don't pick this if you're writing a cross-platform application!
 
 PyObjC
 ------
-*Note: Only available on Mac OSX. Don't pick this if you're writing a cross-platform application.*
+.. note:: Only available on Mac OSX. Don't pick this if you're writing a cross-platform application.
 
 WXPython
 ::::::::

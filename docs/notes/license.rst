@@ -1,4 +1,4 @@
 License
 -------
 
-TBD.
+.. todo:: Determine License
