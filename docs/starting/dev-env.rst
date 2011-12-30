@@ -113,21 +113,12 @@ It solves the "Project X depends on version 1.x but, Project Y needs 4.x" dilemm
 a folder which contains all the necessary executables to contain the
 packages that a Python project would need. An example workflow is given.
 
-Install virtualenv
-
-::
+Install virtualenv::
 
     $ pip install virtualenv
 
-or, depending on what's available
 
-::
-
-    $ easy_install virtualenv
-
-Create a virtual environment for a project
-
-::
+Create a virtual environment for a project::
 
     $ cd my_project
     $ virtualenv venv
@@ -138,25 +129,16 @@ library which you can use to install other packages. The name of the
 virtual environment (in this case, it was ``venv``) can be anything;
 omitting the name will place the files in the current directory instead.
 
-In order the start using the virtual environment, run
-
-::
+In order the start using the virtual environment, run::
 
     $ source venv/bin/activate
 
-or
-
-::
-
-    $ . venv/bin/activate
 
 The name of the current virtual environment will now appear on the left
 of the prompt (e.g. ``(venv)Your-Computer:your_project UserName$``) to
 let you know that it's active. From now on, any package that you install
 using ``pip`` will be placed in the venv folder, isolated from the global
-Python installation. Install packages as usual.
-
-::
+Python installation. Install packages as usual::
 
     $ pip install requests
 
