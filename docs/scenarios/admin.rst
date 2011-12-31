@@ -12,7 +12,7 @@ Install Fabric:
 
 ::
 
-    pip install fabric
+    $ pip install fabric
 
 The following code will ssh into both of our servers, cd to our project
 directory, activate the virtual environment, pull the newest codebase,
