@@ -10,7 +10,7 @@ fabric is more focused on application level tasks such as deployment.
 
 Install Fabric:
 
-::
+.. code-block:: bash
 
     $ pip install fabric
 
@@ -20,7 +20,7 @@ latter will ssh into each server, cd to our project directory, activate the
 virtual environment, pull the newest codebase, and restart the application
 server.
 
-::
+.. code-block:: python
 
     from fabric.api import cd, env, prefix, run, task
 
@@ -40,7 +40,7 @@ server.
 With the previous code saved in a file named fabfile.py, we can check memory
 usage with:
 
-::
+.. code-block:: bash
 
     $ fab memory_usage
     [my_server1] Executing task 'memory'
@@ -59,7 +59,7 @@ usage with:
 
 and we can deploy with:
 
-::
+.. code-block:: bash
 
     $ fab deploy
 
