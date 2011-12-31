@@ -61,10 +61,18 @@ Sub section headings::
     Very Deep
     ~~~~~~~~~
 
+Prose
+-----
+
+Wrap text lines at 78 characters. Where necessary, lines may exceed 78
+characters, especially if wrapping would make the source text more difficult
+to read.
+
+
 Code Examples
 -------------
 
-Wrap all code examples within 70 characters to avoid horizontal scrollbars.
+Wrap all code examples at 70 characters to avoid horizontal scrollbars.
 
 Command line examples::
 
@@ -79,11 +87,15 @@ Python interpreter examples::
 
     Label the example::
 
+    .. code-block:: python
+
         >>> import this
 
 Python examples::
 
     Descriptive title::
+
+    .. code-block:: python
 
         def get_answer():
             return 42
