@@ -72,6 +72,7 @@ different scenarios.
    scenarios/admin
    scenarios/ci
    scenarios/speed
+   scenarios/virtualenvs
 
 
 
