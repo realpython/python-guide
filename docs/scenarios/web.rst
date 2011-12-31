@@ -71,12 +71,23 @@ you may need, such as database access or form generation and validation. For
 many popular modules, `Extensions <http://flask.pocoo.org/extensions/>`_ may
 already exist to suit your needs.
 
+**Support** for flask can best be found in its mailing list. Just shoot an email to 
+flask@librelist.com and reply to the confirmation email.
+
 
 Pyramid
 -------
 
 .. todo:: Explian Pyramid
 
+Web.py
+------
+
+`web.py <http://webpy.org>`_ is a minimalist web framework that is somewhere between Django and Flask. 
+The premise of web.py is that it is flexible - code your webapp any way you want it, in just python and python alone. 
+web.py comes with some nifty tools built in, like database connection tools and a mini http server.
+
+**Support** for web.py is quite sparse, but you can look for support in the `mailing list <http://groups.google.com/group/webpy>`_ .
 Web Servers
 :::::::::::
 
@@ -281,6 +292,15 @@ Shared Web Hosting
 WebFaction
 ~~~~~~~~~~~
 
+`Webfaction <http://www.webfaction.com/>`_ started off as a dedicated python hosting company.
+In fact it used to be called python-hosting.com. Webfaction supports Python versions 2.4 through to 2.7.2
+as well as Python 3 versions. 
+
+Webfaction has a very extensive `user guide <http://docs.webfaction.com/user-guide/>`_ 
+and specific stack (`Django <http://docs.webfaction.com/software/django/index.html> `_, `Pylons <http://docs.webfaction.com/software/pylons.html>`_, 
+`Pyramid <http://docs.webfaction.com/software/pyramid.html>`_, `TurboGears <http://docs.webfaction.com/software/turbogears.html>`_ 
+and `vanilla python <http://docs.webfaction.com/software/python.html>`_) guides.
+It also has a stack-overflow style `community <http://community.webfaction.com/>`_ that is quite useful.
 
 Twisted
 :::::::
