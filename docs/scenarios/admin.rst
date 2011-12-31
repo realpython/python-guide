@@ -12,7 +12,7 @@ Install Fabric:
 
 ::
 
-    pip install fabric
+    $ pip install fabric
 
 The following code will create two tasks that we can use: ``memory_usage`` and
 ``deploy``. The former will output the memory usage on each machine. The
