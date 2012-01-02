@@ -88,6 +88,8 @@ The premise of web.py is that it is flexible - code your webapp any way you want
 web.py comes with some nifty tools built in, like database connection tools and a mini http server.
 
 **Support** for web.py is quite sparse, but you can look for support in the `mailing list <http://groups.google.com/group/webpy>`_ .
+
+
 Web Servers
 :::::::::::
 
