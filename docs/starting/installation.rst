@@ -65,10 +65,6 @@ If you have homebrew: ::
 
     $ easy_install pip
 
-
-
-To install ``pip``: ::
-
 Hopefully you'll never have to use **easy_install** again.
 
 
