@@ -11,6 +11,7 @@ The Basics
 
 Code Comments
 -------------
+
 Information regarding code comments is taken from PEP 008 (http://www.python.org/dev/peps/pep-0008/).
 Block comment styling should be used when commenting out multiple lines of code.: ::
 
@@ -34,9 +35,11 @@ Inline comments are used for individual lines and should be used sparingly.: ::
 
 Doc Strings
 -----------
+
 PEP 257 is the primary reference for docstrings. (http://www.python.org/dev/peps/pep-0257/)
-|There are two types of docstrings, one-line and multi-line.  Their names should be fairly self explanatory.
-|One-line docstrings: ::
+
+There are two types of docstrings, one-line and multi-line.  Their names should be fairly self explanatory.
+One-line docstrings: ::
 
     def kos_root():
         """Return the pathname of the KOS root directory."""
@@ -59,6 +62,7 @@ Multi-line docstrings: ::
 
 Sphinx
 ------
+
 Sphinx_ is a tool which converts documentation in the :ref:`restructuredtext-ref` markup language into a range of output formats including HTML, LaTeX (for printable PDF versions), manual pages and plain text.
 
 .. note:: This Guide is built with Sphinx_
@@ -66,6 +70,7 @@ Sphinx_ is a tool which converts documentation in the :ref:`restructuredtext-ref
 .. _Sphinx: http://sphinx.pocoo.org
 
 .. _restructuredtext-ref:
+
 
 reStructuredText
 ----------------
