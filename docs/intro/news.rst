@@ -19,7 +19,7 @@ Python-related news.
 Python Weekly
 ~~~~~~~~~~~~~
 
-Python Weekly is a free weekly newsletter featureing curated news, articles,
-new releases, jobs etc related to Python.
+Python Weekly is a free weekly newsletter featuring curated news, articles,
+new releases, jobs, etc. related to Python.
 
     `Python Weekly <http://www.pythonweekly.com/>`_
