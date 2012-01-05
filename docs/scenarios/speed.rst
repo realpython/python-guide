@@ -5,7 +5,9 @@ CPython, the most commonly used implementation of Python, is slow for CPU bound 
 
 Using a slightly modified version of `David Beazleys`_ CPU bound test code(added loop for multiple tests), you can see the difference between CPython and PyPy's processing.
 
-.. pypy:: 
+::
+
+   PyPy 
    $ ./pypy -V
    Python 2.7.1 (7773f8fc4223, Nov 18 2011, 18:47:10)
    [PyPy 1.7.0 with GCC 4.4.3]
@@ -16,7 +18,9 @@ Using a slightly modified version of `David Beazleys`_ CPU bound test code(added
    0.0440690517426
    0.0695300102234
 
-.. python::
+::
+
+   CPython
    $ ./python -V
    Python 2.7.1
    $ ./python measure2.py 
