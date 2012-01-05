@@ -37,6 +37,13 @@ will not need that variable, use ``_``:
     filename = 'foobar.txt'
     basename, _, ext = filename.rpartition()
 
+.. note::
+
+   "``_``" is commonly used as an alias for the :func:`~gettext.gettext`
+   function. If your application uses (or may someday use) :mod:`gettext`,
+   you may want to avoid using ``_`` for ignored variables, as you may
+   accidentally shadow :func:`~gettext.gettext`.
+
 Create a length-N list of the same thing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
