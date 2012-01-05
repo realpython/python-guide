@@ -14,29 +14,37 @@ virtualenv
 `virtualenv <http://pypi.python.org/pypi/virtualenv>`_ is a tool to create 
 isolated Python environments.
 
-Install it via pip::
+Install it via pip:
+
+.. code-block:: console
 
   $ pip install virtualenv
 
 Basic Usage
 ~~~~~~~~~~~
 
-1. Create a virtual environment::
+1. Create a virtual environment:
 
-   $ virtualenv ENVIRONMENT_NAME
+.. code-block:: console
+
+   $ virtualenv venv
 
 This creates a copy of Python in whichever directory you ran the command in, 
-placing it in a folder named ``ENVIRONMENT_NAME``.
+placing it in a folder named ``venv``.
 
-2. To begin using the virtual environment, it needs to be activated::
+2. To begin using the virtual environment, it needs to be activated:
 
-   $ source ENVIRONMENT_NAME/bin/activate
+.. code-block:: console
+
+   $ source venv/bin/activate
 
 You can then begin installing any new modules without affecting the system 
 default Python or other virtual environments.
 
 3. If you are done working in the virtual environment for the moment, you can 
-   deactivate it::
+   deactivate it:
+
+.. code-block:: console
 
    $ deactivate
 
@@ -45,33 +53,43 @@ installed libraries.
 
 To delete a virtual environment, just delete its folder.
 
+After a while, though, you might end up with a lot of virtual environments 
+littered across your system, and its possible you'll forget their names or 
+where they were placed. 
+
 virtualenvwrapper
 -----------------
 
 `virtualenvwrapper <http://www.doughellmann.com/projects/virtualenvwrapper/>`_ 
 provides a set of commands which makes working with virtual environments much 
-more pleasant. It also places all your virtual environments into one place.
+more pleasant. It also places all your virtual environments in one place.
 
-To install (make sure **virtualenv** is already installed)::
+To install (make sure **virtualenv** is already installed):
+
+.. code-block:: console
 
   $ pip install virtualenvwrapper
   $ export WORKON_HOME=~/Envs
   $ source /usr/local/bin/virtualenvwrapper.sh
 
-(Full instructions `here <http://www.doughellmann.com/docs/virtualenvwrapper/#introduction>`_.)
+(`Full virtualenvwrapper install instructions <http://www.doughellmann.com/docs/virtualenvwrapper/#introduction>`_.)
 
 Basic Usage
 ~~~~~~~~~~~
 
-1. Create a virtual environment::
+1. Create a virtual environment:
 
-   $ mkvirtualenv ENVIRONMENT_NAME
+.. code-block:: console
 
-This creates the ``ENVIRONMENT_NAME`` folder inside ``~/Envs``. 
+   $ mkvirtualenv venv
 
-2. Work on a virtual environment::
+This creates the ``venv`` folder inside ``~/Envs``. 
 
-   $ workon ENVIRONMENT_NAME
+2. Work on a virtual environment:
+
+.. code-block:: console
+
+   $ workon venv
 
 **virtualenvwrapper** provides tab-completion on environment names. It really 
 helps when you have a lot of environments and have trouble remembering their 
@@ -79,15 +97,20 @@ names.
 ``workon`` also deactivates whatever environment you are currently in, so you 
 can quickly switch between environments.
 
-3. Deactivating is still the same::
+3. Deactivating is still the same:
+
+.. code-block:: console
 
    $ deactivate
 
-4. To delete::
+4. To delete:
 
-   $ rmvirtualenv ENVIRONMENT_NAME
+.. code-block:: console
 
-Other nifty commands include:
+   $ rmvirtualenv venv
+
+Other useful commands
+~~~~~~~~~~~~~~~~~~~~~
 
 ``lsvirtualenv``
   List all of the environments.
@@ -102,4 +125,4 @@ Other nifty commands include:
 ``lssitepackages``
   Shows contents of ``site-packages`` directory.
 
-A full list of commands can be found `here <http://www.doughellmann.com/docs/virtualenvwrapper/command_ref.html#managing-environments>`_.
+`Full list of virtualenvwrapper commands <http://www.doughellmann.com/docs/virtualenvwrapper/command_ref.html#managing-environments>`_.
