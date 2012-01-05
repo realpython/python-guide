@@ -255,6 +255,9 @@ DotCloud uses a custom command-line API client which can work with
 applications managed in git repositories or any other version control
 system.
 
+DotCloud has a free plan with limited database size, and without extra
+services (caching…).
+
 See the `DotCloud documentation on Python
 <http://docs.dotcloud.com/services/python/>`_ for more information and help
 getting started.
@@ -266,6 +269,10 @@ ep.io
 `ep.io <https://www.ep.io/>`_ is a PaaS designed specifically for Python web
 applications. It supports Python versions 2.6 and 2.7, and has Pythonic
 integrations with a variety of services.
+
+ep.io has a free plan with bandwidth and disk space limitations. Also, in the
+free plan, the web process is only loaded when needed. This means that the
+first request after some inactivity may take up to 15 seconds.
 
 ep.io publishes `step-by-step instructions
 <https://www.ep.io/docs/quickstart/>`_ on how to get started with their
