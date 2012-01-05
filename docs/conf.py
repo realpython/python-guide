@@ -25,7 +25,7 @@ sys.path.append(os.path.abspath('_themes'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.ifconfig']
+extensions = ['sphinx.ext.ifconfig', 'sphinx.ext.todo']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'pythonguide'
-copyright = u'2011. A <a href="http://kennethreitz.com/pages/open-projects.html">Kenneth Reitz</a> Project'
+copyright = u'2012. A <a href="http://kennethreitz.com/pages/open-projects.html">Kenneth Reitz</a> Project'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -182,7 +182,7 @@ htmlhelp_basename = 'pythonguidedoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'pythonguide.tex', u'Pythong Guide Documentation',
+  ('index', 'pythonguide.tex', u'Python Guide Documentation',
    u'Kenneth Reitz', 'manual'),
 ]
 
@@ -258,3 +258,5 @@ epub_copyright = u'2010, Kenneth Reitz'
 
 # Allow duplicate toc entries.
 #epub_tocdup = True
+
+todo_include_todos = True

@@ -47,7 +47,7 @@ While exploring the various features available in the python language the author
 patterns and best practices. 
 
 The book also includes several case studies which have the reader explore the topics discussed in the book 
-in greater detail by applying those topics to real-world examples. Case studies include assingments in GUI
+in greater detail by applying those topics to real-world examples. Case studies include assignments in GUI
 and Markov Analysis.
 
     `Think Python <http://greenteapress.com/thinkpython/html/index.html>`_
@@ -59,13 +59,9 @@ Advanced
 Pro Python
 ~~~~~~~~~~
 
-TODO: Write about this book
-
-    `Pro Python <http://propython.com/>`_
+.. todo:: Write about `Pro Python <http://propython.com/>`_
 
 Expert Python Programming
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-TODO: Write about this book
-
-    `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
+.. todo:: Write about `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_

@@ -24,9 +24,16 @@ This part of the guide focuses on setting up your Python environment.
 
    starting/which-python
    starting/installation
-   starting/dev-env
-   starting/next
 
+
+Development Environment
+-----------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   dev/env
+   dev/virtualenvs
 
 Writing Great Code
 ------------------
@@ -72,7 +79,7 @@ different scenarios.
    scenarios/admin
    scenarios/ci
    scenarios/speed
-
+   scenarios/scientific
 
 
 Additional Notes
@@ -85,3 +92,4 @@ Contibution notes and legal information are here (for those interested).
 
    notes/contribute
    notes/license
+   notes/styleguide

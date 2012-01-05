@@ -6,23 +6,16 @@ Mac OS X
 
 *Or, "Installing Python 2.7 via Homebrew".*
 
-One of the reasons everybody loves Python is the interactive shell.  It
-basically allows you to execute Python commands in real time and
-immediately get results back.  Flask itself does not come with an
-interactive shell, because it does not require any specific setup upfront,
-just import your application and start playing around.
-
-
 Package Manager
 ---------------
 
 While Snow Leopard comes with a large number of UNIX utilities, those
 familiar with Linux systems will notice one key component missing: a
-package manager. Mxcl's *Homebrew* is the answer.
+package manager. Mxcl's `Homebrew <http://mxcl.github.com/homebrew/>`_ is the answer.
 
-To install Homebrew, simply run: ::
+To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_, simply run: ::
 
-    $ ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)"
+    $ ruby -e "$(curl -fsS https://raw.github.com/gist/323731)"
 
 
 It's basic commands are **update**, **install**, and **remove**.
@@ -41,11 +34,10 @@ bugs.
 
 *Don't forget to update your environment PATH.*
 
-
 Building From Source
 --------------------
 
-
+.. todo:: Write "Building From Source"
 
 
 Distribute & Pip
@@ -72,10 +64,6 @@ If you have homebrew: ::
     $ python distribute_setup.py
 
     $ easy_install pip
-
-
-
-To install ``pip``: ::
 
 Hopefully you'll never have to use **easy_install** again.
 
@@ -136,15 +124,11 @@ Older versions of Python aren't available from the official repository. However,
 Installing setuptools and pip
 -----------------------------
 
-While Python has an extensive standard library, the set of packages available from the Internet is even more extensive. In order to install them easily, we'll install the ``setuptools`` package and ``pip`` installer::
-
-.. XXX: sudo?
+While Python has an extensive standard library, the set of packages available from the Internet is even more extensive. In order to install them easily, we'll install the ``distribute`` package and then ``pip``::
 
     $ wget http://python-distribute.org/distribute_setup.py
-    $ python distribute_setup.py
-    $ wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py 
-    $ python get-pip.py
-    $ rm get-pip.py distribute_setup.py
+    $ sudo python distribute_setup.py
+    $ sudo easy_install pip
 
 Now, most Python packages can be installed using the ``pip`` command. For example, if we wanted to install Django::
 

@@ -1,3 +1,4 @@
+================
 Web Applications
 ================
 
@@ -13,7 +14,7 @@ The Web Server Gateway Interface (or "WSGI" for short) is a standard
 interface between web servers and Python web application frameworks. By
 standardizing behavior and communication between web servers and Python web
 frameworks, WSGI makes it possible to write portable Python web code that
-can be deployed in any `WSGI-compliant web server <#servers>`_. WSGI is
+can be deployed in any :ref:`WSGI-compliant web server <wsgi-servers-ref>`. WSGI is
 documented in `PEP-3333 <http://www.python.org/dev/peps/pep-3333/>`_.
 
 
@@ -70,23 +71,52 @@ you may need, such as database access or form generation and validation. For
 many popular modules, `Extensions <http://flask.pocoo.org/extensions/>`_ may
 already exist to suit your needs.
 
+**Support** for flask can best be found in its mailing list. Just shoot an email to 
+flask@librelist.com and reply to the confirmation email.
+
 
 Pyramid
 -------
 
+.. todo:: Explian Pyramid
 
-Servers
-:::::::
+Web.py
+------
 
-Apache + mod_wsgi
------------------
+`web.py <http://webpy.org>`_ is a minimalist web framework that is somewhere between Django and Flask. 
+The premise of web.py is that it is flexible - code your webapp any way you want it, in just python and python alone. 
+web.py comes with some nifty tools built in, like database connection tools and a mini http server.
 
-Apache + mod_python
--------------------
+**Support** for web.py is quite sparse, but you can look for support in the `mailing list <http://groups.google.com/group/webpy>`_ .
 
 
-Nginx + gunicorn
-----------------
+Web Servers
+:::::::::::
+
+Apache
+------
+
+mod_python
+~~~~~~~~~~
+
+For a long period Apache with mod_python was one of the most reccomended
+ways to deploy Python applications and thus you may see many tutorials
+about it on the web or in books, however Apache no longer supports
+mod_python [1]_ and thus this deployment mechanism is strongly discouraged in
+favor of WSGI based ones.
+
+mod_wsgi
+~~~~~~~~
+
+Many improvements have been made with mod_wsgi over mod_python for serving 
+Python with Apache [2]_. If you must run the Apache web server, mod_wsgi is
+your best option for running Python, other than proxying to a dedicated WSGI
+server.
+
+.. _nginx-ref:
+
+Nginx
+-----
 
 `Nginx <http://nginx.org/>`_ (pronounced "engine-x") is a web server and
 reverse-proxy for HTTP, SMTP and other protocols. It is known for its
@@ -95,33 +125,83 @@ application servers (like WSGI servers). It also includes handy features
 like load-balancing, basic authentication, streaming, and others. Designed
 to serve high-load websites, Nginx is gradually becoming quite popular.
 
+Mongrel2
+--------
+
+`Mongrel2 <http://mongrel2.org>`_ is an application, language, and network
+architecture agnostic web server. It uses a high performance queue (zeromq) to
+communicate with your applications, all asynchronously. There is a well defined
+protocol to be used between mongrel2 and a backend handler (your app).
+
+Brubeck
+~~~~~~~
+
+.. todo:: Explain Mongrel2 + Brubeck
+
+wsgid
+~~~~~
+
+`Wsgid <http://wsgid.com>`_ is a generic mongrel2 handler that speaks both
+mongrel2 protocol and WSGI. This makes it possible to run your python webapp
+written with any WSGI compliant framework. Wsgid has built-in Django support but
+has also a generic way to load your WSGI application object directly. It's
+possible to add support for other frameworks through wsgid's pluggable
+Apploading interface.
+
+.. rubric:: Resources
+
+* `Deploying your django application with mongrel2 and wsgid <http://daltonmatos.wordpress.com/2011/11/06/deploying-your-django-application-with-mongrel2-and-wsgid/>`_
+
+.. _wsgi-servers-ref:
+
+WSGI Servers
+::::::::::::
+
+Stand-alone WSGI servers typically use less resources than traditional web 
+servers and provide top performance [3]_.
+
+.. _gunicorn-ref:
+
+gUnicorn
+--------
+
 `gUnicorn <http://gunicorn.org/>`_ (Green Unicorn) is a WSGI server used
 to serve Python applications. It is a Python fork of the Ruby
 `Unicorn <http://unicorn.bogomips.org/>`_ server. gUnicorn is designed to be
 lightweight, easy to use, and uses many UNIX idioms. gUnicorn is not designed
 to face the internet, in fact it was designed to run behind Nginx which buffers
 slow requests, and takes care of other important considerations. A sample
-setup for Nginx + gUnicorn can be found in the gUnicorn
-`help <http://gunicorn.org/deploy.html>`_.
+setup for Nginx + gUnicorn can be found in the
+`gUnicorn help <http://gunicorn.org/deploy.html>`_.
 
-Mongrel2 + Brubeck
-------------------
+.. _uwsgi-ref:
 
+uwsgi
+-----
 
-Mongrel2 + wsgid
-----------------
+`uWSGI <http://projects.unbit.it/uwsgi/>`_ is a fast, self-healing and 
+developer/sysadmin-friendly application container server coded in pure C.
 
-Mongrel2 is an application, language, and network architecture agnostic web server. It uses a high performance queue (zeromq) to communicate
-with your applications, all asynchronously. There is a well defined protocol to be used between mongrel2 and a backend handler (your app).
+Born as a WSGI-only server, over time it has evolved in a complete stack for 
+networked/clustered web applications, implementing message/object passing, 
+caching, RPC and process management.
 
-Wsgid is a generic mongrel2 handler that speaks both mongrel2 protocol and WSGI. This makes it possible to run your python webapp written with any
-WSGI compliant framework. Wsgid has built-in Django support but has also a generic way to load your WSGI application object directly. It's possible
-to add support for other frameworks through wsgid's pluggable Apploading interface.
+Server Best Practices
+:::::::::::::::::::::
 
-To know more about mongrel2 and wsgid go to: http://mongrel2.org and http://wsgid.com
+While Apache will serve your Python application, and many references suggest it,
+modern best practices suggest against it. With the improvements in mod_wsgi over
+mod_python, Apache can handle many more requests than before. However, mod_wsgi
+tends to use more memory than other WSGI solutions [3]_.
 
-There is also a tutorial about deploying Django using this stack: http://daltonmatos.wordpress.com/2011/11/06/deploying-your-django-application-with-mongrel2-and-wsgid/
+The majority of self hosted Python applications today are hosted with a WSGI
+server such as :ref:`uWSGI <uwsgi-ref>` or :ref:`gUnicorn <gunicorn-ref>` behind a 
+lightweight web server such as :ref:`nginx <nginx-ref>` or 
+`lighttpd <http://www.lighttpd.net/>`_.
 
+The WSGI servers serve the Python applications while the web server handles tasks
+better suited for it such as static file serving, request routing, DDoS 
+protection, and basic authentication.
 
 Hosting
 :::::::
@@ -167,8 +247,8 @@ DotCloud
 
 `DotCloud <http://www.dotcloud.com/>`_ supports WSGI applications and
 background/worker tasks natively on their platform. Web applications running
-Python version 2.6, and uses `nginx <http://nginx.org/>`_ and `uWSGI
-<http://projects.unbit.it/uwsgi/>`_, and allows custom configuration of both
+Python version 2.6, and uses :ref:`nginx <nginx-ref>` and :ref:`uWSGI
+<uwsgi-ref>`, and allows custom configuration of both
 for advanced users.
 
 DotCloud uses a custom command-line API client which can work with
@@ -209,12 +289,29 @@ Gondor publishes guides to deploying `Django projects
 Shared Web Hosting
 ------------------
 
+.. todo:: Fill in "Shared Web Hosting" stub
+
 WebFaction
 ~~~~~~~~~~~
 
+`Webfaction <http://www.webfaction.com/>`_ started off as a dedicated python hosting company.
+In fact it used to be called python-hosting.com. Webfaction supports Python versions 2.4 through to 2.7.2
+as well as Python 3 versions. 
+
+Webfaction has a very extensive `user guide <http://docs.webfaction.com/user-guide/>`_ 
+and specific stack (`Django <http://docs.webfaction.com/software/django/index.html> `_, `Pylons <http://docs.webfaction.com/software/pylons.html>`_, 
+`Pyramid <http://docs.webfaction.com/software/pyramid.html>`_, `TurboGears <http://docs.webfaction.com/software/turbogears.html>`_ 
+and `vanilla python <http://docs.webfaction.com/software/python.html>`_) guides.
+It also has a stack-overflow style `community <http://community.webfaction.com/>`_ that is quite useful.
 
 Twisted
 :::::::
 
 
 Node.js.
+
+.. rubric:: References
+
+.. [1] `The mod_python project is now officially dead <http://blog.dscpl.com.au/2010/06/modpython-project-is-now-officially.html>`_
+.. [2] `mod_wsgi vs mod_python <http://www.modpython.org/pipermail/mod_python/2007-July/024080.html>`_
+.. [3] `Benchmark of Python WSGI Servers <http://nichol.as/benchmark-of-python-web-servers>`_

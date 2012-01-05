@@ -11,6 +11,7 @@ The Basics
 
 Code Comments
 -------------
+
 Information regarding code comments is taken from PEP 008 (http://www.python.org/dev/peps/pep-0008/).
 Block comment styling should be used when commenting out multiple lines of code.: ::
 
@@ -34,34 +35,49 @@ Inline comments are used for individual lines and should be used sparingly.: ::
 
 Doc Strings
 -----------
+
 PEP 257 is the primary reference for docstrings. (http://www.python.org/dev/peps/pep-0257/)
-|There are two types of docstrings, one-line and multi-line.  Their names should be fairly self explanatory.
-|One-line docstrings: ::
+
+There are two types of docstrings, one-line and multi-line.  Their names should be fairly self explanatory.
+One-line docstrings: ::
 
     def kos_root():
-    """Return the pathname of the KOS root directory."""
-    global _kos_root
-    if _kos_root: return _kos_root
-    ...
+        """Return the pathname of the KOS root directory."""
+        global _kos_root
+        if _kos_root: return _kos_root
+        ...
 
 Multi-line docstrings: ::
 
     def complex(real=0.0, imag=0.0):
-    """Form a complex number.
+        """Form a complex number.
 
-    Keyword arguments:
-    real -- the real part (default 0.0)
-    imag -- the imaginary part (default 0.0)
+        Keyword arguments:
+        real -- the real part (default 0.0)
+        imag -- the imaginary part (default 0.0)
 
-    """
-    if imag == 0.0 and real == 0.0: return complex_zero
-    ...
+        """
+        if imag == 0.0 and real == 0.0: return complex_zero
+        ...
 
 Sphinx
 ------
-Sphinx (http://sphinx.pocoo.org) is a tool  which converts documentation in the reStructured text markup language into a range of output formats including HTML, LaTeX (for printable PDF versions), manual pages and plain text.
+
+Sphinx_ is a tool which converts documentation in the :ref:`restructuredtext-ref` markup language into a range of output formats including HTML, LaTeX (for printable PDF versions), manual pages and plain text.
+
+.. note:: This Guide is built with Sphinx_
+
+.. _Sphinx: http://sphinx.pocoo.org
+
+.. _restructuredtext-ref:
 
 
+reStructuredText
+----------------
+
+Most Python documentation is written with reStructuredText_. The `reStructuredText Primer <http://sphinx.pocoo.org/rest.html>`_ and the `reStructuredText Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_ should help you familiarize yourself with its syntax.
+
+.. _reStructuredText: http://docutils.sourceforge.net/rst.html
 
 Other Tools
 :::::::::::

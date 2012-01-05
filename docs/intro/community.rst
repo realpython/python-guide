@@ -19,7 +19,7 @@ The mission of the Python Software Foundation is to promote, protect, and advanc
 PEPs
 ----
 
-PEPs are *Python Enhancement Proposals*. They are define change to Python itself, or the standards around it.
+PEPs are *Python Enhancement Proposals*. They describe changes to Python itself, or the standards around it.
 
 There are three different types of PEPs (as defined by `PEP1 <http://www.python.org/dev/peps/pep-0001/>`_):
 
