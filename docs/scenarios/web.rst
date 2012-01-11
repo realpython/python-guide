@@ -78,7 +78,7 @@ flask@librelist.com and reply to the confirmation email.
 Pyramid
 -------
 
-.. todo:: Explian Pyramid
+.. todo:: Explain Pyramid
 
 Web.py
 ------
