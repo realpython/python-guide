@@ -308,7 +308,7 @@ In fact it used to be called python-hosting.com. Webfaction supports Python vers
 as well as Python 3 versions. 
 
 Webfaction has a very extensive `user guide <http://docs.webfaction.com/user-guide/>`_ 
-and specific stack (`Django <http://docs.webfaction.com/software/django/index.html> `_, `Pylons <http://docs.webfaction.com/software/pylons.html>`_, 
+and specific stack (`Django <http://docs.webfaction.com/software/django/index.html>`_, `Pylons <http://docs.webfaction.com/software/pylons.html>`_, 
 `Pyramid <http://docs.webfaction.com/software/pyramid.html>`_, `TurboGears <http://docs.webfaction.com/software/turbogears.html>`_ 
 and `vanilla python <http://docs.webfaction.com/software/python.html>`_) guides.
 It also has a stack-overflow style `community <http://community.webfaction.com/>`_ that is quite useful.
