@@ -236,6 +236,8 @@ Heroku applications at some point.
 Heroku uses a git-based workflow, so it is well-suited for use with
 applications whose source control is managed in a git repository.
 
+Heroku has a free plan with one web process and limited database space.
+
 Heroku publishes `step-by-step instructions
 <http://devcenter.heroku.com/articles/python>`_ on how to set up your first
 application for use in Heroku, and maintains a list of `example applications
