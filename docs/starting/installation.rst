@@ -65,10 +65,6 @@ If you have homebrew: ::
 
     $ easy_install pip
 
-
-
-To install ``pip``: ::
-
 Hopefully you'll never have to use **easy_install** again.
 
 
@@ -93,7 +89,18 @@ Prerequisites:
 * Microsoft Visual Studio
 
 
-Step 1: Install Distribute & Pip
+Step 1: Set PATH variables
+--------------------------
+If you haven't set your PATH variables as part of the Python2.7 install, now is the time to do that.  Right click on My Computer and select properties.
+
+* Click Advanced System Settings from left hand list (Advanced Tab on Windows XP)
+* Click Advanced System Settings from left hand list (On Windows XP click the Advanced Tab)
+* Click the Environment Variables button at the bottom
+* In the System variables section double click on the variable line named Path
+* Scroll to the end of the variable value field
+* add semicolon (;) if one doesn't exist and then type ``C:\Python27\;C:\Python27\Scripts\``
+
+Step 2: Install Distribute & Pip
 --------------------------------
 
 **Distribute** is a fantastic drop-in replacement for **easy_install** and **setuptools**. It allows you to install and manage python packages from PyPi, amongst a few other sources.
@@ -101,13 +108,11 @@ Step 1: Install Distribute & Pip
 To install it, run the python script available here:
   <http://python-distribute.org/distribute_setup.py>
 
-Make sure that ```C:\Python27\```, and  ```C:\Python27\Scripts``` are in your PATH.
-
 **easy_install** is considered by many to be a deprecated system, so we will install it's replacement: **pip**. Pip allows for uninstallation of packages, and is actively maintained, unlike setuptool's easy_install.
 
-To install pip, simply run: ::
+To install pip, simply open a command prompt and run: ::
 
-    $ easy_install pip
+    > easy_install pip
 
 
 Linux (Ubuntu)

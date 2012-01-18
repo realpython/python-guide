@@ -78,7 +78,7 @@ flask@librelist.com and reply to the confirmation email.
 Pyramid
 -------
 
-.. todo:: Explian Pyramid
+.. todo:: Explain Pyramid
 
 Web.py
 ------
@@ -88,6 +88,8 @@ The premise of web.py is that it is flexible - code your webapp any way you want
 web.py comes with some nifty tools built in, like database connection tools and a mini http server.
 
 **Support** for web.py is quite sparse, but you can look for support in the `mailing list <http://groups.google.com/group/webpy>`_ .
+
+
 Web Servers
 :::::::::::
 
@@ -234,6 +236,8 @@ Heroku applications at some point.
 Heroku uses a git-based workflow, so it is well-suited for use with
 applications whose source control is managed in a git repository.
 
+Heroku has a free plan with one web process and limited database space.
+
 Heroku publishes `step-by-step instructions
 <http://devcenter.heroku.com/articles/python>`_ on how to set up your first
 application for use in Heroku, and maintains a list of `example applications
@@ -253,6 +257,9 @@ DotCloud uses a custom command-line API client which can work with
 applications managed in git repositories or any other version control
 system.
 
+DotCloud has a free plan with limited database size, and without extra
+services (caching…).
+
 See the `DotCloud documentation on Python
 <http://docs.dotcloud.com/services/python/>`_ for more information and help
 getting started.
@@ -264,6 +271,10 @@ ep.io
 `ep.io <https://www.ep.io/>`_ is a PaaS designed specifically for Python web
 applications. It supports Python versions 2.6 and 2.7, and has Pythonic
 integrations with a variety of services.
+
+ep.io has a free plan with bandwidth and disk space limitations. Also, in the
+free plan, the web process is only loaded when needed. This means that the
+first request after some inactivity may take up to 15 seconds.
 
 ep.io publishes `step-by-step instructions
 <https://www.ep.io/docs/quickstart/>`_ on how to get started with their
@@ -297,7 +308,7 @@ In fact it used to be called python-hosting.com. Webfaction supports Python vers
 as well as Python 3 versions. 
 
 Webfaction has a very extensive `user guide <http://docs.webfaction.com/user-guide/>`_ 
-and specific stack (`Django <http://docs.webfaction.com/software/django/index.html> `_, `Pylons <http://docs.webfaction.com/software/pylons.html>`_, 
+and specific stack (`Django <http://docs.webfaction.com/software/django/index.html>`_, `Pylons <http://docs.webfaction.com/software/pylons.html>`_, 
 `Pyramid <http://docs.webfaction.com/software/pyramid.html>`_, `TurboGears <http://docs.webfaction.com/software/turbogears.html>`_ 
 and `vanilla python <http://docs.webfaction.com/software/python.html>`_) guides.
 It also has a stack-overflow style `community <http://community.webfaction.com/>`_ that is quite useful.

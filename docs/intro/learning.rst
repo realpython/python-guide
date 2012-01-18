@@ -47,7 +47,7 @@ While exploring the various features available in the python language the author
 patterns and best practices. 
 
 The book also includes several case studies which have the reader explore the topics discussed in the book 
-in greater detail by applying those topics to real-world examples. Case studies include assingments in GUI
+in greater detail by applying those topics to real-world examples. Case studies include assignments in GUI
 and Markov Analysis.
 
     `Think Python <http://greenteapress.com/thinkpython/html/index.html>`_

@@ -223,6 +223,17 @@ IPython
 BPython
 -------
 
+`bpython <http://bpython-interpreter.org/>`_ is an alternative interface to the Python interpreter for Unix-like operating systems. It has the following features:
+
+* In-line syntax highlighting.
+* Readline-like autocomplete with suggestions displayed as you type.
+* Expected parameter list for any Python function.
+* "Rewind" function to pop the last line of code from memory and re-evaluate.
+* Send entered code off to a pastebin.
+* Save entered code to a file.
+* Auto-indentation.
+* Python 3 support.
+
 ::
 
     $ pip install bpython
