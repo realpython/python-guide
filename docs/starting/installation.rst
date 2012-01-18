@@ -92,12 +92,21 @@ Prerequisites:
 Step 1: Set PATH variables
 --------------------------
 If you haven't set your PATH variables as part of the Python2.7 install, now is the time to do that.  Right click on My Computer and select properties.
+<<<<<<< HEAD
 **Windows 7** 
 * Click Advanced System Settings from left hand list (Advanced Tab on Windows XP)
+=======
+
+* Click Advanced System Settings from left hand list (On Windows XP click the Advanced Tab)
+>>>>>>> 8d48118a5f4a1e855614a8862ba0c7d27c78294a
 * Click the Environment Variables button at the bottom
 * In the System variables section double click on the variable line named Path
 * Scroll to the end of the variable value field
 * add semicolon (;) if one doesn't exist and then type ``C:\Python27\;C:\Python27\Scripts\``
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d48118a5f4a1e855614a8862ba0c7d27c78294a
 
 
 Step 2: Install Distribute & Pip
