@@ -93,7 +93,6 @@ Step 1: Set PATH variables
 --------------------------
 If you haven't set your PATH variables as part of the Python2.7 install, now is the time to do that.  Right click on My Computer and select properties.
 
-**Windows 7** 
 * Click Advanced System Settings from left hand list (Advanced Tab on Windows XP)
 * Click Advanced System Settings from left hand list (On Windows XP click the Advanced Tab)
 * Click the Environment Variables button at the bottom
