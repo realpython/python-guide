@@ -1,19 +1,3 @@
-Introduction
-------------
-
-This part of the guide, which is mostly prose, begins with some
-background information about Python, then focuses on next steps.
-
-.. toctree::
-   :maxdepth: 2
-
-   intro/duction
-   intro/community
-   intro/learning
-   intro/documentation
-   intro/news
-
-
 Getting Started
 ---------------
 
@@ -85,6 +69,23 @@ different scenarios.
 Additional Notes
 ----------------
 
+This part of the guide, which is mostly prose, begins with some
+background information about Python, then focuses on next steps.
+
+.. toctree::
+   :maxdepth: 2
+
+   intro/duction
+   intro/community
+   intro/learning
+   intro/documentation
+   intro/news
+
+
+
+
+--------------------------------------
+
 Contibution notes and legal information are here (for those interested).
 
 .. toctree::
@@ -93,3 +94,8 @@ Contibution notes and legal information are here (for those interested).
    notes/contribute
    notes/license
    notes/styleguide
+
+
+
+
+
