@@ -3,12 +3,20 @@ Installing Python on Mac OS X
 
 *Or, "Installing Python 2.7 via Homebrew".*
 
+The latest version of Mac OS X, **comes with Python 2.7 out of the box**.
+
+You do not need to install or configure anything else to use Python. Having said that, I would strongly recommend that you install the tools and libraries described in the next section before you start building Python applications for real-world use. In particular, you should always install Distribute, as it makes it much easier for you to use other third-party Python libraries.
+
+The version of Python that ships with OS X is great for learning, but it's not good for development. It's slightly out of date, and Apple has made significant changes that can cause hidden bugs.
+
 Package Manager
 ---------------
 
-While Lions comes with a large number of UNIX utilities, those
+While Lion comes with a large number of UNIX utilities, those
 familiar with Linux systems will notice one key component missing: a decent
 package manager. `Homebrew <http://mxcl.github.com/homebrew/>`_ fills this void.
+
+First, you'll need to have GCC installed to compile Python. You can either get this from `XCode <http://developer.apple.com/xcode/>`_ or the smaller `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_ package.
 
 To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_, simply run::
 
