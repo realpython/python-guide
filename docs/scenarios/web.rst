@@ -155,20 +155,18 @@ Heroku
 ~~~~~~
 
 `Heroku <http://www.heroku.com/>`_'s
-`Cedar <http://devcenter.heroku.com/articles/cedar>`_ stack supports Python
-web applications running on Python version 2.7. At this time, Cedar is in
-public beta, but it is intended to become the default stack for all new
-Heroku applications at some point.
+`Cedar stack <http://devcenter.heroku.com/articles/cedar>`_ offers first class
+support for Python applications running on 2.7.2.
 
-Heroku uses a git-based workflow, so it is well-suited for use with
-applications whose source control is managed in a git repository.
-
-Heroku has a free plan with one web process and limited database space.
+Heroku allows you to run as many Python web applications as you like, 24/7 and free
+of charge. Heroku is best described as a horizontal scaling platform. They start
+to charge you once you "scale" you application to run on more than one Dyno
+(abstacted servers) at a time.
 
 Heroku publishes `step-by-step instructions
 <http://devcenter.heroku.com/articles/python>`_ on how to set up your first
 application for use in Heroku, and maintains a list of `example applications
-<http://python.herokuapp.com/>`_ using Heroku.
+<http://python.herokuapp.com/>`_.
 
 
 DotCloud
