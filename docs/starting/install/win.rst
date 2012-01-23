@@ -36,7 +36,7 @@ To install pip, simply open a command prompt and run::
 Virtualenv
 ----------
 
-After Distribute & Pip, the next development tool that you should install is `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip:
+After Distribute & Pip, the next development tool that you should install is `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip::
 
     > pip install virtualenv
 
