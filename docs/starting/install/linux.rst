@@ -1,3 +1,5 @@
+.. _install-linux:
+
 Installing Python on Linux
 ==========================
 

@@ -1,3 +1,5 @@
+.. _install-osx:
+
 Installing Python on Mac OS X
 =============================
 

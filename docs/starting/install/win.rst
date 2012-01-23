@@ -1,3 +1,5 @@
+.. _install-windows:
+
 Installing Python on Windows
 ============================
 
