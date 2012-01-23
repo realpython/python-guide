@@ -3,6 +3,8 @@ Installing Python on Linux
 
 The latest version of Ubuntu, **comes with Python 2.7 out of the box**.
 
+You do not need to install or configure anything else to use Python. Having said that, I would strongly recommend that you install the tools and libraries described in the next section before you start building Python applications for real-world use. In particular, you should always install Distribute, as it makes it much easier for you to use other third-party Python libraries.
+
 Distribute & Pip
 ----------------
 
