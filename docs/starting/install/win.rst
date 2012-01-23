@@ -1,5 +1,5 @@
-Windows
-=======
+Installing Python on Windows
+============================
 
 First, download the `latest version <http://python.org/ftp/python/2.7.2/python-2.7.2.msi>`_ of Python 2 from the official Website.
 
