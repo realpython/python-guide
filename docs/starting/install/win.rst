@@ -1,7 +1,7 @@
 Windows
 =======
 
-First, download the `latest version <>`_ of Python 2 from the official Website.
+First, download the `latest version <http://python.org/ftp/python/2.7.2/python-2.7.2.msi>`_ of Python 2 from the official Website.
 
 The Windows version is provided as an MSI package. To install it manually, just double-click the file. The MSI package format allows Windows administrators to automate installation with their standard tools.
 
