@@ -6,30 +6,27 @@ Installing Python on Mac OS X
 Package Manager
 ---------------
 
-While Snow Leopard comes with a large number of UNIX utilities, those
-familiar with Linux systems will notice one key component missing: a
-package manager. Mxcl's `Homebrew <http://mxcl.github.com/homebrew/>`_ is the answer.
+While Lions comes with a large number of UNIX utilities, those
+familiar with Linux systems will notice one key component missing: a decent
+package manager. `Homebrew <http://mxcl.github.com/homebrew/>`_ fills this void.
 
-To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_, simply run: ::
+To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_, simply run::
 
     $ ruby -e "$(curl -fsS https://raw.github.com/gist/323731)"
 
+Then, insert the hombrew directory at the top of your ``PATH`` enviornment variable. You can do this by adding the following line at the bottom of your ``~/.bashrc`` file::
 
-It's basic commands are **update**, **install**, and **remove**.
+    export PATH=/usr/local/bin:$PATH
 
-.. man brew
-
-
-And we can now install Python 2.7: ::
+Now, we can install Python 2.7: ::
 
     $ brew install python --framework
 
+This will take a minute or two. Once that's complete, you'll have to add the new Python scripts directory to your ``PATH``::
 
-The ``--framework`` option tells Homebrew to compile a Framework-style Python build, rather than a UNIX-style build. The outdated version of Python that Snow Leopard comes packaged with
-is built as a Framework, so this helps avoid some future module installation
-bugs.
+    export PATH=$PATH:/usr/local/share/python
 
-*Don't forget to update your environment PATH.*
+The ``--framework`` option tells Homebrew to compile a Framework-style Python build, rather than a UNIX-style build. The outdated version of Python that Snow Leopard comes packaged with is built as a Framework, so this helps avoid some future module installation bugs.
 
 
 Distribute & Pip
@@ -42,8 +39,6 @@ Hombrew already installed Distribute for you. Its ``easy_install`` command is co
 To install pip, simply open a command prompt and run::
 
     $ easy_install pip
-
-
 
 
 Virtualenv
@@ -59,7 +54,11 @@ To set up a new Python environment, change the working directory to where ever y
 
     $ virtualenv --distribute venv
 
-To use an environment, run `source venv/bin/activate``. Your command prompt will change to show the active environment. Once you have finished working in the current virtual environment, run ``deactivate`` to restore your settings to normal.
+To use an environment, run ``source venv/bin/activate``. Your command prompt will change to show the active environment. Once you have finished working in the current virtual environment, run ``deactivate`` to restore your settings to normal.
 
 Each new environment automatically includes a copy of ``pip``, so that you can setup the third-party libraries and tools that you want to use in that environment. Put your own code within a subdirectory of the environment, however you wish. When you no longer need a particular environment, simply copy your code out of it, and then delete the main directory for the environment.
 
+
+--------------------------------
+
+This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_, which is available under the same license.
