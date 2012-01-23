@@ -19,15 +19,6 @@ This part of the guide focuses on setting up your Python environment.
 
 
 
-Development Environment
------------------------
-
-.. toctree::
-   :maxdepth: 2
-
-   dev/env
-   dev/virtualenvs
-
 Writing Great Code
 ------------------
 
@@ -73,6 +64,18 @@ This part of the guide focuses on deploying your Python code.
 
    shipping/packaging
    shipping/freezing
+
+
+Development Environment
+-----------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   dev/env
+   dev/virtualenvs
+
+
 
 
 Additional Notes
