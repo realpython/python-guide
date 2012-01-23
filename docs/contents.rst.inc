@@ -10,8 +10,8 @@ This part of the guide focuses on setting up your Python environment.
 
 - Properly Install Python
 
-   .. toctree::
-      :maxdepth: 1
+.. toctree::
+   :maxdepth: 1
 
    starting/install/osx
    starting/install/win
