@@ -6,11 +6,10 @@ Network Applications
 HTTP
 ::::
 
+The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web.
 
 Requests
 --------
-
-Requests is an ISC Licensed HTTP library, written in Python, for human beings.
 
 Python’s standard urllib2 module provides most of the HTTP capabilities you need, but the API is thoroughly broken. It was built for a different time — and a different web. It requires an enormous amount of work (even method overrides) to perform the simplest of tasks.
 
