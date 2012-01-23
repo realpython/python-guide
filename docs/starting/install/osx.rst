@@ -9,8 +9,10 @@ You do not need to install or configure anything else to use Python. Having said
 
 The version of Python that ships with OS X is great for learning, but it's not good for development. It's slightly out of date, and Apple has made significant changes that can cause hidden bugs.
 
-Package Manager
----------------
+Doing it Right
+--------------
+
+Let's get a real version of Python.
 
 While Lion comes with a large number of UNIX utilities, those
 familiar with Linux systems will notice one key component missing: a decent
