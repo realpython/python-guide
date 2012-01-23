@@ -220,24 +220,6 @@ Gondor publishes guides to deploying `Django projects
 <https://gondor.io/support/setting-up-django/>`_ and `Pinax projects
 <https://gondor.io/support/setting-up-pinax/>`_ on their platform.
 
-Shared Web Hosting
-------------------
-
-.. todo:: Fill in "Shared Web Hosting" stub
-
-WebFaction
-~~~~~~~~~~~
-
-`Webfaction <http://www.webfaction.com/>`_ started off as a dedicated python hosting company.
-In fact it used to be called python-hosting.com. Webfaction supports Python versions 2.4 through to 2.7.2
-as well as Python 3 versions.
-
-Webfaction has a very extensive `user guide <http://docs.webfaction.com/user-guide/>`_
-and specific stack (`Django <http://docs.webfaction.com/software/django/index.html>`_, `Pylons <http://docs.webfaction.com/software/pylons.html>`_,
-`Pyramid <http://docs.webfaction.com/software/pyramid.html>`_, `TurboGears <http://docs.webfaction.com/software/turbogears.html>`_
-and `vanilla python <http://docs.webfaction.com/software/python.html>`_) guides.
-It also has a stack-overflow style `community <http://community.webfaction.com/>`_ that is quite useful.
-
 
 .. rubric:: References
 
