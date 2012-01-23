@@ -28,7 +28,7 @@ To obtain the latest version of Distribute for Windows, run the python script av
 
 You'll now have a new command available to you: **easy_install**. It is considered by many to be deprecated, so we will install its replacement: **pip**. Pip allows for uninstallation of packages, and is actively maintained, unlike easy_install.
 
-To install pip, simply open a command prompt and run: ::
+To install pip, simply open a command prompt and run::
 
     > easy_install pip
 
@@ -38,12 +38,12 @@ Virtualenv
 
 After Distribute & Pip, the next development tool that you should install is `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip:
 
-    > pip virtualenv
+    > pip install virtualenv
 
 The virtualenv kit provides the ability to create virtual Python environments that do not interfere with either each other, or the main Python installation. If you install virtualenv before you begin coding then you can get into the habit of using it to create completely clean Python environments for each project. This is particularly important for Web development, where each framework and application will have many dependencies.
 
 
-To set up a new Python environment, change the working directory to where ever you want to store the environment, and run the virtualenv utility in your project's directory:
+To set up a new Python environment, change the working directory to where ever you want to store the environment, and run the virtualenv utility in your project's directory::
 
     > virtualenv --distribute venv
 
