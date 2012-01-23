@@ -44,6 +44,7 @@ different scenarios.
 .. toctree::
    :maxdepth: 2
 
+   scenarios/client
    scenarios/web
    scenarios/cli
    scenarios/gui
