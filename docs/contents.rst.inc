@@ -7,7 +7,16 @@ This part of the guide focuses on setting up your Python environment.
    :maxdepth: 2
 
    starting/which-python
-   starting/installation
+
+- Properly Install Python
+
+   .. toctree::
+      :maxdepth: 1
+
+      starting/install/osx
+      starting/install/win
+      starting/install/linux
+
 
 
 Development Environment
