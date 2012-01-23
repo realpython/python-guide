@@ -35,6 +35,25 @@ This part of the guide focuses on best practices for writing Python code.
 
 
 
+Scenario Guide
+--------------
+
+This part of the guide focuses on tool and module advice based on
+different scenarios.
+
+.. toctree::
+   :maxdepth: 2
+
+   scenarios/web
+   scenarios/cli
+   scenarios/gui
+   scenarios/db
+   scenarios/admin
+   scenarios/ci
+   scenarios/speed
+   scenarios/scientific
+
+
 Shipping Great Code
 -------------------
 
@@ -45,25 +64,6 @@ This part of the guide focuses on deploying your Python code.
 
    shipping/packaging
    shipping/freezing
-
-
-Scenario Guide
---------------
-
-This part of the guide focuses on tool and module advice based on
-different scenarios.
-
-.. toctree::
-   :maxdepth: 2
-
-   scenarios/cli
-   scenarios/gui
-   scenarios/web
-   scenarios/db
-   scenarios/admin
-   scenarios/ci
-   scenarios/speed
-   scenarios/scientific
 
 
 Additional Notes
