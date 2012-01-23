@@ -156,7 +156,7 @@ Heroku
 
 `Heroku <http://www.heroku.com/>`_'s
 `Cedar stack <http://devcenter.heroku.com/articles/cedar>`_ offers first class
-support for Python applications running on 2.7.2.
+support for Python 2.7 applications.
 
 Heroku allows you to run as many Python web applications as you like, 24/7 and free
 of charge. Heroku is best described as a horizontal scaling platform. They start
