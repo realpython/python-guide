@@ -42,6 +42,14 @@ Matplotlib
 
 .. todo:: write about matplotlib.
 
+PyQwt
+-----
+
+`PyQwt <http://pyqwt.sourceforge.net/>`_ is a solid library for plotting
+numerical data.  It is built on top of the popular `PyQt <http://www.riverbankcomputing.co.uk/software/pyqt/intro>`_ GUI framework.
+It typically has better performance than matplotlib, but the range of built-in
+chart/plot types is slightly smaller than matplotlib.
+
 Resources
 :::::::::
 
