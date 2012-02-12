@@ -1,17 +1,17 @@
 Virtual Environments
 ====================
 
-A Virtual Environment, put simply, is an isolated working copy of Python which 
-allows you to work on a specific project without worry of affecting other 
+A Virtual Environment, put simply, is an isolated working copy of Python which
+allows you to work on a specific project without worry of affecting other
 projects.
 
-For example, you can work on a project which requires Django 1.3 while also 
+For example, you can work on a project which requires Django 1.3 while also
 maintaining a project which requires Django 1.0.
 
 virtualenv
 ----------
 
-`virtualenv <http://pypi.python.org/pypi/virtualenv>`_ is a tool to create 
+`virtualenv <http://pypi.python.org/pypi/virtualenv>`_ is a tool to create
 isolated Python environments.
 
 Install it via pip:
@@ -29,7 +29,7 @@ Basic Usage
 
    $ virtualenv venv
 
-This creates a copy of Python in whichever directory you ran the command in, 
+This creates a copy of Python in whichever directory you ran the command in,
 placing it in a folder named ``venv``.
 
 2. To begin using the virtual environment, it needs to be activated:
@@ -38,30 +38,30 @@ placing it in a folder named ``venv``.
 
    $ source venv/bin/activate
 
-You can then begin installing any new modules without affecting the system 
+You can then begin installing any new modules without affecting the system
 default Python or other virtual environments.
 
-3. If you are done working in the virtual environment for the moment, you can 
+3. If you are done working in the virtual environment for the moment, you can
    deactivate it:
 
 .. code-block:: console
 
    $ deactivate
 
-This puts you back to the system's default Python interpreter with all its 
+This puts you back to the system's default Python interpreter with all its
 installed libraries.
 
 To delete a virtual environment, just delete its folder.
 
-After a while, though, you might end up with a lot of virtual environments 
-littered across your system, and its possible you'll forget their names or 
-where they were placed. 
+After a while, though, you might end up with a lot of virtual environments
+littered across your system, and its possible you'll forget their names or
+where they were placed.
 
 virtualenvwrapper
 -----------------
 
-`virtualenvwrapper <http://www.doughellmann.com/projects/virtualenvwrapper/>`_ 
-provides a set of commands which makes working with virtual environments much 
+`virtualenvwrapper <http://www.doughellmann.com/projects/virtualenvwrapper/>`_
+provides a set of commands which makes working with virtual environments much
 more pleasant. It also places all your virtual environments in one place.
 
 To install (make sure **virtualenv** is already installed):
@@ -74,6 +74,17 @@ To install (make sure **virtualenv** is already installed):
 
 (`Full virtualenvwrapper install instructions <http://www.doughellmann.com/docs/virtualenvwrapper/#introduction>`_.)
 
+For Windows, you can use the `virtualenvwrapper-powershell <https://bitbucket.org/guillermooo/virtualenvwrapper-powershell>`_ clone.
+
+To install (make sure **virtualenv** is already installed):
+
+.. code-block:: console
+
+  PS> pip install virtualenvwrapper-powershell
+  PS> $env:WORKON_HOME="~/Envs"
+  PS> mkdir $env:WORKON_HOME
+  PS> import-module virtualenvwrapper
+
 Basic Usage
 ~~~~~~~~~~~
 
@@ -83,7 +94,7 @@ Basic Usage
 
    $ mkvirtualenv venv
 
-This creates the ``venv`` folder inside ``~/Envs``. 
+This creates the ``venv`` folder inside ``~/Envs``.
 
 2. Work on a virtual environment:
 
@@ -91,10 +102,10 @@ This creates the ``venv`` folder inside ``~/Envs``.
 
    $ workon venv
 
-**virtualenvwrapper** provides tab-completion on environment names. It really 
-helps when you have a lot of environments and have trouble remembering their 
-names. 
-``workon`` also deactivates whatever environment you are currently in, so you 
+**virtualenvwrapper** provides tab-completion on environment names. It really
+helps when you have a lot of environments and have trouble remembering their
+names.
+``workon`` also deactivates whatever environment you are currently in, so you
 can quickly switch between environments.
 
 3. Deactivating is still the same:
@@ -116,8 +127,8 @@ Other useful commands
   List all of the environments.
 
 ``cdvirtualenv``
-  Navigate into the directory of the currently activated virtual environment, 
-  so you can browse its ``site-packages``, for example. 
+  Navigate into the directory of the currently activated virtual environment,
+  so you can browse its ``site-packages``, for example.
 
 ``cdsitepackages``
   Like the above, but directly into ``site-packages`` directory.
