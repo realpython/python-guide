@@ -53,6 +53,7 @@ different scenarios.
    scenarios/ci
    scenarios/speed
    scenarios/scientific
+   scenarios/imaging
 
 
 Shipping Great Code
