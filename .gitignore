@@ -1,2 +1,9 @@
 docs/_build
 .idea
+
+# Ignore irrelevant files from the Sublime Text editor
+*.sublime-workspace
+*.sublime-project
+
+# Ignore .hgignore for contributors using Mercurial.
+.hgignore
