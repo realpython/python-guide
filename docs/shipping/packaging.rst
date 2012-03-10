@@ -3,7 +3,7 @@ Packaging Your Code
 
 Packaging your code is important.
 
-.. todo:: Write introduction for "Packaging Your Code"
+You'll need to package your code first before sharing it with other developers.
 
 For Python Developers
 :::::::::::::::::::::
@@ -60,7 +60,10 @@ Chishop
 For Linux Distributions
 ::::::::::::::::::::::::
 
-.. todo:: Fill in "For Linux Distributions" packaging stub
+`Ubuntu <https://wiki.ubuntu.com/PackagingGuide/Python>`_
+`Fedora <https://fedoraproject.org/wiki/Packaging:Python>`_
+`Debian <http://www.debian.org/doc/packaging-manuals/python-policy/>`_
+`Arch <https://wiki.archlinux.org/index.php/Python_Package_Guidelines>`_
 
 Useful Tools
 ------------
