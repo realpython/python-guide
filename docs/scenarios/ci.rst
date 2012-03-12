@@ -35,3 +35,9 @@ It is a generic virtualenv management and test command line tool which provides 
 * Checking that packages install correctly with different Python versions and interpreters
 * Running tests in each of the environments, configuring your test tool of choice
 * Acting as a frontend to Continuous Integration servers, reducing boilerplate and merging CI and shell-based testing.
+
+
+Travis-CI
+---------
+
+.. todo:: Write about travis-ci
