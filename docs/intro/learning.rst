@@ -53,6 +53,24 @@ and Markov Analysis.
     `Think Python <http://greenteapress.com/thinkpython/html/index.html>`_
 
 
+Python Koans 
+~~~~~~~~~~~~
+
+Python Koans is a port of Edgecase's Ruby Koans.  It uses a test-driven approach, q.v. TEST DRIVEN DESIGN SECTION
+to provide an interactive
+tutorial teaching basic python concepts.  By fixing assertion statements that fail in a test script, this
+provides sequential steps to learning python.  
+
+For those used to languages and figuring out puzzles on their own, this can be a fun, attractive option.
+For those new to python and programming, having an additional resource or reference will be helpful.
+
+    `Python Koans <http://bitbucket.org/mcrute/python_koans>`_
+
+More information about test driven development can be found at these resources:
+
+    `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`
+
+
 Advanced
 --------
 
