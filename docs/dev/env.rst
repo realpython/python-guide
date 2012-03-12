@@ -82,6 +82,7 @@ PyCharm / IntelliJ IDEA
 
 `PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also known for IntelliJ IDEA. Both share the same code base and most of PyCharm's features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
 
+
 Eclipse
 -------
 
@@ -94,6 +95,7 @@ Komodo IDE
 `Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by ActiveState and is a commerical IDE for Windows, Mac
 and Linux.
 
+
 Spyder
 ------
 
@@ -103,6 +105,11 @@ and `rope <http://rope.sourceforge.net/>`_.
 
 Spyder is open-source (free), offers code completion, syntax highlighting, class and function browser, and object inspection.
 
+
+WingIDE
+-------
+
+`WingIDE <http://wingware.com/>`_ a python specific IDE.   Runs for Linux, Windows, and Mac (as on X11 application, which frustrates some Mac users).  
 
 
 Interpreter Tools
