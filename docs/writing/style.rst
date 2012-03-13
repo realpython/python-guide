@@ -38,8 +38,10 @@ Also known as PEP 20, the guiding principles for Python's design.
     If the implementation is easy to explain, it may be a good idea.
     Namespaces are one honking great idea -- let's do more of those!
 
-See `<http://stackoverflow.com/questions/228181/the-zen-of-python>`_ for some
-examples.
+For some examples of good Python style, see `this Stack Overflow question
+<http://stackoverflow.com/questions/228181/the-zen-of-python>`_ or `these
+slides from a Python user group
+<http://artifex.org/~hblanks/talks/2011/pep20_by_example.pdf>`_.
 
 PEP 8
 -----
@@ -48,16 +50,17 @@ PEP 8 is the de-facto code style guide for Python.
 
     `PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_
 
-There exists a command-line program, `pep8` that can check your code for
-conformance.
+Conforming your Python code to PEP 8 is generally a good idea and helps make
+code more consistent when working on projects with other developers. There
+exists a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
+that can check your code for conformance.
 
 ::
 
-    pip install pep8
+    $ pip install pep8
 
 
-Simply run it on a file or series of files and get a report of any
-violations
+Simply run it on a file or series of files to get a report of any violations.
 
 ::
 
@@ -71,5 +74,3 @@ violations
     optparse.py:472:29: E221 multiple spaces before operator
     optparse.py:544:21: W601 .has_key() is deprecated, use 'in'
 
-Conforming your style to PEP 8 is generally a good idea and helps make code a lot
-more consistent when working on projects with other developers.
