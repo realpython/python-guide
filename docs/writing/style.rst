@@ -53,14 +53,15 @@ PEP 8 is the de-facto code style guide for Python.
 Conforming your Python code to PEP 8 is generally a good idea and helps make
 code more consistent when working on projects with other developers. There
 exists a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
-that can check your code for conformance.
+that can check your code for conformance. Install it by running the following
+command in your Terminal:
 
 ::
 
     $ pip install pep8
 
 
-Simply run it on a file or series of files to get a report of any violations.
+Then run it on a file or series of files to get a report of any violations.
 
 ::
 
