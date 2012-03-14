@@ -25,4 +25,8 @@ database-agnostic code without SQL.
 Django ORM
 ----------
 
-.. todo:: Explain Django ORM
+The Django ORM is the interface used by `Django <http://www.djangoproject.com>`_ to provide database access.
+
+It's based on the idea of models, an abstraction that makes it easier to manipulate data in Python.
+
+Documentation can be found `here <https://docs.djangoproject.com/en/1.3/#the-model-layer>`_
