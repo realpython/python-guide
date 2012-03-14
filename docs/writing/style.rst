@@ -3,9 +3,67 @@ Code Style
 
 
 Idioms
-::::::
+------
 
-Idiomatic Python code is often referred to as being *pythonic*.
+Idiomatic Python code is often referred to as being *Pythonic*.
+
+.. _unpacking-ref:
+
+Unpacking
+~~~~~~~~~
+
+If you know the length of a list or tuple, you can assign names to its
+elements with unpacking:
+
+.. code-block:: python
+
+    for index, item in enumerate(some_list):
+        # do something with index and item
+
+You can use this to swap variables, as well:
+
+.. code-block:: python
+
+    a, b = b, a
+
+Create an ignored variable
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you need to assign something (for instance, in :ref:`unpacking-ref`) but
+will not need that variable, use ``_``:
+
+.. code-block:: python
+
+    filename = 'foobar.txt'
+    basename, _, ext = filename.rpartition()
+
+.. note::
+
+   "``_``" is commonly used as an alias for the :func:`~gettext.gettext`
+   function. If your application uses (or may someday use) :mod:`gettext`,
+   you may want to avoid using ``_`` for ignored variables, as you may
+   accidentally shadow :func:`~gettext.gettext`.
+
+Create a length-N list of the same thing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Use the Python list ``*`` operator:
+
+.. code-block:: python
+
+    four_nones = [None] * 4
+
+Create a length-N list of lists
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Because lists are mutable, the ``*`` operator (as above) will create a list
+of N references to the `same` list, which is not likely what you want.
+Instead, use a list comprehension:
+
+.. code-block:: python
+
+    four_lists = [[] for _ in xrange(4)]
+
 
 
 Zen of Python
