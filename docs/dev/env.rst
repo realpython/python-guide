@@ -12,10 +12,12 @@ however, using a more powerful editor may make your life a bit easier.
 VIM
 ---
 
-
-There exist a couple of plugins and settings for the VIM editor to aid python
-development. If you only develop in Python, a good start is to set the default
-settings for indentation and linewrapping to values compliant with PEP8::
+Vim is a text editor which uses keyboard shortcuts for editing instead of menus
+or icons. There exist a couple of plugins and settings for the VIM editor to
+aid python development. If you only develop in Python, a good start is to set
+the default settings for indentation and linewrapping to values compliant with
+`PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_. In your home directory,
+open a file called `.vimrc` and add the following lines: ::
 
     set textwidth=79
     set shiftwidth=4
@@ -24,25 +26,26 @@ settings for indentation and linewrapping to values compliant with PEP8::
     set softtabstop=4
     set shiftround
 
-With these settings newlines are inserted after 79  characters and indentation
+With these settings, newlines are inserted after 79 characters and indentation
 is set to 4 spaces per tab. If you also use VIM for other languages, there is a
 handy plugin at indent_, which handles indentation settings for python source
 files.
-Additionally there is also a handy syntax plugin at syntax_ featuring some
-improvements over the syntax file included in VIM 6.1.
+
+There is also a handy syntax plugin at syntax_ featuring some improvements over
+the syntax file included in VIM 6.1.
 
 These plugins supply you with a basic environment for developing in Python.
-However in order to improve the programming flow we also want to continually
-check for PEP8 compliance and check syntax. Luckily there exist PEP8_ and
-Pyflakes_ to do this for you. If your VIM is compiled with `+python` you can
-also utilize some very handy plugins to do these checks from within the editor.
-For PEP8 checking install vim-pep8_. Now you can map the vim function
-`Pep8()` to any hotkey or action you want. Similarly for pyflakes you can
-install vim-pyflakes_. Now you can map `Pyflakes()` like the PEP8 function and
-have it called quickly. Both plugins will display errors in a quickfix list and
-provide an easy way to jump to the corresponding line. A very handy setting is
-calling these functions whenever a buffer is saved. In order to do this, enter
-the following lines into your vimrc::
+To get the most out of Vim, you should continually check your code for syntax
+errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
+If your VIM is compiled with `+python` you can also utilize some very handy
+plugins to do these checks from within the editor.
+
+For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
+install vim-pyflakes_. Now you can map the functions `Pep8()` or `Pyflakes()`
+to any hotkey or action you want in Vim. Both plugins will display errors at
+the bottom of the screen, and provide an easy way to jump to the corresponding
+line. It's very handy to call these functions whenever you save a file. In
+order to do this, add the following lines to your `vimrc`::
 
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
@@ -92,7 +95,7 @@ The most popular Eclipse plugin for Python development is Aptana's
 
 Komodo IDE
 -----------
-`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by ActiveState and is a commerical IDE for Windows, Mac
+`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by ActiveState and is a commercial IDE for Windows, Mac
 and Linux.
 
 
@@ -109,7 +112,7 @@ Spyder is open-source (free), offers code completion, syntax highlighting, class
 WingIDE
 -------
 
-`WingIDE <http://wingware.com/>`_ a python specific IDE.   Runs for Linux, Windows, and Mac (as on X11 application, which frustrates some Mac users).  
+`WingIDE <http://wingware.com/>`_ a python specific IDE.   Runs for Linux, Windows, and Mac (as an X11 application, which frustrates some Mac users).
 
 
 Interpreter Tools

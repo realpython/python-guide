@@ -1,7 +1,7 @@
 Documenting Your Code
 =====================
 
-Documenting your code is extremely important. It is debatebly even
+Documenting your code is extremely important. It is debatably even
 more important than testing.
 
 
