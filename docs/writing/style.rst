@@ -96,8 +96,10 @@ Also known as PEP 20, the guiding principles for Python's design.
     If the implementation is easy to explain, it may be a good idea.
     Namespaces are one honking great idea -- let's do more of those!
 
-See `<http://stackoverflow.com/questions/228181/the-zen-of-python>`_ for some
-examples.
+For some examples of good Python style, see `this Stack Overflow question
+<http://stackoverflow.com/questions/228181/the-zen-of-python>`_ or `these
+slides from a Python user group
+<http://artifex.org/~hblanks/talks/2011/pep20_by_example.pdf>`_.
 
 PEP 8
 -----
@@ -106,16 +108,18 @@ PEP 8 is the de-facto code style guide for Python.
 
     `PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_
 
-There exists a command-line program, `pep8` that can check your code for
-conformance.
+Conforming your Python code to PEP 8 is generally a good idea and helps make
+code more consistent when working on projects with other developers. There
+exists a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
+that can check your code for conformance. Install it by running the following
+command in your Terminal:
 
 ::
 
-    pip install pep8
+    $ pip install pep8
 
 
-Simply run it on a file or series of files and get a report of any
-violations
+Then run it on a file or series of files to get a report of any violations.
 
 ::
 
@@ -129,5 +133,175 @@ violations
     optparse.py:472:29: E221 multiple spaces before operator
     optparse.py:544:21: W601 .has_key() is deprecated, use 'in'
 
-Conforming your style to PEP 8 is generally a good idea and helps make code a lot
-more consistent when working on projects with other developers.
+Conventions
+:::::::::::
+
+Here are some conventions you should follow to make your code easier to read.
+
+Check if variable equals a constant
+-----------------------------------
+
+You don't need to explicitly compare a value to True, or None, or 0 - you can
+just add it to the if statement.
+
+**Bad**:
+
+.. code-block:: python
+
+    if attr == True:
+        print 'True!'
+
+    if attr == None:
+        print 'attr is None!'
+
+**Good**:
+
+.. code-block:: python
+
+    # Just check the value
+    if attr:
+        print 'True!'
+
+    # or check for the opposite
+    if not attr:
+        print 'attr is None!'
+
+Access a Dictionary Element
+---------------------------
+
+Don't use the ``has_key`` function. Instead use ``x in d`` syntax, or pass
+a default argument to ``get``.
+
+**Bad**:
+
+.. code-block:: python
+
+    d = {'hello': 'world'}
+    if d.has_key('hello'):
+        print d['hello']    # prints 'world'
+    else:
+        print 'default_value'
+
+**Good**:
+
+.. code-block:: python
+
+    d = {'hello': 'world'}
+
+    print d.get('hello', 'default_value') # prints 'world'
+    print d.get('thingy', 'default_value') # prints 'default_value'
+
+    # Or:
+    if 'hello' in d:
+        print d['hello']
+
+Short Ways to Manipulate Lists
+------------------------------
+
+`List comprehensions
+<http://docs.python.org/tutorial/datastructures.html#list-comprehensions>`_
+provide a powerful, concise way to work with lists. Also, the `map
+<http://docs.python.org/library/functions.html#map>`_ and `filter
+<http://docs.python.org/library/functions.html#filter>`_ functions can perform
+operations on lists using a different concise syntax.
+
+**Bad**:
+
+.. code-block:: python
+
+    # Filter elements less than 5
+    a = [3, 4, 5]
+    b = []
+    for i in a:
+        if a > 4:
+            b.append(a)
+
+**Good**:
+
+.. code-block:: python
+
+    b = [i for i in a if i > 4]
+    b = filter(lambda x: x > 4, a)
+
+**Bad**:
+
+.. code-block:: python
+
+    # Add three to all list members.
+    a = [3, 4, 5]
+    count = 0
+    for i in a:
+        a[count] = i + 3
+        count = count + 1
+
+**Good**:
+
+.. code-block:: python
+
+    a = [3, 4, 5]
+    a = [i + 3 for i in a]
+    # Or:
+    a = map(lambda i: i + 3, a)
+
+Use `enumerate <http://docs.python.org/library/functions.html#enumerate>`_ to
+keep a count of your place in the list.
+
+.. code-block:: python
+
+    for i, item in a:
+        print i + ", " + item
+    # prints 
+    # 0, 3
+    # 1, 4
+    # 2, 5
+
+Read From a File
+----------------
+
+Use the ``with open`` syntax to read from files. This will automatically close
+files for you.
+
+**Bad**:
+
+.. code-block:: python
+
+    f = open('file.txt')
+    a = f.read()
+    print a
+    f.close()
+
+**Good**:
+
+.. code-block:: python
+
+    with open('file.txt') as f:
+        for line in f:
+            print line
+
+Returning Multiple Values from a Function
+-----------------------------------------
+
+Python supports returning multiple values from a function as a comma-separated
+list, so you don't have to create an object or dictionary and pack multiple
+values in before you return
+
+**Bad**:
+
+.. code-block:: python
+
+    def math_func(a):
+        return {'square': a ** 2, 'cube': a ** 3}
+
+    d = math_func(3)
+    s = d['square']
+    c = d['cube']
+
+**Good**:
+
+.. code-block:: python
+
+    def math_func(a):
+        return a ** 2, a ** 3
+
+    square, cube = math_func(3)
+
