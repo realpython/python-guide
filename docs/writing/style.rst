@@ -162,7 +162,7 @@ list of what is considered false.
 
     # Just check the value
     if attr:
-        print 'atter is truthy!'
+        print 'attr is truthy!'
 
     # or check for the opposite
     if not attr:
