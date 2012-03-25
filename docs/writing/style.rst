@@ -142,7 +142,9 @@ Check if variable equals a constant
 -----------------------------------
 
 You don't need to explicitly compare a value to True, or None, or 0 - you can
-just add it to the if statement.
+just add it to the if statement. See `Truth Value Testing
+<http://docs.python.org/library/stdtypes.html#truth-value-testing>`_ for a
+list of what is considered false.
 
 **Bad**:
 
@@ -160,10 +162,14 @@ just add it to the if statement.
 
     # Just check the value
     if attr:
-        print 'True!'
+        print 'attr is truthy!'
 
     # or check for the opposite
     if not attr:
+        print 'attr is falsey!'
+
+    # or, since None is considered false, explicity check for it
+    if attr is None:
         print 'attr is None!'
 
 Access a Dictionary Element
