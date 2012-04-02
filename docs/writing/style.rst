@@ -219,8 +219,8 @@ operations on lists using a different concise syntax.
     a = [3, 4, 5]
     b = []
     for i in a:
-        if a > 4:
-            b.append(a)
+        if i > 4:
+            b.append(i)
 
 **Good**:
 
