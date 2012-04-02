@@ -20,7 +20,7 @@ While Lion comes with a large number of UNIX utilities, those familiar with Linu
 
 To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_, simply run::
 
-    $ ruby -e "$(curl -fsS https://raw.github.com/gist/323731)"
+    $ ruby -e "$(curl -fsS https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
 Then, insert the hombrew directory at the top of your ``PATH`` enviornment variable. You can do this by adding the following line at the bottom of your ``~/.bashrc`` file::
 
