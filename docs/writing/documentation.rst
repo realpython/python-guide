@@ -85,7 +85,7 @@ Other Tools
 that old thing
 --------------
 
-pocco / docco / shocco
+pycco / docco / shocco
 ----------------------
 
 Ronn
