@@ -215,12 +215,12 @@ operations on lists using a different concise syntax.
 
 .. code-block:: python
 
-    # Filter elements less than 5
+    # Filter elements greater than 4
     a = [3, 4, 5]
     b = []
     for i in a:
-        if a > 4:
-            b.append(a)
+        if i > 4:
+            b.append(i)
 
 **Good**:
 
@@ -256,7 +256,7 @@ keep a count of your place in the list.
 
     for i, item in enumerate(a):
         print i + ", " + item
-    # prints 
+    # prints
     # 0, 3
     # 1, 4
     # 2, 5
