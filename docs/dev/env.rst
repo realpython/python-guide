@@ -213,6 +213,23 @@ This will prevent your virtualenvs from relying on your (global) site packages d
 Other Tools
 :::::::::::
 
+IDLE
+----
+
+`IDLE <http://docs.python.org/library/idle.html>`_ is an integrated
+development environment that is part of Python standard library. It is
+completely written in Python and uses Tkinter GUI toolkit. Though IDLE
+is not suited for full-blown development using Python , it is quite
+helpful to try out small Python snippets and experiment with different
+features in Python.
+
+It provides following features:
+
+* Python Shell Window (interpreter)
+* Multi window text editor that colorizes Python code
+* Minimal debugging facility
+
+
 IPython
 -------
 
@@ -247,5 +264,4 @@ BPython
 ::
 
     $ pip install bpython
-
 
