@@ -81,5 +81,16 @@ Pro Python
 
 Expert Python Programming
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+Expert Python Programming deals with best practices in programming Python and
+is focused on the more advanced crowd.
 
-.. todo:: Write about `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
+It starts with topics like decorators (with caching, proxy, and context manager
+case-studies), method resolution order, using super() and meta-programming, and
+general PEP8 best practices.
+
+It has a detailed, multi-chapter case study on writing and releasing a package
+and eventually an application, including a chapter on using zc.buildout.  Later
+chapters detail best practices with writing documentation, test-driven
+development, version control, and optimization/profiling.
+
+    `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
