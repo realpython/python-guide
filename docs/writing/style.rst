@@ -261,6 +261,9 @@ keep a count of your place in the list.
     # 1, 4
     # 2, 5
 
+The ``enumerate`` function has better readability than handling a counter manually. Moreover,
+it is better optimized for iterators.
+
 Read From a File
 ----------------
 
@@ -283,6 +286,9 @@ files for you.
     with open('file.txt') as f:
         for line in f:
             print line
+
+The ``with`` statement is better because it will ensure you always close the file,
+even if an exception is raised.
 
 Returning Multiple Values from a Function
 -----------------------------------------
