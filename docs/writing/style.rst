@@ -317,3 +317,40 @@ values in before you return
 
     square, cube = math_func(3)
 
+Line Continuations
+~~~~~~~~~~~~~~~~~~
+
+When a logical line of code is longer than the accepted limit, you need to split it over multiple
+physical lines. Python interpreter will join consecutive lines if the last character of the line is
+a backslash. This is helpful sometime but is preferably avoided, because of its fragility: a white
+space added to the end of the line, after the backslash, will break the code and may have unexpected
+results.
+
+A prefered solution is to use parenthesis around your elements. Left with an unclosed parenthesis on an end-of-line
+the Python interpreter will join the next line until the parenthesis is closed. The same behavior holds for
+curly and square braces.
+
+**Bad**:
+
+.. code-block:: python
+
+    my_very_big_string = """For a long time I used to go to bed early. Sometimes, \
+        when I had put out my candle, my eyes would close so quickly that I had not even \
+        time to say “I’m going to sleep.”"""
+
+    from some.deep.module.inside.a.module import a_nice_function, another_nice_function, \
+        yet_another_nice_functio
+
+**Good**:
+
+.. code-block:: python
+
+    my_very_big_string = ("For a long time I used to go to bed early. Sometimes, "
+        "when I had put out my candle, my eyes would close so quickly that I had not even "
+        time to say “I’m going to sleep.”")
+
+    from some.deep.module.inside.a.module import (a_nice_function, another_nice_function,
+                                                  yet_another_nice_functio)
+
+However, more often than not having to split long logical line is a sign that you
+are trying to do too many things at the same time, which may hinder readability.
