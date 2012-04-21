@@ -190,24 +190,6 @@ See the `DotCloud documentation on Python
 getting started.
 
 
-ep.io
-~~~~~
-
-`ep.io <https://www.ep.io/>`_ is a PaaS designed specifically for Python web
-applications. It supports Python versions 2.6 and 2.7, and has Pythonic
-integrations with a variety of services.
-
-ep.io has a free plan with bandwidth and disk space limitations. Also, in the
-free plan, the web process is only loaded when needed. This means that the
-first request after some inactivity may take up to 15 seconds.
-
-ep.io publishes `step-by-step instructions
-<https://www.ep.io/docs/quickstart/>`_ on how to get started with their
-platform and how to deploy Django, Flask, or generic WSGI applications.
-
-ep.io is currently in invite-only beta.
-
-
 Gondor
 ~~~~~~
 
