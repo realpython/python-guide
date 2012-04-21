@@ -33,7 +33,7 @@ Inline comments are used for individual lines and should be used sparingly.: ::
     But sometimes, this is useful: ::
         x = x + 1                 # Compensate for border
 
-Doc Strings
+Docstrings
 -----------
 
 PEP 257 is the primary reference for docstrings. (http://www.python.org/dev/peps/pep-0257/)
