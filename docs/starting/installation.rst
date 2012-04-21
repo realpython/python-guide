@@ -8,7 +8,7 @@ If so, you do not need to install or configure anything else to use Python. Havi
 Installation Guides
 -------------------
 
-These guides go over the proper installation of :ref:`Python 2.7 <which-python>` for development purproses, as well as distribute, pip, and virtualenv setup.
+These guides go over the proper installation of :ref:`Python 2.7 <which-python>` for development purposes, as well as distribute, pip, and virtualenv setup.
 
 - :ref:`Mac OS X <install-osx>`.
 - :ref:`Microsoft Windows<install-windows>`.

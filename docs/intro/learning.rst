@@ -94,3 +94,13 @@ chapters detail best practices with writing documentation, test-driven
 development, version control, and optimization/profiling.
 
     `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
+
+
+References
+----------
+
+Python in a Nutshell
+~~~~~~~~~~~~~~~~~~~~
+
+Python in a Nutshell, written by Alex Martelli, covers most cross-platform python's usage,
+from its syntax to built-in libraries to advanced topics such as writing C extensions.
