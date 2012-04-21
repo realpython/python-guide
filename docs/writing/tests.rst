@@ -20,9 +20,9 @@ Some general rules of testing:
 
 - Try hard to make tests that run fast. If one single test needs more than a
   few millisecond to run, development will be slowed down or the tests will not
-  be run as often as desirable. I some cases, test can't be fast because they
+  be run as often as desirable. In some cases, test can't be fast because they
   need a complex data structure to work on, and this data structure must be loaded
-  every time the test runs. Keep this heavier tests in a separate test suite
+  every time the test runs. Keep these heavier tests in a separate test suite
   that is run by some scheduled task, and run all other tests as often as needed.
 
 - Learn your tools and learn how to run a single test or a test case. Then,
@@ -59,7 +59,7 @@ Some general rules of testing:
   be read as much as or even more than the running code. A unit test whose
   purpose is unclear is not very helpful is this case.
 
-- Another use of the testing code is as an introduction to new developpers. When
+- Another use of the testing code is as an introduction to new developers. When
   someone will have to work on the code base, runnning and reading the related
   testing code is often the best they can do. They will or should discover the
   hot spots, where most difficulties arise, and the corner cases. If they have to
