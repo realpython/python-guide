@@ -21,10 +21,10 @@ documented in `PEP-3333 <http://www.python.org/dev/peps/pep-3333/>`_.
 Frameworks
 ::::::::::
 
-Broadly speaking, a web framework is a set of libraries upon which you can
-build custom code to implement a web application (i.e. an interactive web
-site). Most web frameworks include patterns and utilities to accomplish at
-least the following:
+Broadly speaking, a web framework consist of a set of libraries and a main
+handler within which you can build custom code to implement a web application
+(i.e. an interactive web site). Most web frameworks include patterns and
+utilities to accomplish at least the following:
 
 URL Routing
   Matches an incoming HTTP request to a particular piece of Python code to
