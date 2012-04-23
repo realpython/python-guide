@@ -29,13 +29,17 @@ Linux systems will notice one key component missing: a decent package manager.
 `Homebrew <http://mxcl.github.com/homebrew/>`_ fills this void.
 
 To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_,
-simply run::
+simply run
+
+.. code-block:: console
 
     $ ruby -e "$(curl -fsS https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
 Then, insert the hombrew directory at the top of your ``PATH`` enviornment
 variable. You can do this by adding the following line at the bottom of your
-``~/.bashrc`` file::
+``~/.bashrc`` file
+
+.. code-block:: console
 
     export PATH=/usr/local/bin:$PATH
 
@@ -44,7 +48,9 @@ Now, we can install Python 2.7: ::
     $ brew install python --framework
 
 This will take a minute or two. Once that's complete, you'll have to add the
-new Python scripts directory to your ``PATH``::
+new Python scripts directory to your ``PATH``
+
+.. code-block:: console
 
     export PATH=/usr/local/share/python:$PATH
 
@@ -69,7 +75,9 @@ considered by many to be deprecated, so we will install its replacement:
 **pip**. Pip allows for uninstallation of packages, and is actively maintained,
 unlike easy_install.
 
-To install pip, simply open a command prompt and run::
+To install pip, simply open a command prompt and run
+
+.. code-block:: console
 
     $ easy_install pip
 
@@ -78,7 +86,9 @@ Virtualenv
 ----------
 
 After Distribute & Pip, the next development tool that you should install is
-`virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip::
+`virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
+
+.. code-block:: console
 
     $ pip install virtualenv
 
@@ -91,7 +101,9 @@ framework and application will have many dependencies.
 
 To set up a new Python environment, change the working directory to where ever
 you want to store the environment, and run the virtualenv utility in your
-project's directory::
+project's directory
+
+.. code-block:: console
 
     $ virtualenv --distribute venv
 

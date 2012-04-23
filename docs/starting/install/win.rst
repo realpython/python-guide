@@ -45,8 +45,7 @@ command. It also enables you to add this network installation capability to
 your own Python software with very little work.
 
 To obtain the latest version of Distribute for Windows, run the python script
-available here:
-  http://python-distribute.org/distribute_setup.py
+available here: `python-distribute <http://python-distribute.org/distribute_setup.py>`_
 
 
 You'll now have a new command available to you: **easy_install**. It is
@@ -54,7 +53,9 @@ considered by many to be deprecated, so we will install its replacement:
 **pip**. Pip allows for uninstallation of packages, and is actively maintained,
 unlike easy_install.
 
-To install pip, simply open a command prompt and run::
+To install pip, simply open a command prompt and run
+
+.. code-block:: console
 
     > easy_install pip
 
@@ -63,7 +64,9 @@ Virtualenv
 ----------
 
 After Distribute & Pip, the next development tool that you should install is
-`virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip::
+`virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
+
+.. code-block:: console
 
     > pip install virtualenv
 
@@ -77,7 +80,9 @@ framework and application will have many dependencies.
 
 To set up a new Python environment, change the working directory to where ever
 you want to store the environment, and run the virtualenv utility in your
-project's directory::
+project's directory
+
+.. code-block:: console
 
     > virtualenv --distribute venv
 
