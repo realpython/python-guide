@@ -7,14 +7,18 @@ Beginner
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Learnpython.org is an easy non-intimidating way to get introduced to python. The website takes the same approach used on the popular `Try Ruby <http://tryruby.org/>`_ website, it has an interactive python interpreter built into the site that allows you to go through the lessons without having to install Python locally.
+Learnpython.org is an easy non-intimidating way to get introduced to python.
+The website takes the same approach used on the popular `Try Ruby <http://tryruby.org/>`_
+website, it has an interactive python interpreter built into the site that
+allows you to go through the lessons without having to install Python locally.
 
     `Learn Python <http://www.learnpython.org/>`_
 
 Learn Python the Hard Way
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is an excellent beginner programmer's guide to Python. It covers "hello world" from the console to the web.
+This is an excellent beginner programmer's guide to Python. It covers "hello
+world" from the console to the web.
 
     `Learn Python the Hard Way <http://learnpythonthehardway.org/book/>`_
 
@@ -22,7 +26,8 @@ This is an excellent beginner programmer's guide to Python. It covers "hello wor
 Crash into Python
 ~~~~~~~~~~~~~~~~~
 
-Also known as *Python for Programmers with 3 Hours*, this guide gives experienced developers from other languages a crash course on Python.
+Also known as *Python for Programmers with 3 Hours*, this guide gives
+experienced developers from other languages a crash course on Python.
 
     `Crash into Python <http://stephensugden.com/crash_into_python/>`_
 
@@ -30,8 +35,8 @@ Also known as *Python for Programmers with 3 Hours*, this guide gives experience
 Dive Into Python 3
 ~~~~~~~~~~~~~~~~~~
 
-Dive Into Python 3 is a good book for those ready to jump in to Python 3. It's a
-good read if you are moving from Python 2 to 3 or if you already have some
+Dive Into Python 3 is a good book for those ready to jump in to Python 3. It's
+a good read if you are moving from Python 2 to 3 or if you already have some
 experience programming in another language.
 
     `Dive Into Python 3 <http://diveintopython3.ep.io/>`_
@@ -39,30 +44,33 @@ experience programming in another language.
 Think Python: How to Think Like a Computer Scientist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Think Python attempts to give an introduction to basic concepts in computer science through the 
-use of the python language. The focus was to create a book with plenty of exercises, minimal jargon and 
-a section in each chapter devoted to the subject of debugging.
+Think Python attempts to give an introduction to basic concepts in computer
+science through the use of the python language. The focus was to create a book
+with plenty of exercises, minimal jargon and a section in each chapter devoted
+to the subject of debugging.
 
-While exploring the various features available in the python language the author weaves in various design
-patterns and best practices. 
+While exploring the various features available in the python language the
+author weaves in various design patterns and best practices.
 
-The book also includes several case studies which have the reader explore the topics discussed in the book 
-in greater detail by applying those topics to real-world examples. Case studies include assignments in GUI
-and Markov Analysis.
+The book also includes several case studies which have the reader explore the
+topics discussed in the book in greater detail by applying those topics to
+real-world examples. Case studies include assignments in GUI and Markov
+Analysis.
 
     `Think Python <http://greenteapress.com/thinkpython/html/index.html>`_
 
 
-Python Koans 
+Python Koans
 ~~~~~~~~~~~~
 
-Python Koans is a port of Edgecase's Ruby Koans.  It uses a test-driven approach, q.v. TEST DRIVEN DESIGN SECTION
-to provide an interactive
-tutorial teaching basic python concepts.  By fixing assertion statements that fail in a test script, this
-provides sequential steps to learning python.  
+Python Koans is a port of Edgecase's Ruby Koans.  It uses a test-driven
+approach, q.v. TEST DRIVEN DESIGN SECTION to provide an interactive tutorial
+teaching basic python concepts.  By fixing assertion statements that fail in a
+ test script, this provides sequential steps to learning python.
 
-For those used to languages and figuring out puzzles on their own, this can be a fun, attractive option.
-For those new to python and programming, having an additional resource or reference will be helpful.
+For those used to languages and figuring out puzzles on their own, this can be
+a fun, attractive option. For those new to python and programming, having an
+additional resource or reference will be helpful.
 
     `Python Koans <http://bitbucket.org/gregmalcolm/python_koans>`_
 
@@ -102,5 +110,6 @@ References
 Python in a Nutshell
 ~~~~~~~~~~~~~~~~~~~~
 
-Python in a Nutshell, written by Alex Martelli, covers most cross-platform python's usage,
-from its syntax to built-in libraries to advanced topics such as writing C extensions.
+Python in a Nutshell, written by Alex Martelli, covers most cross-platform
+python's usage, from its syntax to built-in libraries to advanced topics such
+as writing C extensions.

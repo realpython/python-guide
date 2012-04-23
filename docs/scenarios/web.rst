@@ -17,8 +17,8 @@ The Web Server Gateway Interface (or "WSGI" for short) is a standard
 interface between web servers and Python web application frameworks. By
 standardizing behavior and communication between web servers and Python web
 frameworks, WSGI makes it possible to write portable Python web code that
-can be deployed in any :ref:`WSGI-compliant web server <wsgi-servers-ref>`. WSGI is
-documented in `PEP-3333 <http://www.python.org/dev/peps/pep-3333/>`_.
+can be deployed in any :ref:`WSGI-compliant web server <wsgi-servers-ref>`.
+WSGI is documented in `PEP-3333 <http://www.python.org/dev/peps/pep-3333/>`_.
 
 
 Frameworks
@@ -74,8 +74,8 @@ you may need, such as database access or form generation and validation. For
 many popular modules, `Extensions <http://flask.pocoo.org/extensions/>`_ may
 already exist to suit your needs.
 
-**Support** for flask can best be found in its mailing list. Just shoot an email to
-flask@librelist.com and reply to the confirmation email.
+**Support** for flask can best be found in its mailing list. Just shoot an
+email to flask@librelist.com and reply to the confirmation email.
 
 
 .. todo:: Explain Pyramid
@@ -129,8 +129,8 @@ The majority of self hosted Python applications today are hosted with a WSGI
 server such as :ref:`gUnicorn <gunicorn-ref>`, either directly or behind a
 lightweight web server such as :ref:`nginx <nginx-ref>`.
 
-The WSGI servers serve the Python applications while the web server handles tasks
-better suited for it such as static file serving, request routing, DDoS
+The WSGI servers serve the Python applications while the web server handles
+tasks better suited for it such as static file serving, request routing, DDoS
 protection, and basic authentication.
 
 Hosting
@@ -161,10 +161,10 @@ Heroku
 `Cedar stack <http://devcenter.heroku.com/articles/cedar>`_ offers first class
 support for Python 2.7 applications.
 
-Heroku allows you to run as many Python web applications as you like, 24/7 and free
-of charge. Heroku is best described as a horizontal scaling platform. They start
-to charge you once you "scale" you application to run on more than one Dyno
-(abstacted servers) at a time.
+Heroku allows you to run as many Python web applications as you like, 24/7 and
+free of charge. Heroku is best described as a horizontal scaling platform. They
+start to charge you once you "scale" you application to run on more than one
+Dyno (abstacted servers) at a time.
 
 Heroku publishes `step-by-step instructions
 <http://devcenter.heroku.com/articles/python>`_ on how to set up your first
