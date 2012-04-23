@@ -37,25 +37,28 @@ assuming this is your directory structure:
        - MyPackage.tar.gz
 
 Go to your command prompt and type:
-::
 
-$ cd archive
-$ python -m SimpleHTTPServer 9000
+.. code-block:: console
+
+   $ cd archive
+   $ python -m SimpleHTTPServer 9000
 
 This runs a simple http server running on port 9000 and will list all packages
 (like **MyPackage**). Now you can install **MyPackage** using any python
 package installer. Using Pip, you would do it like:
-::
 
-$ pip install --extra-index-url=http://127.0.0.1:9000/ MyPackage
+.. code-block:: console
+
+   $ pip install --extra-index-url=http://127.0.0.1:9000/ MyPackage
 
 Having a folder with the same name as the package name is **crucial** here.
 I got fooled by that, one time. But if you feel that creating a folder called
 **MyPackage** and keeping **MyPackage.tar.gz** inside that, is *redundant*,
 you can still install MyPackage using:
-::
 
-$ pip install  http://127.0.0.1:9000/MyPackage.tar.gz
+.. code-block:: console
+
+   $ pip install  http://127.0.0.1:9000/MyPackage.tar.gz
 
 Chishop
 +++++++
