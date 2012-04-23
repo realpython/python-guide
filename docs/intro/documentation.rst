@@ -13,7 +13,8 @@ The official Python Language and Library documentation can be found here:
 Read the Docs
 -------------
 
-Read the Docs is a popular community project, providing a single location for all documentation of popular and even more exotic Python modules.
+Read the Docs is a popular community project, providing a single location for
+all documentation of popular and even more exotic Python modules.
 
     `Read the Docs <http://readthedocs.org/>`_
 

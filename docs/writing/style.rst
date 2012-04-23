@@ -388,7 +388,8 @@ keep a count of your place in the list.
     # 1, 4
     # 2, 5
 
-The ``enumerate`` function has better readability than handling a counter manually. Moreover,
+The ``enumerate`` function has better readability than handling a counter
+manually. Moreover,
 it is better optimized for iterators.
 
 Read From a File
@@ -414,8 +415,8 @@ files for you.
         for line in f:
             print line
 
-The ``with`` statement is better because it will ensure you always close the file,
-even if an exception is raised.
+The ``with`` statement is better because it will ensure you always close the
+file, even if an exception is raised.
 
 Returning Multiple Values from a Function
 -----------------------------------------
@@ -447,15 +448,17 @@ values in before you return
 Line Continuations
 ~~~~~~~~~~~~~~~~~~
 
-When a logical line of code is longer than the accepted limit, you need to split it over multiple
-physical lines. Python interpreter will join consecutive lines if the last character of the line is
-a backslash. This is helpful sometime but is preferably avoided, because of its fragility: a white
-space added to the end of the line, after the backslash, will break the code and may have unexpected
-results.
+When a logical line of code is longer than the accepted limit, you need to
+split it over multiple physical lines. Python interpreter will join consecutive
+lines if the last character of the line is a backslash. This is helpful
+sometime but is preferably avoided, because of its fragility: a white space
+added to the end of the line, after the backslash, will break the code and may
+have unexpected results.
 
-A prefered solution is to use parenthesis around your elements. Left with an unclosed parenthesis on an end-of-line
-the Python interpreter will join the next line until the parenthesis is closed. The same behavior holds for
-curly and square braces.
+A prefered solution is to use parenthesis around your elements. Left with an
+unclosed parenthesis on an end-of-line the Python interpreter will join the
+next line until the parenthesis is closed. The same behavior holds for curly
+and square braces.
 
 **Bad**:
 
@@ -479,5 +482,6 @@ curly and square braces.
     from some.deep.module.inside.a.module import (a_nice_function, another_nice_function,
                                                   yet_another_nice_functio)
 
-However, more often than not having to split long logical line is a sign that you
-are trying to do too many things at the same time, which may hinder readability.
+However, more often than not having to split long logical line is a sign that
+you are trying to do too many things at the same time, which may hinder
+readability.

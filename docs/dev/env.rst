@@ -63,7 +63,10 @@ order to do this, add the following lines to your `vimrc`::
 TextMate
 --------
 
-"`TextMate <http://macromates.com/>`_ brings Apple's approach to operating systems into the world of text editors. By bridging UNIX underpinnings and GUI, TextMate cherry-picks the best of both worlds to the benefit of expert scripters and novice users alike."
+"`TextMate <http://macromates.com/>`_ brings Apple's approach to operating
+systems into the world of text editors. By bridging UNIX underpinnings and GUI,
+TextMate cherry-picks the best of both worlds to the benefit of expert
+scripters and novice users alike."
 
 Sublime Text
 ------------
@@ -75,7 +78,8 @@ extraordinary features."
 Sublime Text has excellent support for editing Python code and uses Python for
 its plugin API.
 
-`Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_ is currently in beta.
+`Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_
+is currently in beta.
 
 IDEs
 ::::
@@ -83,7 +87,9 @@ IDEs
 PyCharm / IntelliJ IDEA
 -----------------------
 
-`PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also known for IntelliJ IDEA. Both share the same code base and most of PyCharm's features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
+`PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also
+known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
+features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
 
 
 Eclipse
@@ -95,24 +101,28 @@ The most popular Eclipse plugin for Python development is Aptana's
 
 Komodo IDE
 -----------
-`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by ActiveState and is a commercial IDE for Windows, Mac
+`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by
+ActiveState and is a commercial IDE for Windows, Mac
 and Linux.
 
 
 Spyder
 ------
 
-`Spyder <http://code.google.com/p/spyderlib/>`_ an IDE specifically geared toward working with scientific python libraries (namely `Scipy <http://www.scipy.org/>`_).
+`Spyder <http://code.google.com/p/spyderlib/>`_ an IDE specifically geared
+toward working with scientific python libraries (namely `Scipy <http://www.scipy.org/>`_).
 Includes integration with pyflakes_, `pylint <http://www.logilab.org/857>`_,
 and `rope <http://rope.sourceforge.net/>`_.
 
-Spyder is open-source (free), offers code completion, syntax highlighting, class and function browser, and object inspection.
+Spyder is open-source (free), offers code completion, syntax highlighting,
+class and function browser, and object inspection.
 
 
 WingIDE
 -------
 
-`WingIDE <http://wingware.com/>`_ a python specific IDE.   Runs for Linux, Windows, and Mac (as an X11 application, which frustrates some Mac users).
+`WingIDE <http://wingware.com/>`_ a python specific IDE.   Runs for Linux,
+Windows, and Mac (as an X11 application, which frustrates some Mac users).
 
 
 Interpreter Tools
@@ -122,8 +132,10 @@ Interpreter Tools
 virtualenv
 ----------
 
-Virtualenv is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.
-It solves the "Project X depends on version 1.x but, Project Y needs 4.x" dilemma and keeps your global site-packages directory clean and manageable.
+Virtualenv is a tool to keep the dependencies required by different projects
+in separate places, by creating virtual Python environments for them.
+It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
+dilemma and keeps your global site-packages directory clean and manageable.
 
 `virtualenv <http://www.virtualenv.org/en/latest/index.html>`_ creates
 a folder which contains all the necessary executables to contain the
@@ -195,7 +207,8 @@ control by adding it to the ignore list.
 virtualenvwrapper
 -----------------
 
-`Virtualenvwrapper <http://pypi.python.org/pypi/virtualenvwrapper>`_ makes virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
+`Virtualenvwrapper <http://pypi.python.org/pypi/virtualenvwrapper>`_ makes
+virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
 
 ::
 
@@ -208,7 +221,8 @@ Put this into your `~/.bash_profile` (Linux/Mac) file:
 
     $ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
-This will prevent your virtualenvs from relying on your (global) site packages directory, so that they are completely separate..
+This will prevent your virtualenvs from relying on your (global) site packages
+directory, so that they are completely separate..
 
 Other Tools
 :::::::::::
@@ -233,10 +247,12 @@ It provides following features:
 IPython
 -------
 
-`IPython <http://ipython.org/>`_ provides a rich toolkit to help you make the most out of using Python interactively. Its main components are:
+`IPython <http://ipython.org/>`_ provides a rich toolkit to help you make the
+most out of using Python interactively. Its main components are:
 
 * Powerful Python shells (terminal- and Qt-based).
-* A web-based notebook with the same core features but support for rich media, text, code, mathematical expressions and inline plots.
+* A web-based notebook with the same core features but support for rich media,
+text, code, mathematical expressions and inline plots.
 * Support for interactive data visualization and use of GUI toolkits.
 * Flexible, embeddable interpreters to load into your own projects.
 * Tools for high level and interactive parallel computing.
@@ -250,7 +266,8 @@ IPython
 BPython
 -------
 
-`bpython <http://bpython-interpreter.org/>`_ is an alternative interface to the Python interpreter for Unix-like operating systems. It has the following features:
+`bpython <http://bpython-interpreter.org/>`_ is an alternative interface to the
+Python interpreter for Unix-like operating systems. It has the following features:
 
 * In-line syntax highlighting.
 * Readline-like autocomplete with suggestions displayed as you type.

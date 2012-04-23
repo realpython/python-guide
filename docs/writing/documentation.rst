@@ -38,7 +38,8 @@ Docstrings
 
 PEP 257 is the primary reference for docstrings. (http://www.python.org/dev/peps/pep-0257/)
 
-There are two types of docstrings, one-line and multi-line.  Their names should be fairly self explanatory.
+There are two types of docstrings, one-line and multi-line.  Their names
+should be fairly self explanatory.
 One-line docstrings: ::
 
     def kos_root():
@@ -63,7 +64,9 @@ Multi-line docstrings: ::
 Sphinx
 ------
 
-Sphinx_ is a tool which converts documentation in the :ref:`restructuredtext-ref` markup language into a range of output formats including HTML, LaTeX (for printable PDF versions), manual pages and plain text.
+Sphinx_ is a tool which converts documentation in the :ref:`restructuredtext-ref`
+markup language into a range of output formats including HTML, LaTeX (for
+printable PDF versions), manual pages and plain text.
 
 .. note:: This Guide is built with Sphinx_
 
@@ -75,7 +78,10 @@ Sphinx_ is a tool which converts documentation in the :ref:`restructuredtext-ref
 reStructuredText
 ----------------
 
-Most Python documentation is written with reStructuredText_. The `reStructuredText Primer <http://sphinx.pocoo.org/rest.html>`_ and the `reStructuredText Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_ should help you familiarize yourself with its syntax.
+Most Python documentation is written with reStructuredText_. The
+`reStructuredText Primer <http://sphinx.pocoo.org/rest.html>`_ and the
+`reStructuredText Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_
+should help you familiarize yourself with its syntax.
 
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 
