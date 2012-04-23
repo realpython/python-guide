@@ -8,7 +8,8 @@ You'll need to package your code first before sharing it with other developers.
 For Python Developers
 :::::::::::::::::::::
 
-If you're writing an open source Python module, `PyPI <http://pypi.python.org>`_, more properly known as *The Cheeseshop*, is the place to host it.
+If you're writing an open source Python module, `PyPI <http://pypi.python.org>`_,
+more properly known as *The Cheeseshop*, is the place to host it.
 
 
 
@@ -27,7 +28,8 @@ running from the directory which holds those packages which need to be installed
 
 **Showing an example is always beneficial**
 
-Say if you are after installing a package called MyPackage.tar.gz,  and assuming this is your directory structure
+Say if you are after installing a package called MyPackage.tar.gz,  and
+assuming this is your directory structure:
 
 
 - archive
@@ -40,14 +42,17 @@ Go to your command prompt and type:
 $ cd archive
 $ python -m SimpleHTTPServer 9000
 
-This runs a simple http server running on port 9000 and will list all packages (like **MyPackage**). Now you can install **MyPackage** using any python package installer. Using Pip, you would do it like:
+This runs a simple http server running on port 9000 and will list all packages
+(like **MyPackage**). Now you can install **MyPackage** using any python
+package installer. Using Pip, you would do it like:
 ::
 
 $ pip install --extra-index-url=http://127.0.0.1:9000/ MyPackage
 
 Having a folder with the same name as the package name is **crucial** here.
 I got fooled by that, one time. But if you feel that creating a folder called
-**MyPackage** and keeping **MyPackage.tar.gz** inside that, is *redundant*, you can still install MyPackage using:
+**MyPackage** and keeping **MyPackage.tar.gz** inside that, is *redundant*,
+you can still install MyPackage using:
 ::
 
 $ pip install  http://127.0.0.1:9000/MyPackage.tar.gz
@@ -55,7 +60,9 @@ $ pip install  http://127.0.0.1:9000/MyPackage.tar.gz
 Chishop
 +++++++
 
-`Chishop <https://github.com/benliles/djangopypi>`_ is a simple PyPI server written in django which allows you to register/upload with distutils and install with easy_install/pip.
+`Chishop <https://github.com/benliles/djangopypi>`_ is a simple PyPI server
+written in django which allows you to register/upload with distutils and
+install with easy_install/pip.
 
 For Linux Distributions
 ::::::::::::::::::::::::
