@@ -1,6 +1,133 @@
 Code Style
 ==========
 
+If you ask to Python programmers what they like the most in Python, they will
+often say it is its high readability.  Indeed, a high level of readability of
+the code is at the heart of the design of the Python language, following the
+recognised fact that code is read much more often than it is written.
+
+One reason for Python code to be easily read and understood is its relatively
+complete set of Code Style guidelines and "Pythonic" idioms.
+
+On the opposite, when a veteran Python developper (a Pythonistas) point to some
+parts of a code and say it is not "Pythonic", it usually means that these lines
+of code do not follow the common guidelines and fail to express the intent is
+what is considered the best (hear: most readable) way.
+
+On some border cases, no best way has been agreed upon on how to express
+an intent in Python code, but these cases are rare.
+
+General concepts
+----------------
+
+Explicit code
+~~~~~~~~~~~~~
+
+While any kind of black magic is possible with Python, the
+most explicit and straightforward manner is preferred.
+
+**Bad**
+
+.. code-block:: python
+
+    def make_complex(\*args):
+        x, y = args
+        return dict(\**locals())
+
+**Good**
+
+.. code-block:: python
+
+    def make_complex(x, y):
+        return {'x': x, 'y': y}
+
+In the good code above, x and y are explicitely received from
+the caller, and an explicit dictionary is returned. The developer
+using this function knows exactly what to do by reading the
+first and last lines, which is not the case with the bad example.
+
+One statement per line
+~~~~~~~~~~~~~~~~~~~~~~
+
+While some compound statements such as list comprehensions are
+allowed and appreciated for their brevity and their expressivity,
+it is bad practice to have two disjoint statements on the same line.
+
+**Bad**
+
+.. code-block:: python
+
+    print 'one'; print 'two'
+
+    if x == 1: print 'one'
+
+    if <complex comparison> and <other complex comparison>:
+        # do something
+
+**Good**
+
+.. code-block:: python
+
+    print 'one'
+    print 'two'
+
+    if x == 1:
+        print 'one'
+
+    cond1 = <complex comparison>
+    cond2 = <other complex comparison>
+    if cond1 and cond2:
+        # do something
+
+
+Avoid the magical wand
+~~~~~~~~~~~~~~~~~~~~~~
+
+A powerful tool for hackers, Python comes with a very rich set of hooks and
+tools allowing to do almost any kind of tricky tricks. For instance, it is
+possible to change how objects are created and instanciated, it is possible to
+change how the Python interpreter imports modules, it is even possible (and
+recommended if needed) to embed C routines in Python.
+
+However, all these options have many drawbacks and it is always better to use
+the most straightforward way to achieve your goal. The main drawback is that
+readability suffers deeply from them. Many code analysis tools, such as pylint
+or pyflakes, will be unable to parse this "magic" code.
+
+We consider that a Python developer should know about these nearly infinite
+possibilities, because it grows the confidence that no hard-wall will be on the
+way.  However, knowing how to use them and particularly when **not** to use
+them is the most important.
+
+Like a Kungfu master, a pythonistas knows how to kill with a single finger, and
+never do it.
+
+We are all consenting adults
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As seen above, Python allows many tricks, and some of them are potentially
+dangerous. A good example is that any client code can override an object's
+properties and methods: There is no "private" keyword in Python. This
+philosophy, very different from highly defensive languages like Java, which
+give a lot of mechanism to prevent any misuse, is expressed by the saying: "We
+are consenting adults".
+
+This doesn't mean that, for example, no properties are considered private, and
+that no proper encapsulation is possible in Python. But, instead of relying on
+concrete walls erected by the developers between their code and other's, the
+Python community prefers to rely on a set of convention indicating that these
+elements should not be accessed directly.
+
+The main convention for private properties and implementation details is to
+prefix all "internals" with an underscore. If the client code breaks this rule
+and access to these marked elements, any misbehavior or problems encountered if
+the code is modified is the responsibility of the client code.
+
+Using this convention generously is encouraged: any method or property that is
+not intended to be used by client code should be prefixed with an underscore.
+This will guarantee a better separation of duties and easier modifications of
+existing code, and it will always be possible to publicize a private property,
+while privatising a public property might be a much harder operation.
 
 Idioms
 ------
