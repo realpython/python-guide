@@ -35,7 +35,7 @@ simply run
 
     $ ruby -e "$(curl -fsS https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
-Then, insert the hombrew directory at the top of your ``PATH`` enviornment
+Then, insert the Homebrew directory at the top of your ``PATH`` enviornment
 variable. You can do this by adding the following line at the bottom of your
 ``~/.bashrc`` file
 
@@ -70,7 +70,7 @@ download and install any compliant Python software product with a single
 command. It also enables you to add this network installation capability to
 your own Python software with very little work.
 
-Hombrew already installed Distribute for you. Its ``easy_install`` command is
+Homebrew already installed Distribute for you. Its ``easy_install`` command is
 considered by many to be deprecated, so we will install its replacement:
 **pip**. Pip allows for uninstallation of packages, and is actively maintained,
 unlike easy_install.
