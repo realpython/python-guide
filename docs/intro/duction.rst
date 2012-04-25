@@ -46,10 +46,10 @@ include:
 
 * friendly community
 
-  Python has a vibrant and large community which maintains wikis,
-  conferences, countless repositories, mailing lists, IRC channels,
-  and so much more. Heck, the Python community is even helping to write
-  this guide!
+  Python has a vibrant and large :ref:`community <the-community>`
+  which maintains wikis, conferences, countless repositories,
+  mailing lists, IRC channels, and so much more. Heck, the Python
+  community is even helping to write this guide!
 
 
 .. _about-ref:
