@@ -20,10 +20,11 @@ Some general rules of testing:
 
 - Try hard to make tests that run fast. If one single test needs more than a
   few millisecond to run, development will be slowed down or the tests will not
-  be run as often as desirable. I some cases, test can't be fast because they
-  need a complex data structure to work on, and this data structure must be loaded
-  every time the test runs. Keep this heavier tests in a separate test suite
-  that is run by some scheduled task, and run all other tests as often as needed.
+  be run as often as desirable. In some cases, test can't be fast because they
+  need a complex data structure to work on, and this data structure must be
+  loaded every time the test runs. Keep these heavier tests in a separate test
+  suite that is run by some scheduled task, and run all other tests as often
+  as needed.
 
 - Learn your tools and learn how to run a single test or a test case. Then,
   when developing a function inside a module, run this function's tests very
@@ -41,9 +42,9 @@ Some general rules of testing:
   When comming back to work, you will have a pointer to where you were and get
   faster on tracks.
 
-- The first step when you are debugging your code is to write a new test pinpointing
-  the bug. While it is not always possible to do, those bug catching test are among
-  the most valuable piece of code in your project.
+- The first step when you are debugging your code is to write a new test
+  pinpointing the bug. While it is not always possible to do, those bug
+  catching test are among the most valuable piece of code in your project.
 
 - Use long and descriptive names for testing functions. The style guide here is
   slighlty different than that of running code, where short names are often
@@ -59,13 +60,13 @@ Some general rules of testing:
   be read as much as or even more than the running code. A unit test whose
   purpose is unclear is not very helpful is this case.
 
-- Another use of the testing code is as an introduction to new developpers. When
+- Another use of the testing code is as an introduction to new developers. When
   someone will have to work on the code base, runnning and reading the related
   testing code is often the best they can do. They will or should discover the
-  hot spots, where most difficulties arise, and the corner cases. If they have to
-  add some functionality, the first step should be to add a test and, by this mean,
-  ensure the new functionality is not already a working path that has not been
-  plugged in the interface.
+  hot spots, where most difficulties arise, and the corner cases. If they have
+  to add some functionality, the first step should be to add a test and, by this
+  mean, ensure the new functionality is not already a working path that has not
+  been plugged in the interface.
 
 The Basics
 ::::::::::
@@ -99,15 +100,15 @@ As of Python 2.7 unittest also includes its own test discovery mechanisms.
 Doctest
 -------
 
-The doctest module searches for pieces of text that look like interactive Python
-sessions in docstrings, and then executes those sessions to verify that they work exactly as
-shown.
+The doctest module searches for pieces of text that look like interactive
+Python sessions in docstrings, and then executes those sessions to verify that
+they work exactly as shown.
 
-Doctests have a different use case than proper unit tests: they are usually less
-detailed and don't catch special cases or obscure regression bugs. They are
-useful as an expressive documentation of the main use cases of a module and
-its components. However, doctests should run automatically each time
-the full test suite runs.
+Doctests have a different use case than proper unit tests: they are usually
+less detailed and don't catch special cases or obscure regression bugs. They
+are useful as an expressive documentation of the main use cases of a module and
+its components. However, doctests should run automatically each time the full
+test suite runs.
 
 A simple doctest in a function:
 
@@ -128,8 +129,9 @@ A simple doctest in a function:
         import doctest
         doctest.testmod()
 
-When running this module from the command line as in ``python module.py``, the doctests
-will run and complain if anything is not behaving as described in the docstrings.
+When running this module from the command line as in ``python module.py``, the
+doctests will run and complain if anything is not behaving as described in the
+docstrings.
 
 Tools
 :::::
@@ -144,7 +146,7 @@ py.test is a no-boilerplate alternative to Python's standard unittest module.
 
     $ pip install pytest
 
-Despite being a fully-featured and extensible test tool it boasts a simple 
+Despite being a fully-featured and extensible test tool it boasts a simple
 syntax. Creating a test suite is as easy as writing a module with a couple of
 functions
 
@@ -205,8 +207,8 @@ xUnit-compatible test output, coverage reporting, and test selection.
 tox
 ---
 
-tox is a tool for automating test environment management and testing against multiple
-interpreter configurations
+tox is a tool for automating test environment management and testing against
+multiple interpreter configurations
 
 ::
 
