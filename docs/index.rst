@@ -6,7 +6,7 @@
 The Hitchhiker's Guide to Python!
 =================================
 
-Welcome to The Hitchhiker's Guide to Python. **DON'T PANIC!**
+Welcome to The Hitchhiker's Guide to Python. `DON'T PANIC! <http://www.amazon.com/gp/product/B0043M4ZH0/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0043M4ZH0>`_
 
 **This guide is currently under heavy development, and is mostly a skeleton at the moment.**  If you'd like to help, `fork us on GitHub <https://github.com/kennethreitz/python-guide>`_!
 
