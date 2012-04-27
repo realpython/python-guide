@@ -85,3 +85,48 @@ Buildout
 --------
 
 .. todo:: Write about Buildout
+
+pbs
+---
+`pbs <https://github.com/amoffat/pbs>`_ is a tool that take 
+python a bit closer to bash. In a pythonic more "Human" way
+(not like the standard library subprocess].
+
+you can utilize it like that:
+
+.. code-block:: python
+    
+    from pbs import ifconfig
+    print ifconfig("eth0")
+
+or for the lazy ones:
+
+.. code-block:: python
+    
+    from pbs import *
+    print ifconfig("eth0")
+    print du()
+
+RPyC
+----
+`RPyC <http://rpyc.sourceforge.net/>`_ is a module that can give you control on a remote interpeter, in a convientent way.
+when you need two python interpeters talk with each other, make sure you try this one.
+    
+starting the server:
+.. code-block:: bash
+    
+    $ ./rpyc_classic.py -m threaded
+    
+connect from client:
+.. code-block:: python
+
+    conn = rpyc.classic.connect("hostname")
+    
+    # using modules for anthoer interpeter/host
+    proc = conn.modules.subprocess.Popen("ls", stdout = -1, stderr = -1)
+    stdout, stderr = proc.communicate()
+    print stdout.split()
+
+    remote_list = conn.builtin.range(7)
+
+    conn.execute("print 'foo'")
