@@ -1,3 +1,5 @@
+.. _the_community:
+
 The Community
 =============
 
