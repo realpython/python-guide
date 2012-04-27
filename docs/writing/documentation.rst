@@ -104,14 +104,23 @@ line. Good editors allow to do this with few keystrokes (ctrl-v on Vim).
 
     def tricky_function():
         '''
+        Commented out because its breaks something.
         if foo:
             do_bar()
         '''
         return baz
 
     def tricky_function():
+        # Commented out because its breaks something.
         #if foo:
             #do_bar()
+        return baz
+
+
+    def tricky_function():
+    # Commented out because its breaks something.
+    #   if foo:
+    #       do_bar()
         return baz
 
 **Good**
@@ -119,11 +128,14 @@ line. Good editors allow to do this with few keystrokes (ctrl-v on Vim).
 .. code-block:: python
 
     def tricky_function():
+        # Commented out because its breaks something.
         #if foo:
         #    do_bar()
         return baz
 
-
+Note that comment text is properly written and separated from the hash by a
+space. Commented code is not separated from the hash by an additional space;
+this helps when uncommented the code.
 
 The Basics
 ::::::::::
