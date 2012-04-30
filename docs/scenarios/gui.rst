@@ -25,9 +25,8 @@ PyObjC
 ------
 .. note:: Only available on Mac OSX. Don't pick this if you're writing a cross-platform application.
 
-WXPython
+wxPython
 ::::::::
-
 
 Install (Stable)
 ----------------
