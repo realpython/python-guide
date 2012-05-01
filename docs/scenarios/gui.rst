@@ -54,3 +54,13 @@ feel on all platforms.
 There's a good multi-language Tk tutorial with Python examples at
 `TkDocs <http://www.tkdocs.com/tutorial/index.html>`_. There's more information
 available on the `Python Wiki <http://wiki.python.org/moin/TkInter>`_.
+
+Kivy
+----
+Kivy is a Python library for development of multi-touch enabled media rich applications. The aim is to allow for quick and easy interaction design and rapid prototyping, while making your code reusable and deployable.
+
+Kivy is written in Python, based on OpenGL and supports different input devices such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products and so on.
+
+Kivy is actively being developed by a community and free to use. It operates on all major platforms (Linux, OSX, Windows, Android).
+
+The main resource for information is the website: http://kivy.org
