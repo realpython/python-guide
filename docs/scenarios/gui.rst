@@ -9,6 +9,8 @@ software with a GUI but can also be used for non-GUI applications.
 
 PySide
 ~~~~~~
+PySide is a Python binding of the cross-platform GUI toolkit Qt.
+
 http://developer.qt.nokia.com/wiki/PySideDownloads/
 
 PyQt
