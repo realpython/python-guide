@@ -27,6 +27,7 @@ PyObjC
 
 wxPython
 --------
+wxPython is a GUI toolkit for the Python programming language. It allows Python programmers to create programs with a robust, highly functional graphical user interface, simply and easily. It is implemented as a Python extension module (native code) that wraps the popular wxWidgets cross platform GUI library, which is written in C++.
 
 Install (Stable)
 ~~~~~~~~~~~~~~~~
