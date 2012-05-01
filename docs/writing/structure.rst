@@ -249,6 +249,148 @@ things that are manipulated (windows, buttons, avatars, vehicles) have a
 relatively long life of their own in the computer's memory.
 
 
+Decorators
+----------
+
+Python language provides a simple yet powerful syntax called 'decorators'.
+A decorator is a function or a class that wraps (or decorate) a function
+or a method. The 'decorated' function or method will replace the original
+'undecorated' function or method. Because function are first-class objects
+in Python it can be done 'manually' but using the @decorator syntax is
+clearer and thus prefered.
+
+.. code-block:: Python
+
+    def foo():
+        # do something
+
+    def decorator(func):
+        # manipulate func
+        return func
+
+    foo = decorator(foo)  # Manually decorate
+
+    @decorator
+    def bar():
+        # Do something
+    # bar() is decorated
+
+Using this mechanism is useful for separating concerns and avoiding
+external un-related logic to 'pollute' the core logic of the function
+or method. A good example of a functionality that is better handled
+with decoration is memoization or caching: you want to store the results of an
+expensive function in a table and use them directly instead of recomputing
+them when they have already been computed. This is clearly not part
+of the function logic.
+
+Dynamic typing
+--------------
+
+Python is said to be dynamically typed, which means that variables
+do not have a fixed type. In fact, in Python, variables are very
+different from what they are in many other languages, specifically
+strongly-typed languages: variables are not a segment of the computer's
+memory where some value ir written, they are 'tags' or 'names' pointing
+to objects. It is therefore possible for the variable 'a' to be set to
+the value 1, then to the value 'a string', then to a function.
+
+The dynanic typing of Python is often considered as a weakness, and indeed
+it can lead to complexities and to hard-to-debug code, where something
+named 'a' can be set to many different things, and the developer or the
+maintainer need to track this name in the code to make sure it has not
+been set to a completely unrelated object.
+
+Some guidelines allow to avoid this issue:
+
+- Avoid using variables for different things.
+
+**Bad**
+
+.. code-block:: Python
+
+    a = 1
+    a = 'a string'
+    def a():
+        pass  # Do something
+
+**Good**
+
+.. code-block:: python
+
+    count = 1
+    msg = 'a string'
+    def func()
+        pass  # Do something
+
+Using short functions or methods helps writing good code for many
+reasons, one being that their local scope is clearer, and the risk
+of using the same name for two unrelated things is lowered.
+
+It is better to use different names even for things that are related,
+when they have a different type:
+
+**Bad**
+
+.. code-block:: python
+
+    items = 'a b c d'  # This is a string...
+    items = items.split(' ')  # ...becoming a list
+    items = set(items)  # ...and then a set
+
+There is no efficiency gain when reusing names: the assignments
+will have to create new objects anyway. However, when the complexity
+grows are each assignment are separated by other lines of code, including
+'if' branches and loops, it becomes harder to acertain which type is the
+variable at hand.
+
+Some coding practices, like functional programming, even recommend to never re-assign a variable, which
+is done in Java with the keyword final. Python do not have such a keyword,
+and it would be against its philosophy anyway, but it may be a good
+discipline to avoid setting more than once any variable, and it helps
+in grasping the concept of mutable and immutable types.
+
+Mutable and immutable types
+---------------------------
+
+Python has two kinds of built-in or user-defined types.
+
+Mutable types are those that allow in-place modification
+of the content. Typical mutables are lists and dictionaries:
+All lists have muting methods, like append() or pop(), and
+can be modified in place. Same for dictionaries.
+
+Immutable types provide no method for changing their content.
+For instance, the variable x set to the integer 6 has no "increment" method. If you
+want to computed x + 1, you have to create another integer and give it
+a name.
+
+.. code-block:: python
+
+    my_list = [1, 2, 3]
+    my_list[0] = 4
+    print my_list  # [4, 2, 3] <- The same list as changed
+
+    x = 6
+    x = x + 1  # The new x is another object
+
+One consequence of this difference in behavior is that mutable
+types are not "stable", and therefore cannot be used as dictionary
+keys.
+
+Using properly mutable types for things that are mutable in nature
+and immutable types for things that are fixed in nature
+helps to clarify the intent of the code.
+
+For example, the immutable equivalent of a list is the tuple, created
+with ``(1, 2)``. This tuple is a pair that cannot be changed in-place,
+and can be used as a key for a dictionary.
+
+One particularity of Python that can surprise in the beginning is that
+string are immutable. This means that when constructing a string from
+its parts, it is much more efficient to accumulate the parts in a list,
+which is mutable, and then glue ('join') the parts together when the
+full string is needed.
+
 Vendorizing Dependencies
 ------------------------
 
