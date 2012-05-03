@@ -54,6 +54,7 @@ different scenarios.
    scenarios/speed
    scenarios/scientific
    scenarios/imaging
+   scenarios/xml
 
 
 Shipping Great Code
