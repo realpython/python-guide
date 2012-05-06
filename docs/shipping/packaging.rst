@@ -70,10 +70,10 @@ install with easy_install/pip.
 For Linux Distributions
 ::::::::::::::::::::::::
 
-`Ubuntu <https://wiki.ubuntu.com/PackagingGuide/Python>`_
-`Fedora <https://fedoraproject.org/wiki/Packaging:Python>`_
-`Debian <http://www.debian.org/doc/packaging-manuals/python-policy/>`_
-`Arch <https://wiki.archlinux.org/index.php/Python_Package_Guidelines>`_
+* `Ubuntu <https://wiki.ubuntu.com/PackagingGuide/Python>`_
+* `Fedora <https://fedoraproject.org/wiki/Packaging:Python>`_
+* `Debian <http://www.debian.org/doc/packaging-manuals/python-policy/>`_
+* `Arch <https://wiki.archlinux.org/index.php/Python_Package_Guidelines>`_
 
 Useful Tools
 ------------
