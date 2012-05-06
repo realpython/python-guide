@@ -12,10 +12,12 @@ however, using a more powerful editor may make your life a bit easier.
 VIM
 ---
 
-
-There exist a couple of plugins and settings for the VIM editor to aid python
-development. If you only develop in Python, a good start is to set the default
-settings for indentation and linewrapping to values compliant with PEP8::
+Vim is a text editor which uses keyboard shortcuts for editing instead of menus
+or icons. There exist a couple of plugins and settings for the VIM editor to
+aid python development. If you only develop in Python, a good start is to set
+the default settings for indentation and linewrapping to values compliant with
+`PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_. In your home directory,
+open a file called `.vimrc` and add the following lines: ::
 
     set textwidth=79
     set shiftwidth=4
@@ -24,25 +26,26 @@ settings for indentation and linewrapping to values compliant with PEP8::
     set softtabstop=4
     set shiftround
 
-With these settings newlines are inserted after 79  characters and indentation
+With these settings, newlines are inserted after 79 characters and indentation
 is set to 4 spaces per tab. If you also use VIM for other languages, there is a
 handy plugin at indent_, which handles indentation settings for python source
 files.
-Additionally there is also a handy syntax plugin at syntax_ featuring some
-improvements over the syntax file included in VIM 6.1.
+
+There is also a handy syntax plugin at syntax_ featuring some improvements over
+the syntax file included in VIM 6.1.
 
 These plugins supply you with a basic environment for developing in Python.
-However in order to improve the programming flow we also want to continually
-check for PEP8 compliance and check syntax. Luckily there exist PEP8_ and
-Pyflakes_ to do this for you. If your VIM is compiled with `+python` you can
-also utilize some very handy plugins to do these checks from within the editor.
-For PEP8 checking install vim-pep8_. Now you can map the vim function
-`Pep8()` to any hotkey or action you want. Similarly for pyflakes you can
-install vim-pyflakes_. Now you can map `Pyflakes()` like the PEP8 function and
-have it called quickly. Both plugins will display errors in a quickfix list and
-provide an easy way to jump to the corresponding line. A very handy setting is
-calling these functions whenever a buffer is saved. In order to do this, enter
-the following lines into your vimrc::
+To get the most out of Vim, you should continually check your code for syntax
+errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
+If your VIM is compiled with `+python` you can also utilize some very handy
+plugins to do these checks from within the editor.
+
+For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
+install vim-pyflakes_. Now you can map the functions `Pep8()` or `Pyflakes()`
+to any hotkey or action you want in Vim. Both plugins will display errors at
+the bottom of the screen, and provide an easy way to jump to the corresponding
+line. It's very handy to call these functions whenever you save a file. In
+order to do this, add the following lines to your `vimrc`::
 
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
@@ -60,7 +63,10 @@ the following lines into your vimrc::
 TextMate
 --------
 
-"`TextMate <http://macromates.com/>`_ brings Apple's approach to operating systems into the world of text editors. By bridging UNIX underpinnings and GUI, TextMate cherry-picks the best of both worlds to the benefit of expert scripters and novice users alike."
+"`TextMate <http://macromates.com/>`_ brings Apple's approach to operating
+systems into the world of text editors. By bridging UNIX underpinnings and GUI,
+TextMate cherry-picks the best of both worlds to the benefit of expert
+scripters and novice users alike."
 
 Sublime Text
 ------------
@@ -72,7 +78,8 @@ extraordinary features."
 Sublime Text has excellent support for editing Python code and uses Python for
 its plugin API.
 
-`Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_ is currently in beta.
+`Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_
+is currently in beta.
 
 IDEs
 ::::
@@ -80,7 +87,10 @@ IDEs
 PyCharm / IntelliJ IDEA
 -----------------------
 
-`PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also known for IntelliJ IDEA. Both share the same code base and most of PyCharm's features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
+`PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also
+known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
+features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
+
 
 Eclipse
 -------
@@ -91,18 +101,28 @@ The most popular Eclipse plugin for Python development is Aptana's
 
 Komodo IDE
 -----------
-`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by ActiveState and is a commerical IDE for Windows, Mac
+`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by
+ActiveState and is a commercial IDE for Windows, Mac
 and Linux.
+
 
 Spyder
 ------
 
-`Spyder <http://code.google.com/p/spyderlib/>`_ an IDE specifically geared toward working with scientific python libraries (namely `Scipy <http://www.scipy.org/>`_).
+`Spyder <http://code.google.com/p/spyderlib/>`_ an IDE specifically geared
+toward working with scientific python libraries (namely `Scipy <http://www.scipy.org/>`_).
 Includes integration with pyflakes_, `pylint <http://www.logilab.org/857>`_,
 and `rope <http://rope.sourceforge.net/>`_.
 
-Spyder is open-source (free), offers code completion, syntax highlighting, class and function browser, and object inspection.
+Spyder is open-source (free), offers code completion, syntax highlighting,
+class and function browser, and object inspection.
 
+
+WingIDE
+-------
+
+`WingIDE <http://wingware.com/>`_ a python specific IDE.   Runs for Linux,
+Windows, and Mac (as an X11 application, which frustrates some Mac users).
 
 
 Interpreter Tools
@@ -112,8 +132,10 @@ Interpreter Tools
 virtualenv
 ----------
 
-Virtualenv is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.
-It solves the "Project X depends on version 1.x but, Project Y needs 4.x" dilemma and keeps your global site-packages directory clean and manageable.
+Virtualenv is a tool to keep the dependencies required by different projects
+in separate places, by creating virtual Python environments for them.
+It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
+dilemma and keeps your global site-packages directory clean and manageable.
 
 `virtualenv <http://www.virtualenv.org/en/latest/index.html>`_ creates
 a folder which contains all the necessary executables to contain the
@@ -185,7 +207,8 @@ control by adding it to the ignore list.
 virtualenvwrapper
 -----------------
 
-`Virtualenvwrapper <http://pypi.python.org/pypi/virtualenvwrapper>`_ makes virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
+`Virtualenvwrapper <http://pypi.python.org/pypi/virtualenvwrapper>`_ makes
+virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
 
 ::
 
@@ -198,18 +221,38 @@ Put this into your `~/.bash_profile` (Linux/Mac) file:
 
     $ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
-This will prevent your virtualenvs from relying on your (global) site packages directory, so that they are completely separate..
+This will prevent your virtualenvs from relying on your (global) site packages
+directory, so that they are completely separate..
 
 Other Tools
 :::::::::::
 
+IDLE
+----
+
+`IDLE <http://docs.python.org/library/idle.html>`_ is an integrated
+development environment that is part of Python standard library. It is
+completely written in Python and uses Tkinter GUI toolkit. Though IDLE
+is not suited for full-blown development using Python , it is quite
+helpful to try out small Python snippets and experiment with different
+features in Python.
+
+It provides following features:
+
+* Python Shell Window (interpreter)
+* Multi window text editor that colorizes Python code
+* Minimal debugging facility
+
+
 IPython
 -------
 
-`IPython <http://ipython.org/>`_ provides a rich toolkit to help you make the most out of using Python interactively. Its main components are:
+`IPython <http://ipython.org/>`_ provides a rich toolkit to help you make the
+most out of using Python interactively. Its main components are:
 
 * Powerful Python shells (terminal- and Qt-based).
-* A web-based notebook with the same core features but support for rich media, text, code, mathematical expressions and inline plots.
+* A web-based notebook with the same core features but support for rich media,
+text, code, mathematical expressions and inline plots.
 * Support for interactive data visualization and use of GUI toolkits.
 * Flexible, embeddable interpreters to load into your own projects.
 * Tools for high level and interactive parallel computing.
@@ -223,7 +266,8 @@ IPython
 BPython
 -------
 
-`bpython <http://bpython-interpreter.org/>`_ is an alternative interface to the Python interpreter for Unix-like operating systems. It has the following features:
+`bpython <http://bpython-interpreter.org/>`_ is an alternative interface to the
+Python interpreter for Unix-like operating systems. It has the following features:
 
 * In-line syntax highlighting.
 * Readline-like autocomplete with suggestions displayed as you type.
@@ -237,5 +281,4 @@ BPython
 ::
 
     $ pip install bpython
-
 

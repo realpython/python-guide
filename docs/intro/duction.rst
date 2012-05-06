@@ -1,7 +1,56 @@
 Introduction
 ============
 
-.. todo:: write a general blurb introducing the Python language
+From the `official Python website <http://python.org/about/>`_:
+
+Python is a general-purpose, high-level programming language similar
+to Tcl, Perl, Ruby, Scheme, or Java. Some of its main key features
+include:
+
+* very clear, readable syntax
+
+  Python's philosophy focuses on readability, from code blocks
+  delineated with significant whitespace to intuitive keywords in
+  place of inscrutable punctuation
+
+* extensive standard libraries and third party modules for virtually
+  any task
+
+  Python is sometimes described with the words "batteries included"
+  for its extensive
+  `stanadard library <http://docs.python.org/library/>`_, which can
+  includes modules for regular expressions, file IO, fraction handling,
+  object serialization, and much more.
+
+  Additionally, the
+  `Python Package Index <http://pypi.python.org/pypi/>`_ is available
+  for users to submit their packages for widespread use, similar to
+  Perl's `CPAN <http://www.cpan.org>`_. There is a thriving community
+  of very powerful Python frameworks and tools like
+  the `Django <http://www.djangoproject.com>`_ web framework and the
+  `NumPy <http://numpy.scipy.org>`_ set of math routines.
+
+* integration with other systems
+
+  Python can integrate with `Java libraries <http://www.jython.org>`_,
+  enabling it to be used with the rich Java environment that corporate
+  programmers are used to. It can also be
+  `extended by C or C++ modules <http://docs.python.org/extending/>`_
+  when speed is of the essence.
+
+* ubiquity on computers
+
+  Python is available on Windows, \*nix, and Mac. It runs wherever the
+  Java virtual machine runs, and the reference implementation CPython
+  can help bring Python to wherever there is a working C compiler.
+
+* friendly community
+
+  Python has a vibrant and large :ref:`community <the-community>`
+  which maintains wikis, conferences, countless repositories,
+  mailing lists, IRC channels, and so much more. Heck, the Python
+  community is even helping to write this guide!
+
 
 .. _about-ref:
 

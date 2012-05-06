@@ -12,7 +12,7 @@ approriate.
 The Guide is written as :ref:`restructuredtext-ref`.
 
 .. note:: Parts of The Guide may not yet match this style guide. Feel free
-   to update those parts to by in sync with The Guide Style Guide
+   to update those parts to be in sync with The Guide Style Guide
 
 .. note:: On any page of the rendered HTML you can click "Show Source" to
    see how authors have styled the page.
@@ -20,7 +20,7 @@ The Guide is written as :ref:`restructuredtext-ref`.
 Relevancy
 ---------
 
-Stride to keep any contributions relevant to the :ref:`purpose of The Guide
+Strive to keep any contributions relevant to the :ref:`purpose of The Guide
 <about-ref>`.
 
 * Avoid including too much information on subjects that don't directly

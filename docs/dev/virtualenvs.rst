@@ -137,3 +137,21 @@ Other useful commands
   Shows contents of ``site-packages`` directory.
 
 `Full list of virtualenvwrapper commands <http://www.doughellmann.com/docs/virtualenvwrapper/command_ref.html#managing-environments>`_.
+
+autoenv
+-------
+When you ``cd`` into a directory containing a ``.env`` `autoenv <https://github.com/kennethreitz/autoenv>`_
+automagically activates the environment.
+
+Install it on Mac OS X using ``brew``:
+
+.. code-block:: console
+
+   $ brew install autoenv
+
+And on Linux:
+
+.. code-block:: console
+
+   $ git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
+   $ echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
