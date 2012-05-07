@@ -76,7 +76,7 @@ additional resource or reference will be helpful.
 
 More information about test driven development can be found at these resources:
 
-    `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`
+    `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_
 
 
 Advanced
