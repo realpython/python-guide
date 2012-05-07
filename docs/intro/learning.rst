@@ -78,6 +78,15 @@ More information about test driven development can be found at these resources:
 
     `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_
 
+A Byte of Python
+~~~~~~~~~~~~~~~~
+
+A free introductory book that teaches python at the beginner level, it assumes no
+previous programming experience.
+
+    `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
+    `A Byte of Python for Python 3.x <http://www.swaroopch.org/notes/Python_en:Table_of_Contents>`_
+
 
 Advanced
 --------
@@ -85,7 +94,9 @@ Advanced
 Pro Python
 ~~~~~~~~~~
 
-.. todo:: Write about `Pro Python <http://propython.com/>`_
+This book is for intermediate to advanced Python programmers who are looking to understand how
+and why Python works the way it does and how they can take their code to the next level.
+
 
 Expert Python Programming
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,6 +114,14 @@ development, version control, and optimization/profiling.
 
     `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
 
+The Python Tutorial
+~~~~~~~~~~~~~~~~~~~~
+
+This is the official tutorial, it covers all the basics, and offers a tour of the
+language and the standard library, recommended for those who need a quickstart
+guide to the language.
+
+    `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
 References
 ----------
@@ -113,3 +132,11 @@ Python in a Nutshell
 Python in a Nutshell, written by Alex Martelli, covers most cross-platform
 python's usage, from its syntax to built-in libraries to advanced topics such
 as writing C extensions.
+
+The Python Language Reference
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is Python's reference manual, it covers the syntax and the core symantics of the
+language.
+
+    `The Python Language Reference <http://docs.python.org/reference/index.html>`_
