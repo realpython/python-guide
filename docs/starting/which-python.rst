@@ -70,7 +70,7 @@ If you are looking to squeeze more performance out of your Python code, it's
 worth giving PyPy a try. On a suite of benchmarks, it's current `over 5 times
 faster than CPython <http://speed.pypy.org/>`_.
 
-Currently PyPy supports Python 2.7.
+Currently PyPy supports Python 2.7. [#pypy_ver]_
 
 Jython
 ------
@@ -83,7 +83,7 @@ module.
 If you need to interface with an existing Java codebase or have other reasons to
 need to write Python code for the JVM, Jython is the best choice.
 
-Currently Jython supports up to Python 2.5.
+Currently Jython supports up to Python 2.5. [#jython_ver]_
 
 IronPython
 ----------
@@ -96,4 +96,10 @@ expose Python code to other .NET languages.
 IronPython directly in to the Visual Studio development environment, making it
 an ideal choice for Windows developers.
 
-IronPython supports Python 2.7.
+IronPython supports Python 2.7. [#iron_ver]_
+
+.. [#pypy_ver] http://pypy.org/compat.html
+
+.. [#jython_ver] http://wiki.python.org/jython/JythonFaq/GeneralInfo#Is_Jython_the_same_language_as_Python.3F
+
+.. [#iron_ver] http://ironpython.codeplex.com/releases/view/54498
