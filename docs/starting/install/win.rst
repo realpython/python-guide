@@ -4,14 +4,17 @@ Installing Python on Windows
 ============================
 
 First, download the `latest version <http://python.org/ftp/python/2.7.2/python-2.7.2.msi>`_
-of Python 2 from the official Website.
+of Python 2 from the official Website. If you want to be sure you are installing a fully
+up-to-date version then use the "Windows Installer" link from the home page of the
+`Python.org web site <http://python.org>`_ .
 
-The Windows version is provided as an MSI package. To install it manually, just
+ The Windows version is provided as an MSI package. To install it manually, just
  double-click the file. The MSI package format allows Windows administrators to
-  automate installation with their standard tools.
+ automate installation with their standard tools.
 
 By design, Python installs to a directory with the version number embedded,
-e.g. ``C:\Python27\``, so that you can have multiple versions of Python on the
+e.g. Python version 2.7 will install at ``C:\Python27\``, so that you can
+have multiple versions of Python on the
 same system without conflicts. Of course, only one interpreter can be the
 default application for Python file types. It also does not automatically
 modify the ``PATH`` environment variable, so that you always have control over
@@ -28,6 +31,8 @@ You can do this easily by running the following in ``powershell``::
 
     [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
 
+The second (``Scripts``) directory receives command files when certain
+packages are installed, so it is a very useful addition.
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications for
