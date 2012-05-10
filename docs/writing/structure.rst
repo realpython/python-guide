@@ -143,7 +143,8 @@ able to tell immediately from where comes a class or a function, as in the
 most cases but the simplest single file projects.
 
 
-Packages --------
+Packages
+--------
 
 Python provides a very straightforward packaging system, which is simply an
 extension of the module mechanism to a directory.
