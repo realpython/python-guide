@@ -253,12 +253,12 @@ relatively long life of their own in the computer's memory.
 Decorators
 ----------
 
-Python language provides a simple yet powerful syntax called 'decorators'.
+The Python language provides a simple yet powerful syntax called 'decorators'.
 A decorator is a function or a class that wraps (or decorate) a function
 or a method. The 'decorated' function or method will replace the original
-'undecorated' function or method. Because function are first-class objects
+'undecorated' function or method. Because functions are first-class objects
 in Python it can be done 'manually' but using the @decorator syntax is
-clearer and thus prefered.
+clearer and thus preferred.
 
 .. code-block:: Python
 
@@ -277,8 +277,8 @@ clearer and thus prefered.
     # bar() is decorated
 
 Using this mechanism is useful for separating concerns and avoiding
-external un-related logic to 'pollute' the core logic of the function
-or method. A good example of a functionality that is better handled
+external un-related logic 'polluting' the core logic of the function
+or method. A good example of a piece of functionality that is better handled
 with decoration is memoization or caching: you want to store the results of an
 expensive function in a table and use them directly instead of recomputing
 them when they have already been computed. This is clearly not part
