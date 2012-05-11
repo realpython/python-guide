@@ -176,8 +176,8 @@ repetition of `very.deep.module`.
 Object-oriented programming
 ---------------------------
 
-Python is sometime described as an object-oriented programming language. This
-can be somewhat misleading and need to be clarified.
+Python is sometimes described as an object-oriented programming language. This
+can be somewhat misleading and needs to be clarified.
 
 In Python, everything is an object, and can be handled as such. This is what is
 meant when we say that, for example, functions are first-class objects.
@@ -188,46 +188,46 @@ object-oriented language.
 
 However, unlike Java, Python do not impose object-oriented programming as the
 main programming paradigm. It is perfectly viable for a Python project to not
-be object-oriented, ie. to use no or very few class definitions, class
-inheritance, and any other mechanism that are specific to object-oriented
+be object-oriented, i.e. to use no or very few class definitions, class
+inheritance, or any other mechanisms that are specific to object-oriented
 programming.
 
 Moreover, as seen in the modules_ section, the way Python handles modules and
-namespaces gives directly to the developer a natural way to ensure
+namespaces gives the developer a natural way to ensure
 encapsulation and separation of abstraction layers, both being the most common
 reasons to use object-orientation. Therefore, Python programmers have more
 latitude to not use object-orientation, when it is not required by the business
-model to be constructed.
+model.
 
-There are some reasons to avoid unnecessary object-orientation. Definining
+There are some reasons to avoid unnecessary object-orientation. Defining
 custom classes is useful when we want to glue together some state and some
-functionality.  The problem, as pointed out by the discussions about functional
+functionality. The problem, as pointed out by the discussions about functional
 programming, comes from the "state" part of the equation.
 
-In some architectures, typically web applications, instances of Python
-processes are spawned simultaneously to answer to external requests that can
-happen at the same time. In this case, holding some state into instanciated
+In some architectures, typically web applications, multiple instances of Python
+processes are spawned to respond to external requests that can
+happen at the same time. In this case, holding some state into instantiated
 objects, which means keeping some static information about the world, is prone
-to concurrency problems or race-conditions: between the initialization of the
+to concurrency problems or race-conditions. Sometime between the initialization of the
 state of an object, usually done with the __init__() method, and the actual use
-of the object state through one of its method, the world may have changed, and
+of the object state through one of its methods, the world may have changed, and
 the retained state may be outdated. For example, a request may load an item in
 memory and mark it as read by a user. If another request requires the deletion
-of this item at the same, it may happen that the deletion actually occur after
+of this item at the same, it may happen that the deletion actually occurs after
 the first process loaded the item, and then we have to mark as read a deleted
 object.
 
 This and other issues led to the idea that using stateless functions is a
 better programming paradigm.
 
-Another way to say the same thing is to propose to use functions and procedures
-with as few implicit context and side-effects as possible.  A function's
-implicit context is decelable when the function body refers to some global
-variables or fetches data from the persistence layer. Side-effects are the
-opposite: if a function body modifies the global context or save or delete data
-on the persistence layer, it is said to have side-effect.
+Another way to say the same thing is to suggest using functions and procedures
+with as few implicit contexts and side-effects as possible. A function's
+implicit context is made up of any of the global variables or items in the persistence layer
+that are accessed from within the function. Side-effects are the changes that a function makes
+to it's implicit context. If a function saves or deletes data in a global variable or
+in the persistence layer, it is said to have a side-effect.
 
-Isolating carefully functions with context and side-effects from functions with
+Carefully isolating functions with context and side-effects from functions with
 logic (called pure functions) allow the following benefits:
 
 - Pure functions are more likely to be deterministic: given a fixed input,
@@ -239,7 +239,7 @@ logic (called pure functions) allow the following benefits:
 - Pure functions are easier to test with unit-tests: There is less
   need for complex context setup and data cleaning afterwards.
 
-- Pure functions are easier to manipulate, decorate_, pass-around.
+- Pure functions are easier to manipulate, decorate_, and pass-around.
 
 In summary, pure functions, without any context or side-effects, are more
 efficient building blocks than classes and objects for some architectures.
