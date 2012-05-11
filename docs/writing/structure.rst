@@ -60,53 +60,53 @@ include:
 Modules
 -------
 
-Python modules are one of the main abstraction layer available and probably the
+Python modules are one of the main abstraction layers available and probably the
 most natural one. Abstraction layers allow separating code into parts holding
-related data and functionalities.
+related data and functionality.
 
 For example, a layer of a project can handle interfacing with user actions,
 while another would handle low-level manipulation of data. The most natural way
-to separate these two layers is to regroup all interfacing functionalities
+to separate these two layers is to regroup all interfacing functionality
 in one file, and all low-level operations in another file. In this case,
-the interface file need to import the low-level file. This is done with the
+the interface file needs to import the low-level file. This is done with the
 `import` and `from ... import` statements.
 
-As soon as you use `import` statements you use modules, either builtin modules
-such as `os` and `sys`, or third-party modules you have installed in your
-environment, or project's internal modules.
+As soon as you use `import` statements you use modules. These can be either built-in
+modules such as `os` and `sys`, third-party modules you have installed in your
+environment, or your project's internal modules.
 
 Nothing special is required for a Python file to be a module, but the import
-mechanism need to be understood in order to use this concept properly and avoid
+mechanism needs to be understood in order to use this concept properly and avoid
 some issues.
 
 Concretely, the `import modu` statement will look for the proper file, which is
 `modu.py` in the same directory as the caller if it exists.  If it is not
-found, the Python interpreter with search for `modu.py` in the "path"
+found, the Python interpreter will search for `modu.py` in the "path"
 recursively and raise an ImportError exception if it is not found.
 
 Once `modu.py` is found, the Python interpreter will execute the module in an
 isolated scope. Any top-level statement in `modu.py` will be executed,
-including other imports if any. Function and classes definitions are stored in
+including other imports if any. Function and class definitions are stored in
 the module's dictionary.
 
-Then modules variables, functions and classes will be available to the caller
+Then, the module's variables, functions, and classes will be available to the caller
 through the module's namespace, a central concept in programming that is
 particularly helpful and powerful in Python.
 
-In many languages, a `include file` directive is used by the preprocessor to
-take all code found in the file and 'copy' it in the caller's code. It is
+In many languages, an `include file` directive is used by the preprocessor to
+take all code found in the file and 'copy' it into the caller's code. It is
 different in Python: the included code is isolated in a module namespace, which
 means that you generally don't have to worry that the included code could have
-unwanted effect, eg override an existing function with the same name.
+unwanted effects, e.g. override an existing function with the same name.
 
 It is possible to simulate the more standard behavior by using a special syntax
 of the import statement: `from modu import *`. This is generally considered bad
-practice, **using import * makes code harder to read and dependencies less
-compartimented**.
+practice. **Using `import *` makes code harder to read and makes dependencies less
+compartmentalized**.
 
 Using `from modu import func` is a way to pinpoint the function you want to
-import and put it is the global namespace. While much less harmful than `import
-*` because it shows explicitely what is imported in the global namespace, it's
+import and put it in the global namespace. While much less harmful than `import
+*` because it shows explicitly what is imported in the global namespace, its
 advantage over a simpler `import modu` is only that it will save some typing.
 
 **Very bad**
@@ -134,13 +134,13 @@ advantage over a simpler `import modu` is only that it will save some typing.
     [...]
     x = modu.sqrt(4)  # sqrt is visibly part of modu's namespace
 
-As said in the section about style, readability is one of the main feature of
+As said in the section about style, readability is one of the main features of
 Python. Readability means to avoid useless boilerplate text and clutter,
 therefore some efforts are spent trying to achieve a certain level of brevity.
-But terseness and obscurity are the limits where brevity should stop: being
-able to tell immediately from where comes a class or a function, as in the
-`modu.func` idiom, improves greatly code readability and understandability in
-most cases but the simplest single file projects.
+But terseness and obscurity are the limits where brevity should stop. Being
+able to tell immediately where a class or function comes from, as in the
+`modu.func` idiom, greatly improves code readability and understandability in
+all but the simplest single file projects.
 
 
 Packages
