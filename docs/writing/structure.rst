@@ -290,18 +290,18 @@ Dynamic typing
 Python is said to be dynamically typed, which means that variables
 do not have a fixed type. In fact, in Python, variables are very
 different from what they are in many other languages, specifically
-strongly-typed languages: variables are not a segment of the computer's
-memory where some value ir written, they are 'tags' or 'names' pointing
+strongly-typed languages. Variables are not a segment of the computer's
+memory where some value is written, they are 'tags' or 'names' pointing
 to objects. It is therefore possible for the variable 'a' to be set to
 the value 1, then to the value 'a string', then to a function.
 
-The dynanic typing of Python is often considered as a weakness, and indeed
-it can lead to complexities and to hard-to-debug code, where something
+The dynamic typing of Python is often considered to be a weakness, and indeed
+it can lead to complexities and hard-to-debug code. Something
 named 'a' can be set to many different things, and the developer or the
-maintainer need to track this name in the code to make sure it has not
+maintainer needs to track this name in the code to make sure it has not
 been set to a completely unrelated object.
 
-Some guidelines allow to avoid this issue:
+Some guidelines help to avoid this issue:
 
 - Avoid using variables for different things.
 
@@ -323,9 +323,8 @@ Some guidelines allow to avoid this issue:
     def func()
         pass  # Do something
 
-Using short functions or methods helps writing good code for many
-reasons, one being that their local scope is clearer, and the risk
-of using the same name for two unrelated things is lowered.
+Using short functions or methods helps reduce the risk
+of using the same name for two unrelated things.
 
 It is better to use different names even for things that are related,
 when they have a different type:
@@ -340,14 +339,14 @@ when they have a different type:
 
 There is no efficiency gain when reusing names: the assignments
 will have to create new objects anyway. However, when the complexity
-grows are each assignment are separated by other lines of code, including
-'if' branches and loops, it becomes harder to acertain which type is the
-variable at hand.
+grows and each assignment is separated by other lines of code, including
+'if' branches and loops, it becomes harder to ascertain what a given
+variable's type is.
 
-Some coding practices, like functional programming, even recommend to never re-assign a variable, which
-is done in Java with the keyword final. Python do not have such a keyword,
-and it would be against its philosophy anyway, but it may be a good
-discipline to avoid setting more than once any variable, and it helps
+Some coding practices, like functional programming, recommend never reassigning a variable.
+In Java this is done with the `final` keyword. Python does not have a `final` keyword
+and it would be against its philosophy anyway. However, it may be a good
+discipline to avoid assigning to a variable more than once, and it helps
 in grasping the concept of mutable and immutable types.
 
 Mutable and immutable types
