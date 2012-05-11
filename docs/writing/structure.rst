@@ -356,12 +356,12 @@ Python has two kinds of built-in or user-defined types.
 
 Mutable types are those that allow in-place modification
 of the content. Typical mutables are lists and dictionaries:
-All lists have muting methods, like append() or pop(), and
-can be modified in place. Same for dictionaries.
+All lists have mutating methods, like append() or pop(), and
+can be modified in place. The same goes for dictionaries.
 
 Immutable types provide no method for changing their content.
 For instance, the variable x set to the integer 6 has no "increment" method. If you
-want to computed x + 1, you have to create another integer and give it
+want to compute x + 1, you have to create another integer and give it
 a name.
 
 .. code-block:: python
@@ -385,8 +385,8 @@ For example, the immutable equivalent of a list is the tuple, created
 with ``(1, 2)``. This tuple is a pair that cannot be changed in-place,
 and can be used as a key for a dictionary.
 
-One particularity of Python that can surprise in the beginning is that
-string are immutable. This means that when constructing a string from
+One peculiarity of Python that can surprise beginners is that
+strings are immutable. This means that when constructing a string from
 its parts, it is much more efficient to accumulate the parts in a list,
 which is mutable, and then glue ('join') the parts together when the
 full string is needed.
