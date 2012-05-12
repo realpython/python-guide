@@ -55,6 +55,8 @@ Comments
 Comments are written directly inside the code, either using the hash sign (#)
 or a docstring_.
 
+.. _docstring: docstrings_
+
 Finding the correct balance between undocumented code and verbose and useless
 comment boilerplates is difficult, and is the subject of heated discussion
 among developers.
@@ -193,6 +195,10 @@ Multi-line docstrings: ::
         if imag == 0.0 and real == 0.0: return complex_zero
         ...
 
+
+.. _sphinx-ref:
+
+
 Sphinx
 ------
 
@@ -220,8 +226,16 @@ should help you familiarize yourself with its syntax.
 Other Tools
 :::::::::::
 
-that old thing
---------------
+
+Epydoc
+------
+`Epydoc <http://epydoc.sourceforge.net/>`_ generates API documentation based on docstrings. 
+Epydoc is able to parse docstrings marked up with :ref:`reStructuredText-ref`, 
+`Javadoc <http://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html#javadocdocuments>`_, 
+`epytext <http://epydoc.sourceforge.net/manual-epytext.html>`_ or plaintext. 
+It supports various output formats, most notable HTML, PDF or LaTeX documents.
+
+The development of Epydoc is discontinued. You should use :ref:`sphinx-ref` instead.
 
 pycco / docco / shocco
 ----------------------
