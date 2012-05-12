@@ -260,7 +260,7 @@ or a method. The 'decorated' function or method will replace the original
 in Python it can be done 'manually' but using the @decorator syntax is
 clearer and thus preferred.
 
-.. code-block:: Python
+.. code-block:: python
 
     def foo():
         # do something
@@ -307,7 +307,7 @@ Some guidelines help to avoid this issue:
 
 **Bad**
 
-.. code-block:: Python
+.. code-block:: python
 
     a = 1
     a = 'a string'
