@@ -220,8 +220,14 @@ should help you familiarize yourself with its syntax.
 Other Tools
 :::::::::::
 
-that old thing
---------------
+Epydoc
+------
+Epydoc generates API documentation based on docstrings. 
+Epydoc is able to parse docstrings marked up with reStructuredText, Javadoc, 
+plaintext or epytext. It supports various output formats, most notable HTML, 
+PDF or LaTeX documents.
+
+The development of Epydoc is discontinued. You should use Sphinx instead.
 
 pycco / docco / shocco
 ----------------------
