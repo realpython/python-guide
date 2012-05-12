@@ -55,6 +55,8 @@ Comments
 Comments are written directly inside the code, either using the hash sign (#)
 or a docstring_.
 
+.. _docstring: docstrings_
+
 Finding the correct balance between undocumented code and verbose and useless
 comment boilerplates is difficult, and is the subject of heated discussion
 among developers.
