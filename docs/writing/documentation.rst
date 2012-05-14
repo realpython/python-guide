@@ -206,9 +206,12 @@ Sphinx_ is a tool which converts documentation in the :ref:`restructuredtext-ref
 markup language into a range of output formats including HTML, LaTeX (for
 printable PDF versions), manual pages and plain text.
 
-.. note:: This Guide is built with Sphinx_
+There is also a great free hosting for your docs: `Read The Docs`_
+
+.. note:: This Guide is built with Sphinx_ and hosted on `Read The Docs`_
 
 .. _Sphinx: http://sphinx.pocoo.org
+.. _Read The Docs: http://readthedocs.org
 
 .. _restructuredtext-ref:
 
