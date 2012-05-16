@@ -11,7 +11,7 @@ complete set of Code Style guidelines and "Pythonic" idioms.
 
 On the opposite, when a veteran Python developper (a Pythonistas) point to some
 parts of a code and say it is not "Pythonic", it usually means that these lines
-of code do not follow the common guidelines and fail to express the intent is
+of code do not follow the common guidelines and fail to express the intent in
 what is considered the best (hear: most readable) way.
 
 On some border cases, no best way has been agreed upon on how to express
@@ -79,6 +79,85 @@ it is bad practice to have two disjoint statements on the same line.
     if cond1 and cond2:
         # do something
 
+Function arguments
+~~~~~~~~~~~~~~~~~~
+
+Arguments can be passed to functions in four different ways.
+
+**Positional arguments** are mandatory and have no default values. They are the
+simplest form of arguments and they can be used for the few function arguments
+that are fully part of the functions meaning and their order is natural. For
+instance, in ``send(message, recipient)`` or ``point(x, y)`` the user of the
+function has no difficulty to remember that those two function require two
+arguments, and in which order.
+
+In those two cases, it is possible to use argument names when calling the functions
+and, doing so, it is possible to switch the order of arguments, calling for instance
+``send(recipient='World', message='Hello')`` and ``point(y=2, x=1)`` but this
+reduce readability and is unnecessarily verbose, compared to the more straightforward
+calls to ``send('Hello', 'World')`` and ``point(1, 2)``.
+
+**Keyword arguments** are not mandatory and have default values. They are often
+used for optional parameters sent to the function. When a function has more than
+two or three positional parameters, its signature will be more difficult to remember
+and using keyword argument with default values is helpful. For instance, a more
+complete ``send`` function could be defined as ``send(message, to, cc=None, bcc=None)``.
+Here ``cc`` and ``bcc`` are optional, and evaluate to ``None`` when the are not
+passed another value.
+
+Calling a function with keyword arguments can be done in multiple ways in Python,
+for example it is possible to follow the order of arguments in the definition without
+explicitely naming the arguments, like in ``send('Hello', 'World', 'Cthulhu`, 'God')``,
+sending a blank carbon copy to God. It would also be possible to name arguments in
+another order, like in ``send('Hello again', 'World', bcc='God', cc='Cthulhu')``.
+Those two possibilities are better avoided whitout any strong reason to not
+follow the syntax that is the closest to the function definition: ``send('Hello',
+'World', cc='Cthulhu', bcc='God')``.
+
+As a side note, following YAGNI_ principle, it is often harder to remove an
+optional argument (and its logic inside the function) that was added "just in
+case" and is seemingly never used, than to add a new optional argument and its
+logic when needed.
+
+The **arbitrary argument list** is the third way to pass arguments to a
+function.  If the function intention is better expressed by a signature with an
+extensible number of positional arguments, it can be defined with the ``*args``
+constructs.  In the function body, ``args`` will be a tuple of all the
+remaining positional arguments. For example, ``send(message, *args)`` can be
+called with each recipient as an argument: ``send('Hello', 'God', 'Mom',
+'Cthulhu')``, and in the function body ``args`` will be equal to ``('God',
+'Mom', 'Cthulhu')``.
+
+However, this construct has some drawback and should be used with caution. If a
+function receives a list of arguments of the same nature, it is often more
+clear to define it as a function of one argument, that argument being a list or
+any sequence. Here, if ``send`` has multiple recipients, it is better to define
+it explicitely: ``send(message, recipients)`` and call it with ``send('Hello',
+['God', 'Mom', 'Cthulhu'])``. This way, the user of the function can manipulate
+the recipient list as a list beforhand, and it opens the possibility to pass
+any sequence, inculding iterators, that cannot be unpacked as other sequences.
+
+The **arbitrary keyword argument dictionary** is the last way to pass arguments
+to functions. If the function requires an undetermined serie of named
+arguments, it is possible to used the ``**kwargs`` construct. In the function
+body, ``kwargs`` will be a dictionary of all the passed named arguments that
+have not been caught be other keyword argument in the function signature.
+
+The same caution as in the case of *arbitrary argument list* is necessary, for
+similar reasons: these powerful techniques are to be used when there is a
+proven necessity to use them, and they should not be used if the simpler and
+clearer construct is sufficient to express the function's intention.
+
+It is up to the programmer writing the function to determine which arguments
+are positional argmuents and which are optional keyword arguments, and to
+decide wheter to use the advanced techniques of arbitrary argument passing. If
+the advices above are followed wisely, it is possible and enjoyable to write
+Python functions that are:
+
+* easy to read (the name and arguments need no explanations)
+
+* easy to change (adding a new keyword argument do not break other parts of the
+  code)
 
 Avoid the magical wand
 ~~~~~~~~~~~~~~~~~~~~~~
