@@ -9,7 +9,7 @@ Structure is Key
 ----------------
 
 Thanks to the way imports and modules are handled in Python, it is
-relatively easy to structure a python project. Easy, here, means
+relatively easy to structure a Python project. Easy, here, means
 that you do not have many constraints and that the module
 importing model is easy to grasp. Therefore, you are left with the
 pure architectural task of crafting the different parts of your
