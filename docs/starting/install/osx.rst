@@ -33,7 +33,7 @@ simply run
 
 .. code-block:: console
 
-    $ ruby -e "$(curl -fsS https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
+    $ /usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
 Then, insert the Homebrew directory at the top of your ``PATH`` enviornment
 variable. You can do this by adding the following line at the bottom of your
