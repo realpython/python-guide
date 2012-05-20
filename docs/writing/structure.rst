@@ -186,14 +186,14 @@ objects, they have a type, they can be passed as function arguments, they may
 have methods and properties. In this understanding, Python is an
 object-oriented language.
 
-However, unlike Java, Python do not impose object-oriented programming as the
+However, unlike Java, Python does not impose object-oriented programming as the
 main programming paradigm. It is perfectly viable for a Python project to not
 be object-oriented, i.e. to use no or very few class definitions, class
 inheritance, or any other mechanisms that are specific to object-oriented
 programming.
 
 Moreover, as seen in the modules_ section, the way Python handles modules and
-namespaces gives the developer a natural way to ensure
+namespaces gives the developer a natural way to ensure the
 encapsulation and separation of abstraction layers, both being the most common
 reasons to use object-orientation. Therefore, Python programmers have more
 latitude to not use object-orientation, when it is not required by the business
@@ -208,8 +208,8 @@ In some architectures, typically web applications, multiple instances of Python
 processes are spawned to respond to external requests that can
 happen at the same time. In this case, holding some state into instantiated
 objects, which means keeping some static information about the world, is prone
-to concurrency problems or race-conditions. Sometime between the initialization of the
-state of an object, usually done with the __init__() method, and the actual use
+to concurrency problems or race-conditions. Sometimes, between the initialization of
+the state of an object (usually done with the __init__() method) and the actual use
 of the object state through one of its methods, the world may have changed, and
 the retained state may be outdated. For example, a request may load an item in
 memory and mark it as read by a user. If another request requires the deletion
@@ -257,7 +257,7 @@ The Python language provides a simple yet powerful syntax called 'decorators'.
 A decorator is a function or a class that wraps (or decorate) a function
 or a method. The 'decorated' function or method will replace the original
 'undecorated' function or method. Because functions are first-class objects
-in Python it can be done 'manually' but using the @decorator syntax is
+in Python, it can be done 'manually', but using the @decorator syntax is
 clearer and thus preferred.
 
 .. code-block:: python
