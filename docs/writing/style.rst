@@ -186,7 +186,7 @@ We are all consenting adults
 
 As seen above, Python allows many tricks, and some of them are potentially
 dangerous. A good example is that any client code can override an object's
-properties and methods: There is no "private" keyword in Python. This
+properties and methods: there is no "private" keyword in Python. This
 philosophy, very different from highly defensive languages like Java, which
 give a lot of mechanism to prevent any misuse, is expressed by the saying: "We
 are consenting adults".
