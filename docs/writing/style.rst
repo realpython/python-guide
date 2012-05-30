@@ -236,20 +236,24 @@ Create an ignored variable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you need to assign something (for instance, in :ref:`unpacking-ref`) but
-will not need that variable, use ``_``:
+will not need that variable, use ``__``:
 
 .. code-block:: python
 
     filename = 'foobar.txt'
-    basename, _, ext = filename.rpartition()
+    basename, __, ext = filename.rpartition()
 
 .. note::
 
-   "``_``" is commonly used as an alias for the :func:`~gettext.gettext`
-   function. If your application uses (or may someday use) :mod:`gettext`,
-   you may want to avoid using ``_`` for ignored variables, as you may
-   accidentally shadow :func:`~gettext.gettext`.
-
+   Many Python style guides recommend the use of a single underscore "``_``"
+   for throwaway variables rather than the double underscore "``__``"
+   recommended here. The issue is that "``_``" is commonly used as an alias
+   for the :func:`~gettext.gettext` function, and is also used at the
+   interactive prompt to hold the value of the last operation. Using a
+   double underscore instead is just as clear and almost as convenient,
+   and eliminates the risk of accidentally interfering with either of
+   these other use cases.
+   
 Create a length-N list of the same thing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
