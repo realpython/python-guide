@@ -488,7 +488,7 @@ keep a count of your place in the list.
 .. code-block:: python
 
     for i, item in enumerate(a):
-        print i + ", " + item
+        print i , ", " , item
     # prints
     # 0, 3
     # 1, 4
