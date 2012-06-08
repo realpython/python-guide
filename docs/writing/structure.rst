@@ -230,7 +230,7 @@ in the persistence layer, it is said to have a side-effect.
 Carefully isolating functions with context and side-effects from functions with
 logic (called pure functions) allow the following benefits:
 
-- Pure functions are more likely to be deterministic: given a fixed input,
+- Pure functions are deterministic: given a fixed input,
   the output will always be the same.
 
 - Pure functions are much easier to change or replace if they need to
