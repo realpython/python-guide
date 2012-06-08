@@ -4,7 +4,7 @@ Systems Administration
 Fabric
 ------
 
-Fabric is a library for simplifying system administration tasks. While Chef
+`Fabric <http://docs.fabfile.org>`_ is a library for simplifying system administration tasks. While Chef
 and Puppet tend to focus on managing servers and system libraries,
 fabric is more focused on application level tasks such as deployment.
 
@@ -66,15 +66,22 @@ and we can deploy with:
 Additional features include parallel execution, interaction with remote
 programs, and host grouping.
 
+    `Fabric Documentation <http://docs.fabfile.org>`_
+
 Chef
 ----
 
 .. todo:: Write about Chef
 
+    `Chef Documentation
+    <http://wiki.opscode.com/display/chef/Documentation>`_
+
 Puppet
 ------
 
 .. todo:: Write about Puppet
+
+    `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
 
 Blueprint
 ---------
@@ -85,3 +92,6 @@ Buildout
 --------
 
 .. todo:: Write about Buildout
+
+    `Buildout Website <http://www.buildout.org>`_
+
