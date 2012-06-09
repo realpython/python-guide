@@ -1,15 +1,15 @@
 Code Style
 ==========
 
-If you ask to Python programmers what they like the most in Python, they will
-often say it is its high readability.  Indeed, a high level of readability of
-the code is at the heart of the design of the Python language, following the
+If you ask Python programmers what they like most in Python, they will
+often say its high readability.  Indeed, a high level of readability 
+is at the heart of the design of the Python language, following the
 recognised fact that code is read much more often than it is written.
 
 One reason for Python code to be easily read and understood is its relatively
 complete set of Code Style guidelines and "Pythonic" idioms.
 
-On the opposite, when a veteran Python developper (a Pythonistas) point to some
+Moreover, when a veteran Python developer (a Pythonistas) point to some
 parts of a code and say it is not "Pythonic", it usually means that these lines
 of code do not follow the common guidelines and fail to express the intent in
 what is considered the best (hear: most readable) way.
