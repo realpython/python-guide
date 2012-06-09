@@ -2,7 +2,7 @@ Code Style
 ==========
 
 If you ask Python programmers what they like most in Python, they will
-often say its high readability.  Indeed, a high level of readability 
+often say its high readability.  Indeed, a high level of readability
 is at the heart of the design of the Python language, following the
 recognised fact that code is read much more often than it is written.
 
@@ -253,7 +253,7 @@ will not need that variable, use ``__``:
    double underscore instead is just as clear and almost as convenient,
    and eliminates the risk of accidentally interfering with either of
    these other use cases.
-   
+
 Create a length-N list of the same thing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -285,10 +285,10 @@ This will set the value of the variable *word* to 'spam'. This idiom can be appl
 Sometimes we need to search through a collection of things. Let's look at two options: lists and dictionaries.
 
 Take the following code for example::
-    
+
     d = {'s': [], 'p': [], 'a': [], 'm': []}
     l = ['s', 'p', 'a', 'm']
-    
+
     def lookup_dict(d):
         return 's' in d
 
@@ -587,9 +587,8 @@ and square braces.
         "that I had not even time to say “I’m going to sleep.”"
     )
 
-    from some.deep.module.inside.a.module import (a_nice_function,
-                                                  another_nice_function,
-                                                  yet_another_nice_functio)
+    from some.deep.module.inside.a.module import (
+        a_nice_function, another_nice_function, yet_another_nice_function)
 
 However, more often than not having to split long logical line is a sign that
 you are trying to do too many things at the same time, which may hinder
