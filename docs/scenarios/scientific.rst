@@ -11,7 +11,8 @@ and it performs really well.
 
 Due to its high performance nature, scientific computing in python often refers
 to external libraries, typically written in faster languages (like C, or FORTRAN
-for matrix operations). The main libraries used are NumPy and SciPy
+for matrix operations). The main libraries used are `NumPy`_ and
+`SciPy`_.
 
 Libraries
 :::::::::
