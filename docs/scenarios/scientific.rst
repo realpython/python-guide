@@ -16,7 +16,7 @@ for matrix operations). The main libraries used are NumPy and SciPy
 Libraries
 :::::::::
 
-Numpy
+NumPy
 -----
 `NumPy <http://numpy.scipy.org/>`_ is a low level library written in C (and
 FORTRAN) for high level mathematical functions. NumPy cleverly overcomes the
