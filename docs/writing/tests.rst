@@ -47,7 +47,7 @@ Some general rules of testing:
   catching test are among the most valuable piece of code in your project.
 
 - Use long and descriptive names for testing functions. The style guide here is
-  slighlty different than that of running code, where short names are often
+  slightly different than that of running code, where short names are often
   preferred. The reason is testing functions are never called explicitely.
   ``square()`` or even ``sqr()`` is ok in running code, but in testing code you
   would has names such as ``test_square_of_number_2()``,
