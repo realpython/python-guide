@@ -252,7 +252,7 @@ most out of using Python interactively. Its main components are:
 
 * Powerful Python shells (terminal- and Qt-based).
 * A web-based notebook with the same core features but support for rich media,
-text, code, mathematical expressions and inline plots.
+  text, code, mathematical expressions and inline plots.
 * Support for interactive data visualization and use of GUI toolkits.
 * Flexible, embeddable interpreters to load into your own projects.
 * Tools for high level and interactive parallel computing.
