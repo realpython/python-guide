@@ -391,6 +391,26 @@ its parts, it is much more efficient to accumulate the parts in a list,
 which is mutable, and then glue ('join') the parts together when the
 full string is needed.
 
+**Bad**
+
+.. code-block:: python
+
+    # create a concatenated string from 0 to 19 (e.g. "012..1819")
+    nums = ""
+    for n in range(20):
+      nums += str(n)   # slow and inefficient
+    print nums
+
+**Good**
+
+.. code-block:: python
+    
+    # create a concatenated string from 0 to 19 (e.g. "012..1819")
+    nums = []
+    for n in range(20):
+      nums.append(str(n))
+    print "".join(nums)  # much more efficient
+
 Vendorizing Dependencies
 ------------------------
 
