@@ -389,7 +389,9 @@ One peculiarity of Python that can surprise beginners is that
 strings are immutable. This means that when constructing a string from
 its parts, it is much more efficient to accumulate the parts in a list,
 which is mutable, and then glue ('join') the parts together when the
-full string is needed.
+full string is needed. One thing to notice, however, is that list
+comprehensions are better and faster than constructing a list in a loop
+with calls to append().
 
 **Bad**
 
@@ -410,6 +412,28 @@ full string is needed.
     for n in range(20):
       nums.append(str(n))
     print "".join(nums)  # much more efficient
+
+**Best**
+
+.. code-block:: python
+
+    # create a concatenated string from 0 to 19 (e.g. "012..1819")
+    print "".join([str(n) for n in range(20)])
+
+One final thing to mention about strings is that using join() is not always
+best. In the instances where you are creating a new string from a pre-determined
+number of strings, using the addition operator is actually faster, but in cases
+like above or in cases where you are adding to an existing string, using join()
+should be your preferred method.
+
+.. code-block:: python
+
+    foo = 'foo'
+    bar = 'bar'
+
+    foobar = foo + bar  # This is good
+    foo += 'ooo'  # This is bad, instead you should do:
+    foo = ''.join([foo, 'ooo'])
 
 Vendorizing Dependencies
 ------------------------
