@@ -208,6 +208,49 @@ This will guarantee a better separation of duties and easier modifications of
 existing code, and it will always be possible to publicize a private property,
 while privatising a public property might be a much harder operation.
 
+Returning values
+~~~~~~~~~~~~~~~~
+
+Python functions return a value, and you can control this return value with the
+return statement for all of them but the object constructor `__init__()` and the
+special case of generators.
+
+When a function grows in complexity is not uncommon to use multiple return statements
+inside the function's body. However, in order to keep a clear intent and a sustainable
+readability level, it is preferable to avoid returning meaningful values from many
+output point in the body.
+
+There are two main cases for returning values in a function: The result of the function
+return when it has been processed normally, and the error cases that indicate a wrong
+input paramter or any other reason for the function to not be able to complete its
+computation or task.
+
+If you do not wish to raise exceptions for the second case, then returning a value, such
+as None or False, indicating that the function could not perform correctly might be needed. In this
+case, it is better to return as early as the incorrect context has been detected. It will
+help to flatten the structure of the function: all the code after the return-because-of-error
+statement can assume the condition is met to further compute the function's main result.
+Having multiple such return statement is often necessary.
+
+However, when a function has multiple main exit points for its normal course, it becomes
+difficult to debug the returned result, and it may be preferable to keep a single exit
+point. This will also help factoring out some code paths, and the multiple exit point
+is a probable indication that such a refactoring is needed.
+
+.. code-block:: python
+
+   def complex_function(a, b, c):
+       if not a:
+           return None  # Raising an exception might be better
+       if not b:
+           return None  # Raising an exception might be better
+       # Some complex code trying to compute x from a, b and c
+       # Resist temptation to return x if succeeded
+       if not x:
+           # Some Plan-B computation of x
+       return x  # One single exit point for the returned value x will help
+                 # when maintaining the code.
+
 Idioms
 ------
 
@@ -231,6 +274,12 @@ You can use this to swap variables, as well:
 .. code-block:: python
 
     a, b = b, a
+
+Nested unpacking works too:
+
+.. code-block:: python
+
+   a, (b, c) = 1, (2, 3)
 
 Create an ignored variable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
