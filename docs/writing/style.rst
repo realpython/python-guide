@@ -232,6 +232,12 @@ You can use this to swap variables, as well:
 
     a, b = b, a
 
+Nested unpacking works too:
+
+.. code-block:: python
+
+   a, (b, c) = 1, (2, 3)
+
 Create an ignored variable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
