@@ -289,7 +289,7 @@ clearer and thus preferred.
         # Do something
     # bar() is decorated
 
-Using this mechanism is useful for separating concerns and avoiding
+This mechanism is useful for separating concerns and avoiding
 external un-related logic 'polluting' the core logic of the function
 or method. A good example of a piece of functionality that is better handled
 with decoration is memoization or caching: you want to store the results of an
