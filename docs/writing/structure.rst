@@ -1,9 +1,23 @@
 Structuring Your Project
 ========================
 
-Structuring your project properly is extremely important.
+By "structure" we mean the decisions you make concerning
+how your project best meets its objective. We need to consider how to 
+best leverage Python's features to create clean, effective code.
+In practical terms, "structure" means making clean code whose logic and
+dependencies are clear as well as how the files and folders are organized
+in the filesystem. 
 
-.. todo:: Fill in "Structuring Your Project" stub
+Which functions should go into which modules? How does data flow through
+the project? What features and functions can be grouped together and 
+isolated? By answering questions like these you can begin to plan, in
+a broad sense, what your finished product will look like.
+
+In this section we take a closer look at Python's module and import 
+systems as they are the central element to enforcing structure in your 
+project. We then discuss various perspectives on how to build code which
+can be extended and tested reliably.
+
 
 Structure is Key
 ----------------
@@ -75,9 +89,22 @@ As soon as you use `import` statements you use modules. These can be either buil
 modules such as `os` and `sys`, third-party modules you have installed in your
 environment, or your project's internal modules.
 
-Nothing special is required for a Python file to be a module, but the import
-mechanism needs to be understood in order to use this concept properly and avoid
-some issues.
+To keep in line with the style guide, keep module names short, lowercase, and
+be sure to avoid using special symbols like the dot (.) or question mark (?).
+So a file name like `my.spam.py` is one you should try to avoid! Naming this way 
+will interfere with the way python looks for modules.
+
+In this example python expects to find a "spam.py" file in a folder named "my"
+which is not the case. There is an 
+`example <http://docs.python.org/tutorial/modules.html#packages>`_
+ of how the dot should be used available in the python docs.
+
+If you'd like you could name it as `my_spam.py` but even our friend the 
+underscore should not be seen often in module names.
+
+Aside for some naming restrictions, nothing special is required for a Python file
+to be a module, but the import mechanism needs to be understood in order to use
+this concept properly and avoid some issues.
 
 Concretely, the `import modu` statement will look for the proper file, which is
 `modu.py` in the same directory as the caller if it exists.  If it is not
@@ -276,7 +303,7 @@ clearer and thus preferred.
         # Do something
     # bar() is decorated
 
-Using this mechanism is useful for separating concerns and avoiding
+This mechanism is useful for separating concerns and avoiding
 external un-related logic 'polluting' the core logic of the function
 or method. A good example of a piece of functionality that is better handled
 with decoration is memorization or caching: you want to store the results of an
