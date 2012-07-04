@@ -78,7 +78,7 @@ When striving for coding excellence, it is useful to see any existing comment,
 or any feeling of a need for a comment, as the sign that the code do not
 express clearly enough its intent and can be improved.
 
-**.. but no code is perfect.**  Perfect code is a chimere, it exists only in
+**.. but no code is perfect.**  Perfect code is a chimera, it exists only in
 our dreams.  In real life, a code base is full of trade offs, and comments are
 often needed in the most difficult parts. Moreover, any special case, any
 obscure hack, any monkey patch and any ugly workaround MUST be signaled and
@@ -87,15 +87,15 @@ explained by a proper comment. This should be enforced by the law!
 **TODOs** are special comments that a developer write as a reminder for later
 use. It is said that its original intent was that someone might, one day,
 search for the string "TODO" in the code base and actually roll their sleeves
-and start *to do the TODOs*. There is no avalaible record that it ever
+and start *to do the TODOs*. There is no available record that it ever
 happened. However, TODOs comment are still very useful, because they mark the
 current limits of the code, and it is not unlikely that, when required to add a
 new behavior to the actual code, looking at the TODOs will show where to start.
 
 **Do not use triple-quote strings to comment code.** A common operation when
-modifiying code is to comment out some lines or even a full function or class
+modifying code is to comment out some lines or even a full function or class
 definition. This can be done by adding triple-quotes around the code block to
-be skipped, but this is not a good pratice, because line-oriented command-line
+be skipped, but this is not a good practice, because line-oriented command-line
 tools such as ``grep`` will not be aware that the commented code is inactive.
 It is better to add hashes at the proper indentation level for every commented
 line. Good editors allow to do this with few keystrokes (ctrl-v on Vim).
@@ -156,7 +156,7 @@ Block comment styling should be used when commenting out multiple lines of code.
     Paragraphs inside a block comment are separated by a line containing a
     single #.
 
-Inline comments are used for individual lines and should be used sparingly.: ::
+In-line comments are used for individual lines and should be used sparingly.: ::
 
     An inline comment is a comment on the same line as a statement.  Inline
     comments should be separated by at least two spaces from the statement.
