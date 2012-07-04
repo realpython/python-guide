@@ -53,5 +53,36 @@ which provides the following features:
 
 Travis-CI
 ---------
+`Travis-CI <http://travis-ci.org/>`_ is a distributed CI server which builds tests
+for open source projects for free. It provides multiple workers to run Python tests
+on and seamlessly integrates with Github. You can even have it comment on your Pull
+Requests whether this particular changeset breaks the build or not. So if you are
+hosting your code on Github, travis-ci is a great and easy way to get started with
+Continuous Integration.
 
-.. todo:: Write about travis-ci
+In order to get started, add a ``.travis.yml`` file to your repository with this
+example content::
+
+    language: python
+    python:
+      - "2.5"
+      - "2.6"
+      - "2.7"
+      - "3.1"
+      - "3.2"
+    # command to install dependencies
+    script: python tests/test_all_of_the_units.py
+    branches:
+      only:
+        - master
+
+
+This will get your project tested on all the listed Python versions by running the given
+script and only build the master branch. There are a lot more options you can enable, like
+notifications, before and after steps and much more. The
+`travis-ci docs <http://about.travis-ci.org/docs/>`_ explain all of those and are very
+thorough.
+
+In order to activate testing for your project, go to `the travis-ci site <http://travis-ci.org/>`_
+and login with your Github account. Then activate your project in your profile settings and that's
+it. From now on, your project's tests will be run on every push to Github. 
