@@ -1,9 +1,22 @@
 Structuring Your Project
 ========================
 
-Structuring your project properly is extremely important.
+When we say structure we mean the decisions you make concerning
+how your project best meets its objective. We need to consider how to 
+best leverage Python's features to create clean, effective code.
+In practical terms structure means the actual files and folders that 
+comprise your project as well as the way dependencies are handled within 
+the code itself.
 
-.. todo:: Fill in "Structuring Your Project" stub
+How does data flow through the project? What features and functions
+can be grouped together and isolated? By answering questions like these
+you can begin to plan, in a broad sense, what your finished product will
+look like.
+
+In this section we take a closer look at Python's module and import 
+systems as they are the central element to enforcing structure in your 
+project.
+
 
 Structure is Key
 ----------------
