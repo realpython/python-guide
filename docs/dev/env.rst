@@ -50,6 +50,16 @@ order to do this, add the following lines to your `vimrc`::
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
 
+If you are already using syntastic_ you can enable it to run Pyflakes on write
+and show errors and warnings in the quickfix window. An example configuration
+to do that which also shows status and warning messages in the statusbar would be::
+
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+    let g:syntastic_auto_loc_list=1
+    let g:syntastic_loc_list_height=5
+
 
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
@@ -57,6 +67,7 @@ order to do this, add the following lines to your `vimrc`::
 .. _vim-pyflakes: https://github.com/nvie/vim-pyflakes
 .. _PEP8: http://pypi.python.org/pypi/pep8/
 .. _vim-pep8: https://github.com/nvie/vim-pep8
+.. _syntastic: https://github.com/scrooloose/syntastic
 
 .. todo:: add supertab notes
 
