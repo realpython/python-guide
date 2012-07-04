@@ -70,7 +70,7 @@ misleading for the maintainers, slow down considerably bug hunting or
 refactoring, and then, when discovered wrong, they will throw suspicion on all
 other comments in the code, regardless of their individual correctness.
 
-**No need comments for perfect code...** An hypothetical perfectly readable
+**There's no need to comment perfect code...** An hypothetical perfectly readable
 code, with a crystal clear logic stream, expressive variable and function
 names, orthogonal segmentation passing exactly between the flesh and the bones,
 and no implicit assumptions of any kind, would not require any comment at all.
