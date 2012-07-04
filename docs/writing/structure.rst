@@ -1,21 +1,22 @@
 Structuring Your Project
 ========================
 
-When we say structure we mean the decisions you make concerning
+By "structure" we mean the decisions you make concerning
 how your project best meets its objective. We need to consider how to 
 best leverage Python's features to create clean, effective code.
-In practical terms structure means the actual files and folders that 
-comprise your project as well as the way dependencies are handled within 
-the code itself.
+In practical terms, "structure" means making clean code whose logic and
+dependencies are clear as well as how the files and folders are organized
+in the filesystem. 
 
-How does data flow through the project? What features and functions
-can be grouped together and isolated? By answering questions like these
-you can begin to plan, in a broad sense, what your finished product will
-look like.
+Which functions should go into which modules? How does data flow through
+the project? What features and functions can be grouped together and 
+isolated? By answering questions like these you can begin to plan, in
+a broad sense, what your finished product will look like.
 
 In this section we take a closer look at Python's module and import 
 systems as they are the central element to enforcing structure in your 
-project.
+project. We then discuss various perspectives on how to build code which
+can be extended and tested reliably.
 
 
 Structure is Key
