@@ -3,7 +3,7 @@ Testing Your Code
 
 Testing your code is very important.
 
-Getting used to writting the testing code and the running code in parallel is
+Getting used to writing the testing code and the running code in parallel is
 now considered a good habit. Used wisely, this method helps you define more
 precisely your code's intent and have a more decoupled architecture.
 
@@ -39,7 +39,7 @@ Some general rules of testing:
 
 - If you are in the middle of a development and have to interrupt your work, it
   is a good idea to write a broken unit test about what you want to develop next.
-  When comming back to work, you will have a pointer to where you were and get
+  When coming back to work, you will have a pointer to where you were and get
   faster on tracks.
 
 - The first step when you are debugging your code is to write a new test
@@ -48,7 +48,7 @@ Some general rules of testing:
 
 - Use long and descriptive names for testing functions. The style guide here is
   slightly different than that of running code, where short names are often
-  preferred. The reason is testing functions are never called explicitely.
+  preferred. The reason is testing functions are never called explicitly.
   ``square()`` or even ``sqr()`` is ok in running code, but in testing code you
   would has names such as ``test_square_of_number_2()``,
   ``test_square_negative_number()``. These function names are displayed when a
@@ -61,7 +61,7 @@ Some general rules of testing:
   purpose is unclear is not very helpful is this case.
 
 - Another use of the testing code is as an introduction to new developers. When
-  someone will have to work on the code base, runnning and reading the related
+  someone will have to work on the code base, running and reading the related
   testing code is often the best they can do. They will or should discover the
   hot spots, where most difficulties arise, and the corner cases. If they have
   to add some functionality, the first step should be to add a test and, by this
@@ -214,7 +214,7 @@ multiple interpreter configurations
 
     $ pip install tox
 
-tox allows you to configure complicatated multi-parameter test matrices via a
+tox allows you to configure complicated multi-parameter test matrices via a
 simple ini-style configuration file.
 
     `tox <http://tox.testrun.org/latest/>`_
@@ -222,7 +222,7 @@ simple ini-style configuration file.
 Unittest2
 ---------
 
-unittest2 is a a backport of Python 2.7's unittest module which has an improved
+unittest2 is a backport of Python 2.7's unittest module which has an improved
 API and better assertions over the one available in previous versions of Python.
 
 If you're using Python 2.6 or below, you can install it with pip

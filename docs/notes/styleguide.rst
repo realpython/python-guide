@@ -7,7 +7,7 @@ The Guide Style Guide
 As with all documentation, having a consistent formating helps make the
 document more understandable. In order to make The Guide easier to digest,
 all contributions should fit within the rules of this style guide where
-approriate.
+appropriate.
 
 The Guide is written as :ref:`restructuredtext-ref`.
 
@@ -29,9 +29,9 @@ Strive to keep any contributions relevant to the :ref:`purpose of The Guide
   Be sure to describe what and why you are linking.
 * `Cite <http://sphinx.pocoo.org/rest.html?highlight=citations#citations>`_
   references where needed.
-* If a subject isn't directly relevant to Python, but useful in conjuction
+* If a subject isn't directly relevant to Python, but useful in conjunction
   with Python (ex: Git, Github, Databases), reference by linking to useful
-  resouces and describe why it's useful to Python.
+  resources and describe why it's useful to Python.
 * When in doubt, ask.
 
 Headings
@@ -115,7 +115,7 @@ Externally Linking
     Read the `Sphinx Tutorial <http://sphinx.pocoo.org/tutorial.html>`_
 
 * Avoid using labels such as "click here", "this", etc. preferring
-  decriptive labels (SEO worthy) instead.
+  descriptive labels (SEO worthy) instead.
 
 Linking to Sections in The Guide
 --------------------------------

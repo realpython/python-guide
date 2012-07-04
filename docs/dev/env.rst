@@ -15,7 +15,7 @@ VIM
 Vim is a text editor which uses keyboard shortcuts for editing instead of menus
 or icons. There exist a couple of plugins and settings for the VIM editor to
 aid python development. If you only develop in Python, a good start is to set
-the default settings for indentation and linewrapping to values compliant with
+the default settings for indentation and line-wrapping to values compliant with
 `PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_. In your home directory,
 open a file called `.vimrc` and add the following lines: ::
 
@@ -162,7 +162,7 @@ Create a virtual environment for a project::
     $ cd my_project
     $ virtualenv venv
 
-``virtualenv venv`` will create a folder in the currect directory
+``virtualenv venv`` will create a folder in the current directory
 which will contain the Python executable files, and a copy of the ``pip``
 library which you can use to install other packages. The name of the
 virtual environment (in this case, it was ``venv``) can be anything;
