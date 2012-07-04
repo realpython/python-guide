@@ -136,7 +136,7 @@ as writing C extensions.
 The Python Language Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is Python's reference manual, it covers the syntax and the core symantics of the
+This is Python's reference manual, it covers the syntax and the core semantics of the
 language.
 
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_
