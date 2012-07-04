@@ -41,7 +41,7 @@ most explicit and straightforward manner is preferred.
     def make_complex(x, y):
         return {'x': x, 'y': y}
 
-In the good code above, x and y are explicitely received from
+In the good code above, x and y are explicitly received from
 the caller, and an explicit dictionary is returned. The developer
 using this function knows exactly what to do by reading the
 first and last lines, which is not the case with the bad example.
@@ -50,7 +50,7 @@ One statement per line
 ~~~~~~~~~~~~~~~~~~~~~~
 
 While some compound statements such as list comprehensions are
-allowed and appreciated for their brevity and their expressivity,
+allowed and appreciated for their brevity and their expressiveness,
 it is bad practice to have two disjoint statements on the same line.
 
 **Bad**
@@ -107,10 +107,10 @@ passed another value.
 
 Calling a function with keyword arguments can be done in multiple ways in Python,
 for example it is possible to follow the order of arguments in the definition without
-explicitely naming the arguments, like in ``send('Hello', 'World', 'Cthulhu`, 'God')``,
+explicitly naming the arguments, like in ``send('Hello', 'World', 'Cthulhu`, 'God')``,
 sending a blank carbon copy to God. It would also be possible to name arguments in
 another order, like in ``send('Hello again', 'World', bcc='God', cc='Cthulhu')``.
-Those two possibilities are better avoided whitout any strong reason to not
+Those two possibilities are better avoided without any strong reason to not
 follow the syntax that is the closest to the function definition: ``send('Hello',
 'World', cc='Cthulhu', bcc='God')``.
 
@@ -132,13 +132,13 @@ However, this construct has some drawback and should be used with caution. If a
 function receives a list of arguments of the same nature, it is often more
 clear to define it as a function of one argument, that argument being a list or
 any sequence. Here, if ``send`` has multiple recipients, it is better to define
-it explicitely: ``send(message, recipients)`` and call it with ``send('Hello',
+it explicitly: ``send(message, recipients)`` and call it with ``send('Hello',
 ['God', 'Mom', 'Cthulhu'])``. This way, the user of the function can manipulate
-the recipient list as a list beforhand, and it opens the possibility to pass
-any sequence, inculding iterators, that cannot be unpacked as other sequences.
+the recipient list as a list beforehand, and it opens the possibility to pass
+any sequence, including iterators, that cannot be unpacked as other sequences.
 
 The **arbitrary keyword argument dictionary** is the last way to pass arguments
-to functions. If the function requires an undetermined serie of named
+to functions. If the function requires an undetermined series of named
 arguments, it is possible to used the ``**kwargs`` construct. In the function
 body, ``kwargs`` will be a dictionary of all the passed named arguments that
 have not been caught be other keyword argument in the function signature.
@@ -149,8 +149,8 @@ proven necessity to use them, and they should not be used if the simpler and
 clearer construct is sufficient to express the function's intention.
 
 It is up to the programmer writing the function to determine which arguments
-are positional argmuents and which are optional keyword arguments, and to
-decide wheter to use the advanced techniques of arbitrary argument passing. If
+are positional arguments and which are optional keyword arguments, and to
+decide whether to use the advanced techniques of arbitrary argument passing. If
 the advices above are followed wisely, it is possible and enjoyable to write
 Python functions that are:
 
@@ -164,7 +164,7 @@ Avoid the magical wand
 
 A powerful tool for hackers, Python comes with a very rich set of hooks and
 tools allowing to do almost any kind of tricky tricks. For instance, it is
-possible to change how objects are created and instanciated, it is possible to
+possible to change how objects are created and instantiated, it is possible to
 change how the Python interpreter imports modules, it is even possible (and
 recommended if needed) to embed C routines in Python.
 
@@ -222,7 +222,7 @@ output point in the body.
 
 There are two main cases for returning values in a function: The result of the function
 return when it has been processed normally, and the error cases that indicate a wrong
-input paramter or any other reason for the function to not be able to complete its
+input parameter or any other reason for the function to not be able to complete its
 computation or task.
 
 If you do not wish to raise exceptions for the second case, then returning a value, such
@@ -610,7 +610,7 @@ sometime but is preferably avoided, because of its fragility: a white space
 added to the end of the line, after the backslash, will break the code and may
 have unexpected results.
 
-A prefered solution is to use parenthesis around your elements. Left with an
+A preferred solution is to use parenthesis around your elements. Left with an
 unclosed parenthesis on an end-of-line the Python interpreter will join the
 next line until the parenthesis is closed. The same behavior holds for curly
 and square braces.
@@ -624,7 +624,7 @@ and square braces.
         time to say “I’m going to sleep.”"""
 
     from some.deep.module.inside.a.module import a_nice_function, another_nice_function, \
-        yet_another_nice_functio
+        yet_another_nice_function
 
 **Good**:
 
