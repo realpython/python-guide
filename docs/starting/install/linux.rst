@@ -58,7 +58,7 @@ project's directory
 
 .. code-block:: console
 
-    $ virtualenv --distribute venv
+    $ virtualenv venv
 
 To use an environment, run ``source venv/bin/activate``. Your command prompt
 will change to show the active environment. Once you have finished working in
