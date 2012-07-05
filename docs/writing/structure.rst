@@ -97,7 +97,7 @@ will interfere with the way python looks for modules.
 In this example python expects to find a "spam.py" file in a folder named "my"
 which is not the case. There is an 
 `example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the 
-dot should be used available in the python docs.
+dot notation should be used in the python docs.
 
 If you'd like you could name it as `my_spam.py` but even our friend the 
 underscore should not be seen often in module names.
