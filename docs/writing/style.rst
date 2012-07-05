@@ -30,9 +30,9 @@ most explicit and straightforward manner is preferred.
 
 .. code-block:: python
 
-    def make_complex(\*args):
+    def make_complex(*args):
         x, y = args
-        return dict(\**locals())
+        return dict(**locals())
 
 **Good**
 
