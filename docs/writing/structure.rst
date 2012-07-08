@@ -306,7 +306,7 @@ clearer and thus preferred.
 This mechanism is useful for separating concerns and avoiding
 external un-related logic 'polluting' the core logic of the function
 or method. A good example of a piece of functionality that is better handled
-with decoration is memorization or caching: you want to store the results of an
+with decoration is memoization or caching: you want to store the results of an
 expensive function in a table and use them directly instead of recomputing
 them when they have already been computed. This is clearly not part
 of the function logic.
