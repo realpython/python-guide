@@ -35,8 +35,22 @@ Ubuntu 11.04
 Installing on Mac OS X
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. todo::
-    Notes on installing on Mac OS X
+PIP doesn't know about the Mac OS X Freetype paths. To rectify that:
+
+.. code-block:: bash
+
+    $ ln -s /usr/X11/include/freetype2 /usr/local/include/
+    $ ln -s /usr/X11/include/ft2build.h /usr/local/include/
+    $ ln -s /usr/X11/lib/libfreetype.6.dylib /usr/local/lib/
+    $ ln -s /usr/X11/lib/libfreetype.6.dylib /usr/local/lib/libfreetype.dylib
+
+then:
+
+.. code-block:: bash
+
+    $ brew install libjpeg
+    $ pip install PIL
+
 
 Installing on Windows
 ~~~~~~~~~~~~~~~~~~~~~
