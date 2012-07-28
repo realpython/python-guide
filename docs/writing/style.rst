@@ -9,7 +9,7 @@ recognised fact that code is read much more often than it is written.
 One reason for Python code to be easily read and understood is its relatively
 complete set of Code Style guidelines and "Pythonic" idioms.
 
-Moreover, when a veteran Python developer (a Pythonistas) point to some
+Moreover, when a veteran Python developer (a Pythonista) point to some
 parts of a code and say it is not "Pythonic", it usually means that these lines
 of code do not follow the common guidelines and fail to express the intent in
 what is considered the best (hear: most readable) way.
@@ -128,7 +128,7 @@ called with each recipient as an argument: ``send('Hello', 'God', 'Mom',
 'Cthulhu')``, and in the function body ``args`` will be equal to ``('God',
 'Mom', 'Cthulhu')``.
 
-However, this construct has some drawback and should be used with caution. If a
+However, this construct has some drawbacks and should be used with caution. If a
 function receives a list of arguments of the same nature, it is often more
 clear to define it as a function of one argument, that argument being a list or
 any sequence. Here, if ``send`` has multiple recipients, it is better to define
@@ -156,7 +156,7 @@ Python functions that are:
 
 * easy to read (the name and arguments need no explanations)
 
-* easy to change (adding a new keyword argument do not break other parts of the
+* easy to change (adding a new keyword argument does not break other parts of the
   code)
 
 Avoid the magical wand
@@ -178,8 +178,8 @@ possibilities, because it grows the confidence that no hard-wall will be on the
 way.  However, knowing how to use them and particularly when **not** to use
 them is the most important.
 
-Like a Kungfu master, a pythonistas knows how to kill with a single finger, and
-never do it.
+Like a Kungfu master, a Pythonista knows how to kill with a single finger, and
+never to do it.
 
 We are all consenting adults
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
