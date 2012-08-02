@@ -60,6 +60,24 @@ to do that which also shows status and warning messages in the statusbar would b
     let g:syntastic_auto_loc_list=1
     let g:syntastic_loc_list_height=5
 
+Python-mode
+^^^^^^^^^^^
+
+Python-mode_ is complex solution in VIM for work with python code.
+It's have:
+
+- Async python code checking (pylint, pyflakes, pep8, mccabe) in any combination;
+- Code refactoring and autocompletion with Rope;
+- Fastest python folding;
+- Nice and powered python syntax;
+- Virtual env support;
+- Search by python documentation and run python code;
+- More other things like auto pep8 error fixes;
+- Very customizable an documented as well;
+- Have all required libraries in self;
+
+And more stuff.
+
 
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
@@ -68,6 +86,7 @@ to do that which also shows status and warning messages in the statusbar would b
 .. _PEP8: http://pypi.python.org/pypi/pep8/
 .. _vim-pep8: https://github.com/nvie/vim-pep8
 .. _syntastic: https://github.com/scrooloose/syntastic
+.. _Python-mode: https://github.com/klen/python-mode
 
 .. todo:: add supertab notes
 
