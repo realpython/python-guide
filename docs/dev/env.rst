@@ -89,9 +89,6 @@ extraordinary features."
 Sublime Text has excellent support for editing Python code and uses Python for
 its plugin API.
 
-`Sublime Text 2 <http://www.sublimetext.com/blog/articles/sublime-text-2-beta>`_
-is currently in beta.
-
 IDEs
 ::::
 
