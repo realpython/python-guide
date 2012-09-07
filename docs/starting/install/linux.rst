@@ -3,7 +3,17 @@
 Installing Python on Linux
 ==========================
 
-The latest version of Ubuntu, **comes with Python 2.7 out of the box**.
+The latest versions of Ubuntu and Fedora **come with Python 2.7 out of the box**.
+
+The latest versions of Redhat Enterprise (RHEL) and CentOS come with Python 2.6.
+Some older versions of RHEL and CentOS come with Python 2.4 which is
+unacceptable for modern Python development. Fortunately, there are
+`Extra Packages for Enterprise Linux`_ which include high
+quality additional packages based on their Fedora counterparts. This
+repository contains a Python 2.6 package specifically designed to install
+side-by-side with the system's Python 2.4 installation.
+
+.. _Extra Packages for Enterprise Linux: http://fedoraproject.org/wiki/EPEL
 
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
