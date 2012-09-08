@@ -347,7 +347,7 @@ Some guidelines help to avoid this issue:
 
     count = 1
     msg = 'a string'
-    def func()
+    def func():
         pass  # Do something
 
 Using short functions or methods helps reduce the risk
