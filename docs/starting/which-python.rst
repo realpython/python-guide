@@ -102,4 +102,4 @@ IronPython supports Python 2.7. [#iron_ver]_
 
 .. [#jython_ver] http://wiki.python.org/jython/JythonFaq/GeneralInfo#Is_Jython_the_same_language_as_Python.3F
 
-.. [#iron_ver] http://ironpython.codeplex.com/releases/view/54498
+.. [#iron_ver] http://ironpython.codeplex.com/releases/view/81726
