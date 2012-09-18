@@ -1,5 +1,5 @@
 Testing Your Code
-=====================
+=================
 
 Testing your code is very important.
 
@@ -247,4 +247,18 @@ the need to change any other code.
 
     `unittest2 <http://pypi.python.org/pypi/unittest2>`_
 
+
+mock
+----
+
+mock is a library for testing in Python.
+
+::
+
+    $ pip install mock
+
+It allows you to replace parts of your system under test with mock objects and
+make assertions about how they have been used.
+
+    `mock <http://www.voidspace.org.uk/python/mock/>`_
 
