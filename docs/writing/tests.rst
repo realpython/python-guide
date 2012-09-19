@@ -260,5 +260,37 @@ mock is a library for testing in Python.
 It allows you to replace parts of your system under test with mock objects and
 make assertions about how they have been used.
 
+For example, you can monkey patch a method
+
+::
+
+    from mock import MagicMock
+    thing = ProductionClass()
+    thing.method = MagicMock(return_value=3)
+    thing.method(3, 4, 5, key='value')
+
+    thing.method.assert_called_with(3, 4, 5, key='value')
+
+To mock classes or objects in a module under test, use the ``patch`` decorator.
+In the example below, an external search system is replaced with a mock that
+always returns the same result (but only for the duration of the test).
+
+::
+
+    def mock_search(self):
+        class MockSearchQuerySet(SearchQuerySet):
+            def __iter__(self):
+                return iter(["foo", "bar", "baz"])
+        return MockSearchQuerySet()
+
+    # SearchForm here refers to the imported class reference in myapp,
+    # not where the SearchForm class itself is imported from
+    @mock.patch('myapp.SearchForm.search', mock_search)
+    def test_new_watchlist_activities(self):
+        # get_search_results runs a search and iterates over the result 
+        self.assertEqual(len(myapp.get_search_results(q="fish")), 3)
+
+Mock has many other ways you can configure it and control its behaviour.
+
     `mock <http://www.voidspace.org.uk/python/mock/>`_
 
