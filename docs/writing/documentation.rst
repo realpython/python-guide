@@ -1,247 +1,166 @@
-Documenting Your Code
-=====================
+Documentation
+=============
 
-With readability of the code being a main focus for Python developers, proper
-commenting is naturally important. Some best practice apply to code comments
-and project documents, depending on the scope of the project.
+Readability is a primary focus for Python developers, in both project
+and code documentation. Following some simple best practices can save
+both you and others a lot of time.
 
-Project documents
------------------
+Project Documentation
+---------------------
 
-A README file at the root directory give general information to the users and
-the maintainers. It should be raw text or written in some very easy to read
-markup, such as reStructuredText and Markdown. It should contain a few lines
-explaining the purpose of the project or the library (without assuming the user
-knows anything about the project), the url of the main source for the software,
-and some basic credit information. This file is the main entry point for
-readers of the code.
+A ``README`` file at the root directory should give general
+information to the users and the maintainers. It should be raw text or
+written in some very easy to read markup, such as
+:ref:`reStructuredText-ref` and Markdown. It should contain a few
+lines explaining the purpose of the project or the library (without
+assuming the user knows anything about the project), the url of the
+main source for the software, and some basic credit information. This
+file is the main entry point for readers of the code.
 
-An INSTALL file is less often necessary with python, except if the dependencies
-are complex or unusual, or if some C modules need to be compiled before use.
-The installation instructions are often reduced to one command, such as ``pip
-install module`` or ``python setup.py install`` and added to the README file.
+An ``INSTALL`` file is less necessary with python.  The installation
+instructions are often reduced to one command, such as ``pip install
+module`` or ``python setup.py install`` and added to the ``README``
+file.
 
-A LICENSE file should always be present and specify the license under which the
+A ``LICENSE`` file should *always* be present and specify the license under which the
 software is made available to the public.
 
-A TODO file or a TODO section in README should list the planned modifications
-of the code.
+A ``TODO`` file or a ``TODO`` section in ``README`` should list the
+planned development for the code.
 
-A CHANGELOG file or section in README should compile a short overview of the
-changes in the code base for the latest versions.
+A ``CHANGELOG`` file or section in ``README`` should compile a short
+overview of the changes in the code base for the latest versions.
 
-Documentation
--------------
+Project Publication
+-------------------
 
-As the project or library reaches a certain level of complexity, it may require
-a fuller documentation, which can be of different flavors:
+Depending on the project, your documentation might include some or all
+of the following components:
 
-The introduction may show a very short overview of what can be done with the
-product, using one or two extremely simplified use cases.
+- A *introduction* should show a very short overview of what can be
+  done with the product, using one or two extremely simplified use
+  cases. This is the thirty-second pitch for your project.
 
-The tutorials will show in more details some main use cases. The reader will
-follow a step-by-step procedure to set-up a working prototype.
+- A *tutorial* should show some primary use cases in more detail. The reader will
+  follow a step-by-step procedure to set-up a working prototype.
 
-The API reference, which is often generated automatically from the code, will
-list all publicly available interfaces, their parameters and their return
-values, with an explanation of their use.
+- An *API reference* is typically generated from the code (see
+  :ref:`docstrings <docstring-ref>`). It will list all publicly available interfaces,
+  parameters, and return values.
 
-Some documents intended for developers might give guidance about code
-convention and general design decision of the project.
-
-Comments
---------
-
-Comments are written directly inside the code, either using the hash sign (#)
-or a docstring_.
-
-.. _docstring: docstrings_
-
-Finding the correct balance between undocumented code and verbose and useless
-comment boilerplates is difficult, and is the subject of heated discussion
-among developers.
-
-The following guidelines seem to be most commonly agreed upon:
-
-**Wrong or outdated comments are worse than no comments at all.** Following the
-saying that it is better, on a boat, to know that we do not know were we are
-than to wrongly believe we know where we are, wrong or outdated comments can be
-misleading for the maintainers, slow down considerably bug hunting or
-refactoring, and then, when discovered wrong, they will throw suspicion on all
-other comments in the code, regardless of their individual correctness.
-
-**There's no need to comment perfect code...** An hypothetical perfectly readable
-code, with a crystal clear logic stream, expressive variable and function
-names, orthogonal segmentation passing exactly between the flesh and the bones,
-and no implicit assumptions of any kind, would not require any comment at all.
-When striving for coding excellence, it is useful to see any existing comment,
-or any feeling of a need for a comment, as the sign that the code do not
-express clearly enough its intent and can be improved.
-
-**.. but no code is perfect.**  Perfect code is a chimera, it exists only in
-our dreams.  In real life, a code base is full of trade offs, and comments are
-often needed in the most difficult parts. Moreover, any special case, any
-obscure hack, any monkey patch and any ugly workaround MUST be signaled and
-explained by a proper comment. This should be enforced by the law!
-
-**TODOs** are special comments that a developer write as a reminder for later
-use. It is said that its original intent was that someone might, one day,
-search for the string "TODO" in the code base and actually roll their sleeves
-and start *to do the TODOs*. There is no available record that it ever
-happened. However, TODOs comment are still very useful, because they mark the
-current limits of the code, and it is not unlikely that, when required to add a
-new behavior to the actual code, looking at the TODOs will show where to start.
-
-**Do not use triple-quote strings to comment code.** A common operation when
-modifying code is to comment out some lines or even a full function or class
-definition. This can be done by adding triple-quotes around the code block to
-be skipped, but this is not a good practice, because line-oriented command-line
-tools such as ``grep`` will not be aware that the commented code is inactive.
-It is better to add hashes at the proper indentation level for every commented
-line. Good editors allow to do this with few keystrokes (ctrl-v on Vim).
-
-**Bad**
-
-.. code-block:: python
-
-    def tricky_function():
-        '''
-        Commented out because its breaks something.
-        if foo:
-            do_bar()
-        '''
-        return baz
-
-    def tricky_function():
-        # Commented out because its breaks something.
-        #if foo:
-            #do_bar()
-        return baz
-
-
-    def tricky_function():
-    # Commented out because its breaks something.
-    #   if foo:
-    #       do_bar()
-        return baz
-
-**Good**
-
-.. code-block:: python
-
-    def tricky_function():
-        # Commented out because its breaks something.
-        #if foo:
-        #    do_bar()
-        return baz
-
-Note that comment text is properly written and separated from the hash by a
-space. Commented code is not separated from the hash by an additional space;
-this helps when uncommented the code.
-
-The Basics
-::::::::::
-
-
-Code Comments
--------------
-
-Information regarding code comments is taken from PEP 008 (http://www.python.org/dev/peps/pep-0008/).
-Block comment styling should be used when commenting out multiple lines of code.: ::
-
-    Block comments generally apply to some (or all) code that follows them,
-    and are indented to the same level as that code.  Each line of a block
-    comment starts with a # and a single space (unless it is indented text
-    inside the comment).
-    Paragraphs inside a block comment are separated by a line containing a
-    single #.
-
-In-line comments are used for individual lines and should be used sparingly.: ::
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-    Inline comments are unnecessary and in fact distracting if they state
-    the obvious.  Don't do this:
-        x = x + 1                 # Increment x
-    But sometimes, this is useful: ::
-        x = x + 1                 # Compensate for border
-
-Docstrings
------------
-
-PEP 257 is the primary reference for docstrings. (http://www.python.org/dev/peps/pep-0257/)
-
-There are two types of docstrings, one-line and multi-line.  Their names
-should be fairly self explanatory.
-One-line docstrings: ::
-
-    def kos_root():
-        """Return the pathname of the KOS root directory."""
-        global _kos_root
-        if _kos_root: return _kos_root
-        ...
-
-Multi-line docstrings: ::
-
-    def complex(real=0.0, imag=0.0):
-        """Form a complex number.
-
-        Keyword arguments:
-        real -- the real part (default 0.0)
-        imag -- the imaginary part (default 0.0)
-
-        """
-        if imag == 0.0 and real == 0.0: return complex_zero
-        ...
-
+- *Developer documentation* is intended for potential contributors. This can
+  include code convention and general design strategy of the project.
 
 .. _sphinx-ref:
 
-
 Sphinx
-------
+~~~~~~
 
-Sphinx_ is a tool which converts documentation in the :ref:`restructuredtext-ref`
-markup language into a range of output formats including HTML, LaTeX (for
-printable PDF versions), manual pages and plain text.
+Sphinx_ is far and away the most popular python documentation
+tool. **Use it.**  It converts :ref:`restructuredtext-ref` markup language
+into a range of output formats including HTML, LaTeX (for printable
+PDF versions), manual pages, and plain text.
 
-There is also a great free hosting for your Sphinx_ docs: `Read The Docs`_
+There is also **great**, **free** hosting for your Sphinx_ docs:
+`Read The Docs`_. Use it. You can configure it with commit hooks to
+your source repository so that rebuilding your documentation will
+happen automatically.
 
-.. note:: This Guide is built with Sphinx_ and hosted on `Read The Docs`_
+.. note::
+
+    Sphinx is famous for its API generation, but it also works well
+    for general project documentation. This Guide is built with
+    Sphinx_ and is hosted on `Read The Docs`_
 
 .. _Sphinx: http://sphinx.pocoo.org
 .. _Read The Docs: http://readthedocs.org
 
 .. _restructuredtext-ref:
 
-
 reStructuredText
-----------------
+~~~~~~~~~~~~~~~~
 
-Most Python documentation is written with reStructuredText_. The
-`reStructuredText Primer <http://sphinx.pocoo.org/rest.html>`_ and the
-`reStructuredText Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_
-should help you familiarize yourself with its syntax.
+Most Python documentation is written with reStructuredText_. It's like
+Markdown with all the optional extensions built in.
+
+The `reStructuredText Primer`_ and the `reStructuredText Quick
+Reference`_ should help you familiarize yourself with its syntax.
 
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
+.. _reStructuredText Primer: http://sphinx.pocoo.org/rest.html
+.. _reStructuredText Quick Reference: http://docutils.sourceforge.net/docs/user/rst/quickref.html
+
+
+Code Documentation Advice
+-------------------------
+
+Comments clarify code and begin with a hash (``#``).
+
+.. _docstring-ref:
+
+In Python, *docstrings* describe modules, classes, and functions: ::
+
+    def square_and_rooter(x):
+        """Returns the square root of self times self."""
+        ...
+
+In general, follow the `comment section of PEP 0008`_ (the "Python Style Guide").
+
+.. _comment section of PEP 0008: http://www.python.org/dev/peps/pep-0008/#comments
+
+Commenting Sections of Code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Do not use triple-quote strings to comment code*. This is not a good
+practice, because line-oriented command-line tools such as grep will
+not be aware that the commented code is inactive. It is better to add
+hashes at the proper indentation level for every commented line. Your
+editor probably has the ability to do this easily, and it is worth
+learning the comment/uncomment toggle. (*e.g.* ctrl-v on Vim)
+
+Docstrings and Magic
+~~~~~~~~~~~~~~~~~~~~
+
+Some tools use docstrings to embed more-than-documentation behavior,
+such as unit test logic. Those can be nice, but you won't ever go
+wrong with vanilla "here's what this does."
+
+Docstrings versus Block comments
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These aren't interchangeable. For a function or class, the leading
+comment block is a programmer's note. The docstring describes the
+operation of the function or class: ::
+
+    # This function slows down program execution for some reason.
+    def square_and_rooter(x):
+        """Returns the square root of self times self."""
+	...
+
+.. seealso:: Further reading on docstrings: `PEP 0257`_
+
+.. _PEP 0257: http://www.python.org/dev/peps/pep-0257/
+
 
 Other Tools
-:::::::::::
+-----------
 
+You might see these in the wild. Use :ref:`sphinx-ref`.
 
-Epydoc
-------
-`Epydoc <http://epydoc.sourceforge.net/>`_ generates API documentation based on docstrings. 
-Epydoc is able to parse docstrings marked up with :ref:`reStructuredText-ref`, 
-`Javadoc <http://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html#javadocdocuments>`_, 
-`epytext <http://epydoc.sourceforge.net/manual-epytext.html>`_ or plaintext. 
-It supports various output formats, most notable HTML, PDF or LaTeX documents.
+Pycco_
+    Pycco is a "literate-programming-style documentation generator"
+    and is a port of the node.js Docco_. It makes code into a
+    side-by-side HTML code and documentation.
 
-The development of Epydoc is discontinued. You should use :ref:`sphinx-ref` instead.
+.. _Pycco: http://fitzgen.github.com/pycco
+.. _Docco: http://jashkenas.github.com/docco
 
-pycco / docco / shocco
-----------------------
+Ronn_
+    Ronn builds unix manuals. It converts human readable textfiles to roff for terminal display, and also to HTML for the web.
 
-Ronn
-----
+.. _Ronn: https://github.com/rtomayko/ronn
+
+Epydoc_
+    Epydoc is discontinued. Use :ref:`sphinx-ref` instead.
+
+.. _Epydoc: http://epydoc.sourceforge.net
