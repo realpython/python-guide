@@ -1,16 +1,21 @@
 Choosing a License
 ==================
 
-Open source.
+Your source publication *needs* a license. In the US, if no license is
+specified, users have no legal right to download, modify, or
+distribute. Furthermore, people can't contribute to your code unless
+you tell them what rules to play by. It's complicated, so here are
+some pointers:
 
-There are plenty of `open source licenses <http://opensource.org/licenses/alphabetical>`_
-available to choose from.
+Open source. There are plenty of `open source licenses
+<http://opensource.org/licenses/alphabetical>`_ available to choose
+from.
 
 In general, these licenses tend to fall into one of two categories:
 
 1. licenses that focus more on the user's freedom to do with the
    software as they please (these are the more-permissive open
-   source licenses such as the MIT, BSD, & Apache), and
+   source licenses such as the MIT, BSD, & Apache).
 
 2. licenses that focus more on making sure that the code itself —
    including any changes made to it and distributed along with it —
@@ -22,51 +27,26 @@ someone to add code to the software and distribute it without also
 including the source code for their changes.
 
 To help you choose one for your project, there's a `license chooser <http://three.org/openart/license_chooser/>`_,
-use it.
+**use it**.
 
+**More-Permissive**
 
-More-Permissive
-:::::::::::::::
+- PSFL (Python Software Foundation License) -- for contributing to python itself
+- MIT / BSD / ISC
 
-PSFL
-----
+  + MIT (X11)
+  + New BSD
+  + ISC
 
+- Apache
 
-MIT / BSD / ISC
----------------
+**Less-Permissive:**
 
+- LGPL
+- GPL
 
-MIT (X11)
-`````````
+  + GPLv2
+  + GPLv3
 
-New BSD
-```````
-
-ISC
-```
-
-Apache
-------
-
-
-Less-Permissive
-:::::::::::::::
-
-
-LGPL
-----
-
-
-
-GPL
----
-
-
-GPLv2
-`````
-
-
-GPLv3
-`````
 
 
