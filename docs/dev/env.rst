@@ -64,7 +64,7 @@ Python-mode
 ^^^^^^^^^^^
 
 Python-mode_ is complex solution in VIM for work with python code.
-It's have:
+It has:
 
 - Async python code checking (pylint, pyflakes, pep8, mccabe) in any combination;
 - Code refactoring and autocompletion with Rope;
@@ -89,6 +89,21 @@ And more stuff.
 .. _Python-mode: https://github.com/klen/python-mode
 
 .. todo:: add supertab notes
+
+Emacs
+-----
+
+Emacs is a powerful text editor. It's fully programmable (lisp), but
+it can be some work to wire up correctly. A good start if you're
+already an Emacs user is `Python Programming in Emacs`_ at EmacsWiki.
+
+1. Emacs itself comes with a python mode.
+2. Python ships with an alternate version:
+   `python-mode.el <https://launchpad.net/python-mode>`_
+3. Fabián Ezequiel Gallina's provides nice functionality and
+   behavior out of the box: `python.el <https://github.com/fgallina/python.el>`_
+
+.. _Python Programming in Emacs: http://emacswiki.org/emacs/PythonProgrammingInEmacs
 
 TextMate
 --------
@@ -202,7 +217,7 @@ environment, just remove the directory it was installed into. (In this
 case, it would be ``rm -rf venv``).
 
 Other Notes
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 Running ``virtualenv`` with the option ``--no-site-packages`` will not
 include the packages that are installed globally. This can be useful
