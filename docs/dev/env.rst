@@ -17,7 +17,7 @@ or icons. There exist a couple of plugins and settings for the VIM editor to
 aid python development. If you only develop in Python, a good start is to set
 the default settings for indentation and line-wrapping to values compliant with
 `PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_. In your home directory,
-open a file called `.vimrc` and add the following lines: ::
+open a file called `.vimrc` and add the following lines:::
 
     set textwidth=79
     set shiftwidth=4
@@ -142,7 +142,7 @@ The most popular Eclipse plugin for Python development is Aptana's
 
 
 Komodo IDE
------------
+----------
 `Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by
 ActiveState and is a commercial IDE for Windows, Mac
 and Linux.
@@ -166,6 +166,17 @@ WingIDE
 `WingIDE <http://wingware.com/>`_ a python specific IDE.   Runs for Linux,
 Windows, and Mac (as an X11 application, which frustrates some Mac users).
 
+
+NINJA-IDE
+---------
+
+`NINJA-IDE <http://www.ninja-ide.org/>`_ (from the recursive acronym: "Ninja-IDE
+Is Not Just Another IDE", is a cross-platform IDE, specially designed to build
+Python applications, and runs on Linux/X11, Mac OS X and Windows desktop operating
+systems. Installers for these platforms can be downloaded from the website.
+
+NINJA-IDE is open-source software (GPLv3 licence) and is developed in Python and
+Qt. The source files can be downloaded from `GitHub <https://github.com/ninja-ide>`_.
 
 Interpreter Tools
 :::::::::::::::::
