@@ -39,7 +39,7 @@ include:
   and if conversely the class Carpenter needs to import Table and Chair,
   to answer the question carpenter.whatdo(), then you
   have a circular dependency. In this case you will have to resort to
-  fragile hacks such has using import statements inside
+  fragile hacks such as using import statements inside
   methods or functions.
 
 - Hidden coupling: each and every change in Table's implementation
