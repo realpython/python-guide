@@ -335,3 +335,22 @@ Python interpreter for Unix-like operating systems. It has the following feature
 
     $ pip install bpython
 
+
+Python for iOS
+--------------
+
+`Python for iOS <http://pythonforios.com/>`_ is a Python 2.7.2 environment for
+iOS and is compatible with iPad, iPhone and iPod Touch. It requires iOS 5.0 or
+later and has the following features:
+
+* Interactive interpreter
+* Separate tab for writing and testing script files
+* Complete Python 2.7.2. documentation
+* Import saved scripts / modules in the interpretor or other scripts
+* optimized for both portrait and landscape orientation
+* Automatic indent / dedent for interpreter and script editor
+* Save interpreter session as a script file to edit / run in the script editor
+  tab
+ * All standard modules and a few extras (like SymPy) included
+
+ Available on the `App Store <http://itunes.apple.com/us/app/python-for-ios/id485729872?mt=8&uo=4>`_
