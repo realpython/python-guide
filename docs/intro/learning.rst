@@ -65,8 +65,8 @@ Python Koans
 
 Python Koans is a port of Edgecase's Ruby Koans.  It uses a test-driven
 approach, q.v. TEST DRIVEN DESIGN SECTION to provide an interactive tutorial
-teaching basic python concepts.  By fixing assertion statements that fail in a
- test script, this provides sequential steps to learning python.
+teaching basic python concepts.  By fixing assertion statements that fail in a 
+test script, this provides sequential steps to learning python.
 
 For those used to languages and figuring out puzzles on their own, this can be
 a fun, attractive option. For those new to python and programming, having an
