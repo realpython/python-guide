@@ -114,10 +114,10 @@ Those two possibilities are better avoided without any strong reason to not
 follow the syntax that is the closest to the function definition: ``send('Hello',
 'World', cc='Cthulhu', bcc='God')``.
 
-As a side note, following YAGNI_ principle, it is often harder to remove an
-optional argument (and its logic inside the function) that was added "just in
-case" and is seemingly never used, than to add a new optional argument and its
-logic when needed.
+As a side note, following `YAGNI <http://en.wikipedia.org/wiki/You_ain't_gonna_need_it>`_
+principle, it is often harder to remove an optional argument (and its logic inside the 
+function) that was added "just in case" and is seemingly never used, than to add a 
+new optional argument and its logic when needed.
 
 The **arbitrary argument list** is the third way to pass arguments to a
 function.  If the function intention is better expressed by a signature with an
