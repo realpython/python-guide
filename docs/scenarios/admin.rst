@@ -68,6 +68,57 @@ programs, and host grouping.
 
     `Fabric Documentation <http://docs.fabfile.org>`_
 
+Salt
+----
+
+`Salt <http://saltstack.org/>`_ is an open source infrastructure management tool.
+It supports remote command execution from a central point (master host) to multiple
+hosts (minions). It also supports system states which can be used to configure
+multiple servers using simple template files.
+
+Salt supports python versions 2.6 and 2.7 and can be installed via pip:
+
+.. code-block:: bash
+
+    $ pip install salt
+
+After configuring a master server and any number of minion hosts, we can run arbitrary
+shell commands or use pre-built modules of complex commands on our minions.
+
+The following command lists all available minion hosts, using the ping module.
+
+.. code-block:: bash
+
+    $ salt '*' test.ping
+
+The host filtering is acomplished by matching the minion id, or using the grains system.
+The `grains <http://docs.saltstack.org/en/latest/topics/targeting/grains.html>`_ system
+uses static host information like the operating system version or the CPU architecture to
+provide a host taxonomy for the salt modules.
+
+The following command lists all available minions running CentOS using the grains system:
+
+.. code-block:: bash
+
+    $ salt -G 'os:CentOS' test.ping
+
+Salt also provides a state system. States can be used to configure the minion hosts.
+
+For example, when a minion host is ordered to read the following state file, will install
+and start the Apache server:
+
+.. code-block:: yaml
+
+    apache:
+      pkg:
+        - installed
+      service:
+        - running
+
+State files can be written using YAML, the Jinja2 template system or pure python.
+
+    `Salt Documentation <http://docs.saltstack.org/en/latest/index.html>`_
+
 Chef
 ----
 
