@@ -107,7 +107,7 @@ passed another value.
 
 Calling a function with keyword arguments can be done in multiple ways in Python,
 for example it is possible to follow the order of arguments in the definition without
-explicitly naming the arguments, like in ``send('Hello', 'World', 'Cthulhu`, 'God')``,
+explicitly naming the arguments, like in ``send('Hello', 'World', 'Cthulhu', 'God')``,
 sending a blank carbon copy to God. It would also be possible to name arguments in
 another order, like in ``send('Hello again', 'World', bcc='God', cc='Cthulhu')``.
 Those two possibilities are better avoided without any strong reason to not
