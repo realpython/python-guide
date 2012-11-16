@@ -114,10 +114,10 @@ Those two possibilities are better avoided without any strong reason to not
 follow the syntax that is the closest to the function definition: ``send('Hello',
 'World', cc='Cthulhu', bcc='God')``.
 
-As a side note, following YAGNI_ principle, it is often harder to remove an
-optional argument (and its logic inside the function) that was added "just in
-case" and is seemingly never used, than to add a new optional argument and its
-logic when needed.
+As a side note, following `YAGNI <http://en.wikipedia.org/wiki/You_ain't_gonna_need_it>`_
+principle, it is often harder to remove an optional argument (and its logic inside the 
+function) that was added "just in case" and is seemingly never used, than to add a 
+new optional argument and its logic when needed.
 
 The **arbitrary argument list** is the third way to pass arguments to a
 function.  If the function intention is better expressed by a signature with an
@@ -416,12 +416,12 @@ Then run it on a file or series of files to get a report of any violations.
     optparse.py:544:21: W601 .has_key() is deprecated, use 'in'
 
 Conventions
-:::::::::::
+----------------
 
 Here are some conventions you should follow to make your code easier to read.
 
 Check if variable equals a constant
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You don't need to explicitly compare a value to True, or None, or 0 - you can
 just add it to the if statement. See `Truth Value Testing
@@ -455,7 +455,7 @@ list of what is considered false.
         print 'attr is None!'
 
 Access a Dictionary Element
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Don't use the ``has_key`` function. Instead use ``x in d`` syntax, or pass
 a default argument to ``get``.
@@ -484,7 +484,7 @@ a default argument to ``get``.
         print d['hello']
 
 Short Ways to Manipulate Lists
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `List comprehensions
 <http://docs.python.org/tutorial/datastructures.html#list-comprehensions>`_
@@ -548,7 +548,7 @@ manually. Moreover,
 it is better optimized for iterators.
 
 Read From a File
-----------------
+~~~~~~~~~~~~~~~~
 
 Use the ``with open`` syntax to read from files. This will automatically close
 files for you.
@@ -574,7 +574,7 @@ The ``with`` statement is better because it will ensure you always close the
 file, even if an exception is raised.
 
 Returning Multiple Values from a Function
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Python supports returning multiple values from a function as a comma-separated
 list, so you don't have to create an object or dictionary and pack multiple
