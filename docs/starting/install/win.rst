@@ -58,7 +58,10 @@ considered by many to be deprecated, so we will install its replacement:
 **pip**. Pip allows for uninstallation of packages, and is actively maintained,
 unlike easy_install.
 
-To install pip, simply open a command prompt and run
+To install pip, simply run the script: `pip installer <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
+
+
+Alternatively, open a command prompt and run:
 
 .. code-block:: console
 
