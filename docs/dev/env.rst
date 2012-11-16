@@ -19,12 +19,13 @@ the default settings for indentation and line-wrapping to values compliant with
 `PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_. In your home directory,
 open a file called `.vimrc` and add the following lines:::
 
-    set textwidth=79
-    set shiftwidth=4
-    set tabstop=4
-    set expandtab
-    set softtabstop=4
-    set shiftround
+    set textwidth=79  " lines longer than 79 columns will be broken
+    set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
+    set tabstop=4     " an hard TAB displays as 4 columns
+    set expandtab     " insert spaces when hitting TABs
+    set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
+    set shiftround    " round indent to multiple of 'shiftwidth'
+    set autoindent    " align the new line indent with the previous line
 
 With these settings, newlines are inserted after 79 characters and indentation
 is set to 4 spaces per tab. If you also use VIM for other languages, there is a
