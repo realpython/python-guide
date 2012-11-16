@@ -321,7 +321,7 @@ Instead, use a list comprehension:
 
 .. code-block:: python
 
-    four_lists = [[] for _ in xrange(4)]
+    four_lists = [[] for __ in xrange(4)]
 
 
 A common idiom for creating strings is to use `join <http://docs.python.org/library/string.html#string.join>`_ on an empty string.::
