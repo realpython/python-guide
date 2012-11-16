@@ -233,6 +233,7 @@ Other Notes
 Running ``virtualenv`` with the option ``--no-site-packages`` will not
 include the packages that are installed globally. This can be useful
 for keeping the package list clean in case it needs to be accessed later.
+[This is the default behavior for ``virtualenv`` 1.7 and later.]
 
 In order to keep your environment consistent, it's a good idea to "freeze"
 the current state of the environment packages. To do this, run
@@ -276,6 +277,7 @@ Put this into your `~/.bash_profile` (Linux/Mac) file:
 
 This will prevent your virtualenvs from relying on your (global) site packages
 directory, so that they are completely separate..
+[note: This is the default behavior for ``virtualenv`` 1.7 and later]
 
 Other Tools
 :::::::::::
