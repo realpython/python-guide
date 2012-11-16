@@ -266,7 +266,7 @@ logic (called pure functions) allow the following benefits:
 - Pure functions are easier to test with unit-tests: There is less
   need for complex context setup and data cleaning afterwards.
 
-- Pure functions are easier to manipulate, decorate_, and pass-around.
+- Pure functions are easier to manipulate, decorate, and pass-around.
 
 In summary, pure functions, without any context or side-effects, are more
 efficient building blocks than classes and objects for some architectures.

@@ -1,4 +1,4 @@
-.. _the_community:
+.. _the-community:
 
 The Community
 =============

@@ -1,6 +1,8 @@
 Picking an Interpreter
 ======================
 
+.. _which-python:
+
 Which Python to use?
 
 
