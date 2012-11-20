@@ -211,10 +211,6 @@ while privatising a public property might be a much harder operation.
 Returning values
 ~~~~~~~~~~~~~~~~
 
-Python functions return a value, and you can control this return value with the
-return statement for all of them but the object constructor `__init__()` and the
-special case of generators.
-
 When a function grows in complexity is not uncommon to use multiple return statements
 inside the function's body. However, in order to keep a clear intent and a sustainable
 readability level, it is preferable to avoid returning meaningful values from many
