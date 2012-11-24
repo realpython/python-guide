@@ -74,7 +74,7 @@ It has:
 - Virtual env support;
 - Search by python documentation and run python code;
 - More other things like auto pep8 error fixes;
-- Very customizable an documented as well;
+- Very customizable and documented as well;
 - Have all required libraries in self;
 
 And more stuff.
