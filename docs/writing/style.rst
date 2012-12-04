@@ -569,33 +569,6 @@ files for you.
 The ``with`` statement is better because it will ensure you always close the
 file, even if an exception is raised.
 
-Returning Multiple Values from a Function
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Python supports returning multiple values from a function as a comma-separated
-list, so you don't have to create an object or dictionary and pack multiple
-values in before you return
-
-**Bad**:
-
-.. code-block:: python
-
-    def math_func(a):
-        return {'square': a ** 2, 'cube': a ** 3}
-
-    d = math_func(3)
-    s = d['square']
-    c = d['cube']
-
-**Good**:
-
-.. code-block:: python
-
-    def math_func(a):
-        return a ** 2, a ** 3
-
-    square, cube = math_func(3)
-
 Line Continuations
 ~~~~~~~~~~~~~~~~~~
 
