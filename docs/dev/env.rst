@@ -269,15 +269,6 @@ virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
     $ pip install virtualenvwrapper
 
 
-Put this into your `~/.bash_profile` (Linux/Mac) file:
-
-::
-
-    $ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-
-This will prevent your virtualenvs from relying on your (global) site packages
-directory, so that they are completely separate..
-
 Other Tools
 :::::::::::
 
