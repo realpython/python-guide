@@ -290,7 +290,7 @@ always returns the same result (but only for the duration of the test).
         # get_search_results runs a search and iterates over the result 
         self.assertEqual(len(myapp.get_search_results(q="fish")), 3)
 
-Mock has many other ways you can configure it and control its behaviour.
+Mock has many other ways you can configure it and control its behavior.
 
     `mock <http://www.voidspace.org.uk/python/mock/>`_
 
