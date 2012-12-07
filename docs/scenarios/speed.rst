@@ -42,7 +42,7 @@ The GIL
 
 `The GIL`_ (Global Interpreter Lock) is how Python allows multiple threads to
 operate at the same time. Python's memory management isn't entirely thread-safe,
-so the GIL is requried to prevents multiple threads from running the same
+so the GIL is required to prevents multiple threads from running the same
 Python code at once.
 
 David Beazley has a great `guide`_ on how the GIL operates. He also covers the
@@ -51,7 +51,7 @@ Python application requires a strong understanding of the GIL, how it affects
 your specific application, how many cores you have, and where your application
 bottlenecks are.
 
-C Extentions
+C Extensions
 ------------
 
 

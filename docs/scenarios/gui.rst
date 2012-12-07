@@ -40,7 +40,7 @@ Gtk
 ---
 PyGTK provides Python bindings for the GTK+ toolkit. Like the GTK+ library
 itself, it is currently licensed under the GNU LGPL. It is worth noting that
-PyGTK only currenty supports the Gtk-2.X API (NOT Gtk-3.0). It is currently
+PyGTK only currently supports the Gtk-2.X API (NOT Gtk-3.0). It is currently
 recommended that PyGTK is not used for new projects and existing applications
 be ported from PyGTK to PyGObject.
 

@@ -91,7 +91,7 @@ The following command lists all available minion hosts, using the ping module.
 
     $ salt '*' test.ping
 
-The host filtering is acomplished by matching the minion id, or using the grains system.
+The host filtering is accomplished by matching the minion id, or using the grains system.
 The `grains <http://docs.saltstack.org/en/latest/topics/targeting/grains.html>`_ system
 uses static host information like the operating system version or the CPU architecture to
 provide a host taxonomy for the salt modules.
