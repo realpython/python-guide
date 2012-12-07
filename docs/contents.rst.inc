@@ -101,7 +101,7 @@ background information about Python, then focuses on next steps.
 
 --------------------------------------
 
-Contibution notes and legal information are here (for those interested).
+Contribution notes and legal information are here (for those interested).
 
 .. toctree::
    :maxdepth: 2

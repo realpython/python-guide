@@ -151,7 +151,7 @@ clearer construct is sufficient to express the function's intention.
 It is up to the programmer writing the function to determine which arguments
 are positional arguments and which are optional keyword arguments, and to
 decide whether to use the advanced techniques of arbitrary argument passing. If
-the advices above are followed wisely, it is possible and enjoyable to write
+the advice above is followed wisely, it is possible and enjoyable to write
 Python functions that are:
 
 * easy to read (the name and arguments need no explanations)
