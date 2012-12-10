@@ -146,3 +146,9 @@ Buildout
 
     `Buildout Website <http://www.buildout.org>`_
 
+Ansible
+-------
+
+.. todo:: Write about Ansible
+
+    `Ansible Documentation <http://ansible.cc/docs/>`_
