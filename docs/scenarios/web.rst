@@ -78,6 +78,18 @@ already exist to suit your needs.
 email to flask@librelist.com and reply to the confirmation email.
 
 
+Werkzeug
+--------
+
+`Werkzeug <http://werkzeug.pocoo.org/>`_ is not actually a real framework, but
+rather a very powerful set of tools for building web applications. It provides
+URL routing utilities, request and response objects and a basic development
+server. It is mostly used where users need bigger flexibility for their
+application that is not commonly found in other web frameworks.
+
+Support can be found on its `mailing list <http://werkzeug.pocoo.org/community/#mailinglist>`_.
+
+
 .. todo:: Explain Pyramid
 
 
