@@ -49,6 +49,7 @@ different scenarios.
    scenarios/cli
    scenarios/gui
    scenarios/db
+   scenarios/network
    scenarios/admin
    scenarios/ci
    scenarios/speed
