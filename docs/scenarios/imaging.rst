@@ -26,11 +26,24 @@ to install. It has good setup instructions for all platforms.
 Installing on Linux
 ~~~~~~~~~~~~~~~~~~~
 
-Ubuntu 11.04
+Arch Linux
+``````````
+
+PIL is maintained in the official community repository, and installed with the system installer as:
+
+.. code-block:: bash
+
+    $ sudo pacman -S python2-imaging
+
+Ubuntu 12.10
 ````````````
 
-.. todo::
-    Notes on installing on Ubuntu 11.04
+Can be installed on the command line as:
+
+.. code-block:: bash
+
+    $ sudo apt-get install python-imaging
+
 
 Installing on Mac OS X
 ~~~~~~~~~~~~~~~~~~~~~~
