@@ -218,6 +218,35 @@ Gondor publishes guides to deploying `Django projects
 <https://gondor.io/support/setting-up-pinax/>`_ on their platform.
 
 
+Google Appengine
+~~~~~~~~~~~~~~~~
+`Google Appengine <https://developers.google.com/appengine/>`_, or GAE, is PaaS hosted
+by Google that offers deploying of Python WSGI applications (on versions
+2.5 and 2.7) that run on the Google infrastructure. There is no server
+configuration, and there is a simple tool for deploying of applications
+by providing a simple configuration file that contains the WSGI endpoints
+and static file locations.
+
+There is no support for any SQL databases, instead GAE provides a key-value
+datastore, and also access to a Memcached server and a full-text search server.
+Also, there is support for cron and deffered tasks.
+
+One should note that most of the low level APIs of the Python standard
+library are disabled for security purposes, for example, the user can not
+write files to disk or use the socket library. However, a lot of popular
+cpython libraries are `included <https://developers.google.com/appengine/docs/python/tools/libraries27>`_, such as
+PIL, Jinja2, lxml and matplotlib.
+
+
+OpenShift
+~~~~~~~~~
+`OpenShift <https://openshift.redhat.com/>`_ is the application cloud of
+RedHat. The user can deploy any kind of WSGI application, use MySQL, Postgresql
+or MongoDB, and also has support for cron tasks. The Python version is 2.6
+and the user can install any library using pip and virtualenv.
+
+The deployment is done simply by pushing to the remote git repository.
+
 Templating
 ::::::::::
 
