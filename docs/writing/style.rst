@@ -327,22 +327,22 @@ A common idiom for creating strings is to use `join <http://docs.python.org/libr
 
 This will set the value of the variable *word* to 'spam'. This idiom can be applied to lists and tuples.
 
-Sometimes we need to search through a collection of things. Let's look at two options: lists and dictionaries.
+Sometimes we need to search through a collection of things. Let's look at two options: lists and sets.
 
 Take the following code for example::
 
-    d = {'s': [], 'p': [], 'a': [], 'm': []}
+    d = {'s', 'p', 'a', 'm'}
     l = ['s', 'p', 'a', 'm']
 
-    def lookup_dict(d):
+    def lookup_set(d):
         return 's' in d
 
     def lookup_list(l):
         return 's' in l
 
-Even though both functions look identical, because *lookup_dict* is utilizing the fact that dictionaries in python are hashtables, the lookup performance between the two is very different.
-Python will have to go through each item in the list to find a matching case, which is time consuming. By analysing the hash of the dictionary finding keys in the dict can be done very quickly.
-For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_ page.
+Even though both functions look identical, because *lookup_set* is utilizing the fact that sets in python are hashtables, the lookup performance between the two is very different.
+Python will have to go through each item in the list to find a matching case, which is time consuming. By analysing the hash of the items in the set can be done very quickly.
+For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_ page. Note: python dictionaries and sets have the lookup performance. 
 
 Zen of Python
 -------------
