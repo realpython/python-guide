@@ -19,20 +19,39 @@ Mutable Default Arguments
 Seemingly the *most* common surprise new Python programmers encounter is
 Python's treatment of mutable default arguments in function definitions.
 
-**What You Wrote**
+What You Wrote
+~~~~~~~~~~~~~~
 
-.. code-block:: python
+.. testcode::
 
     def append_to(element, to=[]):
         to.append(element)
         return to
 
-**What You Might Have Expected to Happen**
+What You Might Have Expected to Happen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. testcode::
+
+    my_list = append_to(12)
+    print my_list
+
+    my_other_list = append_to(42)
+    print my_other_list
 
 A new list is created each time the function is called if a second argument
-isn't provided.
+isn't provided, so that the output is::
 
-**What Does Happen**
+    [12]
+    [42]
+
+What Does Happen
+~~~~~~~~~~~~~~~~
+
+.. testoutput::
+
+    [12]
+    [12, 42]
 
 A new list is created *once* when the function is defined, and the same list is
 used in each successive call.
@@ -42,7 +61,8 @@ not each time the function is called (like it is in say, Ruby). This means that
 if you use a mutable default argument and mutate it, you *will* and have
 mutated that object for all future calls to the function as well.
 
-**What You Should Do Instead**
+What You Should Do Instead
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create a new object each time the function is called, by using a default arg to
 signal that no argument was provided (``None`` is often a good choice).
@@ -56,7 +76,8 @@ signal that no argument was provided (``None`` is often a good choice).
         return to
 
 
-**When the Gotcha Isn't a Gotcha**
+When the Gotcha Isn't a Gotcha
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes you specifically can "exploit" (read: use as intended) this behavior
 to maintain state between calls of a function. This is often done when writing
@@ -69,19 +90,41 @@ Late Binding Closures
 Another common source of confusion is the way Python binds its variables in
 closures (or in the surrounding global scope).
 
-**What You Wrote**
+What You Wrote
+~~~~~~~~~~~~~~
 
-.. code-block:: python
+.. testcode::
 
-    def create_adders():
+    def create_multipliers():
         return [lambda x : i * x for i in range(5)]
 
-**What You Might Have Expected to Happen**
+What You Might Have Expected to Happen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. testcode::
+
+    for multiplier in create_multipliers():
+        print multiplier(2)
 
 A list containing five functions that each have their own closed-over ``i``
-variable that multiplies their argument.
+variable that multiplies their argument, producing::
 
-**What Does Happen**
+    0
+    2
+    4
+    6
+    8
+
+What Does Happen
+~~~~~~~~~~~~~~~~
+
+.. testoutput::
+
+    8
+    8
+    8
+    8
+    8
 
 Five functions are created, but all of them just multiply ``x`` by 4.
 
@@ -105,7 +148,8 @@ fact the same exact behavior is exhibited by just using an ordinary ``def``:
                 return i * x
             yield adder
 
-**What You Should Do Instead**
+What You Should Do Instead
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Well. Here the general solution is arguably a bit of a hack. Due to Python's
 afformentioned behavior concerning evaluating default arguments to functions
@@ -117,7 +161,8 @@ its arguments by using a default arg like so:
     def create_adders():
         return [lambda x, i=i : i * x for i in range(5)]
 
-**When the Gotcha Isn't a Gotcha**
+When the Gotcha Isn't a Gotcha
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When you want your closures to behave this way. Late binding is good in lots of
 situations. Looping to create unique functions is unfortunately a case where
