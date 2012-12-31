@@ -5,10 +5,10 @@ Web Scraping
 ------------
 
 Web sites are written using HTML, which means that each web page is a
- structured document. Sometimes it would be great to obtain some data from 
-them and preserve the structure while we're at it, but this isn't always easy
- - it's not often that web sites provide their data in comfortable formats
- such as `.csv`. 
+structured document. Sometimes it would be great to obtain some data from 
+them and preserve the structure while we're at it, but this isn't always easy.
+It's not often that web sites provide their data in comfortable formats
+ such as ``.csv``. 
 
 This is where web scraping comes in. Web scraping is the practice of using
 computer program to sift through a web page and gather the data that you need
@@ -18,8 +18,8 @@ lxml
 ----
 
 `lxml <http://lxml.de/>`_ is a pretty extensive library written for parsing
-XML and HTML documents, which you can easily install using `pip`. We will 
-be using its `html` module to get data from this web page: `econpy <http://econpy.pythonanywhere.com/ex/001.html>'_ .
+XML and HTML documents, which you can easily install using ``pip``. We will 
+be using its `html` module to get data from this web page: `econpy <http://econpy.pythonanywhere.com/ex/001.html>`_ .
 
 First we shall import the required modules:
 
@@ -28,8 +28,8 @@ First we shall import the required modules:
     from lxml import html
     from urllib2 import urlopen
     
-We will use `urllib2.urlopen` to retrieve the web page with our data and
-parse it using the `html` module:
+We will use ``urllib2.urlopen`` to retrieve the web page with our data and
+parse it using the ``html`` module:
 
 .. code-block:: python
 
@@ -39,7 +39,7 @@ parse it using the `html` module:
 `tree` now contains the whole HTML file in a nice tree structure which
 we can go over in many different ways, one of which is using XPath. XPath
 is a way of locating information in structured documents such as HTML or XML
-pages. A good introduction to XPath is 'here <http://www.w3schools.com/xpath/default.asp>'_ .
+pages. A good introduction to XPath is `here <http://www.w3schools.com/xpath/default.asp>`_ .
 One can also use various tools for obtaining the XPath of elements such as
 FireBug for Firefox or in Chrome you can right click an element, choose 
 'Inspect element', highlight the code and the right click again and choose
@@ -65,6 +65,7 @@ Lets see what we got exactly:
     print 'Prices: ', prices
 
 ::
+
     Buyers:  ['Carson Busses', 'Earl E. Byrd', 'Patty Cakes', 
     'Derri Anne Connecticut', 'Moe Dess', 'Leda Doggslife', 'Dan Druff',
     'Al Fresco', 'Ido Hoe', 'Howie Kisses', 'Len Lease', 'Phil Meup',
