@@ -8,7 +8,7 @@ Web sites are written using HTML, which means that each web page is a
 structured document. Sometimes it would be great to obtain some data from 
 them and preserve the structure while we're at it, but this isn't always easy.
 It's not often that web sites provide their data in comfortable formats
- such as ``.csv``. 
+such as ``.csv``. 
 
 This is where web scraping comes in. Web scraping is the practice of using
 computer program to sift through a web page and gather the data that you need
@@ -19,7 +19,7 @@ lxml
 
 `lxml <http://lxml.de/>`_ is a pretty extensive library written for parsing
 XML and HTML documents, which you can easily install using ``pip``. We will 
-be using its `html` module to get data from this web page: `econpy <http://econpy.pythonanywhere.com/ex/001.html>`_ .
+be using its ``html`` module to get example data from this web page: `econpy.org <http://econpy.pythonanywhere.com/ex/001.html>`_ .
 
 First we shall import the required modules:
 
