@@ -14,27 +14,29 @@ This is where web scraping comes in. Web scraping is the practice of using
 computer program to sift through a web page and gather the data that you need
 in a format most useful to you.
 
-lxml
-----
+lxml and Requests
+-----------------
 
 `lxml <http://lxml.de/>`_ is a pretty extensive library written for parsing
-XML and HTML documents, which you can easily install using ``pip``. We will 
-be using its ``html`` module to get example data from this web page: `econpy.org <http://econpy.pythonanywhere.com/ex/001.html>`_ .
+XML and HTML documents really fast. It even handles messed up tags. We will 
+also be using the `Requests <http://docs.python-requests.org/en/latest/>`_ module instead of the already built-in urlib2 
+due to improvements in speed and readability. You can easily install both 
+using ``pip install lxml`` and ``pip install requests``.
 
-First we shall import the required modules:
+Lets start with the imports:
 
 .. code-block:: python
 
     from lxml import html
-    from urllib2 import urlopen
+    import requests
     
-We will use ``urllib2.urlopen`` to retrieve the web page with our data and
-parse it using the ``html`` module:
+Next we will use ``requests.get`` to retrieve the web page with our data 
+and parse it using the ``html`` module and save the results in ``tree``:
 
 .. code-block:: python
 
-    page = urlopen('http://econpy.pythonanywhere.com/ex/001.html')
-    tree = html.fromstring(page.read())
+    page = requests.get('http://econpy.pythonanywhere.com/ex/001.html')
+    tree = html.fromstring(page.text)
 
 ``tree`` now contains the whole HTML file in a nice tree structure which
 we can go over two different ways: XPath and CSSSelect. In this example, I
