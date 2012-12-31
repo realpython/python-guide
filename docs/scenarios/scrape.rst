@@ -6,13 +6,13 @@ Web Scraping
 
 Web sites are written using HTML, which means that each web page is a
 structured document. Sometimes it would be great to obtain some data from 
-them and preserve the structure while we're at it, but this isn't always easy.
-It's not often that web sites provide their data in comfortable formats
-such as ``.csv``. 
+them and preserve the structure while we're at it. Web sites provide 
+don't always provide their data in comfortable formats such as ``.csv``. 
 
-This is where web scraping comes in. Web scraping is the practice of using
+This is where web scraping comes in. Web scraping is the practice of using a
 computer program to sift through a web page and gather the data that you need
-in a format most useful to you.
+in a format most useful to you while at the same time preserving the structure
+of the data.
 
 lxml and Requests
 -----------------
@@ -43,12 +43,12 @@ we can go over two different ways: XPath and CSSSelect. In this example, I
 will focus on the former. 
 
 XPath is a way of locating information in structured documents such as 
-HTML or XML pages. A good introduction to XPath is `here <http://www.w3schools.com/xpath/default.asp>`_ .
+HTML or XML documents. A good introduction to XPath is on `W3Schools <http://www.w3schools.com/xpath/default.asp>`_ .
 
-One can also use various tools for obtaining the XPath of elements such as
-FireBug for Firefox or in Chrome you can right click an element, choose 
-'Inspect element', highlight the code and the right click again and choose
-'Copy XPath'.
+There are also various tools for obtaining the XPath of elements such as
+FireBug for Firefox or if you're using Chrome you can right click an 
+element, choose 'Inspect element', highlight the code and then right 
+click again and choose 'Copy XPath'.
 
 After a quick analysis, we see that in our page the data is contained in 
 two elements - one is a div with title 'buyer-name' and the other is a 
@@ -90,10 +90,10 @@ Lets see what we got exactly:
     '$15.00', '$114.07', '$10.09']
 
 Congratulations! We have successfully scraped all the data we wanted from
-a web page using lxml and we have it stored in memory as two lists. Now we
-can either continue our work on it, analyzing it using python or we can
-export it to a file and share it with friends. 
+a web page using lxml and Requests. We have it stored in memory as two 
+lists. Now we can do all sorts of cool stuff with it: we can analyze it 
+using Python or we can save it a file and share it with the world.
 
-A cool idea to think about is writing a script to iterate through the rest
-of the pages of this example data set or making this application use 
-threads to improve its speed.
+A cool idea to think about is modifying this script to iterate through 
+the rest of the pages of this example dataset or rewriting this 
+application to use threads for improved speed.
