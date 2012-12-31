@@ -36,10 +36,13 @@ parse it using the ``html`` module:
     page = urlopen('http://econpy.pythonanywhere.com/ex/001.html')
     tree = html.fromstring(page.read())
 
-`tree` now contains the whole HTML file in a nice tree structure which
-we can go over in many different ways, one of which is using XPath. XPath
-is a way of locating information in structured documents such as HTML or XML
-pages. A good introduction to XPath is `here <http://www.w3schools.com/xpath/default.asp>`_ .
+``tree`` now contains the whole HTML file in a nice tree structure which
+we can go over two different ways: XPath and CSSSelect. In this example, I
+will focus on the former. 
+
+XPath is a way of locating information in structured documents such as 
+HTML or XML pages. A good introduction to XPath is `here <http://www.w3schools.com/xpath/default.asp>`_ .
+
 One can also use various tools for obtaining the XPath of elements such as
 FireBug for Firefox or in Chrome you can right click an element, choose 
 'Inspect element', highlight the code and the right click again and choose
@@ -47,8 +50,15 @@ FireBug for Firefox or in Chrome you can right click an element, choose
 
 After a quick analysis, we see that in our page the data is contained in 
 two elements - one is a div with title 'buyer-name' and the other is a 
-span with class 'item-price'. Knowing this we can create the correct XPath
-query and use the lxml `xpath` function like this:
+span with class 'item-price':
+
+.. code-bloc:: html
+
+    <div title="buyer-name">Carson Busses</div>
+    <span class="item-price">$29.95</span>
+
+Knowing this we can create the correct XPath query and use the lxml
+``xpath`` function like this:
 
 .. code-block:: python
 
@@ -81,3 +91,7 @@ Congratulations! We have successfully scraped all the data we wanted from
 a web page using lxml and we have it stored in memory as two lists. Now we
 can either continue our work on it, analyzing it using python or we can
 export it to a file and share it with friends. 
+
+A cool idea to think about is writing a script to iterate through the rest
+of the pages of this example data set or making this application use 
+threads to improve its speed.
