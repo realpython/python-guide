@@ -52,7 +52,7 @@ After a quick analysis, we see that in our page the data is contained in
 two elements - one is a div with title 'buyer-name' and the other is a 
 span with class 'item-price':
 
-.. code-bloc:: html
+::
 
     <div title="buyer-name">Carson Busses</div>
     <span class="item-price">$29.95</span>
