@@ -286,7 +286,7 @@ will not need that variable, use ``__``:
 .. code-block:: python
 
     filename = 'foobar.txt'
-    basename, __, ext = filename.rpartition()
+    basename, __, ext = filename.rpartition('.')
 
 .. note::
 
