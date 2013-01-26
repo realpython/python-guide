@@ -29,6 +29,7 @@ This part of the guide focuses on best practices for writing Python code.
 
    writing/structure
    writing/style
+   writing/reading
    writing/documentation
    writing/tests
    writing/gotchas
