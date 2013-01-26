@@ -1,3 +1,4 @@
+.. code_style:
 Code Style
 ==========
 
