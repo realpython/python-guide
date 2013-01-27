@@ -330,7 +330,7 @@ been set to a completely unrelated object.
 
 Some guidelines help to avoid this issue:
 
-- Avoid using variables for different things.
+- Avoid using the same variable name for different things.
 
 **Bad**
 
