@@ -46,8 +46,8 @@ Installing NumPy and SciPy can be a daunting task. Which is why the
 `Enthought Python distribution <http://enthought.com/>`_ was created. With
 Enthought, scientific python has never been easier (one click to install about
 100 scientific python packages). The Enthought Python Distribution comes in two
-variants: a free version `EPD Free <http://enthought.com/products/epd_free.php>`_ 
-and a paid version with various `pricing options.   
+variants: a free version `EPD Free <http://enthought.com/products/epd_free.php>`_
+and a paid version with various `pricing options.
 <http://enthought.com/products/epd_sublevels.php>`_
 
 Matplotlib
