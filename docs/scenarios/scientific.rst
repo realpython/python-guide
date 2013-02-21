@@ -52,6 +52,24 @@ users to Python.  Many examples, along with the source code to re-create them,
 can be browsed at the `matplotlib gallery
 <http://matplotlib.sourceforge.net/gallery.html>`_.
 
+Resources
+:::::::::
+
+Installation of scientific  Python packages can be troublesome. Many of these
+packages are implemented as Python C extensions which need to be compiled.
+This section lists various so-called Python distributions which provide precompiled and 
+easy-to-install collections of scientific Python packages.
+
+Unofficial Windows Binaries for Python Extension Packages
+---------------------------------------------------------
+
+Many people who do scientific computing are on Windows. And yet many of the
+scientific computing packages are notoriously difficult to build and install.
+`Christoph Gohlke <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_ however, has
+compiled a list of Windows binaries for many useful Python packages. The list
+of packages has grown from a mainly scientific python resource to a more
+general list. It might be a good idea to check it out if you're on Windows.
+
 Enthought
 ---------
 
@@ -62,18 +80,3 @@ Enthought, scientific python has never been easier (one click to install about
 variants: a free version `EPD Free <http://enthought.com/products/epd_free.php>`_
 and a paid version with various `pricing options.
 <http://enthought.com/products/epd_sublevels.php>`_
-
-
-Resources
-:::::::::
-
-Many people who do scientific computing are on Windows. And yet many of the
-scientific computing packages are notoriously difficult to build and install.
-`Christoph Gohlke <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_ however, has
-compiled a list of Windows binaries for many useful Python packages. The list
-of packages has grown from a mainly scientific python resource to a more
-general list. It might be a good idea to check it out if you're on Windows.
-
-For a quick introduction to scientific python:
-
-http://scipy-lectures.github.com
