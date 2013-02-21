@@ -39,6 +39,15 @@ modules for various commonly used tasks in scientific programing like linear
 algebra, integration (calculus), ordinary differential equation solvers and
 signal processing.
 
+Matplotlib
+----------
+
+`matplotlib <http://matplotlib.sourceforge.net/>`_ is a flexible plotting
+library for creating interactive 2D and 3D plots that can also be saved as
+manuscript-quality figures.  The API in many ways reflects that of `MATLAB <http://www.mathworks.com/products/matlab/>`_,
+easing transition of MATLAB users to Python.  Many examples, along with the
+source code to re-create them, can be browsed at the `matplotlib gallery <http://matplotlib.sourceforge.net/gallery.html>`_.
+
 Enthought
 ---------
 
@@ -50,14 +59,6 @@ variants: a free version `EPD Free <http://enthought.com/products/epd_free.php>`
 and a paid version with various `pricing options.
 <http://enthought.com/products/epd_sublevels.php>`_
 
-Matplotlib
-----------
-
-`matplotlib <http://matplotlib.sourceforge.net/>`_ is a flexible plotting
-library for creating interactive 2D and 3D plots that can also be saved as
-manuscript-quality figures.  The API in many ways reflects that of `MATLAB <http://www.mathworks.com/products/matlab/>`_,
-easing transition of MATLAB users to Python.  Many examples, along with the
-source code to re-create them, can be browsed at the `matplotlib gallery <http://matplotlib.sourceforge.net/gallery.html>`_.
 
 Resources
 :::::::::
