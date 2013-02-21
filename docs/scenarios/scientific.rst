@@ -19,6 +19,7 @@ Libraries
 
 NumPy
 -----
+
 `NumPy <http://numpy.scipy.org/>`_ is a low level library written in C (and
 FORTRAN) for high level mathematical functions. NumPy cleverly overcomes the
 problem of running slower algorithms on Python by using multidimensional arrays
@@ -33,6 +34,7 @@ NumPy is compatible with Python versions 2.4 through to 2.7.2 and 3.1+.
 
 SciPy
 -----
+
 `SciPy <http://scipy.org/>`_ is a library that uses Numpy for more mathematical
 function. SciPy uses NumPy arrays as its basic data structure. SciPy comes with
 modules for various commonly used tasks in scientific programing like linear
