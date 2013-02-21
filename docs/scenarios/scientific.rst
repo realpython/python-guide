@@ -44,9 +44,11 @@ Matplotlib
 
 `Matplotlib <http://matplotlib.sourceforge.net/>`_ is a flexible plotting
 library for creating interactive 2D and 3D plots that can also be saved as
-manuscript-quality figures.  The API in many ways reflects that of `MATLAB <http://www.mathworks.com/products/matlab/>`_,
-easing transition of MATLAB users to Python.  Many examples, along with the
-source code to re-create them, can be browsed at the `matplotlib gallery <http://matplotlib.sourceforge.net/gallery.html>`_.
+manuscript-quality figures.  The API in many ways reflects that of `MATLAB
+<http://www.mathworks.com/products/matlab/>`_, easing transition of MATLAB
+users to Python.  Many examples, along with the source code to re-create them,
+can be browsed at the `matplotlib gallery
+<http://matplotlib.sourceforge.net/gallery.html>`_.
 
 Enthought
 ---------
