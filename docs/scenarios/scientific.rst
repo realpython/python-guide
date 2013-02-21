@@ -80,3 +80,14 @@ Enthought, scientific python has never been easier (one click to install about
 variants: a free version `EPD Free <http://enthought.com/products/epd_free.php>`_
 and a paid version with various `pricing options.
 <http://enthought.com/products/epd_sublevels.php>`_
+
+Anaconda
+--------
+
+`Continuum Analytics <http://continuum.io/>`_ offers the `Anaconda
+Python Distribution <https://store.continuum.io/cshop/anaconda>`_ which
+includes all the common scientific python packages and additionally many
+packages related to data analytics and big data. Anaconda comes in two
+flavours, a paid for version and a completely free and open source community
+edition, Anaconda CE, which contains a slightly reduced feature set. Free
+licences for the paid-for version are available for academics and researchers.
