@@ -70,8 +70,8 @@ compiled a list of Windows binaries for many useful Python packages. The list
 of packages has grown from a mainly scientific python resource to a more
 general list. It might be a good idea to check it out if you're on Windows.
 
-Enthought
----------
+Enthought Python Distribution (EPD)
+-----------------------------------
 
 Installing NumPy and SciPy can be a daunting task. Which is why the
 `Enthought Python distribution <http://enthought.com/>`_ was created. With
