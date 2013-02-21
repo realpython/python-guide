@@ -10,9 +10,12 @@ is widely used in academia and scientific projects because it is easy to write,
 and it performs really well.
 
 Due to its high performance nature, scientific computing in python often refers
-to external libraries, typically written in faster languages (like C, or FORTRAN
-for matrix operations). The main libraries used are `NumPy`_,
-`SciPy`_ and `Matplotlib`_.
+to external libraries, typically written in faster languages (like C, or
+FORTRAN for matrix operations). The main libraries used are `NumPy`_, `SciPy`_
+and `Matplotlib`_. Going into detail about these libraries is beyond the scope
+of the Python guide. However, a comprehensive introduction to the scientific
+Python ecosystem can be found in the `Python Scientific Lecture Notes
+<http://scipy-lectures.github.com/>`_
 
 Libraries
 :::::::::
