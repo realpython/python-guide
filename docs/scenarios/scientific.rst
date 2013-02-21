@@ -36,10 +36,10 @@ SciPy
 -----
 
 `SciPy <http://scipy.org/>`_ is a library that uses Numpy for more mathematical
-function. SciPy uses NumPy arrays as its basic data structure. SciPy comes with
-modules for various commonly used tasks in scientific programing like linear
-algebra, integration (calculus), ordinary differential equation solvers and
-signal processing.
+functions. SciPy uses NumPy arrays as the basic data structure. SciPy comes
+with modules for various commonly used tasks in scientific programing, for
+example: linear algebra, integration (calculus), ordinary differential equation
+solvers and signal processing.
 
 Matplotlib
 ----------
