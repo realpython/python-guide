@@ -61,7 +61,7 @@ The GIL
 `Special care`_ must be taken when writing C extensions to make sure you r
 egister your threads with the interpreter.
 
-C Extentions
+C Extensions
 ::::::::::::
 
 
