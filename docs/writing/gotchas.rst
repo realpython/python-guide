@@ -2,7 +2,7 @@ Common Gotchas
 ==============
 
 For the most part, Python aims to be a clean and consistent language that
-avoid surprises, but there are a few cases where newcomers to the language
+avoids surprises, but there are a few cases where newcomers to the language
 often get tripped up.
 
 Some of these are intentional but potentially surprising. Some could arguably
