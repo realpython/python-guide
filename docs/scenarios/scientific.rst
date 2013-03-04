@@ -71,4 +71,4 @@ general list. It might be a good idea to check it out if you're on Windows.
 
 For a quick introduction to scientific python:
 
-`Scientific Python Lectures < http://scipy-lectures.github.com/>`_
+http://scipy-lectures.github.com
