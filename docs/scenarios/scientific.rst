@@ -68,3 +68,7 @@ scientific computing packages are notoriously difficult to build and install.
 compiled a list of Windows binaries for many useful Python packages. The list
 of packages has grown from a mainly scientific python resource to a more
 general list. It might be a good idea to check it out if you're on Windows.
+
+For a quick introduction to scientific python:
+
+http://scipy-lectures.github.com

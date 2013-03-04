@@ -473,3 +473,6 @@ Runners
 
 Further Reading
 ---------------
+
+- http://docs.python.org/2/library/
+- http://www.diveintopython.net/toc/index.html
