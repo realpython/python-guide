@@ -9,7 +9,7 @@ One of the secrets of becoming a great Python programmer is to read,
 understand, and comprehend excellent code.
 
 Excellent code typically follows the guidelines outlined in :ref:`code_style`,
-and does its best to express a clear and consise intent to the reader.
+and does its best to express a clear and concise intent to the reader.
 
 Included below is a list of recommended Python projects for reading. Each of
 these projects are paragons of excellent Python code.

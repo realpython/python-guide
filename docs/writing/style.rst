@@ -109,7 +109,7 @@ passed another value.
 Calling a function with keyword arguments can be done in multiple ways in Python,
 for example it is possible to follow the order of arguments in the definition without
 explicitly naming the arguments, like in ``send('Hello', 'World', 'Cthulhu', 'God')``,
-sending a blank carbon copy to God. It would also be possible to name arguments in
+sending a blind carbon copy to God. It would also be possible to name arguments in
 another order, like in ``send('Hello again', 'World', bcc='God', cc='Cthulhu')``.
 Those two possibilities are better avoided without any strong reason to not
 follow the syntax that is the closest to the function definition: ``send('Hello',
@@ -140,9 +140,9 @@ any sequence, including iterators, that cannot be unpacked as other sequences.
 
 The **arbitrary keyword argument dictionary** is the last way to pass arguments
 to functions. If the function requires an undetermined series of named
-arguments, it is possible to used the ``**kwargs`` construct. In the function
+arguments, it is possible to use the ``**kwargs`` construct. In the function
 body, ``kwargs`` will be a dictionary of all the passed named arguments that
-have not been caught be other keyword argument in the function signature.
+have not been caught by other keyword arguments in the function signature.
 
 The same caution as in the case of *arbitrary argument list* is necessary, for
 similar reasons: these powerful techniques are to be used when there is a
@@ -576,7 +576,7 @@ Line Continuations
 When a logical line of code is longer than the accepted limit, you need to
 split it over multiple physical lines. Python interpreter will join consecutive
 lines if the last character of the line is a backslash. This is helpful
-sometime but is preferably avoided, because of its fragility: a white space
+sometimes but is preferably avoided, because of its fragility: a white space
 added to the end of the line, after the backslash, will break the code and may
 have unexpected results.
 

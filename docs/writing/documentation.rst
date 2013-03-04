@@ -37,7 +37,7 @@ Project Publication
 Depending on the project, your documentation might include some or all
 of the following components:
 
-- A *introduction* should show a very short overview of what can be
+- An *introduction* should show a very short overview of what can be
   done with the product, using one or two extremely simplified use
   cases. This is the thirty-second pitch for your project.
 
