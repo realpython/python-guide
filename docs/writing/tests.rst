@@ -20,7 +20,7 @@ Some general rules of testing:
 
 - Try hard to make tests that run fast. If one single test needs more than a
   few millisecond to run, development will be slowed down or the tests will not
-  be run as often as desirable. In some cases, test can't be fast because they
+  be run as often as desirable. In some cases, tests can't be fast because they
   need a complex data structure to work on, and this data structure must be
   loaded every time the test runs. Keep these heavier tests in a separate test
   suite that is run by some scheduled task, and run all other tests as often
@@ -34,10 +34,10 @@ Some general rules of testing:
   after. This will give you more confidence that you did not break anything in
   the rest of the code.
 
-- It is a good idea to implement a hook that runs all test before pushing code
+- It is a good idea to implement a hook that runs all tests before pushing code
   to a shared repository.
 
-- If you are in the middle of a development and have to interrupt your work, it
+- If you are in the middle of a development session and have to interrupt your work, it
   is a good idea to write a broken unit test about what you want to develop next.
   When coming back to work, you will have a pointer to where you were and get
   faster on tracks.
