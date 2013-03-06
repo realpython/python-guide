@@ -116,7 +116,7 @@ practice, because line-oriented command-line tools such as grep will
 not be aware that the commented code is inactive. It is better to add
 hashes at the proper indentation level for every commented line. Your
 editor probably has the ability to do this easily, and it is worth
-learning the comment/uncomment toggle. (*e.g.* ctrl-v on Vim)
+learning the comment/uncomment toggle.
 
 Docstrings and Magic
 ~~~~~~~~~~~~~~~~~~~~
