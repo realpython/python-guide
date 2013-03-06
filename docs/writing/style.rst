@@ -251,13 +251,13 @@ is a probable indication that such a refactoring is needed.
 Idioms
 ------
 
-A programming Idiom, put simply, is _a way_ to write code. The notion of programming Idioms 
-is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>` and at `Stack Overflow <http://stackoverflow.com/questions/302459/what-is-a-programming-idiom>`.
+A programming Idiom, put simply, is a *way* to write code. The notion of programming Idioms 
+is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_ and at `Stack Overflow <http://stackoverflow.com/questions/302459/what-is-a-programming-idiom>`_.
 
 Idiomatic Python code is often referred to as being *Pythonic*. 
 
 Although there usually is one-- and preferably only one --obvious way to do it; 
-_the_ way to write idiomatic Python code can be non-obvious to Python beginners. So,
+*the* way to write idiomatic Python code can be non-obvious to Python beginners. So,
 good idioms must be consciously acquired. 
 
 Some common Python idioms follow:
