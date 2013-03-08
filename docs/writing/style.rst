@@ -95,7 +95,7 @@ arguments, and in which order.
 In those two cases, it is possible to use argument names when calling the functions
 and, doing so, it is possible to switch the order of arguments, calling for instance
 ``send(recipient='World', message='Hello')`` and ``point(y=2, x=1)`` but this
-reduce readability and is unnecessarily verbose, compared to the more straightforward
+reduces readability and is unnecessarily verbose, compared to the more straightforward
 calls to ``send('Hello', 'World')`` and ``point(1, 2)``.
 
 **Keyword arguments** are not mandatory and have default values. They are often
