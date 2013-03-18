@@ -69,7 +69,7 @@ PyPy aims for maximum compatibility with the reference CPython implementation
 while improving performance.
 
 If you are looking to squeeze more performance out of your Python code, it's
-worth giving PyPy a try. On a suite of benchmarks, it's current `over 5 times
+worth giving PyPy a try. On a suite of benchmarks, it's currently `over 5 times
 faster than CPython <http://speed.pypy.org/>`_.
 
 Currently PyPy supports Python 2.7. [#pypy_ver]_
