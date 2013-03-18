@@ -281,7 +281,7 @@ Decorators
 ----------
 
 The Python language provides a simple yet powerful syntax called 'decorators'.
-A decorator is a function or a class that wraps (or decorate) a function
+A decorator is a function or a class that wraps (or decorates) a function
 or a method. The 'decorated' function or method will replace the original
 'undecorated' function or method. Because functions are first-class objects
 in Python, it can be done 'manually', but using the @decorator syntax is
