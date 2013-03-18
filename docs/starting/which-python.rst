@@ -69,7 +69,7 @@ PyPy aims for maximum compatibility with the reference CPython implementation
 while improving performance.
 
 If you are looking to squeeze more performance out of your Python code, it's
-worth giving PyPy a try. On a suite of benchmarks, it's current `over 5 times
+worth giving PyPy a try. On a suite of benchmarks, it's currently `over 5 times
 faster than CPython <http://speed.pypy.org/>`_.
 
 Currently PyPy supports Python 2.7. [#pypy_ver]_
@@ -90,11 +90,11 @@ Currently Jython supports up to Python 2.5. [#jython_ver]_
 IronPython
 ----------
 
-`IronPython <http://ironpython.net/>`_  is an implementation of Python for .NET
+`IronPython <http://ironpython.net/>`_  is an implementation of Python for the .NET
 framework. It can use both Python and .NET framework libraries, and can also
 expose Python code to other .NET languages.
 
-`Python Tools for Visual Studio <http://ironpython.net/tools/>`_ integrate
+`Python Tools for Visual Studio <http://ironpython.net/tools/>`_ integrates
 IronPython directly in to the Visual Studio development environment, making it
 an ideal choice for Windows developers.
 
