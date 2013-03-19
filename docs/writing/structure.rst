@@ -91,7 +91,7 @@ environment, or your project's internal modules.
 
 To keep in line with the style guide, keep module names short, lowercase, and
 be sure to avoid using special symbols like the dot (.) or question mark (?).
-So a file name like `my.spam.py` is one you should try to avoid! Naming this way 
+So a file name like `my.spam.py` is one you should avoid! Naming this way 
 will interfere with the way python looks for modules.
 
 In this example python expects to find a "spam.py" file in a folder named "my"
@@ -281,7 +281,7 @@ Decorators
 ----------
 
 The Python language provides a simple yet powerful syntax called 'decorators'.
-A decorator is a function or a class that wraps (or decorate) a function
+A decorator is a function or a class that wraps (or decorates) a function
 or a method. The 'decorated' function or method will replace the original
 'undecorated' function or method. Because functions are first-class objects
 in Python, it can be done 'manually', but using the @decorator syntax is
@@ -445,7 +445,8 @@ with calls to append().
 .. code-block:: python
 
     # create a concatenated string from 0 to 19 (e.g. "012..1819")
-    print "".join([str(n) for n in range(20)])
+    nums = [str(n) for n in range(20)]
+    print "".join(nums)
 
 One final thing to mention about strings is that using join() is not always
 best. In the instances where you are creating a new string from a pre-determined

@@ -10,8 +10,8 @@ recognised fact that code is read much more often than it is written.
 One reason for Python code to be easily read and understood is its relatively
 complete set of Code Style guidelines and "Pythonic" idioms.
 
-Moreover, when a veteran Python developer (a Pythonista) point to some
-parts of a code and say it is not "Pythonic", it usually means that these lines
+Moreover, when a veteran Python developer (a Pythonista) points to portions of code
+and says they are not "Pythonic", it usually means that these lines
 of code do not follow the common guidelines and fail to express the intent in
 what is considered the best (hear: most readable) way.
 
@@ -89,7 +89,7 @@ Arguments can be passed to functions in four different ways.
 simplest form of arguments and they can be used for the few function arguments
 that are fully part of the functions meaning and their order is natural. For
 instance, in ``send(message, recipient)`` or ``point(x, y)`` the user of the
-function has no difficulty to remember that those two function require two
+function has no difficulty remembering that those two functions require two
 arguments, and in which order.
 
 In those two cases, it is possible to use argument names when calling the functions
@@ -103,7 +103,7 @@ used for optional parameters sent to the function. When a function has more than
 two or three positional parameters, its signature will be more difficult to remember
 and using keyword argument with default values is helpful. For instance, a more
 complete ``send`` function could be defined as ``send(message, to, cc=None, bcc=None)``.
-Here ``cc`` and ``bcc`` are optional, and evaluate to ``None`` when the are not
+Here ``cc`` and ``bcc`` are optional, and evaluate to ``None`` when they are not
 passed another value.
 
 Calling a function with keyword arguments can be done in multiple ways in Python,
@@ -189,18 +189,18 @@ As seen above, Python allows many tricks, and some of them are potentially
 dangerous. A good example is that any client code can override an object's
 properties and methods: there is no "private" keyword in Python. This
 philosophy, very different from highly defensive languages like Java, which
-give a lot of mechanism to prevent any misuse, is expressed by the saying: "We
+give a lot of mechanisms to prevent any misuse, is expressed by the saying: "We
 are consenting adults".
 
 This doesn't mean that, for example, no properties are considered private, and
 that no proper encapsulation is possible in Python. But, instead of relying on
 concrete walls erected by the developers between their code and other's, the
-Python community prefers to rely on a set of convention indicating that these
+Python community prefers to rely on a set of conventions indicating that these
 elements should not be accessed directly.
 
 The main convention for private properties and implementation details is to
 prefix all "internals" with an underscore. If the client code breaks this rule
-and access to these marked elements, any misbehavior or problems encountered if
+and accesses these marked elements, any misbehavior or problems encountered if
 the code is modified is the responsibility of the client code.
 
 Using this convention generously is encouraged: any method or property that is
@@ -215,7 +215,7 @@ Returning values
 When a function grows in complexity is not uncommon to use multiple return statements
 inside the function's body. However, in order to keep a clear intent and a sustainable
 readability level, it is preferable to avoid returning meaningful values from many
-output point in the body.
+output points in the body.
 
 There are two main cases for returning values in a function: The result of the function
 return when it has been processed normally, and the error cases that indicate a wrong
@@ -227,12 +227,12 @@ as None or False, indicating that the function could not perform correctly might
 case, it is better to return as early as the incorrect context has been detected. It will
 help to flatten the structure of the function: all the code after the return-because-of-error
 statement can assume the condition is met to further compute the function's main result.
-Having multiple such return statement is often necessary.
+Having multiple such return statements is often necessary.
 
 However, when a function has multiple main exit points for its normal course, it becomes
 difficult to debug the returned result, and it may be preferable to keep a single exit
-point. This will also help factoring out some code paths, and the multiple exit point
-is a probable indication that such a refactoring is needed.
+point. This will also help factoring out some code paths, and the multiple exit points
+are a probable indication that such a refactoring is needed.
 
 .. code-block:: python
 
@@ -351,7 +351,7 @@ Take the following code for example::
         return 's' in l
 
 Even though both functions look identical, because *lookup_dict* is utilizing the fact that dictionaries in python are hashtables, the lookup performance between the two is very different.
-Python will have to go through each item in the list to find a matching case, which is time consuming. By analysing the hash of the dictionary finding keys in the dict can be done very quickly.
+Python will have to go through each item in the list to find a matching case, which is time consuming. By analysing the hash of the dictionary, finding keys in the dict can be done very quickly.
 For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_ page.
 
 Zen of Python
@@ -589,9 +589,9 @@ sometimes but is preferably avoided, because of its fragility: a white space
 added to the end of the line, after the backslash, will break the code and may
 have unexpected results.
 
-A preferred solution is to use parenthesis around your elements. Left with an
+A preferred solution is to use parentheses around your elements. Left with an
 unclosed parenthesis on an end-of-line the Python interpreter will join the
-next line until the parenthesis is closed. The same behavior holds for curly
+next line until the parentheses are closed. The same behavior holds for curly
 and square braces.
 
 **Bad**:
