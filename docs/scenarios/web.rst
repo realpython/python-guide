@@ -98,12 +98,12 @@ framework like Django and the microframeworks: It comes with a lot of libraries
 and functionality and can thus not be considered lightweight. On the other
 hand, it does not provide all the functionality Django does. Instead Pyramid
 brings basic support for most regular tasks and provides a great deal of
-extensibility. Additionally, Pyramid has a huge focus on complete 
+extensibility. Additionally, Pyramid has a huge focus on complete
 `documentation <http://docs.pylonsproject.org/en/latest/docs/pyramid.html>`_. As
 a little extra it comes with the Werkzeug Debugger which allows you to debug a
 running web application in the browser.
 
-**Support** can also be found in the 
+**Support** can also be found in the
 `documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`_.
 
 
@@ -140,8 +140,8 @@ Gunicorn
 to serve Python applications. It is a Python interpretation of the Ruby
 `Unicorn <http://unicorn.bogomips.org/>`_ server. Unicorn is designed to be
 lightweight, easy to use, and uses many UNIX idioms. Gunicorn is not designed
-to face the internet, in fact it was designed to run behind Nginx which buffers
-slow requests, and takes care of other important considerations. A sample
+to face the internet -- it was designed to run behind Nginx which buffers
+slow requests and takes care of other important considerations. A sample
 setup for Nginx + gUnicorn can be found in the
 `Gunicorn help <http://gunicorn.org/deploy.html>`_.
 
