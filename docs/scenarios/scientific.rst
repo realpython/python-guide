@@ -60,7 +60,7 @@ Resources
 
 Installation of scientific  Python packages can be troublesome. Many of these
 packages are implemented as Python C extensions which need to be compiled.
-This section lists various so-called Python distributions which provide precompiled and 
+This section lists various so-called Python distributions which provide precompiled and
 easy-to-install collections of scientific Python packages.
 
 Unofficial Windows Binaries for Python Extension Packages
@@ -91,6 +91,6 @@ Anaconda
 Python Distribution <https://store.continuum.io/cshop/anaconda>`_ which
 includes all the common scientific python packages and additionally many
 packages related to data analytics and big data. Anaconda comes in two
-flavours, a paid for version and a completely free and open source community
+flavors, a paid for version and a completely free and open source community
 edition, Anaconda CE, which contains a slightly reduced feature set. Free
-licences for the paid-for version are available for academics and researchers.
+licenses for the paid-for version are available for academics and researchers.
