@@ -35,6 +35,10 @@ people who only need the basic requirements can just use NumPy.
 
 NumPy is compatible with Python versions 2.4 through to 2.7.2 and 3.1+.
 
+Numba
+-----
+.. todo:: Write about Numba
+
 SciPy
 -----
 
@@ -60,8 +64,9 @@ Resources
 
 Installation of scientific  Python packages can be troublesome. Many of these
 packages are implemented as Python C extensions which need to be compiled.
-This section lists various so-called Python distributions which provide precompiled and
-easy-to-install collections of scientific Python packages.
+This section lists various so-called scientific Python distributions which
+provide precompiled and easy-to-install collections of scientific Python
+packages.
 
 Unofficial Windows Binaries for Python Extension Packages
 ---------------------------------------------------------
