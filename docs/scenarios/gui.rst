@@ -41,7 +41,7 @@ Gtk
 PyGTK provides Python bindings for the GTK+ toolkit. Like the GTK+ library
 itself, it is currently licensed under the GNU LGPL. It is worth noting that
 PyGTK only currently supports the Gtk-2.X API (NOT Gtk-3.0). It is currently
-recommended that PyGTK is not used for new projects and existing applications
+recommended that PyGTK not be used for new projects and existing applications
 be ported from PyGTK to PyGObject.
 
 Tk
@@ -60,7 +60,7 @@ available on the `Python Wiki <http://wiki.python.org/moin/TkInter>`_.
 
 Kivy
 ----
-Kivy is a Python library for development of multi-touch enabled media rich applications. The aim is to allow for quick and easy interaction design and rapid prototyping, while making your code reusable and deployable.
+`Kivy <http://kivy.org>`_ is a Python library for development of multi-touch enabled media rich applications. The aim is to allow for quick and easy interaction design and rapid prototyping, while making your code reusable and deployable.
 
 Kivy is written in Python, based on OpenGL and supports different input devices such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products and so on.
 
