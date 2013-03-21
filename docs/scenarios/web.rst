@@ -189,7 +189,7 @@ support for Python 2.7 applications.
 
 Heroku allows you to run as many Python web applications as you like, 24/7 and
 free of charge. Heroku is best described as a horizontal scaling platform. They
-start to charge you once you "scale" you application to run on more than one
+start to charge you once you "scale" your application to run on more than one
 Dyno (abstracted servers) at a time.
 
 Heroku publishes `step-by-step instructions
@@ -202,10 +202,9 @@ DotCloud
 ~~~~~~~~
 
 `DotCloud <http://www.dotcloud.com/>`_ supports WSGI applications and
-background/worker tasks natively on their platform. Web applications running
-Python version 2.6, and uses :ref:`nginx <nginx-ref>` and :ref:`uWSGI
-<uwsgi-ref>`, and allows custom configuration of both
-for advanced users.
+background/worker tasks natively on their platform. Web applications run
+Python version 2.6, use :ref:`nginx <nginx-ref>` and :ref:`uWSGI
+<uwsgi-ref>`, and allow custom configuration of both for advanced users.
 
 DotCloud uses a custom command-line API client which can work with
 applications managed in git repositories or any other version control
