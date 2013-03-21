@@ -221,7 +221,7 @@ getting started.
 Gondor
 ~~~~~~
 
-`Gondor <https://gondor.io/>`_ is a PaaS specailized for deploying Django
+`Gondor <https://gondor.io/>`_ is a PaaS specialized for deploying Django
 and Pinax applications. Gondor supports Django versions 1.2 and 1.3 on
 Python version 2.7, and can automatically configure your Django site if you
 use ``local_settings.py`` for site-specific configuration information.
