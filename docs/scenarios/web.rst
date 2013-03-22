@@ -98,12 +98,12 @@ framework like Django and the microframeworks: It comes with a lot of libraries
 and functionality and can thus not be considered lightweight. On the other
 hand, it does not provide all the functionality Django does. Instead Pyramid
 brings basic support for most regular tasks and provides a great deal of
-extensibility. Additionally, Pyramid has a huge focus on complete 
+extensibility. Additionally, Pyramid has a huge focus on complete
 `documentation <http://docs.pylonsproject.org/en/latest/docs/pyramid.html>`_. As
 a little extra it comes with the Werkzeug Debugger which allows you to debug a
 running web application in the browser.
 
-**Support** can also be found in the 
+**Support** can also be found in the
 `documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`_.
 
 
@@ -140,8 +140,8 @@ Gunicorn
 to serve Python applications. It is a Python interpretation of the Ruby
 `Unicorn <http://unicorn.bogomips.org/>`_ server. Unicorn is designed to be
 lightweight, easy to use, and uses many UNIX idioms. Gunicorn is not designed
-to face the internet, in fact it was designed to run behind Nginx which buffers
-slow requests, and takes care of other important considerations. A sample
+to face the internet -- it was designed to run behind Nginx which buffers
+slow requests and takes care of other important considerations. A sample
 setup for Nginx + gUnicorn can be found in the
 `Gunicorn help <http://gunicorn.org/deploy.html>`_.
 
@@ -189,7 +189,7 @@ support for Python 2.7 applications.
 
 Heroku allows you to run as many Python web applications as you like, 24/7 and
 free of charge. Heroku is best described as a horizontal scaling platform. They
-start to charge you once you "scale" you application to run on more than one
+start to charge you once you "scale" your application to run on more than one
 Dyno (abstracted servers) at a time.
 
 Heroku publishes `step-by-step instructions
@@ -202,10 +202,9 @@ DotCloud
 ~~~~~~~~
 
 `DotCloud <http://www.dotcloud.com/>`_ supports WSGI applications and
-background/worker tasks natively on their platform. Web applications running
-Python version 2.6, and uses :ref:`nginx <nginx-ref>` and :ref:`uWSGI
-<uwsgi-ref>`, and allows custom configuration of both
-for advanced users.
+background/worker tasks natively on their platform. Web applications run
+Python version 2.6, use :ref:`nginx <nginx-ref>` and :ref:`uWSGI
+<uwsgi-ref>`, and allow custom configuration of both for advanced users.
 
 DotCloud uses a custom command-line API client which can work with
 applications managed in git repositories or any other version control
@@ -222,7 +221,7 @@ getting started.
 Gondor
 ~~~~~~
 
-`Gondor <https://gondor.io/>`_ is a PaaS specailized for deploying Django
+`Gondor <https://gondor.io/>`_ is a PaaS specialized for deploying Django
 and Pinax applications. Gondor supports Django versions 1.2 and 1.3 on
 Python version 2.7, and can automatically configure your Django site if you
 use ``local_settings.py`` for site-specific configuration information.
@@ -238,7 +237,7 @@ Templating
 Most WSGI applications are responding to HTTP requests to serve
 content in HTML or other markup languages. Instead of generating directly
 textual content from Python, the concept of separation of concerns
-advises us to use templates. A template engine manage a suite of
+advises us to use templates. A template engine manages a suite of
 template files, with a system of hierarchy and inclusion to
 avoid unnecessary repetition, and is in charge of rendering
 (generating) the actual content, filling the static content
@@ -265,7 +264,7 @@ and to the templates themselves.
   templates. This convenience can lead to uncontrolled
   increase in complexity, and often harder to find bugs.
 
-- It is often possible or necessary to mix javascript templates with
+- It is often necessary to mix javascript templates with
   HTML templates. A sane approach to this design is to isolate
   the parts where the HTML template passes some variable content
   to the javascript code.
