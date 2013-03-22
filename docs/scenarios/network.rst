@@ -6,7 +6,7 @@ Twisted
 
 `Twisted <http://twistedmatrix.com/trac/>`_ is an event-driven networking engine. It can be
 used to build applications around many different networking protocols, including http servers
-and clients, applications using SMTP, POP3, IMAP or SSH protocols, instant messaging and 
+and clients, applications using SMTP, POP3, IMAP or SSH protocols, instant messaging and
 `many more <http://twistedmatrix.com/trac/wiki/Documentation>`_.
 
 PyZMQ
@@ -14,11 +14,11 @@ PyZMQ
 
 `PyZMQ <http://zeromq.github.com/pyzmq/>`_ is the Python binding for `ZeroMQ <http://www.zeromq.org/>`_,
 which is a high-performance asynchronous messaging library. One great advantage is that ZeroMQ
-can be used for message queuing without message broker. The basic patterns for this are:
+can be used for message queuing without a message broker. The basic patterns for this are:
 
 - request-reply: connects a set of clients to a set of services. This is a remote procedure call
   and task distribution pattern.
-- publish-subscribe: connects a set of publishers to a set of subscribers. This is a data 
+- publish-subscribe: connects a set of publishers to a set of subscribers. This is a data
   distribution pattern.
 - push-pull (or pipeline): connects nodes in a fan-out / fan-in pattern that can have multiple
   steps, and loops. This is a parallel task distribution and collection pattern.

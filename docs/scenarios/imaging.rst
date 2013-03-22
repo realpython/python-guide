@@ -12,7 +12,7 @@ The `Python Imaging Library <http://www.pythonware.com/products/pil/>`_, or PIL
 for short, is *the* library for image manipulation in Python.
 
 It works with Python 1.5.2 and above, including 2.5, 2.6 and 2.7. Unfortunately,
-it doesn't work with 3.0+ yet. 
+it doesn't work with 3.0+ yet.
 
 Installation
 ~~~~~~~~~~~~
@@ -20,7 +20,7 @@ Installation
 PIL has a reputation of not being very straightforward to install. Listed below
 are installation notes on various systems.
 
-Also, there's a fork named `Pillow <http://pypi.python.org/pypi/Pillow>`_ which is easier 
+Also, there's a fork named `Pillow <http://pypi.python.org/pypi/Pillow>`_ which is easier
 to install. It has good setup instructions for all platforms.
 
 Installing on Linux
