@@ -104,7 +104,7 @@ The following command lists all available minions running CentOS using the grain
 
 Salt also provides a state system. States can be used to configure the minion hosts.
 
-For example, when a minion host is ordered to read the following state file, will install
+For example, when a minion host is ordered to read the following state file, it will install
 and start the Apache server:
 
 .. code-block:: yaml
