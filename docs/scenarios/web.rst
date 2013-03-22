@@ -237,7 +237,7 @@ Templating
 Most WSGI applications are responding to HTTP requests to serve
 content in HTML or other markup languages. Instead of generating directly
 textual content from Python, the concept of separation of concerns
-advises us to use templates. A template engine manage a suite of
+advises us to use templates. A template engine manages a suite of
 template files, with a system of hierarchy and inclusion to
 avoid unnecessary repetition, and is in charge of rendering
 (generating) the actual content, filling the static content
@@ -264,7 +264,7 @@ and to the templates themselves.
   templates. This convenience can lead to uncontrolled
   increase in complexity, and often harder to find bugs.
 
-- It is often possible or necessary to mix javascript templates with
+- It is often necessary to mix javascript templates with
   HTML templates. A sane approach to this design is to isolate
   the parts where the HTML template passes some variable content
   to the javascript code.
