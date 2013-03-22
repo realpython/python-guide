@@ -7,7 +7,7 @@ Twisted
 `Twisted <http://twistedmatrix.com/trac/>`_ is an event-driven networking engine. It can be
 used to build applications around many different networking protocols, including http servers
 and clients, applications using SMTP, POP3, IMAP or SSH protocols, instant messaging and
-many more <http://twistedmatrix.com/trac/wiki/Documentation>`_.
+`many more <http://twistedmatrix.com/trac/wiki/Documentation>`_.
 
 PyZMQ
 -----
