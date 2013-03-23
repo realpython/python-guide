@@ -2,19 +2,19 @@ Structuring Your Project
 ========================
 
 By "structure" we mean the decisions you make concerning
-how your project best meets its objective. We need to consider how to 
+how your project best meets its objective. We need to consider how to
 best leverage Python's features to create clean, effective code.
 In practical terms, "structure" means making clean code whose logic and
 dependencies are clear as well as how the files and folders are organized
-in the filesystem. 
+in the filesystem.
 
 Which functions should go into which modules? How does data flow through
-the project? What features and functions can be grouped together and 
+the project? What features and functions can be grouped together and
 isolated? By answering questions like these you can begin to plan, in
 a broad sense, what your finished product will look like.
 
-In this section we take a closer look at Python's module and import 
-systems as they are the central element to enforcing structure in your 
+In this section we take a closer look at Python's module and import
+systems as they are the central element to enforcing structure in your
 project. We then discuss various perspectives on how to build code which
 can be extended and tested reliably.
 
@@ -91,15 +91,15 @@ environment, or your project's internal modules.
 
 To keep in line with the style guide, keep module names short, lowercase, and
 be sure to avoid using special symbols like the dot (.) or question mark (?).
-So a file name like `my.spam.py` is one you should avoid! Naming this way 
+So a file name like `my.spam.py` is one you should avoid! Naming this way
 will interfere with the way python looks for modules.
 
 In this example python expects to find a "spam.py" file in a folder named "my"
-which is not the case. There is an 
-`example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the 
+which is not the case. There is an
+`example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the
 dot notation should be used in the python docs.
 
-If you'd like you could name it as `my_spam.py` but even our friend the 
+If you'd like you could name it as `my_spam.py` but even our friend the
 underscore should not be seen often in module names.
 
 Aside for some naming restrictions, nothing special is required for a Python file
@@ -433,7 +433,7 @@ with calls to append().
 **Good**
 
 .. code-block:: python
-    
+
     # create a concatenated string from 0 to 19 (e.g. "012..1819")
     nums = []
     for n in range(20):

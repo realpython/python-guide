@@ -18,8 +18,8 @@ include:
 
   Python is sometimes described with the words "batteries included"
   for its extensive
-  `standard library <http://docs.python.org/library/>`_, which can
-  includes modules for regular expressions, file IO, fraction handling,
+  `standard library <http://docs.python.org/library/>`_, which includes
+  modules for regular expressions, file IO, fraction handling,
   object serialization, and much more.
 
   Additionally, the
