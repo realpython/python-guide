@@ -64,21 +64,17 @@ to do that which also shows status and warning messages in the statusbar would b
 Python-mode
 ^^^^^^^^^^^
 
-Python-mode_ is complex solution in VIM for work with python code.
+Python-mode_ is a complex solution in VIM for working with python code.
 It has:
 
-- Async python code checking (pylint, pyflakes, pep8, mccabe) in any combination;
-- Code refactoring and autocompletion with Rope;
-- Fastest python folding;
-- Nice and powered python syntax;
-- Virtual env support;
-- Search by python documentation and run python code;
-- More other things like auto pep8 error fixes;
-- Very customizable and documented as well;
-- Have all required libraries in self;
+- Async python code checking (pylint, pyflakes, pep8, mccabe) in any combination
+- Code refactoring and autocompletion with Rope
+- Fast python folding
+- Virtualenv support
+- Search by python documentation and run python code
+- Auto pep8 error fixes
 
-And more stuff.
-
+And more.
 
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
