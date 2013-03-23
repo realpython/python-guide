@@ -18,7 +18,7 @@ Which Python to use?
 Today
 -----
 
-If you're choosing a Python interpreter to use, I *highly* recommend you Use
+If you're choosing a Python interpreter to use, I *highly* recommend you use
 Python 2.7.x, unless you have a strong reason not to.
 
 
