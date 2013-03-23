@@ -4,7 +4,7 @@
 The Guide Style Guide
 =====================
 
-As with all documentation, having a consistent formating helps make the
+As with all documentation, having a consistent format helps make the
 document more understandable. In order to make The Guide easier to digest,
 all contributions should fit within the rules of this style guide where
 appropriate.
