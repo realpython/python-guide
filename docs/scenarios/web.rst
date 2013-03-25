@@ -142,7 +142,7 @@ to serve Python applications. It is a Python interpretation of the Ruby
 lightweight, easy to use, and uses many UNIX idioms. Gunicorn is not designed
 to face the internet -- it was designed to run behind Nginx which buffers
 slow requests and takes care of other important considerations. A sample
-setup for Nginx + gUnicorn can be found in the
+setup for Nginx + Gunicorn can be found in the
 `Gunicorn help <http://gunicorn.org/deploy.html>`_.
 
 .. _uwsgi-ref:
@@ -152,7 +152,7 @@ Server Best Practices
 :::::::::::::::::::::
 
 The majority of self hosted Python applications today are hosted with a WSGI
-server such as :ref:`gUnicorn <gunicorn-ref>`, either directly or behind a
+server such as :ref:`Gunicorn <gunicorn-ref>`, either directly or behind a
 lightweight web server such as :ref:`nginx <nginx-ref>`.
 
 The WSGI servers serve the Python applications while the web server handles
