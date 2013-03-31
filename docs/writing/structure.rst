@@ -471,6 +471,7 @@ should be your preferred method.
     **format()** method in the later versions.
 
 .. code-block:: python
+
     foo = 'foo'
     bar = 'bar'
 
