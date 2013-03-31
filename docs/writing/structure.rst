@@ -463,6 +463,22 @@ should be your preferred method.
     foo += 'ooo'  # This is bad, instead you should do:
     foo = ''.join([foo, 'ooo'])
 
+.. note::
+    You can also use the **%** formatting operator to concatenate the
+    pre-determined number of strings besides **join()** and **+**. However,
+    according to `PEP 3101 <http://www.python.org/dev/peps/pep-3101/>`_,
+    **%** operator became deprecated in Python 3.1 and will be replaced by the
+    **format()** method in the later versions.
+
+.. code-block:: python
+    foo = 'foo'
+    bar = 'bar'
+
+    foobar = '%s%s' % (foo, bar) # It is OK
+    foobar = '{0}{1}'.format(foo, bar) # It is better
+    foobar = '{foo}{bar}'.format(foo=foo, bar=bar) # It is best
+
+
 Vendorizing Dependencies
 ------------------------
 
