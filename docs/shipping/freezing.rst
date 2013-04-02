@@ -74,7 +74,7 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`.
 
    $ python setup.py py2exe
 
-6. Provide the Microsoft Visual C runtime DLL. Two options: `globally install dll on target machine <https://www.microsoft.com/en-us/download/details.aspx?id=29>`_ or `distribute dll aloneside with .exe <http://www.py2exe.org/index.cgi/Tutorial#Step52>`_.
+6. Provide the Microsoft Visual C runtime DLL. Two options: `globally install dll on target machine <https://www.microsoft.com/en-us/download/details.aspx?id=29>`_ or `distribute dll alongside with .exe <http://www.py2exe.org/index.cgi/Tutorial#Step52>`_.
 
 PyInstaller
 ~~~~~~~~~~~

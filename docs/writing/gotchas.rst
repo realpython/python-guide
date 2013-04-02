@@ -152,7 +152,7 @@ What You Should Do Instead
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Well. Here the general solution is arguably a bit of a hack. Due to Python's
-afformentioned behavior concerning evaluating default arguments to functions
+aforementioned behavior concerning evaluating default arguments to functions
 (see :ref:`default_args`), you can create a closure that binds immediately to
 its arguments by using a default arg like so:
 
