@@ -1,4 +1,5 @@
-.. code_style:
+.. _code_style:
+
 Code Style
 ==========
 
