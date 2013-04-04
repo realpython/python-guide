@@ -128,11 +128,12 @@ What Does Happen
 
 Five functions are created, but all of them just multiply ``x`` by 4.
 
-Python's closures are *late binding*. This means that names within closures are
-looked up at the time the inner function is *called*.
+Python's closures are *late binding*.
+This means that the values of variables used in closures are looked
+up at the time the inner function is called.
 
 Here, whenever *any* of the returned functions are called, the value of ``i``
-is looked up in the surrounding scope at call time, when by then the loop has
+is looked up in the surrounding scope at call time. By then, the loop has
 completed and ``i`` is left with its final value of 4.
 
 What's particularly nasty about this gotcha is the seemingly prevalent
