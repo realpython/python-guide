@@ -9,7 +9,7 @@ Which Python to use?
 2.x vs 3.x
 ~~~~~~~~~~
 
-**tl;dr**: Python 2.x is the status quo, Python 3.x is the shiny new thing.
+    Python 2.x is the status quo, Python 3.x is the shiny new thing.
 
 
 `Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
