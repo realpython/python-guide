@@ -48,6 +48,7 @@ different scenarios.
 
    scenarios/client
    scenarios/web
+   scenarios/scrape
    scenarios/cli
    scenarios/gui
    scenarios/db
