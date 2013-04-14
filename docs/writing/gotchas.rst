@@ -143,28 +143,32 @@ fact the same exact behavior is exhibited by just using an ordinary ``def``:
 
 .. code-block:: python
 
-    def create_adders():
+    def create_multipliers():
+        multipliers = []
+
         for i in range(5):
-            def adder(x):
+            def multiplier(x):
                 return i * x
-            yield adder
+            multipliers.append(multiplier)
+
+        return multipliers
 
 What You Should Do Instead
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Well. Here the general solution is arguably a bit of a hack. Due to Python's
-aforementioned behavior concerning evaluating default arguments to functions
+The most general solution is arguably a bit of a hack. Due to Python's
+afformentioned behavior concerning evaluating default arguments to functions
 (see :ref:`default_args`), you can create a closure that binds immediately to
 its arguments by using a default arg like so:
 
 .. code-block:: python
 
-    def create_adders():
+    def create_multipliers():
         return [lambda x, i=i : i * x for i in range(5)]
 
 When the Gotcha Isn't a Gotcha
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When you want your closures to behave this way. Late binding is good in lots of
+Sometimes you want your closures to behave this way. Late binding is good in lots of
 situations. Looping to create unique functions is unfortunately a case where
 they can cause hiccups.
