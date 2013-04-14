@@ -99,12 +99,12 @@ and functionality and can thus not be considered lightweight. On the other
 hand, it does not provide all the functionality Django does. Instead Pyramid
 brings basic support for most regular tasks and provides a great deal of
 extensibility. Additionally, Pyramid has a huge focus on complete
-`documentation <http://docs.pylonsproject.org/en/latest/docs/pyramid.html>`_. As
+`documentation <http://docs.pylonsproject.org/en/latest/docs/pyramid.html>`__. As
 a little extra it comes with the Werkzeug Debugger which allows you to debug a
 running web application in the browser.
 
 **Support** can also be found in the
-`documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`_.
+`documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`__.
 
 
 Web Servers
