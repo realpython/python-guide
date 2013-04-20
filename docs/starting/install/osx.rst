@@ -3,7 +3,7 @@
 Installing Python on Mac OS X
 =============================
 
-The latest version of Mac OS X, Lion, **comes with Python 2.7 out of the box**.
+The latest version of Mac OS X, Mountain Lion, **comes with Python 2.7 out of the box**.
 
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
@@ -20,9 +20,11 @@ Doing it Right
 
 Let's install a real version of Python.
 
-First, you'll need to have GCC installed to compile Python. You can either get
-this from `XCode <http://developer.apple.com/xcode/>`_ or the smaller
-`OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_ package.
+Before installing Python, you'll need to install GCC. GCC can be obtained
+by downloading `XCode <http://developer.apple.com/xcode/>`_, the smaller
+`Command Line Tools <https://developer.apple.com/downloads/>`_ (must have an
+Apple account) or the even smaller `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
+package.
 
 While Lion comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
@@ -33,11 +35,13 @@ simply run
 
 .. code-block:: console
 
-    $ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+    $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
-Then, insert the Homebrew directory at the top of your ``PATH`` environment
-variable. You can do this by adding the following line at the bottom of your
-``~/.bashrc`` file
+The script will explain what changes it will make and prompt you before the
+installation begins.
+Once you've installed Homebrew, insert the Homebrew directory at the top
+of your ``PATH`` environment variable. You can do this by adding the following
+line at the bottom of your ``~/.bashrc`` file
 
 .. code-block:: console
 
