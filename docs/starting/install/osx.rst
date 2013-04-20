@@ -33,7 +33,7 @@ simply run
 
 .. code-block:: console
 
-    $ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+    $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 Then, insert the Homebrew directory at the top of your ``PATH`` environment
 variable. You can do this by adding the following line at the bottom of your
