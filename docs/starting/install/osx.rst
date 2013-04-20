@@ -20,9 +20,11 @@ Doing it Right
 
 Let's install a real version of Python.
 
-First, you'll need to have GCC installed to compile Python. You can either get
-this from `XCode <http://developer.apple.com/xcode/>`_ or the smaller
-`OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_ package.
+Before installing Python, you'll need to install GCC. GCC can be obtained
+by downloading `XCode <http://developer.apple.com/xcode/>`_, the smaller
+`Command Line Tools <https://developer.apple.com/downloads/>`_ (must have an
+Apple account) or the even smaller `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
+package.
 
 While Lion comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
