@@ -3,7 +3,7 @@
 Installing Python on Mac OS X
 =============================
 
-The latest version of Mac OS X, Lion, **comes with Python 2.7 out of the box**.
+The latest version of Mac OS X, Mountain Lion, **comes with Python 2.7 out of the box**.
 
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
