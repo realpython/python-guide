@@ -3,14 +3,14 @@
 Installing Python on Windows
 ============================
 
-First, download the `latest version <http://python.org/ftp/python/2.7.3/python-2.7.3.msi>`_
+First, download the `latest version <http://python.org/ftp/python/2.7.4/python-2.7.4.msi>`_
 of Python 2.7 from the official Website. If you want to be sure you are installing a fully
 up-to-date version then use the "Windows Installer" link from the home page of the
 `Python.org web site <http://python.org>`_ .
 
- The Windows version is provided as an MSI package. To install it manually, just
- double-click the file. The MSI package format allows Windows administrators to
- automate installation with their standard tools.
+The Windows version is provided as an MSI package. To install it manually, just
+double-click the file. The MSI package format allows Windows administrators to
+automate installation with their standard tools.
 
 By design, Python installs to a directory with the version number embedded,
 e.g. Python version 2.7 will install at ``C:\Python27\``, so that you can
