@@ -11,7 +11,7 @@ Project Documentation
 A ``README`` file at the root directory should give general
 information to the users and the maintainers. It should be raw text or
 written in some very easy to read markup, such as
-:ref:`reStructuredText-ref` and Markdown. It should contain a few
+:ref:`reStructuredText-ref`, Markdown or Textile. It should contain a few
 lines explaining the purpose of the project or the library (without
 assuming the user knows anything about the project), the url of the
 main source for the software, and some basic credit information. This
