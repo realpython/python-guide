@@ -53,7 +53,7 @@ One statement per line
 
 While some compound statements such as list comprehensions are
 allowed and appreciated for their brevity and their expressiveness,
-it is bad practice to have two disjoint statements on the same line.
+it is bad practice to have two disjoint statements on the same line of code.
 
 **Bad**
 
@@ -86,7 +86,7 @@ Function arguments
 
 Arguments can be passed to functions in four different ways.
 
-**Positional arguments** are mandatory and have no default values. They are the
+1. **Positional arguments** are mandatory and have no default values. They are the
 simplest form of arguments and they can be used for the few function arguments
 that are fully part of the functions meaning and their order is natural. For
 instance, in ``send(message, recipient)`` or ``point(x, y)`` the user of the
@@ -99,7 +99,7 @@ and, doing so, it is possible to switch the order of arguments, calling for inst
 reduces readability and is unnecessarily verbose, compared to the more straightforward
 calls to ``send('Hello', 'World')`` and ``point(1, 2)``.
 
-**Keyword arguments** are not mandatory and have default values. They are often
+2. **Keyword arguments** are not mandatory and have default values. They are often
 used for optional parameters sent to the function. When a function has more than
 two or three positional parameters, its signature will be more difficult to remember
 and using keyword argument with default values is helpful. For instance, a more
@@ -121,7 +121,7 @@ principle, it is often harder to remove an optional argument (and its logic insi
 function) that was added "just in case" and is seemingly never used, than to add a 
 new optional argument and its logic when needed.
 
-The **arbitrary argument list** is the third way to pass arguments to a
+3. The **arbitrary argument list** is the third way to pass arguments to a
 function.  If the function intention is better expressed by a signature with an
 extensible number of positional arguments, it can be defined with the ``*args``
 constructs.  In the function body, ``args`` will be a tuple of all the
@@ -139,7 +139,7 @@ it explicitly: ``send(message, recipients)`` and call it with ``send('Hello',
 the recipient list as a list beforehand, and it opens the possibility to pass
 any sequence, including iterators, that cannot be unpacked as other sequences.
 
-The **arbitrary keyword argument dictionary** is the last way to pass arguments
+4. The **arbitrary keyword argument dictionary** is the last way to pass arguments
 to functions. If the function requires an undetermined series of named
 arguments, it is possible to use the ``**kwargs`` construct. In the function
 body, ``kwargs`` will be a dictionary of all the passed named arguments that
@@ -166,9 +166,13 @@ Avoid the magical wand
 
 A powerful tool for hackers, Python comes with a very rich set of hooks and
 tools allowing to do almost any kind of tricky tricks. For instance, it is
-possible to change how objects are created and instantiated, it is possible to
-change how the Python interpreter imports modules, it is even possible (and
-recommended if needed) to embed C routines in Python.
+possible to do each of the following:
+
+* change how objects are created and instantiated
+
+* change how the Python interpreter imports modules
+
+* it is even possible (and recommended if needed) to embed C routines in Python.
 
 However, all these options have many drawbacks and it is always better to use
 the most straightforward way to achieve your goal. The main drawback is that
@@ -181,7 +185,7 @@ way.  However, knowing how to use them and particularly when **not** to use
 them is the most important.
 
 Like a Kungfu master, a Pythonista knows how to kill with a single finger, and
-never to do it.
+never to actually do it.
 
 We are all consenting adults
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
