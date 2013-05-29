@@ -162,6 +162,9 @@ WingIDE
 `WingIDE <http://wingware.com/>`_ is a python specific IDE. It runs on Linux,
 Windows, and Mac (as an X11 application, which frustrates some Mac users).
 
+WingIDE offers code completion, syntax highlighting, source browser, graphical
+debugger and support for version control systems.
+
 
 NINJA-IDE
 ---------
