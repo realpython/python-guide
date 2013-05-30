@@ -37,6 +37,11 @@ NumPy is compatible with Python versions 2.4 through to 2.7.2 and 3.1+.
 
 Numba
 -----
+Numba is an Numpy aware Python compiler (just-in-time (JIT) specializing 
+compiler) which compiles annotated Python (and Numpy) code to LLVM (Low Level 
+Virtual Machine) (through special decorators). 
+Briefly, Numba using system that compiles Python code with LLVM to code which 
+can be natively executed at runtime.
 .. todo:: Write about Numba
 
 SciPy
