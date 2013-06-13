@@ -67,7 +67,7 @@ Python-mode
 Python-mode_ is a complex solution in VIM for working with python code.
 It has:
 
-- Async Python code checking (pylint, pyflakes, pep8, mccabe) in any combination
+- Asynchronous Python code checking (pylint, pyflakes, pep8, mccabe) in any combination
 - Code refactoring and autocompletion with Rope
 - Fast Python folding
 - Virtualenv support
