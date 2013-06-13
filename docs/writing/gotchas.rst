@@ -2,11 +2,11 @@ Common Gotchas
 ==============
 
 For the most part, Python aims to be a clean and consistent language that
-avoids surprises, but there are a few cases where newcomers to the language
-often get tripped up.
+avoids surprises. However, there are a few cases that can be confusing to
+newcomers.
 
-Some of these are intentional but potentially surprising. Some could arguably
-be considered language warts. In general though, what follows is a collection
+Some of these cases are intentional but can be potentially surprising. Some
+could arguably be considered language warts. In general though, what follows is a collection
 of potentially tricky behavior that might seem strange at first glance, but is
 generally sensible once you're aware of the underlying cause for the surprise.
 
@@ -157,7 +157,7 @@ What You Should Do Instead
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The most general solution is arguably a bit of a hack. Due to Python's
-afformentioned behavior concerning evaluating default arguments to functions
+aforementioned behavior concerning evaluating default arguments to functions
 (see :ref:`default_args`), you can create a closure that binds immediately to
 its arguments by using a default arg like so:
 
