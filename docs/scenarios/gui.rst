@@ -40,7 +40,7 @@ Install (Stable)
 *Go to http://www.wxpython.org/download.php#stable and download the appropriate
 package for your OS.*
 
-Gtk
+GTk
 ---
 PyGTK provides Python bindings for the GTK+ toolkit. Like the GTK+ library
 itself, it is currently licensed under the GNU LGPL. It is worth noting that
