@@ -14,7 +14,7 @@ VIM
 
 Vim is a text editor which uses keyboard shortcuts for editing instead of menus
 or icons. There exist a couple of plugins and settings for the VIM editor to
-aid python development. If you only develop in Python, a good start is to set
+aid Python development. If you only develop in Python, a good start is to set
 the default settings for indentation and line-wrapping to values compliant with
 `PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_. In your home directory,
 open a file called `.vimrc` and add the following lines:::
@@ -29,7 +29,7 @@ open a file called `.vimrc` and add the following lines:::
 
 With these settings, newlines are inserted after 79 characters and indentation
 is set to 4 spaces per tab. If you also use VIM for other languages, there is a
-handy plugin at indent_, which handles indentation settings for python source
+handy plugin at indent_, which handles indentation settings for Python source
 files.
 
 There is also a handy syntax plugin at syntax_ featuring some improvements over
@@ -67,12 +67,12 @@ Python-mode
 Python-mode_ is a complex solution in VIM for working with python code.
 It has:
 
-- Async python code checking (pylint, pyflakes, pep8, mccabe) in any combination
+- Async Python code checking (pylint, pyflakes, pep8, mccabe) in any combination
 - Code refactoring and autocompletion with Rope
-- Fast python folding
+- Fast Python folding
 - Virtualenv support
-- Search by python documentation and run python code
-- Auto pep8 error fixes
+- Search by Python documentation and run Python code
+- Auto PEP8 error fixes
 
 And more.
 
@@ -148,7 +148,7 @@ Spyder
 ------
 
 `Spyder <http://code.google.com/p/spyderlib/>`_ is an IDE specifically geared
-toward working with scientific python libraries (namely `Scipy <http://www.scipy.org/>`_).
+toward working with scientific Python libraries (namely `Scipy <http://www.scipy.org/>`_).
 It includes integration with pyflakes_, `pylint <http://www.logilab.org/857>`_,
 and `rope <http://rope.sourceforge.net/>`_.
 
@@ -159,7 +159,7 @@ class and function browser, and object inspection.
 WingIDE
 -------
 
-`WingIDE <http://wingware.com/>`_ is a python specific IDE. It runs on Linux,
+`WingIDE <http://wingware.com/>`_ is a Python specific IDE. It runs on Linux,
 Windows, and Mac (as an X11 application, which frustrates some Mac users).
 
 WingIDE offers code completion, syntax highlighting, source browser, graphical
