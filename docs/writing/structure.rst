@@ -240,7 +240,7 @@ the state of an object (usually done with the __init__() method) and the actual 
 of the object state through one of its methods, the world may have changed, and
 the retained state may be outdated. For example, a request may load an item in
 memory and mark it as read by a user. If another request requires the deletion
-of this item at the same, it may happen that the deletion actually occurs after
+of this item at the same time, it may happen that the deletion actually occurs after
 the first process loaded the item, and then we have to mark as read a deleted
 object.
 
@@ -482,7 +482,6 @@ should be your preferred method.
 
 Vendorizing Dependencies
 ------------------------
-
 
 
 Runners
