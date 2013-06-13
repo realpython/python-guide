@@ -52,11 +52,11 @@ level of compatibility with Python packages and C extension modules.
 
 If you are writing open-source Python code and want to reach the widest possible
 audience, targeting CPython is your best bet. If you need to use any packages
-that rely on C extensions for their functionality (eg: numpy) then CPython
+that rely on C extensions for their functionality (e.g. numpy) then CPython
 is your only choice.
 
 Being the reference implementation, all versions of the Python language are
-available as CPython. Python 3 is only available in a CPython implementation.
+available as CPython. Python 3 is only available as a CPython implementation.
 
 PyPy
 ----
@@ -78,14 +78,14 @@ Jython
 ------
 
 `Jython <http://www.jython.org/>`_ is a Python implementation that compiles
-Python code to Java byte code that then executes on a JVM. It has the additional
-advantage of being able to import and use any Java class the same as a Python
+Python code to Java byte code that is then executed in a JVM. It has the additional
+advantage of being able to import and use any Java class like a Python
 module.
 
 If you need to interface with an existing Java codebase or have other reasons to
 need to write Python code for the JVM, Jython is the best choice.
 
-Currently Jython supports up to Python 2.5. [#jython_ver]_
+Jython currently supports up to Python 2.5. [#jython_ver]_
 
 IronPython
 ----------
@@ -95,7 +95,7 @@ framework. It can use both Python and .NET framework libraries, and can also
 expose Python code to other .NET languages.
 
 `Python Tools for Visual Studio <http://ironpython.net/tools/>`_ integrates
-IronPython directly in to the Visual Studio development environment, making it
+IronPython directly into the Visual Studio development environment, making it
 an ideal choice for Windows developers.
 
 IronPython supports Python 2.7. [#iron_ver]_
