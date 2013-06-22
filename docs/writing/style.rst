@@ -256,7 +256,7 @@ are a probable indication that such a refactoring is needed.
 Idioms
 ------
 
-A programming Idiom, put simply, is a *way* to write code. The notion of programming Idioms 
+A programming idiom, put simply, is a *way* to write code. The notion of programming idioms 
 is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_ and at `Stack Overflow <http://stackoverflow.com/questions/302459/what-is-a-programming-idiom>`_.
 
 Idiomatic Python code is often referred to as being *Pythonic*. 

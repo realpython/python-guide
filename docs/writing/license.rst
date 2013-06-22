@@ -14,22 +14,22 @@ from.
 In general, these licenses tend to fall into one of two categories:
 
 1. licenses that focus more on the user's freedom to do with the
-   software as they please (these are the more-permissive open
+   software as they please (these are the more permissive open
    source licenses such as the MIT, BSD, & Apache).
 
 2. licenses that focus more on making sure that the code itself —
    including any changes made to it and distributed along with it —
-   always remains free (these are the less-permissive free software
-   licenses, for example, the GPL and LGPL).
+   always remains free (these are the less permissive free software
+   licenses such as the GPL and LGPL).
 
-The latter are less-permissive in the sense that they don't permit
+The latter are less permissive in the sense that they don't permit
 someone to add code to the software and distribute it without also
 including the source code for their changes.
 
 To help you choose one for your project, there's a `license chooser <http://three.org/openart/license_chooser/>`_,
 **use it**.
 
-**More-Permissive**
+**More Permissive**
 
 - PSFL (Python Software Foundation License) -- for contributing to python itself
 - MIT / BSD / ISC
@@ -40,7 +40,7 @@ To help you choose one for your project, there's a `license chooser <http://thre
 
 - Apache
 
-**Less-Permissive:**
+**Less Permissive:**
 
 - LGPL
 - GPL
