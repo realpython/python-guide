@@ -3,37 +3,32 @@ Picking an Interpreter
 
 .. _which-python:
 
-Which Python to use?
-
-
-2.x vs 3.x
-~~~~~~~~~~
-
-    Python 2.x is the status quo, Python 3.x is the shiny new thing.
-
-
-`Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
-
-
-Today
------
+Today (Python 2)
+~~~~~~~~~~~~~~~~
 
 If you're choosing a Python interpreter to use, I *highly* recommend you use
 Python 2.7.x, unless you have a strong reason not to.
 
+Also use Python 2.7.x if you're starting to work on a new Python module. If you
+have managed to get it working on 2.7, you can add support for older 2.x
+versions.
 
-The Future
-----------
+The Future (Python 3)
+~~~~~~~~~~~~~~~~~~~~~
 
-As more and more modules get ported over to Python3, the easier it will be for
-others to use it.
+    Python 2.x is the status quo, Python 3.x is the shiny new thing.
 
+`Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
 
-Which Python to Support?
-~~~~~~~~~~~~~~~~~~~~~~~~
+Python 3, on the other hand, differs much more greatly from Python 2, so
+writing code that works both on Python 2 and Python 3 is a very complicated
+process.
 
-If you're starting work on a new Python module, I recommend you write it for
-Python 2.5 or 2.6, and add support for Python3 in a later iteration.
+It is still possible to `write code that works on Python 2.6, 2.7 and 3.3
+<http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/>`_. Depending on
+the kind of software you are writing, this might be either tricky or extremely
+hard, and if you're a beginner there are much more important things to worry
+about.
 
 Implementations
 ~~~~~~~~~~~~~~~
