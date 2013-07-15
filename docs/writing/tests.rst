@@ -146,7 +146,7 @@ py.test is a no-boilerplate alternative to Python's standard unittest module.
 
     $ pip install pytest
 
-Despite being a fully-featured and extensible test tool it boasts a simple
+Despite being a fully-featured and extensible test tool, it boasts a simple
 syntax. Creating a test suite is as easy as writing a module with a couple of
 functions
 
