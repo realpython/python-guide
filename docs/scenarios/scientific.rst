@@ -43,8 +43,6 @@ Virtual Machine) (through special decorators).
 Briefly, Numba using system that compiles Python code with LLVM to code which 
 can be natively executed at runtime.
 
-.. todo:: Write about Numba
-
 SciPy
 -----
 
