@@ -4,13 +4,14 @@ Systems Administration
 Fabric
 ------
 
-`Fabric <http://docs.fabfile.org>`_ is a library for simplifying system administration tasks. While Chef
-and Puppet tend to focus on managing servers and system libraries,
-fabric is more focused on application level tasks such as deployment.
+`Fabric <http://docs.fabfile.org>`_ is a library for simplifying system
+administration tasks. While Chef and Puppet tend to focus on managing servers
+and system libraries, fabric is more focused on application level tasks such
+as deployment.
 
 Install Fabric:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ pip install fabric
 
@@ -40,7 +41,7 @@ server.
 With the previous code saved in a file named fabfile.py, we can check memory
 usage with:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ fab memory_usage
     [my_server1] Executing task 'memory'
@@ -59,7 +60,7 @@ usage with:
 
 and we can deploy with:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ fab deploy
 
@@ -78,7 +79,7 @@ multiple servers using simple template files.
 
 Salt supports python versions 2.6 and 2.7 and can be installed via pip:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ pip install salt
 
@@ -87,7 +88,7 @@ shell commands or use pre-built modules of complex commands on our minions.
 
 The following command lists all available minion hosts, using the ping module.
 
-.. code-block:: bash
+.. code-block:: console
 
     $ salt '*' test.ping
 
@@ -98,7 +99,7 @@ provide a host taxonomy for the salt modules.
 
 The following command lists all available minions running CentOS using the grains system:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ salt -G 'os:CentOS' test.ping
 
