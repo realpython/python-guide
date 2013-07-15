@@ -26,6 +26,11 @@ by downloading `XCode <http://developer.apple.com/xcode/>`_, the smaller
 Apple account) or the even smaller `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
 package.
 
+.. note::
+    If you already have XCode installed, do not install OSX-GCC-Installer.
+    In combination, the software can cause issues that are difficult to
+    diagnose.
+
 While Lion comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
 `Homebrew <http://mxcl.github.com/homebrew/>`_ fills this void.
