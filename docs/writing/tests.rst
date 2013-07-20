@@ -217,7 +217,7 @@ multiple interpreter configurations
 tox allows you to configure complicated multi-parameter test matrices via a
 simple ini-style configuration file.
 
-    `tox <http://tox.testrun.org/latest/>`_
+    `tox <http://testrun.org/tox/latest/>`_
 
 Unittest2
 ---------
