@@ -35,9 +35,9 @@ include:
 
 - Multiple and messy circular dependencies: if your classes
   Table and Chair in furn.py need to import Carpenter from workers.py
-  to answer a question such as table.isdoneby(),
+  to answer a question such as ``table.isdoneby()``,
   and if conversely the class Carpenter needs to import Table and Chair,
-  to answer the question carpenter.whatdo(), then you
+  to answer the question ``carpenter.whatdo()``, then you
   have a circular dependency. In this case you will have to resort to
   fragile hacks such as using import statements inside
   methods or functions.
@@ -236,7 +236,7 @@ processes are spawned to respond to external requests that can
 happen at the same time. In this case, holding some state into instantiated
 objects, which means keeping some static information about the world, is prone
 to concurrency problems or race-conditions. Sometimes, between the initialization of
-the state of an object (usually done with the __init__() method) and the actual use
+the state of an object (usually done with the ``__init__()`` method) and the actual use
 of the object state through one of its methods, the world may have changed, and
 the retained state may be outdated. For example, a request may load an item in
 memory and mark it as read by a user. If another request requires the deletion
@@ -383,7 +383,7 @@ Python has two kinds of built-in or user-defined types.
 
 Mutable types are those that allow in-place modification
 of the content. Typical mutables are lists and dictionaries:
-All lists have mutating methods, like append() or pop(), and
+All lists have mutating methods, like ``append()`` or ``pop()``, and
 can be modified in place. The same goes for dictionaries.
 
 Immutable types provide no method for changing their content.
@@ -418,7 +418,7 @@ its parts, it is much more efficient to accumulate the parts in a list,
 which is mutable, and then glue ('join') the parts together when the
 full string is needed. One thing to notice, however, is that list
 comprehensions are better and faster than constructing a list in a loop
-with calls to append().
+with calls to ``append()``.
 
 **Bad**
 
@@ -464,10 +464,10 @@ should be your preferred method.
     foo = ''.join([foo, 'ooo'])
 
 .. note::
-    You can also use the **%** formatting operator to concatenate the
-    pre-determined number of strings besides **join()** and **+**. However,
-    according to :pep:`3101`, the **%** operator became deprecated in
-    Python 3.1 and will be replaced by the **format()** method in the later versions.
+    You can also use the ``%`` formatting operator to concatenate the
+    pre-determined number of strings besides ``join()`` and ``+``. However,
+    according to :pep:`3101`, the ``%`` operator became deprecated in
+    Python 3.1 and will be replaced by the ``format()`` method in the later versions.
 
 .. code-block:: python
 
