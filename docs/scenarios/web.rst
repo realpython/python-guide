@@ -286,17 +286,20 @@ Jinja2
 language and thus can be used to generate any markup. It allows customization of filters, tags, tests and globals.
 Unlike the template system implemented in the Django Framework it allows to call functions. The Code is staying under the BSD license.
 
-Here some important html tags in jinja2:
+Here some important html tags in Jinja2:
 
 .. code-block:: html
 
     {# This is a comment #}
+
     {# The next tag is a variable output: #}
     {{title}}
+
     {# Tag for a block, can be replaced through inheritance with other html code #}
     {% block head %}
-    <h1>I'm the head!</h1>
+    <h1>This is the head!</h1>
     {% endblock %}
+
     {# Output of an array as an iteration #}
     {% for item in list %}
     <li>{{ item }}</li>
@@ -309,34 +312,30 @@ to use.
 
 .. code-block:: python
 
+    # import Jinja2
     from jinja2 import Environment, FileSystemLoader
+
+    # import Tornado
+    import tornado.ioloop
+    import tornado.web
+
+    # Load tamplate file templates/site.html
     TEMPLATE_FILE = "site.html"
     templateLoader = FileSystemLoader( searchpath="templates/" )
     templateEnv = Environment( loader=templateLoader )
     template = templateEnv.get_template(TEMPLATE_FILE)
-    import tornado.ioloop
-    import tornado.web
-    #import jinja2
-    from jinja2 import Environment, FileSystemLoader
-    #load tamplate file templates/site.html
-    TEMPLATE_FILE = "site.html"
-    templateLoader = FileSystemLoader( searchpath="templates/" )
-    templateEnv = Environment( loader=templateLoader )
-    template = templateEnv.get_template(TEMPLATE_FILE)
-    #import tornado
-    import tornado.ioloop
-    import tornado.web
-    #list for famous movie rendering
+
+    # List for famous movie rendering
     movie_list = [[1,"The Hitchhiker's Guide to the Galaxy"],[2,"Back to future"],[3,"Matrix"]]
 
     # template.render() returns a string which contains the rendered html
     html_output = template.render(list=movie_list,
                             title="Here is my favorite movie list")
 
-    #Handler for main page
+    # Handler for main page
     class MainHandler(tornado.web.RequestHandler):
         def get(self):
-            #returns rendered template string to the browser request
+            # Returns rendered template string to the browser request
             self.write(html_output)
 
     # Assign handler to the server root  (127.0.0.1:PORT/)
@@ -373,8 +372,8 @@ The `base.html` file can be used as base for all site pages which are for exampl
     </body>
 
 
-The next listing is our site page (`site.html`) loaded in the python app which extends `base.html`. The content block is automatically
-set into the corresponding block in the base.html page.
+The next listing is our site page (`site.html`) loaded in the python app which extends `base.html`. The content block is
+automatically set into the corresponding block in the base.html page.
 
 .. code-block:: html
 
@@ -392,11 +391,6 @@ set into the corresponding block in the base.html page.
         </div>
         </p>
     {% endblock %}
-
-
-
-
-
 
 
 .. rubric:: References
