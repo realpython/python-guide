@@ -112,7 +112,7 @@ test suite runs.
 
 A simple doctest in a function:
 
-::
+.. code-block:: python
 
     def square(x):
         """Squares x.
@@ -142,7 +142,7 @@ py.test
 
 py.test is a no-boilerplate alternative to Python's standard unittest module.
 
-::
+.. code-block:: console
 
     $ pip install pytest
 
@@ -150,7 +150,7 @@ Despite being a fully-featured and extensible test tool, it boasts a simple
 syntax. Creating a test suite is as easy as writing a module with a couple of
 functions
 
-::
+.. code-block:: console
 
     # content of test_sample.py
     def func(x):
@@ -161,7 +161,7 @@ functions
 
 and then running the `py.test` command
 
-::
+.. code-block:: console
 
     $ py.test
     =========================== test session starts ============================
@@ -193,7 +193,7 @@ Nose
 nose extends unittest to make testing easier.
 
 
-::
+.. code-block:: console
 
     $ pip install nose
 
@@ -210,7 +210,7 @@ tox
 tox is a tool for automating test environment management and testing against
 multiple interpreter configurations
 
-::
+.. code-block:: console
 
     $ pip install tox
 
@@ -227,14 +227,14 @@ API and better assertions over the one available in previous versions of Python.
 
 If you're using Python 2.6 or below, you can install it with pip
 
-::
+.. code-block:: console
 
     $ pip install unittest2
 
 You may want to import the module under the name unittest to make porting code
 to newer versions of the module easier in the future
 
-::
+.. code-block:: python
 
     import unittest2 as unittest
 
@@ -253,7 +253,7 @@ mock
 
 mock is a library for testing in Python.
 
-::
+.. code-block:: console
 
     $ pip install mock
 
@@ -262,7 +262,7 @@ make assertions about how they have been used.
 
 For example, you can monkey patch a method
 
-::
+.. code-block:: console
 
     from mock import MagicMock
     thing = ProductionClass()
@@ -275,7 +275,7 @@ To mock classes or objects in a module under test, use the ``patch`` decorator.
 In the example below, an external search system is replaced with a mock that
 always returns the same result (but only for the duration of the test).
 
-::
+.. code-block:: console
 
     def mock_search(self):
         class MockSearchQuerySet(SearchQuerySet):
