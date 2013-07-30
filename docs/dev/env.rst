@@ -16,8 +16,8 @@ Vim is a text editor which uses keyboard shortcuts for editing instead of menus
 or icons. There exist a couple of plugins and settings for the VIM editor to
 aid Python development. If you only develop in Python, a good start is to set
 the default settings for indentation and line-wrapping to values compliant with
-`PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_. In your home directory,
-open a file called `.vimrc` and add the following lines:::
+:pep:`8`. In your home directory, open a file called `.vimrc` and add the
+following lines:::
 
     set textwidth=79  " lines longer than 79 columns will be broken
     set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns

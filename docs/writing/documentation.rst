@@ -104,9 +104,7 @@ In Python, *docstrings* describe modules, classes, and functions: ::
         """Returns the square root of self times self."""
         ...
 
-In general, follow the `comment section of PEP 0008`_ (the "Python Style Guide").
-
-.. _comment section of PEP 0008: http://www.python.org/dev/peps/pep-0008/#comments
+In general, follow the comment section of :pep:`8#comments` (the "Python Style Guide").
 
 Commenting Sections of Code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -137,9 +135,7 @@ operation of the function or class: ::
         """Returns the square root of self times self."""
 	...
 
-.. seealso:: Further reading on docstrings: `PEP 0257`_
-
-.. _PEP 0257: http://www.python.org/dev/peps/pep-0257/
+.. seealso:: Further reading on docstrings: :pep:`257`
 
 
 Other Tools
