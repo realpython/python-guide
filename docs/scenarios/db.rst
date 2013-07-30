@@ -5,7 +5,7 @@ DB-API
 ------
 
 The Python Database API (DB-API) defines a standard interface for Python
-database access modules. It's documented in `PEP 249 <http://www.python.org/dev/peps/pep-0249/>`_.
+database access modules. It's documented in :pep:`249`.
 Nearly all Python database modules such as `sqlite3`, `psycopg` and
 `mysql-python` conform to this interface.
 

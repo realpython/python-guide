@@ -18,7 +18,7 @@ interface between web servers and Python web application frameworks. By
 standardizing behavior and communication between web servers and Python web
 frameworks, WSGI makes it possible to write portable Python web code that
 can be deployed in any :ref:`WSGI-compliant web server <wsgi-servers-ref>`.
-WSGI is documented in `PEP-3333 <http://www.python.org/dev/peps/pep-3333/>`_.
+WSGI is documented in :pep:`3333`.
 
 
 Frameworks
