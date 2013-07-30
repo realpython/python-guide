@@ -26,7 +26,6 @@ Topics include:
 - Testing. Jenkins + tox guides.
 - How to interface w/ hg from git easily
 - what libraries to use for what
-- Different tutorials
 
 If you are not fond of reading reStructuredText, there is an
 almost up-to-date `HTML version at docs.python-guide.org
