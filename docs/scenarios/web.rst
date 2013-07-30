@@ -90,6 +90,15 @@ application that is not commonly found in other web frameworks.
 Support can be found on its `mailing list <http://werkzeug.pocoo.org/community/#mailinglist>`_.
 
 
+Tornado
+--------
+`Tornado <http://http://www.tornadoweb.org/>`_ is a scalable, non-blocking web server and web application framework with
+a relative simple usage. Tornado is known for his high performance.
+It was initially developed for `friendfeed <http://friendfeed.com/>`_ , a real time chat and blog system.
+
+In the Jinja2 template engine example it is used to serve the rendered pages.
+
+
 Pyramid
 --------
 
@@ -268,6 +277,121 @@ and to the templates themselves.
   HTML templates. A sane approach to this design is to isolate
   the parts where the HTML template passes some variable content
   to the javascript code.
+
+
+
+Jinja2
+------
+`Jinja2 <http://jinja.pocoo.org/>`_ is a template engine which is similar to the Django template system with some extra features. It is a text-based template
+language and thus can be used to generate any markup. It allows customization of filters, tags, tests and globals.
+Unlike the template system implemented in the Django Framework it allows to call functions. The Code is staying under the BSD license.
+
+Here some important html tags in Jinja2:
+
+.. code-block:: html
+
+    {# This is a comment #}
+
+    {# The next tag is a variable output: #}
+    {{title}}
+
+    {# Tag for a block, can be replaced through inheritance with other html code #}
+    {% block head %}
+    <h1>This is the head!</h1>
+    {% endblock %}
+
+    {# Output of an array as an iteration #}
+    {% for item in list %}
+    <li>{{ item }}</li>
+    {% endfor %}
+
+
+
+The next listings is an example of a web site in combination with the tornado web server. Tornado is not very complicate
+to use.
+
+.. code-block:: python
+
+    # import Jinja2
+    from jinja2 import Environment, FileSystemLoader
+
+    # import Tornado
+    import tornado.ioloop
+    import tornado.web
+
+    # Load tamplate file templates/site.html
+    TEMPLATE_FILE = "site.html"
+    templateLoader = FileSystemLoader( searchpath="templates/" )
+    templateEnv = Environment( loader=templateLoader )
+    template = templateEnv.get_template(TEMPLATE_FILE)
+
+    # List for famous movie rendering
+    movie_list = [[1,"The Hitchhiker's Guide to the Galaxy"],[2,"Back to future"],[3,"Matrix"]]
+
+    # template.render() returns a string which contains the rendered html
+    html_output = template.render(list=movie_list,
+                            title="Here is my favorite movie list")
+
+    # Handler for main page
+    class MainHandler(tornado.web.RequestHandler):
+        def get(self):
+            # Returns rendered template string to the browser request
+            self.write(html_output)
+
+    # Assign handler to the server root  (127.0.0.1:PORT/)
+    application = tornado.web.Application([
+        (r"/", MainHandler),
+    ])
+    PORT=8884
+    if __name__ == "__main__":
+        # Setup the server
+        application.listen(PORT)
+        tornado.ioloop.IOLoop.instance().start()
+
+The `base.html` file can be used as base for all site pages which are for example implemented in the content block.
+
+.. code-block:: html
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+    <html lang="en">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>{{title}} - My Webpage</title>
+    </head>
+    <body>
+    <div id="content">
+        {# In the next line the content from the site.html template will be added #}
+        {% block content %}{% endblock %}
+    </div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2013 by <a href="http://domain.invalid/">you</a>.
+        {% endblock %}
+    </div>
+    </body>
+
+
+The next listing is our site page (`site.html`) loaded in the python app which extends `base.html`. The content block is
+automatically set into the corresponding block in the base.html page.
+
+.. code-block:: html
+
+    <!{% extends "base.html" %}
+    {% block content %}
+        <p class="important">
+        <div id="content">
+            <h2>{{title}}</h2>
+            <p>{{ list_title }}</p>
+            <ul>
+                 {% for item in list %}
+                 <li>{{ item[0]}} :  {{ item[1]}}</li>
+                 {% endfor %}
+            </ul>
+        </div>
+        </p>
+    {% endblock %}
+
 
 .. rubric:: References
 
