@@ -20,8 +20,9 @@ Installation
 PIL has a reputation of not being very straightforward to install. Listed below
 are installation notes on various systems.
 
-Also, there's a fork named `Pillow <http://pypi.python.org/pypi/Pillow>`_ which is easier
-to install. It has good setup instructions for all platforms.
+Also, there's a fork named `Pillow <http://pypi.python.org/pypi/Pillow>`_ which
+is easier to install. It has good setup instructions for all platforms and
+supports Python 3 (PIL currently does not).
 
 Installing on Linux
 ~~~~~~~~~~~~~~~~~~~
