@@ -397,9 +397,7 @@ slides from a Python user group
 PEP 8
 -----
 
-PEP 8 is the de-facto code style guide for Python.
-
-    :pep:`8`
+:pep:`8` is the de-facto code style guide for Python.
 
 Conforming your Python code to PEP 8 is generally a good idea and helps make
 code more consistent when working on projects with other developers. There
