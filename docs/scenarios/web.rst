@@ -319,7 +319,7 @@ to use.
     import tornado.ioloop
     import tornado.web
 
-    # Load tamplate file templates/site.html
+    # Load template file templates/site.html
     TEMPLATE_FILE = "site.html"
     templateLoader = FileSystemLoader( searchpath="templates/" )
     templateEnv = Environment( loader=templateLoader )
