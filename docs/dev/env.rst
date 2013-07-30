@@ -113,12 +113,14 @@ scripters and novice users alike."
 Sublime Text
 ------------
 
-"`Sublime Text <http://www.sublimetext.com/>`_ is a sophisticated text editor
-for code, html and prose. You'll love the slick user interface and
-extraordinary features."
+    `Sublime Text <http://www.sublimetext.com/>`_ is a sophisticated text
+    editor for code, markup and prose. You'll love the slick user interface,
+    extraordinary features and amazing performance.
 
 Sublime Text has excellent support for editing Python code and uses Python for
-its plugin API.
+its plugin API. It also has plugins a diverse variety of plugins, `some of which <https://github.com/SublimeLinter/SublimeLinter>`_
+allow for in-editor PEP8 checking and code "linting".
+
 
 IDEs
 ::::
