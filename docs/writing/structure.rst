@@ -448,10 +448,10 @@ with calls to ``append()``.
     nums = [str(n) for n in range(20)]
     print "".join(nums)
 
-One final thing to mention about strings is that using join() is not always
+One final thing to mention about strings is that using ``join()`` is not always
 best. In the instances where you are creating a new string from a pre-determined
 number of strings, using the addition operator is actually faster, but in cases
-like above or in cases where you are adding to an existing string, using join()
+like above or in cases where you are adding to an existing string, using ``join()``
 should be your preferred method.
 
 .. code-block:: python
