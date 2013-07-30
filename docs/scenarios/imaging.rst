@@ -9,67 +9,20 @@ Python Imaging Library
 ----------------------
 
 The `Python Imaging Library <http://www.pythonware.com/products/pil/>`_, or PIL
-for short, is *the* library for image manipulation in Python.
+for short, is *the* library for image manipulation in Python. Unfortunately, its
+development has stagnated, with its last release in 2009.
 
-It works with Python 1.5.2 and above, including 2.5, 2.6 and 2.7. Unfortunately,
-it doesn't work with 3.0+ yet.
+Lucky for you, there's an actively-developed fork of PIL called `Pillow <http://python-imaging.github.io/>`_ -
+it's easier to install, runs on all operating systems, and supports Python 3.
 
 Installation
 ~~~~~~~~~~~~
 
-PIL has a reputation of not being very straightforward to install. Listed below
-are installation notes on various systems.
+Before installing Pillow, you'll have to install Pillow's prerequisites. Find
+the instructions for your platform `here <https://pypi.python.org/pypi/Pillow/2.1.0#platform-specific-instructions>`_.
 
-Also, there's a fork named `Pillow <http://pypi.python.org/pypi/Pillow>`_ which
-is easier to install. It has good setup instructions for all platforms and
-supports Python 3 (PIL currently does not).
-
-Installing on Linux
-~~~~~~~~~~~~~~~~~~~
-
-Arch Linux
-``````````
-
-PIL is maintained in the official community repository, and installed with the system installer as:
+After that, it's straightforward:
 
 .. code-block:: bash
 
-    $ sudo pacman -S python2-imaging
-
-Ubuntu 12.10
-````````````
-
-Can be installed on the command line as:
-
-.. code-block:: bash
-
-    $ sudo apt-get install python-imaging
-
-
-Installing on Mac OS X
-~~~~~~~~~~~~~~~~~~~~~~
-
-PIP doesn't know about the Mac OS X Freetype paths. To rectify that:
-
-.. code-block:: bash
-
-    $ ln -s /usr/X11/include/freetype2 /usr/local/include/
-    $ ln -s /usr/X11/include/ft2build.h /usr/local/include/
-    $ ln -s /usr/X11/lib/libfreetype.6.dylib /usr/local/lib/
-    $ ln -s /usr/X11/lib/libfreetype.6.dylib /usr/local/lib/libfreetype.dylib
-
-then:
-
-.. code-block:: bash
-
-    $ brew install libjpeg
-    $ pip install PIL
-
-
-Installing on Windows
-~~~~~~~~~~~~~~~~~~~~~
-
-.. todo::
-    Notes on installing on Windows machines
-
-
+    $ pip install Pillow
