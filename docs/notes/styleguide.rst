@@ -39,24 +39,32 @@ Headings
 
 Use the following styles for headings.
 
-Chapter title::
+Chapter title:
+
+.. code-block:: rest
 
     #########
     Chapter 1
     #########
 
-Page title::
+Page title:
+
+.. code-block:: rest
 
     ===================
     Time is an Illusion
     ===================
 
-Section headings::
+Section headings:
+
+.. code-block:: rest
 
     Lunchtime Doubly So
     -------------------
 
-Sub section headings::
+Sub section headings:
+
+.. code-block:: rest
 
     Very Deep
     ~~~~~~~~~
@@ -74,7 +82,9 @@ Code Examples
 
 Wrap all code examples at 70 characters to avoid horizontal scrollbars.
 
-Command line examples::
+Command line examples:
+
+.. code-block:: rest
 
     .. code-block:: console
 
@@ -83,7 +93,9 @@ Command line examples::
 
 Be sure to include the ``$`` prefix before each line.
 
-Python interpreter examples::
+Python interpreter examples:
+
+.. code-block:: rest
 
     Label the example::
 
@@ -91,7 +103,9 @@ Python interpreter examples::
 
         >>> import this
 
-Python examples::
+Python examples:
+
+.. code-block:: rest
 
     Descriptive title::
 
@@ -103,16 +117,20 @@ Python examples::
 Externally Linking
 ------------------
 
-* Prefer labels for well known subjects (ex: proper nouns) when linking::
+* Prefer labels for well known subjects (ex: proper nouns) when linking:
 
-    Sphinx_ is used to document Python.
+  .. code-block:: rest
 
-    .. _Sphinx: http://sphinx.pocoo.org
+      Sphinx_ is used to document Python.
+
+      .. _Sphinx: http://sphinx.pocoo.org
 
 * Prefer to use descriptive labels with inline links instead of leaving bare
-  links::
+  links:
 
-    Read the `Sphinx Tutorial <http://sphinx.pocoo.org/tutorial.html>`_
+  .. code-block:: rest
+
+      Read the `Sphinx Tutorial <http://sphinx.pocoo.org/tutorial.html>`_
 
 * Avoid using labels such as "click here", "this", etc. preferring
   descriptive labels (SEO worthy) instead.
@@ -124,7 +142,9 @@ To cross-reference other parts of this documentation, use the `:ref:
 <http://sphinx.pocoo.org/markup/inline.html#cross-referencing-arbitrary-locations>`_
 keyword and labels.
 
-To make reference labels more clear and unique, always add a ``-ref`` suffix::
+To make reference labels more clear and unique, always add a ``-ref`` suffix:
+
+.. code-block:: rest
 
     .. _some-section-ref:
 
@@ -137,14 +157,18 @@ Notes and Warnings
 Make use of the appropriate `admonitions directives
 <http://sphinx.pocoo.org/rest.html#directives>`_ when making notes.
 
-Notes::
+Notes:
+
+.. code-block:: rest
 
     .. note::
         The Hitchhiker’s Guide to the Galaxy has a few things to say
         on the subject of towels. A towel, it says, is about the most
         massively useful thing an interstellar hitch hiker can have.
 
-Warnings::
+Warnings:
+
+.. code-block:: rest
 
     .. warning:: DON'T PANIC
 
@@ -156,7 +180,7 @@ Please mark any incomplete areas of The Guide with a `todo directive
 avoid cluttering the :ref:`todo-list-ref`, use a single ``todo`` for stub
 documents or large incomplete sections.
 
-::
+.. code-block:: rest
 
     .. todo::
         Learn the Ultimate Answer to the Ultimate Question

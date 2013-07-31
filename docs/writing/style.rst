@@ -117,8 +117,8 @@ follow the syntax that is the closest to the function definition: ``send('Hello'
 'World', cc='Cthulhu', bcc='God')``.
 
 As a side note, following `YAGNI <http://en.wikipedia.org/wiki/You_ain't_gonna_need_it>`_
-principle, it is often harder to remove an optional argument (and its logic inside the 
-function) that was added "just in case" and is seemingly never used, than to add a 
+principle, it is often harder to remove an optional argument (and its logic inside the
+function) that was added "just in case" and is seemingly never used, than to add a
 new optional argument and its logic when needed.
 
 3. The **arbitrary argument list** is the third way to pass arguments to a
@@ -256,14 +256,14 @@ are a probable indication that such a refactoring is needed.
 Idioms
 ------
 
-A programming idiom, put simply, is a *way* to write code. The notion of programming idioms 
+A programming idiom, put simply, is a *way* to write code. The notion of programming idioms
 is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_ and at `Stack Overflow <http://stackoverflow.com/questions/302459/what-is-a-programming-idiom>`_.
 
-Idiomatic Python code is often referred to as being *Pythonic*. 
+Idiomatic Python code is often referred to as being *Pythonic*.
 
-Although there usually is one-- and preferably only one --obvious way to do it; 
+Although there usually is one-- and preferably only one --obvious way to do it;
 *the* way to write idiomatic Python code can be non-obvious to Python beginners. So,
-good idioms must be consciously acquired. 
+good idioms must be consciously acquired.
 
 Some common Python idioms follow:
 
@@ -362,7 +362,7 @@ For more information see this `StackOverflow <http://stackoverflow.com/questions
 Zen of Python
 -------------
 
-Also known as PEP 20, the guiding principles for Python's design.
+Also known as :pep:`20`, the guiding principles for Python's design.
 
 ::
 
@@ -397,9 +397,7 @@ slides from a Python user group
 PEP 8
 -----
 
-PEP 8 is the de-facto code style guide for Python.
-
-    `PEP 8 <http://www.python.org/dev/peps/pep-0008/>`_
+:pep:`8` is the de-facto code style guide for Python.
 
 Conforming your Python code to PEP 8 is generally a good idea and helps make
 code more consistent when working on projects with other developers. There

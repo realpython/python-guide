@@ -27,7 +27,7 @@ PEPs
 PEPs are *Python Enhancement Proposals*. They describe changes to Python itself,
 or the standards around it.
 
-There are three different types of PEPs (as defined by `PEP1 <http://www.python.org/dev/peps/pep-0001/>`_):
+There are three different types of PEPs (as defined by :pep:`1`):
 
     **Standards**
         Describes a new feature or implementation.
@@ -45,13 +45,13 @@ Notable PEPs
 
 There are a few PEPs that could be considered required reading:
 
-- `PEP8 <http://www.python.org/dev/peps/pep-0008/>`_: The Python Style Guide.
+- :pep:`8`: The Python Style Guide.
     Read this. All of it. Follow it.
 
-- `PEP20 <http://www.python.org/dev/peps/pep-0020/>`_: The Zen of Python.
+- :pep:`20`: The Zen of Python.
     A list of 19 statements that briefly explain the philosophy behind Python.
 
-- `PEP257 <http://www.python.org/dev/peps/pep-0257/>`_: Docstring Conventions.
+- :pep:`257`: Docstring Conventions.
     Gives guidelines for semantics and conventions associated with Python
     docstrings.
 
