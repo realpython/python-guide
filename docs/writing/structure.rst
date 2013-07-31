@@ -326,8 +326,34 @@ The dynamic typing of Python is often considered to be a weakness, and indeed
 it can lead to complexities and hard-to-debug code. Something
 named 'a' can be set to many different things, and the developer or the
 maintainer needs to track this name in the code to make sure it has not
-been set to a completely unrelated object.
-
+been set to a completely unrelated object. But sometimes it will lead to many 
+complexities, for example, look at the following code:
+.. code-block:: python
+  def compress(obj):
+    if type(obj) == str:
+      return compressed_string(obj)
+    elif type(obj) == int:
+      return compressed_int(obj)
+    elif type(obj) == list:
+      return [compress(i) for i in obj]
+It could be used for when a user enters something that the program doesn't know about,
+then they would have to do this:
+.. code-block:: python
+  def compress(s=None,i=None,l=None):
+    assert s or i or l
+    if s:
+      return compressed_string(obj)
+    elif i:
+      return compressed_int(obj)
+    elif l:
+      return [compress(i) for i in obj]
+  try:
+    compress(s=some_obj)
+  except TypeError:
+    try:
+      compress(i=some_obj)
+    except TypeError:
+      compress(l=some_obj)
 Some guidelines help to avoid this issue:
 
 - Avoid using the same variable name for different things.
