@@ -383,7 +383,7 @@ Python has two kinds of built-in or user-defined types.
 
 Mutable types are those that allow in-place modification
 of the content. Typical mutables are lists and dictionaries:
-All lists have mutating methods, like ``append()`` or ``pop()``, and
+All lists have mutating methods, like :py:meth:`list.append` or :py:meth:`list.pop`, and
 can be modified in place. The same goes for dictionaries.
 
 Immutable types provide no method for changing their content.
@@ -464,10 +464,11 @@ should be your preferred method.
     foo = ''.join([foo, 'ooo'])
 
 .. note::
-    You can also use the ``%`` formatting operator to concatenate the
-    pre-determined number of strings besides ``join()`` and ``+``. However,
-    according to :pep:`3101`, the ``%`` operator became deprecated in
-    Python 3.1 and will be replaced by the ``format()`` method in the later versions.
+    You can also use the :ref:`% <python:string-formatting>` formatting operator
+    to concatenate a pre-determined number of strings besides :py:meth:`str.join`
+    and ``+``. However, according to :pep:`3101`, the ``%`` operator became
+    deprecated in Python 3.1 and will be replaced by the :py:meth:`str.format`
+    method in the later versions.
 
 .. code-block:: python
 
