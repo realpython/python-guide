@@ -83,7 +83,7 @@ while another would handle low-level manipulation of data. The most natural way
 to separate these two layers is to regroup all interfacing functionality
 in one file, and all low-level operations in another file. In this case,
 the interface file needs to import the low-level file. This is done with the
-`import` and `from ... import` statements.
+``import`` and ``from ... import`` statements.
 
 As soon as you use `import` statements you use modules. These can be either built-in
 modules such as `os` and `sys`, third-party modules you have installed in your
@@ -106,7 +106,7 @@ Aside for some naming restrictions, nothing special is required for a Python fil
 to be a module, but the import mechanism needs to be understood in order to use
 this concept properly and avoid some issues.
 
-Concretely, the `import modu` statement will look for the proper file, which is
+Concretely, the ``import modu`` statement will look for the proper file, which is
 `modu.py` in the same directory as the caller if it exists.  If it is not
 found, the Python interpreter will search for `modu.py` in the "path"
 recursively and raise an ImportError exception if it is not found.
@@ -120,20 +120,20 @@ Then, the module's variables, functions, and classes will be available to the ca
 through the module's namespace, a central concept in programming that is
 particularly helpful and powerful in Python.
 
-In many languages, an `include file` directive is used by the preprocessor to
+In many languages, an ``include file`` directive is used by the preprocessor to
 take all code found in the file and 'copy' it into the caller's code. It is
 different in Python: the included code is isolated in a module namespace, which
 means that you generally don't have to worry that the included code could have
 unwanted effects, e.g. override an existing function with the same name.
 
 It is possible to simulate the more standard behavior by using a special syntax
-of the import statement: `from modu import *`. This is generally considered bad
-practice. **Using `import *` makes code harder to read and makes dependencies less
+of the import statement: ``from modu import *``. This is generally considered bad
+practice. **Using ``import *`` makes code harder to read and makes dependencies less
 compartmentalized**.
 
-Using `from modu import func` is a way to pinpoint the function you want to
-import and put it in the global namespace. While much less harmful than `import
-*` because it shows explicitly what is imported in the global namespace, its
+Using ``from modu import func`` is a way to pinpoint the function you want to
+import and put it in the global namespace. While much less harmful than ``import
+*`` because it shows explicitly what is imported in the global namespace, its
 advantage over a simpler `import modu` is only that it will save some typing.
 
 **Very bad**
@@ -166,7 +166,7 @@ Python. Readability means to avoid useless boilerplate text and clutter,
 therefore some efforts are spent trying to achieve a certain level of brevity.
 But terseness and obscurity are the limits where brevity should stop. Being
 able to tell immediately where a class or function comes from, as in the
-`modu.func` idiom, greatly improves code readability and understandability in
+``modu.func`` idiom, greatly improves code readability and understandability in
 all but the simplest single file projects.
 
 
