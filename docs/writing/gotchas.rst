@@ -65,7 +65,7 @@ What You Should Do Instead
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create a new object each time the function is called, by using a default arg to
-signal that no argument was provided (``None`` is often a good choice).
+signal that no argument was provided (:py:data:`None` is often a good choice).
 
 .. code-block:: python
 
@@ -137,9 +137,9 @@ is looked up in the surrounding scope at call time. By then, the loop has
 completed and ``i`` is left with its final value of 4.
 
 What's particularly nasty about this gotcha is the seemingly prevalent
-misinformation that this has something to do with ``lambda``\s in Python.
-Functions created with a ``lambda`` expression are in no way special, and in
-fact the same exact behavior is exhibited by just using an ordinary ``def``:
+misinformation that this has something to do with :ref:`lambdas <python:lambda>`
+in Python. Functions created with a ``lambda`` expression are in no way special,
+and in fact the same exact behavior is exhibited by just using an ordinary ``def``:
 
 .. code-block:: python
 

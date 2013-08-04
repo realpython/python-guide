@@ -286,12 +286,11 @@ Other Tools
 IDLE
 ----
 
-`IDLE <http://docs.python.org/library/idle.html>`_ is an integrated
-development environment that is part of Python standard library. It is
-completely written in Python and uses the Tkinter GUI toolkit. Though IDLE
-is not suited for full-blown development using Python, it is quite
-helpful to try out small Python snippets and experiment with different
-features in Python.
+:ref:`IDLE <python:idle>` is an integrated development environment that is
+part of Python standard library. It is completely written in Python and uses
+the Tkinter GUI toolkit. Though IDLE is not suited for full-blown development
+using Python, it is quite helpful to try out small Python snippets and
+experiment with different features in Python.
 
 It provides the following features:
 

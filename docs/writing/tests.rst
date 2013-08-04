@@ -16,7 +16,7 @@ Some general rules of testing:
   alone, and also within the test suite, regardless of the order they are called.
   The implication of this rule is that each test must be loaded with a fresh
   dataset and may have to do some cleanup afterwards. This is usually
-  handled by `setUp()` and `tearDown()` methods.
+  handled by ``setUp()`` and ``tearDown()`` methods.
 
 - Try hard to make tests that run fast. If one single test needs more than a
   few millisecond to run, development will be slowed down or the tests will not
