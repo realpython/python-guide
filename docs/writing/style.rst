@@ -335,7 +335,7 @@ Instead, use a list comprehension:
     four_lists = [[] for __ in xrange(4)]
 
 
-A common idiom for creating strings is to use `join <http://docs.python.org/library/string.html#string.join>`_ on an empty string.::
+A common idiom for creating strings is to use :py:meth:`str.join` on an empty string.::
 
     letters = ['s', 'p', 'a', 'm']
     word = ''.join(letters)
@@ -433,7 +433,7 @@ Check if variable equals a constant
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You don't need to explicitly compare a value to True, or None, or 0 - you can
-just add it to the if statement. See `Truth Value Testing
+just add it to the if statement. See :ref:`Truth Value Testing
 <http://docs.python.org/library/stdtypes.html#truth-value-testing>`_ for a
 list of what is considered false.
 
@@ -466,8 +466,8 @@ list of what is considered false.
 Access a Dictionary Element
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Don't use the ``has_key`` function. Instead use ``x in d`` syntax, or pass
-a default argument to ``get``.
+Don't use the :py:meth:`dict.has_key` method. Instead, use ``x in d`` syntax,
+or pass a default argument to :py:meth:`dict.get`.
 
 **Bad**:
 
@@ -497,10 +497,9 @@ Short Ways to Manipulate Lists
 
 `List comprehensions
 <http://docs.python.org/tutorial/datastructures.html#list-comprehensions>`_
-provide a powerful, concise way to work with lists. Also, the `map
-<http://docs.python.org/library/functions.html#map>`_ and `filter
-<http://docs.python.org/library/functions.html#filter>`_ functions can perform
-operations on lists using a different concise syntax.
+provide a powerful, concise way to work with lists. Also, the :py:func:`map`
+:py:func:`filter` functions can perform operations on lists using a different,
+more concise syntax.
 
 **Bad**:
 
@@ -540,8 +539,7 @@ operations on lists using a different concise syntax.
     # Or:
     a = map(lambda i: i + 3, a)
 
-Use `enumerate <http://docs.python.org/library/functions.html#enumerate>`_ to
-keep a count of your place in the list.
+Use :py:func:`enumerate` keep a count of your place in the list.
 
 .. code-block:: python
 
@@ -552,9 +550,8 @@ keep a count of your place in the list.
     # 1 4
     # 2 5
 
-The ``enumerate`` function has better readability than handling a counter
-manually. Moreover,
-it is better optimized for iterators.
+The :py:func:`enumerate` function has better readability than handling a
+counter manually. Moreover, it is better optimized for iterators.
 
 Read From a File
 ~~~~~~~~~~~~~~~~
