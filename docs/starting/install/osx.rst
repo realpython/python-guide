@@ -77,18 +77,11 @@ extends the packaging and installation facilities provided by the distutils
 in the standard library. Once you add Distribute to your Python system you can
 download and install any compliant Python software product with a single
 command. It also enables you to add this network installation capability to
-your own Python software with very little work.
+your own Python software with very little work. Homebrew already installed
+Distribute for you.
 
-Homebrew already installed Distribute for you. Its ``easy_install`` command is
-considered by many to be deprecated, so we will install its replacement:
-**pip**. Pip allows for uninstallation of packages, and is actively maintained,
-unlike easy_install.
-
-To install pip, simply open a command prompt and run
-
-.. code-block:: console
-
-    $ easy_install pip
+Happily, when you ran `brew install python`, Homebrew also installed **pip**.
+Pip allows for uninstallation of packages, and is actively maintained.
 
 
 Virtualenv
@@ -126,6 +119,9 @@ setup the third-party libraries and tools that you want to use in that
 environment. Put your own code within a subdirectory of the environment,
 however you wish. When you no longer need a particular environment, simply
 copy your code out of it, and then delete the main directory for the environment.
+
+An useful set of extensions to virtualenv is available in virtualenvwrapper,
+`RTFD <http://virtualenvwrapper.readthedocs.org/en/latest/>`_ to find out more.
 
 
 --------------------------------
