@@ -44,7 +44,7 @@ Some general rules of testing:
 
 - The first step when you are debugging your code is to write a new test
   pinpointing the bug. While it is not always possible to do, those bug
-  catching test are among the most valuable piece of code in your project.
+  catching test are among the most valuable pieces of code in your project.
 
 - Use long and descriptive names for testing functions. The style guide here is
   slightly different than that of running code, where short names are often
@@ -150,7 +150,7 @@ Despite being a fully-featured and extensible test tool, it boasts a simple
 syntax. Creating a test suite is as easy as writing a module with a couple of
 functions
 
-.. code-block:: console
+.. code-block:: python
 
     # content of test_sample.py
     def func(x):
@@ -181,8 +181,8 @@ and then running the `py.test` command
     test_sample.py:5: AssertionError
     ========================= 1 failed in 0.02 seconds =========================
 
-far less work than would be required for the equivalent functionality with the
-unittest module!
+is far less work than would be required for the equivalent functionality with
+the unittest module!
 
     `py.test <http://pytest.org/latest/>`_
 
@@ -262,7 +262,7 @@ make assertions about how they have been used.
 
 For example, you can monkey patch a method
 
-.. code-block:: console
+.. code-block:: python
 
     from mock import MagicMock
     thing = ProductionClass()
@@ -275,7 +275,7 @@ To mock classes or objects in a module under test, use the ``patch`` decorator.
 In the example below, an external search system is replaced with a mock that
 always returns the same result (but only for the duration of the test).
 
-.. code-block:: console
+.. code-block:: python
 
     def mock_search(self):
         class MockSearchQuerySet(SearchQuerySet):
