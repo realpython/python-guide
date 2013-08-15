@@ -516,6 +516,7 @@ more concise syntax.
 
 .. code-block:: python
 
+    a = [3, 4, 5]
     b = [i for i in a if i > 4]
     b = filter(lambda x: x > 4, a)
 
@@ -525,10 +526,8 @@ more concise syntax.
 
     # Add three to all list members.
     a = [3, 4, 5]
-    count = 0
-    for i in a:
-        a[count] = i + 3
-        count = count + 1
+    for i in range(len(a)):
+        a[i] += 3
 
 **Good**:
 
