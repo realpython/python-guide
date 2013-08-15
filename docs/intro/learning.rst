@@ -123,6 +123,26 @@ guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
+For Engineers and Scientists
+----------------------------
+
+A Primer on Scientific Programming with Python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A Primer on Scientific Programming with Python, written by Hans Petter Langtangen,
+mainly covers python's usage in scientific field. In the book, examples are 
+choosen from mathematics and the natural sciences.
+
+    `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-18365-2>`_
+
+Numerical Methods in Engineering with Python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Numerical Methods in Engineering with Python,written by Jaan Kiusalaas, attempts to 
+emphasis on numerical methods and how to implement them in python.
+
+    `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
+
 References
 ----------
 
