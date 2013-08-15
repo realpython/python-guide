@@ -166,6 +166,16 @@ its arguments by using a default arg like so:
     def create_multipliers():
         return [lambda x, i=i : i * x for i in range(5)]
 
+Alternatively, you can use the functools.partial function:
+
+.. code-block:: python
+
+    from functools import partial
+    from operator import mul
+    
+    def create_multipliers():
+        return [partial(mul, i) for i in range(5)]
+
 When the Gotcha Isn't a Gotcha
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
