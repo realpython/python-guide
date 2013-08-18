@@ -95,6 +95,14 @@ statistical package allowing to execute R functions from Python and passing
 data back and forth the two environments. Rpy2 is the object oriented
 implementation of the binding based on `Rpy <http://rpy.sourceforge.net/rpy.html>`_.
 
+PsychoPy
+--------
+
+`PsychoPy <http://www.psychopy.org/>`_ is a library for cognitive scientists
+allowing to create cognitive psychology and neuroscience experiments. The library
+handles both presentation of stimuli, scripting of experimental design and
+data collection.
+
 
 Resources
 :::::::::
