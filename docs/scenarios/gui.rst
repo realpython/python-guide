@@ -76,3 +76,14 @@ Kivy is actively being developed by a community and free to use. It operates
 on all major platforms (Linux, OSX, Windows, Android).
 
 The main resource for information is the website: http://kivy.org
+
+PyjamasDesktop (pyjs Desktop)
+-----------------------------
+PyjamasDesktop is a port of PyJamas. PyjamasDesktop is application widget set
+for desktop and a cross-platform framework. (After release v0.6 PyjamasDesktop
+is a part of Pyjamas (Pyjs)). Briefly, it allows the exact same Python web application
+source code to be executed as a standalone desktop application.
+
+`Python Wiki for PyjamasDesktop <http://wiki.python.org/moin/PyjamasDesktop>`_.
+
+The main website; `pyjs Desktop <http://pyjs.org/>`_.
