@@ -17,6 +17,22 @@ of the Python guide. However, a comprehensive introduction to the scientific
 Python ecosystem can be found in the `Python Scientific Lecture Notes
 <http://scipy-lectures.github.com/>`_
 
+
+Tools
+:::::
+
+IPython
+-------
+
+`IPytthon <http://ipython.org/>`_ is an enhanced version of Python interpreter.
+The features it provides are of great interest for the scientists. The `inline mode`
+allow graphics and plots to be displayed in the terminal (Qt based version).
+Moreover the `notebook` mode supports literate programming and reproducible science
+generating a web-based python notebook. This notebook allowing to store chunk of
+Python code along side to the results and additional comments (HTML, LaTeX, Markdown).
+The notebook could be shared and exported in various file formats.
+
+
 Libraries
 :::::::::
 
@@ -62,6 +78,31 @@ manuscript-quality figures.  The API in many ways reflects that of `MATLAB
 users to Python.  Many examples, along with the source code to re-create them,
 can be browsed at the `matplotlib gallery
 <http://matplotlib.sourceforge.net/gallery.html>`_.
+
+Pandas
+------
+`Pandas <http://pandas.pydata.org/>`_ is data manipulation library
+based on Numpy and which provides many useful functions for accessing,
+indexing, merging and grouping data easily. The main data structure (DataFrame)
+is close to what could be found in the R statistical package, that is
+an heterogeneous data tables with name indexing, time series operations
+and auto-alignement of data.
+
+Rpy2
+----
+`Rpy2 <http://rpy.sourceforge.net/rpy2.html>`_ is a Python binding for the R
+statistical package allowing to execute R functions from Python and passing
+data back and forth the two environments. Rpy2 is the object oriented
+implementation of the binding based on `Rpy <http://rpy.sourceforge.net/rpy.html>`_.
+
+PsychoPy
+--------
+
+`PsychoPy <http://www.psychopy.org/>`_ is a library for cognitive scientists
+allowing to create cognitive psychology and neuroscience experiments. The library
+handles both presentation of stimuli, scripting of experimental design and
+data collection.
+
 
 Resources
 :::::::::
