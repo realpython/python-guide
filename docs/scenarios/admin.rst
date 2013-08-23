@@ -115,10 +115,13 @@ and start the Apache server:
         - installed
       service:
         - running
+        - enable: True
+        - require:
+          - pkg: apache
 
 State files can be written using YAML, the Jinja2 template system or pure python.
 
-    `Salt Documentation <http://docs.saltstack.org/en/latest/index.html>`_
+    `Salt Documentation <http://docs.saltstack.com>`_
 
 
 Psutil
