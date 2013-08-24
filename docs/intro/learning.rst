@@ -153,6 +153,8 @@ Python in a Nutshell, written by Alex Martelli, covers most cross-platform
 python's usage, from its syntax to built-in libraries to advanced topics such
 as writing C extensions.
 
+    `Python in a Nutshell <http://www.amazon.com/Python-Nutshell-Second-Edition-In/dp/0596100469>`_
+
 The Python Language Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
