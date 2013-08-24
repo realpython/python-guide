@@ -38,7 +38,7 @@ Mule?
 Tox
 ---
 
-`tox <https://bitbucket.org/hpk42/tox>`_ is an automation tool providing
+`tox <http://tox.readthedocs.org/en/latest/>`_ is an automation tool providing
 packaging, testing and deployment of Python software right from the console or
 CI server. It is a generic virtualenv management and test command line tool
 which provides the following features:
