@@ -152,7 +152,7 @@ lightweight, easy to use, and uses many UNIX idioms. Gunicorn is not designed
 to face the internet -- it was designed to run behind Nginx which buffers
 slow requests and takes care of other important considerations. A sample
 setup for Nginx + Gunicorn can be found in the
-`Gunicorn help <http://gunicorn.org/deploy.html>`_.
+`Gunicorn help <http://gunicorn.org/index.html#deployment>`_.
 
 .. _uwsgi-ref:
 
