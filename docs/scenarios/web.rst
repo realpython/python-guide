@@ -235,9 +235,7 @@ and Pinax applications. Gondor supports Django versions 1.2 and 1.3 on
 Python version 2.7, and can automatically configure your Django site if you
 use ``local_settings.py`` for site-specific configuration information.
 
-Gondor publishes guides to deploying `Django projects
-<https://gondor.io/support/setting-up-django/>`_ and `Pinax projects
-<https://gondor.io/support/setting-up-pinax/>`_ on their platform.
+Gondor has a guide on deploying `Django projects <https://gondor.io/support/django/setup/>`_.
 
 
 Templating
