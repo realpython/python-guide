@@ -85,7 +85,7 @@ A free introductory book that teaches python at the beginner level, it assumes n
 previous programming experience.
 
     `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
-    `A Byte of Python for Python 3.x <http://www.swaroopch.org/notes/Python_en:Table_of_Contents>`_
+    `A Byte of Python for Python 3.x <http://swaroopch.com/notes/Python_en-Preface/>`_
 
 
 Advanced
@@ -130,7 +130,7 @@ A Primer on Scientific Programming with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Primer on Scientific Programming with Python, written by Hans Petter Langtangen,
-mainly covers python's usage in scientific field. In the book, examples are 
+mainly covers python's usage in scientific field. In the book, examples are
 choosen from mathematics and the natural sciences.
 
     `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-18365-2>`_
@@ -138,7 +138,7 @@ choosen from mathematics and the natural sciences.
 Numerical Methods in Engineering with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Numerical Methods in Engineering with Python,written by Jaan Kiusalaas, attempts to 
+Numerical Methods in Engineering with Python,written by Jaan Kiusalaas, attempts to
 emphasis on numerical methods and how to implement them in python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
