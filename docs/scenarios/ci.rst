@@ -26,7 +26,7 @@ engine. Use it.
 
 Buildbot
 --------
-`Buildbot <http://buildbot.net/buildbot/docs/current>`_ is a Python system to
+`Buildbot <http://docs.buildbot.net/current/>`_ is a Python system to
 automate the compile/test cycle to validate code changes.
 
 
@@ -85,4 +85,4 @@ thorough.
 
 In order to activate testing for your project, go to `the travis-ci site <http://travis-ci.org/>`_
 and login with your Github account. Then activate your project in your profile settings and that's
-it. From now on, your project's tests will be run on every push to Github. 
+it. From now on, your project's tests will be run on every push to Github.
