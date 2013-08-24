@@ -60,7 +60,7 @@ where they were placed.
 virtualenvwrapper
 -----------------
 
-`virtualenvwrapper <http://www.doughellmann.com/projects/virtualenvwrapper/>`_
+`virtualenvwrapper <http://virtualenvwrapper.readthedocs.org/en/latest/index.html>`_
 provides a set of commands which makes working with virtual environments much
 more pleasant. It also places all your virtual environments in one place.
 
@@ -72,7 +72,7 @@ To install (make sure **virtualenv** is already installed):
   $ export WORKON_HOME=~/Envs
   $ source /usr/local/bin/virtualenvwrapper.sh
 
-(`Full virtualenvwrapper install instructions <http://www.doughellmann.com/docs/virtualenvwrapper/#introduction>`_.)
+(`Full virtualenvwrapper install instructions <http://virtualenvwrapper.readthedocs.org/en/latest/install.html>`_.)
 
 For Windows, you can use the `virtualenvwrapper-powershell <https://bitbucket.org/guillermooo/virtualenvwrapper-powershell>`_ clone.
 
@@ -136,7 +136,7 @@ Other useful commands
 ``lssitepackages``
   Shows contents of ``site-packages`` directory.
 
-`Full list of virtualenvwrapper commands <http://www.doughellmann.com/docs/virtualenvwrapper/command_ref.html#managing-environments>`_.
+`Full list of virtualenvwrapper commands <http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html>`_.
 
 autoenv
 -------
