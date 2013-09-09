@@ -36,21 +36,21 @@ packages are installed, so it is a very useful addition.
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications for
-real-world use. In particular, you should always install Distribute, as it
+real-world use. In particular, you should always install Setuptools, as it
 makes it much easier for you to use other third-party Python libraries.
 
-Distribute + Pip
+Setuptools + Pip
 ----------------
 
-The most crucial third-party Python software of all is Distribute, which
+The most crucial third-party Python software of all is Setuptools, which
 extends the packaging and installation facilities provided by the distutils in
-the standard library. Once you add Distribute to your Python system you can
+the standard library. Once you add Setuptools to your Python system you can
 download and install any compliant Python software product with a single
 command. It also enables you to add this network installation capability to
 your own Python software with very little work.
 
-To obtain the latest version of Distribute for Windows, run the python script
-available here: `python-distribute <http://python-distribute.org/distribute_setup.py>`_
+To obtain the latest version of Setuptools for Windows, run the python script
+available here: `ez_setup.py <https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py>`_
 
 
 You'll now have a new command available to you: **easy_install**. It is
@@ -58,11 +58,8 @@ considered by many to be deprecated, so we will install its replacement:
 **pip**. Pip allows for uninstallation of packages, and is actively maintained,
 unlike easy_install.
 
-To install pip, simply open a command prompt and run
-
-.. code-block:: console
-
-    > easy_install pip
+To install pip, run the python script available here:
+`get-pip.py <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
 
 
 Virtualenv
@@ -89,7 +86,7 @@ project's directory
 
 .. code-block:: console
 
-    > virtualenv --distribute venv
+    > virtualenv venv
 
 To use an environment, run the ``activate.bat`` batch file in the ``Scripts``
 subdirectory of that environment. Your command prompt will change to show the
