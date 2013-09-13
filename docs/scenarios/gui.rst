@@ -87,3 +87,16 @@ source code to be executed as a standalone desktop application.
 `Python Wiki for PyjamasDesktop <http://wiki.python.org/moin/PyjamasDesktop>`_.
 
 The main website; `pyjs Desktop <http://pyjs.org/>`_.
+
+Camelot
+-------
+`Camelot <http://www.python-camelot.com>`_ provides components for building 
+business applications on top of Python, SQLAlchemy and Qt.  It is inspired by 
+the Django admin interface.  
+
+You can use Camelot to develop both simple and complex business applications 
+at warp speed.
+
+The main resource for information is the website: 
+http://www.python-camelot.com 
+and the mailinglist https://groups.google.com/forum/#!forum/project-camelot
