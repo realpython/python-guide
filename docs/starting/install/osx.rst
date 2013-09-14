@@ -54,19 +54,7 @@ line at the bottom of your ``~/.bashrc`` file
 
 Now, we can install Python 2.7: ::
 
-    $ brew install python --framework
-
-This will take a minute or two. Once that's complete, you'll have to add the
-new Python scripts directory to your ``PATH``
-
-.. code-block:: console
-
-    export PATH=/usr/local/share/python:$PATH
-
-The ``--framework`` option tells Homebrew to compile a Framework-style Python
-build, rather than a UNIX-style build. The outdated version of Python that
-Snow Leopard comes packaged with is built as a Framework, so this helps avoid
-some future module installation bugs.
+    $ brew install python
 
 
 Distribute & Pip
