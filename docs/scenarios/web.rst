@@ -92,7 +92,7 @@ Support can be found on its `mailing list <http://werkzeug.pocoo.org/community/#
 
 Tornado
 --------
-`Tornado <http://http://www.tornadoweb.org/>`_ is a scalable, non-blocking web server and web application framework with
+`Tornado <http://www.tornadoweb.org/>`_ is a scalable, non-blocking web server and web application framework with
 a relative simple usage. Tornado is known for his high performance.
 It was initially developed for `friendfeed <http://friendfeed.com/>`_ , a real time chat and blog system.
 
