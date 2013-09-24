@@ -273,8 +273,8 @@ Unpacking
 ~~~~~~~~~
 
 If you know the length of a list or tuple, you can assign names to its
-elements with unpacking. For example, since you know that ``enumerate()``
-will provide a tuple of two elements for each item in list:
+elements with unpacking. For example, since ``enumerate()`` will provide
+a tuple of two elements for each item in list:
 
 .. code-block:: python
 
