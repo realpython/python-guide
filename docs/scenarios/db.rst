@@ -11,7 +11,7 @@ Nearly all Python database modules such as `sqlite3`, `psycopg` and
 
 Tutorials that explain how to work with modules that conform to this interface can be found
 `here <http://halfcooked.com/presentations/osdc2006/python_databases.html>`__ and
-`here <http://www.amk.ca/python/writing/DB-API.html>`__.
+`here <http://web.archive.org/web/20120815130844/http://www.amk.ca/python/writing/DB-API.html>`__.
 
 SQLAlchemy
 ----------
