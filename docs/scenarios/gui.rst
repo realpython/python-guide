@@ -4,7 +4,7 @@ GUI Applications
 
 Qt
 --
-Qt is a cross-platform application framework that is widely used for developing
+`Qt <http://qt-project.org/>`_ is a cross-platform application framework that is widely used for developing
 software with a GUI but can also be used for non-GUI applications.
 
 PySide

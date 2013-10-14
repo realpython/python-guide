@@ -92,7 +92,7 @@ A free introductory book that teaches python at the beginner level, it assumes n
 previous programming experience.
 
     `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
-    `A Byte of Python for Python 3.x <http://www.swaroopch.org/notes/Python_en:Table_of_Contents>`_
+    `A Byte of Python for Python 3.x <http://swaroopch.com/notes/Python_en-Preface/>`_
 
 
 Advanced
@@ -161,7 +161,6 @@ python's usage, from its syntax to built-in libraries to advanced topics such
 as writing C extensions.
 
     `Python in a Nutshell <http://shop.oreilly.com/product/9780596001889.do>`_
-
 
 The Python Language Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
