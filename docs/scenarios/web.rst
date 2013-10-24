@@ -92,7 +92,7 @@ Support can be found on its `mailing list <http://werkzeug.pocoo.org/community/#
 
 Tornado
 --------
-`Tornado <http://http://www.tornadoweb.org/>`_ is a scalable, non-blocking web server and web application framework with
+`Tornado <http://www.tornadoweb.org/>`_ is a scalable, non-blocking web server and web application framework with
 a relative simple usage. Tornado is known for his high performance.
 It was initially developed for `friendfeed <http://friendfeed.com/>`_ , a real time chat and blog system.
 
@@ -152,7 +152,7 @@ lightweight, easy to use, and uses many UNIX idioms. Gunicorn is not designed
 to face the internet -- it was designed to run behind Nginx which buffers
 slow requests and takes care of other important considerations. A sample
 setup for Nginx + Gunicorn can be found in the
-`Gunicorn help <http://gunicorn.org/deploy.html>`_.
+`Gunicorn help <http://gunicorn.org/index.html#deployment>`_.
 
 .. _uwsgi-ref:
 
@@ -235,9 +235,7 @@ and Pinax applications. Gondor supports Django versions 1.2 and 1.3 on
 Python version 2.7, and can automatically configure your Django site if you
 use ``local_settings.py`` for site-specific configuration information.
 
-Gondor publishes guides to deploying `Django projects
-<https://gondor.io/support/setting-up-django/>`_ and `Pinax projects
-<https://gondor.io/support/setting-up-pinax/>`_ on their platform.
+Gondor has a guide on deploying `Django projects <https://gondor.io/support/django/setup/>`_.
 
 
 Templating

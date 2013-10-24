@@ -32,3 +32,42 @@ and then you can get the child elements name like this:
 
 untangle also supports loading XML from a string or an URL.
 
+xmltodict
+---------
+
+`xmltodict <http://github.com/martinblech/xmltodict>`_ is another simple
+library that aims at making xml feel like working with json.
+
+An xml file like this:
+
+.. code-block:: xml
+
+    <mydocument has="an attribute">
+      <and>
+        <many>elements</many>
+        <many>more elements</many>
+      </and>
+      <plus a="complex">
+        element as well
+      </plus>
+    </mydocument>
+
+can be loaded into a python dict like this:
+
+.. code-block:: python
+
+    import xmltodict
+    obj = xmltodict.parse('path/to/file.xml')
+
+and then you can access elements, attributes and values like this:
+
+.. code-block:: python
+
+    doc['mydocument']['@has'] # == u'an attribute'
+    doc['mydocument']['and']['many'] # == [u'elements', u'more elements']
+    doc['mydocument']['plus']['@a'] # == u'complex'
+    doc['mydocument']['plus']['#text'] # == u'element as well'
+
+xmltodict also lets you roundtrip back to xml with the unparse function,
+has a streaming mode suitable for handling files that don't fit in memory
+and supports namespaces.
