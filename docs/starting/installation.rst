@@ -20,3 +20,26 @@ These guides go over the proper installation of :ref:`Python 2.7 <which-python>`
 - :ref:`Microsoft Windows<install-windows>`.
 - :ref:`Ubuntu Linux <install-linux>`.
 
+Installing Python with Using Popular Python Distributions
+=========================================================
+
+Installing one of the below Python distribution, make it easy to configure 
+Python environment easier for beginners. Popular libraries (Matplotlib, Numpy,
+Pandas etc.) will be installed with these distributions.
+
+Anaconda (CONTINUUM ANALYTICS) Python Distribution
+--------------------------------------------------
+
+Anaconda is free enterprise-ready Python distribution for general purpose
+programming, data processing and scientific computing.
+
+`Anaconda <https://store.continuum.io/cshop/anaconda/>`_
+
+ENTHOUGHT CANOPY (Canopy Express) Python Distribution
+-----------------------------------------------------
+
+Canopy Express is a lightweight distribution of Python essentials for 
+scientific and analytic computing.
+
+`Canopy Express <https://www.enthought.com/products/epd/free/>`_
+
