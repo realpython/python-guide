@@ -51,7 +51,7 @@ that rely on C extensions for their functionality (e.g. numpy) then CPython
 is your only choice.
 
 Being the reference implementation, all versions of the Python language are
-available as CPython. Python 3 is only available as a CPython implementation.
+available as CPython.
 
 PyPy
 ----
@@ -67,7 +67,8 @@ If you are looking to squeeze more performance out of your Python code, it's
 worth giving PyPy a try. On a suite of benchmarks, it's currently `over 5 times
 faster than CPython <http://speed.pypy.org/>`_.
 
-Currently PyPy supports Python 2.7. [#pypy_ver]_
+Currently PyPy supports Python 2.7. PyPy3 which targets Python 3 was recently
+available as a beta release. [#pypy_ver]_
 
 Jython
 ------
