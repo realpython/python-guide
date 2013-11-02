@@ -14,7 +14,7 @@ isolated? By answering questions like these you can begin to plan, in
 a broad sense, what your finished product will look like.
 
 In this section we take a closer look at Python's module and import
-systems as they are the central element to enforcing structure in your
+systems as they are the central elements to enforcing structure in your
 project. We then discuss various perspectives on how to build code which
 can be extended and tested reliably.
 

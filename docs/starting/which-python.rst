@@ -47,7 +47,7 @@ level of compatibility with Python packages and C extension modules.
 
 If you are writing open-source Python code and want to reach the widest possible
 audience, targeting CPython is your best bet. If you need to use any packages
-that rely on C extensions for their functionality (e.g. numpy) then CPython
+that rely on C extensions for their functionality (e.g., numpy) then CPython
 is your only choice.
 
 Being the reference implementation, all versions of the Python language are
@@ -74,7 +74,7 @@ Jython
 ------
 
 `Jython <http://www.jython.org/>`_ is a Python implementation that compiles
-Python code to Java byte code that is then executed in a JVM. It has the additional
+Python code to Java bytecode that is then executed in a JVM. It has the additional
 advantage of being able to import and use any Java class like a Python
 module.
 

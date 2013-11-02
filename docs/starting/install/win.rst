@@ -80,7 +80,7 @@ project. This is particularly important for Web development, where each
 framework and application will have many dependencies.
 
 
-To set up a new Python environment, change the working directory to where ever
+To set up a new Python environment, change the working directory to wherever
 you want to store the environment, and run the virtualenv utility in your
 project's directory
 
