@@ -44,13 +44,30 @@ simply run
 
 The script will explain what changes it will make and prompt you before the
 installation begins.
-Once you've installed Homebrew, insert the Homebrew directory at the top
-of your ``PATH`` environment variable. You can do this by adding the following
-line at the bottom of your ``~/.bashrc`` file
+
+.. code-block:: console
+
+    $ brew doctor
+
+will analyse the setup and give hints which steps you might have missed.
+ 
+Once you've installed Homebrew, move the Homebrew directory to the top
+of your ``PATH`` environment variable. You can do this either globaly 
+by editing ``/etc/paths``, e.g. by 
+
+.. code-block:: console
+
+    $ sudo nano /etc/paths
+
+and writing the last line first or by adding
 
 .. code-block:: console
 
     export PATH=/usr/local/bin:$PATH
+
+to ``~/.bash_profile``. This is tested with OS X 10.8.5.
+Rumor has it that on OS X 10.4 / 10.5 / 10.6 this line should go to ~/.profile, 
+but this is not tested. 
 
 Now, we can install Python 2.7: ::
 
