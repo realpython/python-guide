@@ -169,3 +169,12 @@ This is Python's reference manual, it covers the syntax and the core semantics o
 language.
 
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_
+    
+Python Pocket Reference
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python Pocket Reference, written by Mark Lutz, is an easy to use reference to the
+core language, with descriptions of commonly used modules and toolkits. It covers
+Python 3 and 2.6 versions.
+
+    `Python Pocket Reference <http://shop.oreilly.com/product/9780596158095.do>`_
