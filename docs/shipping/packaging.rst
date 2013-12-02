@@ -67,6 +67,36 @@ Chishop
 written in django which allows you to register/upload with distutils and
 install with easy_install/pip.
 
+S3-Hosted PyPi
+++++++++++++++
+
+One simple option for a personal PyPi server is to use Amazon S3. A prerequisite for this is that you have an Amazon AWS account with an S3 bucket.
+
+1. **Install all your requirements from PyPi or another source**
+2. **Install pip2pi**
+
+* :code:`pip install git+https://github.com/wolever/pip2pi.git`
+
+3. **Follow pip2pi README for pip2tgz and dir2pi commands**
+
+* :code:`pip2tgz packages/ YourPackage` (or :code:`pip2tgz packages/ -r requirements.txt`)
+* :code:`dir2pi packages/`
+
+4. **Upload the new files**
+
+* Use a client like Cyberduck to sync the entire :code:`packages` folder to your s3 bucket
+* Make sure you upload :code:`packages/simple/index.html` as well as all new files and directories
+
+5. **Fix new file permissions**
+
+* By default, when you upload new files to the S3 bucket, they will have the wrong permissions set.
+* Use the Amazon web console to set the READ permission of the files to EVERYONE.
+* If you get HTTP 403 when trying to install a package, make sure you've set the permissions correctly.
+
+6. **All done**
+
+* You can now your package with :code:`pip install --index-url=http://your-s3-bucket/packages/simple/ YourPackage`
+
 For Linux Distributions
 ::::::::::::::::::::::::
 
