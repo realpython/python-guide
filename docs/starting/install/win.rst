@@ -49,8 +49,8 @@ your own Python software with very little work.
 To obtain the latest version of Setuptools for Windows, run the python script
 available here: `ez_setup.py <https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py>`_
 
-You will need to another directory to your PATH, ``C:\Python27\Scripts``, where 
-easy_install.exe and other utilities are stored.  You can do this easily by running 
+You will need to add another directory to your PATH, ``C:\Python27\Scripts``, where 
+``easy_install.exe`` and other utilities are stored.  You can do it easily by running 
 this command again::
 
     C:\Python27\Tools\Scripts\win_add2path.py
