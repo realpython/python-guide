@@ -130,7 +130,7 @@ PyCharm / IntelliJ IDEA
 
 `PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also
 known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
-features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
+features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631>`_.
 
 
 Eclipse
