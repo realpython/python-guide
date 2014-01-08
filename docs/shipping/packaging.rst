@@ -78,5 +78,5 @@ For Linux Distributions
 Useful Tools
 ------------
 
-- epm
-- alien
+- `fpm <https://github.com/jordansissel/fpm>`_
+- `alien <http://joeyh.name/code/alien/>`_
