@@ -176,6 +176,15 @@ Here is an example to be aware of some server overload. In case of some failed t
 A full terminal application like a widely extended top which is based on psutil and with the ability of a client-server
 monitoring is `glance <https://github.com/nicolargo/glances/>`_.
 
+Ansible
+Chef
+----
+
+.. todo:: Write about Ansible
+
+    `Ansible Documentation
+    <http://www.ansibleworks.com/docs/>`_
+
 
 Chef
 ----
