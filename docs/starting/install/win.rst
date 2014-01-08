@@ -25,16 +25,13 @@ tedious, so add the directories for your default Python version to the PATH.
 Assuming that your Python installation is in ``C:\Python27\``, add this to your
 PATH::
 
-    C:\Python27\;C:\Python27\Scripts\
+    C:\Python27\;
 
-You can do this easily by running the following in ``powershell``::
+You can do this easily by running the following command::
 
-    [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
+    C:\Python27\Tools\Scripts\win_add2path.py
 
-The second (``Scripts``) directory receives command files when certain
-packages are installed, so it is a very useful addition.
-You do not need to install or configure anything else to use Python. Having
-said that, I would strongly recommend that you install the tools and libraries
+I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications for
 real-world use. In particular, you should always install Setuptools, as it
 makes it much easier for you to use other third-party Python libraries.
@@ -51,6 +48,12 @@ your own Python software with very little work.
 
 To obtain the latest version of Setuptools for Windows, run the python script
 available here: `ez_setup.py <https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py>`_
+
+You will need to add another directory to your PATH, ``C:\Python27\Scripts``, where 
+``easy_install.exe`` and other utilities are stored.  You can do it easily by running 
+this command again::
+
+    C:\Python27\Tools\Scripts\win_add2path.py
 
 
 You'll now have a new command available to you: **easy_install**. It is
