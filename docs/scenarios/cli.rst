@@ -6,7 +6,10 @@ Command Line Applications
 Clint
 -----
 
-.. todo:: Write about Clint
+`clint <https://pypi.python.org/pypi/clint/>`_ is a python module which is 
+filled with very useful tools for developing commandline applications.
+It supports features such as; CLI Colors and Indents, Simple and Powerful
+Column Printer, Iterator based progress bar and Implicit argument handling.
 
 docopt
 ------

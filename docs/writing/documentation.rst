@@ -94,7 +94,9 @@ Reference`_ should help you familiarize yourself with its syntax.
 Code Documentation Advice
 -------------------------
 
-Comments clarify code and begin with a hash (``#``).
+Comments clarify the code and they are added with purpose of making the 
+code easier to understand. In Python, comments begin with a hash 
+(number sign) (``#``).
 
 .. _docstring-ref:
 
