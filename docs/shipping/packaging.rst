@@ -5,6 +5,8 @@ Packaging your code is important.
 
 You'll need to package your code first before sharing it with other developers.
 
+The `Python Packaging Guide <https://python-packaging-user-guide.readthedocs.org/en/latest/>`_ provides an extensive guide on creating and maintaining Python packages.
+
 For Python Developers
 :::::::::::::::::::::
 
