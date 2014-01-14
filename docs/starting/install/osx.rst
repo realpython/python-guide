@@ -50,7 +50,7 @@ line at the bottom of your ``~/.bashrc`` file
 
 .. code-block:: console
 
-    export PATH=/usr/local/bin:$PATH
+    export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 Now, we can install Python 2.7: ::
 
