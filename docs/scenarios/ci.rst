@@ -67,8 +67,8 @@ example content::
     python:
       - "2.6"
       - "2.7"
-      - "3.1"
       - "3.2"
+      - "3.3"
     # command to install dependencies
     script: python tests/test_all_of_the_units.py
     branches:
