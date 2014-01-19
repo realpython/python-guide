@@ -47,7 +47,7 @@ which provides the following features:
   interpreters
 * Running tests in each of the environments, configuring your test tool of
   choice
-* Acting as a frontend to Continuous Integration servers, reducing boilerplate
+* Acting as a front-end to Continuous Integration servers, reducing boilerplate
   and merging CI and shell-based testing.
 
 
