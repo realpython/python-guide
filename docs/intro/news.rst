@@ -19,7 +19,7 @@ Python-related news.
 Pycoder's Weekly
 ~~~~~~~~~~~~~~~~
 
-Pycoder's Weekly is a free weekly python newsletter for Python developers 
+Pycoder's Weekly is a free weekly Python newsletter for Python developers 
 by Python developers (Project, Articles, News, and Jobs).
 
     `Pycoder's Weekly <http://www.pycoders.com/>`_
