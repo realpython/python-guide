@@ -271,10 +271,10 @@ and to the templates themselves.
   templates. This convenience can lead to uncontrolled
   increase in complexity, and often harder to find bugs.
 
-- It is often necessary to mix javascript templates with
+- It is often necessary to mix JavaScript templates with
   HTML templates. A sane approach to this design is to isolate
   the parts where the HTML template passes some variable content
-  to the javascript code.
+  to the JavaScript code.
 
 
 
@@ -370,7 +370,7 @@ The `base.html` file can be used as base for all site pages which are for exampl
     </body>
 
 
-The next listing is our site page (`site.html`) loaded in the python app which extends `base.html`. The content block is
+The next listing is our site page (`site.html`) loaded in the Python app which extends `base.html`. The content block is
 automatically set into the corresponding block in the base.html page.
 
 .. code-block:: html
