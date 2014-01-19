@@ -46,7 +46,7 @@ Go to your command prompt and type:
    $ python -m SimpleHTTPServer 9000
 
 This runs a simple http server running on port 9000 and will list all packages
-(like **MyPackage**). Now you can install **MyPackage** using any python
+(like **MyPackage**). Now you can install **MyPackage** using any Python
 package installer. Using Pip, you would do it like:
 
 .. code-block:: console
