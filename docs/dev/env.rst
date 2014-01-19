@@ -64,7 +64,7 @@ to do that which also shows status and warning messages in the statusbar would b
 Python-mode
 ^^^^^^^^^^^
 
-Python-mode_ is a complex solution in VIM for working with python code.
+Python-mode_ is a complex solution in VIM for working with Python code.
 It has:
 
 - Asynchronous Python code checking (pylint, pyflakes, pep8, mccabe) in any combination
@@ -94,7 +94,7 @@ Emacs is a powerful text editor. It's fully programmable (lisp), but
 it can be some work to wire up correctly. A good start if you're
 already an Emacs user is `Python Programming in Emacs`_ at EmacsWiki.
 
-1. Emacs itself comes with a python mode.
+1. Emacs itself comes with a Python mode.
 2. Python ships with an alternate version:
    `python-mode.el <https://launchpad.net/python-mode>`_
 3. Fabián Ezequiel Gallina's `python.el <https://github.com/fgallina/python.el>`_
