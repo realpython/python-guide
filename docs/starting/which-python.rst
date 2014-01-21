@@ -13,12 +13,30 @@ Also use Python 2.7.x if you're starting to work on a new Python module. If you
 have managed to get it working on 2.7, you can add support for older 2.x
 versions.
 
+When evaluating your need to use Python 2 over Python 3, it's worth noting that the 
+final 2.x version 2.7 release came out in mid-2010, with a statement of extended 
+support for this end-of-life release. 
+
+There are some key issues that may require you to use Python 2 rather than Python 3:
+
+- If you're deploying to an environment you don't control, that may impose a 
+specific version, rather than allowing you a free selection from the available versions. 
+
+- If you want to use a specific third party package or utility that doesn't yet have 
+a released version that is compatible with Python 3, and porting that package is a 
+non-trivial task, you may choose to use Python 2 in order to retain access to that package.
+
+
 The Future (Python 3)
 ~~~~~~~~~~~~~~~~~~~~~
 
     Python 2.x is the status quo, Python 3.x is the shiny new thing.
 
 `Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
+
+If you don't know which version to use, try Python 3.x. Some existing third-party 
+software is not yet compatible with Python 3, and if you need to use such software, 
+you can download Python 2.7.x instead.
 
 Python 3, on the other hand, differs much more greatly from Python 2, so
 writing code that works both on Python 2 and Python 3 is a very complicated
