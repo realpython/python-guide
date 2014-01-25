@@ -94,7 +94,7 @@ be sure to avoid using special symbols like the dot (.) or question mark (?).
 So a file name like `my.spam.py` is one you should avoid! Naming this way
 will interfere with the way python looks for modules.
 
-In this example python expects to find a "spam.py" file in a folder named "my"
+In the case of `my.spam.py` python expects to find a "spam.py" file in a folder named "my"
 which is not the case. There is an
 `example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the
 dot notation should be used in the python docs.
