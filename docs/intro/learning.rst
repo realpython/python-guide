@@ -140,7 +140,7 @@ A Primer on Scientific Programming with Python, written by Hans Petter Langtange
 mainly covers Python's usage in scientific field. In the book, examples are
 chosen from mathematics and the natural sciences.
 
-    `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-18365-2>`_
+    `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-30292-3>`_
 
 Numerical Methods in Engineering with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
