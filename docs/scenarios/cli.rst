@@ -17,3 +17,14 @@ docopt
 `docopt <http://docopt.org/>`_ is a lightweight, highly Pythonic package that
 allows creating command line interfaces easily and intuitively, by parsing
 POSIX-style usage instructions.
+
+Plac
+------
+
+`Plac <https://pypi.python.org/pypi/plac>`_ is a python module that allows developing command line applications. In fact 
+plac is a simple wrapper over the python standard library `argparse <http://docs.python.org/2/library/argparse.html>`_, it hides most of its 
+complexity by using a declarative interface: the argument parser is inferred 
+rather than written down by imperatively. It is targetting especially unsophisticated
+users, programmers, sys-admins, scientists and in general people writing throw-away
+scripts for themselves, choosing the command-line interface because it is quick
+and simple.
