@@ -33,14 +33,14 @@ package.
 
 While Lion comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
-`Homebrew <http://mxcl.github.com/homebrew/>`_ fills this void.
+`Homebrew <http://brew.sh>`_ fills this void.
 
-To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_,
+To `install Homebrew <https://github.com/Homebrew/homebrew/wiki/installation>`_,
 simply run
 
 .. code-block:: console
 
-    $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" 
 
 The script will explain what changes it will make and prompt you before the
 installation begins.
