@@ -62,12 +62,14 @@ you can still install MyPackage using:
 
    $ pip install  http://127.0.0.1:9000/MyPackage.tar.gz
 
-Chishop
-+++++++
+pypiserver
+++++++++++
 
-`Chishop <https://github.com/benliles/djangopypi>`_ is a simple PyPI server
-written in django which allows you to register/upload with distutils and
-install with easy_install/pip.
+`Pypiserver <https://pypi.python.org/pypi/pypiserver>`_ is a minimal PyPI compatible server.
+It can be used to serve a set of packages to easy_install or pip.  It includes helpful
+features like an administrative command (``-U``) which will update all its packages to their
+latest versions found on PyPI.
+
 
 S3-Hosted PyPi
 ++++++++++++++
