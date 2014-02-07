@@ -17,7 +17,7 @@ or icons. There exist a couple of plugins and settings for the VIM editor to
 aid Python development. If you only develop in Python, a good start is to set
 the default settings for indentation and line-wrapping to values compliant with
 :pep:`8`. In your home directory, open a file called `.vimrc` and add the
-following lines:::
+following lines::
 
     set textwidth=79  " lines longer than 79 columns will be broken
     set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
@@ -118,7 +118,7 @@ Sublime Text
     extraordinary features and amazing performance.
 
 Sublime Text has excellent support for editing Python code and uses Python for
-its plugin API. It also has plugins a diverse variety of plugins, `some of which <https://github.com/SublimeLinter/SublimeLinter>`_
+its plugin API. It also has a diverse variety of plugins, `some of which <https://github.com/SublimeLinter/SublimeLinter>`_
 allow for in-editor PEP8 checking and code "linting".
 
 
