@@ -140,7 +140,7 @@ Other useful commands
 
 autoenv
 -------
-When you ``cd`` into a directory containing a ``.env`` `autoenv <https://github.com/kennethreitz/autoenv>`_
+When you ``cd`` into a directory containing a ``.env``, `autoenv <https://github.com/kennethreitz/autoenv>`_
 automagically activates the environment.
 
 Install it on Mac OS X using ``brew``:
