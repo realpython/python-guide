@@ -115,6 +115,13 @@ running web application in the browser.
 **Support** can also be found in the
 `documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`__.
 
+Falcon
+------
+
+`Falcon <http://falconframework.org/>`_ is a high-performance Python
+framework for building cloud APIs. It encourages the REST
+architectural style, and tries to do as little as possible while
+remaining highly effective.
 
 Web Servers
 :::::::::::
