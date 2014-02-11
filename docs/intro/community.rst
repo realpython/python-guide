@@ -75,7 +75,7 @@ The major events for the Python community are developer conferences. The two
 most notable conferences are PyCon, which is held in the US, and its European
 sibling, EuroPython.
 
-A comprehensive list of conferences is maintained `at pycon.org <http://www.pycon.org/>`_.
+A comprehensive list of conferences is maintained at `pycon.org <http://www.pycon.org/>`_.
 
 
 Python User Groups

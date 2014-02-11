@@ -104,6 +104,8 @@ Pro Python
 This book is for intermediate to advanced Python programmers who are looking to understand how
 and why Python works the way it does and how they can take their code to the next level.
 
+    `Pro Python <http://propython.com>`_
+
 
 Expert Python Programming
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -145,7 +147,7 @@ chosen from mathematics and the natural sciences.
 Numerical Methods in Engineering with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Numerical Methods in Engineering with Python,written by Jaan Kiusalaas, attempts to
+Numerical Methods in Engineering with Python, written by Jaan Kiusalaas, attempts to
 emphasis on numerical methods and how to implement them in Python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
