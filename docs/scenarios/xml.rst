@@ -4,8 +4,8 @@ XML parsing
 untangle
 --------
 
-`untangle <http://0chris.com/untangle>`_ is a simple library which takes
-an XML document and returns a Python object which mirrors the nodes and
+`untangle <https://github.com/stchris/untangle>`_ is a simple library which
+takes an XML document and returns a Python object which mirrors the nodes and
 attributes in its structure.
 
 For example, an XML file like this:

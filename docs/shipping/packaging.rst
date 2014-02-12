@@ -99,12 +99,12 @@ One simple option for a personal PyPi server is to use Amazon S3. A prerequisite
 
 6. **All done**
 
-* You can now your package with :code:`pip install --index-url=http://your-s3-bucket/packages/simple/ YourPackage`
+* You can now install your package with :code:`pip install --index-url=http://your-s3-bucket/packages/simple/ YourPackage`
 
 For Linux Distributions
 ::::::::::::::::::::::::
 
-* `Ubuntu <https://wiki.ubuntu.com/PackagingGuide/Python>`_
+* `Ubuntu <http://packaging.ubuntu.com/html/python-packaging.html>`_
 * `Fedora <https://fedoraproject.org/wiki/Packaging:Python>`_
 * `Debian <http://www.debian.org/doc/packaging-manuals/python-policy/>`_
 * `Arch <https://wiki.archlinux.org/index.php/Python_Package_Guidelines>`_

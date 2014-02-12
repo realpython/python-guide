@@ -177,8 +177,7 @@ A full terminal application like a widely extended top which is based on psutil 
 monitoring is `glance <https://github.com/nicolargo/glances/>`_.
 
 Ansible
-Chef
-----
+-------
 
 .. todo:: Write about Ansible
 
