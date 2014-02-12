@@ -50,7 +50,7 @@ if "%1" == "clean" (
 REM Check if sphinx-build is available and fallback to Python version if any
 %SPHINXBUILD% 2> nul
 if errorlevel 9009 goto sphinx_python
-goto spinx_ok
+goto sphinx_ok
 
 :sphinx_python
 
