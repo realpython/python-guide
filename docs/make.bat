@@ -47,6 +47,14 @@ if "%1" == "clean" (
 )
 
 
+REM Check if sphinx-build is available and fallback to Python version if any
+%SPHINXBUILD% 2> nul
+if errorlevel 9009 goto sphinx_python
+goto spinx_ok
+
+:sphinx_python
+
+set SPHINXBUILD=python -m sphinx.__init__
 %SPHINXBUILD% 2> nul
 if errorlevel 9009 (
 	echo.
@@ -59,6 +67,9 @@ if errorlevel 9009 (
 	echo.http://sphinx-doc.org/
 	exit /b 1
 )
+
+:sphinx_ok
+
 
 if "%1" == "html" (
 	%SPHINXBUILD% -b html %ALLSPHINXOPTS% %BUILDDIR%/html
