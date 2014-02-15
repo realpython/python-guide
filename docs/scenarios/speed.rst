@@ -183,7 +183,13 @@ The `pyximport.install()` command allows the Python interpreter to start the Cyt
 which is automatically compiled to a `*.so` C-library. ... and Cython is able to import this library for you in your Python-code.
 Very easy and very efficient. With the `time.time()` function you are able to compare the time between this 2 different calls to find 500 prime numbers.
 
-Here is the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_  machine:
+On a standard notebook (dualcore AMD E-450 1,6 GHz)  the measured values are:
+
+Cython time: 0.0054 seconds
+
+Python time: 0.0566 seconds
+
+And here the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_  machine:
 
 Cython time: 0.0196 seconds
 
