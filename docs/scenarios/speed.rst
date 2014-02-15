@@ -124,8 +124,8 @@ Strong typing with Cython:
 
 .. code-block:: python
 
-	#primes function with additional Cython code:
-	def primes(int kmax):
+    #primes function with additional Cython code:
+    def primes(int kmax):
         cdef int n, k, i
         cdef int p[1000]
         result = []
@@ -135,7 +135,7 @@ Normal variable definition in Python:
 .. code-block:: python
 
 	#primes in standard Python syntax:
-	def primes( kmax):
+    def primes( kmax):
         p= range(1000)
         result = []
 
@@ -149,7 +149,8 @@ And what is with the speed? So lets try it!
 
 	import time
 	#activate pyx compiler
-	import pyximport; pyximport.install()
+	import pyximport
+	pyximport.install()
 	#primes implemented with Cython
 	import primesCy
 	#primes implemented with Python
@@ -172,14 +173,15 @@ Where is the magic? Here it is:
 
 .. code-block:: python
 
-	import pyximport; pyximport.install()
+    import pyximport
+    pyximport.install()
 
 
 With the module `pyximport` you are able to import Cython `*.pyx` files, in this case `primesCy.pyx`, with the Cython
 version of the primes function.
 The `pyximport.install()` command allows the Python interpreter to start the Cython compiler directly to generate C-code,
 which is automatically compiled to a `*.so` C-library. ... and Cython is able to import this library for you in your Python-code.
-Very easy and very efficient. With the `time.time()` function you are able to compare the time between this 2 different calls to find 500 (!) prime numbers.
+Very easy and very efficient. With the `time.time()` function you are able to compare the time between this 2 different calls to find 500 prime numbers.
 
 Here is the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_  machine:
 
