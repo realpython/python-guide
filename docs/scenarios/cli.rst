@@ -28,3 +28,10 @@ rather than written down by imperatively. It is targetting especially unsophisti
 users, programmers, sys-admins, scientists and in general people writing throw-away
 scripts for themselves, choosing the command-line interface because it is quick
 and simple.
+
+Cliff
+------
+`Cliff <https://cliff.readthedocs.org/en/latest>`_  is a framework for building command line programs. 
+It uses setuptools entry points to provide subcommands, output formatters, and other extensions. The framework
+is meant to be used to create multi-level commands such as subversion and git, where the main program handles 
+some basic argument parsing and then invokes a sub-command to do the work.
