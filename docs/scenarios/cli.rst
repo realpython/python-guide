@@ -31,6 +31,7 @@ and simple.
 
 Cliff
 ------
+
 `Cliff <https://cliff.readthedocs.org/en/latest>`_  is a framework for building command line programs. 
 It uses setuptools entry points to provide subcommands, output formatters, and other extensions. The framework
 is meant to be used to create multi-level commands such as subversion and git, where the main program handles 
