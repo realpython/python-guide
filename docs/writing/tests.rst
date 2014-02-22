@@ -40,7 +40,7 @@ Some general rules of testing:
 - If you are in the middle of a development session and have to interrupt your work, it
   is a good idea to write a broken unit test about what you want to develop next.
   When coming back to work, you will have a pointer to where you were and get
-  faster on tracks.
+  back on track faster.
 
 - The first step when you are debugging your code is to write a new test
   pinpointing the bug. While it is not always possible to do, those bug
