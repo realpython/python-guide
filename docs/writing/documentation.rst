@@ -164,6 +164,7 @@ Epydoc_
 .. _Epydoc: http://epydoc.sourceforge.net
 
 MkDocs_
-    MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation with Markdown.
+    MkDocs is a fast and simple static site generator that's geared towards 
+    building project documentation with Markdown.
 
 .. _MkDocs: http://www.mkdocs.org/
