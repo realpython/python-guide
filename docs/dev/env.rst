@@ -17,7 +17,7 @@ or icons. There exist a couple of plugins and settings for the VIM editor to
 aid Python development. If you only develop in Python, a good start is to set
 the default settings for indentation and line-wrapping to values compliant with
 :pep:`8`. In your home directory, open a file called `.vimrc` and add the
-following lines:::
+following lines::
 
     set textwidth=79  " lines longer than 79 columns will be broken
     set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
@@ -64,7 +64,7 @@ to do that which also shows status and warning messages in the statusbar would b
 Python-mode
 ^^^^^^^^^^^
 
-Python-mode_ is a complex solution in VIM for working with python code.
+Python-mode_ is a complex solution in VIM for working with Python code.
 It has:
 
 - Asynchronous Python code checking (pylint, pyflakes, pep8, mccabe) in any combination
@@ -94,7 +94,7 @@ Emacs is a powerful text editor. It's fully programmable (lisp), but
 it can be some work to wire up correctly. A good start if you're
 already an Emacs user is `Python Programming in Emacs`_ at EmacsWiki.
 
-1. Emacs itself comes with a python mode.
+1. Emacs itself comes with a Python mode.
 2. Python ships with an alternate version:
    `python-mode.el <https://launchpad.net/python-mode>`_
 3. Fabián Ezequiel Gallina's `python.el <https://github.com/fgallina/python.el>`_
@@ -118,7 +118,7 @@ Sublime Text
     extraordinary features and amazing performance.
 
 Sublime Text has excellent support for editing Python code and uses Python for
-its plugin API. It also has plugins a diverse variety of plugins, `some of which <https://github.com/SublimeLinter/SublimeLinter>`_
+its plugin API. It also has a diverse variety of plugins, `some of which <https://github.com/SublimeLinter/SublimeLinter>`_
 allow for in-editor PEP8 checking and code "linting".
 
 
@@ -130,7 +130,7 @@ PyCharm / IntelliJ IDEA
 
 `PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also
 known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
-features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631/>`_.
+features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631>`_.
 
 
 Eclipse

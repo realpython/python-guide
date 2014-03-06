@@ -9,7 +9,7 @@ Python is frequently used for high-performance scientific applications. Python
 is widely used in academia and scientific projects because it is easy to write,
 and it performs really well.
 
-Due to its high performance nature, scientific computing in python often refers
+Due to its high performance nature, scientific computing in Python often refers
 to external libraries, typically written in faster languages (like C, or
 FORTRAN for matrix operations). The main libraries used are `NumPy`_, `SciPy`_
 and `Matplotlib`_. Going into detail about these libraries is beyond the scope
@@ -24,11 +24,11 @@ Tools
 IPython
 -------
 
-`IPytthon <http://ipython.org/>`_ is an enhanced version of Python interpreter.
+`IPython <http://ipython.org/>`_ is an enhanced version of Python interpreter.
 The features it provides are of great interest for the scientists. The `inline mode`
 allow graphics and plots to be displayed in the terminal (Qt based version).
 Moreover the `notebook` mode supports literate programming and reproducible science
-generating a web-based python notebook. This notebook allowing to store chunk of
+generating a web-based Python notebook. This notebook allowing to store chunk of
 Python code along side to the results and additional comments (HTML, LaTeX, Markdown).
 The notebook could be shared and exported in various file formats.
 
@@ -53,10 +53,11 @@ NumPy is compatible with Python versions 2.4 through to 2.7.2 and 3.1+.
 
 Numba
 -----
-Numba is an Numpy aware Python compiler (just-in-time (JIT) specializing 
-compiler) which compiles annotated Python (and Numpy) code to LLVM (Low Level 
-Virtual Machine) (through special decorators). 
-Briefly, Numba using system that compiles Python code with LLVM to code which 
+
+`Numba <http://numba.pydata.org>`_ is an Numpy aware Python compiler
+(just-in-time (JIT) specializing compiler) which compiles annotated Python (and
+Numpy) code to LLVM (Low Level Virtual Machine) (through special decorators).
+Briefly, Numba using system that compiles Python code with LLVM to code which
 can be natively executed at runtime.
 
 SciPy
@@ -64,7 +65,7 @@ SciPy
 
 `SciPy <http://scipy.org/>`_ is a library that uses Numpy for more mathematical
 functions. SciPy uses NumPy arrays as the basic data structure. SciPy comes
-with modules for various commonly used tasks in scientific programing, for
+with modules for various commonly used tasks in scientific programming, for
 example: linear algebra, integration (calculus), ordinary differential equation
 solvers and signal processing.
 
@@ -86,7 +87,7 @@ based on Numpy and which provides many useful functions for accessing,
 indexing, merging and grouping data easily. The main data structure (DataFrame)
 is close to what could be found in the R statistical package, that is
 an heterogeneous data tables with name indexing, time series operations
-and auto-alignement of data.
+and auto-alignment of data.
 
 Rpy2
 ----
@@ -120,7 +121,7 @@ Many people who do scientific computing are on Windows. And yet many of the
 scientific computing packages are notoriously difficult to build and install.
 `Christoph Gohlke <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_ however, has
 compiled a list of Windows binaries for many useful Python packages. The list
-of packages has grown from a mainly scientific python resource to a more
+of packages has grown from a mainly scientific Python resource to a more
 general list. It might be a good idea to check it out if you're on Windows.
 
 Enthought Python Distribution (EPD)

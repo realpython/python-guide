@@ -434,7 +434,7 @@ Check if variable equals a constant
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You don't need to explicitly compare a value to True, or None, or 0 - you can
-just add it to the if statement. See :ref:`Truth Value Testing
+just add it to the if statement. See `Truth Value Testing
 <http://docs.python.org/library/stdtypes.html#truth-value-testing>`_ for a
 list of what is considered false.
 

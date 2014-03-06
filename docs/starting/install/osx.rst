@@ -3,7 +3,7 @@
 Installing Python on Mac OS X
 =============================
 
-The latest version of Mac OS X, Mountain Lion, **comes with Python 2.7 out of the box**.
+The latest version of Mac OS X, Mavericks, **comes with Python 2.7 out of the box**.
 
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
@@ -33,14 +33,14 @@ package.
 
 While Lion comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
-`Homebrew <http://mxcl.github.com/homebrew/>`_ fills this void.
+`Homebrew <http://brew.sh>`_ fills this void.
 
-To `install Homebrew <https://github.com/mxcl/homebrew/wiki/installation>`_,
+To `install Homebrew <https://github.com/Homebrew/homebrew/wiki/installation>`_,
 simply run
 
 .. code-block:: console
 
-    $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" 
 
 The script will explain what changes it will make and prompt you before the
 installation begins.
@@ -50,7 +50,7 @@ line at the bottom of your ``~/.bashrc`` file
 
 .. code-block:: console
 
-    export PATH=/usr/local/bin:$PATH
+    export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 Now, we can install Python 2.7: ::
 
@@ -96,9 +96,9 @@ habit of using it to create completely clean Python environments for each
 project. This is particularly important for Web development, where each
 framework and application will have many dependencies.
 
-To set up a new Python environment, change the working directory to where ever
-you want to store the environment, and run the virtualenv utility in your
-project's directory
+To set up a new Python environment, move into the directory where you would 
+like to store the environment, and use the ``virtualenv`` utility to create 
+the new environment.
 
 .. code-block:: console
 

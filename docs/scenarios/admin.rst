@@ -6,7 +6,7 @@ Fabric
 
 `Fabric <http://docs.fabfile.org>`_ is a library for simplifying system
 administration tasks. While Chef and Puppet tend to focus on managing servers
-and system libraries, fabric is more focused on application level tasks such
+and system libraries, Fabric is more focused on application level tasks such
 as deployment.
 
 Install Fabric:
@@ -77,7 +77,7 @@ It supports remote command execution from a central point (master host) to multi
 hosts (minions). It also supports system states which can be used to configure
 multiple servers using simple template files.
 
-Salt supports python versions 2.6 and 2.7 and can be installed via pip:
+Salt supports Python versions 2.6 and 2.7 and can be installed via pip:
 
 .. code-block:: console
 
@@ -95,7 +95,7 @@ The following command lists all available minion hosts, using the ping module.
 The host filtering is accomplished by matching the minion id, or using the grains system.
 The `grains <http://docs.saltstack.org/en/latest/topics/targeting/grains.html>`_ system
 uses static host information like the operating system version or the CPU architecture to
-provide a host taxonomy for the salt modules.
+provide a host taxonomy for the Salt modules.
 
 The following command lists all available minions running CentOS using the grains system:
 
@@ -119,7 +119,7 @@ and start the Apache server:
         - require:
           - pkg: apache
 
-State files can be written using YAML, the Jinja2 template system or pure python.
+State files can be written using YAML, the Jinja2 template system or pure Python.
 
     `Salt Documentation <http://docs.saltstack.com>`_
 
@@ -175,6 +175,14 @@ Here is an example to be aware of some server overload. In case of some failed t
 
 A full terminal application like a widely extended top which is based on psutil and with the ability of a client-server
 monitoring is `glance <https://github.com/nicolargo/glances/>`_.
+
+Ansible
+-------
+
+.. todo:: Write about Ansible
+
+    `Ansible Documentation
+    <http://www.ansibleworks.com/docs/>`_
 
 
 Chef

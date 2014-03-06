@@ -4,11 +4,11 @@ XML parsing
 untangle
 --------
 
-`untangle <http://0chris.com/untangle>`_ is a simple library which takes
-an XML document and returns a Python object which mirrors the nodes and
+`untangle <https://github.com/stchris/untangle>`_ is a simple library which
+takes an XML document and returns a Python object which mirrors the nodes and
 attributes in its structure.
 
-For example, an xml file like this:
+For example, an XML file like this:
 
 .. code-block:: xml
 
@@ -36,9 +36,9 @@ xmltodict
 ---------
 
 `xmltodict <http://github.com/martinblech/xmltodict>`_ is another simple
-library that aims at making xml feel like working with json.
+library that aims at making XML feel like working with JSON.
 
-An xml file like this:
+An XML file like this:
 
 .. code-block:: xml
 
@@ -52,7 +52,7 @@ An xml file like this:
       </plus>
     </mydocument>
 
-can be loaded into a python dict like this:
+can be loaded into a Python dict like this:
 
 .. code-block:: python
 
@@ -68,6 +68,6 @@ and then you can access elements, attributes and values like this:
     doc['mydocument']['plus']['@a'] # == u'complex'
     doc['mydocument']['plus']['#text'] # == u'element as well'
 
-xmltodict also lets you roundtrip back to xml with the unparse function,
+xmltodict also lets you roundtrip back to XML with the unparse function,
 has a streaming mode suitable for handling files that don't fit in memory
 and supports namespaces.

@@ -47,7 +47,7 @@ which provides the following features:
   interpreters
 * Running tests in each of the environments, configuring your test tool of
   choice
-* Acting as a frontend to Continuous Integration servers, reducing boilerplate
+* Acting as a front-end to Continuous Integration servers, reducing boilerplate
   and merging CI and shell-based testing.
 
 
@@ -65,11 +65,10 @@ example content::
 
     language: python
     python:
-      - "2.5"
       - "2.6"
       - "2.7"
-      - "3.1"
       - "3.2"
+      - "3.3"
     # command to install dependencies
     script: python tests/test_all_of_the_units.py
     branches:

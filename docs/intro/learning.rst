@@ -7,9 +7,9 @@ Beginner
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Learnpython.org is an easy non-intimidating way to get introduced to python.
+Learnpython.org is an easy non-intimidating way to get introduced to Python.
 The website takes the same approach used on the popular `Try Ruby <http://tryruby.org/>`_
-website, it has an interactive python interpreter built into the site that
+website, it has an interactive Python interpreter built into the site that
 allows you to go through the lessons without having to install Python locally.
 
     `Learn Python <http://www.learnpython.org/>`_
@@ -52,11 +52,11 @@ Think Python: How to Think Like a Computer Scientist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Think Python attempts to give an introduction to basic concepts in computer
-science through the use of the python language. The focus was to create a book
+science through the use of the Python language. The focus was to create a book
 with plenty of exercises, minimal jargon and a section in each chapter devoted
 to the subject of debugging.
 
-While exploring the various features available in the python language the
+While exploring the various features available in the Python language the
 author weaves in various design patterns and best practices.
 
 The book also includes several case studies which have the reader explore the
@@ -72,11 +72,11 @@ Python Koans
 
 Python Koans is a port of Edgecase's Ruby Koans.  It uses a test-driven
 approach, q.v. TEST DRIVEN DESIGN SECTION to provide an interactive tutorial
-teaching basic python concepts.  By fixing assertion statements that fail in a
-test script, this provides sequential steps to learning python.
+teaching basic Python concepts.  By fixing assertion statements that fail in a
+test script, this provides sequential steps to learning Python.
 
 For those used to languages and figuring out puzzles on their own, this can be
-a fun, attractive option. For those new to python and programming, having an
+a fun, attractive option. For those new to Python and programming, having an
 additional resource or reference will be helpful.
 
     `Python Koans <http://bitbucket.org/gregmalcolm/python_koans>`_
@@ -88,7 +88,7 @@ More information about test driven development can be found at these resources:
 A Byte of Python
 ~~~~~~~~~~~~~~~~
 
-A free introductory book that teaches python at the beginner level, it assumes no
+A free introductory book that teaches Python at the beginner level, it assumes no
 previous programming experience.
 
     `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
@@ -103,6 +103,8 @@ Pro Python
 
 This book is for intermediate to advanced Python programmers who are looking to understand how
 and why Python works the way it does and how they can take their code to the next level.
+
+    `Pro Python <http://propython.com>`_
 
 
 Expert Python Programming
@@ -137,16 +139,16 @@ A Primer on Scientific Programming with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Primer on Scientific Programming with Python, written by Hans Petter Langtangen,
-mainly covers python's usage in scientific field. In the book, examples are
-choosen from mathematics and the natural sciences.
+mainly covers Python's usage in scientific field. In the book, examples are
+chosen from mathematics and the natural sciences.
 
-    `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-18365-2>`_
+    `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-30292-3>`_
 
 Numerical Methods in Engineering with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Numerical Methods in Engineering with Python,written by Jaan Kiusalaas, attempts to
-emphasis on numerical methods and how to implement them in python.
+Numerical Methods in Engineering with Python, written by Jaan Kiusalaas, attempts to
+emphasis on numerical methods and how to implement them in Python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
 
@@ -157,7 +159,7 @@ Python in a Nutshell
 ~~~~~~~~~~~~~~~~~~~~
 
 Python in a Nutshell, written by Alex Martelli, covers most cross-platform
-python's usage, from its syntax to built-in libraries to advanced topics such
+Python's usage, from its syntax to built-in libraries to advanced topics such
 as writing C extensions.
 
     `Python in a Nutshell <http://shop.oreilly.com/product/9780596001889.do>`_
@@ -169,3 +171,12 @@ This is Python's reference manual, it covers the syntax and the core semantics o
 language.
 
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_
+    
+Python Pocket Reference
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python Pocket Reference, written by Mark Lutz, is an easy to use reference to the
+core language, with descriptions of commonly used modules and toolkits. It covers
+Python 3 and 2.6 versions.
+
+    `Python Pocket Reference <http://shop.oreilly.com/product/9780596158095.do>`_
