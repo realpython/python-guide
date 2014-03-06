@@ -96,9 +96,9 @@ habit of using it to create completely clean Python environments for each
 project. This is particularly important for Web development, where each
 framework and application will have many dependencies.
 
-To set up a new Python environment, change the working directory to wherever
-you want to store the environment, and run the virtualenv utility in your
-project's directory
+To set up a new Python environment, move into the directory where you would 
+like to store the environment, and use the ``virtualenv`` utility to create 
+the new environment.
 
 .. code-block:: console
 
