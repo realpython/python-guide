@@ -68,8 +68,11 @@ C Extensions
 Cython
 ------
 
-With `Cython <http://cython.org/>`_   you are able to write C and C++ modules for Python. It implements a superset of the Python language.
-You are also able to call C-functions and realize declaration of variables and functions like in C. Here is an example:
+`Cython <http://cython.org/>`_ implements a superset of the Python language 
+with which you are able to write C and C++ modules for Python. Cython also 
+allows you to call functions from compiled C libraries. Using Cython allows 
+you to take advantage of Python's strong typing of variables and operations.  
+Here is an example of strong typing with Cython:
 
 .. code-block:: python
 
@@ -121,9 +124,8 @@ This implementation of an algorithm to find prime numbers has some additional ke
             n = n + 1
         return result
 
-
-
-The only difference between the both algorithm is this part:
+Notice that in the Cython version you declare integers and integer arrays for 
+to be compiled into C types while also creating a Python list:
 
 
 .. code-block:: python
