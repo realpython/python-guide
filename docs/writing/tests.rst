@@ -50,7 +50,7 @@ Some general rules of testing:
   slightly different than that of running code, where short names are often
   preferred. The reason is testing functions are never called explicitly.
   ``square()`` or even ``sqr()`` is ok in running code, but in testing code you
-  would has names such as ``test_square_of_number_2()``,
+  would have names such as ``test_square_of_number_2()``,
   ``test_square_negative_number()``. These function names are displayed when a
   test fail, and should be as descriptive as possible.
 
