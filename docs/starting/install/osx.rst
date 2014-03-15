@@ -118,7 +118,6 @@ copy your code out of it, and then delete the main directory for the environment
 An useful set of extensions to virtualenv is available in virtualenvwrapper,
 `RTFD <http://virtualenvwrapper.readthedocs.org/en/latest/>`_ to find out more.
 
-
 --------------------------------
 
 This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
