@@ -252,7 +252,8 @@ mock
 ----
 
 mock is a library for testing in Python. Starting with Python 3.3, it is 
-available in the standard library. For older versions of python, simply:
+available in the `standard library <http://docs.python.org/dev/library/unittest.mock`_.  For older versions of 
+python, simply:
 
 .. code-block:: console
 
