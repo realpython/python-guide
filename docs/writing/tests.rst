@@ -251,7 +251,8 @@ the need to change any other code.
 mock
 ----
 
-mock is a library for testing in Python.
+mock is a library for testing in Python. Starting with Python 3.3, it is 
+available in the standard library. For older versions of python, simply:
 
 .. code-block:: console
 
