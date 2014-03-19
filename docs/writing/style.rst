@@ -543,6 +543,7 @@ Use :py:func:`enumerate` keep a count of your place in the list.
 
 .. code-block:: python
 
+    a = [3, 4, 5]
     for i, item in enumerate(a):
         print i, item
     # prints
