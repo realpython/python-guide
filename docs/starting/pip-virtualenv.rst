@@ -82,3 +82,47 @@ After saving the changes and sourcing your ``~/.bashrc`` file you can now instal
 packages globally by running ``gpip install``. You can change the name of the
 function to anything you like, just keep in mind that you will have to use that
 name when trying to install packages globally with pip.
+
+Caching packages for future use
+-------------------------------
+
+Every developer has preferred libraries and when you are working on a lot of
+different projects, you are bound to have some overlap between the libraries that
+you use. For example, you may be using the ``requests`` library in a lot of different
+projects.
+
+It is surely unnecessary to re-download the same packages/libraries each time you
+start working on a new project (and in a new virtual environmen as a result).
+Fortunately, you can configure pip in such a way that it tries to reuse already
+installed packages.
+
+On UNIX systems, you can add the following line to your ``.bashrc`` or ``.bash_profile``
+file.
+
+.. code-block:: console
+
+    export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+
+Naturally, you can set the path to anywhere you like (as long as you have write
+access). After adding this line, ``source`` your ``.bashrc`` (or ``.bash_profile``)
+file and you will be all set.
+
+Another way of doing the same configuration is via the ``pip.conf`` or ``pip.ini``
+files, depending on your system. If you are on Windows, you can add the following
+line to your ``pip.ini`` file under ``[global]`` settings:
+
+.. code-block:: console
+
+    download-cache = %HOME%\pip\cache
+
+Similarly, on UNIX systems you should simply add the following line to your
+``pip.conf`` file under ``[global]`` settings:
+
+.. code-block:: console
+
+    download-cache = $HOME/.pip/cache
+
+Even though you can use any path you like to store your cache, it is recommended
+that you create a new folder *in* the folder where your ``pip.conf`` or ``pip.ini``
+file lives. If you don't trust yourself with all of this path voodoo, just use
+the values provided here and you will be fine.
