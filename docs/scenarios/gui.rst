@@ -1,20 +1,7 @@
 GUI Applications
 ================
 
-
-Tk
---
-Tkinter is a thin object-oriented layer on top of Tcl/Tk. **It has the advantage
-of being included with the Python standard library, making it the most
-convenient and compatible toolkit to program with.**
-
-Both Tk and Tkinter are available on most Unix platforms, as well as on Windows
-and Macintosh systems. Starting with the 8.0 release, Tk offers native look and
-feel on all platforms.
-
-There's a good multi-language Tk tutorial with Python examples at
-`TkDocs <http://www.tkdocs.com/tutorial/index.html>`_. There's more information
-available on the `Python Wiki <http://wiki.python.org/moin/TkInter>`_.
+Alphabetical list of GUI Applications.
 
 Camelot
 -------
@@ -87,6 +74,20 @@ Qt
 --
 `Qt <http://qt-project.org/>`_ is a cross-platform application framework that is widely used for developing
 software with a GUI but can also be used for non-GUI applications.
+
+Tk
+--
+Tkinter is a thin object-oriented layer on top of Tcl/Tk. **It has the advantage
+of being included with the Python standard library, making it the most
+convenient and compatible toolkit to program with.**
+
+Both Tk and Tkinter are available on most Unix platforms, as well as on Windows
+and Macintosh systems. Starting with the 8.0 release, Tk offers native look and
+feel on all platforms.
+
+There's a good multi-language Tk tutorial with Python examples at
+`TkDocs <http://www.tkdocs.com/tutorial/index.html>`_. There's more information
+available on the `Python Wiki <http://wiki.python.org/moin/TkInter>`_.
 
 wxPython
 --------
