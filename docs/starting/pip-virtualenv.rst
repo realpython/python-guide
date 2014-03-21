@@ -103,7 +103,7 @@ file.
 
     export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
-Naturally, you can set the path to anywhere you like (as long as you have write
+You can set the path to anywhere you like (as long as you have write
 access). After adding this line, ``source`` your ``.bashrc`` (or ``.bash_profile``)
 file and you will be all set.
 
