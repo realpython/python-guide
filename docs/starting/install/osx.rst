@@ -11,9 +11,10 @@ described in the next section before you start building Python applications
 for real-world use. In particular, you should always install Distribute, as it
 makes it much easier for you to use other third-party Python libraries.
 
-The version of Python that ships with OS X is great for learning, but it's not
-good for development. It's slightly out of date, and Apple has made significant
-changes that can cause hidden bugs.
+The version of Python that ships with OS X is great for learning. Yet, it's not
+good for development. The version shipped with OS X may be out of date from the
+`official current Python release <https://www.python.org/downloads/mac-osx/>`_,
+which is considered the stable production version.
 
 Doing it Right
 --------------
@@ -31,7 +32,7 @@ package.
     In combination, the software can cause issues that are difficult to
     diagnose.
 
-While Lion comes with a large number of UNIX utilities, those familiar with
+While OS X comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
 `Homebrew <http://brew.sh>`_ fills this void.
 
