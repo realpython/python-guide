@@ -46,7 +46,7 @@ Windows
 bbFreeze
 ~~~~~~~~
 
-Prerequisite is to install :ref:`Python, Distribute and pywin32 dependency on Windows <install-windows>`.
+Prerequisite is to install :ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
 
 .. todo:: Write steps for most basic .exe
 
@@ -79,7 +79,7 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`.
 PyInstaller
 ~~~~~~~~~~~
 
-Prerequisite is to have installed :ref:`Python, Distribute and pywin32 dependency on Windows <install-windows>`.
+Prerequisite is to have installed :ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
 
 - `Most basic tutorial <http://bojan-komazec.blogspot.com/2011/08/how-to-create-windows-executable-from.html>`_
 - `Manual <http://www.pyinstaller.org/export/d3398dd79b68901ae1edd761f3fe0f4ff19cfb1a/project/doc/Manual.html?format=raw>`_
