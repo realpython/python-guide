@@ -18,20 +18,20 @@ side-by-side with the system's Python 2.4 installation.
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications
-for real-world use. In particular, you should always install Distribute, as
+for real-world use. In particular, you should always install Setuptools, as
 it makes it much easier for you to use other third-party Python libraries.
 
-Distribute & Pip
+Setuptools & Pip
 ----------------
 
-The most crucial third-party Python software of all is Distribute, which
+The most crucial third-party Python software of all is Setuptools, which
 extends the packaging and installation facilities provided by the distutils
-in the standard library. Once you add Distribute to your Python system you can
+in the standard library. Once you add Setuptools to your Python system you can
 download and install any compliant Python software product with a single
 command. It also enables you to add this network installation capability to
 your own Python software with very little work.
 
-To obtain the latest version of Distribute for Linux, run the python script
+To obtain the latest version of Setuptools for Linux, run the python script
 available here: `python-distribute <http://python-distribute.org/distribute_setup.py>`_
 
 The new``easy_install`` command you have available is considered by many to be
@@ -48,7 +48,7 @@ To install pip, simply open a command prompt and run
 Virtualenv
 ----------
 
-After Distribute & Pip, the next development tool that you should install is
+After Setuptools & Pip, the next development tool that you should install is
 `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
 
 .. code-block:: console

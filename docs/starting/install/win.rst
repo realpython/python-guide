@@ -65,7 +65,7 @@ To install pip, run the python script available here:
 Virtualenv
 ----------
 
-After Distribute & Pip, the next development tool that you should install is
+After Setuptools & Pip, the next development tool that you should install is
 `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
 
 .. code-block:: console
