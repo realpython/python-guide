@@ -21,6 +21,26 @@ excellent resource for learning all aspects of the language.
     `Python for You and Me <http://pymbook.readthedocs.org/>`_
 
 
+Invent Your Own Computer Games with Python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This beginner's book is for those with no programming experience at all. Each
+chapter has the source code to a small game, using these example programs
+to demonstrate programming concepts to give the reader an idea of what
+programs "look like".
+
+    `Invent Your Own Computer Games with Python <http://inventwithpython.com/>`_
+
+
+Hacking Secret Ciphers with Python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This book teaches Python programming and basic cryptography for absolute
+beginners. The chapters provide the source code for various ciphres, as well
+as programs that can break them.
+
+    `Hacking Secret Ciphers with Python <http://inventwithpython.com/hacking/>`_
+
 Learn Python the Hard Way
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
