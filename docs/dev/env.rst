@@ -51,7 +51,7 @@ order to do this, add the following lines to your ``.vimrc``::
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
 
-If you are already using syntastic_ you can enable it to run Pyflakes on write
+If you are already using syntastic_ you can enable it to run Pyflakes on write,
 and show errors and warnings in the quickfix window. An example configuration
 to do that which also shows status and warning messages in the statusbar would be::
 
@@ -143,7 +143,7 @@ The most popular Eclipse plugin for Python development is Aptana's
 Komodo IDE
 ----------
 `Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by
-ActiveState and is a commercial IDE for Windows, Mac and Linux.
+ActiveState and is a commercial IDE for Windows, Mac, and Linux.
 
 
 Spyder
@@ -234,9 +234,9 @@ Install packages as usual:
 
     $ pip install requests
 
-To stop using an environment simply type ``deactivate``. To remove the
+To stop using an environment, simply type ``deactivate``. To remove the
 environment, just remove the directory it was installed into. (In this
-case, it would be ``rm -rf venv``).
+case, it would be ``rm -rf venv``.)
 
 Other Notes
 ^^^^^^^^^^^
