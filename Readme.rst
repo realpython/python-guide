@@ -16,17 +16,17 @@ basis.
 
 Topics include:
 
-- Platform/version specific installations
+- Platform- and version-specific installations
 - Py2app, Py2exe, bbfreeze, pyInstaller
-- Pip / virtualenv
-- Documentation. Writing it.
-- server configurations / tools for various web frameworks
+- pip & virtualenv
 - fabric
-- exhaustive module recommendations, grouped by topic/purpose
-- Testing. Jenkins + tox guides.
-- How to interface w/ hg from git easily
-- what libraries to use for what
+- Exhaustive module recommendations, grouped by topic/purpose
+- Which libraries to use for what
+- Server configurations & tools for various web frameworks
+- Documentation: writing it
+- Testing: Jenkins & tox guides
+- How to easily interface ``hg`` from ``git`` easily
 
-If you are not fond of reading reStructuredText, there is an
+If you aren't fond of reading reStructuredText, there is an
 almost up-to-date `HTML version at docs.python-guide.org
 <http://docs.python-guide.org>`_.
