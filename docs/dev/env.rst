@@ -16,7 +16,7 @@ Vim is a text editor which uses keyboard shortcuts for editing instead of menus
 or icons. There exist a couple of plugins and settings for the VIM editor to
 aid Python development. If you only develop in Python, a good start is to set
 the default settings for indentation and line-wrapping to values compliant with
-:pep:`8`. In your home directory, open a file called `.vimrc` and add the
+:pep:`8`. In your home directory, open a file called ``.vimrc`` and add the
 following lines::
 
     set textwidth=79  " lines longer than 79 columns will be broken
@@ -42,11 +42,11 @@ If your VIM is compiled with `+python` you can also utilize some very handy
 plugins to do these checks from within the editor.
 
 For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
-install vim-pyflakes_. Now you can map the functions `Pep8()` or `Pyflakes()`
+install vim-pyflakes_. Now you can map the functions ``Pep8()`` or ``Pyflakes()``
 to any hotkey or action you want in Vim. Both plugins will display errors at
 the bottom of the screen, and provide an easy way to jump to the corresponding
 line. It's very handy to call these functions whenever you save a file. In
-order to do this, add the following lines to your `vimrc`::
+order to do this, add the following lines to your ``.vimrc``::
 
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
@@ -67,12 +67,12 @@ Python-mode
 Python-mode_ is a complex solution in VIM for working with Python code.
 It has:
 
-- Asynchronous Python code checking (pylint, pyflakes, pep8, mccabe) in any combination
+- Asynchronous Python code checking (``pylint``, ``pyflakes``, ``pep8``, ``mccabe``) in any combination
 - Code refactoring and autocompletion with Rope
 - Fast Python folding
 - Virtualenv support
 - Search by Python documentation and run Python code
-- Auto PEP8 error fixes
+- Auto PEP8_ error fixes
 
 And more.
 
@@ -105,10 +105,10 @@ already an Emacs user is `Python Programming in Emacs`_ at EmacsWiki.
 TextMate
 --------
 
-"`TextMate <http://macromates.com/>`_ brings Apple's approach to operating
-systems into the world of text editors. By bridging UNIX underpinnings and GUI,
-TextMate cherry-picks the best of both worlds to the benefit of expert
-scripters and novice users alike."
+    `TextMate <http://macromates.com/>`_ brings Apple's approach to operating
+    systems into the world of text editors. By bridging UNIX underpinnings and GUI,
+    TextMate cherry-picks the best of both worlds to the benefit of expert
+    scripters and novice users alike.
 
 Sublime Text
 ------------
@@ -189,18 +189,22 @@ virtualenv
 Virtualenv is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them.
 It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
-dilemma and keeps your global site-packages directory clean and manageable.
+dilemma, and keeps your global ``site-packages`` directory clean and manageable.
 
 `virtualenv <http://www.virtualenv.org/en/latest/index.html>`_ creates
 a folder which contains all the necessary executables to contain the
 packages that a Python project would need. An example workflow is given.
 
-Install virtualenv::
+Install virtualenv:
+
+.. code-block:: console
 
     $ pip install virtualenv
 
 
-Create a virtual environment for a project::
+Create a virtual environment for a project:
+
+.. code-block:: console
 
     $ cd my_project
     $ virtualenv venv
@@ -211,7 +215,9 @@ library which you can use to install other packages. The name of the
 virtual environment (in this case, it was ``venv``) can be anything;
 omitting the name will place the files in the current directory instead.
 
-To start using the virtual environment, run::
+To start using the virtual environment, run:
+
+.. code-block:: console
 
     $ source venv/bin/activate
 
@@ -219,8 +225,12 @@ To start using the virtual environment, run::
 The name of the current virtual environment will now appear on the left
 of the prompt (e.g. ``(venv)Your-Computer:your_project UserName$``) to
 let you know that it's active. From now on, any package that you install
-using ``pip`` will be placed in the venv folder, isolated from the global
-Python installation. Install packages as usual::
+using ``pip`` will be placed in the ``venv`` folder, isolated from the global
+Python installation. 
+
+Install packages as usual:
+
+.. code-block:: console
 
     $ pip install requests
 
@@ -239,7 +249,7 @@ for keeping the package list clean in case it needs to be accessed later.
 In order to keep your environment consistent, it's a good idea to "freeze"
 the current state of the environment packages. To do this, run
 
-::
+.. code-block:: console
 
     $ pip freeze > requirements.txt
 
@@ -249,7 +259,7 @@ versions. Later, when a different developer (or you, if you need to re-
 create the environment) can install the same packages, with the same
 versions by running
 
-::
+.. code-block:: console
 
     $ pip install -r requirements.txt
 
@@ -265,14 +275,14 @@ virtualenvwrapper
 `Virtualenvwrapper <http://pypi.python.org/pypi/virtualenvwrapper>`_ makes
 virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
 
-::
+.. code-block:: console
 
     $ pip install virtualenvwrapper
 
 
-Put this into your `~/.bash_profile` (Linux/Mac) file:
+Put this into your ``~/.bash_profile`` (Linux/Mac) file:
 
-::
+.. code-block:: console
 
     $ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
@@ -312,7 +322,7 @@ most out of using Python interactively. Its main components are:
 * Flexible, embeddable interpreters to load into your own projects.
 * Tools for high level and interactive parallel computing.
 
-::
+.. code-block:: console
 
     $ pip install ipython
 
@@ -333,7 +343,7 @@ Python interpreter for Unix-like operating systems. It has the following feature
 * Auto-indentation.
 * Python 3 support.
 
-::
+.. code-block:: console
 
     $ pip install bpython
 
