@@ -21,7 +21,7 @@ latter will ssh into each server, cd to our project directory, activate the
 virtual environment, pull the newest codebase, and restart the application
 server.
 
-::
+.. code-block:: python
 
     from fabric.api import cd, env, prefix, run, task
 

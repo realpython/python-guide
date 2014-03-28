@@ -336,7 +336,9 @@ Instead, use a list comprehension:
     four_lists = [[] for __ in xrange(4)]
 
 
-A common idiom for creating strings is to use :py:meth:`str.join` on an empty string.::
+A common idiom for creating strings is to use :py:meth:`str.join` on an empty string.
+
+.. code-block:: python
 
     letters = ['s', 'p', 'a', 'm']
     word = ''.join(letters)
@@ -345,7 +347,9 @@ This will set the value of the variable *word* to 'spam'. This idiom can be appl
 
 Sometimes we need to search through a collection of things. Let's look at two options: lists and dictionaries.
 
-Take the following code for example::
+Take the following code for example:
+
+.. code-block:: python
 
     d = {'s': [], 'p': [], 'a': [], 'm': []}
     l = ['s', 'p', 'a', 'm']
@@ -365,7 +369,7 @@ Zen of Python
 
 Also known as :pep:`20`, the guiding principles for Python's design.
 
-::
+.. code-block:: pycon
 
     >>> import this
     The Zen of Python, by Tim Peters
@@ -406,14 +410,15 @@ exists a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
 that can check your code for conformance. Install it by running the following
 command in your Terminal:
 
-::
+
+.. code-block:: console
 
     $ pip install pep8
 
 
 Then run it on a file or series of files to get a report of any violations.
 
-::
+.. code-block:: console
 
     $ pep8 optparse.py
     optparse.py:69:11: E401 multiple imports on one line

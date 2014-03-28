@@ -23,6 +23,6 @@ the instructions for your platform `here <https://pypi.python.org/pypi/Pillow/2.
 
 After that, it's straightforward:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ pip install Pillow

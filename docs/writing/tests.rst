@@ -81,7 +81,7 @@ series of tools.
 
 Creating testcases is accomplished by subclassing a TestCase base class
 
-::
+.. code-block:: python
 
     import unittest
 
@@ -148,7 +148,7 @@ py.test is a no-boilerplate alternative to Python's standard unittest module.
 
 Despite being a fully-featured and extensible test tool, it boasts a simple
 syntax. Creating a test suite is as easy as writing a module with a couple of
-functions
+functions:
 
 .. code-block:: python
 
@@ -251,9 +251,10 @@ the need to change any other code.
 mock
 ----
 
-mock is a library for testing in Python. Starting with Python 3.3, it is 
-available in the `standard library <http://docs.python.org/dev/library/unittest.mock`_.  For older versions of 
-python, simply:
+**``mock``** is a library for testing in Python. As of Python 3.3, it is 
+available in the `standard library <http://docs.python.org/dev/library/unittest.mock`_.  
+
+For older versions of Python:
 
 .. code-block:: console
 
@@ -262,7 +263,7 @@ python, simply:
 It allows you to replace parts of your system under test with mock objects and
 make assertions about how they have been used.
 
-For example, you can monkey patch a method
+For example, you can monkey-patch a method:
 
 .. code-block:: python
 

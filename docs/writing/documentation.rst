@@ -100,7 +100,9 @@ code easier to understand. In Python, comments begin with a hash
 
 .. _docstring-ref:
 
-In Python, *docstrings* describe modules, classes, and functions: ::
+In Python, *docstrings* describe modules, classes, and functions: 
+
+.. code-block:: python
 
     def square_and_rooter(x):
         """Returns the square root of self times self."""
@@ -130,7 +132,9 @@ Docstrings versus Block comments
 
 These aren't interchangeable. For a function or class, the leading
 comment block is a programmer's note. The docstring describes the
-operation of the function or class: ::
+*operation* of the function or class:
+
+.. code-block:: python
 
     # This function slows down program execution for some reason.
     def square_and_rooter(x):

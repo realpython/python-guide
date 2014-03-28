@@ -20,9 +20,9 @@ SQLAlchemy
 Unlike many database libraries it not only provides an ORM layer but also a
 generalized API for writing database-agnostic code without SQL.
 
-::
+.. code-block:: console
 
-    pip install sqlalchemy
+    $ pip install sqlalchemy
 
 Django ORM
 ----------
