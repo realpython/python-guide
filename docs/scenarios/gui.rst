@@ -5,16 +5,11 @@ Alphabetical list of GUI Applications.
 
 Camelot
 -------
+.. note:: If your software does not fully comply with the GPL you will need a commercial license!
+
 `Camelot <http://www.python-camelot.com>`_ provides components for building 
-business applications on top of Python, SQLAlchemy and Qt.  It is inspired by 
-the Django admin interface.  
-
-You can use Camelot to develop both simple and complex business applications 
-at warp speed.
-
-The main resource for information is the website: 
-http://www.python-camelot.com 
-and the mailinglist https://groups.google.com/forum/#!forum/project-camelot
+applications on top of Python, SQLAlchemy and Qt.  It is inspired by the
+Django admin interface.
 
 Cocoa
 -----
