@@ -30,7 +30,7 @@ Strive to keep any contributions relevant to the :ref:`purpose of The Guide
 * `Cite <http://sphinx.pocoo.org/rest.html?highlight=citations#citations>`_
   references where needed.
 * If a subject isn't directly relevant to Python, but useful in conjunction
-  with Python (e.g. Git, GitHub, Databases), reference by linking to useful
+  with Python (e.g., Git, GitHub, Databases), reference by linking to useful
   resources, and describe why it's useful to Python.
 * When in doubt, ask.
 
