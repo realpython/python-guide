@@ -8,7 +8,7 @@ The latest version of Mac OS X, Mavericks, **comes with Python 2.7 out of the bo
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications
-for real-world use. In particular, you should always install Distribute, as it
+for real-world use. In particular, you should always install Setuptools, as it
 makes it much easier for you to use other third-party Python libraries.
 
 The version of Python that ships with OS X is great for learning. Yet, it's not
@@ -65,25 +65,26 @@ new Python scripts directory to your ``PATH``
     export PATH=/usr/local/share/python:$PATH
 
 
-Distribute & Pip
+Setuptools & Pip
 ----------------
 
-The most crucial third-party Python software of all is Distribute, which
+The most crucial third-party Python software of all is Setuptools, which
 extends the packaging and installation facilities provided by the distutils
-in the standard library. Once you add Distribute to your Python system you can
+in the standard library. Once you add Setuptools to your Python system you can
 download and install any compliant Python software product with a single
 command. It also enables you to add this network installation capability to
 your own Python software with very little work. Homebrew already installed
-Distribute for you.
+Setuptools for you.
 
 Happily, when you ran `brew install python`, Homebrew also installed **pip**.
-Pip allows for uninstallation of packages, and is actively maintained.
+Pip allows for installation and uninstallation of packages, and is actively
+maintained.
 
 
 Virtualenv
 ----------
 
-After Distribute & Pip, the next development tool that you should install is
+After Setuptools & Pip, the next development tool that you should install is
 `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
 
 .. code-block:: console
@@ -103,7 +104,7 @@ the new environment.
 
 .. code-block:: console
 
-    $ virtualenv --distribute venv
+    $ virtualenv venv
 
 To use an environment, run ``source venv/bin/activate``. Your command prompt
 will change to show the active environment. Once you have finished working in
