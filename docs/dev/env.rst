@@ -51,7 +51,7 @@ order to do this, add the following lines to your ``.vimrc``::
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
 
-If you are already using syntastic_ you can enable it to run Pyflakes on write,
+If you are already using syntastic_ you can enable it to run Pyflakes on write
 and show errors and warnings in the quickfix window. An example configuration
 to do that which also shows status and warning messages in the statusbar would be::
 
