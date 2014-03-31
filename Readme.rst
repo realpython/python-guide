@@ -18,7 +18,8 @@ Topics include:
 
 - Platform- and version-specific installations
 - Py2app, Py2exe, bbfreeze, pyInstaller
-- pip & virtualenv
+- pip
+- virtualenv
 - fabric
 - Exhaustive module recommendations, grouped by topic/purpose
 - Which libraries to use for what
