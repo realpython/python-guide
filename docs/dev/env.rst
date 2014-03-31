@@ -189,7 +189,7 @@ virtualenv
 Virtualenv is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them.
 It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
-dilemma, and keeps your global ``site-packages`` directory clean and manageable.
+dilemma, and keeps your global site-packages directory clean and manageable.
 
 `virtualenv <http://www.virtualenv.org/en/latest/index.html>`_ creates
 a folder which contains all the necessary executables to contain the
