@@ -12,7 +12,7 @@ the Django admin interface.
 The main resource for information is the website: 
 http://www.python-camelot.com 
 and the mailinglist https://groups.google.com/forum/#!forum/project-camelot
- 
+
 Cocoa
 -----
 .. note:: The Cocoa framework is only available on Mac OSX. Don't pick this if you're writing a cross-platform application!
