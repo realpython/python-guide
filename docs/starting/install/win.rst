@@ -23,7 +23,7 @@ which copy of Python is run.
 Typing the full path name for a Python interpreter each time quickly gets
 tedious, so add the directories for your default Python version to the PATH.
 Assuming that your Python installation is in ``C:\Python27\``, add this to your
-PATH::
+PATH:
 
 .. code-block:: console
 
