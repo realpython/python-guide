@@ -25,9 +25,13 @@ tedious, so add the directories for your default Python version to the PATH.
 Assuming that your Python installation is in ``C:\Python27\``, add this to your
 PATH::
 
+.. code-block:: console
+
     C:\Python27\;C:\Python27\Scripts\
 
-You can do this easily by running the following in ``powershell``::
+You can do this easily by running the following in ``powershell``:
+
+.. code-block:: console
 
     [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
 

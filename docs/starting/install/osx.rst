@@ -53,7 +53,9 @@ line at the bottom of your ``~/.bashrc`` file
 
     export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-Now, we can install Python 2.7: ::
+Now, we can install Python 2.7:
+
+.. code-block:: console
 
     $ brew install python
 

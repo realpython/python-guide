@@ -59,6 +59,8 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`.
 
 2. Write setup.py (`List of configuration options <http://www.py2exe.org/index.cgi/ListOfOptions>`_)::
 
+.. code-block:: python
+
     from distutils.core import setup
     import py2exe
 
@@ -70,7 +72,9 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`.
 
 4. (Optionally) `one-file mode <http://stackoverflow.com/questions/112698/py2exe-generate-single-executable-file#113014>`_
 
-5. Generate `.exe` into `dist` directory::
+5. Generate ``.exe`` into ``dist`` directory:
+
+.. code-block:: console
 
    $ python setup.py py2exe
 

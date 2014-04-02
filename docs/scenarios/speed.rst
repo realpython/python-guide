@@ -8,9 +8,9 @@ Using a slightly modified version of `David Beazleys`_ CPU bound test code
 (added loop for multiple tests), you can see the difference between CPython
 and PyPy's processing.
 
-::
+.. code-block:: console
 
-   PyPy
+   # PyPy
    $ ./pypy -V
    Python 2.7.1 (7773f8fc4223, Nov 18 2011, 18:47:10)
    [PyPy 1.7.0 with GCC 4.4.3]
@@ -21,9 +21,9 @@ and PyPy's processing.
    0.0440690517426
    0.0695300102234
 
-::
+.. code-block:: console
 
-   CPython
+   # CPython
    $ ./python -V
    Python 2.7.1
    $ ./python measure2.py
@@ -72,9 +72,10 @@ Cython
 with which you are able to write C and C++ modules for Python. Cython also 
 allows you to call functions from compiled C libraries. Using Cython allows 
 you to take advantage of Python's strong typing of variables and operations.  
-Here is an example of strong typing with Cython:
 
-.. code-block:: python
+Here's an example of strong typing with Cython:
+
+.. code-block:: cython
 
     def primes(int kmax):
     """Calculation of prime numbers with additional
@@ -128,7 +129,7 @@ Notice that in the Cython version you declare integers and integer arrays for
 to be compiled into C types while also creating a Python list:
 
 
-.. code-block:: python
+.. code-block:: cython
 
     def primes(int kmax):
         """Calculation of prime numbers with additional
@@ -190,18 +191,22 @@ The `pyximport` module allows you to import `pyx` files (e.g., `primesCy.pyx`) w
 The `pyximport.install()` command allows the Python interpreter to start the Cython compiler directly to generate C-code,
 which is automatically compiled to a `*.so` C-library. Cython is able to import this library for you in your Python-code.
 Very easy and very efficient. With the `time.time()` function you are able to compare the time between this 2 different calls to find 500 prime numbers.
+On a standard notebook (dual core AMD E-450 1.6 GHz), the measured values are:
 
-On a standard notebook (dualcore AMD E-450 1,6 GHz)  the measured values are:
+.. code-block:: console
 
-Cython time: 0.0054 seconds
+    Cython time: 0.0054 seconds
 
-Python time: 0.0566 seconds
+    Python time: 0.0566 seconds
+
+
 
 And here the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_  machine:
+.. code-block:: console
 
-Cython time: 0.0196 seconds
+    Cython time: 0.0196 seconds
 
-Python time: 0.3302 seconds
+    Python time: 0.3302 seconds
 
 Pyrex
 -----
