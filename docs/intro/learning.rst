@@ -36,7 +36,7 @@ Hacking Secret Ciphers with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This book teaches Python programming and basic cryptography for absolute
-beginners. The chapters provide the source code for various ciphres, as well
+beginners. The chapters provide the source code for various ciphers, as well
 as programs that can break them.
 
     `Hacking Secret Ciphers with Python <http://inventwithpython.com/hacking/>`_
