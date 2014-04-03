@@ -64,7 +64,7 @@ Dive Into Python 3
 
 Dive Into Python 3 is a good book for those ready to jump in to Python 3. It's
 a good read if you are moving from Python 2 to 3 or if you already have some
-experience in programming in another language.
+experience programming in another language.
 
     `Dive Into Python 3 <http://www.diveinto.org/python3/>`_
 
