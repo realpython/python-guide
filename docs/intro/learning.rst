@@ -4,6 +4,16 @@ Learning Python
 Beginner
 --------
 
+The Python Tutorial
+~~~~~~~~~~~~~~~~~~~~
+
+This is the official tutorial, it covers all the basics, and offers a tour of the
+language and the standard library, recommended for those who need a quickstart
+guide to the language.
+
+    `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
+
+
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -152,14 +162,6 @@ that can be run directly in the browser.
     `Problem Solving with Algorithms and Data Structures
     <http://www.interactivepython.org/courselib/static/pythonds/index.html>`_
 
-The Python Tutorial
-~~~~~~~~~~~~~~~~~~~~
-
-This is the official tutorial, it covers all the basics, and offers a tour of the
-language and the standard library, recommended for those who need a quickstart
-guide to the language.
-
-    `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
 For Engineers and Scientists
 ----------------------------
