@@ -143,6 +143,15 @@ development, version control, and optimization/profiling.
 
     `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
 
+Problem Solving with Algorithms and Data Structures
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem Solving with Algorithms and Data Structures covers a range of data structures and
+algorithms. All concepts are illustrated with Python code along with interactive samples
+that can be run directly in the browser.
+
+    `Problem Solving with Algorithms and Data Structures
+    <http://www.interactivepython.org/courselib/static/pythonds/index.html>`_
+
 The Python Tutorial
 ~~~~~~~~~~~~~~~~~~~~
 
