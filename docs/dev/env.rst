@@ -290,6 +290,37 @@ This will prevent your virtualenvs from relying on your (global) site packages
 directory, so that they are completely separate..
 [note: This is the default behavior for ``virtualenv`` 1.7 and later]
 
+pyenv
+-----
+
+`pyenv <https://github.com/yyuu/pyenv>`_ lets you easily switch between 
+multiple versions of Python. It's simple, unobtrusive, and follows the UNIX 
+tradition of single-purpose tools that do one thing well.
+
+pyenv features
+^^^^^^^^^^^^^^
+
+* Let you change the global Python version on a per-user basis.
+* Provide support for per-project Python versions.
+* Allow you to override the Python version with an environment variable.
+* Search commands from multiple versions of Python at a time. (This may be 
+helpful to test across Python versions with tox.)
+* Does not depend on Python itself. pyenv is made from pure shell scripts, thus avoiding any bootstrapping issues with Python.
+
+pyenv plugins
+^^^^^^^^^^^^^
+
+pyenv offers some handy plugins. They're easy to install; just put them in :file:`~/.pyenv/plugins/`. 
+
+Here's a small selection of plugins:
+
+* `pyenv-installer <https://github.com/yyuu/pyenv-installer>`_, for convenience
+* `pyenv-update <https://github.com/yyuu/pyenv-update>`_, to easily keep pyenv and its plugins up-to-date
+* `pyenv-doctor <https://github.com/yyuu/pyenv-doctor>`_, a pyenv command to perform extra verification and sanity-checks for the thorough developer
+* `pyenv-virtualenv <https://github.com/yyuu/pyenv-virtualenv>`_, for working with virtualenv
+* `pyenv-virtualenvwrapper <https://github.com/yyuu/pyenv-virtualenvwrapper>`_, if you prefer to use virtualenvwrapper
+
+
 Other Tools
 :::::::::::
 
