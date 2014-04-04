@@ -4,6 +4,16 @@ Learning Python
 Beginner
 --------
 
+The Python Tutorial
+~~~~~~~~~~~~~~~~~~~~
+
+This is the official tutorial, it covers all the basics, and offers a tour of the
+language and the standard library, recommended for those who need a quickstart
+guide to the language.
+
+    `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
+
+
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -143,14 +153,6 @@ development, version control, and optimization/profiling.
 
     `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
 
-The Python Tutorial
-~~~~~~~~~~~~~~~~~~~~
-
-This is the official tutorial, it covers all the basics, and offers a tour of the
-language and the standard library, recommended for those who need a quickstart
-guide to the language.
-
-    `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
 For Engineers and Scientists
 ----------------------------
