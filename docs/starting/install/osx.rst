@@ -78,7 +78,7 @@ command. It also enables you to add this network installation capability to
 your own Python software with very little work. Homebrew already installed
 Setuptools for you.
 
-Happily, when you ran `brew install python`, Homebrew also installed **pip**.
+Happily, when you ran ``brew install python``, Homebrew also installed :program:`pip`.
 Pip allows for installation and uninstallation of packages, and is actively
 maintained.
 
@@ -86,22 +86,22 @@ maintained.
 Virtualenv
 ----------
 
-After Setuptools & Pip, the next development tool that you should install is
+After Setuptools and Pip, the next development tool that you should install is
 `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
 
 .. code-block:: console
 
     $ pip install virtualenv
 
-The virtualenv kit provides the ability to create virtual Python environments
+The :program:`virtualenv` kit provides the ability to create virtual Python environments
 that do not interfere with either each other, or the main Python installation.
-If you install virtualenv before you begin coding then you can get into the
+If you install :program:`virtualenv` before you begin coding then you can get into the
 habit of using it to create completely clean Python environments for each
 project. This is particularly important for Web development, where each
 framework and application will have many dependencies.
 
 To set up a new Python environment, move into the directory where you would 
-like to store the environment, and use the ``virtualenv`` utility to create 
+like to store the environment, and use the :program:`virtualenv` utility to create 
 the new environment.
 
 .. code-block:: console
@@ -113,14 +113,14 @@ will change to show the active environment. Once you have finished working in
 the current virtual environment, run ``deactivate`` to restore your settings
 to normal.
 
-Each new environment automatically includes a copy of ``pip``, so that you can
+Each new environment automatically includes a copy of :program:`pip`, so that you can
 setup the third-party libraries and tools that you want to use in that
 environment. Put your own code within a subdirectory of the environment,
 however you wish. When you no longer need a particular environment, simply
 copy your code out of it, and then delete the main directory for the environment.
 
-An useful set of extensions to virtualenv is available in virtualenvwrapper,
-`RTFD <http://virtualenvwrapper.readthedocs.org/en/latest/>`_ to find out more.
+An useful set of extensions to :program:`virtualenv` is available in 
+:program:`virtualenvwrapper`. `RTFD <http://virtualenvwrapper.readthedocs.org/en/latest/>`_ to find out more.
 
 --------------------------------
 
