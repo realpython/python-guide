@@ -174,6 +174,26 @@ emphasis on numerical methods and how to implement them in Python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
 
+Miscellaneous topics
+--------------------
+
+Problem Solving with Algorithms and Data Structures
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem Solving with Algorithms and Data Structures covers a range of data structures and
+algorithms. All concepts are illustrated with Python code along with interactive samples
+that can be run directly in the browser.
+
+    `Problem Solving with Algorithms and Data Structures
+    <http://www.interactivepython.org/courselib/static/pythonds/index.html>`_
+
+Programming Collective Intelligence
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Programming Collective Intelligence introduces a wide array of basic machine learning and
+data mining methods. The exposition is not very mathematically formal, but rather focuses 
+on explaining the underlying intuition and shows how to implement the algorithms in Python.
+
+    `Programming Collective Intelligence <http://shop.oreilly.com/product/9780596529321.do>`_
+
 References
 ----------
 
