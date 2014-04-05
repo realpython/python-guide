@@ -77,7 +77,7 @@ software with a GUI but can also be used for non-GUI applications.
 
 Tk
 --
-Tkinter is a thin object-oriented layer on top of Tcl/Tk. **It has the advantage
+:module:`Tkinter` is a thin object-oriented layer on top of Tcl/Tk. **It has the advantage
 of being included with the Python standard library, making it the most
 convenient and compatible toolkit to program with.**
 

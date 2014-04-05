@@ -47,7 +47,7 @@ level of compatibility with Python packages and C extension modules.
 
 If you are writing open-source Python code and want to reach the widest possible
 audience, targeting CPython is your best bet. If you need to use any packages
-that rely on C extensions for their functionality (e.g., numpy) then CPython
+that rely on C extensions for their functionality (e.g., :module:`numpy`) then CPython
 is your only choice.
 
 Being the reference implementation, all versions of the Python language are

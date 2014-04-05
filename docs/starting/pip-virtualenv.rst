@@ -88,7 +88,7 @@ Caching packages for future use
 
 Every developer has preferred libraries and when you are working on a lot of
 different projects, you are bound to have some overlap between the libraries that
-you use. For example, you may be using the ``requests`` library in a lot of different
+you use. For example, you may be using the :module:`requests` library in a lot of different
 projects.
 
 It is surely unnecessary to re-download the same packages/libraries each time you

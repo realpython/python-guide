@@ -46,8 +46,8 @@ Go to your command prompt and type:
    $ python -m SimpleHTTPServer 9000
 
 This runs a simple http server running on port 9000 and will list all packages
-(like **MyPackage**). Now you can install **MyPackage** using any Python
 package installer. Using Pip, you would do it like:
+(like :module:`MyPackage`). Now you can install :module:`MyPackage` using any Python
 
 .. code-block:: console
 
@@ -55,8 +55,8 @@ package installer. Using Pip, you would do it like:
 
 Having a folder with the same name as the package name is **crucial** here.
 I got fooled by that, one time. But if you feel that creating a folder called
-you can still install MyPackage using:
 :file:`MyPackage` and keeping :file:`MyPackage.tar.gz` inside that, is *redundant*,
+you can still install :module:`MyPackage` using:
 
 .. code-block:: console
 

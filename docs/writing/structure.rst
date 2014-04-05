@@ -86,7 +86,7 @@ the interface file needs to import the low-level file. This is done with the
 ``import`` and ``from ... import`` statements.
 
 As soon as you use `import` statements you use modules. These can be either built-in
-modules such as `os` and `sys`, third-party modules you have installed in your
+modules such as :module:`os` and :module:`sys`, third-party modules you have installed in your
 environment, or your project's internal modules.
 
 To keep in line with the style guide, keep module names short, lowercase, and
@@ -198,7 +198,7 @@ if the package's modules and sub-packages do not need to share any code.
 
 Lastly, a convenient syntax is available for importing deeply nested packages:
 `import very.deep.module as mod`. This allows you to use `mod` in place of the verbose
-repetition of `very.deep.module`.
+repetition of :module:`very.deep.module`.
 
 Object-oriented programming
 ---------------------------

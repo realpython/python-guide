@@ -68,6 +68,6 @@ and then you can access elements, attributes, and values, like this:
     doc['mydocument']['plus']['@a'] # == u'complex'
     doc['mydocument']['plus']['#text'] # == u'element as well'
 
-xmltodict also lets you roundtrip back to XML with the unparse function,
-has a streaming mode suitable for handling files that don't fit in memory
+:module:`xmltodict` also lets you roundtrip back to XML with the :py:func:`unparse` function,
+has a streaming mode suitable for handling files that don't fit in memory,
 and supports namespaces.

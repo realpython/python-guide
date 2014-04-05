@@ -86,7 +86,7 @@ Salt supports Python versions 2.6 and 2.7 and can be installed via pip:
 After configuring a master server and any number of minion hosts, we can run arbitrary
 shell commands or use pre-built modules of complex commands on our minions.
 
-The following command lists all available minion hosts, using the ping module.
+The following command lists all available minion hosts, using the :module:`ping` module.
 
 .. code-block:: console
 

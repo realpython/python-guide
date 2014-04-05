@@ -20,7 +20,7 @@ lxml and Requests
 `lxml <http://lxml.de/>`_ is a pretty extensive library written for parsing
 XML and HTML documents really fast. It even handles messed up tags. We will
 also be using the `Requests <http://docs.python-requests.org/en/latest/>`_
-module instead of the already built-in urlib2 due to improvements in speed and
+module instead of the already built-in :module:`urlib2` due to improvements in speed and
 readability. You can easily install both using ``pip install lxml`` and
 ``pip install requests``.
 
@@ -32,7 +32,7 @@ Let's start with the imports:
     import requests
 
 Next we will use ``requests.get`` to retrieve the web page with our data
-and parse it using the ``html`` module and save the results in ``tree``:
+and parse it using the :module:`html` module and save the results in ``tree``:
 
 .. code-block:: python
 
@@ -61,7 +61,7 @@ span with class 'item-price':
     <div title="buyer-name">Carson Busses</div>
     <span class="item-price">$29.95</span>
 
-Knowing this we can create the correct XPath query and use the lxml
+Knowing this we can create the correct XPath query and use the :module:`lxml`
 ``xpath`` function like this:
 
 .. code-block:: python
@@ -92,7 +92,7 @@ Let's see what we got exactly:
     '$15.00', '$114.07', '$10.09']
 
 Congratulations! We have successfully scraped all the data we wanted from
-a web page using lxml and Requests. We have it stored in memory as two
+a web page using :module:`lxml` and Requests. We have it stored in memory as two
 lists. Now we can do all sorts of cool stuff with it: we can analyze it
 using Python or we can save it to a file and share it with the world.
 

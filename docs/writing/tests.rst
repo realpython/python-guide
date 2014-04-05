@@ -75,7 +75,7 @@ The Basics
 Unittest
 --------
 
-Unittest is the batteries-included test module in the Python standard library.
+:module:`Unittest` is the batteries-included test module in the Python standard library.
 Its API will be familiar to anyone who has used any of the JUnit/nUnit/CppUnit
 series of tools.
 
@@ -92,7 +92,7 @@ Creating testcases is accomplished by subclassing a TestCase base class
         def test(self):
             self.assertEqual(fun(3), 4)
 
-As of Python 2.7 unittest also includes its own test discovery mechanisms.
+As of Python 2.7 :module:`unittest` also includes its own test discovery mechanisms.
 
     `unittest in the standard library documentation <http://docs.python.org/library/unittest.html>`_
 
@@ -100,7 +100,7 @@ As of Python 2.7 unittest also includes its own test discovery mechanisms.
 Doctest
 -------
 
-The doctest module searches for pieces of text that look like interactive
+The :module:`doctest` module searches for pieces of text that look like interactive
 Python sessions in docstrings, and then executes those sessions to verify that
 they work exactly as shown.
 
@@ -140,7 +140,7 @@ Tools
 py.test
 -------
 
-py.test is a no-boilerplate alternative to Python's standard unittest module.
+:program:`py.test` is a no-boilerplate alternative to Python's standard :module:`unittest` module.
 
 .. code-block:: console
 
@@ -182,7 +182,7 @@ and then running the `py.test` command
     ========================= 1 failed in 0.02 seconds =========================
 
 is far less work than would be required for the equivalent functionality with
-the unittest module!
+the :module:`unittest` module!
 
     `py.test <http://pytest.org/latest/>`_
 
@@ -190,14 +190,14 @@ the unittest module!
 Nose
 ----
 
-nose extends unittest to make testing easier.
+:module:`nose` extends :module:`unittest` to make testing easier.
 
 
 .. code-block:: console
 
     $ pip install nose
 
-nose provides automatic test discovery to save you the hassle of manually
+:module:`nose` provides automatic test discovery to save you the hassle of manually
 creating test suites. It also provides numerous plugins for features such as
 xUnit-compatible test output, coverage reporting, and test selection.
 
@@ -222,7 +222,7 @@ simple ini-style configuration file.
 Unittest2
 ---------
 
-unittest2 is a backport of Python 2.7's unittest module which has an improved
+:module:`unittest2` is a backport of Python 2.7's :module:`unittest` module which has an improved
 API and better assertions over the one available in previous versions of Python.
 
 If you're using Python 2.6 or below, you can install it with pip
@@ -242,7 +242,7 @@ to newer versions of the module easier in the future
         ...
 
 This way if you ever switch to a newer python version and no longer need the
-unittest2 module, you can simply change the import in your test module without
+:module:`unittest2` module, you can simply change the ``import`` in your test module without
 the need to change any other code.
 
     `unittest2 <http://pypi.python.org/pypi/unittest2>`_
@@ -251,7 +251,7 @@ the need to change any other code.
 mock
 ----
 
-``mock`` is a library for testing in Python. As of Python 3.3, it is 
+:module:`mock` is a library for testing in Python. As of Python 3.3, it is 
 available in the `standard library <http://docs.python.org/dev/library/unittest.mock`_.  
 
 For older versions of Python:
