@@ -158,7 +158,7 @@ Pycco_
 .. _Docco: http://jashkenas.github.com/docco
 
 Ronn_
-    Ronn builds unix manuals. It converts human readable textfiles to roff for terminal display, and also to HTML for the web.
+    Ronn builds UNIX manpages. It converts human readable textfiles to roff for terminal display, and also to HTML for the web.
 
 .. _Ronn: https://github.com/rtomayko/ronn
 
