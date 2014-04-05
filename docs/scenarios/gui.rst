@@ -6,7 +6,7 @@ Alphabetical list of GUI Applications.
 Camelot
 -------
 `Camelot <http://www.python-camelot.com>`_ provides components for building 
-business applications on top of Python, SQLAlchemy and Qt.  It is inspired by 
+business applications on top of Python, SQLAlchemy, and Qt.  It is inspired by 
 the Django admin interface.  
 
 You can use Camelot to develop both simple and complex business applications 
@@ -36,7 +36,7 @@ interaction design and rapid prototyping, while making your code reusable
 and deployable.
 
 Kivy is written in Python, based on OpenGL and supports different input devices
-such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products and so on.
+such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products, and so on.
 
 Kivy is actively being developed by a community and free to use. It operates
 on all major platforms (Linux, OSX, Windows, Android).

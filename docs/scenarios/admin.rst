@@ -119,7 +119,7 @@ and start the Apache server:
         - require:
           - pkg: apache
 
-State files can be written using YAML, the Jinja2 template system or pure Python.
+State files can be written using YAML, the Jinja2 template system, or pure Python.
 
     `Salt Documentation <http://docs.saltstack.com>`_
 
