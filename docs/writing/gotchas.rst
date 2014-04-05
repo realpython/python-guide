@@ -126,7 +126,7 @@ What Does Happen
     8
     8
 
-Five functions are created, but all of them just multiply ``x`` by 4.
+Five functions are created, but all of them just multiply ``x`` by ``4``.
 
 Python's closures are *late binding*.
 This means that the values of variables used in closures are looked
@@ -134,7 +134,7 @@ up at the time the inner function is called.
 
 Here, whenever *any* of the returned functions are called, the value of ``i``
 is looked up in the surrounding scope at call time. By then, the loop has
-completed and ``i`` is left with its final value of 4.
+completed and ``i`` is left with its final value of ``4``.
 
 What's particularly nasty about this gotcha is the seemingly prevalent
 misinformation that this has something to do with :ref:`lambdas <python:lambda>`
