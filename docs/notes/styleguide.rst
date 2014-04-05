@@ -99,7 +99,7 @@ Python interpreter examples:
 
     Label the example::
 
-    .. code-block:: python
+    .. code-block:: pycon
 
         >>> import this
 
