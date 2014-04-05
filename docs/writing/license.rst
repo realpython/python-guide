@@ -15,7 +15,7 @@ In general, these licenses tend to fall into one of two categories:
 
 1. licenses that focus more on the user's freedom to do with the
    software as they please (these are the more permissive open
-   source licenses such as the MIT, BSD, & Apache).
+   source licenses such as the MIT, BSD, and Apache).
 
 2. licenses that focus more on making sure that the code itself —
    including any changes made to it and distributed along with it —
