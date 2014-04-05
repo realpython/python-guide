@@ -55,14 +55,14 @@ create a new file with the correct name for your operating system.
 If you already have a configuration file, just add the following line under the
 ``[global]`` settings to require an active virtual environment:
 
-.. code-block:: console
+.. code-block:: ini
 
     require-virtualenv = true
 
 If you did not have a configuration file, you will need to create a new one and
 add the following lines to this new file:
 
-.. code-block:: console
+.. code-block:: ini
 
     [global]
     require-virtualenv = true
@@ -72,7 +72,7 @@ You will of course need to install some packages globally (usually ones that you
 use across different projects consistenly) and this can be accomplished by adding
 the following to your ``~/.bashrc`` file:
 
-.. code-block:: console
+.. code-block:: shell
 
     gpip() {
         PIP_REQUIRE_VIRTUALENV="" pip "$@"
