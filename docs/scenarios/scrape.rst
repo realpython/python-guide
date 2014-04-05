@@ -40,7 +40,7 @@ and parse it using the :module:`html` module and save the results in ``tree``:
     tree = html.fromstring(page.text)
 
 ``tree`` now contains the whole HTML file in a nice tree structure which
-we can go over two different ways: XPath and CSSSelect. In this example, I
+we can go over two different ways: :dfn:`XPath` and :dfn:`CSSSelect`. In this example, I
 will focus on the former.
 
 XPath is a way of locating information in structured documents such as
@@ -53,8 +53,8 @@ can right click an element, choose 'Inspect element', highlight the code,
 right click again and choose 'Copy XPath'.
 
 After a quick analysis, we see that in our page the data is contained in
-two elements - one is a div with title 'buyer-name' and the other is a
-span with class 'item-price':
+two elements - one is a ``div`` with title ``buyer-name`` and the other is a
+span with class ``item-price``:
 
 .. code-block:: html
 
