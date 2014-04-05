@@ -29,7 +29,7 @@ Assuming that your Python installation is in :file:`C:\Python27\`, add this to y
 
     C:\Python27\;C:\Python27\Scripts\
 
-You can do this easily by running the following in ``powershell``:
+You can do this easily by running the following in :program:`powershell`:
 
 .. code-block:: console
 
@@ -57,12 +57,12 @@ To obtain the latest version of Setuptools for Windows, run the python script
 available here: `ez_setup.py <https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py>`_
 
 
-You'll now have a new command available to you: **easy_install**. It is
+You'll now have a new command available to you: :program:`easy_install`. It is
 considered by many to be deprecated, so we will install its replacement:
-**pip**. Pip allows for uninstallation of packages, and is actively maintained,
-unlike easy_install.
+:program:`pip`. Pip allows for uninstallation of packages, and is actively maintained,
+unlike :program:`easy_install`.
 
-To install pip, run the python script available here:
+To install :program:`pip`, run the Python script available here:
 `get-pip.py <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
 
 
@@ -76,16 +76,15 @@ After Setuptools & Pip, the next development tool that you should install is
 
     > pip install virtualenv
 
-The virtualenv kit provides the ability to create virtual Python environments
+The :program:`virtualenv` kit provides the ability to create virtual Python environments
 that do not interfere with either each other, or the main Python installation.
-If you install virtualenv before you begin coding then you can get into the
+If you install :program:`virtualenv` before you begin coding then you can get into the
 habit of using it to create completely clean Python environments for each
 project. This is particularly important for Web development, where each
 framework and application will have many dependencies.
 
-
 To set up a new Python environment, change the working directory to wherever
-you want to store the environment, and run the virtualenv utility in your
+you want to store the environment, and run the :program:`virtualenv` utility in your
 project's directory
 
 .. code-block:: console
@@ -98,7 +97,7 @@ active environment. Once you have finished working in the current virtual
 environment, run the :file:`deactivate.bat` batch file to restore your settings to
 normal.
 
-Each new environment automatically includes a copy of ``pip`` in the
+Each new environment automatically includes a copy of :program:`pip` in the
 :file:`Scripts` subdirectory, so that you can setup the third-party libraries and
 tools that you want to use in that environment. Put your own code within a
 subdirectory of the environment, however you wish. When you no longer need a
