@@ -11,7 +11,7 @@ include:
 
   Python's philosophy focuses on readability, from code blocks
   delineated with significant whitespace to intuitive keywords in
-  place of inscrutable punctuation
+  place of inscrutable punctuation.
 
 * **extensive standard libraries and third party modules for virtually
   any task**
@@ -41,7 +41,7 @@ include:
 * **ubiquity on computers**
 
   Python is available on Windows, \*nix, and Mac. It runs wherever the
-  Java virtual machine runs, and the reference implementation CPython
+  Java virtual machine runs, and the reference implementation :program:`CPython`
   can help bring Python to wherever there is a working C compiler.
 
 * **friendly community**
@@ -76,8 +76,8 @@ For the Community
 ~~~~~~~~~~~~~~~~~
 
 All contributions to the Guide are welcome, from Pythonistas of all levels.
-If you think there's a gap in what the Guide covers, fork the Guide on
-GitHub and submit a pull request. 
+If you think there's a gap in what The Guide covers, fork the Guide on
+GitHub and submit a pull request.
 
 Contributions are welcome from everyone, whether they're an old hand or a 
 first-time Pythonista, and the authors to the Guide will gladly help if you 
