@@ -34,11 +34,11 @@ your own Python software with very little work.
 To obtain the latest version of Setuptools for Linux, refer to the documentation
 available here: `unix-setuptools <https://pypi.python.org/pypi/setuptools#unix-wget>`_
 
-The new``easy_install`` command you have available is considered by many to be
-deprecated, so we will install its replacement: **pip**. Pip allows for
+The new :program:`easy_install` command you have available is considered by many to be
+deprecated, so we will install its replacement: :program:`pip`. Pip allows for
 uninstallation of packages, and is actively maintained, unlike easy_install.
 
-To install pip, simply open a command prompt and run
+To install :program:`pip`, simply open a command prompt and run:
 
 .. code-block:: console
 
@@ -48,22 +48,22 @@ To install pip, simply open a command prompt and run
 Virtualenv
 ----------
 
-After Setuptools & Pip, the next development tool that you should install is
+After Setuptools and Pip, the next development tool that you should install is
 `virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
 
 .. code-block:: console
 
     $ pip install virtualenv
 
-The virtualenv kit provides the ability to create virtual Python environments
+The :program:`virtualenv` kit provides the ability to create virtual Python environments
 that do not interfere with either each other, or the main Python installation.
-If you install virtualenv before you begin coding then you can get into the
+If you install :program:`virtualenv` before you begin coding, then you can get into the
 habit of using it to create completely clean Python environments for each
 project. This is particularly important for Web development, where each
 framework and application will have many dependencies.
 
 To set up a new Python environment, change the working directory to where ever
-you want to store the environment, and run the virtualenv utility in your
+you want to store the environment, and run the :program:`virtualenv` utility in your
 project's directory
 
 .. code-block:: console
@@ -75,7 +75,7 @@ will change to show the active environment. Once you have finished working in
 the current virtual environment, run ``deactivate`` to restore your settings
 to normal.
 
-Each new environment automatically includes a copy of ``pip``, so that you can
+Each new environment automatically includes a copy of :program:`pip`, so that you can
 setup the third-party libraries and tools that you want to use in that
 environment. Put your own code within a subdirectory of the environment,
 however you wish. When you no longer need a particular environment, simply
