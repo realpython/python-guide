@@ -77,7 +77,7 @@ It supports remote command execution from a central point (master host) to multi
 hosts (minions). It also supports system states which can be used to configure
 multiple servers using simple template files.
 
-Salt supports Python versions 2.6 and 2.7 and can be installed via pip:
+:program:`Salt` supports Python versions 2.6 and 2.7 and can be installed via :program:`pip`:
 
 .. code-block:: console
 
