@@ -45,7 +45,6 @@ problem of running slower algorithms on Python by using multidimensional arrays
 and functions that operate on arrays. Any algorithm can then be expressed as a
 function on arrays, allowing the algorithms to be run quickly.
 
-
 NumPy is part of the SciPy project, and is released as a separate library so
 people who only need the basic requirements can just use NumPy.
 
@@ -54,16 +53,16 @@ NumPy is compatible with Python versions 2.4 through to 2.7.2 and 3.1+.
 Numba
 -----
 
-`Numba <http://numba.pydata.org>`_ is an Numpy aware Python compiler
-(just-in-time (JIT) specializing compiler) which compiles annotated Python (and
-Numpy) code to LLVM (Low Level Virtual Machine) (through special decorators).
+`Numba <http://numba.pydata.org>`_ is an NumPy-aware Python :abbr:`JIT (just-in-time)` 
+compiler, which compiles annotated Python (and NumPy) code to 
+:abbr:`LLVM (Low Level Virtual Machine)` (through special decorators).
 Briefly, Numba using system that compiles Python code with LLVM to code which
 can be natively executed at runtime.
 
 SciPy
 -----
 
-`SciPy <http://scipy.org/>`_ is a library that uses Numpy for more mathematical
+`SciPy <http://scipy.org/>`_ is a library that uses NumPy for more mathematical
 functions. SciPy uses NumPy arrays as the basic data structure. SciPy comes
 with modules for various commonly used tasks in scientific programming, for
 example: linear algebra, integration (calculus), ordinary differential equation
@@ -83,7 +82,7 @@ can be browsed at the `matplotlib gallery
 Pandas
 ------
 `Pandas <http://pandas.pydata.org/>`_ is data manipulation library
-based on Numpy and which provides many useful functions for accessing,
+based on NumPy and which provides many useful functions for accessing,
 indexing, merging and grouping data easily. The main data structure (DataFrame)
 is close to what could be found in the R statistical package, that is
 an heterogeneous data tables with name indexing, time series operations
@@ -93,7 +92,7 @@ Rpy2
 ----
 `Rpy2 <http://rpy.sourceforge.net/rpy2.html>`_ is a Python binding for the R
 statistical package allowing to execute R functions from Python and passing
-data back and forth the two environments. Rpy2 is the object oriented
+data back and forth the two environments. Rpy2 is the object-oriented
 implementation of the binding based on `Rpy <http://rpy.sourceforge.net/rpy.html>`_.
 
 PsychoPy
