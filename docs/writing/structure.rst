@@ -134,7 +134,7 @@ compartmentalized**.
 Using ``from modu import func`` is a way to pinpoint the function you want to
 import and put it in the global namespace. While much less harmful than ``import
 *`` because it shows explicitly what is imported in the global namespace, its
-advantage over a simpler `import modu` is only that it will save some typing.
+advantage over a simpler ``import modu`` is only that it will save some typing.
 
 **Very bad**
 
@@ -197,7 +197,7 @@ Leaving an :file:`__init__.py` file empty is considered normal and even a good p
 if the package's modules and sub-packages do not need to share any code.
 
 Lastly, a convenient syntax is available for importing deeply nested packages:
-`import very.deep.module as mod`. This allows you to use `mod` in place of the verbose
+``import very.deep.module as mod``. This allows you to use ``mod`` in place of the verbose
 repetition of :module:`very.deep.module`.
 
 Object-oriented programming
@@ -284,7 +284,7 @@ The Python language provides a simple yet powerful syntax called 'decorators'.
 A decorator is a function or a class that wraps (or decorates) a function
 or a method. The 'decorated' function or method will replace the original
 'undecorated' function or method. Because functions are first-class objects
-in Python, it can be done 'manually', but using the @decorator syntax is
+in Python, it can be done 'manually', but using the :samp:`@{decorator}` syntax is
 clearer and thus preferred.
 
 .. code-block:: python
@@ -319,12 +319,12 @@ do not have a fixed type. In fact, in Python, variables are very
 different from what they are in many other languages, specifically
 strongly-typed languages. Variables are not a segment of the computer's
 memory where some value is written, they are 'tags' or 'names' pointing
-to objects. It is therefore possible for the variable 'a' to be set to
-the value 1, then to the value 'a string', then to a function.
+to objects. It is therefore possible for the variable ``a`` to be set to
+the value ``1``, then to the value ``'a string'``, then to a function.
 
 The dynamic typing of Python is often considered to be a weakness, and indeed
 it can lead to complexities and hard-to-debug code. Something
-named 'a' can be set to many different things, and the developer or the
+named ``a`` can be set to many different things, and the developer or the
 maintainer needs to track this name in the code to make sure it has not
 been set to a completely unrelated object.
 
@@ -371,7 +371,7 @@ grows and each assignment is separated by other lines of code, including
 variable's type is.
 
 Some coding practices, like functional programming, recommend never reassigning a variable.
-In Java this is done with the `final` keyword. Python does not have a `final` keyword
+In Java this is done with the ``final`` keyword. Python does not have a ``final`` keyword
 and it would be against its philosophy anyway. However, it may be a good
 discipline to avoid assigning to a variable more than once, and it helps
 in grasping the concept of mutable and immutable types.
@@ -387,8 +387,8 @@ All lists have mutating methods, like :py:meth:`list.append` or :py:meth:`list.p
 can be modified in place. The same goes for dictionaries.
 
 Immutable types provide no method for changing their content.
-For instance, the variable x set to the integer 6 has no "increment" method. If you
-want to compute x + 1, you have to create another integer and give it
+For instance, the variable ``x`` set to the integer ``6`` has no "increment" method. If you
+want to compute ``x + 1``, you have to create another integer and give it
 a name.
 
 .. code-block:: python
