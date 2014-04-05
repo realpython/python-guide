@@ -159,7 +159,7 @@ functions:
     def test_answer():
         assert func(3) == 5
 
-and then running the `py.test` command
+and then running the :program:`py.test` command
 
 .. code-block:: console
 
@@ -207,14 +207,14 @@ xUnit-compatible test output, coverage reporting, and test selection.
 tox
 ---
 
-tox is a tool for automating test environment management and testing against
-multiple interpreter configurations
+:program:`tox` is a tool for automating test environment management and testing against
+multiple interpreter configurations.
 
 .. code-block:: console
 
     $ pip install tox
 
-tox allows you to configure complicated multi-parameter test matrices via a
+:program:`tox` allows you to configure complicated multi-parameter test matrices via a
 simple ini-style configuration file.
 
     `tox <http://testrun.org/tox/latest/>`_
@@ -225,13 +225,13 @@ Unittest2
 :module:`unittest2` is a backport of Python 2.7's :module:`unittest` module which has an improved
 API and better assertions over the one available in previous versions of Python.
 
-If you're using Python 2.6 or below, you can install it with pip
+If you're using Python 2.6 or below, you can install it with :program:`pip`.
 
 .. code-block:: console
 
     $ pip install unittest2
 
-You may want to import the module under the name unittest to make porting code
+You may want to import the module under the name ``unittest``, to make porting code
 to newer versions of the module easier in the future
 
 .. code-block:: python
