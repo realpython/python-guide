@@ -46,8 +46,8 @@ Go to your command prompt and type:
    $ python -m SimpleHTTPServer 9000
 
 This runs a simple http server running on port 9000 and will list all packages
-package installer. Using Pip, you would do it like:
 (like :module:`MyPackage`). Now you can install :module:`MyPackage` using any Python
+package installer. Using :program:`pip`, you would do it like:
 
 .. code-block:: console
 
@@ -66,8 +66,8 @@ pypiserver
 ++++++++++
 
 `Pypiserver <https://pypi.python.org/pypi/pypiserver>`_ is a minimal PyPI compatible server.
-It can be used to serve a set of packages to easy_install or pip.  It includes helpful
-features like an administrative command (``-U``) which will update all its packages to their
+It can be used to serve a set of packages to :program:`easy_install` or :program:`pip`.  It includes helpful
+features like an administrative command (:option:`-U`) which will update all its packages to their
 latest versions found on PyPI.
 
 
