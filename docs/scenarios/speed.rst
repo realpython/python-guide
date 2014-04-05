@@ -1,8 +1,8 @@
 Speed
 =====
 
-CPython, the most commonly used implementation of Python, is slow for CPU bound
-tasks. `PyPy`_ is fast.
+:program:`CPython`, the most commonly used implementation of Python, is 
+slow for CPU bound tasks. `PyPy`_ is fast.
 
 Using a slightly modified version of `David Beazleys`_ CPU bound test code
 (added loop for multiple tests), you can see the difference between CPython
@@ -100,7 +100,8 @@ Here's an example of strong typing with Cython:
         return result
 
 
-This implementation of an algorithm to find prime numbers has some additional keywords instead of the next one, which is implemented in pure Python:
+This implementation of an algorithm to find prime numbers has some additional 
+keywords instead of the next one, which is implemented in pure Python:
 
 .. code-block:: python
 
@@ -125,8 +126,8 @@ This implementation of an algorithm to find prime numbers has some additional ke
             n = n + 1
         return result
 
-Notice that in the Cython version you declare integers and integer arrays for 
-to be compiled into C types while also creating a Python list:
+Notice that, in the Cython version, you declare integers and integer arrays
+to be compiled into C types, while also creating a Python list:
 
 
 .. code-block:: cython
@@ -202,6 +203,7 @@ On a standard notebook (dual core AMD E-450 1.6 GHz), the measured values are:
 
 
 And here the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_  machine:
+
 .. code-block:: console
 
     Cython time: 0.0196 seconds
