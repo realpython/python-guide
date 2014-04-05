@@ -40,7 +40,7 @@ the syntax file included in VIM 6.1.
 These plugins supply you with a basic environment for developing in Python.
 To get the most out of Vim, you should continually check your code for syntax
 errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
-If your VIM is compiled with `+python` you can also utilize some very handy
+If your VIM is compiled with :option:`+python` you can also utilize some very handy
 plugins to do these checks from within the editor.
 
 For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
@@ -50,12 +50,16 @@ the bottom of the screen, and provide an easy way to jump to the corresponding
 line. It's very handy to call these functions whenever you save a file. In
 order to do this, add the following lines to your :file:`.vimrc`:
 
+.. code-block:: 
+
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
 
 If you are already using syntastic_ you can enable it to run Pyflakes on write
 and show errors and warnings in the quickfix window. An example configuration
-to do that which also shows status and warning messages in the statusbar would be::
+to do that which also shows status and warning messages in the statusbar would be:
+
+.. code-block:: 
 
     set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
@@ -225,9 +229,9 @@ To start using the virtual environment, run:
 
 
 The name of the current virtual environment will now appear on the left
-of the prompt (e.g. ``(venv)Your-Computer:your_project UserName$``) to
+of the prompt (e.g. :samp:`(venv){Your-Computer}:{your_project} {UserName}$`) to
 let you know that it's active. From now on, any package that you install
-using ``pip`` will be placed in the ``venv`` folder, isolated from the global
+using :program:`pip` will be placed in the :file:`venv` folder, isolated from the global
 Python installation. 
 
 Install packages as usual:
@@ -238,12 +242,12 @@ Install packages as usual:
 
 To stop using an environment, simply type ``deactivate``. To remove the
 environment, just remove the directory it was installed into. (In this
-case, it would be ``rm -rf venv``.)
+case, it would be :command:`rm -rf venv`.)
 
 Other Notes
 ^^^^^^^^^^^
 
-Running ``virtualenv`` with the option ``--no-site-packages`` will not
+Running :program:`virtualenv` with the option :option:`--no-site-packages` will not
 include the packages that are installed globally. This can be useful
 for keeping the package list clean in case it needs to be accessed later.
 [This is the default behavior for ``virtualenv`` 1.7 and later.]
