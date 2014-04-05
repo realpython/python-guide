@@ -73,10 +73,10 @@ Python-mode
 Python-mode_ is a complex solution in VIM for working with Python code.
 It has:
 
-- Asynchronous Python code checking (``pylint``, ``pyflakes``, ``pep8``, ``mccabe``) in any combination
-- Code refactoring and autocompletion with Rope
+- Asynchronous Python code checking (:program:`pylint`, :program:`pyflakes`, :program:`pep8`, :program:`mccabe`) in any combination
+- Code refactoring and autocompletion with :program:`rope`
 - Fast Python folding
-- Virtualenv support
+- :program:`virtualenv` support
 - Search by Python documentation and run Python code
 - Auto PEP8_ error fixes
 
@@ -192,7 +192,7 @@ Interpreter Tools
 virtualenv
 ----------
 
-Virtualenv is a tool to keep the dependencies required by different projects
+:program:`virtualenv` is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them.
 It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
 dilemma, and keeps your global site-packages directory clean and manageable.
@@ -216,7 +216,7 @@ Create a virtual environment for a project:
     $ virtualenv venv
 
 ``virtualenv venv`` will create a folder in the current directory
-which will contain the Python executable files, and a copy of the ``pip``
+which will contain the Python executable files, and a copy of the :program:`pip`
 library which you can use to install other packages. The name of the
 virtual environment (in this case, it was ``venv``) can be anything;
 omitting the name will place the files in the current directory instead.
@@ -250,7 +250,7 @@ Other Notes
 Running :program:`virtualenv` with the option :option:`--no-site-packages` will not
 include the packages that are installed globally. This can be useful
 for keeping the package list clean in case it needs to be accessed later.
-[This is the default behavior for ``virtualenv`` 1.7 and later.]
+[This is the default behavior for :program:`virtualenv` 1.7 and later.]
 
 In order to keep your environment consistent, it's a good idea to "freeze"
 the current state of the environment packages. To do this, run
@@ -294,7 +294,7 @@ Put this into your :file:`~/.bash_profile` (Linux/Mac) file:
 
 This will prevent your virtualenvs from relying on your (global) :file:`site-packages`
 directory, so that they are completely separate..
-[note: This is the default behavior for ``virtualenv`` 1.7 and later]
+[note: This is the default behavior for :program:`virtualenv` 1.7 and later]
 
 Other Tools
 :::::::::::
