@@ -31,7 +31,7 @@ To help you choose one for your project, there's a `license chooser <http://thre
 
 **More Permissive**
 
-- PSFL (Python Software Foundation License) -- for contributing to python itself
+- PSFL (Python Software Foundation License) -- for contributing to Python itself
 - MIT / BSD / ISC
 
   + MIT (X11)
