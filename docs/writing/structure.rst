@@ -34,23 +34,23 @@ to do it poorly. Some signs of a poorly structured project
 include:
 
 - Multiple and messy circular dependencies: if your classes
-  to answer a question such as ``table.isdoneby()``,
-  and if conversely the class Carpenter needs to import Table and Chair,
-  to answer the question ``carpenter.whatdo()``, then you
   :py:class:`Table` and :py:class:`Chair` in :file:`furn.py` need to import :py:class:`Carpenter` from :file:`workers.py`
+  to answer a question such as :py:func:`table.isdoneby()`,
+  and if conversely the class :py:class:`Carpenter` needs to import :py:class:`Table` and :py:class:`Chair`,
+  to answer the question :py:func:`carpenter.whatdo()`, then you
   have a circular dependency. In this case you will have to resort to
-  fragile hacks such as using import statements inside
+  fragile hacks such as using :py:keyword:`import` statements inside
   methods or functions.
 
-- Hidden coupling: each and every change in Table's implementation
-  breaks 20 tests in unrelated test cases because it breaks Carpenter's code,
+- Hidden coupling: each and every change in :py:class:`Table`'s implementation
+  breaks 20 tests in unrelated test cases because it breaks :py:class:`Carpenter`'s code,
   which requires very careful surgery to adapt the change. This means
-  you have too many assumptions about Table in Carpenter's code or the
+  you have too many assumptions about :py:class:`Table` in :py:class:`Carpenter`'s code or the
   reverse.
 
 - Heavy usage of global state or context: instead of explicitly
   passing ``(height, width, type, wood)`` to each other, Table
-  and Carpenter rely on global variables that can be modified
+  and :py:class:`Carpenter` rely on global variables that can be modified
   and are modified on the fly by different agents. You need to
   scrutinize all access to these global variables to understand why
   a rectangular table became a square, and discover that remote
@@ -67,7 +67,7 @@ include:
 - Ravioli code is more likely in Python: it consists of hundreds of
   similar little pieces of logic, often classes or objects, without
   proper structure. If you never can remember if you have to use
-  FurnitureTable, AssetTable or Table, or even TableNew for your
+  :py:class:`FurnitureTable`, :py:class:`AssetTable` or :py:class:`Table`, or even :py:class:`TableNew` for your
   task at hand, you might be swimming in ravioli code.
 
 
@@ -85,7 +85,7 @@ in one file, and all low-level operations in another file. In this case,
 the interface file needs to import the low-level file. This is done with the
 ``import`` and ``from ... import`` statements.
 
-As soon as you use `import` statements you use modules. These can be either built-in
+As soon as you use :py:keyword:`import` statements you use modules. These can be either built-in
 modules such as :module:`os` and :module:`sys`, third-party modules you have installed in your
 environment, or your project's internal modules.
 
@@ -107,9 +107,9 @@ to be a module, but the import mechanism needs to be understood in order to use
 this concept properly and avoid some issues.
 
 Concretely, the ``import modu`` statement will look for the proper file, which is
-recursively and raise an ImportError exception if it is not found.
 :file:`modu.py` in the same directory as the caller if it exists.  If it is not
 found, the Python interpreter will search for :file:`modu.py` in the ``path``
+recursively and raise an :py:exc:`ImportError` exception if it is not found.
 
 Once `modu.py` is found, the Python interpreter will execute the module in an
 isolated scope. Any top-level statement in `modu.py` will be executed,
@@ -166,7 +166,7 @@ Python. Readability means to avoid useless boilerplate text and clutter,
 therefore some efforts are spent trying to achieve a certain level of brevity.
 But terseness and obscurity are the limits where brevity should stop. Being
 able to tell immediately where a class or function comes from, as in the
-``modu.func`` idiom, greatly improves code readability and understandability in
+:py:func:`modu.func` idiom, greatly improves code readability and understandability in
 all but the simplest single file projects.
 
 
@@ -236,7 +236,7 @@ processes are spawned to respond to external requests that can
 happen at the same time. In this case, holding some state into instantiated
 objects, which means keeping some static information about the world, is prone
 to concurrency problems or race-conditions. Sometimes, between the initialization of
-the state of an object (usually done with the ``__init__()`` method) and the actual use
+the state of an object (usually done with the :py:func:`__init__()` method) and the actual use
 of the object state through one of its methods, the world may have changed, and
 the retained state may be outdated. For example, a request may load an item in
 memory and mark it as read by a user. If another request requires the deletion
@@ -367,7 +367,7 @@ when they have a different type:
 There is no efficiency gain when reusing names: the assignments
 will have to create new objects anyway. However, when the complexity
 grows and each assignment is separated by other lines of code, including
-'if' branches and loops, it becomes harder to ascertain what a given
+:py:keyword:`if` branches and loops, it becomes harder to ascertain what a given
 variable's type is.
 
 Some coding practices, like functional programming, recommend never reassigning a variable.
@@ -382,7 +382,7 @@ Mutable and immutable types
 Python has two kinds of built-in or user-defined types.
 
 Mutable types are those that allow in-place modification
-of the content. Typical mutables are lists and dictionaries:
+of the content. Typical mutables are :py:class:`list`s and :py:class:`dict`ionaries:
 All lists have mutating methods, like :py:meth:`list.append` or :py:meth:`list.pop`, and
 can be modified in place. The same goes for dictionaries.
 
@@ -410,15 +410,15 @@ helps to clarify the intent of the code.
 
 For example, the immutable equivalent of a list is the tuple, created
 with ``(1, 2)``. This tuple is a pair that cannot be changed in-place,
-and can be used as a key for a dictionary.
+and can be used as a key for a :py:class:`dict`.
 
 One peculiarity of Python that can surprise beginners is that
 strings are immutable. This means that when constructing a string from
 its parts, it is much more efficient to accumulate the parts in a list,
-which is mutable, and then glue ('join') the parts together when the
+which is mutable, and then glue (:py:meth:`~str.join`) the parts together when the
 full string is needed. One thing to notice, however, is that list
-comprehensions are better and faster than constructing a list in a loop
-with calls to ``append()``.
+comprehensions are better and faster than constructing a :py:class:`list` in a loop
+with calls to :py:meth:`list.append()`.
 
 **Bad**
 
@@ -448,10 +448,10 @@ with calls to ``append()``.
     nums = [str(n) for n in range(20)]
     print "".join(nums)
 
-One final thing to mention about strings is that using ``join()`` is not always
+One final thing to mention about strings is that using :py:meth:`~str.join()` is not always
 best. In the instances where you are creating a new string from a pre-determined
 number of strings, using the addition operator is actually faster, but in cases
-like above or in cases where you are adding to an existing string, using ``join()``
+like above or in cases where you are adding to an existing string, using :py:meth:`~str.join()`
 should be your preferred method.
 
 .. code-block:: python

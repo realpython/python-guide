@@ -52,7 +52,7 @@ An XML file like this:
       </plus>
     </mydocument>
 
-can be loaded into a Python dict like this:
+can be loaded into a Python :py:class:`dict` like this:
 
 .. code-block:: python
 

@@ -44,7 +44,7 @@ most explicit and straightforward manner is preferred.
         return {'x': x, 'y': y}
 
 In the good code above, x and y are explicitly received from
-the caller, and an explicit dictionary is returned. The developer
+the caller, and an explicit :py:class:`dict` is returned. The developer
 using this function knows exactly what to do by reading the
 first and last lines, which is not the case with the bad example.
 
@@ -104,7 +104,7 @@ used for optional parameters sent to the function. When a function has more than
 two or three positional parameters, its signature will be more difficult to remember
 and using keyword argument with default values is helpful. For instance, a more
 complete ``send`` function could be defined as ``send(message, to, cc=None, bcc=None)``.
-Here ``cc`` and ``bcc`` are optional, and evaluate to ``None`` when they are not
+Here ``cc`` and ``bcc`` are optional, and evaluate to :py:const:`None` when they are not
 passed another value.
 
 Calling a function with keyword arguments can be done in multiple ways in Python,
@@ -273,7 +273,7 @@ Unpacking
 ~~~~~~~~~
 
 If you know the length of a list or tuple, you can assign names to its
-elements with unpacking. For example, since ``enumerate()`` will provide
+elements with unpacking. For example, since :py:func:`enumerate()` will provide
 a tuple of two elements for each item in list:
 
 .. code-block:: python
@@ -360,8 +360,10 @@ Take the following code for example:
     def lookup_list(l):
         return 's' in l
 
-Even though both functions look identical, because *lookup_dict* is utilizing the fact that dictionaries in python are hashtables, the lookup performance between the two is very different.
-Python will have to go through each item in the list to find a matching case, which is time consuming. By analysing the hash of the dictionary, finding keys in the dict can be done very quickly.
+Even though both functions look identical, because :py:meth:`lookup_dict` is utilizing the fact that dictionaries in python are hashtables, the lookup performance between the two is very different.
+Python will have to go through each item in the list to find a matching case, which is time consuming. 
+By analysing the hash of the dictionary, finding keys in the dict can be done very quickly.
+
 For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_ page.
 
 Zen of Python
@@ -438,8 +440,8 @@ Here are some conventions you should follow to make your code easier to read.
 Check if variable equals a constant
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You don't need to explicitly compare a value to True, or None, or 0 - you can
-just add it to the if statement. See `Truth Value Testing
+You don't need to explicitly compare a value to :py:const:`True`, or :py:const:`None`, or :py:const:`0` - you can
+just add it to the :py:keyword:`if` statement. See `Truth Value Testing
 <http://docs.python.org/library/stdtypes.html#truth-value-testing>`_ for a
 list of what is considered false.
 

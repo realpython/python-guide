@@ -16,7 +16,7 @@ Some general rules of testing:
   alone, and also within the test suite, regardless of the order they are called.
   The implication of this rule is that each test must be loaded with a fresh
   dataset and may have to do some cleanup afterwards. This is usually
-  handled by ``setUp()`` and ``tearDown()`` methods.
+  handled by :py:meth:`setUp` and :py:meth:`tearDown()` methods.
 
 - Try hard to make tests that run fast. If one single test needs more than a
   few millisecond to run, development will be slowed down or the tests will not
@@ -49,9 +49,9 @@ Some general rules of testing:
 - Use long and descriptive names for testing functions. The style guide here is
   slightly different than that of running code, where short names are often
   preferred. The reason is testing functions are never called explicitly.
-  ``square()`` or even ``sqr()`` is ok in running code, but in testing code you
-  would have names such as ``test_square_of_number_2()``,
-  ``test_square_negative_number()``. These function names are displayed when a
+  :py:func:`square()` or even :py:func:`sqr()` is okat in running code, but in testing code you
+  would have names such as :py:func:`test_square_of_number_2()`,
+  :py:func:`test_square_negative_number()`. These function names are displayed when a
   test fail, and should be as descriptive as possible.
 
 - When something goes wrong or has to be changed, and if your code has a good
@@ -79,7 +79,7 @@ Unittest
 Its API will be familiar to anyone who has used any of the JUnit/nUnit/CppUnit
 series of tools.
 
-Creating testcases is accomplished by subclassing a TestCase base class
+Creating testcases is accomplished by subclassing a :py:class:`TestCase` base class.
 
 .. code-block:: python
 
@@ -274,7 +274,7 @@ For example, you can monkey-patch a method:
 
     thing.method.assert_called_with(3, 4, 5, key='value')
 
-To mock classes or objects in a module under test, use the ``patch`` decorator.
+To mock classes or objects in a module under test, use the :py:func:`@patch` decorator.
 In the example below, an external search system is replaced with a mock that
 always returns the same result (but only for the duration of the test).
 

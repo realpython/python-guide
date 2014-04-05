@@ -31,7 +31,7 @@ Let's start with the imports:
     from lxml import html
     import requests
 
-Next we will use ``requests.get`` to retrieve the web page with our data
+Next we will use :py:func:`requests.get` to retrieve the web page with our data
 and parse it using the :module:`html` module and save the results in ``tree``:
 
 .. code-block:: python
