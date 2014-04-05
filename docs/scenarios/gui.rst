@@ -91,7 +91,7 @@ available on the `Python Wiki <http://wiki.python.org/moin/TkInter>`_.
 
 wxPython
 --------
-wxPython is a GUI toolkit for the Python programming language. It allows
+:program:`wxPython` is a GUI toolkit for the Python programming language. It allows
 Python programmers to create programs with a robust, highly functional
 graphical user interface, simply and easily. It is implemented as a Python
 extension module (native code) that wraps the popular wxWidgets cross platform
