@@ -3,7 +3,7 @@
 Further Configuration of Pip and Virtualenv
 ===========================================
 
-Requiring an active virtual environment for ``pip``
+Requiring an active virtual environment for :program:`pip`
 ---------------------------------------------------
 
 By now it should be clear that using virtual envirtonments is a great way to keep
