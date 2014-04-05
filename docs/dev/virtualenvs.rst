@@ -30,7 +30,7 @@ Basic Usage
    $ virtualenv venv
 
 This creates a copy of Python in whichever directory you ran the command in,
-placing it in a folder named ``venv``.
+placing it in a folder named :file:`venv`.
 
 2. To begin using the virtual environment, it needs to be activated:
 
@@ -94,7 +94,7 @@ Basic Usage
 
    $ mkvirtualenv venv
 
-This creates the ``venv`` folder inside ``~/Envs``.
+This creates the :file:`venv` folder inside :file:`~/Envs`.
 
 2. Work on a virtual environment:
 
@@ -140,7 +140,7 @@ Other useful commands
 
 autoenv
 -------
-When you ``cd`` into a directory containing a ``.env``, `autoenv <https://github.com/kennethreitz/autoenv>`_
+When you :command:`cd` into a directory containing :file:`.env`, `autoenv <https://github.com/kennethreitz/autoenv>`_
 automagically activates the environment.
 
 Install it on Mac OS X using ``brew``:

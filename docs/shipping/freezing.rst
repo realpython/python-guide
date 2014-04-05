@@ -57,7 +57,7 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`.
 
 1. Download and install http://sourceforge.net/projects/py2exe/files/py2exe/
 
-2. Write setup.py (`List of configuration options <http://www.py2exe.org/index.cgi/ListOfOptions>`_)::
+2. Write :file:`setup.py` (`List of configuration options <http://www.py2exe.org/index.cgi/ListOfOptions>`_)::
 
 .. code-block:: python
 

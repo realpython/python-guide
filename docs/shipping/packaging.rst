@@ -30,7 +30,7 @@ running from the directory which holds those packages which need to be installed
 
 **Showing an example is always beneficial**
 
-Say if you are after installing a package called MyPackage.tar.gz,  and
+Say if you are after installing a package called :file:`MyPackage.tar.gz`,  and
 assuming this is your directory structure:
 
 
@@ -55,8 +55,8 @@ package installer. Using Pip, you would do it like:
 
 Having a folder with the same name as the package name is **crucial** here.
 I got fooled by that, one time. But if you feel that creating a folder called
-**MyPackage** and keeping **MyPackage.tar.gz** inside that, is *redundant*,
 you can still install MyPackage using:
+:file:`MyPackage` and keeping :file:`MyPackage.tar.gz` inside that, is *redundant*,
 
 .. code-block:: console
 
