@@ -12,18 +12,21 @@ The Windows version is provided as an MSI package. To install it manually, just
 double-click the file. The MSI package format allows Windows administrators to
 automate installation with their standard tools.
 
+Environment variables
+---------------------
+
 By design, Python installs to a directory with the version number embedded,
 e.g. Python version 2.7 will install at ``C:\Python27\``, so that you can
-have multiple versions of Python on the
+have multiple versions of Python on the 
 same system without conflicts. Of course, only one interpreter can be the
 default application for Python file types. It also does not automatically
 modify the ``PATH`` environment variable, so that you always have control over
 which copy of Python is run.
 
 Typing the full path name for a Python interpreter each time quickly gets
-tedious, so add the directories for your default Python version to the PATH.
+tedious, so add the directories for your default Python version to the ``PATH``.
 Assuming that your Python installation is in ``C:\Python27\``, add this to your
-PATH:
+``PATH``:
 
 .. code-block:: console
 
@@ -36,7 +39,10 @@ You can do this easily by running the following in ``powershell``:
     [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
 
 The second (``Scripts``) directory receives command files when certain
-packages are installed, so it is a very useful addition.
+packages are installed, so it is a very useful addition. In Python version 
+3.3 and newer, you are provided with an option to automatically set these
+environment variables during installation.
+
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications for
@@ -65,6 +71,8 @@ unlike easy_install.
 To install pip, run the python script available here:
 `get-pip.py <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
 
+In Python version 3.4 and newer, pip is automatically installed during the
+installation of Python.
 
 Virtualenv
 ----------
