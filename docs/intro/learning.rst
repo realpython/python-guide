@@ -4,6 +4,16 @@ Learning Python
 Beginner
 --------
 
+The Python Tutorial
+~~~~~~~~~~~~~~~~~~~~
+
+This is the official tutorial, it covers all the basics, and offers a tour of the
+language and the standard library, recommended for those who need a quickstart
+guide to the language.
+
+    `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
+
+
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -36,7 +46,7 @@ Hacking Secret Ciphers with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This book teaches Python programming and basic cryptography for absolute
-beginners. The chapters provide the source code for various ciphres, as well
+beginners. The chapters provide the source code for various ciphers, as well
 as programs that can break them.
 
     `Hacking Secret Ciphers with Python <http://inventwithpython.com/hacking/>`_
@@ -143,14 +153,6 @@ development, version control, and optimization/profiling.
 
     `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
 
-The Python Tutorial
-~~~~~~~~~~~~~~~~~~~~
-
-This is the official tutorial, it covers all the basics, and offers a tour of the
-language and the standard library, recommended for those who need a quickstart
-guide to the language.
-
-    `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
 For Engineers and Scientists
 ----------------------------
@@ -171,6 +173,26 @@ Numerical Methods in Engineering with Python, written by Jaan Kiusalaas, attempt
 emphasis on numerical methods and how to implement them in Python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
+
+Miscellaneous topics
+--------------------
+
+Problem Solving with Algorithms and Data Structures
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem Solving with Algorithms and Data Structures covers a range of data structures and
+algorithms. All concepts are illustrated with Python code along with interactive samples
+that can be run directly in the browser.
+
+    `Problem Solving with Algorithms and Data Structures
+    <http://www.interactivepython.org/courselib/static/pythonds/index.html>`_
+
+Programming Collective Intelligence
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Programming Collective Intelligence introduces a wide array of basic machine learning and
+data mining methods. The exposition is not very mathematically formal, but rather focuses 
+on explaining the underlying intuition and shows how to implement the algorithms in Python.
+
+    `Programming Collective Intelligence <http://shop.oreilly.com/product/9780596529321.do>`_
 
 References
 ----------
