@@ -65,7 +65,7 @@ What You Should Do Instead
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create a new object each time the function is called, by using a default arg to
-signal that no argument was provided (:py:data:`None` is often a good choice).
+signal that no argument was provided (:py:const:`None` is often a good choice).
 
 .. code-block:: python
 
@@ -126,7 +126,7 @@ What Does Happen
     8
     8
 
-Five functions are created, but all of them just multiply ``x`` by 4.
+Five functions are created, but all of them just multiply ``x`` by ``4``.
 
 Python's closures are *late binding*.
 This means that the values of variables used in closures are looked
@@ -134,12 +134,12 @@ up at the time the inner function is called.
 
 Here, whenever *any* of the returned functions are called, the value of ``i``
 is looked up in the surrounding scope at call time. By then, the loop has
-completed and ``i`` is left with its final value of 4.
+completed and ``i`` is left with its final value of ``4``.
 
 What's particularly nasty about this gotcha is the seemingly prevalent
 misinformation that this has something to do with :ref:`lambdas <python:lambda>`
-in Python. Functions created with a ``lambda`` expression are in no way special,
-and in fact the same exact behavior is exhibited by just using an ordinary ``def``:
+in Python. Functions created with a :py:keyword:`lambda` expression are in no way special,
+and in fact the same exact behavior is exhibited by just using an ordinary :py:keyword:`def`:
 
 .. code-block:: python
 
@@ -166,7 +166,7 @@ its arguments by using a default arg like so:
     def create_multipliers():
         return [lambda x, i=i : i * x for i in range(5)]
 
-Alternatively, you can use the functools.partial function:
+Alternatively, you can use the :py:func:`functools.partial` function:
 
 .. code-block:: python
 

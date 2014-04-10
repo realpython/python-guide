@@ -16,8 +16,10 @@ Vim is a text editor which uses keyboard shortcuts for editing instead of menus
 or icons. There exist a couple of plugins and settings for the VIM editor to
 aid Python development. If you only develop in Python, a good start is to set
 the default settings for indentation and line-wrapping to values compliant with
-:pep:`8`. In your home directory, open a file called ``.vimrc`` and add the
-following lines::
+:pep:`8`. In your home directory, open a file called :file:`.vimrc` and add the
+following lines:
+
+.. code-block:: 
 
     set textwidth=79  " lines longer than 79 columns will be broken
     set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
@@ -38,7 +40,7 @@ the syntax file included in VIM 6.1.
 These plugins supply you with a basic environment for developing in Python.
 To get the most out of Vim, you should continually check your code for syntax
 errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
-If your VIM is compiled with `+python` you can also utilize some very handy
+If your VIM is compiled with :option:`+python` you can also utilize some very handy
 plugins to do these checks from within the editor.
 
 For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
@@ -46,14 +48,18 @@ install vim-pyflakes_. Now you can map the functions ``Pep8()`` or ``Pyflakes()`
 to any hotkey or action you want in Vim. Both plugins will display errors at
 the bottom of the screen, and provide an easy way to jump to the corresponding
 line. It's very handy to call these functions whenever you save a file. In
-order to do this, add the following lines to your ``.vimrc``::
+order to do this, add the following lines to your :file:`.vimrc`:
+
+.. code-block:: 
 
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
 
 If you are already using syntastic_ you can enable it to run Pyflakes on write
 and show errors and warnings in the quickfix window. An example configuration
-to do that which also shows status and warning messages in the statusbar would be::
+to do that which also shows status and warning messages in the statusbar would be:
+
+.. code-block:: 
 
     set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
@@ -67,10 +73,10 @@ Python-mode
 Python-mode_ is a complex solution in VIM for working with Python code.
 It has:
 
-- Asynchronous Python code checking (``pylint``, ``pyflakes``, ``pep8``, ``mccabe``) in any combination
-- Code refactoring and autocompletion with Rope
+- Asynchronous Python code checking (:program:`pylint`, :program:`pyflakes`, :program:`pep8`, :program:`mccabe`) in any combination
+- Code refactoring and autocompletion with :program:`rope`
 - Fast Python folding
-- Virtualenv support
+- :program:`virtualenv` support
 - Search by Python documentation and run Python code
 - Auto PEP8_ error fixes
 
@@ -186,7 +192,7 @@ Interpreter Tools
 virtualenv
 ----------
 
-Virtualenv is a tool to keep the dependencies required by different projects
+:program:`virtualenv` is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them.
 It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
 dilemma, and keeps your global site-packages directory clean and manageable.
@@ -210,7 +216,7 @@ Create a virtual environment for a project:
     $ virtualenv venv
 
 ``virtualenv venv`` will create a folder in the current directory
-which will contain the Python executable files, and a copy of the ``pip``
+which will contain the Python executable files, and a copy of the :program:`pip`
 library which you can use to install other packages. The name of the
 virtual environment (in this case, it was ``venv``) can be anything;
 omitting the name will place the files in the current directory instead.
@@ -223,9 +229,9 @@ To start using the virtual environment, run:
 
 
 The name of the current virtual environment will now appear on the left
-of the prompt (e.g. ``(venv)Your-Computer:your_project UserName$``) to
+of the prompt (e.g. :samp:`(venv){Your-Computer}:{your_project} {UserName}$`) to
 let you know that it's active. From now on, any package that you install
-using ``pip`` will be placed in the ``venv`` folder, isolated from the global
+using :program:`pip` will be placed in the :file:`venv` folder, isolated from the global
 Python installation. 
 
 Install packages as usual:
@@ -236,15 +242,15 @@ Install packages as usual:
 
 To stop using an environment, simply type ``deactivate``. To remove the
 environment, just remove the directory it was installed into. (In this
-case, it would be ``rm -rf venv``.)
+case, it would be :command:`rm -rf venv`.)
 
 Other Notes
 ^^^^^^^^^^^
 
-Running ``virtualenv`` with the option ``--no-site-packages`` will not
+Running :program:`virtualenv` with the option :option:`--no-site-packages` will not
 include the packages that are installed globally. This can be useful
 for keeping the package list clean in case it needs to be accessed later.
-[This is the default behavior for ``virtualenv`` 1.7 and later.]
+[This is the default behavior for :program:`virtualenv` 1.7 and later.]
 
 In order to keep your environment consistent, it's a good idea to "freeze"
 the current state of the environment packages. To do this, run
@@ -253,7 +259,7 @@ the current state of the environment packages. To do this, run
 
     $ pip freeze > requirements.txt
 
-This will create a ``requirements.txt`` file, which contains a simple
+This will create a :file:`requirements.txt` file, which contains a simple
 list of all the packages in the current environment, and their respective
 versions. Later, when a different developer (or you, if you need to re-
 create the environment) can install the same packages, with the same
@@ -280,15 +286,15 @@ virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
     $ pip install virtualenvwrapper
 
 
-Put this into your ``~/.bash_profile`` (Linux/Mac) file:
+Put this into your :file:`~/.bash_profile` (Linux/Mac) file:
 
 .. code-block:: console
 
     $ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
-This will prevent your virtualenvs from relying on your (global) site packages
+This will prevent your virtualenvs from relying on your (global) :file:`site-packages`
 directory, so that they are completely separate..
-[note: This is the default behavior for ``virtualenv`` 1.7 and later]
+[note: This is the default behavior for :program:`virtualenv` 1.7 and later]
 
 Other Tools
 :::::::::::

@@ -43,8 +43,8 @@ most explicit and straightforward manner is preferred.
     def make_complex(x, y):
         return {'x': x, 'y': y}
 
-In the good code above, x and y are explicitly received from
-the caller, and an explicit dictionary is returned. The developer
+In the good code above, ``x`` and ``y`` are explicitly received from
+the caller, and an explicit :py:class:`dict` is returned. The developer
 using this function knows exactly what to do by reading the
 first and last lines, which is not the case with the bad example.
 
@@ -104,7 +104,7 @@ used for optional parameters sent to the function. When a function has more than
 two or three positional parameters, its signature will be more difficult to remember
 and using keyword argument with default values is helpful. For instance, a more
 complete ``send`` function could be defined as ``send(message, to, cc=None, bcc=None)``.
-Here ``cc`` and ``bcc`` are optional, and evaluate to ``None`` when they are not
+Here ``cc`` and ``bcc`` are optional, and evaluate to :py:const:`None` when they are not
 passed another value.
 
 Calling a function with keyword arguments can be done in multiple ways in Python,
@@ -176,8 +176,8 @@ possible to do each of the following:
 
 However, all these options have many drawbacks and it is always better to use
 the most straightforward way to achieve your goal. The main drawback is that
-readability suffers deeply from them. Many code analysis tools, such as pylint
-or pyflakes, will be unable to parse this "magic" code.
+readability suffers deeply from them. Many code analysis tools, such as :program:`pylint`
+or :program:`pyflakes`, will be unable to parse this "magic" code.
 
 We consider that a Python developer should know about these nearly infinite
 possibilities, because it grows the confidence that no hard-wall will be on the
@@ -192,10 +192,10 @@ We are all consenting adults
 
 As seen above, Python allows many tricks, and some of them are potentially
 dangerous. A good example is that any client code can override an object's
-properties and methods: there is no "private" keyword in Python. This
+properties and methods: there is no ``private`` keyword in Python. This
 philosophy, very different from highly defensive languages like Java, which
-give a lot of mechanisms to prevent any misuse, is expressed by the saying: "We
-are consenting adults".
+give a lot of mechanisms to prevent any misuse, is expressed by the saying: 
+"We are consenting adults".
 
 This doesn't mean that, for example, no properties are considered private, and
 that no proper encapsulation is possible in Python. But, instead of relying on
@@ -204,7 +204,7 @@ Python community prefers to rely on a set of conventions indicating that these
 elements should not be accessed directly.
 
 The main convention for private properties and implementation details is to
-prefix all "internals" with an underscore. If the client code breaks this rule
+prefix all "internals" with an underscore (``_``). If the client code breaks this rule
 and accesses these marked elements, any misbehavior or problems encountered if
 the code is modified is the responsibility of the client code.
 
@@ -261,7 +261,7 @@ is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_ and at `St
 
 Idiomatic Python code is often referred to as being *Pythonic*.
 
-Although there usually is one-- and preferably only one --obvious way to do it;
+Although there usually is one-- and preferably *only* one --obvious way to do it;
 *the* way to write idiomatic Python code can be non-obvious to Python beginners. So,
 good idioms must be consciously acquired.
 
@@ -273,7 +273,7 @@ Unpacking
 ~~~~~~~~~
 
 If you know the length of a list or tuple, you can assign names to its
-elements with unpacking. For example, since ``enumerate()`` will provide
+elements with unpacking. For example, since :py:func:`enumerate()` will provide
 a tuple of two elements for each item in list:
 
 .. code-block:: python
@@ -328,7 +328,7 @@ Create a length-N list of lists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Because lists are mutable, the ``*`` operator (as above) will create a list
-of N references to the `same` list, which is not likely what you want.
+of N references to the ``same`` list, which is not likely what you want.
 Instead, use a list comprehension:
 
 .. code-block:: python
@@ -343,9 +343,11 @@ A common idiom for creating strings is to use :py:meth:`str.join` on an empty st
     letters = ['s', 'p', 'a', 'm']
     word = ''.join(letters)
 
-This will set the value of the variable *word* to 'spam'. This idiom can be applied to lists and tuples.
+This will set the value of the variable ``word`` to ``'spam'``. 
+This idiom can be applied to lists and tuples.
 
-Sometimes we need to search through a collection of things. Let's look at two options: lists and dictionaries.
+Sometimes we need to search through a collection of things. 
+Let's look at two options: lists and dictionaries.
 
 Take the following code for example:
 
@@ -360,8 +362,10 @@ Take the following code for example:
     def lookup_list(l):
         return 's' in l
 
-Even though both functions look identical, because *lookup_dict* is utilizing the fact that dictionaries in python are hashtables, the lookup performance between the two is very different.
-Python will have to go through each item in the list to find a matching case, which is time consuming. By analysing the hash of the dictionary, finding keys in the dict can be done very quickly.
+Even though both functions look identical, because :py:meth:`lookup_dict` is utilizing the fact that dictionaries in python are hashtables, the lookup performance between the two is very different.
+Python will have to go through each item in the list to find a matching case, which is time consuming. 
+By analysing the hash of the dictionary, finding keys in the dict can be done very quickly.
+
 For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_ page.
 
 Zen of Python
@@ -438,8 +442,8 @@ Here are some conventions you should follow to make your code easier to read.
 Check if variable equals a constant
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You don't need to explicitly compare a value to True, or None, or 0 - you can
-just add it to the if statement. See `Truth Value Testing
+You don't need to explicitly compare a value to :py:const:`True`, or :py:const:`None`, or :py:const:`0` - you can
+just add it to the :py:keyword:`if` statement. See `Truth Value Testing
 <http://docs.python.org/library/stdtypes.html#truth-value-testing>`_ for a
 list of what is considered false.
 

@@ -30,7 +30,7 @@ running from the directory which holds those packages which need to be installed
 
 **Showing an example is always beneficial**
 
-Say if you are after installing a package called MyPackage.tar.gz,  and
+Say if you are after installing a package called :file:`MyPackage.tar.gz`,  and
 assuming this is your directory structure:
 
 
@@ -46,8 +46,8 @@ Go to your command prompt and type:
    $ python -m SimpleHTTPServer 9000
 
 This runs a simple http server running on port 9000 and will list all packages
-(like **MyPackage**). Now you can install **MyPackage** using any Python
-package installer. Using Pip, you would do it like:
+(like :module:`MyPackage`). Now you can install :module:`MyPackage` using any Python
+package installer. Using :program:`pip`, you would do it like:
 
 .. code-block:: console
 
@@ -55,8 +55,8 @@ package installer. Using Pip, you would do it like:
 
 Having a folder with the same name as the package name is **crucial** here.
 I got fooled by that, one time. But if you feel that creating a folder called
-**MyPackage** and keeping **MyPackage.tar.gz** inside that, is *redundant*,
-you can still install MyPackage using:
+:file:`MyPackage` and keeping :file:`MyPackage.tar.gz` inside that, is *redundant*,
+you can still install :module:`MyPackage` using:
 
 .. code-block:: console
 
@@ -66,8 +66,8 @@ pypiserver
 ++++++++++
 
 `Pypiserver <https://pypi.python.org/pypi/pypiserver>`_ is a minimal PyPI compatible server.
-It can be used to serve a set of packages to easy_install or pip.  It includes helpful
-features like an administrative command (``-U``) which will update all its packages to their
+It can be used to serve a set of packages to :program:`easy_install` or :program:`pip`.  It includes helpful
+features like an administrative command (:option:`-U`) which will update all its packages to their
 latest versions found on PyPI.
 
 

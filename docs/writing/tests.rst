@@ -16,7 +16,7 @@ Some general rules of testing:
   alone, and also within the test suite, regardless of the order they are called.
   The implication of this rule is that each test must be loaded with a fresh
   dataset and may have to do some cleanup afterwards. This is usually
-  handled by ``setUp()`` and ``tearDown()`` methods.
+  handled by :py:meth:`setUp` and :py:meth:`tearDown()` methods.
 
 - Try hard to make tests that run fast. If one single test needs more than a
   few millisecond to run, development will be slowed down or the tests will not
@@ -49,9 +49,9 @@ Some general rules of testing:
 - Use long and descriptive names for testing functions. The style guide here is
   slightly different than that of running code, where short names are often
   preferred. The reason is testing functions are never called explicitly.
-  ``square()`` or even ``sqr()`` is ok in running code, but in testing code you
-  would have names such as ``test_square_of_number_2()``,
-  ``test_square_negative_number()``. These function names are displayed when a
+  :py:func:`square()` or even :py:func:`sqr()` is okat in running code, but in testing code you
+  would have names such as :py:func:`test_square_of_number_2()`,
+  :py:func:`test_square_negative_number()`. These function names are displayed when a
   test fail, and should be as descriptive as possible.
 
 - When something goes wrong or has to be changed, and if your code has a good
@@ -75,11 +75,11 @@ The Basics
 Unittest
 --------
 
-Unittest is the batteries-included test module in the Python standard library.
+:module:`Unittest` is the batteries-included test module in the Python standard library.
 Its API will be familiar to anyone who has used any of the JUnit/nUnit/CppUnit
 series of tools.
 
-Creating testcases is accomplished by subclassing a TestCase base class
+Creating testcases is accomplished by subclassing a :py:class:`TestCase` base class.
 
 .. code-block:: python
 
@@ -92,7 +92,7 @@ Creating testcases is accomplished by subclassing a TestCase base class
         def test(self):
             self.assertEqual(fun(3), 4)
 
-As of Python 2.7 unittest also includes its own test discovery mechanisms.
+As of Python 2.7 :module:`unittest` also includes its own test discovery mechanisms.
 
     `unittest in the standard library documentation <http://docs.python.org/library/unittest.html>`_
 
@@ -100,7 +100,7 @@ As of Python 2.7 unittest also includes its own test discovery mechanisms.
 Doctest
 -------
 
-The doctest module searches for pieces of text that look like interactive
+The :module:`doctest` module searches for pieces of text that look like interactive
 Python sessions in docstrings, and then executes those sessions to verify that
 they work exactly as shown.
 
@@ -140,7 +140,7 @@ Tools
 py.test
 -------
 
-py.test is a no-boilerplate alternative to Python's standard unittest module.
+:program:`py.test` is a no-boilerplate alternative to Python's standard :module:`unittest` module.
 
 .. code-block:: console
 
@@ -159,7 +159,7 @@ functions:
     def test_answer():
         assert func(3) == 5
 
-and then running the `py.test` command
+and then running the :program:`py.test` command
 
 .. code-block:: console
 
@@ -182,7 +182,7 @@ and then running the `py.test` command
     ========================= 1 failed in 0.02 seconds =========================
 
 is far less work than would be required for the equivalent functionality with
-the unittest module!
+the :module:`unittest` module!
 
     `py.test <http://pytest.org/latest/>`_
 
@@ -190,14 +190,14 @@ the unittest module!
 Nose
 ----
 
-nose extends unittest to make testing easier.
+:module:`nose` extends :module:`unittest` to make testing easier.
 
 
 .. code-block:: console
 
     $ pip install nose
 
-nose provides automatic test discovery to save you the hassle of manually
+:module:`nose` provides automatic test discovery to save you the hassle of manually
 creating test suites. It also provides numerous plugins for features such as
 xUnit-compatible test output, coverage reporting, and test selection.
 
@@ -207,14 +207,14 @@ xUnit-compatible test output, coverage reporting, and test selection.
 tox
 ---
 
-tox is a tool for automating test environment management and testing against
-multiple interpreter configurations
+:program:`tox` is a tool for automating test environment management and testing against
+multiple interpreter configurations.
 
 .. code-block:: console
 
     $ pip install tox
 
-tox allows you to configure complicated multi-parameter test matrices via a
+:program:`tox` allows you to configure complicated multi-parameter test matrices via a
 simple ini-style configuration file.
 
     `tox <http://testrun.org/tox/latest/>`_
@@ -222,16 +222,16 @@ simple ini-style configuration file.
 Unittest2
 ---------
 
-unittest2 is a backport of Python 2.7's unittest module which has an improved
+:module:`unittest2` is a backport of Python 2.7's :module:`unittest` module which has an improved
 API and better assertions over the one available in previous versions of Python.
 
-If you're using Python 2.6 or below, you can install it with pip
+If you're using Python 2.6 or below, you can install it with :program:`pip`.
 
 .. code-block:: console
 
     $ pip install unittest2
 
-You may want to import the module under the name unittest to make porting code
+You may want to import the module under the name ``unittest``, to make porting code
 to newer versions of the module easier in the future
 
 .. code-block:: python
@@ -242,7 +242,7 @@ to newer versions of the module easier in the future
         ...
 
 This way if you ever switch to a newer python version and no longer need the
-unittest2 module, you can simply change the import in your test module without
+:module:`unittest2` module, you can simply change the ``import`` in your test module without
 the need to change any other code.
 
     `unittest2 <http://pypi.python.org/pypi/unittest2>`_
@@ -251,7 +251,7 @@ the need to change any other code.
 mock
 ----
 
-``mock`` is a library for testing in Python. As of Python 3.3, it is 
+:module:`mock` is a library for testing in Python. As of Python 3.3, it is 
 available in the `standard library <http://docs.python.org/dev/library/unittest.mock`_.  
 
 For older versions of Python:
@@ -274,7 +274,7 @@ For example, you can monkey-patch a method:
 
     thing.method.assert_called_with(3, 4, 5, key='value')
 
-To mock classes or objects in a module under test, use the ``patch`` decorator.
+To mock classes or objects in a module under test, use the :py:func:`@patch` decorator.
 In the example below, an external search system is replaced with a mock that
 always returns the same result (but only for the duration of the test).
 

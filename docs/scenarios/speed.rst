@@ -1,8 +1,8 @@
 Speed
 =====
 
-CPython, the most commonly used implementation of Python, is slow for CPU bound
-tasks. `PyPy`_ is fast.
+:program:`CPython`, the most commonly used implementation of Python, is 
+slow for CPU bound tasks. `PyPy`_ is fast.
 
 Using a slightly modified version of `David Beazleys`_ CPU bound test code
 (added loop for multiple tests), you can see the difference between CPython
@@ -100,7 +100,8 @@ Here's an example of strong typing with Cython:
         return result
 
 
-This implementation of an algorithm to find prime numbers has some additional keywords instead of the next one, which is implemented in pure Python:
+This implementation of an algorithm to find prime numbers has some additional 
+keywords instead of the next one, which is implemented in pure Python:
 
 .. code-block:: python
 
@@ -125,8 +126,8 @@ This implementation of an algorithm to find prime numbers has some additional ke
             n = n + 1
         return result
 
-Notice that in the Cython version you declare integers and integer arrays for 
-to be compiled into C types while also creating a Python list:
+Notice that, in the Cython version, you declare integers and integer arrays
+to be compiled into C types, while also creating a Python list:
 
 
 .. code-block:: cython
@@ -148,12 +149,13 @@ to be compiled into C types while also creating a Python list:
         p= range(1000)
         result = []
 
-What is the difference? In the upper Cython version you can see the declaration of the variable types  and the integer array
-in a similar way like in standard C. For example `cdef int n,k,i` in line 3.  This additional type declaration (e.g. integer)
-allows the Cython compiler to generate more efficient C code from the second code. While standard Python code is saved in `*.py` files,
-Cython code is saved in `*.pyx` files.
+What is the difference? In the upper Cython version you can see the declaration of the variable types
+and the integer array in a similar way like in standard C. For example ``cdef int n,k,i`` in line 3.  
+This additional type declaration (e.g. integer) allows the Cython compiler to generate more efficient 
+C code from the second code. While standard Python code is saved in :file:`*.py` files, Cython code is 
+saved in :file:`*.pyx` files.
 
-And what is with the speed? So lets try it!
+And what is with the speed? So let's try it!
 
 .. code-block:: python
 
@@ -187,11 +189,15 @@ These both lines need a remark:
     pyximport.install()
 
 
-The `pyximport` module allows you to import `pyx` files (e.g., `primesCy.pyx`) with the Cython-compiled version of the `primes` function.
-The `pyximport.install()` command allows the Python interpreter to start the Cython compiler directly to generate C-code,
-which is automatically compiled to a `*.so` C-library. Cython is able to import this library for you in your Python-code.
-Very easy and very efficient. With the `time.time()` function you are able to compare the time between this 2 different calls to find 500 prime numbers.
-On a standard notebook (dual core AMD E-450 1.6 GHz), the measured values are:
+The :module:`pyximport` module allows you to import :file:`*.pyx` files (e.g., 
+:file:`primesCy.pyx`) with the Cython-compiled version of the 
+:py:func:`primes` function. The :py:func:`pyximport.install()` command allows 
+the Python interpreter to start the Cython compiler directly to generate 
+C-code, which is automatically compiled to a :file:`*.so` C-library. Cython is 
+able to import this library for you in your Python-code. Very easy and very 
+efficient. With the :py:func:`time.time()` function you are able to compare 
+the time between this 2 different calls to find 500 prime numbers. On a 
+standard notebook (dual core AMD E-450 1.6 GHz), the measured values are:
 
 .. code-block:: console
 
@@ -202,6 +208,7 @@ On a standard notebook (dual core AMD E-450 1.6 GHz), the measured values are:
 
 
 And here the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_  machine:
+
 .. code-block:: console
 
     Cython time: 0.0196 seconds

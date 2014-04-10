@@ -14,7 +14,7 @@ virtualenv
 `virtualenv <http://pypi.python.org/pypi/virtualenv>`_ is a tool to create
 isolated Python environments.
 
-Install it via pip:
+Install it via :program:`pip`:
 
 .. code-block:: console
 
@@ -30,7 +30,7 @@ Basic Usage
    $ virtualenv venv
 
 This creates a copy of Python in whichever directory you ran the command in,
-placing it in a folder named ``venv``.
+placing it in a folder named :file:`venv`.
 
 2. To begin using the virtual environment, it needs to be activated:
 
@@ -64,7 +64,7 @@ virtualenvwrapper
 provides a set of commands which makes working with virtual environments much
 more pleasant. It also places all your virtual environments in one place.
 
-To install (make sure **virtualenv** is already installed):
+To install (make sure :program:`virtualenv` is already installed):
 
 .. code-block:: console
 
@@ -76,7 +76,7 @@ To install (make sure **virtualenv** is already installed):
 
 For Windows, you can use the `virtualenvwrapper-powershell <https://bitbucket.org/guillermooo/virtualenvwrapper-powershell>`_ clone.
 
-To install (make sure **virtualenv** is already installed):
+To install (make sure :program:`virtualenv` is already installed):
 
 .. code-block:: console
 
@@ -94,7 +94,7 @@ Basic Usage
 
    $ mkvirtualenv venv
 
-This creates the ``venv`` folder inside ``~/Envs``.
+This creates the :file:`venv` folder inside :file:`~/Envs`.
 
 2. Work on a virtual environment:
 
@@ -102,7 +102,7 @@ This creates the ``venv`` folder inside ``~/Envs``.
 
    $ workon venv
 
-**virtualenvwrapper** provides tab-completion on environment names. It really
+:program:`virtualenvwrapper` provides tab-completion on environment names. It really
 helps when you have a lot of environments and have trouble remembering their
 names.
 ``workon`` also deactivates whatever environment you are currently in, so you
@@ -140,10 +140,10 @@ Other useful commands
 
 autoenv
 -------
-When you ``cd`` into a directory containing a ``.env``, `autoenv <https://github.com/kennethreitz/autoenv>`_
+When you :command:`cd` into a directory containing :file:`.env`, `autoenv <https://github.com/kennethreitz/autoenv>`_
 automagically activates the environment.
 
-Install it on Mac OS X using ``brew``:
+Install it on Mac OS X using :program:`brew`:
 
 .. code-block:: console
 

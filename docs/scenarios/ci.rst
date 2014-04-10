@@ -60,8 +60,10 @@ Requests whether this particular changeset breaks the build or not. So if you ar
 hosting your code on Github, travis-ci is a great and easy way to get started with
 Continuous Integration.
 
-In order to get started, add a ``.travis.yml`` file to your repository with this
-example content::
+In order to get started, add a :file:`.travis.yml` file to your repository with this
+example content.
+
+.. code-block:: yaml
 
     language: python
     python:

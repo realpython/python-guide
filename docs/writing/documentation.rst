@@ -8,7 +8,7 @@ both you and others a lot of time.
 Project Documentation
 ---------------------
 
-A ``README`` file at the root directory should give general
+A :file:`README` file at the root directory should give general
 information to the users and the maintainers. It should be raw text or
 written in some very easy to read markup, such as
 :ref:`reStructuredText-ref` and Markdown. It should contain a few
@@ -17,18 +17,18 @@ assuming the user knows anything about the project), the url of the
 main source for the software, and some basic credit information. This
 file is the main entry point for readers of the code.
 
-An ``INSTALL`` file is less necessary with python.  The installation
+An :file:`INSTALL` file is less necessary with Python.  The installation
 instructions are often reduced to one command, such as ``pip install
-module`` or ``python setup.py install`` and added to the ``README``
+module`` or ``python setup.py install`` and added to the :file:`README`
 file.
 
-A ``LICENSE`` file should *always* be present and specify the license under which the
+A :file:`LICENSE` file should *always* be present and specify the license under which the
 software is made available to the public.
 
-A ``TODO`` file or a ``TODO`` section in ``README`` should list the
+A :file:`TODO` file or a :file:`TODO` section in :file:`README` should list the
 planned development for the code.
 
-A ``CHANGELOG`` file or section in ``README`` should compile a short
+A :file:`CHANGELOG` file or section in :file:`README` should compile a short
 overview of the changes in the code base for the latest versions.
 
 Project Publication
@@ -158,7 +158,7 @@ Pycco_
 .. _Docco: http://jashkenas.github.com/docco
 
 Ronn_
-    Ronn builds unix manuals. It converts human readable textfiles to roff for terminal display, and also to HTML for the web.
+    Ronn builds UNIX manpages. It converts human readable textfiles to roff for terminal display, and also to HTML for the web.
 
 .. _Ronn: https://github.com/rtomayko/ronn
 

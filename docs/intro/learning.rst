@@ -147,7 +147,7 @@ case-studies), method resolution order, using super() and meta-programming, and
 general :pep:`8` best practices.
 
 It has a detailed, multi-chapter case study on writing and releasing a package
-and eventually an application, including a chapter on using zc.buildout.  Later
+and eventually an application, including a chapter on using :module:`zc.buildout`.  Later
 chapters detail best practices with writing documentation, test-driven
 development, version control, and optimization/profiling.
 

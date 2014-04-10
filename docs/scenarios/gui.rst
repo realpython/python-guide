@@ -6,7 +6,7 @@ Alphabetical list of GUI Applications.
 Camelot
 -------
 `Camelot <http://www.python-camelot.com>`_ provides components for building 
-business applications on top of Python, SQLAlchemy and Qt.  It is inspired by 
+business applications on top of Python, SQLAlchemy, and Qt.  It is inspired by 
 the Django admin interface.  
 
 You can use Camelot to develop both simple and complex business applications 
@@ -36,7 +36,7 @@ interaction design and rapid prototyping, while making your code reusable
 and deployable.
 
 Kivy is written in Python, based on OpenGL and supports different input devices
-such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products and so on.
+such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products, and so on.
 
 Kivy is actively being developed by a community and free to use. It operates
 on all major platforms (Linux, OSX, Windows, Android).
@@ -77,7 +77,7 @@ software with a GUI but can also be used for non-GUI applications.
 
 Tk
 --
-Tkinter is a thin object-oriented layer on top of Tcl/Tk. **It has the advantage
+:module:`Tkinter` is a thin object-oriented layer on top of Tcl/Tk. **It has the advantage
 of being included with the Python standard library, making it the most
 convenient and compatible toolkit to program with.**
 
@@ -91,7 +91,7 @@ available on the `Python Wiki <http://wiki.python.org/moin/TkInter>`_.
 
 wxPython
 --------
-wxPython is a GUI toolkit for the Python programming language. It allows
+:program:`wxPython` is a GUI toolkit for the Python programming language. It allows
 Python programmers to create programs with a robust, highly functional
 graphical user interface, simply and easily. It is implemented as a Python
 extension module (native code) that wraps the popular wxWidgets cross platform

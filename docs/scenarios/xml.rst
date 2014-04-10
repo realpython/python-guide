@@ -52,14 +52,14 @@ An XML file like this:
       </plus>
     </mydocument>
 
-can be loaded into a Python dict like this:
+can be loaded into a Python :py:class:`dict` like this:
 
 .. code-block:: python
 
     import xmltodict
     obj = xmltodict.parse('path/to/file.xml')
 
-and then you can access elements, attributes and values like this:
+and then you can access elements, attributes, and values, like this:
 
 .. code-block:: python
 
@@ -68,6 +68,6 @@ and then you can access elements, attributes and values like this:
     doc['mydocument']['plus']['@a'] # == u'complex'
     doc['mydocument']['plus']['#text'] # == u'element as well'
 
-xmltodict also lets you roundtrip back to XML with the unparse function,
-has a streaming mode suitable for handling files that don't fit in memory
+:module:`xmltodict` also lets you roundtrip back to XML with the :py:func:`unparse` function,
+has a streaming mode suitable for handling files that don't fit in memory,
 and supports namespaces.

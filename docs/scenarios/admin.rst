@@ -38,7 +38,7 @@ server.
                 run('git pull')
                 run('touch app.wsgi')
 
-With the previous code saved in a file named fabfile.py, we can check memory
+With the previous code saved in a file named :file:`fabfile.py`, we can check memory
 usage with:
 
 .. code-block:: console
@@ -77,7 +77,7 @@ It supports remote command execution from a central point (master host) to multi
 hosts (minions). It also supports system states which can be used to configure
 multiple servers using simple template files.
 
-Salt supports Python versions 2.6 and 2.7 and can be installed via pip:
+:program:`Salt` supports Python versions 2.6 and 2.7 and can be installed via :program:`pip`:
 
 .. code-block:: console
 
@@ -86,7 +86,7 @@ Salt supports Python versions 2.6 and 2.7 and can be installed via pip:
 After configuring a master server and any number of minion hosts, we can run arbitrary
 shell commands or use pre-built modules of complex commands on our minions.
 
-The following command lists all available minion hosts, using the ping module.
+The following command lists all available minion hosts, using the :module:`ping` module.
 
 .. code-block:: console
 
@@ -119,7 +119,7 @@ and start the Apache server:
         - require:
           - pkg: apache
 
-State files can be written using YAML, the Jinja2 template system or pure Python.
+State files can be written using YAML, the Jinja2 template system, or pure Python.
 
     `Salt Documentation <http://docs.saltstack.com>`_
 
