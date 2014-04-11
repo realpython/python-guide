@@ -18,7 +18,7 @@ and the mailinglist https://groups.google.com/forum/#!forum/project-camelot
 
 Cocoa
 -----
-.. note:: The Cocoa framework is only available on Mac OSX. Don't pick this if you're writing a cross-platform application!
+.. note:: The Cocoa framework is only available on OS X. Don't pick this if you're writing a cross-platform application!
 
 GTk
 ---
@@ -45,7 +45,7 @@ The main resource for information is the website: http://kivy.org
 
 PyObjC
 ~~~~~~
-.. note:: Only available on Mac OSX. Don't pick this if you're writing a cross-platform application.
+.. note:: Only available on OS X. Don't pick this if you're writing a cross-platform application.
 
 PySide
 ~~~~~~
