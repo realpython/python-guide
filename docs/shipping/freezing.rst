@@ -38,7 +38,7 @@ cx_Freeze   yes     yes   yes  yes      PSF     no            yes            yes
 .. note::
     All solutions need MS Visual C++ dll to be installed on target machine.
     Only Pyinstaller makes self-executable exe that bundles the dll when
-    passing ``--onefile`` to `Configure.py`.
+    passing ``--onefile`` to :file:`Configure.py`.
 
 Windows
 -------
@@ -72,7 +72,7 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`.
 
 4. (Optionally) `one-file mode <http://stackoverflow.com/questions/112698/py2exe-generate-single-executable-file#113014>`_
 
-5. Generate ``.exe`` into ``dist`` directory:
+5. Generate :file:`.exe` into :file:`dist` directory:
 
 .. code-block:: console
 

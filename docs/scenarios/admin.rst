@@ -38,7 +38,7 @@ server.
                 run('git pull')
                 run('touch app.wsgi')
 
-With the previous code saved in a file named fabfile.py, we can check memory
+With the previous code saved in a file named :file:`fabfile.py`, we can check memory
 usage with:
 
 .. code-block:: console

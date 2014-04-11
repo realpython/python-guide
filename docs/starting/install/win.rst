@@ -13,7 +13,7 @@ double-click the file. The MSI package format allows Windows administrators to
 automate installation with their standard tools.
 
 By design, Python installs to a directory with the version number embedded,
-e.g. Python version 2.7 will install at ``C:\Python27\``, so that you can
+e.g. Python version 2.7 will install at :file:`C:\Python27\`, so that you can
 have multiple versions of Python on the
 same system without conflicts. Of course, only one interpreter can be the
 default application for Python file types. It also does not automatically
@@ -22,7 +22,7 @@ which copy of Python is run.
 
 Typing the full path name for a Python interpreter each time quickly gets
 tedious, so add the directories for your default Python version to the PATH.
-Assuming that your Python installation is in ``C:\Python27\``, add this to your
+Assuming that your Python installation is in :file:`C:\Python27\`, add this to your
 PATH:
 
 .. code-block:: console
@@ -35,7 +35,7 @@ You can do this easily by running the following in ``powershell``:
 
     [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
 
-The second (``Scripts``) directory receives command files when certain
+The second (:file:`Scripts`) directory receives command files when certain
 packages are installed, so it is a very useful addition.
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
@@ -92,14 +92,14 @@ project's directory
 
     > virtualenv venv
 
-To use an environment, run the ``activate.bat`` batch file in the ``Scripts``
+To use an environment, run the :file:`activate.bat` batch file in the :file:`Scripts`
 subdirectory of that environment. Your command prompt will change to show the
 active environment. Once you have finished working in the current virtual
-environment, run the ``deactivate.bat`` batch file to restore your settings to
+environment, run the :file:`deactivate.bat` batch file to restore your settings to
 normal.
 
 Each new environment automatically includes a copy of ``pip`` in the
-``Scripts`` subdirectory, so that you can setup the third-party libraries and
+:file:`Scripts` subdirectory, so that you can setup the third-party libraries and
 tools that you want to use in that environment. Put your own code within a
 subdirectory of the environment, however you wish. When you no longer need a
 particular environment, simply copy your code out of it, and then delete the
