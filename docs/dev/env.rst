@@ -38,7 +38,7 @@ the syntax file included in VIM 6.1.
 These plugins supply you with a basic environment for developing in Python.
 To get the most out of Vim, you should continually check your code for syntax
 errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
-If your VIM is compiled with `+python` you can also utilize some very handy
+If your VIM is compiled with :option:`+python` you can also utilize some very handy
 plugins to do these checks from within the editor.
 
 For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
@@ -241,7 +241,7 @@ case, it would be ``rm -rf venv``.)
 Other Notes
 ^^^^^^^^^^^
 
-Running ``virtualenv`` with the option ``--no-site-packages`` will not
+Running ``virtualenv`` with the option :option:`--no-site-packages` will not
 include the packages that are installed globally. This can be useful
 for keeping the package list clean in case it needs to be accessed later.
 [This is the default behavior for ``virtualenv`` 1.7 and later.]
