@@ -9,7 +9,7 @@ this guide:
 1. put this folder as _themes into your docs folder.  Alternatively
    you can also use git submodules to check out the contents there.
 
-2. add this to your conf.py: ::
+2. add this to your :file:`conf.py`: ::
 
 	sys.path.append(os.path.abspath('_themes'))
 	html_theme_path = ['_themes']

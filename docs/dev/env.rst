@@ -280,7 +280,7 @@ virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
     $ pip install virtualenvwrapper
 
 
-Put this into your ``~/.bash_profile`` (Linux/Mac) file:
+Put this into your :file:`~/.bash_profile` (Linux/Mac) file:
 
 .. code-block:: console
 
