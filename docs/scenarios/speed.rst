@@ -153,7 +153,7 @@ in a similar way like in standard C. For example `cdef int n,k,i` in line 3.  Th
 allows the Cython compiler to generate more efficient C code from the second code. While standard Python code is saved in :file:`*.py` files,
 Cython code is saved in :file:`*.pyx` files.
 
-And what is with the speed? So lets try it!
+And what is with the speed? So let's try it!
 
 .. code-block:: python
 
