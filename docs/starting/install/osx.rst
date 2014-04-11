@@ -46,7 +46,7 @@ simply run
 The script will explain what changes it will make and prompt you before the
 installation begins.
 Once you've installed Homebrew, insert the Homebrew directory at the top
-of your ``PATH`` environment variable. You can do this by adding the following
+of your :envvar:`PATH` environment variable. You can do this by adding the following
 line at the bottom of your :file:`~/.bashrc` file
 
 .. code-block:: console
@@ -60,7 +60,7 @@ Now, we can install Python 2.7:
     $ brew install python
 
 This will take a minute or two. Once that's complete, you'll have to add the
-new Python scripts directory to your ``PATH``
+new Python scripts directory to your :envvar:`PATH`
 
 .. code-block:: console
 
