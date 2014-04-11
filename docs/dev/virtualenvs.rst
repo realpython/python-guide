@@ -30,7 +30,7 @@ Basic Usage
    $ virtualenv venv
 
 This creates a copy of Python in whichever directory you ran the command in,
-placing it in a folder named ``venv``.
+placing it in a folder named :file:`venv`.
 
 2. To begin using the virtual environment, it needs to be activated:
 
@@ -94,7 +94,7 @@ Basic Usage
 
    $ mkvirtualenv venv
 
-This creates the ``venv`` folder inside ``~/Envs``.
+This creates the :file:`venv` folder inside :file:`~/Envs`.
 
 2. Work on a virtual environment:
 
@@ -105,6 +105,7 @@ This creates the ``venv`` folder inside ``~/Envs``.
 **virtualenvwrapper** provides tab-completion on environment names. It really
 helps when you have a lot of environments and have trouble remembering their
 names.
+
 ``workon`` also deactivates whatever environment you are currently in, so you
 can quickly switch between environments.
 
@@ -128,19 +129,19 @@ Other useful commands
 
 ``cdvirtualenv``
   Navigate into the directory of the currently activated virtual environment,
-  so you can browse its ``site-packages``, for example.
+  so you can browse its :file:`site-packages`, for example.
 
 ``cdsitepackages``
-  Like the above, but directly into ``site-packages`` directory.
+  Like the above, but directly into :file:`site-packages` directory.
 
 ``lssitepackages``
-  Shows contents of ``site-packages`` directory.
+  Shows contents of :file:`site-packages` directory.
 
 `Full list of virtualenvwrapper commands <http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html>`_.
 
 autoenv
 -------
-When you ``cd`` into a directory containing a ``.env``, `autoenv <https://github.com/kennethreitz/autoenv>`_
+When you ``cd`` into a directory containing a :file:`.env`, `autoenv <https://github.com/kennethreitz/autoenv>`_
 automagically activates the environment.
 
 Install it on Mac OS X using ``brew``:

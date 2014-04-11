@@ -252,7 +252,7 @@ Gondor
 `Gondor <https://gondor.io/>`_ is a PaaS specialized for deploying Django
 and Pinax applications. Gondor supports Django versions 1.2 and 1.3 on
 Python version 2.7, and can automatically configure your Django site if you
-use ``local_settings.py`` for site-specific configuration information.
+use :file:`local_settings.py` for site-specific configuration information.
 
 Gondor has a guide on deploying `Django projects <https://gondor.io/support/django/setup/>`_.
 
@@ -365,7 +365,7 @@ to use.
         application.listen(PORT)
         tornado.ioloop.IOLoop.instance().start()
 
-The `base.html` file can be used as base for all site pages which are for example implemented in the content block.
+The :file:`base.html` file can be used as base for all site pages which are for example implemented in the content block.
 
 .. code-block:: html
 
@@ -389,8 +389,8 @@ The `base.html` file can be used as base for all site pages which are for exampl
     </body>
 
 
-The next listing is our site page (`site.html`) loaded in the Python app which extends `base.html`. The content block is
-automatically set into the corresponding block in the base.html page.
+The next listing is our site page (:file:`site.html`) loaded in the Python app which extends :file:`base.html`. The content block is
+automatically set into the corresponding block in the :file:`base.html` page.
 
 .. code-block:: html
 

@@ -47,7 +47,7 @@ The script will explain what changes it will make and prompt you before the
 installation begins.
 Once you've installed Homebrew, insert the Homebrew directory at the top
 of your ``PATH`` environment variable. You can do this by adding the following
-line at the bottom of your ``~/.bashrc`` file
+line at the bottom of your :file:`~/.bashrc` file
 
 .. code-block:: console
 

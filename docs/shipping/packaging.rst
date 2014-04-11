@@ -30,7 +30,7 @@ running from the directory which holds those packages which need to be installed
 
 **Showing an example is always beneficial**
 
-Say if you are after installing a package called MyPackage.tar.gz,  and
+Say if you are after installing a package called :file:`MyPackage.tar.gz`,  and
 assuming this is your directory structure:
 
 
@@ -55,7 +55,7 @@ package installer. Using Pip, you would do it like:
 
 Having a folder with the same name as the package name is **crucial** here.
 I got fooled by that, one time. But if you feel that creating a folder called
-**MyPackage** and keeping **MyPackage.tar.gz** inside that, is *redundant*,
+:file:`MyPackage` and keeping :file:`MyPackage.tar.gz` inside that, is *redundant*,
 you can still install MyPackage using:
 
 .. code-block:: console
@@ -88,7 +88,7 @@ One simple option for a personal PyPi server is to use Amazon S3. A prerequisite
 
 4. **Upload the new files**
 
-* Use a client like Cyberduck to sync the entire :code:`packages` folder to your s3 bucket
+* Use a client like Cyberduck to sync the entire :file:`packages` folder to your s3 bucket
 * Make sure you upload :code:`packages/simple/index.html` as well as all new files and directories
 
 5. **Fix new file permissions**

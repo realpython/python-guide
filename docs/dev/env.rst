@@ -16,7 +16,7 @@ Vim is a text editor which uses keyboard shortcuts for editing instead of menus
 or icons. There exist a couple of plugins and settings for the VIM editor to
 aid Python development. If you only develop in Python, a good start is to set
 the default settings for indentation and line-wrapping to values compliant with
-:pep:`8`. In your home directory, open a file called ``.vimrc`` and add the
+:pep:`8`. In your home directory, open a file called :file:`.vimrc` and add the
 following lines::
 
     set textwidth=79  " lines longer than 79 columns will be broken
@@ -46,7 +46,7 @@ install vim-pyflakes_. Now you can map the functions ``Pep8()`` or ``Pyflakes()`
 to any hotkey or action you want in Vim. Both plugins will display errors at
 the bottom of the screen, and provide an easy way to jump to the corresponding
 line. It's very handy to call these functions whenever you save a file. In
-order to do this, add the following lines to your ``.vimrc``::
+order to do this, add the following lines to your :file:`.vimrc`::
 
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
@@ -253,7 +253,7 @@ the current state of the environment packages. To do this, run
 
     $ pip freeze > requirements.txt
 
-This will create a ``requirements.txt`` file, which contains a simple
+This will create a :file:`requirements.txt` file, which contains a simple
 list of all the packages in the current environment, and their respective
 versions. Later, when a different developer (or you, if you need to re-
 create the environment) can install the same packages, with the same
