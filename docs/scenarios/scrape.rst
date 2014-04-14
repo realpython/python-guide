@@ -24,7 +24,7 @@ module instead of the already built-in urlib2 due to improvements in speed and
 readability. You can easily install both using ``pip install lxml`` and
 ``pip install requests``.
 
-Lets start with the imports:
+Let's start with the imports:
 
 .. code-block:: python
 
@@ -71,7 +71,7 @@ Knowing this we can create the correct XPath query and use the lxml
     #This will create a list of prices
     prices = tree.xpath('//span[@class="item-price"]/text()')
 
-Lets see what we got exactly:
+Let's see what we got exactly:
 
 .. code-block:: python
 

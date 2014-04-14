@@ -89,8 +89,8 @@ Prerequisite is to have installed :ref:`Python, Setuptools and pywin32 dependenc
 - `Manual <http://www.pyinstaller.org/export/d3398dd79b68901ae1edd761f3fe0f4ff19cfb1a/project/doc/Manual.html?format=raw>`_
 
 
-OSX
----
+OS X
+----
 
 
 py2app
