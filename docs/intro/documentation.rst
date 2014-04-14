@@ -28,13 +28,13 @@ It allows you to quickly retrieve and search for documentation from your
 shell. For example, if you needed a quick refresher on the
 :mod:`time` module, pulling up documentation would be as simple as
 
-    .. code-block:: bash
+    .. code-block:: console
 
        $ pydoc time
 
 The above command is essentially equivalent to opening the Python REPL
 and running
 
-    .. code-block:: python
+    .. code-block:: pycon
 
        >>> help(time)
