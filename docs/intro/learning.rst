@@ -228,4 +228,6 @@ Writing Idiomatic Python 2.7.3
 
 "Writing Idiomatic Python", written by Jeff Knupp, contains the most common and important Python idioms in a format that maximizes identification and understanding. Each idiom is presented as a recommendation to write some commonly used piece of code. It is followed by an explanation of why the idiom is important. It also contains two code samples: the "Harmful" way to write it and the "Idiomatic" way
 
+	`Writing Idiomatic Python 2.7.3 <http://www.amazon.com/Writing-Idiomatic-Python-2-7-3-Knupp/dp/1482372177/>`_
+
 
