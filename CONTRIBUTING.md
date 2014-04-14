@@ -10,6 +10,6 @@ http://docs.python-guide.org/en/latest/notes/contribute/
 Style Guide
 -----------
 
-For all contributions, please follow the `Guide Stye Guide`:
+For all contributions, please follow the `Guide Style Guide`:
 
 http://docs.python-guide.org/en/latest/notes/styleguide/
