@@ -231,7 +231,7 @@ man_pages = [
 epub_title = u'pythonguide'
 epub_author = u'Kenneth Reitz'
 epub_publisher = u'Kenneth Reitz'
-epub_copyright = u'2010, Kenneth Reitz'
+epub_copyright = u'2014, Kenneth Reitz'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
