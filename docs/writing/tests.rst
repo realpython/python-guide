@@ -251,8 +251,9 @@ the need to change any other code.
 mock
 ----
 
-``mock`` is a library for testing in Python. As of Python 3.3, it is 
-available in the `standard library <http://docs.python.org/dev/library/unittest.mock`_.  
+:mod:`unittest.mock` is a library for testing in Python. As of Python 3.3, it is
+available in the
+`standard library <https://docs.python.org/dev/library/unittest.mock>`_.
 
 For older versions of Python:
 
