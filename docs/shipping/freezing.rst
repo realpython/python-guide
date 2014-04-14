@@ -90,7 +90,7 @@ Prerequisite is to have installed :ref:`Python, Setuptools and pywin32 dependenc
 
 
 OS X
----
+----
 
 
 py2app
