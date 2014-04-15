@@ -76,11 +76,11 @@ The Basics
 Unittest
 --------
 
-:mod:`unittest` is the batteries-included test module in the Python standard library.
-Its API will be familiar to anyone who has used any of the JUnit/nUnit/CppUnit
-series of tools.
+:mod:`unittest` is the batteries-included test module in the Python standard
+library. Its API will be familiar to anyone who has used any of the
+JUnit/nUnit/CppUnit series of tools.
 
-Creating testcases is accomplished by subclassing a :class:`TestCase` base class
+Creating test cases is accomplished by subclassing :class:`unittest.TestCase`.
 
 .. code-block:: python
 
