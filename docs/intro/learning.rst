@@ -224,7 +224,7 @@ Python 3 and 2.6 versions.
     `Python Pocket Reference <http://shop.oreilly.com/product/9780596158095.do>`_
 	
 Writing Idiomatic Python
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 "Writing Idiomatic Python", written by Jeff Knupp, contains the most common and
 important Python idioms in a format that maximizes identification and understanding. 
