@@ -222,3 +222,18 @@ core language, with descriptions of commonly used modules and toolkits. It cover
 Python 3 and 2.6 versions.
 
     `Python Pocket Reference <http://shop.oreilly.com/product/9780596158095.do>`_
+	
+Writing Idiomatic Python
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+"Writing Idiomatic Python", written by Jeff Knupp, contains the most common and
+important Python idioms in a format that maximizes identification and understanding. 
+Each idiom is presented as a recommendation to write some commonly used piece of code.
+It is followed by an explanation of why the idiom is important. It also contains two 
+code samples: the "Harmful" way to write it and the "Idiomatic" way
+
+	`For Python 2.7.3+ <http://www.amazon.com/Writing-Idiomatic-Python-2-7-3-Knupp/dp/1482372177/>`_
+	
+	`For Python 3.3+  <http://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_
+
+
