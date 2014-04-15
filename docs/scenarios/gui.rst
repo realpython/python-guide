@@ -5,12 +5,9 @@ Alphabetical list of GUI Applications.
 
 Camelot
 -------
-`Camelot <http://www.python-camelot.com>`_ provides components for building 
-business applications on top of Python, SQLAlchemy and Qt.  It is inspired by 
-the Django admin interface.  
-
-You can use Camelot to develop both simple and complex business applications 
-at warp speed.
+`Camelot <http://www.python-camelot.com>`_ provides components for building
+applications on top of Python, SQLAlchemy and Qt.  It is inspired by
+the Django admin interface.
 
 The main resource for information is the website: 
 http://www.python-camelot.com 
