@@ -16,7 +16,7 @@ Some general rules of testing:
   alone, and also within the test suite, regardless of the order they are called.
   The implication of this rule is that each test must be loaded with a fresh
   dataset and may have to do some cleanup afterwards. This is usually
-  handled by ``setUp()`` and ``tearDown()`` methods.
+  handled by :meth:`setUp()` and :meth:`tearDown()` methods.
 
 - Try hard to make tests that run fast. If one single test needs more than a
   few millisecond to run, development will be slowed down or the tests will not
@@ -75,11 +75,11 @@ The Basics
 Unittest
 --------
 
-Unittest is the batteries-included test module in the Python standard library.
+:mod:`unittest` is the batteries-included test module in the Python standard library.
 Its API will be familiar to anyone who has used any of the JUnit/nUnit/CppUnit
 series of tools.
 
-Creating testcases is accomplished by subclassing a TestCase base class
+Creating testcases is accomplished by subclassing a :class:`TestCase` base class
 
 .. code-block:: python
 
@@ -100,7 +100,7 @@ As of Python 2.7 unittest also includes its own test discovery mechanisms.
 Doctest
 -------
 
-The doctest module searches for pieces of text that look like interactive
+The :mod:`doctest` module searches for pieces of text that look like interactive
 Python sessions in docstrings, and then executes those sessions to verify that
 they work exactly as shown.
 
