@@ -38,7 +38,7 @@ cx_Freeze   yes     yes   yes  yes      PSF     no            yes            yes
 .. note::
     All solutions need MS Visual C++ dll to be installed on target machine.
     Only Pyinstaller makes self-executable exe that bundles the dll when
-    passing ``--onefile`` to :file:`Configure.py`.
+    passing :option:`--onefile` to :file:`Configure.py`.
 
 Windows
 -------
