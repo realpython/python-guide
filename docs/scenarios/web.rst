@@ -220,10 +220,10 @@ free of charge. Heroku is best described as a horizontal scaling platform. They
 start to charge you once you "scale" your application to run on more than one
 Dyno (abstracted servers) at a time.
 
-Heroku publishes `step-by-step instructions
+Heroku maintains `articles <https://devcenter.heroku.com/categories/python>`_
+on using Python with Heroku as well as `step-by-step instructions
 <https://devcenter.heroku.com/articles/getting-started-with-python>`_ on
-how to set up your first application for use in Heroku, and maintains a
-list of `example applications <http://python.herokuapp.com/>`_.
+how to set up your first application.
 
 
 DotCloud
