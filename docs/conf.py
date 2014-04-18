@@ -256,7 +256,9 @@ epub_copyright = u'2014, Kenneth Reitz'
 #epub_post_files = []
 
 # A list of files that should not be packed into the epub file.
-#epub_exclude_files = []
+epub_exclude_files = [
+    ('search.html', 'Search'),
+]
 
 # The depth of the table of contents in toc.ncx.
 #epub_tocdepth = 3
