@@ -250,8 +250,8 @@ Gondor
 ~~~~~~
 
 `Gondor <https://gondor.io/>`_ is a PaaS specialized for deploying Django
-and Pinax applications. Gondor supports Django versions 1.2 and 1.3 on
-Python version 2.7, and can automatically configure your Django site if you
+and Pinax applications. Gondor recommends Django version 1.6 and supports any WSGI application on
+Python version 2.7. Gondor can automatically configure your Django site if you
 use :file:`local_settings.py` for site-specific configuration information.
 
 Gondor has a guide on deploying `Django projects <https://gondor.io/support/django/setup/>`_.
