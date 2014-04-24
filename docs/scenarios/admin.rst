@@ -64,6 +64,51 @@ and we can deploy with:
 
     $ fab deploy
 
+If you deploy many servers, one problem is each server has a different password, the
+following code show how to config different servers.
+
+.. code-block:: python
+
+    from fabric.api import *
+
+    env.roledefs = {
+        'server1': ['usename@ip1:port1',],
+        'server2': ['usename@ip2:port2',],
+    }
+
+
+    env.passwords = {
+        'usename@ip1:port1': 'password1',
+        'usename@ip2:port2': 'password2',
+    }
+
+    # env.password = 'xxxxxx' # if all hosts have the same password,
+                              # use env.password for short
+
+    COMAND = 'ls -l | wc'
+
+    @roles('server1')
+    def test_remote():
+        run(COMAND)
+
+    def test_local():
+        local(COMAND)
+
+    @roles('server2')
+    def download(remote_path, local_path='~/download'):
+        get(remote_path, local_path)
+
+    def do():
+        execute(test_local)
+        execute(test_remote)
+
+And you can test with:
+
+.. code-block:: console
+
+    $ fab do
+    $ fab download('/remote_path/to/file')
+
 Additional features include parallel execution, interaction with remote
 programs, and host grouping.
 
