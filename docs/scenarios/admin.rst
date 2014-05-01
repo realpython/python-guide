@@ -178,11 +178,46 @@ monitoring is `glance <https://github.com/nicolargo/glances/>`_.
 
 Ansible
 -------
+`Ansible <http://ansible.com/>`_  is a open source system automation tool. The biggest advantage over Puppet or Chef is it does not require an agent on the client machine. Playbooks are Ansible’s configuration, deployment, and orchestration language and are written in in yaml with jinja2 for templating.
 
-.. todo:: Write about Ansible
+Ansible supports Python versions 2.6 and 2.7 and can be installed via pip:
 
-    `Ansible Documentation
-    <http://www.ansibleworks.com/docs/>`_
+.. code-block:: console
+
+    $ pip install ansible
+
+Ansible requires a inventory file that describes the hosts it has access to. Here is an example of a host and
+playbook that will ping all the hosts in the inventory file:
+
+Here is an example inventory file:
+hosts.yml
+
+.. code-block:: yaml
+
+    [server_name]
+    127.0.0.1
+
+Here is an example playbook:
+ping.yml
+
+.. code-block:: yaml
+
+    ---
+    - hosts: all
+
+      tasks:
+        - name: ping
+          action: ping      
+
+To run the playbook:
+
+.. code-block:: console
+
+    $ ansible-playbook ping.yml -i hosts.yml --ask-pass
+
+That Ansible playbook will ping all of the servers in the hosts.yml file. You can also select groups of servers using Ansible. For more information about Ansible read the docs.
+
+`Ansible Docs <http://docs.ansible.com/>`_ 
 
 
 Chef
