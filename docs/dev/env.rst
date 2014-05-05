@@ -76,6 +76,11 @@ It has:
 
 And more.
 
+SuperTab
+^^^^^^^^
+SuperTab_ is a small VIM plugin that makes code completion more convenient by
+using ``<Tab>`` key or any other customized keys.
+
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
 .. _Pyflakes: http://pypi.python.org/pypi/pyflakes/
@@ -84,8 +89,7 @@ And more.
 .. _vim-pep8: https://github.com/nvie/vim-pep8
 .. _syntastic: https://github.com/scrooloose/syntastic
 .. _Python-mode: https://github.com/klen/python-mode
-
-.. todo:: add supertab notes
+.. _SuperTab: http://www.vim.org/scripts/script.php?script_id=1643
 
 Emacs
 -----
