@@ -128,7 +128,7 @@ unwanted effects, e.g. override an existing function with the same name.
 
 It is possible to simulate the more standard behavior by using a special syntax
 of the import statement: ``from modu import *``. This is generally considered bad
-practice. **Using ``import *`` makes code harder to read and makes dependencies less
+practice. **Using** ``import *`` **makes code harder to read and makes dependencies less
 compartmentalized**.
 
 Using ``from modu import func`` is a way to pinpoint the function you want to
