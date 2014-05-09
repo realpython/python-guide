@@ -7,7 +7,7 @@ Clint
 -----
 
 `clint <https://pypi.python.org/pypi/clint/>`_ is a python module which is
-filled with very useful tools for developing commandline applications.
+filled with very useful tools for developing command line applications.
 It supports features such as; CLI Colors and Indents, Simple and Powerful
 Column Printer, Iterator based progress bar and Implicit argument handling.
 
@@ -34,7 +34,7 @@ plac is a simple wrapper over the python standard library `argparse <http://docs
 complexity by using a declarative interface: the argument parser is inferred
 rather than written down by imperatively. It is targetting especially unsophisticated
 users, programmers, sys-admins, scientists and in general people writing throw-away
-scripts for themselves, choosing the command-line interface because it is quick
+scripts for themselves, choosing the command line interface because it is quick
 and simple.
 
 Cliff
