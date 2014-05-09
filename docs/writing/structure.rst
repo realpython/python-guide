@@ -134,7 +134,7 @@ compartmentalized**.
 Using ``from modu import func`` is a way to pinpoint the function you want to
 import and put it in the global namespace. While much less harmful than ``import
 *`` because it shows explicitly what is imported in the global namespace, its
-advantage over a simpler `import modu` is only that it will save some typing.
+advantage over a simpler ``import modu`` is only that it will save some typing.
 
 **Very bad**
 
@@ -181,8 +181,8 @@ different modules in the package are imported in a similar manner as plain
 modules, but with a special behavior for the :file:`__init__.py` file, which is used to
 gather all package-wide definitions.
 
-A file :file:`modu.py` in the directory :file:`pack/` is imported with the statement `import
-pack.modu`. This statement will look for an :file:`__init__.py` file in :file:`pack`, execute
+A file :file:`modu.py` in the directory :file:`pack/` is imported with the statement ``import
+pack.modu``. This statement will look for an :file:`__init__.py` file in :file:`pack`, execute
 all of its top-level statements. Then it will look for a file :file:`pack/modu.py` and
 execute all of its top-level statements. After these operations, any variable,
 function, or class defined in :file:`modu.py` is available in the pack.modu namespace.
@@ -197,8 +197,8 @@ Leaving an :file:`__init__.py` file empty is considered normal and even a good p
 if the package's modules and sub-packages do not need to share any code.
 
 Lastly, a convenient syntax is available for importing deeply nested packages:
-`import very.deep.module as mod`. This allows you to use `mod` in place of the verbose
-repetition of `very.deep.module`.
+``import very.deep.module as mod``. This allows you to use `mod` in place of the verbose
+repetition of ``very.deep.module``.
 
 Object-oriented programming
 ---------------------------
