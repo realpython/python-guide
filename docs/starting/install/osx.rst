@@ -119,7 +119,7 @@ environment. Put your own code within a subdirectory of the environment,
 however you wish. When you no longer need a particular environment, simply
 copy your code out of it, and then delete the main directory for the environment.
 
-An useful set of extensions to virtualenv is available in virtualenvwrapper,
+A useful set of extensions to virtualenv is available in virtualenvwrapper,
 `RTFD <http://virtualenvwrapper.readthedocs.org/en/latest/>`_ to find out more.
 
 --------------------------------
