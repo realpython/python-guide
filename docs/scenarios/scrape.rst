@@ -20,7 +20,7 @@ lxml and Requests
 `lxml <http://lxml.de/>`_ is a pretty extensive library written for parsing
 XML and HTML documents really fast. It even handles messed up tags. We will
 also be using the `Requests <http://docs.python-requests.org/en/latest/>`_
-module instead of the already built-in urlib2 due to improvements in speed and
+module instead of the already built-in urllib2 module due to improvements in speed and
 readability. You can easily install both using ``pip install lxml`` and
 ``pip install requests``.
 
