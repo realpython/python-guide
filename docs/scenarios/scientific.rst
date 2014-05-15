@@ -124,24 +124,20 @@ compiled a list of Windows binaries for many useful Python packages. The list
 of packages has grown from a mainly scientific Python resource to a more
 general list. It might be a good idea to check it out if you're on Windows.
 
-Enthought Python Distribution (EPD)
------------------------------------
-
-Installing NumPy and SciPy can be a daunting task. Which is why the
-`Enthought Python distribution <http://enthought.com/>`_ was created. With
-Enthought, scientific python has never been easier (one click to install about
-100 scientific python packages). The Enthought Python Distribution comes in two
-variants: a free version `EPD Free <http://enthought.com/products/epd_free.php>`_
-and a paid version with various `pricing options.
-<http://enthought.com/products/epd_sublevels.php>`_
-
 Anaconda
 --------
 
 `Continuum Analytics <http://continuum.io/>`_ offers the `Anaconda
 Python Distribution <https://store.continuum.io/cshop/anaconda>`_ which
 includes all the common scientific python packages and additionally many
-packages related to data analytics and big data. Anaconda comes in two
-flavors, a paid for version and a completely free and open source community
-edition, Anaconda CE, which contains a slightly reduced feature set. Free
-licenses for the paid-for version are available for academics and researchers.
+packages related to data analytics and big data. Anaconda itself is free, and
+Continuum sells a number of proprietary add-ons. Free
+licenses for the add-ons are available for academics and researchers.
+
+Canopy
+------
+
+`Canopy <https://www.enthought.com/products/canopy/> is another scientific Python
+distribution, produced by `Enthought <https://www.enthought.com/>`. A limited
+'Canopy Express' variant is available for free, and Enthought charge for the
+full distribution. Free licenses are available for academics.
