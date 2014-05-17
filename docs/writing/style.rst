@@ -217,12 +217,12 @@ while privatising a public property might be a much harder operation.
 Returning values
 ~~~~~~~~~~~~~~~~
 
-When a function grows in complexity is not uncommon to use multiple return statements
+When a function grows in complexity it is not uncommon to use multiple return statements
 inside the function's body. However, in order to keep a clear intent and a sustainable
 readability level, it is preferable to avoid returning meaningful values from many
 output points in the body.
 
-There are two main cases for returning values in a function: The result of the function
+There are two main cases for returning values in a function: the result of the function
 return when it has been processed normally, and the error cases that indicate a wrong
 input parameter or any other reason for the function to not be able to complete its
 computation or task.
@@ -261,7 +261,7 @@ is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_ and at `St
 
 Idiomatic Python code is often referred to as being *Pythonic*.
 
-Although there usually is one-- and preferably only one --obvious way to do it;
+Although there usually is one --- and preferably only one --- obvious way to do it;
 *the* way to write idiomatic Python code can be non-obvious to Python beginners. So,
 good idioms must be consciously acquired.
 
@@ -503,7 +503,7 @@ Short Ways to Manipulate Lists
 
 `List comprehensions
 <http://docs.python.org/tutorial/datastructures.html#list-comprehensions>`_
-provide a powerful, concise way to work with lists. Also, the :py:func:`map`
+provide a powerful, concise way to work with lists. Also, the :py:func:`map` and
 :py:func:`filter` functions can perform operations on lists using a different,
 more concise syntax.
 
@@ -524,6 +524,7 @@ more concise syntax.
 
     a = [3, 4, 5]
     b = [i for i in a if i > 4]
+    # Or:
     b = filter(lambda x: x > 4, a)
 
 **Bad**:
