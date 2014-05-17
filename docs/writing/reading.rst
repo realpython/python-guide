@@ -8,11 +8,12 @@ one thing that Python programmers do is read code.
 One of the secrets of becoming a great Python programmer is to read,
 understand, and comprehend excellent code.
 
-Excellent code typically follows the guidelines outlined in :ref:`code_style`,
-and does its best to express a clear and concise intent to the reader.
+Excellent code typically follows the guidelines outlined in
+:ref:`code_style`, and does its best to express a clear and concise
+intent to the reader.
 
-Included below is a list of recommended Python projects for reading. Each of
-these projects are paragons of excellent Python code.
+Included below is a list of recommended Python projects for
+reading. Each one of these projects is a paragon of Python coding.
 
 - `Howdoi <https://github.com/gleitz/howdoi>`_
   Howdoi is a code search tool, written in Python.
