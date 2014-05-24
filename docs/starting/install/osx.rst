@@ -59,12 +59,7 @@ Now, we can install Python 2.7:
 
     $ brew install python
 
-This will take a minute or two. Once that's complete, you'll have to add the
-new Python scripts directory to your :envvar:`PATH`
-
-.. code-block:: console
-
-    export PATH=/usr/local/share/python:$PATH
+This will take a minute or two. 
 
 
 Setuptools & Pip
