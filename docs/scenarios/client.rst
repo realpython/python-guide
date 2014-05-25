@@ -45,5 +45,10 @@ library is designed to have a familiar socket-style API.
 RabbitMQ
 --------
 
-.. todo:: Write about RabbitMQ
+RabbitMQ is open source message broker software that implements the Advanced Message Queuing Protocol (AMQP). 
+The RabbitMQ server is written in the Erlang programming language and is built on the Open Telecom Platform 
+framework for clustering and failover. Client libraries to interface with the broker are available 
+for all major programming languages.
 
+- `Website <http://www.rabbitmq.com/>`_  
+- `GitHub <https://github.com/rabbitmq?page=1>`_
