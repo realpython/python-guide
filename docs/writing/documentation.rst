@@ -17,7 +17,7 @@ assuming the user knows anything about the project), the url of the
 main source for the software, and some basic credit information. This
 file is the main entry point for readers of the code.
 
-An :file:`INSTALL` file is less necessary with python.  The installation
+An :file:`INSTALL` file is less necessary with Python.  The installation
 instructions are often reduced to one command, such as ``pip install
 module`` or ``python setup.py install`` and added to the :file:`README`
 file.
@@ -56,7 +56,7 @@ of the following components:
 Sphinx
 ~~~~~~
 
-Sphinx_ is far and away the most popular python documentation
+Sphinx_ is far and away the most popular Python documentation
 tool. **Use it.**  It converts :ref:`restructuredtext-ref` markup language
 into a range of output formats including HTML, LaTeX (for printable
 PDF versions), manual pages, and plain text.

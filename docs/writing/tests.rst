@@ -242,7 +242,7 @@ to newer versions of the module easier in the future
     class MyTest(unittest.TestCase):
         ...
 
-This way if you ever switch to a newer python version and no longer need the
+This way if you ever switch to a newer Python version and no longer need the
 unittest2 module, you can simply change the import in your test module without
 the need to change any other code.
 

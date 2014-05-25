@@ -92,12 +92,12 @@ environment, or your project's internal modules.
 To keep in line with the style guide, keep module names short, lowercase, and
 be sure to avoid using special symbols like the dot (.) or question mark (?).
 So a file name like :file:`my.spam.py` is one you should avoid! Naming this way
-will interfere with the way python looks for modules.
+will interfere with the way Python looks for modules.
 
-In the case of `my.spam.py` python expects to find a :file:`spam.py` file in a folder named :file:`my`
+In the case of `my.spam.py` Python expects to find a :file:`spam.py` file in a folder named :file:`my`
 which is not the case. There is an
 `example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the
-dot notation should be used in the python docs.
+dot notation should be used in the Python docs.
 
 If you'd like you could name it as :file:`my_spam.py` but even our friend the
 underscore should not be seen often in module names.

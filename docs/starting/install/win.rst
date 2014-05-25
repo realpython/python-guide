@@ -53,7 +53,7 @@ download and install any compliant Python software product with a single
 command. It also enables you to add this network installation capability to
 your own Python software with very little work.
 
-To obtain the latest version of Setuptools for Windows, run the python script
+To obtain the latest version of Setuptools for Windows, run the Python script
 available here: `ez_setup.py <https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py>`_
 
 
@@ -62,7 +62,7 @@ considered by many to be deprecated, so we will install its replacement:
 **pip**. Pip allows for uninstallation of packages, and is actively maintained,
 unlike easy_install.
 
-To install pip, run the python script available here:
+To install pip, run the Python script available here:
 `get-pip.py <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
 
 
