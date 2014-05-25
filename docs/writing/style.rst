@@ -360,7 +360,7 @@ Take the following code for example:
     def lookup_list(l):
         return 's' in l
 
-Even though both functions look identical, because *lookup_dict* is utilizing the fact that dictionaries in python are hashtables, the lookup performance between the two is very different.
+Even though both functions look identical, because *lookup_dict* is utilizing the fact that dictionaries in Python are hashtables, the lookup performance between the two is very different.
 Python will have to go through each item in the list to find a matching case, which is time consuming. By analysing the hash of the dictionary, finding keys in the dict can be done very quickly.
 For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_ page.
 
