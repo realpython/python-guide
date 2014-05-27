@@ -154,6 +154,15 @@ development, version control, and optimization/profiling.
     `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
 
 
+A Guide to Python's Magic Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This is a collection of blog posts by Rafe Kettler which explain 'magic methods'
+in Python.  Magic methods are surrounded by double underscores (i.e. __init__) and
+can make classes and objects behave in different and magical ways.
+
+    `A Guide to Python's Magic Methods <http://www.rafekettler.com/magicmethods.html>`_
+
+
 For Engineers and Scientists
 ----------------------------
 
