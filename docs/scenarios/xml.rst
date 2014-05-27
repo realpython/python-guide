@@ -57,7 +57,9 @@ can be loaded into a Python dict like this:
 .. code-block:: python
 
     import xmltodict
-    obj = xmltodict.parse(open('path/to/file.xml'))
+
+    with open('path/to/file.xml') as fd:
+        obj = xmltodict.parse(fd.read())
 
 and then you can access elements, attributes and values like this:
 
