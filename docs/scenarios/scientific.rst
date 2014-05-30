@@ -137,7 +137,7 @@ licenses for the add-ons are available for academics and researchers.
 Canopy
 ------
 
-`Canopy <https://www.enthought.com/products/canopy/> is another scientific Python
-distribution, produced by `Enthought <https://www.enthought.com/>`. A limited
+`Canopy <https://www.enthought.com/products/canopy/>'_ is another scientific Python
+distribution, produced by `Enthought <https://www.enthought.com/>`_. A limited
 'Canopy Express' variant is available for free, and Enthought charge for the
 full distribution. Free licenses are available for academics.
