@@ -30,10 +30,13 @@ Buildbot
 automate the compile/test cycle to validate code changes.
 
 
-Mule?
+Mule
 -----
 
-.. todo:: Write about Mule
+`Mule <http://www.mulesoft.org/documentation/display/current/Mule+Fundamentals>`_  is a lightweight integration platform that enables you to connect anything, anywhere. 
+You can use Mule to intelligently manage message routing, data mapping, orchestration, reliability, security, and scalability between nodes. 
+Plug other systems and applications into Mule and let it handle all the communication between systems, enabling you to track and monitor everything that happens. 
+
 
 Tox
 ---
