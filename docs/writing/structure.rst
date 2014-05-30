@@ -317,7 +317,7 @@ Dynamic typing
 Python is said to be dynamically typed, which means that variables
 do not have a fixed type. In fact, in Python, variables are very
 different from what they are in many other languages, specifically
-strongly-typed languages. Variables are not a segment of the computer's
+statically-typed languages. Variables are not a segment of the computer's
 memory where some value is written, they are 'tags' or 'names' pointing
 to objects. It is therefore possible for the variable 'a' to be set to
 the value 1, then to the value 'a string', then to a function.
