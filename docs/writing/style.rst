@@ -293,6 +293,16 @@ Nested unpacking works too:
 
    a, (b, c) = 1, (2, 3)
 
+In Python 3, a new method of extended unpacking was introduced by
+:pep:`3132`:
+
+.. code-block:: python
+
+   a, *rest = [1, 2, 3]
+   # a = 1, rest = [2, 3]
+   a, *middle, c = [1, 2, 3, 4]
+   # a = 1, middle = [2, 3], c = 4
+
 Create an ignored variable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
