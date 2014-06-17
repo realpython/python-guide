@@ -11,7 +11,7 @@ include:
 
   Python's philosophy focuses on readability, from code blocks
   delineated with significant whitespace to intuitive keywords in
-  place of inscrutable punctuation
+  place of inscrutable punctuation.
 
 * **extensive standard libraries and third party modules for virtually
   any task**
