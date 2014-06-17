@@ -44,7 +44,7 @@ Some general rules of testing:
 
 - The first step when you are debugging your code is to write a new test
   pinpointing the bug. While it is not always possible to do, those bug
-  catching test are among the most valuable pieces of code in your project.
+  catching tests are among the most valuable pieces of code in your project.
 
 - Use long and descriptive names for testing functions. The style guide here
   is slightly different than that of running code, where short names are
@@ -66,8 +66,8 @@ Some general rules of testing:
   testing code is often the best they can do. They will or should discover the
   hot spots, where most difficulties arise, and the corner cases. If they have
   to add some functionality, the first step should be to add a test and, by this
-  mean, ensure the new functionality is not already a working path that has not
-  been plugged in the interface.
+  means, ensure the new functionality is not already a working path that has not
+  been plugged into the interface.
 
 The Basics
 ::::::::::
