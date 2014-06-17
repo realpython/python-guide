@@ -99,12 +99,12 @@ which is not the case. There is an
 `example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the
 dot notation should be used in the Python docs.
 
-If you'd like you could name it as :file:`my_spam.py` but even our friend the
-underscore should not be seen often in module names.
+If you'd like you could name your module :file:`my_spam.py`, but even our
+friend the underscore should not be seen often in module names.
 
-Aside for some naming restrictions, nothing special is required for a Python file
-to be a module, but the import mechanism needs to be understood in order to use
-this concept properly and avoid some issues.
+Aside from some naming restrictions, nothing special is required for a Python
+file to be a module, but you need to understand the import mechanism in order
+to use this concept properly and avoid some issues.
 
 Concretely, the ``import modu`` statement will look for the proper file, which is
 :file:`modu.py` in the same directory as the caller if it exists.  If it is not
@@ -134,7 +134,7 @@ compartmentalized**.
 Using ``from modu import func`` is a way to pinpoint the function you want to
 import and put it in the global namespace. While much less harmful than ``import
 *`` because it shows explicitly what is imported in the global namespace, its
-advantage over a simpler ``import modu`` is only that it will save some typing.
+only advantage over a simpler ``import modu`` is that it will save a little typing.
 
 **Very bad**
 
