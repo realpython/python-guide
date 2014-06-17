@@ -17,7 +17,7 @@ include:
   any task**
 
   Python is sometimes described with the words "batteries included"
-  for its extensive
+  because of its extensive
   `standard library <http://docs.python.org/library/>`_, which includes
   modules for regular expressions, file IO, fraction handling,
   object serialization, and much more.
@@ -85,5 +85,3 @@ have any questions about the appropriateness, completeness, or accuracy of
 a contribution.
 
 To get started working on The Hitchhiker's Guide, see the :doc:`/notes/contribute` page.
-
-
