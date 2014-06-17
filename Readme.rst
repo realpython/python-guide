@@ -26,7 +26,7 @@ Topics include:
 - Server configurations & tools for various web frameworks
 - Documentation: writing it
 - Testing: Jenkins & tox guides
-- How to easily interface ``hg`` from ``git`` easily
+- How to easily interface ``hg`` from ``git``
 
 If you aren't fond of reading reStructuredText, there is an
 almost up-to-date `HTML version at docs.python-guide.org

@@ -99,12 +99,12 @@ which is not the case. There is an
 `example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the
 dot notation should be used in the Python docs.
 
-If you'd like you could name it as :file:`my_spam.py` but even our friend the
-underscore should not be seen often in module names.
+If you'd like you could name your module :file:`my_spam.py`, but even our
+friend the underscore should not be seen often in module names.
 
-Aside for some naming restrictions, nothing special is required for a Python file
-to be a module, but the import mechanism needs to be understood in order to use
-this concept properly and avoid some issues.
+Aside from some naming restrictions, nothing special is required for a Python
+file to be a module, but you need to understand the import mechanism in order
+to use this concept properly and avoid some issues.
 
 Concretely, the ``import modu`` statement will look for the proper file, which is
 :file:`modu.py` in the same directory as the caller if it exists.  If it is not
@@ -134,7 +134,7 @@ compartmentalized**.
 Using ``from modu import func`` is a way to pinpoint the function you want to
 import and put it in the global namespace. While much less harmful than ``import
 *`` because it shows explicitly what is imported in the global namespace, its
-advantage over a simpler ``import modu`` is only that it will save some typing.
+only advantage over a simpler ``import modu`` is that it will save a little typing.
 
 **Very bad**
 
@@ -161,11 +161,11 @@ advantage over a simpler ``import modu`` is only that it will save some typing.
     [...]
     x = modu.sqrt(4)  # sqrt is visibly part of modu's namespace
 
-As said in the section about style, readability is one of the main features of
-Python. Readability means to avoid useless boilerplate text and clutter,
-therefore some efforts are spent trying to achieve a certain level of brevity.
-But terseness and obscurity are the limits where brevity should stop. Being
-able to tell immediately where a class or function comes from, as in the
+As mentioned in the :ref:`code_style` section, readability is one of the main
+features of Python. Readability means to avoid useless boilerplate text and
+clutter, therefore some efforts are spent trying to achieve a certain level of
+brevity. But terseness and obscurity are the limits where brevity should stop.
+Being able to tell immediately where a class or function comes from, as in the
 ``modu.func`` idiom, greatly improves code readability and understandability in
 all but the simplest single file projects.
 
@@ -183,13 +183,13 @@ gather all package-wide definitions.
 
 A file :file:`modu.py` in the directory :file:`pack/` is imported with the statement ``import
 pack.modu``. This statement will look for an :file:`__init__.py` file in :file:`pack`, execute
-all of its top-level statements. Then it will look for a file :file:`pack/modu.py` and
+all of its top-level statements. Then it will look for a file named :file:`pack/modu.py` and
 execute all of its top-level statements. After these operations, any variable,
 function, or class defined in :file:`modu.py` is available in the pack.modu namespace.
 
 A commonly seen issue is to add too much code to :file:`__init__.py`
 files. When the project complexity grows, there may be sub-packages and
-sub-sub-packages in a deep directory structure, and then, importing a single item
+sub-sub-packages in a deep directory structure. In this case, importing a single item
 from a sub-sub-package will require executing all :file:`__init__.py` files met while
 traversing the tree.
 
@@ -207,7 +207,7 @@ Python is sometimes described as an object-oriented programming language. This
 can be somewhat misleading and needs to be clarified.
 
 In Python, everything is an object, and can be handled as such. This is what is
-meant when we say that, for example, functions are first-class objects.
+meant when we say, for example, that functions are first-class objects.
 Functions, classes, strings, and even types are objects in Python: like any
 objects, they have a type, they can be passed as function arguments, they may
 have methods and properties. In this understanding, Python is an
@@ -284,7 +284,7 @@ The Python language provides a simple yet powerful syntax called 'decorators'.
 A decorator is a function or a class that wraps (or decorates) a function
 or a method. The 'decorated' function or method will replace the original
 'undecorated' function or method. Because functions are first-class objects
-in Python, it can be done 'manually', but using the @decorator syntax is
+in Python, this can be done 'manually', but using the @decorator syntax is
 clearer and thus preferred.
 
 .. code-block:: python
