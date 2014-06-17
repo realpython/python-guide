@@ -161,11 +161,11 @@ only advantage over a simpler ``import modu`` is that it will save a little typi
     [...]
     x = modu.sqrt(4)  # sqrt is visibly part of modu's namespace
 
-As said in the section about style, readability is one of the main features of
-Python. Readability means to avoid useless boilerplate text and clutter,
-therefore some efforts are spent trying to achieve a certain level of brevity.
-But terseness and obscurity are the limits where brevity should stop. Being
-able to tell immediately where a class or function comes from, as in the
+As mentioned in the :ref:`code_style` section, readability is one of the main
+features of Python. Readability means to avoid useless boilerplate text and
+clutter, therefore some efforts are spent trying to achieve a certain level of
+brevity. But terseness and obscurity are the limits where brevity should stop.
+Being able to tell immediately where a class or function comes from, as in the
 ``modu.func`` idiom, greatly improves code readability and understandability in
 all but the simplest single file projects.
 
