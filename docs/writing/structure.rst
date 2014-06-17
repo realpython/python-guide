@@ -183,13 +183,13 @@ gather all package-wide definitions.
 
 A file :file:`modu.py` in the directory :file:`pack/` is imported with the statement ``import
 pack.modu``. This statement will look for an :file:`__init__.py` file in :file:`pack`, execute
-all of its top-level statements. Then it will look for a file :file:`pack/modu.py` and
+all of its top-level statements. Then it will look for a file named :file:`pack/modu.py` and
 execute all of its top-level statements. After these operations, any variable,
 function, or class defined in :file:`modu.py` is available in the pack.modu namespace.
 
 A commonly seen issue is to add too much code to :file:`__init__.py`
 files. When the project complexity grows, there may be sub-packages and
-sub-sub-packages in a deep directory structure, and then, importing a single item
+sub-sub-packages in a deep directory structure. In this case, importing a single item
 from a sub-sub-package will require executing all :file:`__init__.py` files met while
 traversing the tree.
 
@@ -207,7 +207,7 @@ Python is sometimes described as an object-oriented programming language. This
 can be somewhat misleading and needs to be clarified.
 
 In Python, everything is an object, and can be handled as such. This is what is
-meant when we say that, for example, functions are first-class objects.
+meant when we say, for example, that functions are first-class objects.
 Functions, classes, strings, and even types are objects in Python: like any
 objects, they have a type, they can be passed as function arguments, they may
 have methods and properties. In this understanding, Python is an
@@ -284,7 +284,7 @@ The Python language provides a simple yet powerful syntax called 'decorators'.
 A decorator is a function or a class that wraps (or decorates) a function
 or a method. The 'decorated' function or method will replace the original
 'undecorated' function or method. Because functions are first-class objects
-in Python, it can be done 'manually', but using the @decorator syntax is
+in Python, this can be done 'manually', but using the @decorator syntax is
 clearer and thus preferred.
 
 .. code-block:: python
