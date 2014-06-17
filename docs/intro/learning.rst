@@ -7,8 +7,8 @@ Beginner
 The Python Tutorial
 ~~~~~~~~~~~~~~~~~~~~
 
-This is the official tutorial, it covers all the basics, and offers a tour of the
-language and the standard library, recommended for those who need a quickstart
+This is the official tutorial. It covers all the basics, and offers a tour of the
+language and the standard library. Recommended for those who need a quickstart
 guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
@@ -189,6 +189,7 @@ Miscellaneous topics
 
 Problem Solving with Algorithms and Data Structures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Problem Solving with Algorithms and Data Structures covers a range of data structures and
 algorithms. All concepts are illustrated with Python code along with interactive samples
 that can be run directly in the browser.
@@ -198,6 +199,7 @@ that can be run directly in the browser.
 
 Programming Collective Intelligence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Programming Collective Intelligence introduces a wide array of basic machine learning and
 data mining methods. The exposition is not very mathematically formal, but rather focuses 
 on explaining the underlying intuition and shows how to implement the algorithms in Python.
@@ -238,12 +240,11 @@ Writing Idiomatic Python
 
 "Writing Idiomatic Python", written by Jeff Knupp, contains the most common and
 important Python idioms in a format that maximizes identification and understanding. 
-Each idiom is presented as a recommendation to write some commonly used piece of code.
-It is followed by an explanation of why the idiom is important. It also contains two 
-code samples: the "Harmful" way to write it and the "Idiomatic" way
+Each idiom is presented as a recommendation of a way to write some commonly
+used piece of code, followed by an explanation of why the idiom is important.
+It also contains two code samples for each idiom: the "Harmful" way to write it
+and the "Idiomatic" way.
 
 	`For Python 2.7.3+ <http://www.amazon.com/Writing-Idiomatic-Python-2-7-3-Knupp/dp/1482372177/>`_
 	
 	`For Python 3.3+  <http://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_
-
-
