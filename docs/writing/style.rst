@@ -101,7 +101,7 @@ calls to ``send('Hello', 'World')`` and ``point(1, 2)``.
 
 2. **Keyword arguments** are not mandatory and have default values. They are often
 used for optional parameters sent to the function. When a function has more than
-two or three positional parameters, its signature will be more difficult to remember
+two or three positional parameters, its signature is more difficult to remember
 and using keyword argument with default values is helpful. For instance, a more
 complete ``send`` function could be defined as ``send(message, to, cc=None, bcc=None)``.
 Here ``cc`` and ``bcc`` are optional, and evaluate to ``None`` when they are not
@@ -176,15 +176,15 @@ possible to do each of the following:
 
 However, all these options have many drawbacks and it is always better to use
 the most straightforward way to achieve your goal. The main drawback is that
-readability suffers deeply from them. Many code analysis tools, such as pylint
-or pyflakes, will be unable to parse this "magic" code.
+readability suffers greatly when using these constructs. Many code analysis
+tools, such as pylint or pyflakes, will be unable to parse this "magic" code.
 
 We consider that a Python developer should know about these nearly infinite
-possibilities, because it grows the confidence that no hard-wall will be on the
-way.  However, knowing how to use them and particularly when **not** to use
-them is the most important.
+possibilities, because it instills confidence that no impassable problem will
+be on the way. However, knowing how and particularly when **not** to use
+them is very important.
 
-Like a Kungfu master, a Pythonista knows how to kill with a single finger, and
+Like a kung fu master, a Pythonista knows how to kill with a single finger, and
 never to actually do it.
 
 We are all consenting adults
@@ -195,10 +195,10 @@ dangerous. A good example is that any client code can override an object's
 properties and methods: there is no "private" keyword in Python. This
 philosophy, very different from highly defensive languages like Java, which
 give a lot of mechanisms to prevent any misuse, is expressed by the saying: "We
-are consenting adults".
+are all consenting adults".
 
 This doesn't mean that, for example, no properties are considered private, and
-that no proper encapsulation is possible in Python. But, instead of relying on
+that no proper encapsulation is possible in Python. Rather, instead of relying on
 concrete walls erected by the developers between their code and other's, the
 Python community prefers to rely on a set of conventions indicating that these
 elements should not be accessed directly.
@@ -210,8 +210,8 @@ the code is modified is the responsibility of the client code.
 
 Using this convention generously is encouraged: any method or property that is
 not intended to be used by client code should be prefixed with an underscore.
-This will guarantee a better separation of duties and easier modifications of
-existing code, and it will always be possible to publicize a private property,
+This will guarantee a better separation of duties and easier modification of
+existing code; it will always be possible to publicize a private property,
 while privatising a public property might be a much harder operation.
 
 Returning values
@@ -235,7 +235,7 @@ statement can assume the condition is met to further compute the function's main
 Having multiple such return statements is often necessary.
 
 However, when a function has multiple main exit points for its normal course, it becomes
-difficult to debug the returned result, and it may be preferable to keep a single exit
+difficult to debug the returned result, so it may be preferable to keep a single exit
 point. This will also help factoring out some code paths, and the multiple exit points
 are a probable indication that such a refactoring is needed.
 
@@ -281,7 +281,7 @@ a tuple of two elements for each item in list:
     for index, item in enumerate(some_list):
         # do something with index and item
 
-You can use this to swap variables, as well:
+You can use this to swap variables as well:
 
 .. code-block:: python
 
@@ -360,9 +360,13 @@ Take the following code for example:
     def lookup_list(l):
         return 's' in l
 
-Even though both functions look identical, because *lookup_dict* is utilizing the fact that dictionaries in Python are hashtables, the lookup performance between the two is very different.
-Python will have to go through each item in the list to find a matching case, which is time consuming. By analysing the hash of the dictionary, finding keys in the dict can be done very quickly.
-For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_ page.
+Even though both functions look identical, because *lookup_dict* is utilizing
+the fact that dictionaries in Python are hashtables, the lookup performance
+between the two is very different. Python will have to go through each item
+in the list to find a matching case, which is time consuming. By analysing
+the hash of the dictionary, finding keys in the dict can be done very quickly.
+For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_
+page.
 
 Zen of Python
 -------------
@@ -406,7 +410,7 @@ PEP 8
 
 Conforming your Python code to PEP 8 is generally a good idea and helps make
 code more consistent when working on projects with other developers. There
-exists a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
+is a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
 that can check your code for conformance. Install it by running the following
 command in your Terminal:
 
@@ -584,19 +588,19 @@ files for you.
             print line
 
 The ``with`` statement is better because it will ensure you always close the
-file, even if an exception is raised.
+file, even if an exception is raised inside the ``with`` block.
 
 Line Continuations
 ~~~~~~~~~~~~~~~~~~
 
 When a logical line of code is longer than the accepted limit, you need to
-split it over multiple physical lines. Python interpreter will join consecutive
+split it over multiple physical lines. The Python interpreter will join consecutive
 lines if the last character of the line is a backslash. This is helpful
-sometimes but is preferably avoided, because of its fragility: a white space
+in some cases, but should usually be avoided because of its fragility: a white space
 added to the end of the line, after the backslash, will break the code and may
 have unexpected results.
 
-A preferred solution is to use parentheses around your elements. Left with an
+A better solution is to use parentheses around your elements. Left with an
 unclosed parenthesis on an end-of-line the Python interpreter will join the
 next line until the parentheses are closed. The same behavior holds for curly
 and square braces.
