@@ -51,7 +51,7 @@ order to do this, add the following lines to your :file:`.vimrc`::
     autocmd BufWritePost *.py call Pyflakes()
     autocmd BufWritePost *.py call Pep8()
 
-If you are already using syntastic_, you can tell it to run Pyflakes on write
+If you are already using syntastic_, you can set it to run Pyflakes on write
 and show errors and warnings in the quickfix window. An example configuration
 to do that which also shows status and warning messages in the statusbar would be::
 
@@ -262,9 +262,9 @@ the current state of the environment packages. To do this, run
 
 This will create a :file:`requirements.txt` file, which contains a simple
 list of all the packages in the current environment, and their respective
-versions. Later, a different developer (or you, if you need to re-
-create the environment) can install the same packages, with the same
-versions by running
+versions. Later it will be easier for a different developer (or you, if you
+need to re-create the environment) to install the same packages using the
+same versions:
 
 .. code-block:: console
 
