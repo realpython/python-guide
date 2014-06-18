@@ -233,7 +233,7 @@ The name of the current virtual environment will now appear on the left
 of the prompt (e.g. ``(venv)Your-Computer:your_project UserName$``) to
 let you know that it's active. From now on, any package that you install
 using ``pip`` will be placed in the ``venv`` folder, isolated from the global
-Python installation. 
+Python installation.
 
 Install packages as usual:
 

@@ -172,7 +172,7 @@ Alternatively, you can use the functools.partial function:
 
     from functools import partial
     from operator import mul
-    
+
     def create_multipliers():
         return [partial(mul, i) for i in range(5)]
 

@@ -201,7 +201,7 @@ Programming Collective Intelligence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Programming Collective Intelligence introduces a wide array of basic machine learning and
-data mining methods. The exposition is not very mathematically formal, but rather focuses 
+data mining methods. The exposition is not very mathematically formal, but rather focuses
 on explaining the underlying intuition and shows how to implement the algorithms in Python.
 
     `Programming Collective Intelligence <http://shop.oreilly.com/product/9780596529321.do>`_
@@ -225,7 +225,7 @@ This is Python's reference manual, it covers the syntax and the core semantics o
 language.
 
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_
-    
+
 Python Pocket Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -239,7 +239,7 @@ Writing Idiomatic Python
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 "Writing Idiomatic Python", written by Jeff Knupp, contains the most common and
-important Python idioms in a format that maximizes identification and understanding. 
+important Python idioms in a format that maximizes identification and understanding.
 Each idiom is presented as a recommendation of a way to write some commonly
 used piece of code, followed by an explanation of why the idiom is important.
 It also contains two code samples for each idiom: the "Harmful" way to write it

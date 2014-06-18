@@ -10,7 +10,7 @@ applications on top of Python, SQLAlchemy and Qt.  It is inspired by
 the Django admin interface.
 
 The main resource for information is the website:
-http://www.python-camelot.com 
+http://www.python-camelot.com
 and the mailing list https://groups.google.com/forum/#!forum/project-camelot
 
 Cocoa
