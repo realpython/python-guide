@@ -161,7 +161,7 @@ It includes integration with pyflakes_, `pylint <http://www.logilab.org/857>`_
 and `rope <http://rope.sourceforge.net/>`_.
 
 Spyder is open-source (free), offers code completion, syntax highlighting,
-a class and function browser and object inspection.
+a class and function browser, and object inspection.
 
 
 WingIDE
