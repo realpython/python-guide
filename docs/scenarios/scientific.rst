@@ -111,7 +111,7 @@ and data collection.
 Resources
 :::::::::
 
-Installation of scientific  Python packages can be troublesome, as many of
+Installation of scientific Python packages can be troublesome, as many of
 these packages are implemented as Python C extensions which need to be compiled.
 This section lists various so-called scientific Python distributions which
 provide precompiled and easy-to-install collections of scientific Python
