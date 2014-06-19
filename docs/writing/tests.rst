@@ -138,6 +138,30 @@ Tools
 :::::
 
 
+Green
+-----
+
+Green is a colorful, clean, fast and powerful test runner for Python unit
+tests.
+
+.. code-block:: console
+
+    $ pip install green
+
+Green can auto-discover and run tests written with the built-in :mod:`unittest`
+module.  Green supports colored terminal output, running test in multiple
+subprocess simultaneously, coverage integration, and other helful features.
+See the `Green GitHub Page <https://github.com/CleanCut/green#green>`_ for full
+documentation.
+
+Green also provides a
+`unit test structure tutorial <https://github.com/CleanCut/green#unit-test-structure-tutorial>`_
+with good information that rarely makes it into standard Python unit testing
+tutorials.
+
+    `Green <https://github.com/CleanCut/green>`_
+
+
 py.test
 -------
 
