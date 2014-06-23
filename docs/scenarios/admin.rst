@@ -126,9 +126,12 @@ State files can be written using YAML, the Jinja2 template system or pure Python
 
 Psutil
 ------
-`Psutil <https://code.google.com/p/psutil/>`_ is an interface to different system information (e.g. CPU, memory, disks, network, users and processes).
 
-Here is an example to be aware of some server overload. In case of some failed test (net, CPU) it send an email.
+`Psutil <https://code.google.com/p/psutil/>`_ is an interface to different
+system information (e.g. CPU, memory, disks, network, users and processes).
+
+Here is an example to be aware of some server overload. If any of the
+tests (net, CPU) fail, it will send an email.
 
 .. code-block:: python
 
@@ -162,7 +165,7 @@ Here is an example to be aware of some server overload. In case of some failed t
         if counter > 25:
             attack = 0
             counter = 0
-    # Write a very important email if attack is higher then 4
+    # Write a very important email if attack is higher than 4
     TO = "you@your_email.com"
     FROM = "webmaster@your_domain.com"
     SUBJECT = "Your domain is out of system resources!"
@@ -173,12 +176,17 @@ Here is an example to be aware of some server overload. In case of some failed t
     server.quit()
 
 
-A full terminal application like a widely extended top which is based on psutil and with the ability of a client-server
-monitoring is `glance <https://github.com/nicolargo/glances/>`_.
+A full terminal application like a widely extended top which is based on
+psutil and with the ability of a client-server monitoring is
+`glance <https://github.com/nicolargo/glances/>`_.
 
 Ansible
 -------
-`Ansible <http://ansible.com/>`_  is a open source system automation tool. The biggest advantage over Puppet or Chef is it does not require an agent on the client machine. Playbooks are Ansible’s configuration, deployment, and orchestration language and are written in in yaml with jinja2 for templating.
+
+`Ansible <http://ansible.com/>`_  is an open source system automation tool.
+The biggest advantage over Puppet or Chef is it does not require an agent on
+the client machine. Playbooks are Ansible’s configuration, deployment, and
+orchestration language and are written in in YAML with Jinja2 for templating.
 
 Ansible supports Python versions 2.6 and 2.7 and can be installed via pip:
 
@@ -186,11 +194,12 @@ Ansible supports Python versions 2.6 and 2.7 and can be installed via pip:
 
     $ pip install ansible
 
-Ansible requires a inventory file that describes the hosts it has access to. Here is an example of a host and
-playbook that will ping all the hosts in the inventory file:
+Ansible requires an inventory file that describes the hosts to which it has
+access. Below is an example of a host and playbook that will ping all the
+hosts in the inventory file.
 
 Here is an example inventory file:
-hosts.yml
+:file:`hosts.yml`
 
 .. code-block:: yaml
 
@@ -198,7 +207,7 @@ hosts.yml
     127.0.0.1
 
 Here is an example playbook:
-ping.yml
+:file:`ping.yml`
 
 .. code-block:: yaml
 
@@ -207,7 +216,7 @@ ping.yml
 
       tasks:
         - name: ping
-          action: ping      
+          action: ping
 
 To run the playbook:
 
@@ -215,9 +224,9 @@ To run the playbook:
 
     $ ansible-playbook ping.yml -i hosts.yml --ask-pass
 
-That Ansible playbook will ping all of the servers in the hosts.yml file. You can also select groups of servers using Ansible. For more information about Ansible read the docs.
-
-`Ansible Docs <http://docs.ansible.com/>`_ 
+The Ansible playbook will ping all of the servers in the :file:`hosts.yml` file.
+You can also select groups of servers using Ansible. For more information
+about Ansible, read the `Ansible Docs <http://docs.ansible.com/>`_.
 
 
 Chef

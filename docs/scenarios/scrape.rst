@@ -18,8 +18,8 @@ lxml and Requests
 -----------------
 
 `lxml <http://lxml.de/>`_ is a pretty extensive library written for parsing
-XML and HTML documents really fast. It even handles messed up tags. We will
-also be using the `Requests <http://docs.python-requests.org/en/latest/>`_
+XML and HTML documents very quickly, even handling messed up tags in the
+process. We will also be using the `Requests <http://docs.python-requests.org/en/latest/>`_
 module instead of the already built-in urllib2 module due to improvements in speed and
 readability. You can easily install both using ``pip install lxml`` and
 ``pip install requests``.
@@ -31,8 +31,8 @@ Let's start with the imports:
     from lxml import html
     import requests
 
-Next we will use ``requests.get`` to retrieve the web page with our data
-and parse it using the ``html`` module and save the results in ``tree``:
+Next we will use ``requests.get`` to retrieve the web page with our data,
+parse it using the ``html`` module and save the results in ``tree``:
 
 .. code-block:: python
 
@@ -40,7 +40,7 @@ and parse it using the ``html`` module and save the results in ``tree``:
     tree = html.fromstring(page.text)
 
 ``tree`` now contains the whole HTML file in a nice tree structure which
-we can go over two different ways: XPath and CSSSelect. In this example, I
+we can go over two different ways: XPath and CSSSelect. In this example, we
 will focus on the former.
 
 XPath is a way of locating information in structured documents such as
@@ -96,6 +96,6 @@ a web page using lxml and Requests. We have it stored in memory as two
 lists. Now we can do all sorts of cool stuff with it: we can analyze it
 using Python or we can save it to a file and share it with the world.
 
-A cool idea to think about is modifying this script to iterate through
-the rest of the pages of this example dataset or rewriting this
+Some more cool ideas to think about are modifying this script to iterate
+through the rest of the pages of this example dataset, or rewriting this
 application to use threads for improved speed.

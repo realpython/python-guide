@@ -24,7 +24,7 @@ WSGI is documented in :pep:`3333`.
 Frameworks
 ::::::::::
 
-Broadly speaking, a web framework consist of a set of libraries and a main
+Broadly speaking, a web framework consists of a set of libraries and a main
 handler within which you can build custom code to implement a web application
 (i.e. an interactive web site). Most web frameworks include patterns and
 utilities to accomplish at least the following:
@@ -280,7 +280,7 @@ and to the templates themselves.
 
 - Template files should be passed only the dynamic
   content that is needed for rendering the template. Avoid
-  to be tempted to pass additional content "just in case":
+  the temptation to pass additional content "just in case":
   it is easier to add some missing variable when needed than to remove
   a likely unused variable later.
 
@@ -288,7 +288,7 @@ and to the templates themselves.
   or assignments in the template itself, and many
   allow some Python code to be evaluated in the
   templates. This convenience can lead to uncontrolled
-  increase in complexity, and often harder to find bugs.
+  increase in complexity, and often make it harder to find bugs.
 
 - It is often necessary to mix JavaScript templates with
   HTML templates. A sane approach to this design is to isolate
@@ -299,9 +299,12 @@ and to the templates themselves.
 
 Jinja2
 ------
-`Jinja2 <http://jinja.pocoo.org/>`_ is a template engine which is similar to the Django template system with some extra features. It is a text-based template
-language and thus can be used to generate any markup. It allows customization of filters, tags, tests and globals.
-Unlike the template system implemented in the Django Framework it allows to call functions. The Code is staying under the BSD license.
+`Jinja2 <http://jinja.pocoo.org/>`_ is a template engine which is similar to
+the Django template system with some extra features. It is a text-based
+template language and thus can be used to generate any markup. It allows
+customization of filters, tags, tests and globals, and unlike the template
+system implemented in the Django Framework, also allows calling functions.
+Jinja2 is released under the BSD license.
 
 Here some important html tags in Jinja2:
 
@@ -324,8 +327,8 @@ Here some important html tags in Jinja2:
 
 
 
-The next listings is an example of a web site in combination with the tornado web server. Tornado is not very complicate
-to use.
+The next listings is an example of a web site in combination with the tornado
+web server. Tornado is not very complicate to use.
 
 .. code-block:: python
 
@@ -365,7 +368,8 @@ to use.
         application.listen(PORT)
         tornado.ioloop.IOLoop.instance().start()
 
-The :file:`base.html` file can be used as base for all site pages which are for example implemented in the content block.
+The :file:`base.html` file can be used as base for all site pages which are
+for example implemented in the content block.
 
 .. code-block:: html
 
@@ -389,8 +393,9 @@ The :file:`base.html` file can be used as base for all site pages which are for 
     </body>
 
 
-The next listing is our site page (:file:`site.html`) loaded in the Python app which extends :file:`base.html`. The content block is
-automatically set into the corresponding block in the :file:`base.html` page.
+The next listing is our site page (:file:`site.html`) loaded in the Python
+app which extends :file:`base.html`. The content block is automatically set
+into the corresponding block in the :file:`base.html` page.
 
 .. code-block:: html
 

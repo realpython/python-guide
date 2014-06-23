@@ -93,13 +93,13 @@ Reference`_ should help you familiarize yourself with its syntax.
 Code Documentation Advice
 -------------------------
 
-Comments clarify the code and they are added with purpose of making the 
-code easier to understand. In Python, comments begin with a hash 
+Comments clarify the code and they are added with purpose of making the
+code easier to understand. In Python, comments begin with a hash
 (number sign) (``#``).
 
 .. _docstring-ref:
 
-In Python, *docstrings* describe modules, classes, and functions: 
+In Python, *docstrings* describe modules, classes, and functions:
 
 .. code-block:: python
 
@@ -168,7 +168,7 @@ Epydoc_
 .. _Epydoc: http://epydoc.sourceforge.net
 
 MkDocs_
-    MkDocs is a fast and simple static site generator that's geared towards 
+    MkDocs is a fast and simple static site generator that's geared towards
     building project documentation with Markdown.
 
 .. _MkDocs: http://www.mkdocs.org/

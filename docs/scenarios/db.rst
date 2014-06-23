@@ -30,14 +30,11 @@ Django ORM
 The Django ORM is the interface used by `Django <http://www.djangoproject.com>`_
 to provide database access.
 
-It's based on the idea of `models <https://docs.djangoproject.com/en/1.3/#the-model-layer>`_, an abstraction that makes it easier to
-manipulate data in Python.
+It's based on the idea of `models <https://docs.djangoproject.com/en/1.3/#the-model-layer>`_,
+an abstraction that makes it easier to manipulate data in Python.
 
 The basics:
 
 - Each model is a Python class that subclasses django.db.models.Model.
 - Each attribute of the model represents a database field.
 - Django gives you an automatically-generated database-access API; see `Making queries <https://docs.djangoproject.com/en/dev/topics/db/queries/>`__.
-to provide database access.
-
-

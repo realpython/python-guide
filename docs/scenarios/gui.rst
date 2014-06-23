@@ -9,9 +9,9 @@ Camelot
 applications on top of Python, SQLAlchemy and Qt.  It is inspired by
 the Django admin interface.
 
-The main resource for information is the website: 
-http://www.python-camelot.com 
-and the mailinglist https://groups.google.com/forum/#!forum/project-camelot
+The main resource for information is the website:
+http://www.python-camelot.com
+and the mailing list https://groups.google.com/forum/#!forum/project-camelot
 
 Cocoa
 -----
@@ -22,7 +22,7 @@ GTk
 PyGTK provides Python bindings for the GTK+ toolkit. Like the GTK+ library
 itself, it is currently licensed under the GNU LGPL. It is worth noting that
 PyGTK only currently supports the Gtk-2.X API (NOT Gtk-3.0). It is currently
-recommended that PyGTK not be used for new projects and existing applications
+recommended that PyGTK not be used for new projects and that existing applications
 be ported from PyGTK to PyGObject.
 
 Kivy
@@ -54,11 +54,13 @@ PyQt
 ~~~~
 .. note:: If your software does not fully comply with the GPL you will need a commercial license!
 
+PyQt provides Python bindings for the Qt Framework (see below).
+
 http://www.riverbankcomputing.co.uk/software/pyqt/download
 
 PyjamasDesktop (pyjs Desktop)
 -----------------------------
-PyjamasDesktop is a port of PyJamas. PyjamasDesktop is application widget set
+PyjamasDesktop is a port of Pyjamas. PyjamasDesktop is application widget set
 for desktop and a cross-platform framework. (After release v0.6 PyjamasDesktop
 is a part of Pyjamas (Pyjs)). Briefly, it allows the exact same Python web application
 source code to be executed as a standalone desktop application.
@@ -69,8 +71,9 @@ The main website; `pyjs Desktop <http://pyjs.org/>`_.
 
 Qt
 --
-`Qt <http://qt-project.org/>`_ is a cross-platform application framework that is widely used for developing
-software with a GUI but can also be used for non-GUI applications.
+`Qt <http://qt-project.org/>`_ is a cross-platform application framework that
+is widely used for developing software with a GUI but can also be used for
+non-GUI applications.
 
 Tk
 --

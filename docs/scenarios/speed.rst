@@ -68,10 +68,10 @@ C Extensions
 Cython
 ------
 
-`Cython <http://cython.org/>`_ implements a superset of the Python language 
-with which you are able to write C and C++ modules for Python. Cython also 
-allows you to call functions from compiled C libraries. Using Cython allows 
-you to take advantage of Python's strong typing of variables and operations.  
+`Cython <http://cython.org/>`_ implements a superset of the Python language
+with which you are able to write C and C++ modules for Python. Cython also
+allows you to call functions from compiled C libraries. Using Cython allows
+you to take advantage of Python's strong typing of variables and operations.
 
 Here's an example of strong typing with Cython:
 
@@ -100,10 +100,10 @@ Here's an example of strong typing with Cython:
         return result
 
 
-This implementation of an algorithm to find prime numbers has some additional keywords instead of the next one, which is implemented in pure Python:
+This implementation of an algorithm to find prime numbers has some additional
+keywords compared to the next one, which is implemented in pure Python:
 
 .. code-block:: python
-
 
     def primes(kmax):
     """Calculation of prime numbers in standard Python syntax"""
@@ -125,7 +125,7 @@ This implementation of an algorithm to find prime numbers has some additional ke
             n = n + 1
         return result
 
-Notice that in the Cython version you declare integers and integer arrays for 
+Notice that in the Cython version you declare integers and integer arrays
 to be compiled into C types while also creating a Python list:
 
 
@@ -148,12 +148,14 @@ to be compiled into C types while also creating a Python list:
         p= range(1000)
         result = []
 
-What is the difference? In the upper Cython version you can see the declaration of the variable types  and the integer array
-in a similar way like in standard C. For example `cdef int n,k,i` in line 3.  This additional type declaration (e.g. integer)
-allows the Cython compiler to generate more efficient C code from the second code. While standard Python code is saved in :file:`*.py` files,
-Cython code is saved in :file:`*.pyx` files.
+What is the difference? In the upper Cython version you can see the
+declaration of the variable types and the integer array in a similar way as
+in standard C. For example `cdef int n,k,i` in line 3. This additional type
+declaration (i.e. integer) allows the Cython compiler to generate more
+efficient C code from the second version. While standard Python code is saved
+in :file:`*.py` files, Cython code is saved in :file:`*.pyx` files.
 
-And what is with the speed? So let's try it!
+What's the difference in speed? Let's try it!
 
 .. code-block:: python
 
@@ -179,7 +181,7 @@ And what is with the speed? So let's try it!
 	print "Python time: %s" %(t2-t1)
 
 
-These both lines need a remark:
+These lines both need a remark:
 
 .. code-block:: python
 
@@ -187,11 +189,15 @@ These both lines need a remark:
     pyximport.install()
 
 
-The `pyximport` module allows you to import :file:`*.pyx` files (e.g., :file:`primesCy.pyx`) with the Cython-compiled version of the `primes` function.
-The `pyximport.install()` command allows the Python interpreter to start the Cython compiler directly to generate C-code,
-which is automatically compiled to a :file:`*.so` C-library. Cython is able to import this library for you in your Python-code.
-Very easy and very efficient. With the `time.time()` function you are able to compare the time between this 2 different calls to find 500 prime numbers.
-On a standard notebook (dual core AMD E-450 1.6 GHz), the measured values are:
+The `pyximport` module allows you to import :file:`*.pyx` files (e.g.,
+:file:`primesCy.pyx`) with the Cython-compiled version of the `primes`
+function. The `pyximport.install()` command allows the Python interpreter to
+start the Cython compiler directly to generate C-code, which is automatically
+compiled to a :file:`*.so` C-library. Cython is then able to import this
+library for you in your Python code, easily and efficiently. With the
+`time.time()` function you are able to compare the time between these 2
+different calls to find 500 prime numbers. On a standard notebook (dual core
+AMD E-450 1.6 GHz), the measured values are:
 
 .. code-block:: console
 
@@ -200,13 +206,14 @@ On a standard notebook (dual core AMD E-450 1.6 GHz), the measured values are:
     Python time: 0.0566 seconds
 
 
+And here the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_ machine:
 
-And here the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_  machine:
 .. code-block:: console
 
     Cython time: 0.0196 seconds
 
     Python time: 0.3302 seconds
+
 
 Pyrex
 -----
