@@ -31,4 +31,4 @@ gevent
 ------
 
 `gevent <http://www.gevent.org/>`_ is a coroutine-based Python networking library
-that uses greenlets and libevent event loops.
+that uses greenlets to provide a high-level synchronous API on top of the libev event loop. 
