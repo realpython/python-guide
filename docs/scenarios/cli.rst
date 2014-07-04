@@ -1,7 +1,23 @@
 Command-line Applications
 =========================
 
-.. todo:: Explain "Command-line Applications"
+Command-line applications, also referred to as
+`Console Applications <http://en.wikipedia.org/wiki/Console_application>`_,
+are computer programs designed to be used from a text interface, such as a
+`shell <http://en.wikipedia.org/wiki/Shell_(computing)>`_. Command-line
+applications usually accept various inputs as arguments, often referred to as
+parameters or sub-commands, as well as options, often referred to as flags or
+switches.
+
+Some popular command-line applications include:
+
+* `Grep <http://en.wikipedia.org/wiki/Grep>`_ - A plain-text data search utility
+* `curl <http://curl.haxx.se/>`_ - A tool for data transfer with URL syntax
+* `httpie <https://github.com/jakubroztocil/httpie>`_ - A command line HTTP
+  client, a user-friendly cURL replacement
+* `git <http://git-scm.com/>`_ - A distributed version control system
+* `mercurial <http://mercurial.selenic.com/>`_ - A distributed version control
+  system primarily written in Python
 
 Clint
 -----
