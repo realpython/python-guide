@@ -73,7 +73,7 @@ command. It also enables you to add this network installation capability to
 your own Python software with very little work. Homebrew already installed
 Setuptools for you.
 
-Happily, when you ran `brew install python`, Homebrew also installed **pip**.
+Happily, when you ran ``brew install python``, Homebrew also installed **pip**.
 Pip allows for installation and uninstallation of packages, and is actively
 maintained.
 

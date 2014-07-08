@@ -34,7 +34,7 @@ your own Python software with very little work.
 To obtain the latest version of Setuptools for Linux, refer to the documentation
 available here: `unix-setuptools <https://pypi.python.org/pypi/setuptools#unix-wget>`_
 
-The new``easy_install`` command you have available is considered by many to be
+The new ``easy_install`` command you have available is considered by many to be
 deprecated, so we will install its replacement: **pip**. Pip allows for
 uninstallation of packages, and is actively maintained, unlike easy_install.
 
