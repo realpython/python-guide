@@ -137,6 +137,8 @@ PyCharm / IntelliJ IDEA
 `PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also
 known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
 features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631>`_.
+There are two versions of PyCharm: Professional Edition (Free 30-day trial) 
+and Community Edition(Apache 2.0 License) with less features.
 
 
 Eclipse
@@ -148,8 +150,11 @@ The most popular Eclipse plugin for Python development is Aptana's
 
 Komodo IDE
 ----------
+
 `Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by
 ActiveState and is a commercial IDE for Windows, Mac, and Linux.
+`KomodoEdit <https://github.com/Komodo/KomodoEdit>`_ is the open source
+alternative.
 
 
 Spyder
@@ -184,6 +189,19 @@ systems. Installers for these platforms can be downloaded from the website.
 
 NINJA-IDE is open-source software (GPLv3 licence) and is developed in Python and
 Qt. The source files can be downloaded from `GitHub <https://github.com/ninja-ide>`_.
+
+
+Eric (The Eric Python IDE)
+--------------------------
+
+`Eric <http://eric-ide.python-projects.org/>`_ is a full featured Python IDE 
+offering sourcecode autocompletion, syntax highlighting, support for version 
+control systems, python 3 support, integrated web browser, python shell, 
+integrated debugger and a flexible plug-in system. Written in python, it is 
+based on the Qt gui toolkit, integrating the Scintilla editor control. Eric 
+is an open-source software (GPLv3 licence) with more than ten years of active
+development.
+
 
 Interpreter Tools
 :::::::::::::::::
