@@ -59,6 +59,7 @@ different scenarios.
    scenarios/scientific
    scenarios/imaging
    scenarios/xml
+   scenarios/crypto
 
 
 Shipping Great Code
