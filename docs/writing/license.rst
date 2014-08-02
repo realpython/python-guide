@@ -26,7 +26,7 @@ The latter are less permissive in the sense that they don't permit
 someone to add code to the software and distribute it without also
 including the source code for their changes.
 
-To help you choose one for your project, there's a `license chooser <http://three.org/openart/license_chooser/>`_,
+To help you choose one for your project, there's a `license chooser <http://choosealicense.com/>`_,
 **use it**.
 
 **More Permissive**
