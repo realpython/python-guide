@@ -65,17 +65,16 @@ This will take a minute or two.
 Setuptools & Pip
 ----------------
 
-The most crucial third-party Python software of all is Setuptools, which
-extends the packaging and installation facilities provided by the distutils
-in the standard library. Once you add Setuptools to your Python system you can
-download and install any compliant Python software product with a single
-command. It also enables you to add this network installation capability to
-your own Python software with very little work. Homebrew already installed
-Setuptools for you.
+Homebrew installs Setuptools and ``pip`` for you.
 
-Happily, when you ran ``brew install python``, Homebrew also installed **pip**.
-Pip allows for installation and uninstallation of packages, and is actively
-maintained.
+Setuptools enables you to download and install any compliant Python
+software over a network (usually the Internet) with a single command
+(``easy_install``). It also enables you to add this network installation
+capability to your own Python software with very little work.
+
+``pip`` is a tool for easily installing and managing Python packages,
+that is recommended over ``easy_install``. It is superior to ``easy_install`` in `several ways <https://pip.pypa.io/en/1.5.X/other-tools.html#easy-install>`_,
+and is actively maintained.
 
 
 Virtualenv
