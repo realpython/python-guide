@@ -127,6 +127,17 @@ Sublime Text has excellent support for editing Python code and uses Python for
 its plugin API. It also has a diverse variety of plugins, `some of which <https://github.com/SublimeLinter/SublimeLinter>`_
 allow for in-editor PEP8 checking and code "linting".
 
+Atom
+----
+
+    `Atom <https://atom.io/>`_ is a hackable text editor for the 21st century,
+    built on atom-shell, and based on everything we love about our favorite editors.
+
+Atom is web native (HTML, CSS, JS), focusing on modular design and easy plugin development.
+It comes with native package control and plethora of packages. Recommended for Python
+development is `Linter <https://github.com/AtomLinter/Linter>`_ combined with
+`linter-flake8 <https://github.com/AtomLinter/linter-flake8>`_.
+
 
 IDEs
 ::::
@@ -137,7 +148,7 @@ PyCharm / IntelliJ IDEA
 `PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains, also
 known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
 features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631>`_.
-There are two versions of PyCharm: Professional Edition (Free 30-day trial) 
+There are two versions of PyCharm: Professional Edition (Free 30-day trial)
 and Community Edition(Apache 2.0 License) with less features.
 
 
@@ -194,11 +205,11 @@ Qt. The source files can be downloaded from `GitHub <https://github.com/ninja-id
 Eric (The Eric Python IDE)
 --------------------------
 
-`Eric <http://eric-ide.python-projects.org/>`_ is a full featured Python IDE 
-offering sourcecode autocompletion, syntax highlighting, support for version 
-control systems, python 3 support, integrated web browser, python shell, 
-integrated debugger and a flexible plug-in system. Written in python, it is 
-based on the Qt gui toolkit, integrating the Scintilla editor control. Eric 
+`Eric <http://eric-ide.python-projects.org/>`_ is a full featured Python IDE
+offering sourcecode autocompletion, syntax highlighting, support for version
+control systems, python 3 support, integrated web browser, python shell,
+integrated debugger and a flexible plug-in system. Written in python, it is
+based on the Qt gui toolkit, integrating the Scintilla editor control. Eric
 is an open-source software (GPLv3 licence) with more than ten years of active
 development.
 
@@ -371,4 +382,3 @@ Python interpreter for Unix-like operating systems. It has the following feature
 .. code-block:: console
 
     $ pip install bpython
-
