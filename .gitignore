@@ -7,3 +7,6 @@ docs/_build
 
 # Ignore .hgignore for contributors using Mercurial.
 .hgignore
+
+# Ignore files generated during build
+build/
