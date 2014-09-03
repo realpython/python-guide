@@ -235,6 +235,15 @@ Python 3 and 2.6 versions.
 
     `Python Pocket Reference <http://shop.oreilly.com/product/9780596158095.do>`_
 	
+Python Cookbook
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python Cookbook, written by David Beazley and Brian K. Jones, is packed with
+practical recipes. This book covers the core python language as well as tasks
+common to a wide variety of application domains.
+
+    `Python Cookbook <http://shop.oreilly.com/product/0636920027072.do>`_
+
 Writing Idiomatic Python
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
