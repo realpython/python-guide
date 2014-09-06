@@ -32,6 +32,14 @@ Basic Usage
 This creates a copy of Python in whichever directory you ran the command in,
 placing it in a folder named :file:`venv`.
 
+You can also use a Python interpreter of your choice.
+
+.. code-block:: console
+
+   $ virtualenv -p /usr/bin/python2.7 venv
+
+This will use the Python interpreter in :file:`/usr/bin/python2.7`
+
 2. To begin using the virtual environment, it needs to be activated:
 
 .. code-block:: console
