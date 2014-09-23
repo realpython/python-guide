@@ -23,12 +23,11 @@ Solutions and platforms/features supported:
 Solution    Windows Linux OS X Python 3 License One-file mode Zipfile import Eggs pkg_resources support
 =========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
 bbFreeze    yes     yes   yes  no       MIT     no            yes            yes  yes
-py2exe      yes     no    no   no       MIT     yes           yes            no   no
+py2exe      yes     no    no   yes      MIT     yes           yes            no   no
 pyInstaller yes     yes   yes  no       GPL     yes           no             yes  no
 cx_Freeze   yes     yes   yes  yes      PSF     no            yes            yes  no
+py2app      no      no    yes  yes      MIT     no            yes            yes  yes
 =========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
-
-.. todo:: Add other solutions: py2app
 
 .. note::
     Freezing Python code on Linux into a Windows executable was only once
@@ -36,7 +35,7 @@ cx_Freeze   yes     yes   yes  yes      PSF     no            yes            yes
     <http://stackoverflow.com/questions/2950971/cross-compiling-a-python-script-on-linux-into-a-windows-executable#comment11890276_2951046>`_.
 
 .. note::
-    All solutions need MS Visual C++ dll to be installed on target machine.
+    All solutions need MS Visual C++ dll to be installed on target machine, except py2app.
     Only Pyinstaller makes self-executable exe that bundles the dll when
     passing :option:`--onefile` to :file:`Configure.py`.
 
