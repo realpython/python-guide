@@ -10,3 +10,7 @@ docs/_build
 
 # Ignore files generated during build
 build/
+
+# Ignore irrelevant files from the Eclipse/PyDev IDE
+.project
+.pydevproject
