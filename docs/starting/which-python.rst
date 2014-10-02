@@ -94,8 +94,26 @@ an ideal choice for Windows developers.
 
 IronPython supports Python 2.7. [#iron_ver]_
 
+PythonNet
+---------
+
+`Python for .NET <http://pythonnet.github.io/>`_ is a package which
+provides near seamless integration of a natively installed Python
+installation with the .NET Common Language Runtime (CLR).  This is the
+inverse approach to that taken by IronPython (see above), to which it
+is more complementary than competing with.
+
+In conjunction with Mono, PythonNet enables native Python
+installations on non-Windows operating systems, such as OS X and
+Linux, to operate within the .NET framework.  It can be run in
+addition to IronPython without conflict.
+
+PythonNet supports from Python 2.3 up to Python 2.7. [#pythonnet_ver]_
+
 .. [#pypy_ver] http://pypy.org/compat.html
 
 .. [#jython_ver] http://wiki.python.org/jython/JythonFaq/GeneralInfo#Is_Jython_the_same_language_as_Python.3F
 
 .. [#iron_ver] http://ironpython.codeplex.com/releases/view/81726
+
+.. [#pythonnet_ver] http://pythonnet.github.io/readme.html
