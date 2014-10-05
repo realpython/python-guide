@@ -240,9 +240,95 @@ Chef
 Puppet
 ------
 
-.. todo:: Write about Puppet
+`Puppet <http://puppetlabs.com>`_ is an IT Automation and configuration management
+software from Puppet Labs that allows System Administrators to define the state of
+their IT Infrastructure, thereby providing an elegant way to manage their fleet of
+physical and virtual machines.
 
-    `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
+Puppet is available both as an Open Source and an Enterprise variant. Modules are
+small,shareable units of code written to automate or define the state of a system.
+`Puppet Forge <https://forge.puppetlabs.com/>`_ is a repository for modules written
+by the community for Open Source and Enterprise Puppet.
+
+Puppet Agents are installed on nodes whose state needs to be monitored or changed.
+A desginated server known as the Puppet Master is responsible for orchastrating the
+agent nodes.
+
+Agent nodes send basic facts about the system such as to the operating system, kernel,
+architecture, ip address, hostname etc. to the Puppet Master.
+The Puppet Master then compiles a catalog with information provided by the agents on
+how each node should be configured and sends it to the agent. The agent enforces the
+change as prescribed in the catalog and sends a report back to the Puppet Master.
+
+Facter is an interesting tool that ships with Puppet that pulls basic facts about
+the System. These facts can be referenced as a variable while writing your
+Puppet modules.
+
+.. code-block:: console
+
+    $ facter kernel
+    Linux
+.. code-block:: console
+
+    $ facter operatingsystem
+    Ubuntu  
+
+Writing Modules in Puppet is pretty straight forward. Puppet Manifests together form
+Puppet Modules. Puppet manifest end with an extension of ``.pp``.
+Here is an example of 'Hello World' in Puppet.
+
+.. code-block:: puppet
+
+    notify { 'This message is getting logged into the agent node':
+
+        #As nothing is specified in the body the resource title
+        #the notification message by default.
+    }
+
+Here is another example with system based logic. Note how the operatingsystem fact
+is being used as a variable prepended with the ``$`` sign. Similarly, this holds true
+for other facts such as hostname which can be referenced by ``$hostname``
+
+.. code-block:: puppet
+
+    notify{ 'Mac Warning':
+        message => $operatingsystem ? {
+            'Darwin' => 'This seems to be a Mac.',
+            default  => 'I am a PC.',
+        },
+    }
+
+There are several resource types for Puppet but the package-file-service paradigm is all
+you need for undertaking majority of the configuration management. The following Puppet code makes sure 
+that the OpenSSH-Server package is installed in a system and the sshd service is notified to restart
+everytime the sshd configuration file is changed.
+
+.. code-block:: puppet
+
+    package { 'openssh-server':
+        ensure => installed,
+    }
+
+    file { '/etc/ssh/sshd_config':
+        source   => 'puppet:///modules/sshd/sshd_config',
+        owner    => 'root',
+        group    => 'root',
+        mode     => '640',
+        notify   =>  Service['sshd'], # sshd will restart
+                                      # whenever you edit this
+                                      # file
+        require  => Package['openssh-server'],
+
+    }
+
+    service { 'sshd':
+        ensure    => running,
+        enable    => true,
+        hasstatus => true,
+        hasrestart=> true,
+    }
+
+For more information checkout `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
 
 Blueprint
 ---------
