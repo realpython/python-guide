@@ -299,7 +299,7 @@ for other facts such as hostname which can be referenced by ``$hostname``
     }
 
 There are several resource types for Puppet but the package-file-service paradigm is all
-you need for undertaking majority of theconfiguration management. The following Puppet code makes sure 
+you need for undertaking majority of the configuration management. The following Puppet code makes sure 
 that the OpenSSH-Server package is installed in a system and the sshd service is notified to restart
 everytime the sshd configuration file is changed.
 
