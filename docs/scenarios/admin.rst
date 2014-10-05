@@ -327,7 +327,8 @@ everytime the sshd configuration file is changed.
         hasstatus => true,
         hasrestart=> true,
     }
-`Puppet Labs Documentation <http://docs.puppetlabs.com>`_
+
+For more information checkout `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
 
 Blueprint
 ---------
