@@ -273,7 +273,60 @@ Puppet modules.
     $ facter operatingsystem
     Ubuntu  
 
+Writing Modules in Puppet is pretty straight forward. Puppet Manifests together form
+Puppet Modules. Puppet manifest end with an extension of ``.pp``.
+Here is an example of 'Hello World' in Puppet.
 
+.. code-block:: puppet
+
+    notify { 'This message is getting logged into the agent node':
+
+        #As nothing is specified in the body the resource title
+        #the notification message by default.
+    }
+
+Here is another example with system based logic. Note how the operatingsystem fact
+is being used as a variable prepended with the ``$`` sign. Similarly, this holds true
+for other facts such as hostname which can be referenced by ``$hostname``
+
+.. code-block:: puppet
+
+    notify{ 'Mac Warning':
+        message => $operatingsystem ? {
+            'Darwin' => 'This seems to be a Mac.',
+            default  => 'I am a PC.',
+        },
+    }
+
+There are several resource types for Puppet but the package-file-service paradigm is all
+you need for undertaking majority of theconfiguration management. The following Puppet code makes sure 
+that the OpenSSH-Server package is installed in a system and the sshd service is notified to restart
+everytime the sshd configuration file is changed.
+
+.. code-block:: puppet
+
+    package { 'openssh-server':
+        ensure => installed,
+    }
+
+    file { '/etc/ssh/sshd_config':
+        source   => 'puppet:///modules/sshd/sshd_config',
+        owner    => 'root',
+        group    => 'root',
+        mode     => '640',
+        notify   =>  Service['sshd'], # sshd will restart
+                                      # whenever you edit this
+                                      # file
+        require  => Package['openssh-server'],
+
+    }
+
+    service { 'sshd':
+        ensure    => running,
+        enable    => true,
+        hasstatus => true,
+        hasrestart=> true,
+    }
 `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
 
 Blueprint
