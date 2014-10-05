@@ -240,7 +240,26 @@ Chef
 Puppet
 ------
 
-.. todo:: Write about Puppet
+`Puppet <http://puppetlabs.com>`_ is an IT Automation and configuration management
+software from Puppet Labs that allows System Administrators to define the state of
+their IT Infrastructure, thereby providing an elegant way to manage their fleet of
+physical and virtual machines.
+
+Puppet is available both as an Open Source and an Enterprise variant. Modules are
+small,shareable units of code written to automate or define the state of a system.
+`Puppet Forge <https://forge.puppetlabs.com/>`_ is a repository for modules written
+by the community for Open Source
+and Enterprise Puppet.
+
+Puppet Agents are installed on nodes whose state needs to be monitored or changed.
+A desginated server known as the Puppet Master is responsible for orchastrating the
+agent nodes.
+
+Agent nodes send basic facts about the system such as to the Operating System, Kernel,
+Architecture, IP Address, Hostname etc. to the Puppet Master.
+The Puppet Master then compiles a catalog with information provided by the agents on
+how each node should be configured and sends it to the agent. The agent enforces the
+change as prescribed in the catalog and sends a report back to the Puppet Master.
 
     `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
 
