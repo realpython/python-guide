@@ -10,7 +10,7 @@ If you're choosing a Python interpreter to use, I recommend you use the
 newest Python 3.x, since every version brings new and improved standard
 library modules, security and bug fixes.
 
-Only use Python 3 if you have a strong reason to, such as a Python 2
+Only use Python 2 if you have a strong reason to, such as a Python 2
 exclusive library which has no adequate, Python 3 ready alternative. Use
 `Can I Use Python 3? <https://caniusepython3.com/>` to check if this is
 the case.
