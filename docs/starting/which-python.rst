@@ -3,23 +3,62 @@ Picking an Interpreter
 
 .. _which-python:
 
-Today (Python 3)
-~~~~~~~~~~~~~~~~
+The State of Python (2 vs 3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you're choosing a Python interpreter to use, I recommend you use the
-newest Python 3.x, since every version brings new and improved standard
-library modules, security and bug fixes.
+When choosing a Python interpreter, one looming question is always present:
+"Should I choose Python 2 or Python 3"? The answer is not as obvious as
+one might thing.
 
-Only use Python 2 if you have a strong reason to, such as a Python 2
-exclusive library which has no adequate, Python 3 ready alternative. Use
-`Can I Use Python 3? <https://caniusepython3.com/>` to check if this is
-the case.
 
-    Python 2.x is legacy, Python 3.x is the present and future of the language
+The basic gist of the state of things is as follows:
+
+1. Python 2.7 has been the standard for Python developers for a *long* time.
+2. Python 3.x intrudced major controvercial changes to the language, which many developers are unhappy with.
+3. Python 2.7 will receive security updates for a long while.
+4. Python 2.x is continually evolving, like Python 2 did in years past.
+
+So, you can now see why this is not such an easy decision.
+
+
+Recommendations
+~~~~~~~~~~~~~~~
+
+I'll be blunt:
+
+
+**Use Python 3 if...**
+
+- You don't care.
+- You love Python 3.
+- You are indifferent towards 2 vs 3.
+- You don't know which one to use.
+- You embrace change.
+
+**Use Python 2 if...**
+
+- You love Python 2 and are saddened by the future being Python 3.
+- The statbility requirements of your software would be improved by a language and runtime that never changes.
+- Software that you depend on requires it.
+
+
+So.... 3?
+~~~~~~~~~
+
+If you're choosing a Python interpreter to use, and aren't opinionated, then I
+recommend you use the newest Python 3.x, since every version brings new and
+improved standard library modules, security and bug fixes. Progress is progress.
+
+Given such, only use Python 2 if you have a strong reason to, such as a Python 2
+exclusive library which has no adequate Python 3 ready alternative, or you
+(like me) absolutely love and are inspired by Python 2.
+
+Check out `Can I Use Python 3? <https://caniusepython3.com/>` to see if any
+software you're depending on will block your adoption of Python 3.
 
 `Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
 
-It is possible to `write code that works on Python 2.6, 2.7 and 3.3
+It is possible to `write code that works on Python 2.6, 2.7, and 3.3
 <http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/>`_. This
 ranges from trivial to hard depending upon the kind of software
 you are writing; if you're a beginner there are far more important things to
