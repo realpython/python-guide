@@ -3,30 +3,25 @@ Picking an Interpreter
 
 .. _which-python:
 
-Today (Python 2)
+Today (Python 3)
 ~~~~~~~~~~~~~~~~
 
-If you're choosing a Python interpreter to use, I *highly* recommend you use
-Python 2.7.x, unless you have a strong reason not to.
+If you're choosing a Python interpreter to use, I recommend you use the
+newest Python 3.x, since every version brings new and improved standard
+library modules, security and bug fixes.
 
-Also use Python 2.7.x if you're starting to work on a new Python module. If you
-have managed to get it working on 2.7, you can add support for older 2.x
-versions.
+Only use Python 2 if you have a strong reason to, such as a Python 2
+exclusive library which has no adequate, Python 3 ready alternative. Use
+`Can I Use Python 3? <https://caniusepython3.com/>` to check if this is
+the case.
 
-The Future (Python 3)
-~~~~~~~~~~~~~~~~~~~~~
-
-    Python 2.x is the status quo, Python 3.x is the shiny new thing.
+    Python 2.x is legacy, Python 3.x is the present and future of the language
 
 `Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
 
-The difference between Python 3 and Python 2 is much greater, therefore
-writing code that works in both Python 2 and Python 3 is a very complicated
-process.
-
 It is possible to `write code that works on Python 2.6, 2.7 and 3.3
 <http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/>`_. This
-ranges from tricky to extremely hard depending upon the kind of software
+ranges from trivial to hard depending upon the kind of software
 you are writing; if you're a beginner there are far more important things to
 worry about.
 
