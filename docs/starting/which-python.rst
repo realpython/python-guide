@@ -38,7 +38,7 @@ I'll be blunt:
 **Use Python 2 if...**
 
 - You love Python 2 and are saddened by the future being Python 3.
-- The statbility requirements of your software would be improved by a language and runtime that never changes.
+- The stability requirements of your software would be improved by a language and runtime that never changes.
 - Software that you depend on requires it.
 
 
