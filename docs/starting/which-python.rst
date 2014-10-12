@@ -53,7 +53,7 @@ Given such, only use Python 2 if you have a strong reason to, such as a Python 2
 exclusive library which has no adequate Python 3 ready alternative, or you
 (like me) absolutely love and are inspired by Python 2.
 
-Check out `Can I Use Python 3? <https://caniusepython3.com/>` to see if any
+Check out `Can I Use Python 3? <https://caniusepython3.com/>`_ to see if any
 software you're depending on will block your adoption of Python 3.
 
 `Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
