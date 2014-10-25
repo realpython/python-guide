@@ -59,6 +59,12 @@ the prompt (e.g. ``(venv)Your-Computer:your_project UserName$)`` to let you know
 that it's active. From now on, any package that you install using pip will be 
 placed in the ``venv`` folder, isolated from the global Python installation.
 
+Install packages as usual, for example:
+
+.. code-block:: console
+
+    $ pip install requests
+
 3. If you are done working in the virtual environment for the moment, you can
    deactivate it:
 
@@ -77,7 +83,7 @@ littered across your system, and its possible you'll forget their names or
 where they were placed.
 
 Other Notes
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 Running ``virtualenv`` with the option :option:`--no-site-packages` will not
 include the packages that are installed globally. This can be useful
