@@ -28,6 +28,7 @@ Basic Usage
 1. Create a virtual environment for a project:
 
 .. code-block:: console
+
    $ cd my_project_folder
    $ virtualenv venv
 
