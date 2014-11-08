@@ -104,9 +104,8 @@ One simple option for a personal PyPi server is to use Amazon S3. A prerequisite
 For Linux Distributions
 ::::::::::::::::::::::::
 
-* `Ubuntu <http://packaging.ubuntu.com/html/python-packaging.html>`_
 * `Fedora <https://fedoraproject.org/wiki/Packaging:Python>`_
-* `Debian <http://www.debian.org/doc/packaging-manuals/python-policy/>`_
+* `Debian and Ubuntu <http://www.debian.org/doc/packaging-manuals/python-policy/>`_
 * `Arch <https://wiki.archlinux.org/index.php/Python_Package_Guidelines>`_
 
 Useful Tools
