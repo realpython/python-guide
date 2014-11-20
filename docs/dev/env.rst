@@ -219,7 +219,7 @@ Interpreter Tools
 
 
 Virtual Environments
-----------
+--------------------
 
 A Virtual Environment is a tool to keep the dependencies required by different projects 
 in separate places, by creating virtual Python environments for them. It solves the 
