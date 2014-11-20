@@ -218,113 +218,18 @@ Interpreter Tools
 :::::::::::::::::
 
 
-virtualenv
-----------
+Virtual Environments
+--------------------
 
-Virtualenv is a tool to keep the dependencies required by different projects
-in separate places, by creating virtual Python environments for them.
-It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
-dilemma, and keeps your global site-packages directory clean and manageable.
+A Virtual Environment is a tool to keep the dependencies required by different projects 
+in separate places, by creating virtual Python environments for them. It solves the 
+"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps 
+your global site-packages directory clean and manageable.
 
-`virtualenv <http://www.virtualenv.org/en/latest/index.html>`_ creates
-a folder which contains all the necessary executables to use the
-packages that a Python project would need. An example workflow is given
-below.
+For example, you can work on a project which requires Django 1.3 while also
+maintaining a project which requires Django 1.0.
 
-Install virtualenv:
-
-.. code-block:: console
-
-    $ pip install virtualenv
-
-
-Create a virtual environment for a project:
-
-.. code-block:: console
-
-    $ cd my_project
-    $ virtualenv venv
-
-``virtualenv venv`` will create a folder in the current directory
-which will contain the Python executable files, and a copy of the ``pip``
-library which you can use to install other packages. The name of the
-virtual environment (in this case, it was ``venv``) can be anything;
-omitting the name will place the files in the current directory instead.
-
-To start using the virtual environment, run:
-
-.. code-block:: console
-
-    $ source venv/bin/activate
-
-
-The name of the current virtual environment will now appear on the left
-of the prompt (e.g. ``(venv)Your-Computer:your_project UserName$``) to
-let you know that it's active. From now on, any package that you install
-using ``pip`` will be placed in the ``venv`` folder, isolated from the global
-Python installation.
-
-Install packages as usual:
-
-.. code-block:: console
-
-    $ pip install requests
-
-To stop using an environment, simply type ``deactivate``. To remove the
-environment, just remove the directory it was installed into. (In this
-case, it would be ``rm -rf venv``.)
-
-Other Notes
-^^^^^^^^^^^
-
-Running ``virtualenv`` with the option :option:`--no-site-packages` will not
-include the packages that are installed globally. This can be useful
-for keeping the package list clean in case it needs to be accessed later.
-[This is the default behavior for ``virtualenv`` 1.7 and later.]
-
-In order to keep your environment consistent, it's a good idea to "freeze"
-the current state of the environment packages. To do this, run
-
-.. code-block:: console
-
-    $ pip freeze > requirements.txt
-
-This will create a :file:`requirements.txt` file, which contains a simple
-list of all the packages in the current environment, and their respective
-versions. Later it will be easier for a different developer (or you, if you
-need to re-create the environment) to install the same packages using the
-same versions:
-
-.. code-block:: console
-
-    $ pip install -r requirements.txt
-
-This can help ensure consistency across installations, across deployments,
-and across developers.
-
-Lastly, remember to exclude the virtual environment folder from source
-control by adding it to the ignore list.
-
-virtualenvwrapper
------------------
-
-`Virtualenvwrapper <http://pypi.python.org/pypi/virtualenvwrapper>`_ makes
-virtualenv a pleasure to use by wrapping the command line API with a nicer CLI.
-
-.. code-block:: console
-
-    $ pip install virtualenvwrapper
-
-
-Put this into your :file:`~/.bash_profile` (Linux/Mac) file:
-
-.. code-block:: console
-
-    $ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-
-This will prevent your virtualenvs from relying on your (global) site packages
-directory, so that they are completely separate.
-[Note: This is the default behavior for ``virtualenv`` 1.7 and later]
+To start using and see more information: `Virtual Environments <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs. 
 
 Other Tools
 :::::::::::

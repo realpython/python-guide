@@ -77,44 +77,19 @@ that is recommended over ``easy_install``. It is superior to ``easy_install`` in
 and is actively maintained.
 
 
-Virtualenv
-----------
+Virtual Environments
+--------------------
 
-After Setuptools & Pip, the next development tool that you should install is
-`virtualenv <http://pypi.python.org/pypi/virtualenv/>`_. Use pip
+A Virtual Environment is a tool to keep the dependencies required by different projects 
+in separate places, by creating virtual Python environments for them. It solves the 
+"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps 
+your global site-packages directory clean and manageable.
 
-.. code-block:: console
+For example, you can work on a project which requires Django 1.3 while also
+maintaining a project which requires Django 1.0.
 
-    $ pip install virtualenv
+To start using and see more information: `Virtual Environments <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs. 
 
-The virtualenv kit provides the ability to create virtual Python environments
-that do not interfere with either each other, or the main Python installation.
-If you install virtualenv before you begin coding then you can get into the
-habit of using it to create completely clean Python environments for each
-project. This is particularly important for Web development, where each
-framework and application will have many dependencies.
-
-To set up a new Python environment, move into the directory where you would 
-like to store the environment, and use the ``virtualenv`` utility to create 
-the new environment.
-
-.. code-block:: console
-
-    $ virtualenv venv
-
-To use an environment, run ``source venv/bin/activate``. Your command prompt
-will change to show the active environment. Once you have finished working in
-the current virtual environment, run ``deactivate`` to restore your settings
-to normal.
-
-Each new environment automatically includes a copy of ``pip``, so that you can
-setup the third-party libraries and tools that you want to use in that
-environment. Put your own code within a subdirectory of the environment,
-however you wish. When you no longer need a particular environment, simply
-copy your code out of it, and then delete the main directory for the environment.
-
-A useful set of extensions to virtualenv is available in virtualenvwrapper,
-`RTFD <http://virtualenvwrapper.readthedocs.org/en/latest/>`_ to find out more.
 
 --------------------------------
 
