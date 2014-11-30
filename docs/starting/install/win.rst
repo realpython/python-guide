@@ -3,7 +3,7 @@
 Installing Python on Windows
 ============================
 
-First, download the `latest version <http://python.org/ftp/python/2.7.6/python-2.7.6.msi>`_
+First, download the `latest version <https://www.python.org/ftp/python/2.7.8/python-2.7.8.msi>`_
 of Python 2.7 from the official Website. If you want to be sure you are installing a fully
 up-to-date version then use the "Windows Installer" link from the home page of the
 `Python.org web site <http://python.org>`_ .
