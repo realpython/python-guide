@@ -53,10 +53,16 @@ PonyORM
 
 `PonyORM <http://ponyorm.com/>`_ is an ORM that takes a different approach to querying the database. Instead of writing
 an SQL-like language or boolean expressions, Python's generator syntax is used. There's also an graphical schema editor
-that can generate PonyORM entities for you.
+that can generate PonyORM entities for you. It supports Python 2.6+ and Python 3.3+ and can connect to SQLite, MySQL,
+Postgres & Oracle
+
+
 
 SQLObject
 ---------
 
-`SQLObject <http://www.sqlobject.org/>`_ is yet another ORM. It supports a wide variety of databases including more exotic
-systems like SAP DB, SyBase and MSSQL.
+`SQLObject <http://www.sqlobject.org/>`_ is yet another ORM. It supports a wide variety of databases: Common database systems
+MySQL, Postgres and SQLite and more exotic systems like SAP DB, SyBase and MSSQL. It only supports Python 2 from
+Python 2.6 upwards.
+
+.. There's no official information on this on their page, this information was gathered by looking at their source code
