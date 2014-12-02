@@ -416,16 +416,13 @@ into the corresponding block in the :file:`base.html` page.
 
 Chameleon
 ---------
-`Chameleon <https://chameleon.readthedocs.org/>`_ is a template engine which is similar to
-the Chameleon is an HTML/XML template engine for Python.
-
-It’s designed to generate the document output of a web application, typically HTML markup or XML.
+`Chameleon <https://chameleon.readthedocs.org/>`_ is an HTML/XML template engine for Python. It’s designed to generate the document output of a web application, typically HTML markup or XML.
 
 The language used is page templates, originally a Zope invention [1], but available here as a standalone library that you can use in any script or application running Python 2.5 and up (including 3.x and pypy). It comes with a set of new features, too.
 
 The template engine compiles templates into Python byte-code and is optimized for speed. For a complex template language, the performance is very good.
 
-Here is an example of a template tags in Chameloen:
+Here is an example of a template tags in Chameleon:
 
 The *page templates* language is used within your document structure
 as special element attributes and text markup. Using a set of simple
