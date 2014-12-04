@@ -113,6 +113,8 @@ and across developers.
 Lastly, remember to exclude the virtual environment folder from source
 control by adding it to the ignore list.
 
+.. _virtualenvwrapper-ref:
+
 virtualenvwrapper
 -----------------
 
