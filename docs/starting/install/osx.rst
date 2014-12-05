@@ -40,7 +40,7 @@ To `install Homebrew <http://brew.sh/#install>`_, open `Terminal`
 (either via `Command-Spacebar` or from Finder, navigate to
 `/Applications/Utilities/Terminal`) and run
 
- .. code-block:: console
+.. code-block:: console
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
