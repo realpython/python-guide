@@ -36,12 +36,13 @@ While OS X comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
 `Homebrew <http://brew.sh>`_ fills this void.
 
-To `install Homebrew <https://github.com/Homebrew/homebrew/wiki/installation>`_,
-simply run
+To `install Homebrew <http://brew.sh/#install>`_, open `Terminal`
+(either via `Command-Spacebar` or from Finder, navigate to
+`/Applications/Utilities/Terminal`) and run
 
-.. code-block:: console
+ .. code-block:: console
 
-    $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 The script will explain what changes it will make and prompt you before the
 installation begins.
