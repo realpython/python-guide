@@ -24,13 +24,13 @@ Use `pip <http://pypi.python.org/pypi/pip>`_.  More details `here <http://stacko
 Personal PyPI
 -------------
 
-If you want to install packages from a source different from PyPI, (say, if
+If you want to install packages from a source other than PyPI, (say, if
 your packages are *proprietary*), you can do it by hosting a simple http server,
 running from the directory which holds those packages which need to be installed.
 
 **Showing an example is always beneficial**
 
-Say if you are after installing a package called :file:`MyPackage.tar.gz`,  and
+For example, if you want to install a package called :file:`MyPackage.tar.gz`,  and
 assuming this is your directory structure:
 
 

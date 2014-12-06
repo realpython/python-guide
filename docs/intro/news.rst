@@ -35,7 +35,7 @@ new releases, jobs, etc. related to Python.
 Python News
 ~~~~~~~~~~~~~
 
-News section in the official Python web site (www.python.org). It briefly
-highlights the news from Python community.
+Python News is the news section in the official Python web site (www.python.org). It briefly
+highlights the news from the Python community.
 
     `Python News <http://www.python.org/news/>`_

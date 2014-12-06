@@ -88,7 +88,7 @@ Arguments can be passed to functions in four different ways.
 
 1. **Positional arguments** are mandatory and have no default values. They are the
 simplest form of arguments and they can be used for the few function arguments
-that are fully part of the functions meaning and their order is natural. For
+that are fully part of the function's meaning and their order is natural. For
 instance, in ``send(message, recipient)`` or ``point(x, y)`` the user of the
 function has no difficulty remembering that those two functions require two
 arguments, and in which order.
@@ -102,7 +102,7 @@ calls to ``send('Hello', 'World')`` and ``point(1, 2)``.
 2. **Keyword arguments** are not mandatory and have default values. They are often
 used for optional parameters sent to the function. When a function has more than
 two or three positional parameters, its signature is more difficult to remember
-and using keyword argument with default values is helpful. For instance, a more
+and using keyword arguments with default values is helpful. For instance, a more
 complete ``send`` function could be defined as ``send(message, to, cc=None, bcc=None)``.
 Here ``cc`` and ``bcc`` are optional, and evaluate to ``None`` when they are not
 passed another value.
@@ -165,7 +165,7 @@ Avoid the magical wand
 ~~~~~~~~~~~~~~~~~~~~~~
 
 A powerful tool for hackers, Python comes with a very rich set of hooks and
-tools allowing to do almost any kind of tricky tricks. For instance, it is
+tools allowing you to do almost any kind of tricky tricks. For instance, it is
 possible to do each of the following:
 
 * change how objects are created and instantiated
@@ -212,7 +212,7 @@ Using this convention generously is encouraged: any method or property that is
 not intended to be used by client code should be prefixed with an underscore.
 This will guarantee a better separation of duties and easier modification of
 existing code; it will always be possible to publicize a private property,
-while privatising a public property might be a much harder operation.
+but making a public property private might be a much harder operation.
 
 Returning values
 ~~~~~~~~~~~~~~~~
@@ -374,7 +374,7 @@ Even though both functions look identical, because *lookup_dict* is utilizing
 the fact that dictionaries in Python are hashtables, the lookup performance
 between the two is very different. Python will have to go through each item
 in the list to find a matching case, which is time consuming. By analysing
-the hash of the dictionary, finding keys in the dict can be done very quickly.
+the hash of the dictionary, finding keys in the dictionary can be done very quickly.
 For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_
 page.
 
@@ -422,7 +422,7 @@ Conforming your Python code to PEP 8 is generally a good idea and helps make
 code more consistent when working on projects with other developers. There
 is a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
 that can check your code for conformance. Install it by running the following
-command in your Terminal:
+command in your terminal:
 
 
 .. code-block:: console
@@ -639,6 +639,6 @@ and square braces.
     from some.deep.module.inside.a.module import (
         a_nice_function, another_nice_function, yet_another_nice_function)
 
-However, more often than not having to split long logical line is a sign that
+However, more often than not, having to split a long logical line is a sign that
 you are trying to do too many things at the same time, which may hinder
 readability.

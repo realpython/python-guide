@@ -35,7 +35,7 @@ and deployable.
 Kivy is written in Python, based on OpenGL and supports different input devices
 such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products and so on.
 
-Kivy is actively being developed by a community and free to use. It operates
+Kivy is actively being developed by a community and is free to use. It operates
 on all major platforms (Linux, OSX, Windows, Android).
 
 The main resource for information is the website: http://kivy.org

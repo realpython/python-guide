@@ -240,13 +240,13 @@ Chef
 Puppet
 ------
 
-`Puppet <http://puppetlabs.com>`_ is an IT Automation and configuration management
+`Puppet <http://puppetlabs.com>`_ is IT Automation and configuration management
 software from Puppet Labs that allows System Administrators to define the state of
 their IT Infrastructure, thereby providing an elegant way to manage their fleet of
 physical and virtual machines.
 
 Puppet is available both as an Open Source and an Enterprise variant. Modules are
-small,shareable units of code written to automate or define the state of a system.
+small, shareable units of code written to automate or define the state of a system.
 `Puppet Forge <https://forge.puppetlabs.com/>`_ is a repository for modules written
 by the community for Open Source and Enterprise Puppet.
 
@@ -261,7 +261,7 @@ how each node should be configured and sends it to the agent. The agent enforces
 change as prescribed in the catalog and sends a report back to the Puppet Master.
 
 Facter is an interesting tool that ships with Puppet that pulls basic facts about
-the System. These facts can be referenced as a variable while writing your
+the system. These facts can be referenced as a variable while writing your
 Puppet modules.
 
 .. code-block:: console
@@ -328,7 +328,7 @@ everytime the sshd configuration file is changed.
         hasrestart=> true,
     }
 
-For more information checkout `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
+For more information, refer to the `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
 
 Blueprint
 ---------
