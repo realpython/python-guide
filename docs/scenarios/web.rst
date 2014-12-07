@@ -422,14 +422,15 @@ engine implementation of the `Template Attribute Language (TAL) <http://en.wikip
 and `Macro Expansion TAL (Metal) <http://chameleon.readthedocs.org/en/latest/reference.html#macros-metal>` syntaxes.
 
 Chameleon is available for Python 2.5 and up (including 3.x and pypy), and
-is commonly used by the `Pyramid Framework <http://docs.pylonsproject.org/projects/pyramid/en/latest/>`_.
+is commonly used by the `Pyramid Framework <http://trypyramid.com>`_.
 
 Page Templates add within your document structure special element attributes
 and text markup. Using a set of simple language constructs, you control the
 document flow, element repetition, text replacement and translation. Because
 of the attribute-based syntax, unrendered page templates are valid HTML and can
 be viewed in a browser and even edited in WYSIWYG editors. This can make
-round-trip collaboration with designers and prototyping in a browser easier.
+round-trip collaboration with designers and prototyping with static files in a
+browser easier.
 
 The basic TAL language is simple enough to grasp from an example:
 
@@ -471,7 +472,7 @@ you can replace it with a more terse and readable syntax that uses the pattern
   
 
 But keep in mind that the full `<span tal:replace="expression">Default Text</span>` 
-syntax allows for default content in the unrendered template.
+syntax also allows for default content in the unrendered template.
 
 .. rubric:: References
 
