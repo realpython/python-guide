@@ -416,27 +416,49 @@ into the corresponding block in the :file:`base.html` page.
 
 Chameleon
 ---------
-`Chameleon <https://chameleon.readthedocs.org/>`_ is an HTML/XML template engine for Python. It’s designed to generate the document output of a web application, typically HTML markup or XML.
+`Chameleon <https://chameleon.readthedocs.org/>`_ Page Templates are an HTML/XML template
+engine implementation of the `Template Attribute Language (TAL) <http://en.wikipedia.org/wiki/Template_Attribute_Language>`_,
+`TAL Expression Syntax (TALES) <http://chameleon.readthedocs.org/en/latest/reference.html#expressions-tales>`_,
+and `Macro Expansion TAL (Metal) <http://chameleon.readthedocs.org/en/latest/reference.html#macros-metal>` syntaxes.
 
-The language used is page templates, originally a Zope invention, but available here as a standalone library that you can use in any script or application running Python 2.5 and up (including 3.x and pypy). It comes with a set of new features, too.
+Chameleon is available for Python 2.5 and up (including 3.x and pypy), and
+is commonly used by the `Pyramid Framework <http://docs.pylonsproject.org/projects/pyramid/en/latest/>`_.
 
-The template engine compiles templates into Python byte-code and is optimized for speed. For a complex template language, the performance is very good.
+Page Templates add within your document structure special element attributes
+and text markup. Using a set of simple language constructs, you control the
+document flow, element repetition, text replacement and translation. Because
+of the attribute-based syntax, unrendered page templates are valid HTML and can
+be viewed in a browser and even edited in WYSIWYG editors. This can make
+round-trip collaboration with designers and prototyping in a browser easier.
 
-The *page templates* language is used within your document structure
-as special element attributes and text markup. Using a set of simple
-language constructs, you control the document flow, element
-repetition, text replacement and translation.
-
-.. note:: If you've used page templates in a Zope environment previously, note that Chameleon uses Python as the default expression language (instead of *path* expressions).
-
-The basic language (known as the *template attribute language* or TAL)
-is simple enough to grasp from an example:
+The basic TAL language is simple enough to grasp from an example:
 
 .. code-block:: html
 
   <html>
     <body>
-      <h1>Hello, ${'world'}!</h1>
+    <h1>Hello, <span tal:replace="context.name">World</span>!</h1>
+      <table>
+        <tr tal:repeat="row 'apple', 'banana', 'pineapple'">
+          <td tal:repeat="col 'juice', 'muffin', 'pie'">
+             <span tal:replace="row.capitalize()" /> <span tal:replace="col" />
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>
+  
+
+The `<span tal:replace="expression" />` pattern for text insertion is common
+enough that if you do not require strict validity in your unrendered templates,
+you can replace it with a more terse and readable syntax that uses the pattern
+`${expression}`, as follows:
+
+.. code-block:: html
+
+  <html>
+    <body>
+      <h1>Hello, ${world}!</h1>
       <table>
         <tr tal:repeat="row 'apple', 'banana', 'pineapple'">
           <td tal:repeat="col 'juice', 'muffin', 'pie'">
@@ -447,6 +469,10 @@ is simple enough to grasp from an example:
     </body>
   </html>
   
+
+But keep in mind that the full `<span tal:replace="expression">Default Text</span>` 
+syntax allows for default content in the unrendered template.
+
 .. rubric:: References
 
 .. [1] `The mod_python project is now officially dead <http://blog.dscpl.com.au/2010/06/modpython-project-is-now-officially.html>`_
