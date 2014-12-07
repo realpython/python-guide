@@ -414,6 +414,65 @@ into the corresponding block in the :file:`base.html` page.
         </p>
     {% endblock %}
 
+Chameleon
+---------
+`Chameleon <https://chameleon.readthedocs.org/>`_ Page Templates are an HTML/XML template
+engine implementation of the `Template Attribute Language (TAL) <http://en.wikipedia.org/wiki/Template_Attribute_Language>`_,
+`TAL Expression Syntax (TALES) <http://chameleon.readthedocs.org/en/latest/reference.html#expressions-tales>`_,
+and `Macro Expansion TAL (Metal) <http://chameleon.readthedocs.org/en/latest/reference.html#macros-metal>` syntaxes.
+
+Chameleon is available for Python 2.5 and up (including 3.x and pypy), and
+is commonly used by the `Pyramid Framework <http://trypyramid.com>`_.
+
+Page Templates add within your document structure special element attributes
+and text markup. Using a set of simple language constructs, you control the
+document flow, element repetition, text replacement and translation. Because
+of the attribute-based syntax, unrendered page templates are valid HTML and can
+be viewed in a browser and even edited in WYSIWYG editors. This can make
+round-trip collaboration with designers and prototyping with static files in a
+browser easier.
+
+The basic TAL language is simple enough to grasp from an example:
+
+.. code-block:: html
+
+  <html>
+    <body>
+    <h1>Hello, <span tal:replace="context.name">World</span>!</h1>
+      <table>
+        <tr tal:repeat="row 'apple', 'banana', 'pineapple'">
+          <td tal:repeat="col 'juice', 'muffin', 'pie'">
+             <span tal:replace="row.capitalize()" /> <span tal:replace="col" />
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>
+  
+
+The `<span tal:replace="expression" />` pattern for text insertion is common
+enough that if you do not require strict validity in your unrendered templates,
+you can replace it with a more terse and readable syntax that uses the pattern
+`${expression}`, as follows:
+
+.. code-block:: html
+
+  <html>
+    <body>
+      <h1>Hello, ${world}!</h1>
+      <table>
+        <tr tal:repeat="row 'apple', 'banana', 'pineapple'">
+          <td tal:repeat="col 'juice', 'muffin', 'pie'">
+             ${row.capitalize()} ${col}
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>
+  
+
+But keep in mind that the full `<span tal:replace="expression">Default Text</span>` 
+syntax also allows for default content in the unrendered template.
 
 .. rubric:: References
 
