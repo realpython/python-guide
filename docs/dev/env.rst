@@ -149,7 +149,7 @@ PyCharm / IntelliJ IDEA
 known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
 features can be brought to IntelliJ with the free `Python Plug-In <http://plugins.intellij.net/plugin/?id=631>`_.
 There are two versions of PyCharm: Professional Edition (Free 30-day trial)
-and Community Edition(Apache 2.0 License) with less features.
+and Community Edition(Apache 2.0 License) with fewer features.
 
 
 Eclipse
@@ -210,7 +210,7 @@ offering sourcecode autocompletion, syntax highlighting, support for version
 control systems, python 3 support, integrated web browser, python shell,
 integrated debugger and a flexible plug-in system. Written in python, it is
 based on the Qt gui toolkit, integrating the Scintilla editor control. Eric
-is an open-source software (GPLv3 licence) with more than ten years of active
+is an open-source software project (GPLv3 licence) with more than ten years of active
 development.
 
 

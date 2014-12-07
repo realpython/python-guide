@@ -148,8 +148,8 @@ general :pep:`8` best practices.
 
 It has a detailed, multi-chapter case study on writing and releasing a package
 and eventually an application, including a chapter on using zc.buildout.  Later
-chapters detail best practices with writing documentation, test-driven
-development, version control, and optimization/profiling.
+chapters detail best practices such as writing documentation, test-driven
+development, version control, optimization and profiling.
 
     `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
 
@@ -171,7 +171,7 @@ A Primer on Scientific Programming with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Primer on Scientific Programming with Python, written by Hans Petter Langtangen,
-mainly covers Python's usage in scientific field. In the book, examples are
+mainly covers Python's usage in the scientific field. In the book, examples are
 chosen from mathematics and the natural sciences.
 
     `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-30292-3>`_
@@ -179,7 +179,7 @@ chosen from mathematics and the natural sciences.
 Numerical Methods in Engineering with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Numerical Methods in Engineering with Python, written by Jaan Kiusalaas, attempts to
+Numerical Methods in Engineering with Python, written by Jaan Kiusalaas, puts the  
 emphasis on numerical methods and how to implement them in Python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_

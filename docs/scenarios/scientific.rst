@@ -26,7 +26,7 @@ IPython
 
 `IPython <http://ipython.org/>`_ is an enhanced version of Python interpreter,
 which provides features of great interest to scientists. The `inline mode`
-allow graphics and plots to be displayed in the terminal (Qt based version).
+allows graphics and plots to be displayed in the terminal (Qt based version).
 Moreover, the `notebook` mode supports literate programming and reproducible
 science generating a web-based Python notebook. This notebook allows you to
 store chunks of Python code along side the results and additional comments
@@ -55,9 +55,9 @@ NumPy is compatible with Python versions 2.4 through to 2.7.2 and 3.1+.
 Numba
 -----
 
-`Numba <http://numba.pydata.org>`_ is an Numpy aware Python compiler
+`Numba <http://numba.pydata.org>`_ is a NumPy aware Python compiler
 (just-in-time (JIT) specializing compiler) which compiles annotated Python (and
-Numpy) code to LLVM (Low Level Virtual Machine) through special decorators.
+NumPy) code to LLVM (Low Level Virtual Machine) through special decorators.
 Briefly, Numba uses a system that compiles Python code with LLVM to code which
 can be natively executed at runtime.
 

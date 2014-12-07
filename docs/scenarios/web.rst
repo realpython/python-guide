@@ -3,7 +3,7 @@ Web Applications
 ================
 
 As a powerful scripting language adapted to both fast prototyping
-and bigger projects, Python is widely used in Web applications
+and bigger projects, Python is widely used in web application
 development.
 
 Context
@@ -84,8 +84,8 @@ Werkzeug
 `Werkzeug <http://werkzeug.pocoo.org/>`_ is not actually a real framework, but
 rather a very powerful set of tools for building web applications. It provides
 URL routing utilities, request and response objects and a basic development
-server. It is mostly used where users need bigger flexibility for their
-application that is not commonly found in other web frameworks.
+server. It is mostly used where users need more flexibility for their
+application than is commonly found in other web frameworks.
 
 Support can be found on its `mailing list <http://werkzeug.pocoo.org/community/#mailinglist>`_.
 
@@ -179,7 +179,7 @@ variables <https://uwsgi-docs.readthedocs.org/en/latest/Vars.html>`_.
 Server Best Practices
 :::::::::::::::::::::
 
-The majority of self hosted Python applications today are hosted with a WSGI
+The majority of self-hosted Python applications today are hosted with a WSGI
 server such as :ref:`Gunicorn <gunicorn-ref>`, either directly or behind a
 lightweight web server such as :ref:`nginx <nginx-ref>`.
 
@@ -195,7 +195,7 @@ Platform-as-a-Service
 
 Platform-as-a-Service (PaaS) is a type of cloud computing infrastructure
 which abstracts and manages infrastructure, routing, and scaling of web
-applications. When using PaaS, application developers can focus on writing
+applications. When using a PaaS, application developers can focus on writing
 application code rather than needing to be concerned with deployment
 details.
 
@@ -327,8 +327,8 @@ Here some important html tags in Jinja2:
 
 
 
-The next listings is an example of a web site in combination with the tornado
-web server. Tornado is not very complicate to use.
+The next listings is an example of a web site in combination with the Tornado
+web server. Tornado is not very complicated to use.
 
 .. code-block:: python
 

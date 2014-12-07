@@ -266,10 +266,10 @@ logic (called pure functions) allow the following benefits:
 - Pure functions are easier to test with unit-tests: There is less
   need for complex context setup and data cleaning afterwards.
 
-- Pure functions are easier to manipulate, decorate, and pass-around.
+- Pure functions are easier to manipulate, decorate, and pass around.
 
-In summary, pure functions, without any context or side-effects, are more
-efficient building blocks than classes and objects for some architectures.
+In summary, pure functions are more efficient building blocks than classes
+and objects for some architectures because they have no context or side-effects.
 
 Obviously, object-orientation is useful and even necessary in many cases, for
 example when developing graphical desktop applications or games, where the
@@ -314,7 +314,7 @@ of the function logic.
 Dynamic typing
 --------------
 
-Python is said to be dynamically typed, which means that variables
+Python is dynamically typed, which means that variables
 do not have a fixed type. In fact, in Python, variables are very
 different from what they are in many other languages, specifically
 statically-typed languages. Variables are not a segment of the computer's
