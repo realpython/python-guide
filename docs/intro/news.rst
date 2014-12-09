@@ -16,14 +16,6 @@ Python-related news.
 
     `/r/python <http://reddit.com/r/python>`_
 
-Import Python Weekly
-~~~~~~~~~~~~~~~~
-
-Weekly Python Newsletter containing Python Articles, Projects, Videos, Tweets delivered in your inbox.
-Keep Your Python Programming Skills Updated.
-
-    `Import Python Weekly Newsletter <http://www.importpython.com/newsletter/>`_
-
 Pycoder's Weekly
 ~~~~~~~~~~~~~~~~
 
@@ -47,3 +39,11 @@ Python News is the news section in the official Python web site (www.python.org)
 highlights the news from the Python community.
 
     `Python News <http://www.python.org/news/>`_
+
+Import Python Weekly
+~~~~~~~~~~~~~~~~
+
+Weekly Python Newsletter containing Python Articles, Projects, Videos, Tweets delivered in your inbox.
+Keep Your Python Programming Skills Updated.
+
+    `Import Python Weekly Newsletter <http://www.importpython.com/newsletter/>`_
