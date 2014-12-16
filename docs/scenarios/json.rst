@@ -85,7 +85,9 @@ Here's an example of writing directly to a file by using ``json.dump`` instead o
     }
 
     with file('path/to/file.json', 'w') as f:
-        json.dump(my_data, f)  # path/to/file.json now contains a JSON representation of the my_data dictionary
+        json.dump(my_data, f)
+
+``path/to/file.json`` now contains a JSON representation of the my_data dictionary.
 
 simplejson
 ----------
