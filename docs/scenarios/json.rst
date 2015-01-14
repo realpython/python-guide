@@ -1,9 +1,9 @@
 JSON
 ===========
 
-The `json <https://docs.python.org/2/library/json.html>`_ library can read JSON strings into a Python dictionary or array. It can also serialize Python dictionaries or arrays into JSON strings.
+The `json <https://docs.python.org/2/library/json.html>`_ library can read JSON strings into a Python dictionary or list. It can also serialize Python dictionaries or lists into JSON strings.
 
-* There are six basic types in JSON: objects, arrays, numbers, strings, booleans, and null.
+* There are six basic types in JSON: objects, lists, numbers, strings, booleans, and null.
 * The root element of JSON representation is an object, signified by ``{ ... }``. JSON objects are analogous to Python dictionaries: they have keys which correspond to values.
 * JSON does not use single quotes. JSON exclusively uses double quotes. Using single quotes in the place of double quotes is invalid JSON syntax.
 
