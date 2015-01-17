@@ -32,6 +32,7 @@ This part of the guide focuses on best practices for writing Python code.
    writing/reading
    writing/documentation
    writing/tests
+   writing/logging
    writing/gotchas
    writing/license
 
