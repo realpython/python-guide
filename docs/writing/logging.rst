@@ -82,9 +82,20 @@ application environment.
 
 There are at least three ways to configure a logger:
 
-- using a file
-- using a dictionary
-- using code
+- Using an INI-formatted file:
+    - *Pro* -- possible to update configuration while running
+      using the function :func:`logging.config.listen` to listen
+      on a socket.
+    - *Con* -- less control (*e.g.* custom subclassed filters or loggers)
+      than possible when configuring a logger in code.
+- Using a dictionary or a JSON-formatted file:
+    - *Pro* -- in addition to updating while running, it is possible to
+      load from a file using the :mod:`json` module, in the standard
+      library since Python 2.6.
+    - *Con* -- less control than when configuring a logger in code.
+- Using code:
+    - *Pro* -- complete control over the configuration.
+    - *Con* -- modifications require a change to source code.
 
 
 Example Configuration via an INI File
