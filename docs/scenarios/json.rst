@@ -6,12 +6,6 @@ The `json <https://docs.python.org/2/library/json.html>`_ library can parse JSON
 Parsing JSON
 ------------
 
-The json libary is imported like this:
-
-.. code-block:: python
-
-    import json
-
 Take the following string containing JSON data:
 
 .. code-block:: python
@@ -22,26 +16,28 @@ It can be parsed like this:
 
 .. code-block:: python
 
-    converted_dict = json.loads(json_string)
+    import json
+    parsed_json = json.loads(json_string)
 
 and can now be used as a normal dictionary:
 
 .. code-block:: python
 
-    print(converted_dict['first_name'])
+    print(parsed_json['first_name'])
     "Guido"
 
-You can also convert a dictionary to JSON:
+You can also convert a the following to JSON:
 
 .. code-block:: python
 
     d = {
         'first_name': 'Guido',
-        'second_name': 'Rossum'
+        'second_name': 'Rossum',
+        'titles': ['BDFL', 'Developer'],
     }
 
     print(json.dumps(d))
-    "{'first_name':'Guido','last_name':'Rossum'}"
+    '{"first_name": "Guido", "last_name": "Rossum", "titles": ["BDFL", "Developer"]}'
 
 
 simplejson
