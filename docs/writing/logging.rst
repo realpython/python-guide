@@ -3,8 +3,7 @@ Logging
 
 The :mod:`logging` module has been a part of Python's Standard Library since
 version 2.3.  It is succinctly described in :pep:`282`.  The documentation
-is notoriously hard to read, except for the `basic logging tutorial`_,
-and often less useful than simply reading the source code.
+is notoriously hard to read, except for the `basic logging tutorial`_.
 
 Logging serves two purposes:
 
@@ -16,8 +15,8 @@ Logging serves two purposes:
   reports or to optimize a business goal.
 
 
-... or Print Statements?
-------------------------
+... or Print?
+-------------
 
 The only time that ``print`` is a better option than logging is when
 the goal is to display a help statement for a command line application.
@@ -73,23 +72,28 @@ this in your ``__init__.py``
 Logging in an Application
 -------------------------
 
-The `twelve factor app's <http://12factor.net>`_, an authoritative reference
+The `twelve factor app <http://12factor.net>`_, an authoritative reference
 for good practice in application development, contains a section on
 `logging best practice <http://12factor.net/logs>`_. It emphatically
 advocates for treating log events as an event stream, and for
 sending that event stream to standard output to be handled by the
-application environment. Do that.
+application environment.
 
 
 There are at least three ways to configure a logger:
 
-- using a file (recommended)
+- using a file
 - using a dictionary
 - using code
 
-Here is how with a file -- let us say it is named ``logging_config.txt``:
+Example Configuration via an INI File
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: none
+Let us say the file is named ``logging_config.ini``.
+More details for the file format are in the `logging configuration`_
+section of the `logging tutorial`_.
+
+.. code-block:: ini
 
     [loggers]
     keys=root
@@ -126,55 +130,62 @@ Then use :meth:`logging.config.fileConfig` in the code:
     logger.debug('often makes a very good meal of %s', 'visiting tourists')
     
 
-..
-    As of Python 2.7, you can use a dictionary with configuration details:
-    
-    .. code-block:: python
-    
-        import logging
-        from logging.config import dictConfig
-    
-        logging_config = dict(
-            version = 1,
-            formatters = {
-                'f': {'format':
-                      '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'}
-                },
-            handlers = {
-                'h': {'class': 'logging.StreamHandler',
-                      'formatter': 'f',
-                      'level': logging.DEBUG}
-                },
-            loggers = {
-                root : {'handlers': ['h'],
-                        'level': logging.DEBUG}
-                }
-        )
-    
-        dictConfig(logging_config)
-    
-        logger = logging.getLogger()
-        logger.debug('often makes a very good meal of %s', 'visiting tourists')
-    
-    
-    Or instantiate the logger directly in code:
-    
-    .. code-block:: python
-    
-        import logging
-    
-        logger = logging.getLogger()
-        handler = logging.StreamHandler()
-        formatter = logging.Formatter(
-                '%(asctime)s %(name)-12s %(levelname)-8s %(message)s')
-        handler.setFormatter(formatter)
-        logger.addHandler(handler)
-        logger.setLevel(logging.DEBUG)
-    
-        logger.debug('often makes a very good meal of %s', 'visiting tourists')
+Example Configuration via a Dictionary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As of Python 2.7, you can use a dictionary with configuration details.
+:pep:`319` contains a list of the mandatory and optional elements in
+the configuration dictionary.
+
+.. code-block:: python
+
+    import logging
+    from logging.config import dictConfig
+
+    logging_config = dict(
+        version = 1,
+        formatters = {
+            'f': {'format':
+                  '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'}
+            },
+        handlers = {
+            'h': {'class': 'logging.StreamHandler',
+                  'formatter': 'f',
+                  'level': logging.DEBUG}
+            },
+        loggers = {
+            root : {'handlers': ['h'],
+                    'level': logging.DEBUG}
+            }
+    )
+
+    dictConfig(logging_config)
+
+    logger = logging.getLogger()
+    logger.debug('often makes a very good meal of %s', 'visiting tourists')
+
+
+Example Configuration Directly in Code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    import logging
+
+    logger = logging.getLogger()
+    handler = logging.StreamHandler()
+    formatter = logging.Formatter(
+            '%(asctime)s %(name)-12s %(levelname)-8s %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    logger.setLevel(logging.DEBUG)
+
+    logger.debug('often makes a very good meal of %s', 'visiting tourists')
 
 
 .. _basic logging tutorial: http://docs.python.org/howto/logging.html#logging-basic-tutorial
+.. _logging configuration: https://docs.python.org/howto/logging.html#configuring-logging
+.. _logging tutorial: http://docs.python.org/howto/logging.html
 .. _configuring logging for a library: https://docs.python.org/howto/logging.html#configuring-logging-for-a-library
 .. _log record: https://docs.python.org/library/logging.html#logrecord-attributes
 .. _requests source: https://github.com/kennethreitz/requests
