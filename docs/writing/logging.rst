@@ -137,7 +137,7 @@ Then use :meth:`logging.config.fileConfig` in the code:
     import logging
     from logging.config import fileConfig
 
-    fileConfig('logging_config.txt')
+    fileConfig('logging_config.ini')
     logger = logging.getLogger()
     logger.debug('often makes a very good meal of %s', 'visiting tourists')
     
