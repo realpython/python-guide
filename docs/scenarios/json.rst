@@ -1,138 +1,48 @@
-JSON parsing
-===========
+JSON
+====
 
-json
------
+The `json <https://docs.python.org/2/library/json.html>`_ library can parse JSON from strings or files. When parsing, the library converts the JSON into a Python dictionary or list. It can also parse Python dictionaries or lists into JSON strings.
 
-`json <https://docs.python.org/2/library/json.html>`_ is a standard libary which can convert JSON to a Dictionay.
+Parsing JSON
+------------
 
-For example, a JSON string like this:
+Take the following string containing JSON data:
 
 .. code-block:: python
 
-    "{'first_name':'Guido','last_name':'Rossum'}"
+    json_string = '{"first_name": "Guido", "last_name":"Rossum"}'
 
-can be loaded like this:
+It can be parsed like this:
 
 .. code-block:: python
 
     import json
-    converted_dict = json.loads(json_string)
+    parsed_json = json.loads(json_string)
 
-you can now use it as a normal dictionary:
+and can now be used as a normal dictionary:
 
 .. code-block:: python
 
-    converted_dict['first_name']
+    print(parsed_json['first_name'])
+    "Guido"
 
-As well as converting a JSON string to a dictionary. You can convert a dictionary to JSON
-
-For example, given:
+You can also convert a the following to JSON:
 
 .. code-block:: python
 
     d = {
         'first_name': 'Guido',
-        'second_name': 'Rossum'
+        'second_name': 'Rossum',
+        'titles': ['BDFL', 'Developer'],
     }
 
-    import json
-    print json.dumps(d)
-    "{'first_name':'Guido','last_name':'Rossum'}"
+    print(json.dumps(d))
+    '{"first_name": "Guido", "last_name": "Rossum", "titles": ["BDFL", "Developer"]}'
 
-It is also possible to import JSON files:
-
-.. code-block:: python
-
-    import json
-    with file('path/to/file.json') as json_file:
-        processed_json = json.load(json_file)
-    print processsed_json
-    {u'first_name': u'Guido', u'last_name': u'Rossum'}
-
-As well as write to them:
-
-.. code-block:: python
-
-    import json
-    with file('path/to/file.json', 'w') as json_file:
-        dict = {
-            "first_name": "Guido",
-            "last_name": "Rossum",
-            "middle_name": "Van"
-        }
-        json.dump(dict, json_file)
 
 simplejson
 ----------
 
-Installation
-
-.. code-block:: python
-
-    pip install simplejson
-
 `simplejson <https://simplejson.readthedocs.org/en/latest/>`_ is the externally maintained development version of the json library.
 
-simplejson is updated much more frequently than the Python. Meaning you can get updates much quicker.
-
-For example, a JSON string like this:
-
-.. code-block:: python
-
-    "{'first_name':'Guido','last_name':'Rossum'}"
-
-can be loaded like this:
-
-.. code-block:: python
-
-    import simplejson
-    converted_dict = simplejson.loads(json_string)
-
-you can now use it as a normal dictionary:
-
-.. code-block:: python
-
-    converted_dict['first_name']
-
-As well as converting a json string to dictionarys. You can convert dictionarys to json
-
-For example, given:
-
-.. code-block:: python
-
-    import simplejson
-
-    d = {
-        'first_name': 'Guido',
-        'second_name': 'Rossum'
-    }
-    print simplejson.dumps(d)
-    "{'first_name':'Guido','last_name':'Rossum'}"
-
-
-It is also possible to import JSON files:
-
-.. code-block:: python
-
-    import simplejson
-
-    with file('path/to/file.json') as json_file:
-        processed_json = simplejson.load(json_file)
-    print processsed_json
-    {u'first_name': u'Guido', u'last_name': u'Rossum'}
-
-As well as write to them:
-
-.. code-block:: python
-
-    import simplejson
-
-    with file('path/to/file.json', 'w') as json_file:
-        dict = {
-            "first_name": "Guido",
-            "last_name": "Rossum",
-            "middle_name": "Van"
-        }
-        simplejson.dump(dict, json_file)
-
+simplejson mimics the json standard library, it is available so that developers that use an older version of python can use the latest features available in the json lib.
