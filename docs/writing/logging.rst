@@ -28,8 +28,8 @@ Other reasons why logging is better than ``print``:
 - Events logged in included modules are automatically accessible via the
   root logger
   to your application's logging stream, unless you filter them out.
-- Logging can be selectively silenced or disabled by using the method
-  :meth:`logging.Logger.setLevel` or setting the attribute
+- Logging can be selectively silenced by using the method
+  :meth:`logging.Logger.setLevel` or disabled by setting the attribute
   :attr:`logging.Logger.disabled` to ``True``.
 
 
@@ -37,8 +37,8 @@ Logging in a Library
 --------------------
 
 Notes for `configuring logging for a library`_ are in the 
-`basic logging tutorial`_.  Because the *user*, not the library, should
-dictate what happens when a logging event occurs, One admonition bears
+`logging tutorial`_.  Because the *user*, not the library, should
+dictate what happens when a logging event occurs, one admonition bears
 repeating:
 
 .. note::
@@ -85,6 +85,7 @@ There are at least three ways to configure a logger:
 - using a file
 - using a dictionary
 - using code
+
 
 Example Configuration via an INI File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
