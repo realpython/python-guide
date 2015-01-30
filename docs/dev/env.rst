@@ -127,6 +127,10 @@ Sublime Text has excellent support for editing Python code and uses Python for
 its plugin API. It also has a diverse variety of plugins, `some of which <https://github.com/SublimeLinter/SublimeLinter>`_
 allow for in-editor PEP8 checking and code "linting".
 
+Check out the article `Setting Up Sublime Text 3 for Full Stack Python Development 
+<https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/>`_
+to learn how to customize Sublime specifically for Python development.
+
 Atom
 ----
 
