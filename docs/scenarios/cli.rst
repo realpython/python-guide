@@ -56,7 +56,7 @@ who choose to create a command-line interface because it is quick and simple.
 Cliff
 ------
 
-`Cliff <https://cliff.readthedocs.org/en/latest>`_  is a framework for
+`Cliff <http://docs.openstack.org/developer/cliff/>`_  is a framework for
 building command-line programs. It uses setuptools entry points to provide
 subcommands, output formatters, and other extensions. The framework is meant
 to be used to create multi-level commands such as subversion and git, where

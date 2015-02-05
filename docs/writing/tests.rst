@@ -58,7 +58,7 @@ Some general rules of testing:
   good set of tests, you or other maintainers will rely largely on the
   testing suite to fix the problem or modify a given behavior. Therefore
   the testing code will be read as much as or even more than the running
-  code. A unit test whose purpose is unclear is not very helpful is this
+  code. A unit test whose purpose is unclear is not very helpful in this
   case.
 
 - Another use of the testing code is as an introduction to new developers. When
