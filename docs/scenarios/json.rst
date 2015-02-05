@@ -26,7 +26,7 @@ and can now be used as a normal dictionary:
     print(parsed_json['first_name'])
     "Guido"
 
-You can also convert a the following to JSON:
+You can also convert the following to JSON:
 
 .. code-block:: python
 
@@ -43,6 +43,14 @@ You can also convert a the following to JSON:
 simplejson
 ----------
 
-`simplejson <https://simplejson.readthedocs.org/en/latest/>`_ is the externally maintained development version of the json library.
+The JSON library was added to Python in version 2.6. If you're using an earlier version of Python, the `simplejson <https://simplejson.readthedocs.org/en/latest/>`_ library is available via PyPI.
 
-simplejson mimics the json standard library, it is available so that developers that use an older version of python can use the latest features available in the json lib.
+simplejson mimics the json standard library. It is available so that developers that use older versions of Python can use the latest features available in the json lib.
+
+You can start using simplejson when the json library is not available by importing simplejson under a different name:
+
+.. code-block:: python
+    
+    import simplejson as json
+
+After importing simplejson as json, the above examples will all work as if you were using the standard json library.
