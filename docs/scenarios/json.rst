@@ -39,6 +39,36 @@ You can also convert the following to JSON:
     print(json.dumps(d))
     '{"first_name": "Guido", "last_name": "Rossum", "titles": ["BDFL", "Developer"]}'
 
+Working with File Objects
+-------------------------
+
+We can also load a JSON file by using ``json.load`` instead of ``json.loads``:
+
+.. code-block:: python
+
+    import json
+    
+    with file('path/to/file.json') as f:
+        loaded_json = json.load(f)
+    
+    print(loaded_json)  # {'first_name': 'Ada', 'last_name': 'Lovelace'}
+
+Here's an example of writing directly to a file by using ``json.dump`` instead of ``json.dumps``:
+
+.. code-block:: python
+
+    import json
+
+    my_data = {
+        'name': 'Alan Turing',
+        'played_by': 'Benedict Cumberbatch'
+    }
+
+    with file('path/to/file.json', 'w') as f:
+        json.dump(my_data, f)
+
+``path/to/file.json`` now contains a JSON representation of the my_data dictionary.
+
 
 simplejson
 ----------
