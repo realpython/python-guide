@@ -166,8 +166,8 @@ the configuration dictionary.
                   'level': logging.DEBUG}
             },
         loggers = {
-            'root' : {'handlers': ['h'],
-                    'level': logging.DEBUG}
+            'root': {'handlers': ['h'],
+                     'level': logging.DEBUG}
             }
     )
 
