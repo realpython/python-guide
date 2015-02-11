@@ -146,7 +146,7 @@ Example Configuration via a Dictionary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As of Python 2.7, you can use a dictionary with configuration details.
-:pep:`319` contains a list of the mandatory and optional elements in
+:pep:`391` contains a list of the mandatory and optional elements in
 the configuration dictionary.
 
 .. code-block:: python
@@ -166,8 +166,8 @@ the configuration dictionary.
                   'level': logging.DEBUG}
             },
         loggers = {
-            root : {'handlers': ['h'],
-                    'level': logging.DEBUG}
+            'root': {'handlers': ['h'],
+                     'level': logging.DEBUG}
             }
     )
 
