@@ -62,22 +62,6 @@ There are annual Django conferences `in the United States
 <http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
 
 
-Flask
------
-
-`Flask <http://flask.pocoo.org/>`_ is a "microframework" for Python. Rather
-than aiming to provide everything you could possibly need, Flask implements
-the most commonly-used core components of a web application framework, like
-URL routing, request and response objects, and templates. As a user of
-Flask, it is therefore up to you to choose and integrate other components
-you may need, such as database access or form generation and validation. For
-many popular modules, `Extensions <http://flask.pocoo.org/extensions/>`_ may
-already exist to suit your needs.
-
-**Support** for flask can best be found in its mailing list. Just shoot an
-email to flask@librelist.com and reply to the confirmation email.
-
-
 Werkzeug
 --------
 
@@ -87,7 +71,7 @@ URL routing utilities, request and response objects and a basic development
 server. It is mostly used where users need more flexibility for their
 application than is commonly found in other web frameworks.
 
-Support can be found on its `mailing list <http://werkzeug.pocoo.org/community/#mailinglist>`_.
+**Support** can be found on its `mailing list <http://werkzeug.pocoo.org/community/#mailinglist>`_.
 
 
 Tornado
@@ -114,6 +98,85 @@ running web application in the browser.
 
 **Support** can also be found in the
 `documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`__.
+
+Turbogears
+----------
+
+`Turbogears 2 <http://www.turbogears.org/>`_ is built on top of the experience
+of several next generation web frameworks including TurboGears 1 (of course),
+Django and Rails. It provides some nice features like a powerful and flexible
+Object Relational Mapper (ORM) with multi-database support, support for Horizontal
+data partitioning, a widget system to make building AJAX heavy apps easier,
+built in extensibility Pluggable Applications and standard WSGI components.
+
+**Support** can also be found on its
+`mailing list <http://groups.google.com/group/turbogears/>`__.
+
+
+web2py
+----------
+
+`web2py <http://www.web2py.com/>`_ is a ree open source full-stack framework for
+rapid development of fast, scalable, secure and portable database-driven web-based
+applications. Written and programmable in Python. Everything you need in one package
+including fast multi-threaded web server, SQL database and web-based interface.
+
+**Support** can also be found on its
+`mailing list <https://groups.google.com/forum/?fromgroups#!forum/web2py/>`__.
+
+
+Microframeworks
+:::::::::::::::
+
+Flask
+-----
+
+`Flask <http://flask.pocoo.org/>`_ is a "microframework" for Python. Rather
+than aiming to provide everything you could possibly need, Flask implements
+the most commonly-used core components of a web application framework, like
+URL routing, request and response objects, and templates. As a user of
+Flask, it is therefore up to you to choose and integrate other components
+you may need, such as database access or form generation and validation. For
+many popular modules, `Extensions <http://flask.pocoo.org/extensions/>`_ may
+already exist to suit your needs.
+
+**Support** for flask can best be found in its mailing list. Just shoot an
+email to flask@librelist.com and reply to the confirmation email.
+
+
+web.py
+------
+
+`web.py <http://webpy.org/>`_ is a web framework for Python that is as simple
+as it is powerful. web.py was originally published while Aaron Swartz worked
+at reddit.com, where it served millions of daily page views. web.py is in the
+public domain; you can use it for whatever purpose with absolutely no
+restrictions.
+
+**Support** for web.py can be found on its
+`mailing list <https://groups.google.com/forum/#!forum/webpy/>`__.
+
+bottle
+------
+
+`Bottle <http://bottlepy.org/>`_ is a fast, simple and lightweight WSGI micro
+web-framework for Python. It is distributed as a single file module and has no
+dependencies other than the Python Standard Library.
+
+**Support** for Bottle can be found on its
+`mailing list <https://groups.google.de/group/bottlepy/>`_.
+
+
+CherryPy
+--------
+
+`CherryPy <http://www.cherrypy.org/>`_ is a minimalist Python web framework
+web-framework for Python. It provides a reliable, HTTP/1.1-compliant, WSGI
+thread-pooled webserver, a flexible plugin system, built-in profiling,
+coverage, and testing support, built-in tools for caching, encoding, sessions, authorization, static content among other things.
+
+**Support** for CherryPy can be found on its
+`mailing list <http://groups.google.com/group/cherrypy-users/>`_.
 
 
 Web Servers
