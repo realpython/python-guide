@@ -132,16 +132,15 @@ To install (make sure **virtualenv** is already installed):
 
 (`Full virtualenvwrapper install instructions <http://virtualenvwrapper.readthedocs.org/en/latest/install.html>`_.)
 
-For Windows, you can use the `virtualenvwrapper-powershell <https://bitbucket.org/guillermooo/virtualenvwrapper-powershell>`_ clone.
+For Windows, you can use the `virtualenvwrapper-win <https://github.com/davidmarble/virtualenvwrapper-win/>`_.
 
 To install (make sure **virtualenv** is already installed):
 
 .. code-block:: console
 
-  PS> pip install virtualenvwrapper-powershell
-  PS> $env:WORKON_HOME="~/Envs"
-  PS> mkdir $env:WORKON_HOME
-  PS> import-module virtualenvwrapper
+  $ pip install virtualenvwrapper-win
+  
+In Windows, the default path for WORKON_HOME is %USERPROFILE%\Envs
 
 Basic Usage
 ~~~~~~~~~~~
