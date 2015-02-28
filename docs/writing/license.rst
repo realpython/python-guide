@@ -48,5 +48,6 @@ To help you choose one for your project, there's a `license chooser <http://choo
   + GPLv2
   + GPLv3
 
-A good overview of licenses with explanations of what one can, cannot, and must do using a particular software can be found at `tl;drLegal <https://tldrlegal.com/>`_.
-
+A good overview of licenses with explanations of what one can, cannot,
+and must do using a particular software can be found at
+`tl;drLegal <https://tldrlegal.com/>`_.

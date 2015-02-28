@@ -40,12 +40,12 @@ of the following components:
   done with the product, using one or two extremely simplified use
   cases. This is the thirty-second pitch for your project.
 
-- A *tutorial* should show some primary use cases in more detail. The reader will
-  follow a step-by-step procedure to set-up a working prototype.
+- A *tutorial* should show some primary use cases in more detail. The reader
+  will follow a step-by-step procedure to set-up a working prototype.
 
 - An *API reference* is typically generated from the code (see
-  :ref:`docstrings <docstring-ref>`). It will list all publicly available interfaces,
-  parameters, and return values.
+  :ref:`docstrings <docstring-ref>`). It will list all publicly available
+  interfaces, parameters, and return values.
 
 - *Developer documentation* is intended for potential contributors. This can
   include code convention and general design strategy of the project.
@@ -107,7 +107,8 @@ In Python, *docstrings* describe modules, classes, and functions:
         """Returns the square root of self times self."""
         ...
 
-In general, follow the comment section of :pep:`8#comments` (the "Python Style Guide").
+In general, follow the comment section of :pep:`8#comments` (the "Python Style
+Guide").
 
 Commenting Sections of Code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
