@@ -4,7 +4,7 @@ How to contribute
 This guide is under heavy development. If you would like to contribute, please
 see:
 
-http://docs.python-guide.org/en/latest/notes/contribute/
+http://python-guide.readthedocs.org/en/latest/notes/contribute.html
 
 
 Style Guide
