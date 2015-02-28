@@ -84,4 +84,5 @@ first-time Pythonista, and the authors to the Guide will gladly help if you
 have any questions about the appropriateness, completeness, or accuracy of
 a contribution.
 
-To get started working on The Hitchhiker's Guide, see the :doc:`/notes/contribute` page.
+To get started working on The Hitchhiker's Guide,
+see the :doc:`/notes/contribute` page.

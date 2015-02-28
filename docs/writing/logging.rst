@@ -23,11 +23,10 @@ the goal is to display a help statement for a command line application.
 Other reasons why logging is better than ``print``:
 
 - The `log record`_, which is created with every logging event, contains
-  readily available diagnostic information such as the file name,
-  full path, function, and line number of the logging event.
-- Events logged in included modules are automatically accessible via the
-  root logger
-  to your application's logging stream, unless you filter them out.
+  readily available diagnostic information such as the file name, full path,
+  function, and line number of the logging event.
+- Events logged in included modules are automatically accessible via the root
+  logger to your application's logging stream, unless you filter them out.
 - Logging can be selectively silenced by using the method
   :meth:`logging.Logger.setLevel` or disabled by setting the attribute
   :attr:`logging.Logger.disabled` to ``True``.
@@ -83,15 +82,14 @@ application environment.
 There are at least three ways to configure a logger:
 
 - Using an INI-formatted file:
-    - **Pro**: possible to update configuration while running
-      using the function :func:`logging.config.listen` to listen
-      on a socket.
+    - **Pro**: possible to update configuration while running using the
+      function :func:`logging.config.listen` to listen on a socket.
     - **Con**: less control (*e.g.* custom subclassed filters or loggers)
       than possible when configuring a logger in code.
 - Using a dictionary or a JSON-formatted file:
-    - **Pro**: in addition to updating while running, it is possible to
-      load from a file using the :mod:`json` module, in the standard
-      library since Python 2.6.
+    - **Pro**: in addition to updating while running, it is possible to load
+      from a file using the :mod:`json` module, in the standard library since
+      Python 2.6.
     - **Con**: less control than when configuring a logger in code.
 - Using code:
     - **Pro**: complete control over the configuration.

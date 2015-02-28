@@ -20,11 +20,11 @@ Some general rules of testing:
 
 - Try hard to make tests that run fast. If one single test needs more than a
   few milliseconds to run, development will be slowed down or the tests will
-  not be run as often as is desirable. In some cases, tests can't be fast because
-  they need a complex data structure to work on, and this data structure must
-  be loaded every time the test runs. Keep these heavier tests in a separate
-  test suite that is run by some scheduled task, and run all other tests as
-  often as needed.
+  not be run as often as is desirable. In some cases, tests can't be fast
+  because they need a complex data structure to work on, and this data structure
+  must be loaded every time the test runs. Keep these heavier tests in a
+  separate test suite that is run by some scheduled task, and run all other
+  tests as often as needed.
 
 - Learn your tools and learn how to run a single test or a test case. Then,
   when developing a function inside a module, run this function's tests very
