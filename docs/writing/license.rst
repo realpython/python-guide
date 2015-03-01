@@ -2,10 +2,9 @@ Choosing a License
 ==================
 
 Your source publication *needs* a license. In the US, if no license is
-specified, users have no legal right to download, modify, or
-distribute. Furthermore, people can't contribute to your code unless
-you tell them what rules to play by. Choosing a license is complicated, so
-here are some pointers:
+specified, users have no legal right to download, modify, or distribute.
+Furthermore, people can't contribute to your code unless you tell them what
+rules to play by. Choosing a license is complicated, so here are some pointers:
 
 Open source. There are plenty of `open source licenses
 <http://opensource.org/licenses/alphabetical>`_ available to choose

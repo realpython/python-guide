@@ -5,33 +5,36 @@ Packaging your code is important.
 
 You'll need to package your code first before sharing it with other developers.
 
-The `Python Packaging Guide <https://python-packaging-user-guide.readthedocs.org/en/latest/>`_ provides an extensive guide on creating and maintaining Python packages.
+The `Python Packaging Guide <https://python-packaging-user-guide.readthedocs.org/en/latest/>`_
+provides an extensive guide on creating and maintaining Python packages.
 
 For Python Developers
 :::::::::::::::::::::
 
-If you're writing an open source Python module, `PyPI <http://pypi.python.org>`_,
-more properly known as *The Cheeseshop*, is the place to host it.
+If you're writing an open source Python module, `PyPI <http://pypi.python.org>`_
+, more properly known as *The Cheeseshop*, is the place to host it.
 
 
 
 Pip vs. easy_install
 --------------------
 
-Use `pip <http://pypi.python.org/pypi/pip>`_.  More details `here <http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_
+Use `pip <http://pypi.python.org/pypi/pip>`_.  More details
+`here <http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_
 
 
 Personal PyPI
 -------------
 
 If you want to install packages from a source other than PyPI, (say, if
-your packages are *proprietary*), you can do it by hosting a simple http server,
-running from the directory which holds those packages which need to be installed.
+your packages are *proprietary*), you can do it by hosting a simple http
+server, running from the directory which holds those packages which need to be
+installed.
 
 **Showing an example is always beneficial**
 
-For example, if you want to install a package called :file:`MyPackage.tar.gz`,  and
-assuming this is your directory structure:
+For example, if you want to install a package called :file:`MyPackage.tar.gz`,
+and assuming this is your directory structure:
 
 
 - archive
@@ -55,8 +58,8 @@ package installer. Using Pip, you would do it like:
 
 Having a folder with the same name as the package name is **crucial** here.
 I got fooled by that, one time. But if you feel that creating a folder called
-:file:`MyPackage` and keeping :file:`MyPackage.tar.gz` inside that, is *redundant*,
-you can still install MyPackage using:
+:file:`MyPackage` and keeping :file:`MyPackage.tar.gz` inside that, is
+*redundant*, you can still install MyPackage using:
 
 .. code-block:: console
 
@@ -65,16 +68,18 @@ you can still install MyPackage using:
 pypiserver
 ++++++++++
 
-`Pypiserver <https://pypi.python.org/pypi/pypiserver>`_ is a minimal PyPI compatible server.
-It can be used to serve a set of packages to easy_install or pip.  It includes helpful
-features like an administrative command (:option:`-U`) which will update all its packages to their
-latest versions found on PyPI.
+`Pypiserver <https://pypi.python.org/pypi/pypiserver>`_ is a minimal PyPI
+compatible server.  It can be used to serve a set of packages to easy_install
+or pip.  It includes helpful features like an administrative command
+(:option:`-U`) which will update all its packages to their latest versions
+found on PyPI.
 
 
 S3-Hosted PyPi
 ++++++++++++++
 
-One simple option for a personal PyPi server is to use Amazon S3. A prerequisite for this is that you have an Amazon AWS account with an S3 bucket.
+One simple option for a personal PyPi server is to use Amazon S3. A
+prerequisite for this is that you have an Amazon AWS account with an S3 bucket.
 
 1. **Install all your requirements from PyPi or another source**
 2. **Install pip2pi**

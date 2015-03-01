@@ -34,8 +34,8 @@ to do it poorly. Some signs of a poorly structured project
 include:
 
 - Multiple and messy circular dependencies: if your classes
-  Table and Chair in :file:`furn.py` need to import Carpenter from :file:`workers.py`
-  to answer a question such as ``table.isdoneby()``,
+  Table and Chair in :file:`furn.py` need to import Carpenter from
+  :file:`workers.py` to answer a question such as ``table.isdoneby()``,
   and if conversely the class Carpenter needs to import Table and Chair,
   to answer the question ``carpenter.whatdo()``, then you
   have a circular dependency. In this case you will have to resort to
@@ -85,17 +85,17 @@ in one file, and all low-level operations in another file. In this case,
 the interface file needs to import the low-level file. This is done with the
 ``import`` and ``from ... import`` statements.
 
-As soon as you use `import` statements you use modules. These can be either built-in
-modules such as `os` and `sys`, third-party modules you have installed in your
-environment, or your project's internal modules.
+As soon as you use `import` statements you use modules. These can be either
+built-in modules such as `os` and `sys`, third-party modules you have installed
+in your environment, or your project's internal modules.
 
 To keep in line with the style guide, keep module names short, lowercase, and
 be sure to avoid using special symbols like the dot (.) or question mark (?).
 So a file name like :file:`my.spam.py` is one you should avoid! Naming this way
 will interfere with the way Python looks for modules.
 
-In the case of `my.spam.py` Python expects to find a :file:`spam.py` file in a folder named :file:`my`
-which is not the case. There is an
+In the case of `my.spam.py` Python expects to find a :file:`spam.py` file in a
+folder named :file:`my` which is not the case. There is an
 `example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the
 dot notation should be used in the Python docs.
 
@@ -106,18 +106,18 @@ Aside from some naming restrictions, nothing special is required for a Python
 file to be a module, but you need to understand the import mechanism in order
 to use this concept properly and avoid some issues.
 
-Concretely, the ``import modu`` statement will look for the proper file, which is
-:file:`modu.py` in the same directory as the caller if it exists.  If it is not
-found, the Python interpreter will search for :file:`modu.py` in the "path"
+Concretely, the ``import modu`` statement will look for the proper file, which
+is :file:`modu.py` in the same directory as the caller if it exists.  If it is
+not found, the Python interpreter will search for :file:`modu.py` in the "path"
 recursively and raise an ImportError exception if it is not found.
 
-Once :file:`modu.py` is found, the Python interpreter will execute the module in an
-isolated scope. Any top-level statement in :file:`modu.py` will be executed,
+Once :file:`modu.py` is found, the Python interpreter will execute the module in
+an isolated scope. Any top-level statement in :file:`modu.py` will be executed,
 including other imports if any. Function and class definitions are stored in
 the module's dictionary.
 
-Then, the module's variables, functions, and classes will be available to the caller
-through the module's namespace, a central concept in programming that is
+Then, the module's variables, functions, and classes will be available to the
+caller through the module's namespace, a central concept in programming that is
 particularly helpful and powerful in Python.
 
 In many languages, an ``include file`` directive is used by the preprocessor to
@@ -127,14 +127,15 @@ means that you generally don't have to worry that the included code could have
 unwanted effects, e.g. override an existing function with the same name.
 
 It is possible to simulate the more standard behavior by using a special syntax
-of the import statement: ``from modu import *``. This is generally considered bad
-practice. **Using** ``import *`` **makes code harder to read and makes dependencies less
-compartmentalized**.
+of the import statement: ``from modu import *``. This is generally considered
+bad practice. **Using** ``import *`` **makes code harder to read and makes
+dependencies less compartmentalized**.
 
 Using ``from modu import func`` is a way to pinpoint the function you want to
 import and put it in the global namespace. While much less harmful than ``import
 *`` because it shows explicitly what is imported in the global namespace, its
-only advantage over a simpler ``import modu`` is that it will save a little typing.
+only advantage over a simpler ``import modu`` is that it will save a little
+typing.
 
 **Very bad**
 
@@ -176,29 +177,32 @@ Packages
 Python provides a very straightforward packaging system, which is simply an
 extension of the module mechanism to a directory.
 
-Any directory with an :file:`__init__.py` file is considered a Python package. The
-different modules in the package are imported in a similar manner as plain
-modules, but with a special behavior for the :file:`__init__.py` file, which is used to
-gather all package-wide definitions.
+Any directory with an :file:`__init__.py` file is considered a Python package.
+The different modules in the package are imported in a similar manner as plain
+modules, but with a special behavior for the :file:`__init__.py` file, which is
+used to gather all package-wide definitions.
 
-A file :file:`modu.py` in the directory :file:`pack/` is imported with the statement ``import
-pack.modu``. This statement will look for an :file:`__init__.py` file in :file:`pack`, execute
-all of its top-level statements. Then it will look for a file named :file:`pack/modu.py` and
+A file :file:`modu.py` in the directory :file:`pack/` is imported with the
+statement ``import pack.modu``. This statement will look for an
+:file:`__init__.py` file in :file:`pack`, execute all of its top-level
+statements. Then it will look for a file named :file:`pack/modu.py` and
 execute all of its top-level statements. After these operations, any variable,
-function, or class defined in :file:`modu.py` is available in the pack.modu namespace.
+function, or class defined in :file:`modu.py` is available in the pack.modu
+namespace.
 
 A commonly seen issue is to add too much code to :file:`__init__.py`
 files. When the project complexity grows, there may be sub-packages and
-sub-sub-packages in a deep directory structure. In this case, importing a single item
-from a sub-sub-package will require executing all :file:`__init__.py` files met while
-traversing the tree.
+sub-sub-packages in a deep directory structure. In this case, importing a
+single item from a sub-sub-package will require executing all
+:file:`__init__.py` files met while traversing the tree.
 
-Leaving an :file:`__init__.py` file empty is considered normal and even a good practice,
-if the package's modules and sub-packages do not need to share any code.
+Leaving an :file:`__init__.py` file empty is considered normal and even a good
+practice, if the package's modules and sub-packages do not need to share any
+code.
 
 Lastly, a convenient syntax is available for importing deeply nested packages:
-``import very.deep.module as mod``. This allows you to use `mod` in place of the verbose
-repetition of ``very.deep.module``.
+``import very.deep.module as mod``. This allows you to use `mod` in place of the
+verbose repetition of ``very.deep.module``.
 
 Object-oriented programming
 ---------------------------
@@ -232,27 +236,28 @@ functionality. The problem, as pointed out by the discussions about functional
 programming, comes from the "state" part of the equation.
 
 In some architectures, typically web applications, multiple instances of Python
-processes are spawned to respond to external requests that can
-happen at the same time. In this case, holding some state into instantiated
-objects, which means keeping some static information about the world, is prone
-to concurrency problems or race-conditions. Sometimes, between the initialization of
-the state of an object (usually done with the ``__init__()`` method) and the actual use
+processes are spawned to respond to external requests that can happen at the
+same time. In this case, holding some state into instantiated objects, which
+means keeping some static information about the world, is prone to concurrency
+problems or race-conditions. Sometimes, between the initialization of the state
+of an object (usually done with the ``__init__()`` method) and the actual use
 of the object state through one of its methods, the world may have changed, and
 the retained state may be outdated. For example, a request may load an item in
 memory and mark it as read by a user. If another request requires the deletion
-of this item at the same time, it may happen that the deletion actually occurs after
-the first process loaded the item, and then we have to mark as read a deleted
-object.
+of this item at the same time, it may happen that the deletion actually occurs
+after the first process loaded the item, and then we have to mark as read a
+deleted object.
 
 This and other issues led to the idea that using stateless functions is a
 better programming paradigm.
 
 Another way to say the same thing is to suggest using functions and procedures
 with as few implicit contexts and side-effects as possible. A function's
-implicit context is made up of any of the global variables or items in the persistence layer
-that are accessed from within the function. Side-effects are the changes that a function makes
-to its implicit context. If a function saves or deletes data in a global variable or
-in the persistence layer, it is said to have a side-effect.
+implicit context is made up of any of the global variables or items in the
+persistence layer that are accessed from within the function. Side-effects are
+the changes that a function makes to its implicit context. If a function saves
+or deletes data in a global variable or in the persistence layer, it is said to
+have a side-effect.
 
 Carefully isolating functions with context and side-effects from functions with
 logic (called pure functions) allow the following benefits:
@@ -314,19 +319,18 @@ of the function logic.
 Dynamic typing
 --------------
 
-Python is dynamically typed, which means that variables
-do not have a fixed type. In fact, in Python, variables are very
-different from what they are in many other languages, specifically
-statically-typed languages. Variables are not a segment of the computer's
-memory where some value is written, they are 'tags' or 'names' pointing
-to objects. It is therefore possible for the variable 'a' to be set to
-the value 1, then to the value 'a string', then to a function.
+Python is dynamically typed, which means that variables do not have a fixed
+type. In fact, in Python, variables are very different from what they are in
+many other languages, specifically statically-typed languages. Variables are not
+a segment of the computer's memory where some value is written, they are 'tags'
+or 'names' pointing to objects. It is therefore possible for the variable 'a' to
+be set to the value 1, then to the value 'a string', then to a function.
 
 The dynamic typing of Python is often considered to be a weakness, and indeed
-it can lead to complexities and hard-to-debug code. Something
-named 'a' can be set to many different things, and the developer or the
-maintainer needs to track this name in the code to make sure it has not
-been set to a completely unrelated object.
+it can lead to complexities and hard-to-debug code. Something named 'a' can be
+set to many different things, and the developer or the maintainer needs to track
+this name in the code to make sure it has not been set to a completely unrelated
+object.
 
 Some guidelines help to avoid this issue:
 
@@ -370,26 +374,25 @@ grows and each assignment is separated by other lines of code, including
 'if' branches and loops, it becomes harder to ascertain what a given
 variable's type is.
 
-Some coding practices, like functional programming, recommend never reassigning a variable.
-In Java this is done with the `final` keyword. Python does not have a `final` keyword
-and it would be against its philosophy anyway. However, it may be a good
-discipline to avoid assigning to a variable more than once, and it helps
-in grasping the concept of mutable and immutable types.
+Some coding practices, like functional programming, recommend never reassigning
+a variable. In Java this is done with the `final` keyword. Python does not have
+a `final` keyword and it would be against its philosophy anyway. However, it may
+be a good discipline to avoid assigning to a variable more than once, and it
+helps in grasping the concept of mutable and immutable types.
 
 Mutable and immutable types
 ---------------------------
 
 Python has two kinds of built-in or user-defined types.
 
-Mutable types are those that allow in-place modification
-of the content. Typical mutables are lists and dictionaries:
-All lists have mutating methods, like :py:meth:`list.append` or :py:meth:`list.pop`, and
-can be modified in place. The same goes for dictionaries.
+Mutable types are those that allow in-place modification of the content. Typical
+mutables are lists and dictionaries: All lists have mutating methods, like
+:py:meth:`list.append` or :py:meth:`list.pop`, and can be modified in place.
+The same goes for dictionaries.
 
-Immutable types provide no method for changing their content.
-For instance, the variable x set to the integer 6 has no "increment" method. If you
-want to compute x + 1, you have to create another integer and give it
-a name.
+Immutable types provide no method for changing their content. For instance, the
+variable x set to the integer 6 has no "increment" method. If you want to
+compute x + 1, you have to create another integer and give it a name.
 
 .. code-block:: python
 
@@ -451,8 +454,8 @@ with calls to ``append()``.
 One final thing to mention about strings is that using ``join()`` is not always
 best. In the instances where you are creating a new string from a pre-determined
 number of strings, using the addition operator is actually faster, but in cases
-like above or in cases where you are adding to an existing string, using ``join()``
-should be your preferred method.
+like above or in cases where you are adding to an existing string, using
+``join()`` should be your preferred method.
 
 .. code-block:: python
 

@@ -30,39 +30,47 @@ Django ORM
 The Django ORM is the interface used by `Django <http://www.djangoproject.com>`_
 to provide database access.
 
-It's based on the idea of `models <https://docs.djangoproject.com/en/1.3/#the-model-layer>`_,
+It's based on the idea of
+`models <https://docs.djangoproject.com/en/1.3/#the-model-layer>`_,
 an abstraction that makes it easier to manipulate data in Python.
 
 The basics:
 
 - Each model is a Python class that subclasses django.db.models.Model.
 - Each attribute of the model represents a database field.
-- Django gives you an automatically-generated database-access API; see `Making queries <https://docs.djangoproject.com/en/dev/topics/db/queries/>`__.
+- Django gives you an automatically-generated database-access API; see
+  `Making queries <https://docs.djangoproject.com/en/dev/topics/db/queries/>`__.
 
 peewee
 ------
 
-`peewee <http://docs.peewee-orm.com/en/latest/>`_ is another ORM with a focus on being lightweight with support for
-Python 2.6+ and 3.2+ which supports SQLite, MySQL and Postgres by default. The `model layer <https://peewee.readthedocs.org/en/latest/peewee/quickstart.html#model-definition>`_
-is similar to that of the Django ORM and it has `SQL-like methods <https://peewee.readthedocs.org/en/latest/peewee/quickstart.html#retrieving-data>`_
-to query data. While SQLite, MySQL and Postgres are supported out-of-the-box, there is a `collection of add-ons <https://peewee.readthedocs.org/en/latest/peewee/playhouse.html#playhouse>`_
+`peewee <http://docs.peewee-orm.com/en/latest/>`_ is another ORM with a focus
+on being lightweight with support for Python 2.6+ and 3.2+ which supports
+SQLite, MySQL and Postgres by default. The
+`model layer <https://peewee.readthedocs.org/en/latest/peewee/quickstart.html#model-definition>`_
+is similar to that of the Django ORM and it has
+`SQL-like methods <https://peewee.readthedocs.org/en/latest/peewee/quickstart.html#retrieving-data>`_
+to query data. While SQLite, MySQL and Postgres are supported out-of-the-box,
+there is a `collection of add-ons <https://peewee.readthedocs.org/en/latest/peewee/playhouse.html#playhouse>`_
 available.
 
 PonyORM
 -------
 
-`PonyORM <http://ponyorm.com/>`_ is an ORM that takes a different approach to querying the database. Instead of writing
-an SQL-like language or boolean expressions, Python's generator syntax is used. There's also an graphical schema editor
-that can generate PonyORM entities for you. It supports Python 2.6+ and Python 3.3+ and can connect to SQLite, MySQL,
-Postgres & Oracle
+`PonyORM <http://ponyorm.com/>`_ is an ORM that takes a different approach to
+querying the database. Instead of writing an SQL-like language or boolean
+expressions, Python's generator syntax is used. There's also an graphical
+schema editor that can generate PonyORM entities for you. It supports Python
+2.6+ and Python 3.3+ and can connect to SQLite, MySQL, Postgres & Oracle
 
 
 
 SQLObject
 ---------
 
-`SQLObject <http://www.sqlobject.org/>`_ is yet another ORM. It supports a wide variety of databases: Common database systems
-MySQL, Postgres and SQLite and more exotic systems like SAP DB, SyBase and MSSQL. It only supports Python 2 from
-Python 2.6 upwards.
+`SQLObject <http://www.sqlobject.org/>`_ is yet another ORM. It supports a wide
+variety of databases: Common database systems MySQL, Postgres and SQLite and
+more exotic systems like SAP DB, SyBase and MSSQL. It only supports Python 2
+from Python 2.6 upwards.
 
 .. There's no official information on this on their page, this information was gathered by looking at their source code

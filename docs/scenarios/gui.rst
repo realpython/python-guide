@@ -22,8 +22,8 @@ GTk
 PyGTK provides Python bindings for the GTK+ toolkit. Like the GTK+ library
 itself, it is currently licensed under the GNU LGPL. It is worth noting that
 PyGTK only currently supports the Gtk-2.X API (NOT Gtk-3.0). It is currently
-recommended that PyGTK not be used for new projects and that existing applications
-be ported from PyGTK to PyGObject.
+recommended that PyGTK not be used for new projects and that existing
+applications be ported from PyGTK to PyGObject.
 
 Kivy
 ----
@@ -33,7 +33,8 @@ interaction design and rapid prototyping, while making your code reusable
 and deployable.
 
 Kivy is written in Python, based on OpenGL and supports different input devices
-such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products and so on.
+such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products
+and so on.
 
 Kivy is actively being developed by a community and is free to use. It operates
 on all major platforms (Linux, OSX, Windows, Android).
@@ -62,8 +63,8 @@ PyjamasDesktop (pyjs Desktop)
 -----------------------------
 PyjamasDesktop is a port of Pyjamas. PyjamasDesktop is application widget set
 for desktop and a cross-platform framework. (After release v0.6 PyjamasDesktop
-is a part of Pyjamas (Pyjs)). Briefly, it allows the exact same Python web application
-source code to be executed as a standalone desktop application.
+is a part of Pyjamas (Pyjs)). Briefly, it allows the exact same Python web
+application source code to be executed as a standalone desktop application.
 
 `Python Wiki for PyjamasDesktop <http://wiki.python.org/moin/PyjamasDesktop>`_.
 

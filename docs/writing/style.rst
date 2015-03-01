@@ -11,8 +11,8 @@ recognised fact that code is read much more often than it is written.
 One reason for Python code to be easily read and understood is its relatively
 complete set of Code Style guidelines and "Pythonic" idioms.
 
-Moreover, when a veteran Python developer (a Pythonista) points to portions of code
-and says they are not "Pythonic", it usually means that these lines
+Moreover, when a veteran Python developer (a Pythonista) points to portions of
+code and says they are not "Pythonic", it usually means that these lines
 of code do not follow the common guidelines and fail to express the intent in
 what is considered the best (hear: most readable) way.
 
@@ -86,40 +86,42 @@ Function arguments
 
 Arguments can be passed to functions in four different ways.
 
-1. **Positional arguments** are mandatory and have no default values. They are the
-simplest form of arguments and they can be used for the few function arguments
-that are fully part of the function's meaning and their order is natural. For
-instance, in ``send(message, recipient)`` or ``point(x, y)`` the user of the
-function has no difficulty remembering that those two functions require two
-arguments, and in which order.
+1. **Positional arguments** are mandatory and have no default values. They are
+   the simplest form of arguments and they can be used for the few function
+   arguments that are fully part of the function's meaning and their order is
+   natural. For instance, in ``send(message, recipient)`` or ``point(x, y)`` 
+   the user of the function has no difficulty remembering that those two
+   functions require two arguments, and in which order.
 
-In those two cases, it is possible to use argument names when calling the functions
-and, doing so, it is possible to switch the order of arguments, calling for instance
-``send(recipient='World', message='Hello')`` and ``point(y=2, x=1)`` but this
-reduces readability and is unnecessarily verbose, compared to the more straightforward
-calls to ``send('Hello', 'World')`` and ``point(1, 2)``.
+In those two cases, it is possible to use argument names when calling the
+functions and, doing so, it is possible to switch the order of arguments,
+calling for instance ``send(recipient='World', message='Hello')`` and
+``point(y=2, x=1)`` but this reduces readability and is unnecessarily verbose,
+compared to the more straightforward calls to ``send('Hello', 'World')`` and
+``point(1, 2)``.
 
-2. **Keyword arguments** are not mandatory and have default values. They are often
-used for optional parameters sent to the function. When a function has more than
-two or three positional parameters, its signature is more difficult to remember
-and using keyword arguments with default values is helpful. For instance, a more
-complete ``send`` function could be defined as ``send(message, to, cc=None, bcc=None)``.
-Here ``cc`` and ``bcc`` are optional, and evaluate to ``None`` when they are not
-passed another value.
+2. **Keyword arguments** are not mandatory and have default values. They are
+   often used for optional parameters sent to the function. When a function has
+   more than two or three positional parameters, its signature is more difficult
+   to remember and using keyword arguments with default values is helpful. For
+   instance, a more complete ``send`` function could be defined as
+   ``send(message, to, cc=None, bcc=None)``. Here ``cc`` and ``bcc`` are
+   optional, and evaluate to ``None`` when they are not passed another value.
 
-Calling a function with keyword arguments can be done in multiple ways in Python,
-for example it is possible to follow the order of arguments in the definition without
-explicitly naming the arguments, like in ``send('Hello', 'World', 'Cthulhu', 'God')``,
-sending a blind carbon copy to God. It would also be possible to name arguments in
-another order, like in ``send('Hello again', 'World', bcc='God', cc='Cthulhu')``.
-Those two possibilities are better avoided without any strong reason to not
-follow the syntax that is the closest to the function definition: ``send('Hello',
-'World', cc='Cthulhu', bcc='God')``.
+Calling a function with keyword arguments can be done in multiple ways in
+Python, for example it is possible to follow the order of arguments in the
+definition without explicitly naming the arguments, like in
+``send('Hello', 'World', 'Cthulhu', 'God')``, sending a blind carbon copy to
+God. It would also be possible to name arguments in another order, like in
+``send('Hello again', 'World', bcc='God', cc='Cthulhu')``. Those two
+possibilities are better avoided without any strong reason to not follow the
+syntax that is the closest to the function definition:
+``send('Hello', 'World', cc='Cthulhu', bcc='God')``.
 
 As a side note, following `YAGNI <http://en.wikipedia.org/wiki/You_ain't_gonna_need_it>`_
-principle, it is often harder to remove an optional argument (and its logic inside the
-function) that was added "just in case" and is seemingly never used, than to add a
-new optional argument and its logic when needed.
+principle, it is often harder to remove an optional argument (and its logic
+inside the function) that was added "just in case" and is seemingly never used,
+than to add a new optional argument and its logic when needed.
 
 3. The **arbitrary argument list** is the third way to pass arguments to a
 function.  If the function intention is better expressed by a signature with an
@@ -139,11 +141,12 @@ it explicitly: ``send(message, recipients)`` and call it with ``send('Hello',
 the recipient list as a list beforehand, and it opens the possibility to pass
 any sequence, including iterators, that cannot be unpacked as other sequences.
 
-4. The **arbitrary keyword argument dictionary** is the last way to pass arguments
-to functions. If the function requires an undetermined series of named
-arguments, it is possible to use the ``**kwargs`` construct. In the function
-body, ``kwargs`` will be a dictionary of all the passed named arguments that
-have not been caught by other keyword arguments in the function signature.
+4. The **arbitrary keyword argument dictionary** is the last way to pass
+   arguments to functions. If the function requires an undetermined series of
+   named arguments, it is possible to use the ``**kwargs`` construct. In the
+   function body, ``kwargs`` will be a dictionary of all the passed named
+   arguments that have not been caught by other keyword arguments in the
+   function signature.
 
 The same caution as in the case of *arbitrary argument list* is necessary, for
 similar reasons: these powerful techniques are to be used when there is a
@@ -158,8 +161,8 @@ Python functions that are:
 
 * easy to read (the name and arguments need no explanations)
 
-* easy to change (adding a new keyword argument does not break other parts of the
-  code)
+* easy to change (adding a new keyword argument does not break other parts of
+  the code)
 
 Avoid the magical wand
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -198,8 +201,8 @@ give a lot of mechanisms to prevent any misuse, is expressed by the saying: "We
 are all consenting adults".
 
 This doesn't mean that, for example, no properties are considered private, and
-that no proper encapsulation is possible in Python. Rather, instead of relying on
-concrete walls erected by the developers between their code and other's, the
+that no proper encapsulation is possible in Python. Rather, instead of relying
+on concrete walls erected by the developers between their code and other's, the
 Python community prefers to rely on a set of conventions indicating that these
 elements should not be accessed directly.
 
@@ -217,27 +220,29 @@ but making a public property private might be a much harder operation.
 Returning values
 ~~~~~~~~~~~~~~~~
 
-When a function grows in complexity it is not uncommon to use multiple return statements
-inside the function's body. However, in order to keep a clear intent and a sustainable
-readability level, it is preferable to avoid returning meaningful values from many
-output points in the body.
+When a function grows in complexity it is not uncommon to use multiple return
+statements inside the function's body. However, in order to keep a clear intent
+and a sustainable readability level, it is preferable to avoid returning
+meaningful values from many output points in the body.
 
-There are two main cases for returning values in a function: the result of the function
-return when it has been processed normally, and the error cases that indicate a wrong
-input parameter or any other reason for the function to not be able to complete its
-computation or task.
+There are two main cases for returning values in a function: the result of the
+function return when it has been processed normally, and the error cases that
+indicate a wrong input parameter or any other reason for the function to not be
+able to complete its computation or task.
 
-If you do not wish to raise exceptions for the second case, then returning a value, such
-as None or False, indicating that the function could not perform correctly might be needed. In this
-case, it is better to return as early as the incorrect context has been detected. It will
-help to flatten the structure of the function: all the code after the return-because-of-error
-statement can assume the condition is met to further compute the function's main result.
+If you do not wish to raise exceptions for the second case, then returning a
+value, such as None or False, indicating that the function could not perform
+correctly might be needed. In this case, it is better to return as early as the
+incorrect context has been detected. It will help to flatten the structure of
+the function: all the code after the return-because-of-error statement can
+assume the condition is met to further compute the function's main result.
 Having multiple such return statements is often necessary.
 
-However, when a function has multiple main exit points for its normal course, it becomes
-difficult to debug the returned result, so it may be preferable to keep a single exit
-point. This will also help factoring out some code paths, and the multiple exit points
-are a probable indication that such a refactoring is needed.
+However, when a function has multiple main exit points for its normal course,
+it becomes difficult to debug the returned result, so it may be preferable to
+keep a single exit point. This will also help factoring out some code paths,
+and the multiple exit points are a probable indication that such a refactoring
+is needed.
 
 .. code-block:: python
 
@@ -256,14 +261,15 @@ are a probable indication that such a refactoring is needed.
 Idioms
 ------
 
-A programming idiom, put simply, is a *way* to write code. The notion of programming idioms
-is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_ and at `Stack Overflow <http://stackoverflow.com/questions/302459/what-is-a-programming-idiom>`_.
+A programming idiom, put simply, is a *way* to write code. The notion of
+programming idioms is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_
+and at `Stack Overflow <http://stackoverflow.com/questions/302459/what-is-a-programming-idiom>`_.
 
 Idiomatic Python code is often referred to as being *Pythonic*.
 
-Although there usually is one --- and preferably only one --- obvious way to do it;
-*the* way to write idiomatic Python code can be non-obvious to Python beginners. So,
-good idioms must be consciously acquired.
+Although there usually is one --- and preferably only one --- obvious way to do
+it; *the* way to write idiomatic Python code can be non-obvious to Python
+beginners. So, good idioms must be consciously acquired.
 
 Some common Python idioms follow:
 
@@ -346,16 +352,19 @@ Instead, use a list comprehension:
     four_lists = [[] for __ in xrange(4)]
 
 
-A common idiom for creating strings is to use :py:meth:`str.join` on an empty string.
+A common idiom for creating strings is to use :py:meth:`str.join` on an empty
+string.
 
 .. code-block:: python
 
     letters = ['s', 'p', 'a', 'm']
     word = ''.join(letters)
 
-This will set the value of the variable *word* to 'spam'. This idiom can be applied to lists and tuples.
+This will set the value of the variable *word* to 'spam'. This idiom can be
+applied to lists and tuples.
 
-Sometimes we need to search through a collection of things. Let's look at two options: lists and dictionaries.
+Sometimes we need to search through a collection of things. Let's look at two
+options: lists and dictionaries.
 
 Take the following code for example:
 
@@ -374,8 +383,9 @@ Even though both functions look identical, because *lookup_dict* is utilizing
 the fact that dictionaries in Python are hashtables, the lookup performance
 between the two is very different. Python will have to go through each item
 in the list to find a matching case, which is time consuming. By analysing
-the hash of the dictionary, finding keys in the dictionary can be done very quickly.
-For more information see this `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_
+the hash of the dictionary, finding keys in the dictionary can be done very
+quickly.  For more information see this
+`StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_
 page.
 
 Zen of Python
@@ -604,11 +614,11 @@ Line Continuations
 ~~~~~~~~~~~~~~~~~~
 
 When a logical line of code is longer than the accepted limit, you need to
-split it over multiple physical lines. The Python interpreter will join consecutive
-lines if the last character of the line is a backslash. This is helpful
-in some cases, but should usually be avoided because of its fragility: a white space
-added to the end of the line, after the backslash, will break the code and may
-have unexpected results.
+split it over multiple physical lines. The Python interpreter will join
+consecutive lines if the last character of the line is a backslash. This is
+helpful in some cases, but should usually be avoided because of its fragility:
+a white space added to the end of the line, after the backslash, will break the
+code and may have unexpected results.
 
 A better solution is to use parentheses around your elements. Left with an
 unclosed parenthesis on an end-of-line the Python interpreter will join the

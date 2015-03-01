@@ -7,7 +7,8 @@ Twisted
 `Twisted <http://twistedmatrix.com/trac/>`_ is an event-driven networking
 engine. It can be used to build applications around many different networking
 protocols, including http servers and clients, applications using SMTP, POP3,
-IMAP or SSH protocols, instant messaging and `much more <http://twistedmatrix.com/trac/wiki/Documentation>`_.
+IMAP or SSH protocols, instant messaging
+and `much more <http://twistedmatrix.com/trac/wiki/Documentation>`_.
 
 PyZMQ
 -----
@@ -30,5 +31,6 @@ For a quick start, read the `ZeroMQ guide <http://zguide.zeromq.org/page:all>`_.
 gevent
 ------
 
-`gevent <http://www.gevent.org/>`_ is a coroutine-based Python networking library
-that uses greenlets to provide a high-level synchronous API on top of the libev event loop. 
+`gevent <http://www.gevent.org/>`_ is a coroutine-based Python networking
+library that uses greenlets to provide a high-level synchronous API on top of
+the libev event loop. 

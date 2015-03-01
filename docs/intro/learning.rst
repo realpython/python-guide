@@ -7,9 +7,9 @@ Beginner
 The Python Tutorial
 ~~~~~~~~~~~~~~~~~~~~
 
-This is the official tutorial. It covers all the basics, and offers a tour of the
-language and the standard library. Recommended for those who need a quickstart
-guide to the language.
+This is the official tutorial. It covers all the basics, and offers a tour of
+the language and the standard library. Recommended for those who need a
+quickstart guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
@@ -18,15 +18,16 @@ Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Learnpython.org is an easy non-intimidating way to get introduced to Python.
-The website takes the same approach used on the popular `Try Ruby <http://tryruby.org/>`_
-website, it has an interactive Python interpreter built into the site that
-allows you to go through the lessons without having to install Python locally.
+The website takes the same approach used on the popular
+`Try Ruby <http://tryruby.org/>`_ website, it has an interactive Python
+interpreter built into the site that allows you to go through the lessons
+without having to install Python locally.
 
     `Learn Python <http://www.learnpython.org/>`_
 
 
-If you want a more traditional book, *Python For You and Me* is an
-excellent resource for learning all aspects of the language.
+If you want a more traditional book, *Python For You and Me* is an excellent
+resource for learning all aspects of the language.
 
     `Python for You and Me <http://pymbook.readthedocs.org/>`_
 
@@ -121,8 +122,8 @@ More information about test driven development can be found at these resources:
 A Byte of Python
 ~~~~~~~~~~~~~~~~
 
-A free introductory book that teaches Python at the beginner level, it assumes no
-previous programming experience.
+A free introductory book that teaches Python at the beginner level, it assumes
+no previous programming experience.
 
     `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
     `A Byte of Python for Python 3.x <http://swaroopch.com/notes/Python_en-Preface/>`_
@@ -142,8 +143,9 @@ Advanced
 Pro Python
 ~~~~~~~~~~
 
-This book is for intermediate to advanced Python programmers who are looking to understand how
-and why Python works the way it does and how they can take their code to the next level.
+This book is for intermediate to advanced Python programmers who are looking to
+understand how and why Python works the way it does and how they can take their
+code to the next level.
 
     `Pro Python <http://propython.com>`_
 
@@ -169,8 +171,8 @@ A Guide to Python's Magic Methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is a collection of blog posts by Rafe Kettler which explain 'magic methods'
-in Python.  Magic methods are surrounded by double underscores (i.e. __init__) and
-can make classes and objects behave in different and magical ways.
+in Python. Magic methods are surrounded by double underscores (i.e. __init__)
+and can make classes and objects behave in different and magical ways.
 
     `A Guide to Python's Magic Methods <http://www.rafekettler.com/magicmethods.html>`_
 
@@ -181,17 +183,17 @@ For Engineers and Scientists
 A Primer on Scientific Programming with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Primer on Scientific Programming with Python, written by Hans Petter Langtangen,
-mainly covers Python's usage in the scientific field. In the book, examples are
-chosen from mathematics and the natural sciences.
+A Primer on Scientific Programming with Python, written by Hans Petter
+Langtangen, mainly covers Python's usage in the scientific field. In the book,
+examples are chosen from mathematics and the natural sciences.
 
     `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-30292-3>`_
 
 Numerical Methods in Engineering with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Numerical Methods in Engineering with Python, written by Jaan Kiusalaas, puts the  
-emphasis on numerical methods and how to implement them in Python.
+Numerical Methods in Engineering with Python, written by Jaan Kiusalaas,
+puts the emphasis on numerical methods and how to implement them in Python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
 
@@ -201,9 +203,9 @@ Miscellaneous topics
 Problem Solving with Algorithms and Data Structures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Problem Solving with Algorithms and Data Structures covers a range of data structures and
-algorithms. All concepts are illustrated with Python code along with interactive samples
-that can be run directly in the browser.
+Problem Solving with Algorithms and Data Structures covers a range of data
+structures and algorithms. All concepts are illustrated with Python code along
+with interactive samples that can be run directly in the browser.
 
     `Problem Solving with Algorithms and Data Structures
     <http://www.interactivepython.org/courselib/static/pythonds/index.html>`_
@@ -211,9 +213,10 @@ that can be run directly in the browser.
 Programming Collective Intelligence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Programming Collective Intelligence introduces a wide array of basic machine learning and
-data mining methods. The exposition is not very mathematically formal, but rather focuses
-on explaining the underlying intuition and shows how to implement the algorithms in Python.
+Programming Collective Intelligence introduces a wide array of basic machine
+learning and data mining methods. The exposition is not very mathematically
+formal, but rather focuses on explaining the underlying intuition and shows
+how to implement the algorithms in Python.
 
     `Programming Collective Intelligence <http://shop.oreilly.com/product/9780596529321.do>`_
 
@@ -232,17 +235,17 @@ as writing C extensions.
 The Python Language Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is Python's reference manual, it covers the syntax and the core semantics of the
-language.
+This is Python's reference manual, it covers the syntax and the core semantics
+of the language.
 
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_
 
 Python Pocket Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Python Pocket Reference, written by Mark Lutz, is an easy to use reference to the
-core language, with descriptions of commonly used modules and toolkits. It covers
-Python 3 and 2.6 versions.
+Python Pocket Reference, written by Mark Lutz, is an easy to use reference to
+the core language, with descriptions of commonly used modules and toolkits. It
+covers Python 3 and 2.6 versions.
 
     `Python Pocket Reference <http://shop.oreilly.com/product/9780596158095.do>`_
 	
@@ -259,11 +262,11 @@ Writing Idiomatic Python
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 "Writing Idiomatic Python", written by Jeff Knupp, contains the most common and
-important Python idioms in a format that maximizes identification and understanding.
-Each idiom is presented as a recommendation of a way to write some commonly
-used piece of code, followed by an explanation of why the idiom is important.
-It also contains two code samples for each idiom: the "Harmful" way to write it
-and the "Idiomatic" way.
+important Python idioms in a format that maximizes identification and
+understanding.  Each idiom is presented as a recommendation of a way to write
+some commonly used piece of code, followed by an explanation of why the idiom
+is important. It also contains two code samples for each idiom: the "Harmful"
+way to write it and the "Idiomatic" way.
 
 	`For Python 2.7.3+ <http://www.amazon.com/Writing-Idiomatic-Python-2-7-3-Knupp/dp/1482372177/>`_
 	
