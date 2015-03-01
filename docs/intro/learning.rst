@@ -51,6 +51,7 @@ as programs that can break them.
 
     `Hacking Secret Ciphers with Python <http://inventwithpython.com/hacking/>`_
 
+
 Learn Python the Hard Way
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -77,6 +78,7 @@ a good read if you are moving from Python 2 to 3 or if you already have some
 experience programming in another language.
 
     `Dive Into Python 3 <http://www.diveinto.org/python3/>`_
+
 
 Think Python: How to Think Like a Computer Scientist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,6 +117,7 @@ More information about test driven development can be found at these resources:
 
     `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_
 
+
 A Byte of Python
 ~~~~~~~~~~~~~~~~
 
@@ -123,6 +126,14 @@ previous programming experience.
 
     `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
     `A Byte of Python for Python 3.x <http://swaroopch.com/notes/Python_en-Preface/>`_
+
+
+Learn to Program in Python with Codeacademy
+~~~~~~~~~~~~~~~~~~~~
+
+A Codeacademy course for the absolute Python beginner. This free and interactive course provides and teaches the basics (and beyond) of Python programming whilst testing the user's knowledge in between progress.
+
+    `Learn to Program in Python with Codeacademy <http://www.codecademy.com/en/tracks/python>`_
 
 
 Advanced
