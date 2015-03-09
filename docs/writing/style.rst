@@ -89,7 +89,7 @@ Arguments can be passed to functions in four different ways.
 1. **Positional arguments** are mandatory and have no default values. They are
    the simplest form of arguments and they can be used for the few function
    arguments that are fully part of the function's meaning and their order is
-   natural. For instance, in ``send(message, recipient)`` or ``point(x, y)`` 
+   natural. For instance, in ``send(message, recipient)`` or ``point(x, y)``
    the user of the function has no difficulty remembering that those two
    functions require two arguments, and in which order.
 
@@ -190,7 +190,7 @@ them is very important.
 Like a kung fu master, a Pythonista knows how to kill with a single finger, and
 never to actually do it.
 
-We are all consenting adults
+We are all responsible users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As seen above, Python allows many tricks, and some of them are potentially
@@ -198,7 +198,7 @@ dangerous. A good example is that any client code can override an object's
 properties and methods: there is no "private" keyword in Python. This
 philosophy, very different from highly defensive languages like Java, which
 give a lot of mechanisms to prevent any misuse, is expressed by the saying: "We
-are all consenting adults".
+are all responsible users".
 
 This doesn't mean that, for example, no properties are considered private, and
 that no proper encapsulation is possible in Python. Rather, instead of relying
