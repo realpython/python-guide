@@ -278,7 +278,6 @@ most out of using Python interactively. Its main components are:
     $ pip install ipython
 
 
-
 BPython
 -------
 
@@ -298,3 +297,24 @@ features:
 .. code-block:: console
 
     $ pip install bpython
+
+ptpython
+--------
+
+`ptpython <https://github.com/jonathanslenders/ptpython/>`_ is a REPL build
+on top of the `prompt_toolkit <http://github.com/jonathanslenders/python-prompt-toolkit>`_
+library. It is considered to be an alternative to BPython_. Features include:
+
+* Syntax highlighting
+* Autocompletion
+* Multiline editing
+* Emacs and VIM Mode
+* Embedding REPL inside of your code
+* Syntax Validation
+* Tab pages
+* Support for integrating with IPython_'s shell, by installing IPython
+  ``pip install ipython`` and running ``ptipython``.
+
+.. code-block:: console
+
+    $ pip install ptpython
