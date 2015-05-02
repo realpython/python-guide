@@ -21,7 +21,7 @@ Installation
 
 Before installing Pillow, you'll have to install Pillow's prerequisites. Find
 the instructions for your platform
-`here <https://pypi.python.org/pypi/Pillow/2.1.0#platform-specific-instructions>`_.
+`here <http://pillow.readthedocs.org/installation.html>`_.
 
 After that, it's straightforward:
 
