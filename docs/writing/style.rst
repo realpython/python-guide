@@ -418,8 +418,7 @@ Also known as :pep:`20`, the guiding principles for Python's design.
     If the implementation is easy to explain, it may be a good idea.
     Namespaces are one honking great idea -- let's do more of those!
 
-For some examples of good Python style, see `this Stack Overflow question
-<http://stackoverflow.com/questions/228181/the-zen-of-python>`_ or `these
+For some examples of good Python style, see `these
 slides from a Python user group
 <http://artifex.org/~hblanks/talks/2011/pep20_by_example.pdf>`_.
 
