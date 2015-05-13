@@ -113,7 +113,7 @@ module.
 If you need to interface with an existing Java codebase or have other reasons to
 need to write Python code for the JVM, Jython is the best choice.
 
-Jython currently supports up to Python 2.5. [#jython_ver]_
+Jython currently supports up to Python 2.7. [#jython_ver]_
 
 IronPython
 ----------
@@ -146,7 +146,7 @@ PythonNet supports from Python 2.3 up to Python 2.7. [#pythonnet_ver]_
 
 .. [#pypy_ver] http://pypy.org/compat.html
 
-.. [#jython_ver] http://wiki.python.org/jython/JythonFaq/GeneralInfo#Is_Jython_the_same_language_as_Python.3F
+.. [#jython_ver] https://hg.python.org/jython/file/412a8f9445f7/NEWS
 
 .. [#iron_ver] http://ironpython.codeplex.com/releases/view/81726
 
