@@ -160,6 +160,14 @@ This creates the :file:`venv` folder inside :file:`~/Envs`.
 
    $ workon venv
 
+Alternatively, you can make a project, which creates the virtual environment,
+and also a project directory inside ``$PROJECT_HOME``, which is ``cd`` -ed into
+when you ``workon myproject``.
+
+.. code-block:: console
+
+   $ mkproject myproject
+
 **virtualenvwrapper** provides tab-completion on environment names. It really
 helps when you have a lot of environments and have trouble remembering their
 names.
