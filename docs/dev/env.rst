@@ -41,16 +41,14 @@ errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
 If your Vim is compiled with :option:`+python` you can also utilize some very
 handy plugins to do these checks from within the editor.
 
-For PEP8 checking, install the vim-pep8_ plugin, and for pyflakes you can
-install vim-pyflakes_. Now you can map the functions ``Pep8()`` or
-``Pyflakes()`` to any hotkey or action you want in Vim. Both plugins will
+For PEP8 checking and pyflakes, you can install vim-flake8_. Now you can map the
+function ``Flake8`` to any hotkey or action you want in Vim. The plugin will
 display errors at the bottom of the screen, and provide an easy way to jump to
-the corresponding line. It's very handy to call these functions whenever you
-save a file. In order to do this, add the following lines to your
+the corresponding line. It's very handy to call this function whenever you save
+a file. In order to do this, add the following line to your
 :file:`.vimrc`::
 
-    autocmd BufWritePost *.py call Pyflakes()
-    autocmd BufWritePost *.py call Pep8()
+    autocmd BufWritePost *.py call Flake8()
 
 If you are already using syntastic_, you can set it to run Pyflakes on write
 and show errors and warnings in the quickfix window. An example configuration
@@ -88,12 +86,11 @@ using ``<Tab>`` key or any other customized keys.
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
 .. _Pyflakes: http://pypi.python.org/pypi/pyflakes/
-.. _vim-pyflakes: https://github.com/nvie/vim-pyflakes
 .. _PEP8: http://pypi.python.org/pypi/pep8/
-.. _vim-pep8: https://github.com/nvie/vim-pep8
 .. _syntastic: https://github.com/scrooloose/syntastic
 .. _Python-mode: https://github.com/klen/python-mode
 .. _SuperTab: http://www.vim.org/scripts/script.php?script_id=1643
+.. _vim-flake8: https://github.com/nvie/vim-flake8
 
 Emacs
 -----
