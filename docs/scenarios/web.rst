@@ -418,7 +418,7 @@ Chameleon
 `Chameleon <https://chameleon.readthedocs.org/>`_ Page Templates are an HTML/XML template
 engine implementation of the `Template Attribute Language (TAL) <http://en.wikipedia.org/wiki/Template_Attribute_Language>`_,
 `TAL Expression Syntax (TALES) <http://chameleon.readthedocs.org/en/latest/reference.html#expressions-tales>`_,
-and `Macro Expansion TAL (Metal) <http://chameleon.readthedocs.org/en/latest/reference.html#macros-metal>` syntaxes.
+and `Macro Expansion TAL (Metal) <http://chameleon.readthedocs.org/en/latest/reference.html#macros-metal>`_ syntaxes.
 
 Chameleon is available for Python 2.5 and up (including 3.x and pypy), and
 is commonly used by the `Pyramid Framework <http://trypyramid.com>`_.
