@@ -42,17 +42,17 @@ on all major platforms (Linux, OSX, Windows, Android).
 The main resource for information is the website: http://kivy.org
 
 PyObjC
-~~~~~~
+------
 .. note:: Only available on OS X. Don't pick this if you're writing a cross-platform application.
 
 PySide
-~~~~~~
+------
 PySide is a Python binding of the cross-platform GUI toolkit Qt.
 
 http://developer.qt.nokia.com/wiki/PySideDownloads/
 
 PyQt
-~~~~
+----
 .. note:: If your software does not fully comply with the GPL you will need a commercial license!
 
 PyQt provides Python bindings for the Qt Framework (see below).
