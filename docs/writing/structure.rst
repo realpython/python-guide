@@ -469,9 +469,8 @@ like above or in cases where you are adding to an existing string, using
 .. note::
     You can also use the :ref:`% <python:string-formatting>` formatting operator
     to concatenate a pre-determined number of strings besides :py:meth:`str.join`
-    and ``+``. However, according to :pep:`3101`, the ``%`` operator became
-    deprecated in Python 3.1 and will be replaced by the :py:meth:`str.format`
-    method in the later versions.
+    and ``+``. However, :pep:`3101`, discourages the usage of the ``%`` operator
+    in favor of the :py:meth:`str.format` method.
 
 .. code-block:: python
 
