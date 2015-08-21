@@ -145,7 +145,7 @@ Creating a Linux distro package is arguably the "right way" to distribute code
 on Linux.
 
 Because a distribution package doesn't include the Python interpreter, it
-makes the download and install about 2Mb smaller than
+makes the download and install about 2MB smaller than
 :ref:`freezing your application <freezing-your-code-ref>`.
 
 Also, if a distribution releases a new security update for Python, then your
