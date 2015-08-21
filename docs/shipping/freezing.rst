@@ -15,7 +15,7 @@ if the user doesn't already have the required version of Python installed. On
 Windows, and even on many Linux distributions and OSX versions, the right
 version of Python will not already be installed.
 
-One disadvantage is that it will bloat your distribution by about 2Mb.
+One disadvantage is that it will bloat your distribution by about 2MB.
 Another problem is that your application will not receive any security updates
 to the version of Python it uses unless you freeze a new version and get
 users to download it.
