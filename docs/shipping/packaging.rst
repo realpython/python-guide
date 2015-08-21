@@ -1,12 +1,42 @@
+.. _packaging-your-code-ref:
+
+===================
 Packaging Your Code
 ===================
 
-Packaging your code is important.
+Package your code to share it with other developers. For example
+to share a library for other developers to use in their application,
+or for development tools like 'py.test'.
 
-You'll need to package your code first before sharing it with other developers.
+An advantage of this method of distribution is its well established ecosystem
+of tools such as PyPI and pip, which make it easy for other developers to
+download and install your package either for casual experiments, or as part of
+large, professional systems.
+
+It is a well-established convention for Python code to be shared this way.
+If your code isn't packaged on PyPI, then it will be harder
+for other developers to find it, and to use it as part of their existing
+process. They will regard such projects with substantial suspicion of being
+either badly managed or abandoned.
+
+The downside of distributing code like this is that it relies on the
+recipient understanding how to install the required version of Python,
+and being able and willing to use tools such as pip to install your code's
+other dependencies. This is fine when distributing to other developers, but
+makes this method unsuitable for distributing applications to end-uers.
 
 The `Python Packaging Guide <https://python-packaging-user-guide.readthedocs.org/en/latest/>`_
 provides an extensive guide on creating and maintaining Python packages.
+
+Alternatives to Packaging
+:::::::::::::::::::::::::
+
+To distribute applications to end-users, you should
+:ref:`freeze your application <freezing-your-code-ref>`.
+
+On Linux, you may also want to consider
+:ref:`creating a Linux distro package <packaging-for-linux-distributions-ref>`
+(e.g. a .deb file for Debian or Ubuntu.)
 
 For Python Developers
 :::::::::::::::::::::
@@ -106,8 +136,41 @@ prerequisite for this is that you have an Amazon AWS account with an S3 bucket.
 
 * You can now install your package with :code:`pip install --index-url=http://your-s3-bucket/packages/simple/ YourPackage`
 
+.. _packaging-for-linux-distributions-ref:
+
 For Linux Distributions
 ::::::::::::::::::::::::
+
+Creating a Linux distro package is arguably the "right way" to distribute code
+on Linux.
+
+Because a distribution package doesn't include the Python interpreter, it
+makes the download and install about 2Mb smaller than
+:ref:`freezing your application <freezing-your-code-ref>`.
+
+Also, if a distribution releases a new security update for Python, then your
+application will automatically start using that new version of Python.
+
+However, creating and maintaining the different configurations required for
+each distribution's format (e.g. .deb for Debian/Ubuntu, .rpm for Red
+Hat/Fedora, etc) is a fair amount of work. If your code is an application that
+you plan to distribute on other platforms, then you'll also have to create and
+maintain the separate config required to freeze your application for Windows
+and OSX. It would be much less work to simply create and maintain a single
+config for one of the cross platform :ref:`freezing tools
+<freezing-your-code-ref>`, which will produce stand-alone executables for all
+distributions of Linux, as well as Windows and OSX.
+
+Creating a distribution package is also problematic if your code is for a
+version of Python that isn't currently supported by a distribution.
+Having to tell *some versions* of Ubuntu end-users that they need to add `the
+'dead-snakes' PPA <https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes>`_
+using `sudo apt-repository` commands before they can install your .deb file
+makes for an extremely hostile user experience. Not only that, but you'd have
+to maintain a custom equivalent of these instructions for every distribution,
+and worse, have your users read, understand, and act on them.
+
+Having said all that, here's how to do it:
 
 * `Fedora <https://fedoraproject.org/wiki/Packaging:Python>`_
 * `Debian and Ubuntu <http://www.debian.org/doc/packaging-manuals/python-policy/>`_
