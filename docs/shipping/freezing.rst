@@ -28,7 +28,7 @@ libraries or tools to other developers.
 
 On Linux, an alternative to freezing is to
 :ref:`create a Linux distro package <packaging-for-linux-distributions-ref>`
-(e.g. a .deb file for Debian or Ubuntu.)
+(e.g. .deb files for Debian or Ubuntu, or .rpm files for Red Hat and SuSE.)
 
 .. todo:: Fill in "Freezing Your Code" stub
 
