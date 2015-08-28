@@ -151,7 +151,7 @@ makes the download and install about 2MB smaller than
 Also, if a distribution releases a new security update for Python, then your
 application will automatically start using that new version of Python.
 
-The `Producing an RPM file using the bdist_rpm command <https://docs.python.org/3/distutils/builtdist.html#creating-rpm-packages`_
+The `Producing an RPM file using the bdist_rpm command <https://docs.python.org/3/distutils/builtdist.html#creating-rpm-packages>`_
 for use by distributions like Red Hat or SuSE is trivially easy.
 
 However, creating and maintaining the different configurations required for
