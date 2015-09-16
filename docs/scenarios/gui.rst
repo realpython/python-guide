@@ -49,7 +49,9 @@ PySide
 ------
 PySide is a Python binding of the cross-platform GUI toolkit Qt.
 
-http://developer.qt.nokia.com/wiki/PySideDownloads/
+  pip install pyside
+
+https://wiki.qt.io/Category:LanguageBindings::PySide::Downloads
 
 PyQt
 ----
