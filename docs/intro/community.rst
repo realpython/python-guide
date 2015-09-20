@@ -65,7 +65,7 @@ Submitting a PEP
 
  Here's an overview of the PEP acceptance workflow:
 
- .. image:: http://www.python.org/dev/peps/pep-0001/pep-0001-1.png
+ .. image:: https://www.python.org/m/dev/peps/pep-0001/pep-0001-1.png
 
 
 Python Conferences
