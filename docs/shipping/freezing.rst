@@ -1,17 +1,36 @@
+.. _freezing-your-code-ref:
+
+==================
 Freezing Your Code
 ==================
 
-An alternative to shipping your code is freezing it — shipping it as an
-executable with a bundled Python interpreter.
+To 'Freeze' your code is to distribute to end-users as an executable which
+includes a bundled Python interpreter.
 
-Many applications you use every day do this:
+Applications such as 'Dropbox', BitTorrent clients, 'Eve Online' and
+'Civilisation IV' do this.
 
-- Dropbox
-- BitTorrent
-- ...
+The advantage of distributing this way is that your application will work even
+if the user doesn't already have the required version of Python installed. On
+Windows, and even on many Linux distributions and OSX versions, the right
+version of Python will not already be installed.
+
+One disadvantage is that it will bloat your distribution by about 2MB.
+Another problem is that your application will not receive any security updates
+to the version of Python it uses unless you freeze a new version and get
+users to download it.
+
+Alternatives to Freezing
+------------------------
+
+:ref:`Packaging your code <packaging-your-code-ref>` is for distributing
+libraries or tools to other developers.
+
+On Linux, an alternative to freezing is to
+:ref:`create a Linux distro package <packaging-for-linux-distributions-ref>`
+(e.g. .deb files for Debian or Ubuntu, or .rpm files for Red Hat and SuSE.)
 
 .. todo:: Fill in "Freezing Your Code" stub
-
 
 
 Comparison
