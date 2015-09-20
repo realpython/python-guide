@@ -58,8 +58,8 @@ software you're depending on will block your adoption of Python 3.
 
 `Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
 
-It is possible to `write code that works on Python 2.6, 2.7, and 3.3
-<http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/>`_. This
+It is possible to `write code that works on Python 2.6, 2.7, and Python 3
+<https://docs.python.org/3/howto/pyporting.html>`_. This
 ranges from trivial to hard depending upon the kind of software
 you are writing; if you're a beginner there are far more important things to
 worry about.
