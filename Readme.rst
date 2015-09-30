@@ -20,7 +20,7 @@ Topics include:
 - Py2app, Py2exe, bbfreeze, pyInstaller
 - Pip
 - Virtualenv
-- fabric
+- Fabric
 - Exhaustive module recommendations, grouped by topic/purpose
 - Which libraries to use for what
 - Server configurations & tools for various web frameworks
