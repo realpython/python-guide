@@ -426,7 +426,7 @@ is commonly used by the `Pyramid Framework <http://trypyramid.com>`_.
 Page Templates add within your document structure special element attributes
 and text markup. Using a set of simple language constructs, you control the
 document flow, element repetition, text replacement and translation. Because
-of the attribute-based syntax, unrendered page templates are valid HTML and can
+of the attribute-based syntax, not rendered page templates are valid HTML and can
 be viewed in a browser and even edited in WYSIWYG editors. This can make
 round-trip collaboration with designers and prototyping with static files in a
 browser easier.
@@ -450,7 +450,7 @@ The basic TAL language is simple enough to grasp from an example:
   
 
 The `<span tal:replace="expression" />` pattern for text insertion is common
-enough that if you do not require strict validity in your unrendered templates,
+enough that if you do not require strict validity in your not rendered templates,
 you can replace it with a more terse and readable syntax that uses the pattern
 `${expression}`, as follows:
 
@@ -471,7 +471,7 @@ you can replace it with a more terse and readable syntax that uses the pattern
   
 
 But keep in mind that the full `<span tal:replace="expression">Default Text</span>` 
-syntax also allows for default content in the unrendered template.
+syntax also allows for default content in the not rendered template.
 
 .. rubric:: References
 
