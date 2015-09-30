@@ -9,7 +9,7 @@ The Python Tutorial
 
 This is the official tutorial. It covers all the basics, and offers a tour of
 the language and the standard library. Recommended for those who need a
-quickstart guide to the language.
+quick-start guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
