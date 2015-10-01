@@ -268,7 +268,7 @@ most out of using Python interactively. Its main components are:
 
 .. code-block:: console
 
-    $ pip install ipython
+    $ pip install ipython[all]
 
 
 BPython
