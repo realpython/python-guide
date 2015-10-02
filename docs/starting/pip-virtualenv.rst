@@ -6,7 +6,7 @@ Further Configuration of Pip and Virtualenv
 Requiring an active virtual environment for ``pip``
 ---------------------------------------------------
 
-By now it should be clear that using virtual envirtonments is a great way to
+By now it should be clear that using virtual environments is a great way to
 keep your development environment clean and keeping different projects'
 requirements separate.
 
@@ -71,7 +71,7 @@ add the following lines to this new file:
 
 
 You will of course need to install some packages globally (usually ones that
-you use across different projects consistenly) and this can be accomplished by
+you use across different projects consistently) and this can be accomplished by
 adding the following to your :file:`~/.bashrc` file:
 
 .. code-block:: console
@@ -94,7 +94,7 @@ that you use. For example, you may be using the ``requests`` library in a lot
 of different projects.
 
 It is surely unnecessary to re-download the same packages/libraries each time
-you start working on a new project (and in a new virtual environmen as a result).
+you start working on a new project (and in a new virtual environment as a result).
 Fortunately, you can configure pip in such a way that it tries to reuse already
 installed packages.
 

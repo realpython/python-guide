@@ -15,7 +15,7 @@ and the mailing list https://groups.google.com/forum/#!forum/project-camelot
 
 Cocoa
 -----
-.. note:: The Cocoa framework is only available on OSÂ X. Don't pick this if you're writing a cross-platform application!
+.. note:: The Cocoa framework is only available on OS X. Don't pick this if you're writing a cross-platform application!
 
 GTk
 ---

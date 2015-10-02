@@ -141,7 +141,7 @@ comment block is a programmer's note. The docstring describes the
         """Returns the square root of self times self."""
 	...
 
-.. seealso:: Further reading on docstrings: :pep:`257`
+.. see also:: Further reading on docstrings: :pep:`257`
 
 
 Other Tools
