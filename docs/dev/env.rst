@@ -268,8 +268,13 @@ most out of using Python interactively. Its main components are:
 
 .. code-block:: console
 
-    $ pip install ipython[all]
+    $ pip install ipython
 
+To download and install IPython with all it's main optional dependencies for the notebook, qtconsole, tests, and other functionalities
+
+.. code-block:: console
+
+    $pip install ipython[all]
 
 BPython
 -------
