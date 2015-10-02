@@ -21,7 +21,7 @@ Installation
 
 Before installing Pillow, you'll have to install Pillow's prerequisites. Find
 the instructions for your platform
-`here <http://pillow.readthedocs.org/installation.html>`_.
+`here <https://pillow.readthedocs.org/en/3.0.0/installation.html>`_.
 
 After that, it's straightforward:
 
