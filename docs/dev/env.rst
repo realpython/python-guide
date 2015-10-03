@@ -253,7 +253,7 @@ first, and uses the fake version, which in turn passes the command on to
 pyenv.  pyenv then works out which version of Python should be run based on
 environment variables, ``.python-version`` files, and the global default.
 
-pyenv isn't a tool for managing virtual environments, but there is a plugin
+pyenv isn't a tool for managing virtual environments, but there is the plugin
 `pyenv-virtualenv <https://github.com/yyuu/pyenv-virtualenv>`_ which automates
 the creation of different environments, and also makes it possible to use the
 existing pyenv tools to switch to different environments based on environment
