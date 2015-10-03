@@ -31,7 +31,7 @@ The Django ORM is the interface used by `Django <http://www.djangoproject.com>`_
 to provide database access.
 
 It's based on the idea of
-`models <https://docs.djangoproject.com/en/1.3/#the-model-layer>`_,
+`models <https://docs.djangoproject.com/en/dev/#the-model-layer>`_,
 an abstraction that makes it easier to manipulate data in Python.
 
 The basics:
