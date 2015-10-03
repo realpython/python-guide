@@ -352,7 +352,7 @@ Instead, use a list comprehension:
     four_lists = [[] for __ in xrange(4)]
 
 Create a string from a list
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A common idiom for creating strings is to use :py:meth:`str.join` on an empty
 string.
@@ -366,7 +366,7 @@ This will set the value of the variable *word* to 'spam'. This idiom can be
 applied to lists and tuples.
 
 Searching for an item in a collection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes we need to search through a collection of things. Let's look at two
 options: lists and sets.
@@ -379,7 +379,7 @@ Take the following code for example:
     l = ['s', 'p', 'a', 'm']
 
     def lookup_set(s):
-        return 's' in d
+        return 's' in s
 
     def lookup_list(l):
         return 's' in l
