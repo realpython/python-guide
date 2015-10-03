@@ -25,6 +25,13 @@ PyGTK only currently supports the Gtk-2.X API (NOT Gtk-3.0). It is currently
 recommended that PyGTK not be used for new projects and that existing
 applications be ported from PyGTK to PyGObject.
 
+PyGObject aka (PyGi)
+--------------------
+`PyGObject <https://wiki.gnome.org/Projects/PyGObject>`_ provides Python bindings, which gives access to the entire GNOME software platform.
+It is fully compatible with GTK+ 3. Here is a tutorial to get started with `Python GTK+ 3 Tutorial <http://python-gtk-3-tutorial.readthedocs.org/en/latest/>`_.
+
+`API Reference <http://lazka.github.io/pgi-docs/>`_
+
 Kivy
 ----
 `Kivy <http://kivy.org>`_ is a Python library for development of multi-touch
