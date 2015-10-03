@@ -23,7 +23,7 @@ both popular and exotic.
 pydoc
 -----
 
-:program:`pydoc` is a utlity that is installed when you install Python.
+:program:`pydoc` is a utility that is installed when you install Python.
 It allows you to quickly retrieve and search for documentation from your
 shell. For example, if you needed a quick refresher on the
 :mod:`time` module, pulling up documentation would be as simple as

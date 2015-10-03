@@ -23,7 +23,7 @@ The downside of distributing code like this is that it relies on the
 recipient understanding how to install the required version of Python,
 and being able and willing to use tools such as pip to install your code's
 other dependencies. This is fine when distributing to other developers, but
-makes this method unsuitable for distributing applications to end-uers.
+makes this method unsuitable for distributing applications to end-users.
 
 The `Python Packaging Guide <https://python-packaging-user-guide.readthedocs.org/en/latest/>`_
 provides an extensive guide on creating and maintaining Python packages.

@@ -213,8 +213,8 @@ can be somewhat misleading and needs to be clarified.
 In Python, everything is an object, and can be handled as such. This is what is
 meant when we say, for example, that functions are first-class objects.
 Functions, classes, strings, and even types are objects in Python: like any
-objects, they have a type, they can be passed as function arguments, they may
-have methods and properties. In this understanding, Python is an
+object, they have a type, they can be passed as function arguments, and they
+may have methods and properties. In this understanding, Python is an
 object-oriented language.
 
 However, unlike Java, Python does not impose object-oriented programming as the

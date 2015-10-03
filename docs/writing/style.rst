@@ -6,7 +6,7 @@ Code Style
 If you ask Python programmers what they like most in Python, they will
 often say its high readability.  Indeed, a high level of readability
 is at the heart of the design of the Python language, following the
-recognised fact that code is read much more often than it is written.
+recognized fact that code is read much more often than it is written.
 
 One reason for Python code to be easily read and understood is its relatively
 complete set of Code Style guidelines and "Pythonic" idioms.
@@ -451,6 +451,23 @@ Then run it on a file or series of files to get a report of any violations.
     optparse.py:357:17: E201 whitespace after '{'
     optparse.py:472:29: E221 multiple spaces before operator
     optparse.py:544:21: W601 .has_key() is deprecated, use 'in'
+
+The program `autopep8 <https://pypi.python.org/pypi/autopep8/>`_ can be used to
+automatically reformat code in the PEP 8 style. Install the program with:
+
+.. code-block:: console
+
+    $ pip install autopep8
+
+Use it to format a file in-place with:
+
+.. code-block:: console
+
+    $ autopep8 --in-place optparse.py
+
+Excluding the ``--in-place`` flag will cause the program to output the modified
+code directly to the console for review. The ``--aggressive`` flag will perform
+more substantial changes and can be applied multiple times for greater effect.
 
 Conventions
 ----------------

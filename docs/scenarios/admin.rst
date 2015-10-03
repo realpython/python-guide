@@ -255,8 +255,8 @@ system.  `Puppet Forge <https://forge.puppetlabs.com/>`_ is a repository for
 modules written by the community for Open Source and Enterprise Puppet.
 
 Puppet Agents are installed on nodes whose state needs to be monitored or
-changed.  A desginated server known as the Puppet Master is responsible for
-orchastrating the agent nodes.
+changed.  A designated server known as the Puppet Master is responsible for
+orchestrating the agent nodes.
 
 Agent nodes send basic facts about the system such as to the operating system,
 kernel, architecture, ip address, hostname etc. to the Puppet Master.
