@@ -231,6 +231,8 @@ To run the playbook:
 The Ansible playbook will ping all of the servers in the :file:`hosts.yml` file.
 You can also select groups of servers using Ansible. For more information
 about Ansible, read the `Ansible Docs <http://docs.ansible.com/>`_.
+`An Ansible tutorial <https://serversforhackers.com/an-ansible-tutorial/>`_ is also 
+great and detailed introduction to getting started with Ansible.
 
 
 Chef
