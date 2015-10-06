@@ -231,6 +231,7 @@ To run the playbook:
 The Ansible playbook will ping all of the servers in the :file:`hosts.yml` file.
 You can also select groups of servers using Ansible. For more information
 about Ansible, read the `Ansible Docs <http://docs.ansible.com/>`_.
+
 `An Ansible tutorial <https://serversforhackers.com/an-ansible-tutorial/>`_ is also a 
 great and detailed introduction to getting started with Ansible.
 
@@ -239,19 +240,28 @@ Chef
 ----
 `Chef <https://www.chef.io/chef/>`_  is a systems and cloud infrastructure automation 
 framework that makes it easy to deploy servers and applications to any physical, 
-virtual, or cloud location. Chef works by using custom recipes which can simply be defined 
-as configuration elements which implement your polices.
-These custom recipes are usually stored in your Chef server. 
+virtual, or cloud location. In case this is your choice for configuration management, 
+you will primarily use Ruby to write your infrastructure code. 
 
 Chef clients run on every server that is part of your infrastructure and these regularly 
 check with your Chef server to ensure your system is always aligned and represents the 
 desired state. Since each individual server has its own distinct Chef client, each server 
 configures itself and this distributed approach makes Chef a scalable automation platform.
 
+Chef works by using custom recipes (configuration elements), implemented in cookbooks. Cookbooks, which are basically 
+packages for infrastructure choices, are usually stored in your Chef server. 
+Read the `Digital Ocean tutorial series <https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_ on chef to learn how to create a simple Chef Server.
+
+To create a simple cookbook the `knife <https://docs.chef.io/knife.html>`_ command is used:
+
+.. code-block:: console 
+
+    knife cookbook create cookbook_name
+
 `Getting started with Chef <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_ 
 is a good starting point for Chef Beginners and many community maintained cookbooks that can 
-serve as a good reference or tweaked to server your infrustructure connfiguration needs can be 
-found at the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
+serve as a good reference or tweaked to serve your infrustructure configuration needs can be 
+found on the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
 
 
 Puppet
