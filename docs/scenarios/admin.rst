@@ -250,7 +250,8 @@ configures itself and this distributed approach makes Chef a scalable automation
 
 `Getting started with Chef <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_ 
 is a good starting point for Chef Beginners and many community maintained cookbooks that can 
-serve as a good reference can be found at the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
+serve as a good reference or tweaked to server your infrustructure connfiguration needs can be 
+found at the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
 
 
 Puppet
