@@ -239,9 +239,16 @@ Chef
 ----
 `Chef <https://www.chef.io/chef/>`_  is a systems and cloud infrastructure automation 
 framework that makes it easy to deploy servers and applications to any physical, 
-virtual, or cloud location. Chef works by using custom recipes which can simply be defined 
-as configuration elements which implement your polices.
-These custom recipes are usually stored in your Chef server. 
+virtual, or cloud location. Chef works by using custom recipes (configuration elements), 
+implemented in cookbooks. Cookbooks, which are basically packages for infrastructure choices, 
+are usually stored in your Chef server. Read the `Digital Ocean tutorial series <https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_ on chef to learn 
+how to create a simple Chef Server.
+
+To create a simple cookbook the `knife <https://docs.chef.io/knife.html>`_ is used:
+
+.. code-block:: console 
+
+    knife cookbook create cookbook_name
 
 Chef clients run on every server that is part of your infrastructure and these regularly 
 check with your Chef server to ensure your system is always aligned and represents the 
