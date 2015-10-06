@@ -231,17 +231,27 @@ To run the playbook:
 The Ansible playbook will ping all of the servers in the :file:`hosts.yml` file.
 You can also select groups of servers using Ansible. For more information
 about Ansible, read the `Ansible Docs <http://docs.ansible.com/>`_.
-`An Ansible tutorial <https://serversforhackers.com/an-ansible-tutorial/>`_ is also 
+`An Ansible tutorial <https://serversforhackers.com/an-ansible-tutorial/>`_ is also a 
 great and detailed introduction to getting started with Ansible.
 
 
 Chef
 ----
+`Chef <https://www.chef.io/chef/>`_  is a systems and cloud infrastructure automation 
+framework that makes it easy to deploy servers and applications to any physical, 
+virtual, or cloud location. Chef works by using custom recipes which can simply be defined 
+as configuration elements which implement your polices.
+These custom recipes are usually stored in your Chef server. 
 
-.. todo:: Write about Chef
+Chef clients run on every server that is part of your infrastructure and these regularly 
+check with your Chef server to ensure your system is always aligned and represents the 
+desired state. Since each individual server has its own distinct Chef client, each server 
+configures itself and this distributed approach makes Chef a scalable automation platform.
 
-    `Chef Documentation
-    <http://wiki.opscode.com/display/chef/Documentation>`_
+`Getting started with Chef <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_ 
+is a good starting point for Chef Beginners and many community maintained cookbooks that can 
+serve as a good reference can be found at the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
+
 
 Puppet
 ------
