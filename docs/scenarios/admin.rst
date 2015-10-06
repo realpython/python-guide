@@ -231,6 +231,7 @@ To run the playbook:
 The Ansible playbook will ping all of the servers in the :file:`hosts.yml` file.
 You can also select groups of servers using Ansible. For more information
 about Ansible, read the `Ansible Docs <http://docs.ansible.com/>`_.
+
 `An Ansible tutorial <https://serversforhackers.com/an-ansible-tutorial/>`_ is also a 
 great and detailed introduction to getting started with Ansible.
 
@@ -257,8 +258,8 @@ configures itself and this distributed approach makes Chef a scalable automation
 
 `Getting started with Chef <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_ 
 is a good starting point for Chef Beginners and many community maintained cookbooks that can 
-serve as a good reference or tweaked to server your infrustructure connfiguration needs can be 
-found at the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
+serve as a good reference or tweaked to serve your infrustructure configuration needs can be 
+found on the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
 
 
 Puppet
