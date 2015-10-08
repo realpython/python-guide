@@ -33,7 +33,7 @@ Setuptools & Pip
 
 The two most crucial third-party Python packages are `setuptools <https://pypi.python.org/pypi/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_.
 
-Once installed, you can download, install & uninstall any compliant Python software 
+Once installed, you can download, install and uninstall any compliant Python software 
 product with a single command. It also enables you to add this network installation 
 capability to your own Python software with very little work.
 
@@ -44,7 +44,7 @@ To see if pip is installed, open a command prompt and run
 
 .. code-block:: console
 
-    $ pip --version
+    $ command -v pip
 
 To install pip, `follow the official pip installation guide <https://pip.pypa.io/en/latest/installing/>`_ - this will automatically install the latest version of setuptools.
 
