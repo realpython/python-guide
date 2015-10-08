@@ -43,7 +43,7 @@ Solution    Windows Linux OS X Python 3 License One-file mode Zipfile import Egg
 =========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
 bbFreeze    yes     yes   yes  no       MIT     no            yes            yes  yes
 py2exe      yes     no    no   yes      MIT     yes           yes            no   no
-pyInstaller yes     yes   yes  no       GPL     yes           no             yes  no
+pyInstaller yes     yes   yes  yes      GPL     yes           no             yes  no
 cx_Freeze   yes     yes   yes  yes      PSF     no            yes            yes  no
 py2app      no      no    yes  yes      MIT     no            yes            yes  yes
 =========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
