@@ -6,7 +6,7 @@ avoids surprises. However, there are a few cases that can be confusing to
 newcomers.
 
 Some of these cases are intentional but can be potentially surprising. Some
-could arguably be considered language warts. In general though, what follows
+could arguably be considered language warts. In general, though, what follows
 is a collection of potentially tricky behavior that might seem strange at first
 glance, but is generally sensible once you're aware of the underlying cause for
 the surprise.
