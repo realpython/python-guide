@@ -3,6 +3,29 @@
 Installing Python on Linux
 ==========================
 
+If you want to check which Python version you have already installed fire up a terminal and type:
+.. code-block:: console
+
+  $ python --version
+
+Or you can type:
+
+.. code-block:: console
+
+  $ python
+
+and you should get something similar to:
+  Python 2.7.5 (default, Jun 17 2014, 18:11:42)
+  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)] on linux2
+  Type “help”, “copyright”, “credits” or “license” for more information.
+
+If you want to exit simply type:
+
+.. code-block:: console
+
+  >>> quit()
+
+
 The latest versions of Ubuntu and Fedora **come with Python 2.7 out of the box**.
 
 The latest versions of Redhat Enterprise (RHEL) and CentOS come with Python 2.6.
@@ -21,9 +44,27 @@ described in the next section before you start building Python applications
 for real-world use. In particular, you should always install Setuptools, as
 it makes it much easier for you to use other third-party Python libraries.
 
+
+Distutils
+---------
+Distutils is still the standard tool for packaging in Python.
+It's included in the standard library (Python 2 and Python 3.0 to 3.3).
+It's useful for simple Python distributions, but lacks features.
+It introduces the distutils Python package that can be imported in your setup.py script.
+
+
+Setuptools
+----------
+Was developed to overcome Distutils' limitations, and is not included in the standard library.
+It introduced a command-line utility called easy_install.
+It also introduced the setuptools Python package that can be imported in your setup.py script, and the pkg_resources
+Python package that can be imported in your code to locate data files installed with a distribution.
+One of its gotchas is that it monkey-patches the distutils Python package.
+It should work well with pip. The latest version was released in July 2013.
+
+
 Setuptools & Pip
 ----------------
-
 The most crucial third-party Python software of all is Setuptools, which
 extends the packaging and installation facilities provided by the distutils
 in the standard library. Once you add Setuptools to your Python system you can
@@ -38,25 +79,47 @@ The new ``easy_install`` command you have available is considered by many to be
 deprecated, so we will install its replacement: **pip**. Pip allows for
 uninstallation of packages, and is actively maintained, unlike easy_install.
 
-To install pip, simply open a command prompt and run
+To install pip FOR ALL USERS, simply open a command prompt and use the appropriate command according your Linux distro:
 
-.. code-block:: console
+    For RHEL / CentOS / Fedora Linux installation:
+    ----------------------------------------------
 
-    $ easy_install pip
+    .. code-block:: console
+
+        # yum -y install python-pip
+
+    After completed add an alias to it on your ~./bashrc :
+
+    $ echo 'alias pip="/usr/bin/pip-python"' >> $HOME/.bashrc
+    $ . $HOME/.bashrc
+
+
+    For Debian / Ubuntu Linux installation:
+    ---------------------------------------
+
+    .. code-block:: console
+
+    # apt-get install python-pip
+
+    or
+
+    .. code-block:: console
+
+    $ sudo apt-get install python-pip
 
 
 Virtual Environments
 --------------------
 
-A Virtual Environment is a tool to keep the dependencies required by different projects 
-in separate places, by creating virtual Python environments for them. It solves the 
-"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps 
+A Virtual Environment is a tool to keep the dependencies required by different projects
+in separate places, by creating virtual Python environments for them. It solves the
+"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps
 your global site-packages directory clean and manageable.
 
 For example, you can work on a project which requires Django 1.3 while also
 maintaining a project which requires Django 1.0.
 
-To start using and see more information: `Virtual Environments <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs. 
+To start using and see more information: `Virtual Environments <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs.
 
 You can also use :ref:`virtualenvwrapper <virtualenvwrapper-ref>` to make it easier to
 manage your virtual environments.
@@ -65,4 +128,3 @@ manage your virtual environments.
 
 This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
 which is available under the same license.
-
