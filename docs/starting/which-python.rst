@@ -15,7 +15,7 @@ The basic gist of the state of things is as follows:
 
 1. Python 2.7 has been the standard for a *long* time.
 2. Python 3 introduced major changes to the language, which many developers are unhappy with.
-3. Python 2.7 will receive necessary security updates until 2020 [#pep373_eol].
+3. Python 2.7 will receive necessary security updates until 2020 [#pep373_eol]_.
 4. Python 3 is continually evolving, like Python 2 did in years past.
 
 So, you can now see why this is not such an easy decision.
