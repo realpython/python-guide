@@ -3,7 +3,6 @@
 Installing Python on Linux
 ==========================
 
--------------------------------------------------------------------------------------------------
 If you want to check which Python version you have already installed fire up a terminal and type:
 .. code-block:: console
 
@@ -26,7 +25,6 @@ If you want to exit simply type:
 
   >>> quit()
 
--------------------------------------------------------------------------------------------------
 
 The latest versions of Ubuntu and Fedora **come with Python 2.7 out of the box**.
 
