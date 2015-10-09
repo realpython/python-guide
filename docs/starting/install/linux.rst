@@ -6,6 +6,13 @@ Installing Python on Linux
 The latest versions of Ubuntu and Fedora **come with Python 2.7 out of the box**.
 
 The latest versions of Redhat Enterprise (RHEL) and CentOS come with Python 2.6.
+
+To see which version of Python you have installed, open a command prompt and run
+
+.. code-block:: console
+
+    $ python --version
+
 Some older versions of RHEL and CentOS come with Python 2.4 which is
 unacceptable for modern Python development. Fortunately, there are
 `Extra Packages for Enterprise Linux`_ which include high
@@ -18,32 +25,28 @@ side-by-side with the system's Python 2.4 installation.
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications
-for real-world use. In particular, you should always install Setuptools, as
+for real-world use. In particular, you should always install Setuptools and pip, as
 it makes it much easier for you to use other third-party Python libraries.
 
 Setuptools & Pip
 ----------------
 
-The most crucial third-party Python software of all is Setuptools, which
-extends the packaging and installation facilities provided by the distutils
-in the standard library. Once you add Setuptools to your Python system you can
-download and install any compliant Python software product with a single
-command. It also enables you to add this network installation capability to
-your own Python software with very little work.
+The two most crucial third-party Python packages are `setuptools <https://pypi.python.org/pypi/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_.
 
-To obtain the latest version of Setuptools for Linux, refer to the documentation
-available here: `unix-setuptools <https://pypi.python.org/pypi/setuptools#unix-wget>`_
+Once installed, you can download, install and uninstall any compliant Python software 
+product with a single command. It also enables you to add this network installation 
+capability to your own Python software with very little work.
 
-The new ``easy_install`` command you have available is considered by many to be
-deprecated, so we will install its replacement: **pip**. Pip allows for
-uninstallation of packages, and is actively maintained, unlike easy_install.
+Python 2.7.9 and later (on the python2 series), and Python 3.4 and later include 
+pip by default.
 
-To install pip, simply open a command prompt and run
+To see if pip is installed, open a command prompt and run
 
 .. code-block:: console
 
-    $ easy_install pip
+    $ command -v pip
 
+To install pip, `follow the official pip installation guide <https://pip.pypa.io/en/latest/installing/>`_ - this will automatically install the latest version of setuptools.
 
 Virtual Environments
 --------------------
