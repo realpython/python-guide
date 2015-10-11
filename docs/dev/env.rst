@@ -223,13 +223,7 @@ Interpreter Tools
 Virtual Environments
 --------------------
 
-A Virtual Environment is a tool to keep the dependencies required by different
-projects in separate places, by creating virtual Python environments for them.
-It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
-dilemma, and keeps your global site-packages directory clean and manageable.
-
-For example, you can work on a project which requires Django 1.3 while also
-maintaining a project which requires Django 1.0.
+Virtual Environments provide a powerful way to isolate project package dependencies. This means that you can use packages particular to a Python project without installing them system wide and thus avoiding potential version conflicts.
 
 To start using and see more information:
 `Virtual Environments <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs.
