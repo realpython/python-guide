@@ -23,6 +23,13 @@ reading. Each one of these projects is a paragon of Python coding.
   It's intended for getting started very quickly and was developed with
   best intentions in mind.
 
+- `Diamond <https://github.com/python-diamond/Diamond>`_
+  Diamond is a python daemon that collects metrics
+  and publishes them to Graphite or other backends.
+  It is capable of collecting cpu, memory, network, i/o, load and disk metrics.
+  Additionally, it features an API for implementing custom collectors
+  for gathering metrics from almost any source.
+
 - `Werkzeug <https://github.com/mitsuhiko/werkzeug>`_
   Werkzeug started as simple collection of various utilities for WSGI
   applications and has become one of the most advanced WSGI utility modules.
