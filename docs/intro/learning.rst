@@ -176,6 +176,15 @@ and can make classes and objects behave in different and magical ways.
 
     `A Guide to Python's Magic Methods <http://www.rafekettler.com/magicmethods.html>`_
 
+Python Module of the Week
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a series of blog posts that cover a different python module each week. It is a good way to make
+a habit of learning something new or improving your existing knowledge on a different python
+module on a regular basis.
+
+    `Python Module of the Week <http://www.pymotw.com/2/index.html>`_
+
 
 For Engineers and Scientists
 ----------------------------
