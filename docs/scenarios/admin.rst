@@ -236,10 +236,25 @@ about Ansible, read the `Ansible Docs <http://docs.ansible.com/>`_.
 Chef
 ----
 
-.. todo:: Write about Chef
+Chef is a systems and cloud infrastructure automation framework that makes it easy to deploy servers and applications to any physical, virtual, or cloud location, no matter the size of the infrastructure. Each organization is comprised of one (or more) workstations, a single server, and every node that will be configured and maintained by the chef-client. Cookbooks (and recipes) are used to tell the chef-client how each node in your organization should be configured. The chef-client (which is installed on every node) does the actual configuration.
 
-    `Chef Documentation
-    <http://wiki.opscode.com/display/chef/Documentation>`_
+The Chef Server 
+---------------
+
+The Chef server acts as a hub for configuration data. The Chef server stores cookbooks, the policies that are applied to nodes, and metadata that describes each registered node that is being managed by the chef-client. Nodes use the chef-client to ask the Chef server for configuration details, such as recipes, templates, and file distributions. The chef-client then does as much of the configuration work as possible on the nodes themselves (and not on the Chef server). This scalable approach distributes the configuration effort throughout the organization.
+
+Server Essentials 
+-----------------
+
+The server acts as a repository for all of the data that may be needed by the chef-client while it configures a node:
+
+* A node object exists for each node that is being managed by the chef-client
+* Each node object consists of a run-list and a collection of attributes
+* All data that is stored on the Chef server—including everything uploaded to the server from the chef-repo and by the chef-client—is    searchable from both recipes (using the search method in the Recipe DSL) and the workstation (using the knife search subcommand)
+* The Chef server can apply global policy settings to all nodes across the organization, including for data bags, environments, and roles
+* The authentication process ensures that requests can only be made to the Chef server by authorized users
+* Users, once authorized can only perform certain actions
+* The Chef server provides powerful search functionality
 
 Puppet
 ------
@@ -340,12 +355,153 @@ For more information, refer to the `Puppet Labs Documentation <http://docs.puppe
 Blueprint
 ---------
 
-.. todo:: Write about Blueprint
+Flask uses a concept of blueprints for making application components and supporting common patterns within an application or across applications. Blueprints can greatly simplify how large applications work and provide a central means for Flask extensions to register operations on applications. A Blueprint object works similarly to a Flask application object, but it is not actually an application. Rather it is a blueprint of how to construct or extend an application.
+
+Why Blueprints?
+Blueprints in Flask are intended for these cases:
+
+Factor an application into a set of blueprints. This is ideal for larger applications; a project could instantiate an application object, initialize several extensions, and register a collection of blueprints.
+Register a blueprint on an application at a URL prefix and/or subdomain. Parameters in the URL prefix/subdomain become common view arguments (with defaults) across all view functions in the blueprint.
+Register a blueprint multiple times on an application with different URL rules.
+Provide template filters, static files, templates, and other utilities through blueprints. A blueprint does not have to implement applications or view functions.
+Register a blueprint on an application for any of these cases when initializing a Flask extension.
+A blueprint in Flask is not a pluggable app because it is not actually an application – it’s a set of operations which can be registered on an application, even multiple times. Why not have multiple application objects? You can do that (see Application Dispatching), but your applications will have separate configs and will be managed at the WSGI layer.
+
+Blueprints instead provide separation at the Flask level, share application config, and can change an application object as necessary with being registered. The downside is that you cannot unregister a blueprint once an application was created without having to destroy the whole application object.
+
+The Concept of Blueprints
+-------------------------
+The basic concept of blueprints is that they record operations to execute when registered on an application. Flask associates view functions with blueprints when dispatching requests and generating URLs from one endpoint to another.
+
+My First Blueprint
+------------------
+This is what a very basic blueprint looks like. In this case we want to implement a blueprint that does simple rendering of static templates:
+from flask import Blueprint, render_template, abort
+from jinja2 import TemplateNotFound
+
+simple_page = Blueprint('simple_page', __name__,
+                        template_folder='templates')
+
+@simple_page.route('/', defaults={'page': 'index'})
+@simple_page.route('/<page>')
+def show(page):
+    try:
+        return render_template('pages/%s.html' % page)
+    except TemplateNotFound:
+        abort(404)
+When you bind a function with the help of the @simple_page.route decorator the blueprint will record the intention of registering the function show on the application when it’s later registered. Additionally it will prefix the endpoint of the function with the name of the blueprint which was given to the Blueprint constructor (in this case also simple_page).
+
+Registering Blueprints
+----------------------
+So how do you register that blueprint? Like this:
+
+from flask import Flask
+from yourapplication.simple_page import simple_page
+
+app = Flask(__name__)
+app.register_blueprint(simple_page)
+If you check the rules registered on the application, you will find these:
+
+[<Rule '/static/<filename>' (HEAD, OPTIONS, GET) -> static>,
+ <Rule '/<page>' (HEAD, OPTIONS, GET) -> simple_page.show>,
+ <Rule '/' (HEAD, OPTIONS, GET) -> simple_page.show>]
+ The first one is obviously from the application ifself for the static files. The other two are for the show function of the simple_page blueprint. As you can see, they are also prefixed with the name of the blueprint and separated by a dot (.).
+
+Blueprints however can also be mounted at different locations:
+
+app.register_blueprint(simple_page, url_prefix='/pages')
+And sure enough, these are the generated rules:
+
+[<Rule '/static/<filename>' (HEAD, OPTIONS, GET) -> static>,
+ <Rule '/pages/<page>' (HEAD, OPTIONS, GET) -> simple_page.show>,
+ <Rule '/pages/' (HEAD, OPTIONS, GET) -> simple_page.show>]
+On top of that you can register blueprints multiple times though not every blueprint might respond properly to that. In fact it depends on how the blueprint is implemented if it can be mounted more than once.
+
+more on blueprint @http://flask.pocoo.org/docs/0.10/blueprints/ 
+
+
+
+
 
 Buildout
 --------
+Q: Where can I get a copy of the example module that you used in your PyAtl talk?
 
-.. todo:: Write about Buildout
+A: You can download the source code for the lunar module that I use as my central example in the talk right here:
 
-    `Buildout Website <http://www.buildout.org>`_
+http://rhodesmill.org/brandon/static/2008/lunar.tar.gz
+
+Q: How can I start developing my Python package with buildout?
+
+A: Move into the top-level directory of your package — the directory that has your setup.py file inside — and place two files there: bootstrap.py, which you can get in its most recent official version from this link, and a buildout.cfg that describes the development tools you want available. To gain the three tools I discuss in my presentations — a Python interpreter, access to the command-line scripts defined in your package, and a way to invoke your test suite — try out this sample buildout.cfg:
+
+[config]
+mypkgs = lunar
+
+[buildout]
+develop = .
+parts = python scripts test
+
+[python]
+recipe = zc.recipe.egg
+interpreter = python
+eggs = {config:mypkgs}
+
+[scripts]
+recipe = zc.recipe.egg:scripts
+eggs = {config:mypkgs}
+
+[test]
+recipe = zc.recipe.testrunner
+eggs = {config:mypkgs}
+
+Edit the first section of the file (whose name is arbitrary, by the way; config just made it easy for me to remember why I put it there) and change the package name lunar to the name you gave your package in the name option of its setup.py. Then, run:
+$ python bootstrap.py
+$ ./bin/buildout
+
+And you should find that a ./bin/ directory appears with a python interpreter, a test runner, and any command-line scripts your module defines as console entry-points in its setup.py.
+
+Q: Does the buildout system destroy anything?
+
+A: Yes; buildout will consider itself the owner of these three directories at the top level of your project, so make sure that you are not using directories with these names if you do not want them overwritten:
+
+develop-eggs/
+eggs/
+parts/
+
+Q: What if I need a buildout that pulls eggs from other locations than the main Python Package Index?
+
+A: Add some URLs to your buildout.cfg — they can point to any package index pages that the easy_install command would normally be able to digest — by adding this parameter (you can list several URLs if you want; the following URL is simply for illustration):
+find-links = http://download.zope.org/distribution/
+
+Q: How can I avoid having every buildout on my system download a separate copy of each egg it needs?
+
+A: You should tell your buildouts to download eggs into a single cache somewhere under your home directory. The buildouts will still be safely isolated from each other, since each version of an egg has its own filename! But instead of modifying every single buildout.cfg file to accomplish this, just create a ~/.buildout/ directory inside of your home directory, and place the following inside of a file named default.cfg:
+[buildout]
+eggs-directory = /home/brandon/eggs
+
+
+Q: How can I develop against another package's source code, before it gets packaged up as an egg?
+
+A: Download or checkout the other package's source code into either a sub-directory of your project, or another directory under your account. Then, mention that directory's name in the develop declaration in the main section of your buildout. For example, in my presentation above I check out the SQLAlchemy trunk into the directory sqlalchemy, and then adjust my develop line to look like:
+[buildout]
+develop = . sqlalchemy
+But sometimes putting other projects in a sub-directory of your own project can be annoying. Your version control system might then start trying to include the other project in your commits, and if you have several projects that need access to the development version of a particular library, it might be annoying to have to check it out several times. So I often check out several projects, both my own and some others, into a single top-level directory, and then have their develop lines look something like:
+[buildout]
+develop = . ../sqlalchemy ../gatech.identity
+This way, a small cluster of applications and libraries that I will be releasing as a set of eggs can all get developed together. But it does have the disadvantage that if I actually check in my buildout.cfg while it looks this way, then other developers will have to mimic my directory structure (or re-edit the buildout.cfg) before they too can work on the project.
+
+Q: Buildout keeps disrupting my development by downloading newer versions of dependency packages when they appear, which often have slight changes that break my application.
+
+A: A quick fix is to add this line to the buildout section of your buildout.cfg file:
+
+[buildout]
+newest = false
+But I argue that this is inadequate protection, because if you move to another machine and re-create the buildout, then you are still vulnerable to getting newer versions of dependencies than the ones you were already working with. And specifying newer = false provides no protection for co-workers on other machines, or for your customers who might later be installing your product as an egg using easy_install!
+
+That's why the real solution is to always specify absolute version numbers in your project's setup.py. Instead of just requiring 'pyephem', require something specific like:
+
+install_requires=['pyephem==3.7.2.3'],
+If you are afraid that you or your customers might miss out on critical security updates to a package by being stuck on a single version, then leave the lowest version number unspecified by saying something like:
+install_requires=['sqlalchmey >= 0.4, < 0.5'],  _
 
