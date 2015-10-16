@@ -46,7 +46,7 @@ include:
 
 * **friendly community**
 
-  Python has a vibrant and large :ref:`community <the-community>`
+  Python has a vibrant and large [Community](https://www.python.org/community/)
   which maintains wikis, conferences, countless repositories,
   mailing lists, IRC channels, and so much more. Heck, the Python
   community is even helping to write this guide!
