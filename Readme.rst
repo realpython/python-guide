@@ -1,5 +1,7 @@
 Hitchhiker's Guide to Python
 ============================
+Don't Panic
+============================
 
 **Python Best Practices Guidebook**
 
