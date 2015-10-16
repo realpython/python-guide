@@ -107,12 +107,37 @@ Prerequisite is to have installed :ref:`Python, Setuptools and pywin32 dependenc
 - `Manual <http://www.pyinstaller.org/export/d3398dd79b68901ae1edd761f3fe0f4ff19cfb1a/project/doc/Manual.html?format=raw>`_
 
 
-OS X
+OSÂ X
 ----
 
 
 py2app
 ~~~~~~
+
+Install py2app using pip:
+
+.. code-block:: console
+
+   $ pip install -U py2app
+   
+Create a setup.py file:
+
+.. code-block:: python
+
+    from setuptools import setup
+    setup(
+        app=["MyApplication.py"],
+    setup_requires=["py2app"],
+    )
+
+Building the app:
+
+.. code-block:: console
+
+    $ python setup.py py2app
+
+This will create your application as dist/MyApplication.app. Make sure to run the py2app command each time you change anything.
+
 
 PyInstaller
 ~~~~~~~~~~~
