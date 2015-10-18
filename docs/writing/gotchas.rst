@@ -23,7 +23,7 @@ Python's treatment of mutable default arguments in function definitions.
 What You Wrote
 ~~~~~~~~~~~~~~
 
-.. testcode::
+.. code-block:: python
 
     def append_to(element, to=[]):
         to.append(element)
@@ -32,7 +32,7 @@ What You Wrote
 What You Might Have Expected to Happen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. testcode::
+.. code-block:: python
 
     my_list = append_to(12)
     print my_list
