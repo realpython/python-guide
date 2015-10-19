@@ -34,7 +34,7 @@ package.
 
 .. note::
     If you perform a fresh install of XCode, you will also need to add the 
-    commandline tools by running `xcode-select --install` on the terminal.
+    commandline tools by running ``xcode-select --install`` on the terminal.
 
 While OS X comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
