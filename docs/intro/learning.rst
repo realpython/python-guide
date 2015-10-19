@@ -219,6 +219,17 @@ formal, but rather focuses on explaining the underlying intuition and shows
 how to implement the algorithms in Python.
 
     `Programming Collective Intelligence <http://shop.oreilly.com/product/9780596529321.do>`_
+	
+	
+Transforming Code into Beautiful, Idiomatic Python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Transforming Code into Beautiful, Idiomatic Python is a video by Raymond Hettinger. 
+Learn to take better advantage of Python's best features and improve existing code
+through a series of code transformations, "When you see this, do that instead."
+
+    `Transforming Code into Beautiful, Idiomatic Python <https://www.youtube.com/watch?v=OSGv2VnC0go>`_
+
 
 References
 ----------
@@ -271,3 +282,5 @@ way to write it and the "Idiomatic" way.
 	`For Python 2.7.3+ <http://www.amazon.com/Writing-Idiomatic-Python-2-7-3-Knupp/dp/1482372177/>`_
 	
 	`For Python 3.3+  <http://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_
+	
+
