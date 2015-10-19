@@ -503,5 +503,5 @@ That's why the real solution is to always specify absolute version numbers in yo
 
 install_requires=['pyephem==3.7.2.3'],
 If you are afraid that you or your customers might miss out on critical security updates to a package by being stuck on a single version, then leave the lowest version number unspecified by saying something like:
-install_requires=['sqlalchmey >= 0.4, < 0.5'],  _
+install_requires=['sqlalchmey >= 0.4, < 0.5'] .
 
