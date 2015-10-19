@@ -92,7 +92,7 @@ To save the image under a different filename, use the **save** method:
 
 ::
 
-    >>>img.save("newtest.png")
+    >>> img.save("newtest.png")
 
 
 Applying effects/filters to Image:
