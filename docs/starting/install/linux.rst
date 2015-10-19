@@ -3,9 +3,7 @@
 Installing Python on Linux
 ==========================
 
-The latest versions of Ubuntu and Fedora **come with Python 2.7 out of the box**.
-
-The latest versions of Redhat Enterprise (RHEL) and CentOS come with Python 2.6.
+The latest versions of CentOS, Fedora, Redhat Enterprise (RHEL) and Ubuntu **come with Python 2.7 out of the box**.
 
 To see which version of Python you have installed, open a command prompt and run
 
