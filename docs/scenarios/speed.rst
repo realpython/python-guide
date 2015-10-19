@@ -2,7 +2,7 @@ Speed
 =====
 
 CPython, the most commonly used implementation of Python, is slow for CPU bound
-tasks. `PyPy`_ is fast.
+tasks. `PyPy`_ is fast..
 
 Using a slightly modified version of `David Beazleys`_ CPU bound test code
 (added loop for multiple tests), you can see the difference between CPython

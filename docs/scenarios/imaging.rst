@@ -13,15 +13,15 @@ ImageMagick supports many image formats (over 90 major formats) including format
 
 Here are just a few examples of what ImageMagick can do:
 
-Convert an image from one format to another (e.g. TIFF to JPEG)
-Resize, rotate, sharpen, color reduce, or add special effects to an image
-Create a montage of image thumbnails
-Create a transparent image suitable for use on the Web
-Turn a group of images into a GIF animation sequence
-Create a composite image by combining several separate images
-Draw shapes or text on an image
-Decorate an image with a border or frame
-Describe the format and characteristics of an image
+* Convert an image from one format to another (e.g. TIFF to JPEG)
+* Resize, rotate, sharpen, color reduce, or add special effects to an image
+* Create a montage of image thumbnails
+* Create a transparent image suitable for use on the Web
+* Turn a group of images into a GIF animation sequence
+* Create a composite image by combining several separate images
+* Draw shapes or text on an image
+* Decorate an image with a border or frame
+* Describe the format and characteristics of an image
 
 Python Imaging Library
 ----------------------
