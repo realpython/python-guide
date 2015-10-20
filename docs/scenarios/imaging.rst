@@ -20,8 +20,8 @@ Installation
 ~~~~~~~~~~~~
 
 Before installing Pillow, you'll have to install Pillow's prerequisites. Find
-the instructions for your platform
-`here <https://pillow.readthedocs.org/en/3.0.0/installation.html>`_.
+the instructions for your platform in the
+`Pillow installation instructions <https://pillow.readthedocs.org/en/3.0.0/installation.html>`_.
 
 After that, it's straightforward:
 
@@ -53,7 +53,5 @@ Example
         exif_data = im._getexif()
         exif_data
 
-There are more examples of the Pillow library 
-`here <http://pillow.readthedocs.org/en/3.0.x/handbook/tutorial.html>`_.
-
-
+There are more examples of the Pillow library in the
+`Pillow tutorial <http://pillow.readthedocs.org/en/3.0.x/handbook/tutorial.html>`_.
