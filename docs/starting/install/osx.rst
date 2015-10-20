@@ -32,6 +32,10 @@ package.
     In combination, the software can cause issues that are difficult to
     diagnose.
 
+.. note::
+    If you perform a fresh install of XCode, you will also need to add the 
+    commandline tools by running ``xcode-select --install`` on the terminal.
+
 While OS X comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
 `Homebrew <http://brew.sh>`_ fills this void.
