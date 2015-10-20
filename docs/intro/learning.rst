@@ -139,6 +139,15 @@ A Codeacademy course for the absolute Python beginner. This free and interactive
 
 Advanced
 --------
+Effective Python
+~~~~~~~~~~~~~~~~
+
+This book contains 59 specific ways to improve writing Pythonic code. At 227 
+pages, it is a very brief overview of some of the most commons adapations 
+programmers need to make to become efficient intermediate level Python 
+programmers.
+
+    `Effective Python <http://www.effectivepython.com/>`_
 
 Pro Python
 ~~~~~~~~~~
