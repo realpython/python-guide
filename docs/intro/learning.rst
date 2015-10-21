@@ -31,6 +31,16 @@ resource for learning all aspects of the language.
 
     `Python for You and Me <http://pymbook.readthedocs.org/>`_
 
+Online Python Tutor
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Online Python Tutor gives you a visual step by step 
+representation of how your program runs. Python Tutor
+helps people overcome a fundamental barrier to learning
+programming by understanding what happens as the computer 
+executes each line of a program's source code.
+
+    `Online Python Tutor <http://pythontutor.com/>`_
 
 Invent Your Own Computer Games with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
