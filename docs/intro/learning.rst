@@ -32,7 +32,7 @@ resource for learning all aspects of the language.
     `Python for You and Me <http://pymbook.readthedocs.org/>`_
 
 Online Python Tutor
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 Online Python Tutor gives you a visual step by step 
 representation of how your program runs. Python Tutor
@@ -262,7 +262,7 @@ of the language.
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_
 
 Python Pocket Reference
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Python Pocket Reference, written by Mark Lutz, is an easy to use reference to
 the core language, with descriptions of commonly used modules and toolkits. It
@@ -271,7 +271,7 @@ covers Python 3 and 2.6 versions.
     `Python Pocket Reference <http://shop.oreilly.com/product/9780596158095.do>`_
 	
 Python Cookbook
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Python Cookbook, written by David Beazley and Brian K. Jones, is packed with
 practical recipes. This book covers the core python language as well as tasks
