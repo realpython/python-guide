@@ -41,7 +41,7 @@ Python News is the news section in the official Python web site
     `Python News <http://www.python.org/news/>`_
 
 Import Python Weekly
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 Weekly Python Newsletter containing Python Articles, Projects, Videos, Tweets
 delivered in your inbox.  Keep Your Python Programming Skills Updated.

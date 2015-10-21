@@ -167,8 +167,8 @@ programming languages and protocols - including Python and WSGI. uWSGI can
 either be run as a stand-alone web router, or be run behind a full web
 server (such as Nginx or Apache).  In the latter case, a web server can
 configure uWSGI and an application's operation over the
-`uwsgi <https://uwsgi-docs.readthedocs.org/en/latest/Protocol.html>`_
-protocol.  uWSGI's web server support allows for dynamically configuring
+`uwsgi protocol <https://uwsgi-docs.readthedocs.org/en/latest/Protocol.html>`_.
+uWSGI's web server support allows for dynamically configuring
 Python, passing environment variables and further tuning.  For full details,
 see `uWSGI magic
 variables <https://uwsgi-docs.readthedocs.org/en/latest/Vars.html>`_.
