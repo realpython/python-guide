@@ -282,5 +282,3 @@ way to write it and the "Idiomatic" way.
 	`For Python 2.7.3+ <http://www.amazon.com/Writing-Idiomatic-Python-2-7-3-Knupp/dp/1482372177/>`_
 	
 	`For Python 3.3+  <http://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_
-	
-
