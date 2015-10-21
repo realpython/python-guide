@@ -111,6 +111,14 @@ TextMate
     GUI, TextMate cherry-picks the best of both worlds to the benefit of expert
     scripters and novice users alike.
 
+Enthought Canopy
+--------
+    Enthought Canopy is a comprehensive Python analysis environment that provides
+    easy installation of the core scientific analytic and scientific Python packages.
+`Enthought Canopy <https://www.enthought.com/products/canopy/>`_ is a Python
+IDE which is focused towards Scientists and Engineers as it provides pre 
+installed libraries for data analysis.
+
 Sublime Text
 ------------
 
