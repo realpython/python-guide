@@ -150,6 +150,11 @@ features can be brought to IntelliJ with the free
 versions of PyCharm: Professional Edition (Free 30-day trial) and Community
 Edition(Apache 2.0 License) with fewer features.
 
+Enthought Canopy
+----------------
+`Enthought Canopy <https://www.enthought.com/products/canopy/>`_ is a Python
+IDE which is focused towards Scientists and Engineers as it provides pre 
+installed libraries for data analysis. 
 
 Eclipse
 -------
