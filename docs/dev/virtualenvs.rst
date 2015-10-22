@@ -21,6 +21,14 @@ Install virtualenv via pip:
 .. code-block:: console
 
   $ pip install virtualenv
+  
+  
+or with sudo:
+
+.. code-block:: console
+
+  $ sudo apt-get install python-virtualenv
+  
 
 Basic Usage
 ~~~~~~~~~~~
