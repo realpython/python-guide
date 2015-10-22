@@ -2,7 +2,7 @@ Speed
 =====
 
 CPython, the most commonly used implementation of Python, is slow for CPU bound
-tasks. `PyPy`_ is fast.
+tasks. `PyPy`_ is fast..
 
 Using a slightly modified version of `David Beazleys`_ CPU bound test code
 (added loop for multiple tests), you can see the difference between CPython
@@ -218,13 +218,91 @@ And here the output of an embedded `ARM beaglebone <http://beagleboard.org/Produ
 Pyrex
 -----
 
+Pyrex is a Python-like language for rapidly and easily writing python extension modules. It can be described as python with C data types. With Pyrex, one can produce Python-like code that runs as fast as in C, with easy access to C libraries and functions.
+
+The Pyrex homepage is at http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/
+
+The two main uses of Pyrex are:
+
+To speed up the execution of Python code
+To provide a Python interface to existing C modules/libraries
+
+There is an enhanced fork of Pyrex, called Cython. It features substantial performance optimisations and improved support for newer Python language features.
+
+PyrexOnWindows provides a step-by-step guide to Pyrex installation on Windows.
+
+pyrexdoc is a tool for generating HTML documentation from a compiled Pyrex module, by DavidMcNab. See other DocumentationTools.
+
+If you are looking for speed improvement, you may also want to consider other Python speedup solutions such as psyco and weave.
+
+For accessing existing C libraries, the ctypes module is also available in Python 2.5 and above.
+
 
 Shedskin?
 ---------
+Shed Skin is a Python to C++ programming language compiler. It is experimental, and can translate pure, but implicitly statically typed Python programs into optimized C++. It can generate stand-alone programs or extension modules that can be imported and used in larger Python programs.
+
+Shed Skin is an open source project with contributions from many people, however the main author is Mark Dufour. Work has been going into Shed Skin since 2005.
+
+Besides the typing restriction,programs cannot freely use the Python standard library, although about 20 common modules, such as random, itertools and re (regular expressions), are supported as of 2011. Also, not all Python features, such as nested functions and variable numbers of arguments, are supported. Many introspective dynamic parts of the language are unsupported. For example, functions like getattr, and hasattr are unsupported.
+
+As of May 2011, Unicode is not supported.
+
+For a set of 54 non-trivial test programs (at over 15,000 lines in total (sloccount)), measurements show a typical speedup of 2-20 times over Psyco, and 2-200 times over CPython. Shed Skin is still in an early stage of development, so many other programs will not compile unmodified.
+
+Shed Skin can be used to generate standalone executables which need only the C++ runtime libraries. It can also be used to generate CPython modules. This allows compiling parts of larger programs with Shed Skin, while running the other parts using regular CPython.
+
+Another use has been to wrap C++ classes using Shed Skin to allow C++ classes to be used as Python classes.
+
+The license of the Shed Skin source code is under two parts. The main compiler code is under the GNU General Public License (GPL). The supporting code that it uses as a run time library is under a BSD or MIT license depending on the module. This allows compiling programs which are considered under the GPL or are not considered under the GPL.
 
 Numba
 -----
-.. todo:: Write about Numba and the autojit compiler for NumPy
+Numba is an Open Source NumPy-aware optimizing compiler for Python sponsored by Continuum Analytics, Inc. It uses the remarkable LLVM compiler infrastructure to compile Python syntax to machine code.
+
+It is aware of NumPy arrays as typed memory regions and so can speed-up code using NumPy arrays. Other, less well-typed code will be translated to Python C-API calls effectively removing the "interpreter" but not removing the dynamic indirection.
+
+Numba is also not a tracing JIT. It compiles your code before it gets run either using run-time type information or type information you provide in the decorator.
+
+Numba is a mechanism for producing machine code from Python syntax and typed data structures such as those that exist in NumPy.
+Numba gives you the power to speed up your applications with high performance functions written directly in Python. With a few annotations, array-oriented and math-heavy Python code can be just-in-time compiled to native machine instructions, similar in performance to C, C++ and Fortran, without having to switch languages or Python interpreters.
+
+Numba works by generating optimized machine code using the LLVM compiler infrastructure at import time, runtime, or statically (using the included pycc tool). Numba supports compilation of Python to run on either CPU or GPU hardware, and is designed to integrate with the Python scientific software stack.
+Example :
+---------
+from numba import jit
+from numpy import arange
+
+# jit decorator tells Numba to compile this function.
+# The argument types will be inferred by Numba when function is called.
+@jit
+def sum2d(arr):
+    M, N = arr.shape
+    result = 0.0
+    for i in range(M):
+        for j in range(N):
+            result += arr[i,j]
+    return result
+
+a = arange(9).reshape(3,3)
+print(sum2d(a))
+
+Installing:
+-----------
+The easiest way to install numba and get updates is by using the Anaconda Distribution: https://store.continuum.io/cshop/anaconda/
+
+$ conda install numba
+If you wanted to compile Numba from source, it is recommended to use conda environment to maintain multiple isolated development environments. To create a new environment for Numba development:
+
+$ conda create -p ~/dev/mynumba python numpy llvmlite
+To select the installed version, append "=VERSION" to the package name, where, "VERSION" is the version number. For example:
+
+$ conda create -p ~/dev/mynumba python=2.7 numpy=1.6 llvmlite
+to use Python 2.7 and Numpy 1.6.
+
+If you need CUDA support, you should also install the CUDA toolkit:
+
+$ conda install cudatoolkit 
 
 Threading
 :::::::::
