@@ -244,7 +244,7 @@ Chef
 Puppet
 ------
 
-`Puppet <http://puppetlabs.com>`_ is an IT Automation and configuration management
+`Puppet <http://puppetlabs.com>`_ is IT Automation and configuration management
 software from Puppet Labs that allows System Administrators to define the state
 of their IT Infrastructure, thereby providing an elegant way to manage their
 fleet of physical and virtual machines.
