@@ -100,9 +100,10 @@ the current state of the environment packages. To do this, run
 
 This will create a :file:`requirements.txt` file, which contains a simple
 list of all the packages in the current environment, and their respective
-versions. Later it will be easier for a different developer (or you, if you
-need to re-create the environment) to install the same packages using the
-same versions:
+versions. You can see the list of installed packages without the requirements 
+format using "pip list". Later it will be easier for a different developer 
+(or you, if you need to re-create the environment) to install the same packages
+using the same versions:
 
 .. code-block:: console
 
