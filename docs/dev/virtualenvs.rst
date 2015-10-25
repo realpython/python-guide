@@ -206,6 +206,12 @@ Other useful commands
 
 `Full list of virtualenvwrapper commands <http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html>`_.
 
+virtualenv-burrito
+------------------
+
+With `virtualenv-burrito <https://github.com/brainsik/virtualenv-burrito>`_, you
+can have a working virtualenv + virtualenvwrapper environment in a single command.
+
 autoenv
 -------
 When you ``cd`` into a directory containing a :file:`.env`, `autoenv <https://github.com/kennethreitz/autoenv>`_
