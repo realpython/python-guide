@@ -250,7 +250,9 @@ configures itself and this distributed approach makes Chef a scalable automation
 
 Chef works by using custom recipes (configuration elements), implemented in cookbooks. Cookbooks, which are basically 
 packages for infrastructure choices, are usually stored in your Chef server. 
-Read the `Digital Ocean tutorial series <https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_ on chef to learn how to create a simple Chef Server.
+Read the `Digital Ocean tutorial series 
+<https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_ 
+on chef to learn how to create a simple Chef Server.
 
 To create a simple cookbook the `knife <https://docs.chef.io/knife.html>`_ command is used:
 
@@ -263,6 +265,7 @@ is a good starting point for Chef Beginners and many community maintained cookbo
 serve as a good reference or tweaked to serve your infrustructure configuration needs can be 
 found on the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
 
+- `Chef Documentation <https://docs.chef.io/>`_
 
 Puppet
 ------
