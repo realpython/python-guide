@@ -239,7 +239,7 @@ Chef
 .. todo:: Write about Chef
 
     `Chef Documentation
-    <http://wiki.opscode.com/display/chef/Documentation>`_
+    <https://docs.chef.io/>`_
 
 Puppet
 ------
