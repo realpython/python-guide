@@ -65,7 +65,7 @@ There are more examples of the Pillow library in the
 OpenSource Computer Vision
 ---------------------------
 
-OpenSource Computer Vision, or OpenCV in short, is a slightly more advanced and useful
+OpenSource Computer Vision, or OpenCV in short, is a more advanced and useful
 image manipulation and processing software than PIL. It has been implemented in several
 languages and is very widely used. 
 
