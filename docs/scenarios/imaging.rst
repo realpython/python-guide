@@ -5,11 +5,16 @@ Image Manipulation
 .. todo::
     Add introduction about image manipulation and its Python libraries.
 
+Most image processing and manipulation techniques can be carried out effectively using 
+two libraries: Python Imaging Library (PIL)  and OpenSource Computer Vision (OpenCV). 
+
+A brief description of both is given below.
+
 Python Imaging Library
 ----------------------
 
 The `Python Imaging Library <http://www.pythonware.com/products/pil/>`_, or PIL
-for short, is *the* library for image manipulation in Python. Unfortunately,
+for short, is one of the core libraries for image manipulation in Python. Unfortunately,
 its development has stagnated, with its last release in 2009.
 
 Luckily for you, there's an actively-developed fork of PIL called
@@ -55,3 +60,47 @@ Example
 
 There are more examples of the Pillow library in the
 `Pillow tutorial <http://pillow.readthedocs.org/en/3.0.x/handbook/tutorial.html>`_.
+
+
+OpenSource Computer Vision
+---------------------------
+
+OpenSource Computer Vision, or OpenCV in short, is a slightly more advanced and useful
+image manipulation and processing software than PIL. It has been implemented in several
+languages and is very widely used. 
+
+Installation
+~~~~~~~~~~~~~
+
+In Python, image processing using OpenCV is implemented using the **cv2** and **NumPy** modules. 
+Check the installation instructions for OpenCV `here <https://help.ubuntu.com/community/OpenCV>`_.
+
+NumPy can be easily downloaded from the Python Package Index(PyPI):
+
+.. code-block:: console
+    
+    $ pip install numpy 
+
+Example
+~~~~~~~~
+
+.. code-block:: python
+
+    from cv2 import *
+    import numpy as np 
+    #Read Image
+    img = cv2.imread('testimg.jpg')
+    #Display Image
+    cv2.imshow('image',img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+    #Applying Grayscale filter to image
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    
+    #Saving filtered image to new file
+    cv2.imwrite('graytest.jpg',gray) 
+
+There are more examples of OpenCV in the documentation
+`here <http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html>`_.
+
