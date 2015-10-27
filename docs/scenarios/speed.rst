@@ -4,7 +4,7 @@ Speed
 CPython, the most commonly used implementation of Python, is slow for CPU bound
 tasks. `PyPy`_ is fast.
 
-Using a slightly modified version of `David Beazleys`_ CPU bound test code
+Using a slightly modified version of `David Beazley's`_ CPU bound test code
 (added loop for multiple tests), you can see the difference between CPython
 and PyPy's processing.
 
@@ -247,4 +247,4 @@ Multiprocessing
 .. _`guide`: http://www.dabeaz.com/python/UnderstandingGIL.pdf
 .. _`New GIL`: http://www.dabeaz.com/python/NewGIL.pdf
 .. _`Special care`: http://docs.python.org/c-api/init.html#threads
-.. _`David Beazleys`: http://www.dabeaz.com/GIL/gilvis/measure2.py
+.. _`David Beazley's`: http://www.dabeaz.com/GIL/gilvis/measure2.py
