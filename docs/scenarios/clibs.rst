@@ -16,7 +16,7 @@ as structs and unions, and allows you to modify things such as padding and
 alignment, if needed. It can be a bit crufty to use, but in conjunction with
 the `struct <https://docs.python.org/3.5/library/struct.html>`_ module, you
 are essentially provided full control over how your data types get translated
-into something something usable by a C(++).
+into something usable by a pure C(++) method.
 
 Struct Equivalents
 ~~~~~~~~~~~~~~~~~~
@@ -101,6 +101,6 @@ Boost.Python
 
 `Boost.Python <http://www.boost.org/doc/libs/1_59_0/libs/python/doc/>`_
 requires a bit more manual work to expose C++ object functionality, but
-it is capable of providing all the same features SWIG does, and then some,
+it is capable of providing all the same features SWIG does and then some,
 to include providing wrappers to access PyObjects in C++, extracting SWIG-
 wrapper objects, and even embedding bits of Python into your C++ code.
