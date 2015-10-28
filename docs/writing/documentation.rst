@@ -13,7 +13,7 @@ to both users and maintainers of a project. It should be raw text or
 written in some very easy to read markup, such as :ref:`reStructuredText-ref`
 or Markdown. It should contain a few lines explaining the purpose of the
 project or library (without assuming the user knows anything about the
-project), the url of the main source for the software, and some basic credit
+project), the URL of the main source for the software, and some basic credit
 information. This file is the main entry point for readers of the code.
 
 An :file:`INSTALL` file is less necessary with Python.  The installation
@@ -158,7 +158,7 @@ Pycco_
 .. _Docco: http://jashkenas.github.com/docco
 
 Ronn_
-    Ronn builds unix manuals. It converts human readable textfiles to roff
+    Ronn builds UNIX manuals. It converts human readable textfiles to roff
     for terminal display, and also to HTML for the web.
 
 .. _Ronn: https://github.com/rtomayko/ronn
