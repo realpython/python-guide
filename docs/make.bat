@@ -75,7 +75,7 @@ if "%1" == "html" (
 	%SPHINXBUILD% -b html %ALLSPHINXOPTS% %BUILDDIR%/html
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The HTML pages are in %BUILDDIR%/html.
+	echo.Build finished; The HTML pages are in %BUILDDIR%/html.
 	goto end
 )
 
@@ -83,7 +83,7 @@ if "%1" == "dirhtml" (
 	%SPHINXBUILD% -b dirhtml %ALLSPHINXOPTS% %BUILDDIR%/dirhtml
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The HTML pages are in %BUILDDIR%/dirhtml.
+	echo.Build finished; The HTML pages are in %BUILDDIR%/dirhtml.
 	goto end
 )
 
@@ -91,7 +91,7 @@ if "%1" == "singlehtml" (
 	%SPHINXBUILD% -b singlehtml %ALLSPHINXOPTS% %BUILDDIR%/singlehtml
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The HTML pages are in %BUILDDIR%/singlehtml.
+	echo.Build finished; The HTML pages are in %BUILDDIR%/singlehtml.
 	goto end
 )
 
@@ -144,7 +144,7 @@ if "%1" == "epub" (
 	%SPHINXBUILD% -b epub %ALLSPHINXOPTS% %BUILDDIR%/epub
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The epub file is in %BUILDDIR%/epub.
+	echo.Build finished; The epub file is in %BUILDDIR%/epub.
 	goto end
 )
 
@@ -180,7 +180,7 @@ if "%1" == "text" (
 	%SPHINXBUILD% -b text %ALLSPHINXOPTS% %BUILDDIR%/text
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The text files are in %BUILDDIR%/text.
+	echo.Build finished; The text files are in %BUILDDIR%/text.
 	goto end
 )
 
@@ -188,7 +188,7 @@ if "%1" == "man" (
 	%SPHINXBUILD% -b man %ALLSPHINXOPTS% %BUILDDIR%/man
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The manual pages are in %BUILDDIR%/man.
+	echo.Build finished; The manual pages are in %BUILDDIR%/man.
 	goto end
 )
 
@@ -196,7 +196,7 @@ if "%1" == "texinfo" (
 	%SPHINXBUILD% -b texinfo %ALLSPHINXOPTS% %BUILDDIR%/texinfo
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The Texinfo files are in %BUILDDIR%/texinfo.
+	echo.Build finished; The Texinfo files are in %BUILDDIR%/texinfo.
 	goto end
 )
 
@@ -204,7 +204,7 @@ if "%1" == "gettext" (
 	%SPHINXBUILD% -b gettext %I18NSPHINXOPTS% %BUILDDIR%/locale
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The message catalogs are in %BUILDDIR%/locale.
+	echo.Build finished; The message catalogs are in %BUILDDIR%/locale.
 	goto end
 )
 
@@ -238,7 +238,7 @@ if "%1" == "xml" (
 	%SPHINXBUILD% -b xml %ALLSPHINXOPTS% %BUILDDIR%/xml
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The XML files are in %BUILDDIR%/xml.
+	echo.Build finished; The XML files are in %BUILDDIR%/xml.
 	goto end
 )
 
@@ -246,7 +246,7 @@ if "%1" == "pseudoxml" (
 	%SPHINXBUILD% -b pseudoxml %ALLSPHINXOPTS% %BUILDDIR%/pseudoxml
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.Build finished. The pseudo-XML files are in %BUILDDIR%/pseudoxml.
+	echo.Build finished; The pseudo-XML files are in %BUILDDIR%/pseudoxml.
 	goto end
 )
 

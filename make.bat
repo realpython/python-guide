@@ -43,21 +43,21 @@ if "%1" == "clean" (
 if "%1" == "html" (
 	%SPHINXBUILD% -b html %ALLSPHINXOPTS% %BUILDDIR%/html
 	echo.
-	echo.Build finished. The HTML pages are in %BUILDDIR%/html.
+	echo.Build finished; The HTML pages are in %BUILDDIR%/html.
 	goto end
 )
 
 if "%1" == "dirhtml" (
 	%SPHINXBUILD% -b dirhtml %ALLSPHINXOPTS% %BUILDDIR%/dirhtml
 	echo.
-	echo.Build finished. The HTML pages are in %BUILDDIR%/dirhtml.
+	echo.Build finished; The HTML pages are in %BUILDDIR%/dirhtml.
 	goto end
 )
 
 if "%1" == "singlehtml" (
 	%SPHINXBUILD% -b singlehtml %ALLSPHINXOPTS% %BUILDDIR%/singlehtml
 	echo.
-	echo.Build finished. The HTML pages are in %BUILDDIR%/singlehtml.
+	echo.Build finished; The HTML pages are in %BUILDDIR%/singlehtml.
 	goto end
 )
 
@@ -104,7 +104,7 @@ if "%1" == "devhelp" (
 if "%1" == "epub" (
 	%SPHINXBUILD% -b epub %ALLSPHINXOPTS% %BUILDDIR%/epub
 	echo.
-	echo.Build finished. The epub file is in %BUILDDIR%/epub.
+	echo.Build finished; The epub file is in %BUILDDIR%/epub.
 	goto end
 )
 
@@ -118,14 +118,14 @@ if "%1" == "latex" (
 if "%1" == "text" (
 	%SPHINXBUILD% -b text %ALLSPHINXOPTS% %BUILDDIR%/text
 	echo.
-	echo.Build finished. The text files are in %BUILDDIR%/text.
+	echo.Build finished; The text files are in %BUILDDIR%/text.
 	goto end
 )
 
 if "%1" == "man" (
 	%SPHINXBUILD% -b man %ALLSPHINXOPTS% %BUILDDIR%/man
 	echo.
-	echo.Build finished. The manual pages are in %BUILDDIR%/man.
+	echo.Build finished; The manual pages are in %BUILDDIR%/man.
 	goto end
 )
 
