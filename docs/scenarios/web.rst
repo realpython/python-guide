@@ -473,6 +473,43 @@ you can replace it with a more terse and readable syntax that uses the pattern
 But keep in mind that the full `<span tal:replace="expression">Default Text</span>` 
 syntax also allows for default content in the unrendered template.
 
+Mako
+----
+`Mako <http://www.makotemplates.org/>`_ is a template language that compiles to Python
+for maximum performance. Its syntax and api is borrowed from the best parts of other
+templating languages like Django and Jinja2 templates. It is the default template
+language included with the `Pylons and Pyramid <http://www.pylonsproject.org/>`_ web
+frameworks.
+
+An example template in Mako looks like:
+
+.. code-block:: html
+
+    <%inherit file="base.html"/>
+    <%
+        rows = [[v for v in range(0,10)] for row in range(0,10)]
+    %>
+    <table>
+        % for row in rows:
+            ${makerow(row)}
+        % endfor
+    </table>
+
+    <%def name="makerow(row)">
+        <tr>
+        % for name in row:
+            <td>${name}</td>\
+        % endfor
+        </tr>
+    </%def>
+
+To render a very basic template, you can do the following:
+
+.. code-block:: python
+
+    from mako.template import Template
+    print(Template("hello ${data}!").render(data="world"))
+
 .. rubric:: References
 
 .. [1] `The mod_python project is now officially dead <http://blog.dscpl.com.au/2010/06/modpython-project-is-now-officially.html>`_
