@@ -1,3 +1,3 @@
-* Establish "use this" vs "alternatives are...." recommendations
+* Establish "use this" vs "alternatives are...." recommendations.
 
 .. todolist::
