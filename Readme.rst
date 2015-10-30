@@ -16,7 +16,7 @@ basis.
 
 Topics include:
 
-- Platform- and version-specific installations
+- Platform and version-specific installations
 - Py2app, Py2exe, bbfreeze, pyInstaller
 - Pip
 - Numpy, scipy, statpy, pylot, matlib
