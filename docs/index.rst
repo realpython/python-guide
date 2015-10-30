@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 The Hitchhiker's Guide to Python!
-=================================
+==================================
 
 Welcome to The Hitchhiker's Guide to Python.
 
