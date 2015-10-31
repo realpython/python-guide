@@ -1,6 +1,7 @@
+sudo: false
 language: python
 install: pip install sphinx
 script: 
-    - make doctest
-    - make html
-
+- make doctest
+- make html
+- sphinx -E -c docs -b html docs docs/_build/html
