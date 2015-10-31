@@ -14,9 +14,8 @@ Installation Guides
 -------------------
 
 These guides go over the proper installation of :ref:`Python 2.7 <which-python>`
- for development purposes, as well as setuptools, pip, and virtualenv setup.
+for development purposes, as well as setuptools, pip, and virtualenv setup.
 
 - :ref:`Mac OS X <install-osx>`.
-- :ref:`Microsoft Windows<install-windows>`.
+- :ref:`Microsoft Windows <install-windows>`.
 - :ref:`Ubuntu Linux <install-linux>`.
-

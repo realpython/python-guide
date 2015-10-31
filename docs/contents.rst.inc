@@ -13,6 +13,7 @@ This part of the guide focuses on setting up your Python environment.
  .. toctree::
     :maxdepth: 1
 
+    starting/installation
     starting/install/osx
     starting/install/win
     starting/install/linux
@@ -84,6 +85,7 @@ Development Environment
 
    dev/env
    dev/virtualenvs
+   dev/pip-virtualenv
 
 
 

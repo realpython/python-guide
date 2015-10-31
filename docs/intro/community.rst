@@ -60,12 +60,12 @@ You can read more at `The PEP Index <http://www.python.org/dev/peps/>`_.
 Submitting a PEP
 ~~~~~~~~~~~~~~~~
 
- PEPs are peer-reviewed and accepted/rejected after much discussion. Anyone
- can write and submit a PEP for review.
+PEPs are peer-reviewed and accepted/rejected after much discussion. Anyone
+can write and submit a PEP for review.
 
- Here's an overview of the PEP acceptance workflow:
+Here's an overview of the PEP acceptance workflow:
 
- .. image:: https://www.python.org/m/dev/peps/pep-0001/pep-0001-1.png
+.. image:: ../_static/pep-0001-1.png
 
 
 Python Conferences
