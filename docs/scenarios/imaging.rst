@@ -65,21 +65,21 @@ There are more examples of the Pillow library in the
 OpenSource Computer Vision
 ---------------------------
 
-OpenSource Computer Vision, or OpenCV in short, is a more advanced and useful
-image manipulation and processing software than PIL. It has been implemented in several
-languages and is very widely used. 
+OpenSource Computer Vision, more commonly known as OpenCV, is a more advanced image manipulation and processing software than PIL. It has been implemented in several
+languages and is widely used. 
 
 Installation
 ~~~~~~~~~~~~~
 
-In Python, image processing using OpenCV is implemented using the **cv2** and **NumPy** modules. 
-Check the installation instructions for OpenCV `here <https://help.ubuntu.com/community/OpenCV>`_.
+In Python, image processing using OpenCV is implemented using the ``cv2`` and ``NumPy`` modules. 
+The `installation instructions for OpenCV <http://docs.opencv.org/2.4/doc/tutorials/introduction/table_of_content_introduction/table_of_content_introduction.html#table-of-content-introduction>`_ should guide you through configuring the project for yourself.
 
-NumPy can be easily downloaded from the Python Package Index(PyPI):
+NumPy can be downloaded from the Python Package Index(PyPI):
 
 .. code-block:: console
     
     $ pip install numpy 
+
 
 Example
 ~~~~~~~~
@@ -101,5 +101,5 @@ Example
     #Saving filtered image to new file
     cv2.imwrite('graytest.jpg',gray) 
 
-There are more examples of OpenCV in the `documentation <http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html>`_.
+There are more Python-implemented examples of OpenCV in this `tutorial <http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html>`_.
 
