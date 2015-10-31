@@ -78,6 +78,22 @@ already exist to suit your needs.
 email to flask@librelist.com and reply to the confirmation email.
 
 
+Web.py
+------
+`Web.py <http://webpy.org/>`_ web.py is a web framework for Python that is as 
+simple as it is powerful. You won't find wizards or boilerplate websites 
+in Web.py and will have to build from scratch. Web.py provides no administration 
+utility. Web.py is the brainchild of Aaron Swartz, who developed it while working
+on Reddit.com.
+
+
+Web2py
+------
+A full stack web framework and platform focused in the ease of use. It focuses on
+rapid development, favors convention over configuration approach and follows a 
+model–view–controller (MVC) architectural pattern.
+
+
 Werkzeug
 --------
 
