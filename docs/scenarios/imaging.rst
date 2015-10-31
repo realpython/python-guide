@@ -2,11 +2,9 @@
 Image Manipulation
 ==================
 
-.. todo::
-    Add introduction about image manipulation and its Python libraries.
-
-Most image processing and manipulation techniques can be carried out effectively using 
-two libraries: Python Imaging Library (PIL)  and OpenSource Computer Vision (OpenCV). 
+Most image processing and manipulation techniques can be carried out
+effectively using two libraries: Python Imaging Library (PIL)  and OpenSource
+Computer Vision (OpenCV).
 
 A brief description of both is given below.
 
@@ -39,24 +37,24 @@ Example
 
 .. code-block:: python
 
-        from PIL import Image, ImageFilter
-        #Read image 
-        im = Image.open( 'image.jpg' )
-        #Display image
-        im.show()
+    from PIL import Image, ImageFilter
+    #Read image
+    im = Image.open( 'image.jpg' )
+    #Display image
+    im.show()
 
-        #Applying a filter to the image
-        im_sharp = im.filter( ImageFilter.SHARPEN )
-        #Saving the filtered image to a new file
-        im_sharp.save( 'image_sharpened.jpg', 'JPEG' ) 
+    #Applying a filter to the image
+    im_sharp = im.filter( ImageFilter.SHARPEN )
+    #Saving the filtered image to a new file
+    im_sharp.save( 'image_sharpened.jpg', 'JPEG' )
 
-        #Splitting the image into its respective bands, i.e. Red, Green, 
-        #and Blue for RGB
-        r,g,b = im_sharp.split()
+    #Splitting the image into its respective bands, i.e. Red, Green,
+    #and Blue for RGB
+    r,g,b = im_sharp.split()
 
-        #Viewing EXIF data embedded in image
-        exif_data = im._getexif()
-        exif_data
+    #Viewing EXIF data embedded in image
+    exif_data = im._getexif()
+    exif_data
 
 There are more examples of the Pillow library in the
 `Pillow tutorial <http://pillow.readthedocs.org/en/3.0.x/handbook/tutorial.html>`_.
@@ -65,20 +63,23 @@ There are more examples of the Pillow library in the
 OpenSource Computer Vision
 --------------------------
 
-OpenSource Computer Vision, more commonly known as OpenCV, is a more advanced image manipulation and processing software than PIL. It has been implemented in several
-languages and is widely used. 
+OpenSource Computer Vision, more commonly known as OpenCV, is a more advanced
+image manipulation and processing software than PIL. It has been implemented
+in several languages and is widely used.
 
 Installation
 ~~~~~~~~~~~~
 
-In Python, image processing using OpenCV is implemented using the ``cv2`` and ``NumPy`` modules. 
-The `installation instructions for OpenCV <http://docs.opencv.org/2.4/doc/tutorials/introduction/table_of_content_introduction/table_of_content_introduction.html#table-of-content-introduction>`_ should guide you through configuring the project for yourself.
+In Python, image processing using OpenCV is implemented using the ``cv2`` and
+``NumPy`` modules.  The `installation instructions for OpenCV
+<http://docs.opencv.org/2.4/doc/tutorials/introduction/table_of_content_introduction/table_of_content_introduction.html#table-of-content-introduction>`_
+should guide you through configuring the project for yourself.
 
 NumPy can be downloaded from the Python Package Index(PyPI):
 
 .. code-block:: console
-    
-    $ pip install numpy 
+
+    $ pip install numpy
 
 
 Example
@@ -87,7 +88,7 @@ Example
 .. code-block:: python
 
     from cv2 import *
-    import numpy as np 
+    import numpy as np
     #Read Image
     img = cv2.imread('testimg.jpg')
     #Display Image
@@ -97,9 +98,10 @@ Example
 
     #Applying Grayscale filter to image
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    
+
     #Saving filtered image to new file
-    cv2.imwrite('graytest.jpg',gray) 
+    cv2.imwrite('graytest.jpg',gray)
 
-There are more Python-implemented examples of OpenCV in this `collection of tutorials <http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html>`_.
-
+There are more Python-implemented examples of OpenCV in this `collection of
+tutorials
+<http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html>`_.
