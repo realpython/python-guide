@@ -101,6 +101,5 @@ Example
     #Saving filtered image to new file
     cv2.imwrite('graytest.jpg',gray) 
 
-There are more examples of OpenCV in the documentation
-`here <http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html>`_.
+There are more examples of OpenCV in the `documentation <http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html>`_.
 
