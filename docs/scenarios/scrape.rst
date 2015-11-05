@@ -38,7 +38,10 @@ parse it using the ``html`` module and save the results in ``tree``:
 .. code-block:: python
 
     page = requests.get('http://econpy.pythonanywhere.com/ex/001.html')
-    tree = html.fromstring(page.text)
+    tree = html.fromstring(page.content)
+
+(We need to use ``page.content`` rather than ``page.text`` because
+``html.fromstring`` implicitly expects ``bytes`` as input.)
 
 ``tree`` now contains the whole HTML file in a nice tree structure which
 we can go over two different ways: XPath and CSSSelect. In this example, we
