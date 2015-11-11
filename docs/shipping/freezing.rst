@@ -113,6 +113,7 @@ OS X
 
 py2app
 ~~~~~~
+(from https://pythonhosted.org/py2app/tutorial.html)
 
 Install py2app using pip:
 
