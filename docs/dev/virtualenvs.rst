@@ -1,3 +1,5 @@
+.. _virtualenvironments-ref:
+
 Virtual Environments
 ====================
 

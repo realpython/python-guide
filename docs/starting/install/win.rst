@@ -77,7 +77,7 @@ your global site-packages directory clean and manageable.
 For example, you can work on a project which requires Django 1.3 while also
 maintaining a project which requires Django 1.0.
 
-To start using and see more information: `Virtual Environments <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs. 
+To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
 
 
 --------------------------------
