@@ -63,6 +63,7 @@ different scenarios.
    scenarios/xml
    scenarios/json
    scenarios/crypto
+   scenarios/clibs
 
 
 Shipping Great Code
