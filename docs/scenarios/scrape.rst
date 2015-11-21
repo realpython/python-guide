@@ -97,7 +97,7 @@ Let's see what we got exactly:
     
 
 Web Scraping Best Practices 
-------------
+----------------------------
 1) Make scraping slower, do not DDoS the server.  
     Include random sleeps in between requests (if making multiple) 
     
