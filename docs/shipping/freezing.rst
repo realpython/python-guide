@@ -117,6 +117,50 @@ py2app
 PyInstaller
 ~~~~~~~~~~~
 
+PyInstaller can be used to build Unix executables and windowed apps on Mac OS X 10.6 (Snow Leopard) or newer.
+
+- To install PyInstaller, use pip:
+
+  .. code-block:: console
+
+   $ pip install pyinstaller
+
+- To create a standard Unix executable, from say :code:`script.py`, use:
+
+  .. code-block:: console
+
+   $ pyinstaller script.py
+
+  This creates,
+
+ - a :code:`script.spec` file, analogous to a :code:`make` file
+ - a :code:`build` folder, that holds some log files
+ - a :code:`dist` folder, that holds the main executable :code:`script`, and some dependent Python libraries,
+
+ all in the same folder as :code:`script.py`. PyInstaller puts all the Python libraries used in :code:`script.py` into the :code:`dist` folder, so when distributing the executable, distribute the whole :code:`dist` folder.
+
+- The :code:`script.spec` file can be edited to `customise the build <http://pythonhosted.org/PyInstaller/#spec-file-operation>`_, with options such as
+
+ - bundling data files with the executable
+ - including run-time libraries (:code:`.dll` or :code:`.so` files) that PyInstaller can't infer automatically
+ - adding Python run-time options to the executable,
+
+ Now :code:`script.spec` can be run with :code:`pyinstaller` (instead of using :code:`script.py` again):
+
+ .. code-block:: console
+
+   $ pyinstaller script.spec
+
+- To create a standalone windowed OS X application, use the :code:`--windowed` option
+
+ .. code-block:: console
+
+   $ pyinstaller --windowed script.spec
+
+ This creates a :code:`script.app` in the :code:`dist` folder. Make sure to use GUI packages in your Python code, like `PyQt <https://riverbankcomputing.com/software/pyqt/intro>`_ or `PySide <http://wiki.qt.io/About-PySide>`_, to control the graphical parts of the app.
+
+ There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option. 
+
 
 Linux
 -----
