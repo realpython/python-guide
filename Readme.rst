@@ -19,7 +19,7 @@ Topics include:
 - Platform- and version-specific installations
 - Py2app, Py2exe, bbfreeze, pyInstaller
 - Pip
-- Numpy, scipy, statpy, pylot, matlib
+- Numpy, scipy, statpy, pyplot, matplotlib
 - Virtualenv
 - Fabric
 - Exhaustive module recommendations, grouped by topic/purpose
