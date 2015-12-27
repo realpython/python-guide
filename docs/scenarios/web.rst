@@ -80,7 +80,7 @@ email to flask@librelist.com and reply to the confirmation email.
 
 Web.py
 ------
-`Web.py <http://webpy.org/>`_ web.py is a web framework for Python that is as 
+`Web.py <http://webpy.org/>`_ is a web framework for Python that is as 
 simple as it is powerful. You won't find wizards or boilerplate websites 
 in Web.py and will have to build from scratch. Web.py provides no administration 
 utility. Web.py is the brainchild of Aaron Swartz, who developed it while working
