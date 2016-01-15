@@ -143,7 +143,7 @@ Learn to Program in Python with Codeacademy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Codeacademy course for the absolute Python beginner. This free and interactive course provides and teaches the basics (and beyond) of Python programming whilst testing the user's knowledge in between progress.
-This course also features a built in interpreter for receiving instant feedback on your learning.
+This course also features a built-in interpreter for receiving instant feedback on your learning.
 
     `Learn to Program in Python with Codeacademy <http://www.codecademy.com/en/tracks/python>`_
 
