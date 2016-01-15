@@ -242,6 +242,21 @@ through a series of code transformations, "When you see this, do that instead."
     `Transforming Code into Beautiful, Idiomatic Python <https://www.youtube.com/watch?v=OSGv2VnC0go>`_
 
 
+Fullstack Python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Fullstack Python offers a complete top-to-bottom resource for web development
+using Python. 
+
+From setting up the webserver, to designing the front-end, choosing a database,
+optimizing/scaling, etc.
+
+As the name suggests, it covers everything you need to build and run a complete
+web app from scratch.
+
+    `Fullstack Python <https://www.fullstackpython.com>`_
+
+
 References
 ----------
 
