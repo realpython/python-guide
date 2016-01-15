@@ -60,6 +60,7 @@ different scenarios.
    scenarios/speed
    scenarios/scientific
    scenarios/imaging
+   scenarios/serialization
    scenarios/xml
    scenarios/json
    scenarios/crypto
