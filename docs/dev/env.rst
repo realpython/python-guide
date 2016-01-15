@@ -156,6 +156,13 @@ Enthought Canopy
 IDE which is focused towards Scientists and Engineers as it provides pre 
 installed libraries for data analysis. 
 
+Python(x,y)
+-----------
+`Python(x,y) <http://python-xy.github.io/>`_ Python(x,y) is a scientific-oriented
+Python Distribution based on Qt and Spyder. Its purpose is to help scientific 
+programmers used to interpreted languages (such as MATLAB or IDL) or compiled 
+languages (C/C++ or Fortran) to switch to Python.
+
 Eclipse
 -------
 
