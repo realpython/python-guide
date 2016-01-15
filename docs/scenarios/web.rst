@@ -132,6 +132,18 @@ a running web application in the browser.
 **Support** can also be found in the
 `documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`__.
 
+Falcon
+--------
+
+`Falcon <http://falconframework.org/>`_ is a simple but fast web framework that
+is suited for building RESTful APIs. The framework claims increased performance
+on `benchmarks <http://falconframework.org/#Metrics>`_ for some comparable frameworks
+including Bottle and Flask. In addition to the basic framework a number of
+`talons <https://github.com/talons/talons>`_ can be added that serve as middleware
+(e.g., for authentication). 
+
+**Support** can be found on the `mailing list <http://librelist.com/browser/falcon/>`__
+and documentation on `readthedocs <http://falcon.readthedocs.org/en/stable/index.html>`__.
 
 Web Servers
 :::::::::::
