@@ -4,4 +4,3 @@ install: pip install sphinx
 script: 
 - make doctest
 - make html
-- sphinx-build -E -W -c docs -b html docs docs/_build/html
