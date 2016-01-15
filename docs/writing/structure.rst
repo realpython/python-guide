@@ -320,10 +320,10 @@ Context Managers
 ----------------
 
 A context manager is a Python object that provides extra contextual information
-to an action. This extra information takes the form of running a function upon
-initiating the context using the ``with`` statement as well as running a function
+to an action. This extra information takes the form of running a callable upon
+initiating the context using the ``with`` statement, as well as running a callable
 upon completing all the code inside the ``with`` block. The most well known
-example of using a context manager is operating on a file:
+example of using a context manager is shown here, opening on a file:
 
 .. code-block:: python
 
@@ -332,7 +332,7 @@ example of using a context manager is operating on a file:
 
 Anyone familiar with this pattern knows that invoking ``open`` in this fashion
 ensures that ``f``'s ``close`` method will be called at some point. This reduces
-a developer's cognitive load and makes code easier to read.
+a developer's cognitive load and makes the code easier to read.
 
 There are two easy ways to implement this functionality yourself: using a class
 or using a generator. Let's implement the above functionality ourselves, starting
@@ -359,7 +359,7 @@ by the ``with`` statement. CustomOpen is first instantiated and then its
 ``f`` in the ``as f`` part of the statement. When the contents of the ``with`` block
 is finished executing, the ``__exit__`` method is then called.
 
-And now the generator approach using Python's own 
+And now the generator approach using Python's own
 `contextlib <https://docs.python.org/2/library/contextlib.html>`_:
 
 .. code-block:: python
