@@ -349,7 +349,7 @@ Instead, use a list comprehension:
 
 .. code-block:: python
 
-    four_lists = [[] for __ in xrange(4)]
+    four_lists = [[] for __ in range(4)]
 
 Create a string from a list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
