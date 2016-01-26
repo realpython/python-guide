@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'pythonguide'
-copyright = u'2016. A <a href="http://kennethreitz.com/pages/open-projects.html">Kenneth Reitz</a> Project. <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"> Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (by-nc-sa)</a>'
+copyright = u'2016. A <a href="http://kennethreitz.com/pages/open-projects.html">Kenneth Reitz</a> Project. <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
