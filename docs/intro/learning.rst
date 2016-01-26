@@ -291,6 +291,15 @@ of the language.
 
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_
 
+Python Essential Reference
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python Essential Reference, written by David Beazley, is the definitive reference
+guide to Python. It concisely explains both the core language and the most essential
+parts of the standard library. It covers Python 3 and 2.6 versions.
+
+    `Python Essential Reference <http://www.dabeaz.com/per.html>`_
+
 Python Pocket Reference
 ~~~~~~~~~~~~~~~~~~~~~~~
 
