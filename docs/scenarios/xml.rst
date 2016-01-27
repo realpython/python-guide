@@ -59,7 +59,7 @@ can be loaded into a Python dict like this:
     import xmltodict
 
     with open('path/to/file.xml') as fd:
-        obj = xmltodict.parse(fd.read())
+        doc = xmltodict.parse(fd.read())
 
 and then you can access elements, attributes and values like this:
 
