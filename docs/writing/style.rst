@@ -350,6 +350,8 @@ Instead, use a list comprehension:
 .. code-block:: python
 
     four_lists = [[] for __ in xrange(4)]
+    
+Note: Use range() instead of xrange() in Python 3
 
 Create a string from a list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
