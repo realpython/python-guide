@@ -4,21 +4,25 @@
 Freezing Your Code
 ==================
 
-To 'Freeze' your code is to distribute to end-users as an executable which
-includes a bundled Python interpreter.
+'Freezing' your code is creating a single-file executable file to distribute 
+to end-users, that contains all of your application code as well as the 
+Python interpreter.
 
-Applications such as 'Dropbox', BitTorrent clients, 'Eve Online' and
-'Civilisation IV' do this.
+Applications such as 'Dropbox', 'Eve Online',  'Civilisation IV', and
+BitTorrent clients do this.
 
-The advantage of distributing this way is that your application will work even
-if the user doesn't already have the required version of Python installed. On
-Windows, and even on many Linux distributions and OSX versions, the right
+The advantage of distributing this way is that your application will "just work",
+even if the user doesn't already have the required version of Python installed. 
+On Windows, and even on many Linux distributions and OS X, the right
 version of Python will not already be installed.
 
-One disadvantage is that it will bloat your distribution by about 2MB.
-Another problem is that your application will not receive any security updates
-to the version of Python it uses unless you freeze a new version and get
-users to download it.
+Besides, end-user software should always be in an executable format. Files 
+ending in ``.py`` are for software engineers and system administrators. 
+
+One disadvantage of freezing is that it will increase the size of your 
+distribution by about 2–12MB. Also, you will be responsible for shipping
+updated versions of your application when security vulnerabilities to 
+Python are patched. 
 
 Alternatives to Freezing
 ------------------------
@@ -33,8 +37,8 @@ On Linux, an alternative to freezing is to
 .. todo:: Fill in "Freezing Your Code" stub
 
 
-Comparison
-----------
+Comparison of Freezing Tools
+----------------------------
 
 Solutions and platforms/features supported:
 
