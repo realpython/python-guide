@@ -4,7 +4,7 @@
 Freezing Your Code
 ==================
 
-'Freezing' your code is creating a single-file executable file to distribute 
+"Freezing" your code is creating a single-file executable file to distribute 
 to end-users, that contains all of your application code as well as the 
 Python interpreter.
 
