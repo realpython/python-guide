@@ -6,13 +6,21 @@
 The Hitchhiker's Guide to Python!
 =================================
 
-Welcome to The Hitchhiker's Guide to Python.
+Greetings, Earthling! Welcome to The Hitchhiker's Guide to Python.
 
-**This guide is currently under heavy active development.**  If you'd like to help, 
+**This is a living, breathing guide.**  If you'd like to contribute,
 `fork us on GitHub <https://github.com/kennethreitz/python-guide>`_!
 
-This *opinionated* guide exists to provide both novice and expert Python
+This handcrafted guide exists to provide both novice and expert Python
 developers a best practice handbook to the installation, configuration, and
 usage of Python on a daily basis.
+
+This guide is **opinionated** in a way that is almost, but not quite, entirely
+*unlike* Python's official documentation. You won't find a list of every Python web framework
+available here. Rather, you'll find a nice concise list of highly recommended
+options.
+
+
+Let's get started! But first, make sure you know where your towel is.
 
 .. include:: contents.rst.inc
