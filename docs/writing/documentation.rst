@@ -154,7 +154,7 @@ Pycco_
     and is a port of the node.js Docco_. It makes code into a
     side-by-side HTML code and documentation.
 
-.. _Pycco: http://fitzgen.github.com/pycco
+.. _Pycco: https://pycco-docs.github.io/pycco/
 .. _Docco: http://jashkenas.github.com/docco
 
 Ronn_
