@@ -1,2 +1,12 @@
-requests
-sphinx
+alabaster==0.7.7
+Babel==2.2.0
+docutils==0.12
+Jinja2==2.8
+MarkupSafe==0.23
+Pygments==2.1.1
+pytz==2015.7
+six==1.10.0
+snowballstemmer==1.2.1
+Sphinx==1.3.5
+sphinx-rtd-theme==0.1.9
+wheel==0.29.0
