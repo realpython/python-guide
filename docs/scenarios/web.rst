@@ -105,9 +105,9 @@ with a heavier focus on modularity. It comes with a smaller number of
 libraries ("batteries") built-in, and encourages users to extend its
 base functionality.
 
-Pyramid does not have a large user base, ulike Django and Flask (or even
-Tornado). It's a capable framework, but not a very popular choice for
-new Python web applications today.
+Pyramid does not have a large user base, ulike Django and Flask. It's a
+capable framework, but not a very popular choice for new Python web
+applications today.
 
 Web Servers
 :::::::::::
