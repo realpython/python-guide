@@ -95,7 +95,7 @@ Tornado
 `Tornado <http://www.tornadoweb.org/>`_ is an asyncronous web framework
 for Python that has its own event loop. This allows it to natively support
 WebSockets, for example. Well-written Tornado applications are known to
-have excellent performance charecteristics.
+have excellent performance characteristics.
 
 Pyramid
 --------
