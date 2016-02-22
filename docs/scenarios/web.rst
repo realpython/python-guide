@@ -61,6 +61,7 @@ project as-is, or customized to fit your needs.
 There are annual Django conferences `in the United States
 <http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
 
+The majority of new Python web applications today are built with Django.
 
 Flask
 -----
@@ -84,61 +85,29 @@ For those that do, there are many
  `Extensions <http://flask.pocoo.org/extensions/>`_ available that may
  suit your needs. Or, you can easily use any library you want yourself!
 
-
-Web.py
-------
-`Web.py <http://webpy.org/>`_ is a web framework for Python that is as
-simple as it is powerful. You won't find wizards or boilerplate websites
-in Web.py and will have to build from scratch. Web.py provides no administration
-utility. Web.py is the brainchild of Aaron Swartz, who developed it while working
-on Reddit.com.
-
-
-Web2py
-------
-A full stack web framework and platform focused in the ease of use. It focuses on
-rapid development, favors convention over configuration approach and follows a
-model–view–controller (MVC) architectural pattern.
-
-
-Werkzeug
---------
-
-`Werkzeug <http://werkzeug.pocoo.org/>`_ is not actually a real framework, but
-rather a very powerful set of tools for building web applications. It provides
-URL routing utilities, request and response objects and a basic development
-server. It is mostly used where users need more flexibility for their
-application than is commonly found in other web frameworks.
-
-Support can be found on its `mailing list <http://werkzeug.pocoo.org/community/#mailinglist>`_.
+Flask is default choice for any Python web application that isn't a good
+fit for Django.
 
 
 Tornado
 --------
-`Tornado <http://www.tornadoweb.org/>`_ is a scalable, non-blocking web server
-and web application framework with a relative simple usage. Tornado is known
-for its high performance.  It was initially developed for
-`friendfeed <http://friendfeed.com/>`_ , a real time chat and blog system.
 
-In the Jinja2 template engine example it is used to serve the rendered pages.
-
+`Tornado <http://www.tornadoweb.org/>`_ is an asyncronous web framework
+for Python that has its own event loop. This allows it to natively support
+WebSockets, for example. Well-written Tornado applications are known to
+have excellent performance charecteristics.
 
 Pyramid
 --------
 
-`Pyramid <http://www.pylonsproject.org/>`_ lies somewhere between a big
-framework like Django and the microframeworks: It comes with a lot of libraries
-and functionality and can thus not be considered lightweight. On the other
-hand, it does not provide all the functionality Django does. Instead Pyramid
-brings basic support for most regular tasks and provides a great deal of
-extensibility. Additionally, Pyramid has a huge focus on complete
-`documentation <http://docs.pylonsproject.org/en/latest/docs/pyramid.html>`__.
-As a little extra it comes with the Werkzeug Debugger which allows you to debug
-a running web application in the browser.
+`Pyramid <http://www.pylonsproject.org/>`_ is a lot like Django, except
+with a heavier focus on modularity. It comes with a smaller number of
+libraries ("batteries") built-in, and encourages users to extend its
+base functionality.
 
-**Support** can also be found in the
-`documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`__.
-
+Pyramid does not have a large user base, ulike Django and Flask (or even
+Tornado). It's a capable framework, but not a very popular choice for
+new Python web applications today.
 
 Web Servers
 :::::::::::
@@ -169,14 +138,16 @@ servers and provide top performance [3]_.
 Gunicorn
 --------
 
-`Gunicorn <http://gunicorn.org/>`_ (Green Unicorn) is a WSGI server used
-to serve Python applications. It is a Python interpretation of the Ruby
-`Unicorn <http://unicorn.bogomips.org/>`_ server. Unicorn is designed to be
-lightweight, easy to use, and uses many UNIX idioms. Gunicorn is not designed
-to face the internet -- it was designed to run behind Nginx which buffers
-slow requests and takes care of other important considerations. A sample
-setup for Nginx + Gunicorn can be found in the
-`Gunicorn help <http://gunicorn.org/index.html#deployment>`_.
+`Gunicorn <http://gunicorn.org/>`_ (Green Unicorn) is a pure-python WSGI
+server used to serve Python applications. Unlike other Python web servers,
+it has a thoughtful user-interface, and is extremely easy to use and
+configure.
+
+Gunicorn has sane and reasonable defaults for configurations. However, some
+other servers, like uWSGI, are tremendously more customizable, and therefore,
+are much more difficult to effectively user.
+
+Gunicorn is the default choice for new Python web applications today.
 
 .. _uwsgi-ref:
 
@@ -196,6 +167,7 @@ Python, passing environment variables and further tuning.  For full details,
 see `uWSGI magic
 variables <https://uwsgi-docs.readthedocs.org/en/latest/Vars.html>`_.
 
+I do not recommend usign uWSGI unless you think you need to.
 
 .. _server-best-practices-ref:
 
@@ -235,40 +207,19 @@ logging, scheduled and background tasks, billing and payment, etc.
 Heroku
 ~~~~~~
 
-`Heroku <http://www.heroku.com/>`_'s
-`Cedar stack <http://devcenter.heroku.com/articles/cedar>`_ offers first class
-support for Python 2.7 applications.
+`Heroku <http://www.heroku.com/python>`_ offers first-class support for
+Python 2.7–3.5 applications.
 
-Heroku allows you to run as many Python web applications as you like, 24/7 and
-free of charge. Heroku is best described as a horizontal scaling platform. They
-start to charge you once you "scale" your application to run on more than one
-Dyno (abstracted servers) at a time.
+Heroku allows you to run Python web applications free of charge. It is best
+described as a horizontal scaling platform. They start to charge you once you
+"scale" your application to run in production. Hobby pricing is available.
 
 Heroku maintains `articles <https://devcenter.heroku.com/categories/python>`_
 on using Python with Heroku as well as `step-by-step instructions
 <https://devcenter.heroku.com/articles/getting-started-with-python>`_ on
 how to set up your first application.
 
-
-DotCloud
-~~~~~~~~
-
-`DotCloud <http://www.dotcloud.com/>`_ supports WSGI applications and
-background/worker tasks natively on their platform. Web applications run
-Python version 2.6, use :ref:`nginx <nginx-ref>` and :ref:`uWSGI
-<uwsgi-ref>`, and allow custom configuration of both for advanced users.
-
-DotCloud uses a custom command-line API client which can work with
-applications managed in git repositories or any other version control
-system.
-
-DotCloud has a free plan with limited database size, and without extra
-services (caching…).
-
-See the `DotCloud documentation on Python
-<http://docs.dotcloud.com/services/python/>`_ for more information and help
-getting started.
-
+Heroku is the recommended PaaS for deploying Python web applications today.
 
 Gondor
 ~~~~~~
