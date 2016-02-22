@@ -184,3 +184,58 @@ When the Gotcha Isn't a Gotcha
 Sometimes you want your closures to behave this way. Late binding is good in
 lots of situations. Looping to create unique functions is unfortunately a case
 where they can cause hiccups.
+
+
+
+Bytecode (.pyc) Files Everywhere
+--------------------------------
+
+By default, when executing Python code from files, the Python interpreter
+will automatically write a bytecode version of that file to disk, e.g.
+``module.pyc``.
+
+These ``.pyc`` files should not be checked into your source code repositories.
+
+Theoretically, this behavior is on by default, for performance reasons.
+Without these bytecode files present, Python would re-generate the bytecode
+every time the file is loaded.
+
+
+Disabling Bytecode (.pyc) Files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Luckily, the process of generating the bytecode is extremely fast, and isn't
+something you need to worry about while developing your code.
+
+Those files are annoying, so let's get rid of them!
+
+::
+
+    $ export PYTHONDONTWRITEBYTECODE=1
+
+With the ``$PYTHONDONTWRITEBYTECODE`` environment variable set, Python will
+no longer write these files to disk, and your development environment will
+remain nice and clean.
+
+I recommend setting this environment variable in your ``~/.profile``.
+
+Removing Bytecode (.pyc) Files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Here's nice trick for removing all of these files, if they already exist::
+
+    $ find . -name "*.pyc" -exec rm -rf {} \;
+
+Run that from the root directory of your project, and all ``.pyc`` files
+will suddenly vanish. Much better.
+
+
+
+
+
+
+
+
+
+
+
