@@ -97,6 +97,8 @@ for Python that has its own event loop. This allows it to natively support
 WebSockets, for example. Well-written Tornado applications are known to
 have excellent performance characteristics.
 
+I do not recommend using Tornado unless you think you need it.
+
 Pyramid
 --------
 
