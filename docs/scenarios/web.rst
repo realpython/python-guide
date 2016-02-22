@@ -229,6 +229,7 @@ information.
 
 Gondor has a guide on deploying `Django projects <https://gondor.io/support/django/setup/>`_.
 
+Gondor is run by a significantly smaller (but loved!) company than Heroku.
 
 Templating
 ::::::::::
