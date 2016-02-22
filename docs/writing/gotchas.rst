@@ -187,8 +187,8 @@ where they can cause hiccups.
 
 
 
-Bytecode (.pyc) Files Everywhere
---------------------------------
+Bytecode (.pyc) Files Everywhere!
+---------------------------------
 
 By default, when executing Python code from files, the Python interpreter
 will automatically write a bytecode version of that file to disk, e.g.
