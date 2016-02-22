@@ -76,10 +76,10 @@ Wrap text lines at 78 characters. Where necessary, lines may exceed 78
 characters, especially if wrapping would make the source text more difficult
 to read.
 
-Use of the serial comma (also known as the Oxford comma) is 100% non-optional.
-Any attempt to submit content with a missing serial comma will result in
-permanent banishment from this project, due to complete and total lack
-of taste.
+Use of the `serial comma <https://en.wikipedia.org/wiki/Serial_comma>`_
+(also known as the Oxford comma) is 100% non-optional. Any attempt to
+submit content with a missing serial comma will result in permanent banishment
+from this project, due to complete and total lack of taste.
 
 Code Examples
 -------------
