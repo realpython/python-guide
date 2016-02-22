@@ -49,10 +49,10 @@ Django
 ------
 
 `Django <http://www.djangoproject.com>`_ is a "batteries included" web
-application framework. By providing many utilities and patterns out of the
-box, Django aims to make it possible to build complex, database-backed web
-applications quickly, while encouraging best practices in code written using
-it.
+application framework, and is an excellent choice for creating content-oriented
+websites. By providing many utilities and patterns out of the box, Django aims
+to make it possible to build complex, database-backed web applications quickly,
+while encouraging best practices in code written using it.
 
 Django has a large and active community, and many pre-built `re-usable
 modules <http://djangopackages.com/>`_ that can be incorporated into a new
@@ -65,24 +65,31 @@ There are annual Django conferences `in the United States
 Flask
 -----
 
-`Flask <http://flask.pocoo.org/>`_ is a "microframework" for Python. Rather
-than aiming to provide everything you could possibly need, Flask implements
-the most commonly-used core components of a web application framework, like
-URL routing, request and response objects, and templates. As a user of
-Flask, it is therefore up to you to choose and integrate other components
-you may need, such as database access or form generation and validation. For
-many popular modules, `Extensions <http://flask.pocoo.org/extensions/>`_ may
-already exist to suit your needs.
+`Flask <http://flask.pocoo.org/>`_ is a "microframework" for Python, and is
+an excellent choice for building smaller applications, APIs, and web services.
 
-**Support** for flask can best be found in its mailing list. Just shoot an
-email to flask@librelist.com and reply to the confirmation email.
+Building an app with Flask is a lot like writing standard Python modules,
+except some functions have routes attached to them. It's really beautiful.
+
+Rather than aiming to provide everything you could possibly need, Flask
+implements the most commonly-used core components of a web application
+framework, like URL routing, request and response objects, and templates.
+
+If you use Flask, it is up to you to choose other components for your
+application, if any. For example, database access or form generation and
+validation are not built-in functions of Flask.
+
+This is great, because many web applications don't need those features.
+For those that do, there are many
+ `Extensions <http://flask.pocoo.org/extensions/>`_ available that may
+ suit your needs. Or, you can easily use any library you want yourself!
 
 
 Web.py
 ------
-`Web.py <http://webpy.org/>`_ is a web framework for Python that is as 
-simple as it is powerful. You won't find wizards or boilerplate websites 
-in Web.py and will have to build from scratch. Web.py provides no administration 
+`Web.py <http://webpy.org/>`_ is a web framework for Python that is as
+simple as it is powerful. You won't find wizards or boilerplate websites
+in Web.py and will have to build from scratch. Web.py provides no administration
 utility. Web.py is the brainchild of Aaron Swartz, who developed it while working
 on Reddit.com.
 
@@ -90,7 +97,7 @@ on Reddit.com.
 Web2py
 ------
 A full stack web framework and platform focused in the ease of use. It focuses on
-rapid development, favors convention over configuration approach and follows a 
+rapid development, favors convention over configuration approach and follows a
 model–view–controller (MVC) architectural pattern.
 
 
@@ -463,7 +470,7 @@ The basic TAL language is simple enough to grasp from an example:
       </table>
     </body>
   </html>
-  
+
 
 The `<span tal:replace="expression" />` pattern for text insertion is common
 enough that if you do not require strict validity in your unrendered templates,
@@ -484,9 +491,9 @@ you can replace it with a more terse and readable syntax that uses the pattern
       </table>
     </body>
   </html>
-  
 
-But keep in mind that the full `<span tal:replace="expression">Default Text</span>` 
+
+But keep in mind that the full `<span tal:replace="expression">Default Text</span>`
 syntax also allows for default content in the unrendered template.
 
 Mako
