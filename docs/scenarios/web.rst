@@ -233,7 +233,8 @@ information.
 
 Gondor has a guide on deploying `Django projects <https://gondor.io/support/django/setup/>`_.
 
-Gondor is run by a small company, and does not have a large number of users.
+Gondor is run by a small company and focuses on helping businesses find success with
+Python and Django.
 
 Templating
 ::::::::::
