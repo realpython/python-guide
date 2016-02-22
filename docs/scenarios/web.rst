@@ -186,9 +186,6 @@ protection, and basic authentication.
 Hosting
 :::::::
 
-Platform-as-a-Service
----------------------
-
 Platform-as-a-Service (PaaS) is a type of cloud computing infrastructure
 which abstracts and manages infrastructure, routing, and scaling of web
 applications. When using a PaaS, application developers can focus on writing
@@ -205,7 +202,7 @@ logging, scheduled and background tasks, billing and payment, etc.
 
 
 Heroku
-~~~~~~
+------
 
 `Heroku <http://www.heroku.com/python>`_ offers first-class support for
 Python 2.7–3.5 applications.
@@ -222,7 +219,7 @@ how to set up your first application.
 Heroku is the recommended PaaS for deploying Python web applications today.
 
 Gondor
-~~~~~~
+------
 
 `Gondor <https://gondor.io/>`_ is a PaaS specialized for deploying Django
 and Pinax applications. Gondor recommends Django version 1.6 and supports any
