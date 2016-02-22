@@ -270,12 +270,11 @@ dynamic content to the template engine, and to the templates themselves.
 
 Jinja2
 ------
-`Jinja2 <http://jinja.pocoo.org/>`_ is a template engine which is similar to
-the Django template system with some extra features. It is a text-based
-template language and thus can be used to generate any markup. It allows
-customization of filters, tags, tests and globals, and unlike the template
-system implemented in the Django Framework, also allows calling functions.
-Jinja2 is released under the BSD license.
+`Jinja2 <http://jinja.pocoo.org/>`_ is a very well-regarded template engine.
+
+It uses a text-based template language and can thus be used to generate any
+type markup, not just HTML. It allows customization of filters, tags, tests
+and globals. It features many improvements over Django's templating system.
 
 Here some important html tags in Jinja2:
 
@@ -295,7 +294,6 @@ Here some important html tags in Jinja2:
     {% for item in list %}
     <li>{{ item }}</li>
     {% endfor %}
-
 
 
 The next listings is an example of a web site in combination with the Tornado
@@ -385,8 +383,12 @@ into the corresponding block in the :file:`base.html` page.
         </p>
     {% endblock %}
 
+
+Jinja2 is the recommended templating library for new Python web applications.
+
 Chameleon
 ---------
+
 `Chameleon <https://chameleon.readthedocs.org/>`_ Page Templates are an HTML/XML template
 engine implementation of the `Template Attribute Language (TAL) <http://en.wikipedia.org/wiki/Template_Attribute_Language>`_,
 `TAL Expression Syntax (TALES) <http://chameleon.readthedocs.org/en/latest/reference.html#expressions-tales>`_,
@@ -445,8 +447,11 @@ you can replace it with a more terse and readable syntax that uses the pattern
 But keep in mind that the full `<span tal:replace="expression">Default Text</span>`
 syntax also allows for default content in the unrendered template.
 
+Being from the Pyramid world, Chameleon is not widely used.
+
 Mako
 ----
+
 `Mako <http://www.makotemplates.org/>`_ is a template language that compiles to Python
 for maximum performance. Its syntax and api is borrowed from the best parts of other
 templating languages like Django and Jinja2 templates. It is the default template
@@ -481,6 +486,8 @@ To render a very basic template, you can do the following:
 
     from mako.template import Template
     print(Template("hello ${data}!").render(data="world"))
+
+Mako is well respected within the Python web community.
 
 .. rubric:: References
 
