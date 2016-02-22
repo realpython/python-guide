@@ -350,7 +350,7 @@ Instead, use a list comprehension:
 .. code-block:: python
 
     four_lists = [[] for __ in xrange(4)]
-    
+
 Note: Use range() instead of xrange() in Python 3
 
 Create a string from a list
@@ -389,29 +389,29 @@ Take the following code for example:
 Even though both functions look identical, because *lookup_set* is utilizing
 the fact that sets in Python are hashtables, the lookup performance
 between the two is very different. To determine whether an item is in a list,
-Python will have to go through each item until it finds a matching item. 
+Python will have to go through each item until it finds a matching item.
 This is time consuming, especially for long lists. In a set, on the other
 hand, the hash of the item will tell Python where in the set to look for
 a matching item. As a result, the search can be done quickly, even if the
-set is large. Searching in dictionaries works the same way. For 
+set is large. Searching in dictionaries works the same way. For
 more information see this
 `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_
 page. For detailed information on the amount of time various common operations
-take on each of these data structures, see 
+take on each of these data structures, see
 `this page <https://wiki.python.org/moin/TimeComplexity?>`_.
 
-Because of these differences in performance, it is often a good idea to use 
-sets or dictionaries instead of lists in cases where: 
+Because of these differences in performance, it is often a good idea to use
+sets or dictionaries instead of lists in cases where:
 
 * The collection will contain a large number of items
 
 * You will be repeatedly searching for items in the collection
 
-* You do not have duplicate items. 
+* You do not have duplicate items.
 
-For small collections, or collections which you will not frequently be 
-searching through, the additional time and memory required to set up the 
-hashtable will often be greater than the time saved by the improved search 
+For small collections, or collections which you will not frequently be
+searching through, the additional time and memory required to set up the
+hashtable will often be greater than the time saved by the improved search
 speed.
 
 
@@ -451,11 +451,17 @@ group <http://artifex.org/~hblanks/talks/2011/pep20_by_example.pdf>`_.
 PEP 8
 -----
 
-:pep:`8` is the de-facto code style guide for Python.
+:pep:`8` is the de-facto code style guide for Python. A high quality,
+easy-to-read version of PEP 8 is also available at `pep8.org <http://pep8.org/>`_.
 
-Conforming your Python code to PEP 8 is generally a good idea and helps make
-code more consistent when working on projects with other developers. There
-is a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
+This is highly recommended reading. The entire Python community does their
+best to adhere to the guidelines laidout within this document. Some project
+may sway from it from time to time, while others may
+`ammend its recommendations <http://docs.python-requests.org/en/master/dev/contributing/#kenneth-reitz-s-code-style>`_.
+
+That being said, conforming your Python code to PEP 8 is generally a good
+idea and helps make code more consistent when working on projects with other
+developers. There is a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
 that can check your code for conformance. Install it by running the following
 command in your terminal:
 
