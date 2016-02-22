@@ -207,12 +207,12 @@ Heroku
 `Heroku <http://www.heroku.com/python>`_ offers first-class support for
 Python 2.7–3.5 applications.
 
-Heroku allows you to run Python web applications free of charge. It is best
-described as a horizontal scaling platform. They start to charge you once you
-"scale" your application to run in production. Hobby pricing is available.
+Heroku supports all types of Python web applications, servers, and frameworks.
+Applications can be developed on Heroku for free. Once your application is
+ready for production, you can upgrade to a Hobby or Professional application.
 
-Heroku maintains `articles <https://devcenter.heroku.com/categories/python>`_
-on using Python with Heroku as well as `step-by-step instructions
+Heroku maintains `detailed articles <https://devcenter.heroku.com/categories/python>`_
+on using Python with Heroku, as well as `step-by-step instructions
 <https://devcenter.heroku.com/articles/getting-started-with-python>`_ on
 how to set up your first application.
 
