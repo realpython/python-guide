@@ -167,7 +167,7 @@ Python, passing environment variables and further tuning.  For full details,
 see `uWSGI magic
 variables <https://uwsgi-docs.readthedocs.org/en/latest/Vars.html>`_.
 
-I do not recommend usign uWSGI unless you think you need to.
+I do not recommend using uWSGI if you don't know why you need it.
 
 .. _server-best-practices-ref:
 
