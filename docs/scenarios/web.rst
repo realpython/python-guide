@@ -107,7 +107,7 @@ with a heavier focus on modularity. It comes with a smaller number of
 libraries ("batteries") built-in, and encourages users to extend its
 base functionality.
 
-Pyramid does not have a large user base, ulike Django and Flask. It's a
+Pyramid does not have a large user base, unlike Django and Flask. It's a
 capable framework, but not a very popular choice for new Python web
 applications today.
 
@@ -150,6 +150,17 @@ other servers, like uWSGI, are tremendously more customizable, and therefore,
 are much more difficult to effectively use.
 
 Gunicorn is the recommended choice for new Python web applications today.
+
+
+Waitress
+--------
+
+`Waitress <http://waitress.readthedocs.org>`_ is a pure-python WSGI server
+that claims "very acceptable performance". It's documentation is not very
+detailed, but it offers some nice functionality that Gunicorn doesn't have
+(HTTP request buffering).
+
+Waitress is gaining popularity within the Python web development community.
 
 .. _uwsgi-ref:
 
