@@ -147,7 +147,7 @@ Gunicorn has sane and reasonable defaults for configurations. However, some
 other servers, like uWSGI, are tremendously more customizable, and therefore,
 are much more difficult to effectively use.
 
-Gunicorn is the default choice for new Python web applications today.
+Gunicorn is the recommended choice for new Python web applications today.
 
 .. _uwsgi-ref:
 
