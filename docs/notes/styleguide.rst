@@ -81,6 +81,8 @@ Use of the `serial comma <https://en.wikipedia.org/wiki/Serial_comma>`_
 submit content with a missing serial comma will result in permanent banishment
 from this project, due to complete and total lack of taste.
 
+Banishment? Is this a joke? Hopefully we will never have to find out.
+
 Code Examples
 -------------
 
