@@ -192,15 +192,6 @@ applications. When using a PaaS, application developers can focus on writing
 application code rather than needing to be concerned with deployment
 details.
 
-Most PaaS services offer a command-line interface that developers can use to
-set up and interrogate configuration, and to deploy new releases of an
-application to the service.
-
-PaaS services and their partners offer add-on functionality which is well
-integrated into the platform, such as database hosting, email services,
-logging, scheduled and background tasks, billing and payment, etc.
-
-
 Heroku
 ------
 
