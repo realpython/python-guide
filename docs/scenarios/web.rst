@@ -156,9 +156,9 @@ Waitress
 --------
 
 `Waitress <http://waitress.readthedocs.org>`_ is a pure-python WSGI server
-that claims "very acceptable performance". It's documentation is not very
-detailed, but it offers some nice functionality that Gunicorn doesn't have
-(HTTP request buffering).
+that claims "very acceptable performance". Its documentation is not very
+detailed, but it does offer some nice functionality that Gunicorn doesn't have
+(e.g. HTTP request buffering).
 
 Waitress is gaining popularity within the Python web development community.
 
