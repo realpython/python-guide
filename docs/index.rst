@@ -21,6 +21,6 @@ available here. Rather, you'll find a nice concise list of highly recommended
 options.
 
 
-Let's get started! But first, make sure you know where your towel is.
+Let's get started! But first, let's make sure you know where your towel is.
 
 .. include:: contents.rst.inc
