@@ -13,6 +13,15 @@ quick-start guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
+Python for Beginners
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+thepythonguru.com is a tutorial focuses on beginner programmers. It covers many python concepts
+in depth. It also teaches you some advance constructs of python like lambda expression, regular expression.
+At last it finishes off with  tutorial "How to access MySQL db using python"
+
+
+   `Python for beginners <http://thepythonguru.com/>`_
 
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
