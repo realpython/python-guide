@@ -49,7 +49,7 @@ will focus on the former.
 
 XPath is a way of locating information in structured documents such as
 HTML or XML documents. A good introduction to XPath is on
-`W3Schools <http://www.w3schools.com/xpath/default.asp>`_ .
+`W3Schools <http://www.w3schools.com/xsl/xpath_intro.asp>`_ .
 
 There are also various tools for obtaining the XPath of elements such as
 FireBug for Firefox or the Chrome Inspector. If you're using Chrome, you
