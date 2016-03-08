@@ -147,7 +147,7 @@ Requirements File
 
 
 A `pip requirements
-file <http://www.pip-installer.org/en/latest/requirements.html>`__
+file https://pip.pypa.io/en/stable/user_guide/#requirements-files>`__
 should be placed at the root of the repository. It should specify the
 dependencies required to contribute to the project: testing, building,
 and generating documentation.
