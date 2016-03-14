@@ -1,18 +1,12 @@
-.. _install-osx:
+.. _install3-osx:
 
-Installing Python on Mac OS X
-=============================
-
-.. note::
-    Check out our :ref:`guide for installing Python 3 on OS X<install3-osx>`.
+Installing Python 3 on Mac OS X
+================================
 
 The latest version of Mac OS X, El Capitan, **comes with Python 2.7 out of the box**.
 
-You do not need to install or configure anything else to use Python. Having said
-that, I would strongly recommend that you install the tools and libraries
-described in the next section before you start building Python applications for
-real-world use. In particular, you should always install ``pip``, as it makes
-it much easier for you to install and manage other third-party Python libraries.
+You do not need to install or configure anything else to use Python 2. These
+instructions document the installation of Python 3.
 
 The version of Python that ships with OS X is great for learning but it's not
 good for development. The version shipped with OS X may be out of date from the
@@ -60,11 +54,11 @@ line at the bottom of your :file:`~/.profile` file
 
     export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-Now, we can install Python 2.7:
+Now, we can install Python 3:
 
 .. code-block:: console
 
-    $ brew install python
+    $ brew install python3
 
 This will take a minute or two.
 
@@ -72,25 +66,47 @@ This will take a minute or two.
 Pip
 ----------------
 
-Homebrew installs ``pip`` for you.
+Homebrew installs ``pip3`` for you.
 
-``pip`` is a tool for easily installing and managing Python packages, that is
-recommended over the deprecated ``easy_install``. It is superior to
-``easy_install`` in `several ways
-<https://python-packaging-user-guide.readthedocs.org/en/latest/pip_easy_install/#pip-vs-easy-install>`_,
-and is actively maintained.
+``pip3`` is the alias for the Python 3 version of ``pip`` on systems with both
+the Homebrew'd Python 2 and 3 installed.
+
+Working with Python3
+--------------------
+
+At this point, you have the system Python 2.7 available, potentially the
+:ref:`Homebrew version of Python 2 <install-osx>` installed, and the Homebrew
+version of Python 3 as well.
+
+.. code-block:: console
+
+    $ python
+
+will launch the Python 2 interpreter.
+
+.. code-block:: console
+
+    $ python3
+
+will launch the Python 3 interpreter
+
+``pip3`` and ``pip`` will both be available.  If the Homebrew version of Python
+2 is not installed, they will be the same.  If the Homebrew version of Python 2
+is installed then ``pip`` will point to Python 2 and ``pip3`` will point to
+Python 3.
 
 
 Virtual Environments
 --------------------
 
-A Virtual Environment (commonly referred to as a 'virtualenv') is a tool to keep the dependencies required by different projects
-in separate places, by creating virtual Python environments for them. It solves the
-"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps
-your global site-packages directory clean and manageable.
+A Virtual Environment (commonly referred to as a 'virtualenv') is a tool to keep
+the dependencies required by different projects in separate places, by creating
+virtual Python environments for them. It solves the "Project X depends on
+version 1.x but, Project Y needs 4.x" dilemma, and keeps your global
+site-packages directory clean and manageable.
 
 For example, you can work on a project which requires Django 1.10 while also
-maintaining a project which requires Django 1.7.
+maintaining a project which requires Django 1.8.
 
 To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
 
