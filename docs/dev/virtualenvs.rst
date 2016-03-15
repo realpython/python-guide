@@ -12,7 +12,7 @@ For example, you can work on a project which requires Django 1.9 while also
 maintaining a project which requires Django 1.8.
 
 If you are using Python 3, make sure you run something like the following (or
-have it in your env variables in `~/.bashrc`):
+have it in your env variables in ``~/.bashrc``):
 
 .. code-block:: console
 
