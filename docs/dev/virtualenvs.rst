@@ -11,13 +11,6 @@ dilemma, and keeps your global site-packages directory clean and manageable.
 For example, you can work on a project which requires Django 1.9 while also
 maintaining a project which requires Django 1.8.
 
-If you are using Python 3, make sure you run something like the following (or
-have it in your env variables in ``~/.bashrc``):
-
-.. code-block:: console
-
-    $ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-
 virtualenv
 ----------
 
@@ -50,13 +43,18 @@ in the current directory instead.
 This creates a copy of Python in whichever directory you ran the command in,
 placing it in a folder named :file:`venv`.
 
-You can also use the Python interpreter of your choice.
+You can also use the Python interpreter of your choice (like
+:file:`/usr/local/bin/python3`).
 
 .. code-block:: console
 
    $ virtualenv -p /usr/local/bin/python3 venv
 
-This will use the Python interpreter in :file:`/usr/local/bin/python3`
+or change the interpreter globally with an env variable in ``~/.bashrc``:
+
+.. code-block:: console
+
+   $ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
 2. To begin using the virtual environment, it needs to be activated:
 
