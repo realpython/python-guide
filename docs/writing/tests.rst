@@ -116,7 +116,7 @@ A simple doctest in a function:
 .. code-block:: python
 
     def square(x):
-        """Square x.
+        """Return the square of x.
 
         >>> square(2)
         4
