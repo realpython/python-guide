@@ -451,16 +451,16 @@ you can replace it with a more terse and readable syntax that uses the pattern
 But keep in mind that the full `<span tal:replace="expression">Default Text</span>`
 syntax also allows for default content in the unrendered template.
 
-Being from the Pyramid world, Chameleon is not widely used.
+Integration with Chameleon is available for a number of popular web frameworks
+including Plone/Zope2, Pyramid, Django and Grok.
+See: https://chameleon.readthedocs.org/en/latest/integration.html
 
 Mako
 ----
 
 `Mako <http://www.makotemplates.org/>`_ is a template language that compiles to Python
 for maximum performance. Its syntax and api is borrowed from the best parts of other
-templating languages like Django and Jinja2 templates. It is the default template
-language included with the `Pylons and Pyramid <http://www.pylonsproject.org/>`_ web
-frameworks.
+templating languages like Django and Jinja2 templates.
 
 An example template in Mako looks like:
 
