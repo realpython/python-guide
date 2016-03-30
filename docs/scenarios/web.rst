@@ -61,8 +61,6 @@ project as-is, or customized to fit your needs.
 There are annual Django conferences `in the United States
 <http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
 
-The majority of new Python web applications today are built with Django.
-
 Flask
 -----
 
@@ -85,9 +83,6 @@ For those that do, there are many
 `Extensions <http://flask.pocoo.org/extensions/>`_ available that may
 suit your needs. Or, you can easily use any library you want yourself!
 
-Flask is default choice for any Python web application that isn't a good
-fit for Django.
-
 
 Tornado
 --------
@@ -102,14 +97,18 @@ I do not recommend using Tornado unless you think you need it.
 Pyramid
 --------
 
-`Pyramid <http://www.pylonsproject.org/>`_ is a lot like Django, except
-with a heavier focus on modularity. It comes with a smaller number of
-libraries ("batteries") built-in, and encourages users to extend its
-base functionality.
+`Pyramid <http://www.pylonsproject.org/>`_ lies somewhere between a big
+framework like Django and the microframeworks: It comes with a lot of libraries
+and functionality and can thus not be considered lightweight. On the other
+hand, it does not provide all the functionality Django does. Instead Pyramid
+brings basic support for most regular tasks and provides a great deal of
+extensibility. Additionally, Pyramid has a huge focus on complete
+`documentation <http://docs.pylonsproject.org/en/latest/docs/pyramid.html>`__
+and boast 100% unittest coverage.
 
-Pyramid does not have a large user base, unlike Django and Flask. It's a
-capable framework, but not a very popular choice for new Python web
-applications today.
+**Support** can also be found in the
+`documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`__.
+
 
 Web Servers
 :::::::::::
