@@ -61,6 +61,9 @@ project as-is, or customized to fit your needs.
 There are annual Django conferences `in the United States
 <http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
 
+Django is a popular framework and you will find many sites and projects built
+with on it.
+
 Flask
 -----
 
@@ -83,6 +86,8 @@ For those that do, there are many
 `Extensions <http://flask.pocoo.org/extensions/>`_ available that may
 suit your needs. Or, you can easily use any library you want yourself!
 
+Flask is a common choice over Django because it is for developers who like
+minimalistic approach.
 
 Tornado
 --------
@@ -98,17 +103,26 @@ Pyramid
 --------
 
 `Pyramid <http://www.pylonsproject.org/>`_ lies somewhere between a big
-framework like Django and the microframeworks: It comes with a lot of libraries
-and functionality and can thus not be considered lightweight. On the other
-hand, it does not provide all the functionality Django does. Instead Pyramid
-brings basic support for most regular tasks and provides a great deal of
-extensibility. Additionally, Pyramid has a huge focus on complete
+framework like Django and the microframeworks. Instead, it practices a modular
+approach where you can specify include any libraries as needed which provides a
+great deal of extensibility. By contrast to Django which includes everything in
+one package (though you might not need to use it all).
+
+Notably, Pyramid provides a lot of adapter to existing libraries. For example,
+it supports nearly all the templating languages Python has to offer and
+it's modular approach allows you use more then one. Same is true of it's
+database support. You can use SQLAlchemy, Mongo, ZoDB all in the same
+application without much trouble.
+
+Additionally, Pyramid has a huge focus on complete
 `documentation <http://docs.pylonsproject.org/en/latest/docs/pyramid.html>`__
 and boast 100% unittest coverage.
 
 **Support** can also be found in the
 `documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`__.
 
+Pyramid is a good choice for developers who like flexibility of their
+application including what they need and nothing extra.
 
 Web Servers
 :::::::::::
