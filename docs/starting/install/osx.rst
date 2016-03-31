@@ -48,7 +48,7 @@ your favorite OSX terminal emulator and run
 
 .. code-block:: console
 
-    $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 The script will explain what changes it will make and prompt you before the
 installation begins.
