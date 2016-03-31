@@ -61,7 +61,8 @@ project as-is, or customized to fit your needs.
 There are annual Django conferences `in the United States
 <http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
 
-The majority of new Python web applications today are built with Django.
+Django is a popular framework and you will find many sites and projects built
+with on it.
 
 Flask
 -----
@@ -85,9 +86,8 @@ For those that do, there are many
 `Extensions <http://flask.pocoo.org/extensions/>`_ available that may
 suit your needs. Or, you can easily use any library you want yourself!
 
-Flask is default choice for any Python web application that isn't a good
-fit for Django.
-
+Flask is a common choice over Django because it is for developers who like
+minimalistic approach.
 
 Tornado
 --------
@@ -102,14 +102,27 @@ I do not recommend using Tornado unless you think you need it.
 Pyramid
 --------
 
-`Pyramid <http://www.pylonsproject.org/>`_ is a lot like Django, except
-with a heavier focus on modularity. It comes with a smaller number of
-libraries ("batteries") built-in, and encourages users to extend its
-base functionality.
+`Pyramid <http://www.pylonsproject.org/>`_ lies somewhere between a big
+framework like Django and the microframeworks. Instead, it practices a modular
+approach where you can specify include any libraries as needed which provides a
+great deal of extensibility. By contrast to Django which includes everything in
+one package (though you might not need to use it all).
 
-Pyramid does not have a large user base, unlike Django and Flask. It's a
-capable framework, but not a very popular choice for new Python web
-applications today.
+Notably, Pyramid provides a lot of adapters to existing libraries. For example,
+it supports nearly all the templating languages Python has to offer and
+it's modular approach allows you use more then one. Same is true of it's
+database support. You can use SQLAlchemy, Mongo, ZoDB all in the same
+application without much trouble.
+
+Additionally, Pyramid has a huge focus on complete
+`documentation <http://docs.pylonsproject.org/en/latest/docs/pyramid.html>`__
+and boast 100% unittest coverage.
+
+**Support** can also be found in the
+`documentation <http://docs.pylonsproject.org/en/latest/index.html#support-desc>`__.
+
+Pyramid is a good choice for developers who like flexibility of their
+application including what they need and nothing extra.
 
 Web Servers
 :::::::::::
@@ -452,16 +465,16 @@ you can replace it with a more terse and readable syntax that uses the pattern
 But keep in mind that the full `<span tal:replace="expression">Default Text</span>`
 syntax also allows for default content in the unrendered template.
 
-Being from the Pyramid world, Chameleon is not widely used.
+Integration with Chameleon is available for a number of popular web frameworks
+including Plone/Zope2, Pyramid, Django and Grok.
+See: https://chameleon.readthedocs.org/en/latest/integration.html
 
 Mako
 ----
 
 `Mako <http://www.makotemplates.org/>`_ is a template language that compiles to Python
 for maximum performance. Its syntax and api is borrowed from the best parts of other
-templating languages like Django and Jinja2 templates. It is the default template
-language included with the `Pylons and Pyramid <http://www.pylonsproject.org/>`_ web
-frameworks.
+templating languages like Django and Jinja2 templates.
 
 An example template in Mako looks like:
 
