@@ -11,7 +11,7 @@ The latest version of Mac OS X, El Capitan, **comes with Python 2.7 out of the b
 You do not need to install or configure anything else to use Python. Having said
 that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications for
-real-world use. In particular, you should always install ``pip``, as it makes
+real-world use. In particular, you should always install Setuptools, as it makes
 it much easier for you to install and manage other third-party Python libraries.
 
 The version of Python that ships with OS X is great for learning but it's not
@@ -40,7 +40,7 @@ package.
     commandline tools by running ``xcode-select --install`` on the terminal.
 
 While OS X comes with a large number of UNIX utilities, those familiar with
-Linux systems will notice one key component missing: a package manager.
+Linux systems will notice one key component missing: a decent package manager.
 `Homebrew <http://brew.sh>`_ fills this void.
 
 To `install Homebrew <http://brew.sh/#install>`_, open :file:`Terminal` or
@@ -69,13 +69,18 @@ Now, we can install Python 2.7:
 This will take a minute or two.
 
 
-Pip
+Setuptools and Pip
 ----------------
 
-Homebrew installs ``pip`` for you.
+Homebrew installs Setuptools and ``pip`` for you.
+
+Setuptools enables you to download and install any compliant Python
+ -software over a network (usually the Internet) with a single command
+ -(``easy_install``). It also enables you to add this network installation
+ -capability to your own Python software with very little work.
 
 ``pip`` is a tool for easily installing and managing Python packages, that is
-recommended over the deprecated ``easy_install``. It is superior to
+recommended over ``easy_install``. It is superior to
 ``easy_install`` in `several ways
 <https://python-packaging-user-guide.readthedocs.org/en/latest/pip_easy_install/#pip-vs-easy-install>`_,
 and is actively maintained.

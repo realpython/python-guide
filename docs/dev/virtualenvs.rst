@@ -44,17 +44,17 @@ This creates a copy of Python in whichever directory you ran the command in,
 placing it in a folder named :file:`venv`.
 
 You can also use the Python interpreter of your choice (like
-:file:`/usr/local/bin/python3`).
+:file:`/usr/bin/python2.7`).
 
 .. code-block:: console
 
-   $ virtualenv -p /usr/local/bin/python3 venv
+   $ virtualenv -p /usr/bin/python2.7 venv
 
 or change the interpreter globally with an env variable in ``~/.bashrc``:
 
 .. code-block:: console
 
-   $ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+   $ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
 
 2. To begin using the virtual environment, it needs to be activated:
 
