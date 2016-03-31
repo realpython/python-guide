@@ -108,7 +108,7 @@ approach where you can specify include any libraries as needed which provides a
 great deal of extensibility. By contrast to Django which includes everything in
 one package (though you might not need to use it all).
 
-Notably, Pyramid provides a lot of adapter to existing libraries. For example,
+Notably, Pyramid provides a lot of adapters to existing libraries. For example,
 it supports nearly all the templating languages Python has to offer and
 it's modular approach allows you use more then one. Same is true of it's
 database support. You can use SQLAlchemy, Mongo, ZoDB all in the same
