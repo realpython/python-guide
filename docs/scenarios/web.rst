@@ -102,10 +102,9 @@ I do not recommend using Tornado unless you think you need it.
 Pyramid
 --------
 
-`Pyramid <http://www.pylonsproject.org/>`_ is a very flexible
-framework with a heavy focus on modularity. It comes with a small number
-of libraries ("batteries") built-in, and encourages users to extend its
-base functionality.
+`Pyramid <https://trypyramid.com/>`_ is a very flexible framework with a heavy
+focus on modularity. It comes with a small number of libraries ("batteries")
+built-in, and encourages users to extend its base functionality.
 
 Pyramid does not have a large user base, unlike Django and Flask. It's a
 capable framework, but not a very popular choice for new Python web
