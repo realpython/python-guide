@@ -6,7 +6,7 @@ Cryptography
 
 `Cryptography <https://cryptography.io/en/latest/>`_ is an actively developed
 library that provides cryptographic recipes and primitives. It supports 
-Python 2.6-2.7, Python 3.2+ and PyPy.
+Python 2.6-2.7, Python 3.3+ and PyPy.
 
 
 Cryptography is divided into two layers of recipes and hazardous materials
