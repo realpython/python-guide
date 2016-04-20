@@ -224,7 +224,7 @@ Removing Bytecode (.pyc) Files
 
 Here's nice trick for removing all of these files, if they already exist::
 
-    $ find . -name "*.pyc" -exec rm -rf {} \;
+    $ find . -name "*.pyc" -delete
 
 Run that from the root directory of your project, and all ``.pyc`` files
 will suddenly vanish. Much better.
