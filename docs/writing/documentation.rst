@@ -108,7 +108,7 @@ In Python, *docstrings* describe modules, classes, and functions:
         ...
 
 In general, follow the comment section of :pep:`8#comments` (the "Python Style
-Guide").
+Guide"). More information about docstrings can be found at :pep:`0257#specification` (The Docstring Conventions Guide).
 
 Commenting Sections of Code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
