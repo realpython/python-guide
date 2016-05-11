@@ -163,10 +163,10 @@ the configuration dictionary.
                   'formatter': 'f',
                   'level': logging.DEBUG}
             },
-        loggers = {
-            'root': {'handlers': ['h'],
-                     'level': logging.DEBUG}
-            }
+        root = {
+            'handlers': ['h'],
+            'level': logging.DEBUG,
+            },
     )
 
     dictConfig(logging_config)
