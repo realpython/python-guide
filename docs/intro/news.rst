@@ -47,3 +47,10 @@ Weekly Python Newsletter containing Python Articles, Projects, Videos, Tweets
 delivered in your inbox.  Keep Your Python Programming Skills Updated.
 
     `Import Python Weekly Newsletter <http://www.importpython.com/newsletter/>`_
+
+Awesome Python Newsletter
+~~~~~~~~~~~~~~~~~~~~
+
+A weekly overview of the most popular Python news, articles and packages.
+
+    `Awesome Python Newsletter <https://python.libhunt.com/newsletter>`_
