@@ -29,7 +29,7 @@ Records
 
 `Records <https://github.com/kennethreitz/records>`_ is minimalist SQL library,
 designed for sending raw SQL queries to various databases. Data can be used
-programatically, or exported to a number of useful data formats.
+programmatically, or exported to a number of useful data formats.
 
 .. code-block:: console
 

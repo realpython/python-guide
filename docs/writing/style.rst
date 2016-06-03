@@ -455,9 +455,9 @@ PEP 8
 easy-to-read version of PEP 8 is also available at `pep8.org <http://pep8.org/>`_.
 
 This is highly recommended reading. The entire Python community does their
-best to adhere to the guidelines laidout within this document. Some project
+best to adhere to the guidelines laid out within this document. Some project
 may sway from it from time to time, while others may
-`ammend its recommendations <http://docs.python-requests.org/en/master/dev/contributing/#kenneth-reitz-s-code-style>`_.
+`amend its recommendations <http://docs.python-requests.org/en/master/dev/contributing/#kenneth-reitz-s-code-style>`_.
 
 That being said, conforming your Python code to PEP 8 is generally a good
 idea and helps make code more consistent when working on projects with other
