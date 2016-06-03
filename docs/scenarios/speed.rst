@@ -258,7 +258,9 @@ executor when the task is computationally expensive.
 There are two main ways of executing things in parallel using the two
 Executors. One way is with the `map(func, iterables)` method. This works
 almost exactly like the builtin `map()` function, except it will execute
-everything in parallel. ::
+everything in parallel. :
+
+.. code-block:: python
 
     from concurrent.futures import ThreadPoolExecutor
     import requests
@@ -301,7 +303,8 @@ add_done_callback(fn)
     Attach a callback function that will be executed (as `fn(future)`) when the
     scheduled callable returns.
 
-::
+
+.. code-block:: python
 
     from concurrent.futures import ProcessPoolExecutor, as_completed
 
@@ -355,7 +358,9 @@ The standard library comes with a `threading`_ module that allows a user to
 work with multiple threads manually.
 
 Running a function in another thread is as simple as passing a callable and
-it's arguments to `Thread`'s constructor and then calling `start()`::
+it's arguments to `Thread`'s constructor and then calling `start()`:
+
+.. code-block:: python
 
     from threading import Thread
     import requests
@@ -367,12 +372,16 @@ it's arguments to `Thread`'s constructor and then calling `start()`::
     some_thread = Thread(get_webpage, 'http://google.com/')
     some_thread.start()
 
-To wait until the thread has terminated, call `join()`::
+To wait until the thread has terminated, call `join()`:
+
+.. code-block:: python
 
     some_thread.join()
 
 After calling `join()`, it is always a good idea to check whether the thread is
-still alive (because the join call timed out)::
+still alive (because the join call timed out):
+
+.. code-block:: python
 
     if some_thread.is_alive():
         print("join() must have timed out.")
@@ -389,7 +398,10 @@ which are difficult to debug. A good example is this `stackoverflow post`_.
 The way this can be avoided is by using a `Lock`_ that each thread needs to
 acquire before writing to a shared resource. Locks can be acquired and released
 through either the contextmanager protocol (`with` statement), or by using
-`acquire()` and `release()` directly. Here is a (rather contrived) example::
+`acquire()` and `release()` directly. Here is a (rather contrived) example:
+
+
+.. code-block:: python
 
     from threading import Lock, Thread
 
@@ -402,7 +414,8 @@ through either the contextmanager protocol (`with` statement), or by using
 
     def monitor_website(some_website):
         """
-        Monitor a website and then if there are any changes, log them to disk.
+        Monitor a website and then if there are any changes, 
+        log them to disk.
         """
         while True:
             changes = check_for_changes(some_website)
