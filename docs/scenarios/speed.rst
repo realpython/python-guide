@@ -264,9 +264,6 @@ everything in parallel. ::
     import requests
 
     def get_webpage(url):
-        """
-        Some blocking function.
-        """
         page = requests.get(url)
         return page
 
@@ -354,6 +351,74 @@ official documentation.
 Threading
 ---------
 
+The standard library comes with a `threading`_ module that allows a user to
+work with multiple threads manually.
+
+Running a function in another thread is as simple as passing a callable and
+it's arguments to `Thread`'s constructor and then calling `start()`::
+
+    from threading import Thread
+    import requests
+
+    def get_webpage(url):
+        page = requests.get(url)
+        return page
+
+    some_thread = Thread(get_webpage, 'http://google.com/')
+    some_thread.start()
+
+To wait until the thread has terminated, call `join()`::
+
+    some_thread.join()
+
+After calling `join()`, it is always a good idea to check whether the thread is
+still alive (because the join call timed out)::
+
+    if some_thread.is_alive():
+        print("join() must have timed out.")
+    else:
+        print("Our thread has terminated.")
+
+Because multiple threads have access to the same section of memory, sometimes
+there might be situations where two or more threads are trying to write to the
+same resource at the same time or where the output is dependent on the sequence
+or timing of certain events. This is called a `data race`_ or race condition. 
+When this happens, the output will be garbled or you may encounter problems
+which are difficult to debug. A good example is this `stackoverflow post`_.  
+
+The way this can be avoided is by using a `Lock`_ that each thread needs to
+acquire before writing to a shared resource. Locks can be acquired and released
+through either the contextmanager protocol (`with` statement), or by using
+`acquire()` and `release()` directly. Here is a (rather contrived) example::
+
+    from threading import Lock, Thread
+
+    file_lock = Lock()
+
+    def log(msg):
+        with file_lock:
+            open('website_changes.log', 'w') as f:
+                f.write(changes)
+
+    def monitor_website(some_website):
+        """
+        Monitor a website and then if there are any changes, log them to disk.
+        """
+        while True:
+            changes = check_for_changes(some_website)
+            if changes:
+                log(changes)
+
+    websites = ['http://google.com/', ... ]
+    for website in websites:
+        t = Thread(monitor_website, website)
+        t.start()
+
+Here, we have a bunch of threads checking for changes on a list of sites and
+whenever there are any changes, they attempt to write those changes to a file
+by calling `log(changes)`. When `log()` is called, it will wait to acquire
+the lock with `with file_lock:`. This ensures that at any one time, only one
+thread is writing to the file. 
 
 Spawning Processes
 ------------------
@@ -371,3 +436,6 @@ Multiprocessing
 .. _`David Beazley's`: http://www.dabeaz.com/GIL/gilvis/measure2.py
 .. _`concurrent.futures`: https://docs.python.org/3/library/concurrent.futures.html
 .. _`Future`: https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future
+.. _`threading`: https://docs.python.org/3/library/threading.html
+.. _`stackoverflow post`: http://stackoverflow.com/questions/26688424/python-threads-are-printing-at-the-same-time-messing-up-the-text-output
+.. _`data race`: https://en.wikipedia.org/wiki/Race_condition
