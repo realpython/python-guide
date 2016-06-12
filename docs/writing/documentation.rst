@@ -258,7 +258,7 @@ and gets the relevant points across then it has done the job it was designed to
 do.
 
 
-.. see also:: Further reading on docstrings: :pep:`257`
+For further reading on docstrings, feel free to consult :pep:`257`
 
 .. _thomas-cokelaer.info: http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
 .. _sphinx.ext.napoleon: https://sphinxcontrib-napoleon.readthedocs.io/
