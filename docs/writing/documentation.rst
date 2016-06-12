@@ -65,6 +65,11 @@ There is also **great**, **free** hosting for your Sphinx_ docs:
 your source repository so that rebuilding your documentation will
 happen automatically.
 
+When run, Sphinx_ will import your code and using Python's introspection 
+features it will extract all function, method and class signatures. It will
+also extract the accompanying docstrings, and compile it all into well
+structured and easily readable documentation for your project.  
+
 .. note::
 
     Sphinx is famous for its API generation, but it also works well
@@ -127,6 +132,30 @@ Some tools use docstrings to embed more-than-documentation behavior,
 such as unit test logic. Those can be nice, but you won't ever go
 wrong with vanilla "here's what this does."
 
+Tools like Sphinx_ will parse your docstrings as reStructuredText and render it
+correctly as HTML. This makes it very easy to embed snippets of example code in
+a project's documentation.
+
+Additionally, Doctest_ will read all embedded docstrings that look like input
+from the Python commandline (prefixed with ">>>") and run them, checking to see
+if the output of the command matches the text on the following line. This
+allows developers to  embed real examples and usage of functions alongside
+their source code, and as a side effect, it also ensures that their code is
+tested and works.
+
+::
+    
+    def my_function(a, b):
+        """
+        >>> my_function(2, 3)
+        6
+        >>> my_function('a', 3)
+        'aaa'
+        """
+        return a * b
+
+.. _Doctest: https://docs.python.org/3/library/doctest.html
+
 Docstrings versus Block comments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -141,8 +170,99 @@ comment block is a programmer's note. The docstring describes the
         """Returns the square root of self times self."""
 	...
 
+Unlike block comments, docstrings are built into the Python language itself.
+This means you can use all of Python's powerful introspection capabilities to
+access docstrings at runtime, compared with comments which are optimised out.
+Docstrings are accessible from both the `__doc__` dunder attribute for almost 
+every Python object, as well as with the built in `help()` function.
+
+While block comments are usually used to explain *what* a section of code is
+doing, or the specifics of an algorithm, docstrings are more intended for
+explaining to other users of your code (or you in 6 months time) *how* a
+particular function can be used and the general purpose of a function, class, 
+or module.  
+
+Writing Docstrings
+~~~~~~~~~~~~~~~~~~
+
+Depending on the complexity of the function, method, or class being written, a
+one-line docstring may be perfectly appropriate. These are generally used for
+really obvious cases, such as::
+
+    def add(a, b):
+        """Add two numbers and return the result."""
+        return a + b
+
+The docstring should describe the function in a way that is easy to understand.
+Embedding the function's signature in the docstring is unnecessary because it 
+can easily be obtained using the `inspect` module, and doesn't provide much
+additional information.
+
+For more complex cases, there are a couple generally accepted styles used 
+when writing documentation. The first of these uses reStructuredText syntax 
+to format arguments and other elements of the docstring appropriately::
+
+    def function1(self, arg1, arg2, arg3):
+        """A short, one line summary of the function.
+
+        This is a longer explanation, which may include math with 
+        latex syntax :math:`\\alpha`.
+
+        :param arg1: the first value
+        :param arg2: the first value
+        :param arg3: the first value
+        :type arg1: int, float,...
+        :type arg2: int, float,...
+        :type arg3: int, float,...
+        :returns: arg1/arg2 +arg3
+        :rtype: int, float
+        """
+        return arg1/arg2 + arg3
+
+`thomas-cokelaer.info`_ has a fairly complete article showing more examples for
+this style.
+
+While the end result is parsed by Sphinx and renders correctly in a browser, it
+isn't the easiest of formats to read. The `NumPy style`_ is a lot nicer to read,
+however it consumes a lot more real estate than the previous style::
+
+    def random_number_generator(arg1, arg2):
+        """
+        Summary line.
+
+        Extended description of function.
+
+        Parameters
+        ----------
+        arg1 : int
+            Description of arg1
+        arg2 : str
+            Description of arg2
+
+        Returns
+        -------
+        int
+            Description of return value
+
+        """
+        return 42
+
+The `sphinx.ext.napoleon`_ plugin allows Sphinx to parse this style of
+docstrings, making it easy to incorporate NumPy style docstrings into your
+project.
+
+At the end of the day, it doesn't really matter what style is used for writing
+docstrings, their purpose is to serve as documentation for anyone who may need
+to read or make changes to your code. As long as it is correct, understandable
+and gets the relevant points across then it has done the job it was designed to
+do.
+
+
 .. see also:: Further reading on docstrings: :pep:`257`
 
+.. _thomas-cokelaer.info: http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
+.. _sphinx.ext.napoleon: https://sphinxcontrib-napoleon.readthedocs.io/
+.. _`NumPy style`: http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 
 Other Tools
 -----------
