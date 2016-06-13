@@ -194,14 +194,20 @@ really obvious cases, such as::
         return a + b
 
 The docstring should describe the function in a way that is easy to understand.
-Embedding the function's signature in the docstring is unnecessary because it 
-can easily be obtained using the `inspect` module, and doesn't provide much
-additional information.
+For simple cases like trivial functions and classes, simply embedding the 
+function's signature (i.e. `add(a, b) -> result`) in the docstring is 
+unnecessary. This is because with Python's `inspect` module, it is already 
+quite easy to find this information if needed, and it is also readily available
+by reading the source code. 
+
+In larger or more complex projects however, it is often a good idea to give 
+more information about a function, what it does, any exceptions it may raise, 
+what it returns, or relevant details about the parameters.
 
 For more detailed documentation of code a popular style is the one used for the
 Numpy project, often called `Numpy style`_ docstrings. While it can take up a
-few more lines than usual, it allows the developer to include a lot more
-information about a method, function, or class. ::
+few more lines the previous example, it allows the developer to include a lot 
+more information about a method, function, or class. ::
 
     def random_number_generator(arg1, arg2):
         """
