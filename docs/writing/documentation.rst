@@ -198,33 +198,10 @@ Embedding the function's signature in the docstring is unnecessary because it
 can easily be obtained using the `inspect` module, and doesn't provide much
 additional information.
 
-For more complex cases, there are a couple generally accepted styles used 
-when writing documentation. The first of these uses reStructuredText syntax 
-to format arguments and other elements of the docstring appropriately::
-
-    def function1(self, arg1, arg2, arg3):
-        """A short, one line summary of the function.
-
-        This is a longer explanation, which may include math with 
-        latex syntax :math:`\\alpha`.
-
-        :param arg1: the first value
-        :param arg2: the first value
-        :param arg3: the first value
-        :type arg1: int, float,...
-        :type arg2: int, float,...
-        :type arg3: int, float,...
-        :returns: arg1/arg2 +arg3
-        :rtype: int, float
-        """
-        return arg1/arg2 + arg3
-
-`thomas-cokelaer.info`_ has a fairly complete article showing more examples for
-this style.
-
-While the end result is parsed by Sphinx and renders correctly in a browser, it
-isn't the easiest of formats to read. The `NumPy style`_ is a lot nicer to read,
-however it consumes a lot more real estate than the previous style::
+For more detailed documentation of code a popular style is the one used for the
+Numpy project, often called `Numpy style`_ docstrings. While it can take up a
+few more lines than usual, it allows the developer to include a lot more
+information about a method, function, or class. ::
 
     def random_number_generator(arg1, arg2):
         """
