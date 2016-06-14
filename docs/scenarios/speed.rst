@@ -108,7 +108,7 @@ keywords compared to the next one, which is implemented in pure Python:
     def primes(kmax):
     """Calculation of prime numbers in standard Python syntax"""
 
-        p= range(1000)
+        p = range(1000)
         result = []
         if kmax > 1000:
             kmax = 1000
@@ -145,7 +145,7 @@ to be compiled into C types while also creating a Python list:
     def primes(kmax):
         """Calculation of prime numbers in standard Python syntax"""
 
-        p= range(1000)
+        p = range(1000)
         result = []
 
 What is the difference? In the upper Cython version you can see the
