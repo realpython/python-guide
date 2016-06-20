@@ -3,17 +3,17 @@
 Code Style
 ==========
 
-If you ask Python programmers what they like most in Python, they will
-often say its high readability.  Indeed, a high level of readability
+If you ask Python programmers what they like most about Python, they will
+often cite its high readability.  Indeed, a high level of readability
 is at the heart of the design of the Python language, following the
 recognized fact that code is read much more often than it is written.
 
-One reason for Python code to be easily read and understood is its relatively
+One reason for the high readability of Python code is its relatively
 complete set of Code Style guidelines and "Pythonic" idioms.
 
-Moreover, when a veteran Python developer (a Pythonista) points to portions of
-code and says they are not "Pythonic", it usually means that these lines
-of code do not follow the common guidelines and fail to express the intent in
+When a veteran Python developer (a Pythonista) calls portions of
+code not "Pythonic", they usually mean that these lines
+of code do not follow the common guidelines and fail to express its intent in
 what is considered the best (hear: most readable) way.
 
 On some border cases, no best way has been agreed upon on how to express
@@ -53,7 +53,7 @@ One statement per line
 
 While some compound statements such as list comprehensions are
 allowed and appreciated for their brevity and their expressiveness,
-it is bad practice to have two disjoint statements on the same line of code.
+it is bad practice to have two disjointed statements on the same line of code.
 
 **Bad**
 
