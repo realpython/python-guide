@@ -383,10 +383,11 @@ Buidout is written in Python.
 Shinken
 -------
 
-`Shinken <http://www.shinken-monitoring.org/>`_ is a modern, Nagios compatible monitoring framework, written in Python.
-Its main goal is to give users a flexible architecture for their monitoring
-system that is designed to scale to large environments.
+`Shinken <http://www.shinken-monitoring.org/>`_ is a modern, Nagios compatible
+monitoring framework written in Python.Its main goal is to give users a flexible
+architecture for their monitoring system that is designed to scale to large
+environments.
 
-Shinken is backwards-compatible with the Nagios configuration standard and plugins.
-It works on any operating system and architecture that supports Python, which includes
-Windows, GNU/Linux and FreeBSD.
+Shinken is backwards-compatible with the Nagios configuration standard and
+plugins.It works on any operating system and architecture that supports Python
+which includes Windows, GNU/Linux and FreeBSD.
