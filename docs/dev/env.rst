@@ -154,8 +154,9 @@ Python (on Visual Studio Code)
 -----------------------------
 
 `Python for Visual Studio <https://marketplace.visualstudio.com/items?itemName=donjayamanne.python>`_ is an extension for the `Visual Studio Code IDE <https://code.visualstudio.com>`_.
-This is a free, light weight and open source IDE, with support for Mac, Windows and Linux.
-Built using open source technologies such as NodeJs and Python, with compelling features such as Intellisense (autocompletion), local and remote debugging, linting, and the like.
+This is a free, light weight, open source IDE, with support for Mac, Windows, and Linux.
+Built using open source technologies such as Node.js and Python, with compelling features such as Intellisense (autocompletion), local and remote debugging, linting, and the like.
+
 MIT licensed.
 
 Enthought Canopy
