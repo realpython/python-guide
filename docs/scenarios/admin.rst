@@ -262,7 +262,7 @@ To create a simple cookbook the `knife <https://docs.chef.io/knife.html>`_ comma
 
 `Getting started with Chef <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_ 
 is a good starting point for Chef Beginners and many community maintained cookbooks that can 
-serve as a good reference or tweaked to serve your infrustructure configuration needs can be 
+serve as a good reference or tweaked to serve your infrastructure configuration needs can be 
 found on the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
 
 - `Chef Documentation <https://docs.chef.io/>`_
