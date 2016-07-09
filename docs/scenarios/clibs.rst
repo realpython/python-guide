@@ -39,7 +39,7 @@ types, such as structs and unions, and allows you to modify things such as
 padding and alignment, if needed. It can be a bit crufty to use, but in
 conjunction with the `struct <https://docs.python.org/3.5/library/struct.html>`_
 module, you are essentially provided full control over how your data types get
-translated into something something usable by a pure C(++) method.
+translated into something usable by a pure C(++) method.
 
 Struct Equivalents
 ~~~~~~~~~~~~~~~~~~
