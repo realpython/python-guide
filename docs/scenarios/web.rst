@@ -88,6 +88,11 @@ suit your needs. Or, you can easily use any library you want yourself!
 Flask is default choice for any Python web application that isn't a good
 fit for Django.
 
+As a possible (less-popular) alternative to Flask, consider
+`Bottle <http://bottlepy.org>`_, which is a self-contained (no dependencies
+other than the Python standard library) micro-framework distributed as a
+single file module.
+
 
 Tornado
 --------
@@ -109,16 +114,6 @@ built-in, and encourages users to extend its base functionality.
 Pyramid does not have a large user base, unlike Django and Flask. It's a
 capable framework, but not a very popular choice for new Python web
 applications today.
-
-
-Bottle
-------
-
-`Bottle <http://bottlepy.org>`_ is a WSGI micro-framework distributed as
-a single file module with no dependencies other than the Python standard
-library (you can just download bottle.py into your project directory and
-start coding). An alternative to Flask if you want something tiny, easy,
-and self-contained.
 
 
 Web Servers
