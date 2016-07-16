@@ -124,13 +124,13 @@ inside the function) that was added "just in case" and is seemingly never used,
 than to add a new optional argument and its logic when needed.
 
 3. The **arbitrary argument list** is the third way to pass arguments to a
-function.  If the function intention is better expressed by a signature with an
-extensible number of positional arguments, it can be defined with the ``*args``
-constructs.  In the function body, ``args`` will be a tuple of all the
-remaining positional arguments. For example, ``send(message, *args)`` can be
-called with each recipient as an argument: ``send('Hello', 'God', 'Mom',
-'Cthulhu')``, and in the function body ``args`` will be equal to ``('God',
-'Mom', 'Cthulhu')``.
+   function. If the function intention is better expressed by a signature with
+   an extensible number of positional arguments, it can be defined with the
+   ``*args`` constructs. In the function body, ``args`` will be a tuple of all
+   the remaining positional arguments. For example, ``send(message, *args)``
+   can be called with each recipient as an argument:``send('Hello', 'God',
+   'Mom', 'Cthulhu')``, and in the function body ``args`` will be equal to
+   ``('God', 'Mom', 'Cthulhu')``.
 
 However, this construct has some drawbacks and should be used with caution. If a
 function receives a list of arguments of the same nature, it is often more
