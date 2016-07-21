@@ -110,6 +110,21 @@ Pyramid does not have a large user base, unlike Django and Flask. It's a
 capable framework, but not a very popular choice for new Python web
 applications today.
 
+Bottle
+------
+
+`Bottle <http://bottlepy.org/>`_ is a fast, simple and lightweight WSGI micro 
+web-framework for Python. It is distributed as a single file module and has no 
+dependencies other than the Python Standard Library.
+
+Routing, requests to function-call mapping with support for clean and dynamic URLs. 
+Templates, fast and pythonic built-in template engine and support for mako, jinja2 
+and cheetah templates. Utilities, convenient access to form data, file uploads, 
+cookies, headers and other HTTP-related metadata. Server, built-in HTTP development 
+server and support for paste, fapws3, bjoern, gae, cherrypy or any other WSGI 
+capable HTTP server.
+
+
 Web Servers
 :::::::::::
 
