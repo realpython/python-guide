@@ -3,8 +3,8 @@ Testing Your Code
 
 Testing your code is very important.
 
-Getting used to writing the testing code and the running code in parallel is
-now considered a good habit. Used wisely, this method helps you define more
+Getting used to writing testing code and running this code in parallel is now 
+considered a good habit. Used wisely, this method helps you define more
 precisely your code's intent and have a more decoupled architecture.
 
 Some general rules of testing:
@@ -12,8 +12,8 @@ Some general rules of testing:
 - A testing unit should focus on one tiny bit of functionality and prove it
   correct.
 
-- Each test unit must be fully independent. Each of them must be able to run
-  alone, and also within the test suite, regardless of the order they are
+- Each test unit must be fully independent. Each test must be able to run
+  alone, and also within the test suite, regardless of the order that they are
   called. The implication of this rule is that each test must be loaded with
   a fresh dataset and may have to do some cleanup afterwards. This is
   usually handled by :meth:`setUp()` and :meth:`tearDown()` methods.
@@ -27,8 +27,8 @@ Some general rules of testing:
   tests as often as needed.
 
 - Learn your tools and learn how to run a single test or a test case. Then,
-  when developing a function inside a module, run this function's tests very
-  often, ideally automatically when you save the code.
+  when developing a function inside a module, run this function's tests 
+  frequently, ideally automatically when you save the code.
 
 - Always run the full test suite before a coding session, and run it again
   after. This will give you more confidence that you did not break anything
@@ -63,11 +63,11 @@ Some general rules of testing:
 
 - Another use of the testing code is as an introduction to new developers. When
   someone will have to work on the code base, running and reading the related
-  testing code is often the best they can do. They will or should discover the
-  hot spots, where most difficulties arise, and the corner cases. If they have
-  to add some functionality, the first step should be to add a test and, by this
-  means, ensure the new functionality is not already a working path that has not
-  been plugged into the interface.
+  testing code is often the best thing that they can do to start. They will 
+  or should discover the hot spots, where most difficulties arise, and the 
+  corner cases. If they have to add some functionality, the first step should 
+  be to add a test to ensure that the new functionality is not already a 
+  working path that has not been plugged into the interface.
 
 The Basics
 ::::::::::
