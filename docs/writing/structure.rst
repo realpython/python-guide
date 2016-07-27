@@ -271,7 +271,7 @@ following, as they always have:
 
 ::
 
-    $ django-admin.py start-project samplesite
+    $ django-admin.py startproject samplesite
 
 The resulting repository structure looks like this:
 
@@ -293,7 +293,7 @@ Let's do it properly:
 
 ::
 
-    $ django-admin.py start-project samplesite .
+    $ django-admin.py startproject samplesite .
 
 Note the "``.``".
 
