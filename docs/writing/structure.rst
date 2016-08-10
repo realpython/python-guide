@@ -254,7 +254,7 @@ your project.
     test:
         py.test tests
 
-    .PHONY init test
+    .PHONY: init test
 
 Other generic management scripts (e.g. ``manage.py``
 or ``fabfile.py``) belong at the root of the repository as well.
