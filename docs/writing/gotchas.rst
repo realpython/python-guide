@@ -195,6 +195,7 @@ will automatically write a bytecode version of that file to disk, e.g.
 ``module.pyc``.
 
 These ``.pyc`` files should not be checked into your source code repositories.
+Consider adding ``*.pyc`` to your ``.gitignore`` file to prevent such accidents.
 
 Theoretically, this behavior is on by default, for performance reasons.
 Without these bytecode files present, Python would re-generate the bytecode
