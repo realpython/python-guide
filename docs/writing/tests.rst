@@ -202,7 +202,7 @@ nose provides automatic test discovery to save you the hassle of manually
 creating test suites. It also provides numerous plugins for features such as
 xUnit-compatible test output, coverage reporting, and test selection.
 
-    `nose <http://readthedocs.org/docs/nose/en/latest/>`_
+    `nose <https://nose.readthedocs.io/en/latest/>`_
 
 
 tox

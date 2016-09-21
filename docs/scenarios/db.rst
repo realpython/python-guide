@@ -60,11 +60,11 @@ peewee
 `peewee <http://docs.peewee-orm.com/en/latest/>`_ is another ORM with a focus
 on being lightweight with support for Python 2.6+ and 3.2+ which supports
 SQLite, MySQL and Postgres by default. The
-`model layer <https://peewee.readthedocs.org/en/latest/peewee/quickstart.html#model-definition>`_
+`model layer <https://peewee.readthedocs.io/en/latest/peewee/quickstart.html#model-definition>`_
 is similar to that of the Django ORM and it has
-`SQL-like methods <https://peewee.readthedocs.org/en/latest/peewee/quickstart.html#retrieving-data>`_
+`SQL-like methods <https://peewee.readthedocs.io/en/latest/peewee/quickstart.html#retrieving-data>`_
 to query data. While SQLite, MySQL and Postgres are supported out-of-the-box,
-there is a `collection of add-ons <https://peewee.readthedocs.org/en/latest/peewee/playhouse.html#playhouse>`_
+there is a `collection of add-ons <https://peewee.readthedocs.io/en/latest/peewee/playhouse.html#playhouse>`_
 available.
 
 PonyORM

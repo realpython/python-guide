@@ -77,7 +77,7 @@ software over a network (usually the Internet) with a single command
 capability to your own Python software with very little work.
 
 ``pip`` is a tool for easily installing and managing Python packages,
-that is recommended over ``easy_install``. It is superior to ``easy_install`` in `several ways <https://python-packaging-user-guide.readthedocs.org/en/latest/pip_easy_install/#pip-vs-easy-install>`_,
+that is recommended over ``easy_install``. It is superior to ``easy_install`` in `several ways <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_,
 and is actively maintained.
 
 

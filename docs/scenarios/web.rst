@@ -154,7 +154,7 @@ Gunicorn is the recommended choice for new Python web applications today.
 Waitress
 --------
 
-`Waitress <http://waitress.readthedocs.org>`_ is a pure-python WSGI server
+`Waitress <https://waitress.readthedocs.io>`_ is a pure-python WSGI server
 that claims "very acceptable performance". Its documentation is not very
 detailed, but it does offer some nice functionality that Gunicorn doesn't have
 (e.g. HTTP request buffering).
@@ -166,18 +166,18 @@ Waitress is gaining popularity within the Python web development community.
 uWSGI
 -----
 
-`uWSGI <https://uwsgi-docs.readthedocs.org>`_ is a full stack for building
+`uWSGI <https://uwsgi-docs.readthedocs.io>`_ is a full stack for building
 hosting services.  In addition to process management, process monitoring,
 and other functionality, uWSGI acts as an application server for various
 programming languages and protocols - including Python and WSGI. uWSGI can
 either be run as a stand-alone web router, or be run behind a full web
 server (such as Nginx or Apache).  In the latter case, a web server can
 configure uWSGI and an application's operation over the
-`uwsgi protocol <https://uwsgi-docs.readthedocs.org/en/latest/Protocol.html>`_.
+`uwsgi protocol <https://uwsgi-docs.readthedocs.io/en/latest/Protocol.html>`_.
 uWSGI's web server support allows for dynamically configuring
 Python, passing environment variables and further tuning.  For full details,
 see `uWSGI magic
-variables <https://uwsgi-docs.readthedocs.org/en/latest/Vars.html>`_.
+variables <https://uwsgi-docs.readthedocs.io/en/latest/Vars.html>`_.
 
 I do not recommend using uWSGI unless you know why you need it.
 
@@ -393,10 +393,10 @@ Jinja2 is the recommended templating library for new Python web applications.
 Chameleon
 ---------
 
-`Chameleon <https://chameleon.readthedocs.org/>`_ Page Templates are an HTML/XML template
+`Chameleon <https://chameleon.readthedocs.io/>`_ Page Templates are an HTML/XML template
 engine implementation of the `Template Attribute Language (TAL) <http://en.wikipedia.org/wiki/Template_Attribute_Language>`_,
-`TAL Expression Syntax (TALES) <http://chameleon.readthedocs.org/en/latest/reference.html#expressions-tales>`_,
-and `Macro Expansion TAL (Metal) <http://chameleon.readthedocs.org/en/latest/reference.html#macros-metal>`_ syntaxes.
+`TAL Expression Syntax (TALES) <https://chameleon.readthedocs.io/en/latest/reference.html#expressions-tales>`_,
+and `Macro Expansion TAL (Metal) <https://chameleon.readthedocs.io/en/latest/reference.html#macros-metal>`_ syntaxes.
 
 Chameleon is available for Python 2.5 and up (including 3.x and pypy), and
 is commonly used by the `Pyramid Framework <http://trypyramid.com>`_.

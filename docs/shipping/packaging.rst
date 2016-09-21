@@ -25,7 +25,7 @@ and being able and willing to use tools such as pip to install your code's
 other dependencies. This is fine when distributing to other developers, but
 makes this method unsuitable for distributing applications to end-users.
 
-The `Python Packaging Guide <https://python-packaging-user-guide.readthedocs.org/en/latest/>`_
+The `Python Packaging Guide <https://python-packaging-user-guide.readthedocs.io/>`_
 provides an extensive guide on creating and maintaining Python packages.
 
 Alternatives to Packaging
@@ -184,4 +184,4 @@ Useful Tools
 
 - `fpm <https://github.com/jordansissel/fpm>`_
 - `alien <http://joeyh.name/code/alien/>`_
-- `dh-virtualenv <http://dh-virtualenv.readthedocs.io/en/latest/info.html>`_ (for APT/DEB omnibus packaging)
+- `dh-virtualenv <https://dh-virtualenv.readthedocs.io/en/latest/info.html>`_ (for APT/DEB omnibus packaging)
