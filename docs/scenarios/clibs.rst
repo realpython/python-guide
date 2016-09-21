@@ -4,7 +4,7 @@ Interfacing with C/C++ Libraries
 C Foreign Function Interface
 ----------------------------
 
-`CFFI <https://cffi.readthedocs.org/en/latest/>`_ provides a simple to use
+`CFFI <https://cffi.readthedocs.io/en/latest/>`_ provides a simple to use
 mechanism for interfacing with C from both CPython and PyPy. It supports two
 modes: an inline ABI compatibility mode (example provided below), which allows
 you to dynamically load and run functions from executable modules (essentially

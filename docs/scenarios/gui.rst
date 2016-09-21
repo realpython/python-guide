@@ -28,7 +28,7 @@ applications be ported from PyGTK to PyGObject.
 PyGObject aka (PyGi)
 --------------------
 `PyGObject <https://wiki.gnome.org/Projects/PyGObject>`_ provides Python bindings, which gives access to the entire GNOME software platform.
-It is fully compatible with GTK+ 3. Here is a tutorial to get started with `Python GTK+ 3 Tutorial <http://python-gtk-3-tutorial.readthedocs.org/en/latest/>`_.
+It is fully compatible with GTK+ 3. Here is a tutorial to get started with `Python GTK+ 3 Tutorial <https://python-gtk-3-tutorial.readthedocs.io/en/latest/>`_.
 
 `API Reference <http://lazka.github.io/pgi-docs/>`_
 
