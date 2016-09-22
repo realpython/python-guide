@@ -21,16 +21,18 @@ Doing it Right
 
 Let's install a real version of Python.
 
-Before installing Python, you'll need to install a C compiler. A compiler can be
-obtained by downloading `Xcode <http://developer.apple.com/xcode/>`_, the
-smaller `Command Line Tools <https://developer.apple.com/downloads/>`_ (must
-have an Apple account) or the even smaller `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
+Before installing Python, you'll need to install a C compiler. The fastest way
+is to install the Xcode Command Line Tools by running
+``xcode-select --install``. You can also download the full version of
+`Xcode <http://developer.apple.com/xcode/>`_ from the Mac App Store, or the
+minimal but unofficial
+`OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
 package.
 
 .. note::
-    If you already have Xcode installed, do not install OSX-GCC-Installer.
-    In combination, the software can cause issues that are difficult to
-    diagnose.
+    If you already have Xcode installed or plan to use Homebrew, do not install
+    OSX-GCC-Installer. In combination, the software can cause issues that are
+    difficult to diagnose.
 
 While OS X comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
