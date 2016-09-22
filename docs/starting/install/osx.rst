@@ -61,6 +61,12 @@ Now, we can install Python 2.7:
 
     $ brew install python
 
+or Python 3:
+
+.. code-block:: console
+
+    $ brew install python3
+
 This will take a minute or two. 
 
 
