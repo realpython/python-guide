@@ -21,10 +21,10 @@ Doing it Right
 
 Let's install a real version of Python.
 
-Before installing Python, you'll need to install GCC. GCC can be obtained
-by downloading `Xcode <http://developer.apple.com/xcode/>`_, the smaller
-`Command Line Tools <https://developer.apple.com/downloads/>`_ (must have an
-Apple account) or the even smaller `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
+Before installing Python, you'll need to install a C compiler. A compiler can be
+obtained by downloading `Xcode <http://developer.apple.com/xcode/>`_, the
+smaller `Command Line Tools <https://developer.apple.com/downloads/>`_ (must
+have an Apple account) or the even smaller `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
 package.
 
 .. note::
