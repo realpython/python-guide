@@ -1,6 +1,6 @@
 .. _install-linux:
 
-Installing Python on Linux
+Installing Python2 on Linux
 ==========================
 
 The latest versions of CentOS, Fedora, Redhat Enterprise (RHEL) and Ubuntu 
@@ -67,4 +67,45 @@ manage your virtual environments.
 
 This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
 which is available under the same license.
+
+Installing Python2 on Linux
+==========================
+
+To install python3 on linux distributions follow this command
+
+.. code-block:: console
+
+    $ command python3-dev
+
+here command represent specific distributions package manager for example apt-get, easy_install etc
+Installing Setup tools
+--------------------------
+
+follow these commands for installing setuptools ad pip on linux distros
+
+.. code-block:: console
+
+    $ command python3-setuptools
+    $ command python3-pip
+    
+here command represent specific distributions package manager for example apt-get, easy_install etc
+
+Setup virtualenv
+---------------------------
+As explained above one can use virtualenv or virtualenvwrapper for using virtual environments
+follow these commands for setting up virtualenv
+
+.. code-block:: console
+    $ pip3 install virtaulenv
+create virtualenv
+.. code-block:: console
+    $ virtualenv --python=/usr/bin/python3 DEST_DIR
+here DEST_DIR is the destintion directory where you want to create a new virtual environment
+activating virtual env
+.. code-block:: console
+    $ source $DEST_DIR/bin/activate
+deactivating virtualenv
+.. code-block:: console
+    $ source $DEST_DIR/bin/dactivate
+ 
 
