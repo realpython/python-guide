@@ -378,8 +378,6 @@ Buildout is primarily used to download and set up dependencies in Python eggs
 format of the software being developed or deployed. Recipes for build tasks in any
 environment can be created, and many are already available.
 
-Buidout is written in Python.
-
 Shinken
 -------
 
