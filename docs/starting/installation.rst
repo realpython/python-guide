@@ -18,4 +18,4 @@ for development purposes, as well as setuptools, pip, and virtualenv setup.
 
 - :ref:`Mac OS X <install-osx>`.
 - :ref:`Microsoft Windows <install-windows>`.
-- :ref:`Ubuntu Linux <install-linux>`.
+- :ref:`Linux <install-linux>`.
