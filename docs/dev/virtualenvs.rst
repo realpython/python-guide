@@ -8,8 +8,8 @@ projects in separate places, by creating virtual Python environments for them.
 It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
 dilemma, and keeps your global site-packages directory clean and manageable.
 
-For example, you can work on a project which requires Django 1.3 while also
-maintaining a project which requires Django 1.0.
+For example, you can work on a project which requires Django 1.10 while also
+maintaining a project which requires Django 1.8.
 
 virtualenv
 ----------
