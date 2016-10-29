@@ -16,7 +16,7 @@ Some popular command-line applications include:
 * `httpie <https://github.com/jakubroztocil/httpie>`_ - A command line HTTP
   client, a user-friendly cURL replacement
 * `git <http://git-scm.com/>`_ - A distributed version control system
-* `mercurial <http://mercurial.selenic.com/>`_ - A distributed version control
+* `mercurial <https://www.mercurial-scm.org/>`_ - A distributed version control
   system primarily written in Python
 
 Clint
