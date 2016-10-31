@@ -104,7 +104,7 @@ In Python, *docstrings* describe modules, classes, and functions:
 .. code-block:: python
 
     def square_and_rooter(x):
-        """Returns the square root of self times self."""
+        """Return the square root of self times self."""
         ...
 
 In general, follow the comment section of :pep:`8#comments` (the "Python Style
