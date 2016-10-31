@@ -222,10 +222,6 @@ Pyrex
 Shedskin?
 ---------
 
-Numba
------
-.. todo:: Write about Numba and the autojit compiler for NumPy
-
 Concurrency
 :::::::::::
 
