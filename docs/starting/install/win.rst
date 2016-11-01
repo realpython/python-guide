@@ -21,22 +21,9 @@ modify the :envvar:`PATH` environment variable, so that you always have control 
 which copy of Python is run.
 
 Typing the full path name for a Python interpreter each time quickly gets
-tedious, so add the directories for your default Python version to the :envvar:`PATH`.
-Assuming that your Python installation is in :file:`C:\\Python27\\`, add this to your
-:envvar:`PATH`:
+tedious, so when installing Python be sure to select the feature "Add python.exe to PATH"
+you have to scroll the tree a little bit to see the option on customize page.
 
-.. code-block:: console
-
-    C:\Python27\;C:\Python27\Scripts\
-
-You can do this easily by running the following in ``powershell``:
-
-.. code-block:: console
-
-    [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
-
-The second (:file:`Scripts`) directory receives command files when certain
-packages are installed, so it is a very useful addition.
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications for
