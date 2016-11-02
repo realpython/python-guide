@@ -7,10 +7,16 @@ New to Python? Let's properly setup up your Python environment.
    :maxdepth: 2
 
    starting/which-python
-   starting/installation
-   starting/install/osx
-   starting/install/win
-   starting/install/linux
+
+- Properly Install Python
+
+ .. toctree::
+    :maxdepth: 1
+
+    starting/installation
+    starting/install/osx
+    starting/install/win
+    starting/install/linux
 
 
 
