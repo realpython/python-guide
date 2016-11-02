@@ -58,6 +58,7 @@ different scenarios.
    scenarios/xml
    scenarios/json
    scenarios/crypto
+   scenarios/ml
    scenarios/clibs
 
 
