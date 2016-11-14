@@ -47,7 +47,7 @@ simplejson
 
 The JSON library was added to Python in version 2.6.
 If you're using an earlier version of Python, the
-`simplejson <https://simplejson.readthedocs.org/en/latest/>`_ library is
+`simplejson <https://simplejson.readthedocs.io/en/latest/>`_ library is
 available via PyPI.
 
 simplejson mimics the json standard library. It is available so that developers

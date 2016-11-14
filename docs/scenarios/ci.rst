@@ -35,7 +35,7 @@ automate the compile/test cycle to validate code changes.
 Tox
 ---
 
-`tox <http://tox.readthedocs.org/en/latest/>`_ is an automation tool providing
+`tox <https://tox.readthedocs.io/en/latest/>`_ is an automation tool providing
 packaging, testing and deployment of Python software right from the console or
 CI server. It is a generic virtualenv management and test command line tool
 which provides the following features:

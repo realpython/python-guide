@@ -254,6 +254,8 @@ your project.
     test:
         py.test tests
 
+    .PHONY: init test
+
 Other generic management scripts (e.g. ``manage.py``
 or ``fabfile.py``) belong at the root of the repository as well.
 
@@ -269,7 +271,7 @@ following, as they always have:
 
 ::
 
-    $ django-admin.py start-project samplesite
+    $ django-admin.py startproject samplesite
 
 The resulting repository structure looks like this:
 
@@ -291,7 +293,7 @@ Let's do it properly:
 
 ::
 
-    $ django-admin.py start-project samplesite .
+    $ django-admin.py startproject samplesite .
 
 Note the "``.``".
 
@@ -600,7 +602,7 @@ clearer and thus preferred.
 This mechanism is useful for separating concerns and avoiding
 external un-related logic 'polluting' the core logic of the function
 or method. A good example of a piece of functionality that is better handled
-with decoration is memoization or caching: you want to store the results of an
+with decoration is `memoization <https://en.wikipedia.org/wiki/Memoization#Overview>`__ or caching: you want to store the results of an
 expensive function in a table and use them directly instead of recomputing
 them when they have already been computed. This is clearly not part
 of the function logic.

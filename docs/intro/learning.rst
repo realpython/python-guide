@@ -38,7 +38,7 @@ without having to install Python locally.
 If you want a more traditional book, *Python For You and Me* is an excellent
 resource for learning all aspects of the language.
 
-    `Python for You and Me <http://pymbook.readthedocs.org/>`_
+    `Python for You and Me <https://pymbook.readthedocs.io/>`_
 
 Online Python Tutor
 ~~~~~~~~~~~~~~~~~~~

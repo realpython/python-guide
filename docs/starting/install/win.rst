@@ -3,7 +3,7 @@
 Installing Python on Windows
 ============================
 
-First, download the `latest version <https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi>`_
+First, download the `latest version <https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi>`_
 of Python 2.7 from the official Website. If you want to be sure you are installing a fully
 up-to-date version, click the Downloads > Windows link from the home page of the
 `Python.org web site <http://python.org>`_ .
@@ -74,8 +74,8 @@ in separate places, by creating virtual Python environments for them. It solves 
 "Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps 
 your global site-packages directory clean and manageable.
 
-For example, you can work on a project which requires Django 1.3 while also
-maintaining a project which requires Django 1.0.
+For example, you can work on a project which requires Django 1.10 while also
+maintaining a project which requires Django 1.8.
 
 To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
 

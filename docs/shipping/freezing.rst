@@ -8,7 +8,7 @@ Freezing Your Code
 to end-users, that contains all of your application code as well as the 
 Python interpreter.
 
-Applications such as 'Dropbox', 'Eve Online',  'Civilisation IV', and
+Applications such as 'Dropbox', 'Eve Online',  'Civilization IV', and
 BitTorrent clients do this.
 
 The advantage of distributing this way is that your application will "just work",

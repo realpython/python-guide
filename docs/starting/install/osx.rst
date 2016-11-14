@@ -24,13 +24,16 @@ Doing it Right
 
 Let's install a real version of Python.
 
-Before installing Python, you'll need to install GCC. GCC can be obtained
-by downloading `XCode <http://developer.apple.com/xcode/>`_, the smaller
-`Command Line Tools <https://developer.apple.com/downloads/>`_ (must have an
-Apple account) or the even smaller `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
+Before installing Python, you'll need to install a C compiler. The fastest way
+is to install the Xcode Command Line Tools by running
+``xcode-select --install``. You can also download the full version of
+`Xcode <http://developer.apple.com/xcode/>`_ from the Mac App Store, or the
+minimal but unofficial
+`OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
 package.
 
 .. note::
+<<<<<<< HEAD
     If you already have XCode installed, do not install OSX-GCC-Installer.
     In combination, the software can cause issues that are difficult to
     diagnose.
@@ -38,6 +41,11 @@ package.
 .. note::
     If you perform a fresh install of XCode, you will also need to add the
     commandline tools by running ``xcode-select --install`` on the terminal.
+=======
+    If you already have Xcode installed or plan to use Homebrew, do not install
+    OSX-GCC-Installer. In combination, the software can cause issues that are
+    difficult to diagnose.
+>>>>>>> upstream/master
 
 While OS X comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
@@ -66,7 +74,17 @@ Now, we can install Python 2.7:
 
     $ brew install python
 
+<<<<<<< HEAD
 This will take a minute or two.
+=======
+or Python 3:
+
+.. code-block:: console
+
+    $ brew install python3
+
+This will take a minute or two. 
+>>>>>>> upstream/master
 
 
 Setuptools and Pip
@@ -75,6 +93,7 @@ Setuptools and Pip
 Homebrew installs Setuptools and ``pip`` for you.
 
 Setuptools enables you to download and install any compliant Python
+<<<<<<< HEAD
  -software over a network (usually the Internet) with a single command
  -(``easy_install``). It also enables you to add this network installation
  -capability to your own Python software with very little work.
@@ -83,6 +102,14 @@ Setuptools enables you to download and install any compliant Python
 recommended over ``easy_install``. It is superior to
 ``easy_install`` in `several ways
 <https://python-packaging-user-guide.readthedocs.org/en/latest/pip_easy_install/#pip-vs-easy-install>`_,
+=======
+software over a network (usually the Internet) with a single command
+(``easy_install``). It also enables you to add this network installation
+capability to your own Python software with very little work.
+
+``pip`` is a tool for easily installing and managing Python packages,
+that is recommended over ``easy_install``. It is superior to ``easy_install`` in `several ways <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_,
+>>>>>>> upstream/master
 and is actively maintained.
 
 
@@ -95,7 +122,13 @@ in separate places, by creating virtual Python environments for them. It solves 
 your global site-packages directory clean and manageable.
 
 For example, you can work on a project which requires Django 1.10 while also
+<<<<<<< HEAD
 maintaining a project which requires Django 1.7.
+=======
+maintaining a project which requires Django 1.8.
+
+To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
+>>>>>>> upstream/master
 
 To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
 

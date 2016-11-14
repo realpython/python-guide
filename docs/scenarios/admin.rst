@@ -190,7 +190,7 @@ Ansible
 `Ansible <http://ansible.com/>`_  is an open source system automation tool.
 The biggest advantage over Puppet or Chef is it does not require an agent on
 the client machine. Playbooks are Ansible’s configuration, deployment, and
-orchestration language and are written in in YAML with Jinja2 for templating.
+orchestration language and are written in YAML with Jinja2 for templating.
 
 Ansible supports Python versions 2.6 and 2.7 and can be installed via pip:
 
@@ -262,7 +262,7 @@ To create a simple cookbook the `knife <https://docs.chef.io/knife.html>`_ comma
 
 `Getting started with Chef <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_ 
 is a good starting point for Chef Beginners and many community maintained cookbooks that can 
-serve as a good reference or tweaked to serve your infrustructure configuration needs can be 
+serve as a good reference or tweaked to serve your infrastructure configuration needs can be 
 found on the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
 
 - `Chef Documentation <https://docs.chef.io/>`_
@@ -378,5 +378,14 @@ Buildout is primarily used to download and set up dependencies in Python eggs
 format of the software being developed or deployed. Recipes for build tasks in any
 environment can be created, and many are already available.
 
-Buidout is written in Python.
+Shinken
+-------
 
+`Shinken <http://www.shinken-monitoring.org/>`_ is a modern, Nagios compatible
+monitoring framework written in Python. Its main goal is to give users a flexible
+architecture for their monitoring system that is designed to scale to large
+environments.
+
+Shinken is backwards-compatible with the Nagios configuration standard, and
+plugins.It works on any operating system, and architecture that supports Python
+which includes Windows, GNU/Linux, and FreeBSD.
