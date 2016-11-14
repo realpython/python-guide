@@ -74,9 +74,6 @@ Now, we can install Python 2.7:
 
     $ brew install python
 
-<<<<<<< HEAD
-This will take a minute or two.
-=======
 or Python 3:
 
 .. code-block:: console
@@ -84,7 +81,6 @@ or Python 3:
     $ brew install python3
 
 This will take a minute or two. 
->>>>>>> upstream/master
 
 
 Setuptools and Pip
@@ -93,23 +89,13 @@ Setuptools and Pip
 Homebrew installs Setuptools and ``pip`` for you.
 
 Setuptools enables you to download and install any compliant Python
-<<<<<<< HEAD
- -software over a network (usually the Internet) with a single command
- -(``easy_install``). It also enables you to add this network installation
- -capability to your own Python software with very little work.
-
-``pip`` is a tool for easily installing and managing Python packages, that is
-recommended over ``easy_install``. It is superior to
-``easy_install`` in `several ways
-<https://python-packaging-user-guide.readthedocs.org/en/latest/pip_easy_install/#pip-vs-easy-install>`_,
-=======
 software over a network (usually the Internet) with a single command
 (``easy_install``). It also enables you to add this network installation
 capability to your own Python software with very little work.
 
 ``pip`` is a tool for easily installing and managing Python packages,
-that is recommended over ``easy_install``. It is superior to ``easy_install`` in `several ways <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_,
->>>>>>> upstream/master
+that is recommended over ``easy_install``. It is superior to ``easy_install``
+in `several ways <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_,
 and is actively maintained.
 
 
@@ -122,13 +108,7 @@ in separate places, by creating virtual Python environments for them. It solves 
 your global site-packages directory clean and manageable.
 
 For example, you can work on a project which requires Django 1.10 while also
-<<<<<<< HEAD
-maintaining a project which requires Django 1.7.
-=======
 maintaining a project which requires Django 1.8.
-
-To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
->>>>>>> upstream/master
 
 To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
 
