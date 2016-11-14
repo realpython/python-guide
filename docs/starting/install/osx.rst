@@ -33,7 +33,6 @@ minimal but unofficial
 package.
 
 .. note::
-<<<<<<< HEAD
     If you already have XCode installed, do not install OSX-GCC-Installer.
     In combination, the software can cause issues that are difficult to
     diagnose.
@@ -41,11 +40,7 @@ package.
 .. note::
     If you perform a fresh install of XCode, you will also need to add the
     commandline tools by running ``xcode-select --install`` on the terminal.
-=======
-    If you already have Xcode installed or plan to use Homebrew, do not install
-    OSX-GCC-Installer. In combination, the software can cause issues that are
-    difficult to diagnose.
->>>>>>> upstream/master
+
 
 While OS X comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
