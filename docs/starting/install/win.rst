@@ -54,7 +54,7 @@ command. It also enables you to add this network installation capability to
 your own Python software with very little work.
 
 To obtain the latest version of Setuptools for Windows, run the Python script
-available here: `ez_setup.py <https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py>`_
+available here: `ez_setup.py <https://bootstrap.pypa.io/ez_setup.py>`_
 
 
 You'll now have a new command available to you: **easy_install**. It is
