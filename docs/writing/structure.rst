@@ -814,6 +814,17 @@ with calls to ``append()``.
     # create a concatenated string from 0 to 19 (e.g. "012..1819")
     nums = [str(n) for n in range(20)]
     print "".join(nums)
+    
+**Really best**
+
+.. code-block:: python
+
+    # create a concatenated string from 0 to 19 (e.g. "012..1819")
+    # works for Python 3, I dont know about Python 2
+    "".join(str(i) for i in range(20))
+    # or
+    print("".join(map(str, range(20))))
+    
 
 One final thing to mention about strings is that using ``join()`` is not always
 best. In the instances where you are creating a new string from a pre-determined
