@@ -7,7 +7,7 @@ The State of Python (3 & 2)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When choosing a Python interpreter, one looming question is always present:
-"Should I choose Python 2 or Python 3"? The answer is not as obvious as
+"Should I choose Python 2 or Python 3"? The answer is a bit more subtle than
 one might think.
 
 
