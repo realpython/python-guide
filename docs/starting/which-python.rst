@@ -13,7 +13,7 @@ one might think.
 
 The basic gist of the state of things is as follows:
 
-1. Most production applications today use Python 2.7 .
+1. Most production applications today use Python 2.7.
 2. Python 3 is ready for the production deployment of applications today.
 3. Python 2.7 will only receive necessary security updates until 2020 [#pep373_eol]_.
 4. The brand name "Python" encapsulates both Python 3 and Python 2.
