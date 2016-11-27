@@ -13,10 +13,11 @@ one might think.
 
 The basic gist of the state of things is as follows:
 
-1. Python 2.7 has been the standard for a *long* time.
-2. Python 3 introduced major changes to the language, which many developers are unhappy with.
-3. Python 2.7 will receive necessary security updates until 2020 [#pep373_eol]_.
+1. Python 2.7 has been the standard for a *long* time, and is being officially deprecated `in 2020 <https://pythonclock.org>`_.
+2. Python 3 introduced major changes to the language, which have taken some time for the community to adjust to.
+3. As menitoned, Python 2.7 will only receive necessary security updates until 2020 [#pep373_eol]_.
 4. Python 3 is continually evolving, like Python 2 did in years past.
+5. The brand name "Python" encapsulates both Python 3 and Python 2.
 
 So, you can now see why this is not such an easy decision.
 
@@ -26,21 +27,13 @@ Recommendations
 
 I'll be blunt:
 
-
-**Use Python 3 if...**
-
-- You don't care.
-- You love Python 3.
-- You are indifferent towards 2 vs 3.
-- You don't know which one to use.
-- You embrace change.
-
-**Use Python 2 if...**
-
-- You love Python 2 and are saddened by the future being Python 3.
-- The stability requirements of your software would be improved by a language and runtime that never changes.
-- Software that you depend on requires it.
-
+- Use Python 3 for new Python applications.
+- If you're learning Python for the first time, familiarizing yourself with Python 2.7 will be very
+  useful, but not more useful than learning Python 3. Learn both. They are both "Python".
+- Software that is already built (e.g. commercial software) often depends on Python 2.7.
+- If you are writing a new open source Python library, it's best to write it for both Python 2 and 3
+  simultaneously. Supporting 3 only is a political statment and will alienate many of your users.
+  This is not a problem — slowly, over the next three years, this will become less the case.
 
 So.... 3?
 ~~~~~~~~~
