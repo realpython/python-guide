@@ -13,9 +13,9 @@ one might think.
 
 The basic gist of the state of things is as follows:
 
-1. Python 2.7 has been the standard for a *long* time, and most running applications today use it.
-2. The Python community is prepared and adjusted for production deployment of Python 3 applications.
-3. Python 2.7 will only receive necessary security updates until 2020 [#pep373_eol]_, then deprecate.
+1. Most production applications today use Python 2.7 .
+2. Python 3 is ready for the production deployment of applications today.
+3. Python 2.7 will only receive necessary security updates until 2020 [#pep373_eol]_.
 4. The brand name "Python" encapsulates both Python 3 and Python 2.
 
 Recommendations
