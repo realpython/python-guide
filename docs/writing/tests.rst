@@ -218,7 +218,8 @@ multiple interpreter configurations
 tox allows you to configure complicated multi-parameter test matrices via a
 simple ini-style configuration file.
 
-    `tox <http://testrun.org/tox/latest/>`_
+    `tox <https://tox.readthedocs.io/en/latest/>`_
+
 
 Unittest2
 ---------
