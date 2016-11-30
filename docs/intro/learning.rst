@@ -210,7 +210,7 @@ and can make classes and objects behave in different and magical ways.
 
     `A Guide to Python's Magic Methods <http://www.rafekettler.com/magicmethods.html>`_
 Note: The Rafekettler.com is currently down, you can go to their Github version directly. Here you can find a PDF version:
-    `A Guide to Python's Magic Methods (repo on GitHub) <https://github.com/RafeKettler/magicmethods>`_
+    `A Guide to Python's Magic Methods (repo on GitHub) <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_
 
 
 For Engineers and Scientists
