@@ -18,8 +18,8 @@ environment of the project. Over time this can result in a messy global package
 list.
 
 In order to make sure that you install packages to your active virtual
-environment when you use ``pip install``, consider adding the following two
-lines to your :file:`~/.bashrc` file:
+environment when you use ``pip install``, consider adding the following
+line to your :file:`~/.bashrc` file:
 
 .. code-block:: console
 
