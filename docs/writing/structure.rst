@@ -200,7 +200,7 @@ it. You can do this a few ways:
    package properly.
 
 I highly recommend the latter. Requiring a developer to run
-`setup.py <http://setup.py>`__ develop to test an actively changing
+``setup.py develop`` to test an actively changing
 codebase also requires them to have an isolated environment setup for
 each instance of the codebase.
 
