@@ -78,7 +78,7 @@ or Python 3:
 This will take a minute or two.
 
 
-Setuptools and Pip
+Setuptools & Pip
 ----------------
 
 Homebrew installs Setuptools and ``pip`` for you.

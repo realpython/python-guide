@@ -64,15 +64,15 @@ This will take a minute or two.
 
 
 Pip
-----------------
+---
 
 Homebrew installs ``pip3`` for you.
 
 ``pip3`` is the alias for the Python 3 version of ``pip`` on systems with both
 the Homebrew'd Python 2 and 3 installed.
 
-Working with Python3
---------------------
+Working with Python 3
+---------------------
 
 At this point, you have the system Python 2.7 available, potentially the
 :ref:`Homebrew version of Python 2 <install-osx>` installed, and the Homebrew

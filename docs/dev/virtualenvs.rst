@@ -44,7 +44,7 @@ This creates a copy of Python in whichever directory you ran the command in,
 placing it in a folder named :file:`venv`.
 
 You can also use the Python interpreter of your choice (like
-:file:`/usr/bin/python2.7`).
+``python2.7``).
 
 .. code-block:: console
 
