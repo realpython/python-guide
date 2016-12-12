@@ -30,7 +30,7 @@ column printer, iterator based progress bars and implicit argument handling.
 Click
 -----
 
-`click <http://click.pocoo.org/>`_ is an upcoming Python package for creating
+`click <http://click.pocoo.org/>`_ is a Python package for creating
 command-line interfaces in a composable way with as little code as
 possible. This “Command-line Interface Creation Kit” is highly
 configurable but comes with good defaults out of the box.
