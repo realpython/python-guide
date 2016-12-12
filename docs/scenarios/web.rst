@@ -221,19 +221,12 @@ how to set up your first application.
 
 Heroku is the recommended PaaS for deploying Python web applications today.
 
-Gondor
-------
+Eldarion
+--------
 
-`Gondor <https://gondor.io/>`_ is a PaaS specialized for deploying Django
-and Pinax applications. Gondor recommends Django version 1.6 and supports any
-WSGI application on Python version 2.7. Gondor can automatically configure your
-Django site if you use :file:`local_settings.py` for site-specific configuration
-information.
-
-Gondor has a guide on deploying `Django projects <https://gondor.io/support/django/setup/>`_.
-
-Gondor is run by a small company and focuses on helping businesses find success with
-Python and Django.
+`Eldarion <http://eldarion.cloud/>`_ (formely known as Gondor) is a PaaS powered
+by Kubernetes, CoreOS, and Docker. They support any WSGI application and have a
+guide on deploying `Django projects <https://eldarion-gondor.github.io/docs/how-to/setup-deploy-first-django-project/>`_.
 
 Templating
 ::::::::::
