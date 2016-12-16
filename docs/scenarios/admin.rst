@@ -131,7 +131,7 @@ State files can be written using YAML, the Jinja2 template system or pure Python
 Psutil
 ------
 
-`Psutil <https://code.google.com/p/psutil/>`_ is an interface to different
+`Psutil <https://github.com/giampaolo/psutil/>`_ is an interface to different
 system information (e.g. CPU, memory, disks, network, users and processes).
 
 Here is an example to be aware of some server overload. If any of the
