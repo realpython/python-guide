@@ -30,7 +30,7 @@ I'll be blunt:
 - Software that is already built often depends on Python 2.7.
 - If you are writing a new open source Python library, it's best to write it for both Python 2 and 3
   simultaneously. Only supporting Python 3 for a new library you want to be widely adopted is a
-  political statment and will alienate many of your users. This is not a problem — slowly, over the next three years, this will become less the case.
+  political statement and will alienate many of your users. This is not a problem — slowly, over the next three years, this will become less the case.
 
 So.... 3?
 ~~~~~~~~~
