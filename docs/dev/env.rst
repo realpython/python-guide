@@ -230,6 +230,16 @@ is an open-source software project (GPLv3 licence) with more than ten years of
 active development.
 
 
+Thonny
+------
+
+`Thonny <http://thonny.org/>`_ is a Python IDE meant for teaching and learning 
+programming. Besides usual IDE features (syntax highlighting, code completion etc.)
+it features a beginner-friendly visual debugger which intuitively yet faithfully 
+reveals what happens when Python executes a while-loop, evaluates an expression 
+or calls a function. Thonny is open source (MIT licence).
+
+
 Interpreter Tools
 :::::::::::::::::
 
