@@ -72,15 +72,6 @@ as programs that can break them.
     `Hacking Secret Ciphers with Python <http://inventwithpython.com/hacking/>`_
 
 
-Learn Python the Hard Way
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This is an excellent beginner programmer's guide to Python. It covers "hello
-world" from the console to the web.
-
-    `Learn Python the Hard Way <http://learnpythonthehardway.org/book/>`_
-
-
 Crash into Python
 ~~~~~~~~~~~~~~~~~
 
