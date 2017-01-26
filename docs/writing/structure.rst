@@ -857,5 +857,5 @@ Runners
 Further Reading
 ---------------
 
-- http://docs.python.org/2/library/
+- http://docs.python.org/3/library/
 - http://www.diveintopython.net/toc/index.html
