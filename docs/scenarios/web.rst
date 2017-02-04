@@ -1,6 +1,6 @@
-================
-Web Applications
-================
+=============================
+Web Applications & Frameworks
+=============================
 
 As a powerful scripting language adapted to both fast prototyping
 and bigger projects, Python is widely used in web application
