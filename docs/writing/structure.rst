@@ -785,7 +785,12 @@ its parts, it is much more efficient to accumulate the parts in a list,
 which is mutable, and then glue ('join') the parts together when the
 full string is needed. One thing to notice, however, is that list
 comprehensions are better and faster than constructing a list in a loop
-with calls to ``append()``.
+with calls to ``append()``. 
+
+One other option is using the map function, which can 'map' a function
+('str') to an iterable ('range(20)'). This results in a map object,
+which you can then ('join') together just like the other examples.
+The map function can be even faster than a list comprehension in some cases.
 
 **Bad**
 
@@ -807,13 +812,21 @@ with calls to ``append()``.
       nums.append(str(n))
     print "".join(nums)  # much more efficient
 
-**Best**
+**Better**
 
 .. code-block:: python
 
     # create a concatenated string from 0 to 19 (e.g. "012..1819")
     nums = [str(n) for n in range(20)]
     print "".join(nums)
+    
+**Best**
+
+.. code-block:: python
+
+    # create a concatenated string from 0 to 19 (e.g. "012..1819")
+    nums = map(str, range(20))
+    print "".join(nums) 
 
 One final thing to mention about strings is that using ``join()`` is not always
 best. In the instances where you are creating a new string from a pre-determined
