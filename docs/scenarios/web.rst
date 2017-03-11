@@ -10,6 +10,7 @@ Context
 :::::::
 
 
+
 WSGI
 ----
 
@@ -457,7 +458,7 @@ frameworks.
 
 An example template in Mako looks like:
 
-.. code-block:: html
+.. code-block:: mako
 
     <%inherit file="base.html"/>
     <%
