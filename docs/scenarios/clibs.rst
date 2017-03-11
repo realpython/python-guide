@@ -96,26 +96,27 @@ Example: Overloading __repr__
         std::string getName();
     };
 
+
 :file:`myclass.i`
 
-.. code-block:: c++
+.. code-block::
     :linenos:
 
     %include "string.i"
-
+    
     %module myclass
     %{
     #include <string>
     #include "MyClass.h"
     %}
-
+    
     %extend MyClass {
         std::string __repr__()
         {
             return $self->getName();
         }
     }
-
+    
     %include "MyClass.h"
 
 
