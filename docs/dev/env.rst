@@ -151,7 +151,7 @@ versions of PyCharm: Professional Edition (Free 30-day trial) and Community
 Edition (Apache 2.0 License) with fewer features.
 
 Python (on Visual Studio Code)
------------------------------
+------------------------------
 
 `Python for Visual Studio <https://marketplace.visualstudio.com/items?itemName=donjayamanne.python>`_ is an extension for the `Visual Studio Code IDE <https://code.visualstudio.com>`_.
 This is a free, light weight, open source IDE, with support for Mac, Windows, and Linux.
