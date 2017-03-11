@@ -38,7 +38,7 @@ over the syntax file included in Vim 6.1.
 These plugins supply you with a basic environment for developing in Python.
 To get the most out of Vim, you should continually check your code for syntax
 errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
-If your Vim is compiled with :option:`+python` you can also utilize some very
+If your Vim is compiled with ``+python`` you can also utilize some very
 handy plugins to do these checks from within the editor.
 
 For PEP8 checking and pyflakes, you can install vim-flake8_. Now you can map the
