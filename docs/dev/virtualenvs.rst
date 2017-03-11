@@ -14,8 +14,28 @@ maintaining a project which requires Django 1.8.
 virtualenv
 ----------
 
+Python 3.3 and greater:
+
+.. code-block:: console
+
+  $ python3 -m venv /path/to/new/virtual/environment
+  $ source /path/to/new/virtual/environment/bin/activate
+  $ # Do your work… and then when done
+  $ deactivate
+
+`python3 -m venv <https://docs.python.org/3/library/venv.html>`_ is now
+recommended.
+
+Changed in Python 3.5: The use of ``venv`` is now recommended for creating
+virtual environments.
+
+Deprecated since Python 3.6: ``pyvenv`` was the recommended tool for creating
+virtual environments for Python 3.3 and 3.4, and is deprecated in Python 3.6.
+
+Legacy versions of Python:
+
 `virtualenv <http://pypi.python.org/pypi/virtualenv>`_ is a tool to create
-isolated Python environments. virtualenv creates a folder which contains all the
+isolated Python environments. ``virtualenv`` creates a folder which contains all the
 necessary executables to use the packages that a Python project would need.
 
 Install virtualenv via pip:
