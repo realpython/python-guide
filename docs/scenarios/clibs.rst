@@ -99,7 +99,7 @@ Example: Overloading __repr__
 
 :file:`myclass.i`
 
-.. code-block::
+.. code-block:: idl
     :linenos:
 
     %include "string.i"
