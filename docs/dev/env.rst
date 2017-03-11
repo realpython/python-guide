@@ -38,7 +38,7 @@ over the syntax file included in Vim 6.1.
 These plugins supply you with a basic environment for developing in Python.
 To get the most out of Vim, you should continually check your code for syntax
 errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
-If your Vim is compiled with :option:`+python` you can also utilize some very
+If your Vim is compiled with ``+python`` you can also utilize some very
 handy plugins to do these checks from within the editor.
 
 For PEP8 checking and pyflakes, you can install vim-flake8_. Now you can map the
@@ -151,7 +151,7 @@ versions of PyCharm: Professional Edition (Free 30-day trial) and Community
 Edition (Apache 2.0 License) with fewer features.
 
 Python (on Visual Studio Code)
------------------------------
+------------------------------
 
 `Python for Visual Studio <https://marketplace.visualstudio.com/items?itemName=donjayamanne.python>`_ is an extension for the `Visual Studio Code IDE <https://code.visualstudio.com>`_.
 This is a free, light weight, open source IDE, with support for Mac, Windows, and Linux.

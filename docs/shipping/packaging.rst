@@ -101,7 +101,7 @@ pypiserver
 `Pypiserver <https://pypi.python.org/pypi/pypiserver>`_ is a minimal PyPI
 compatible server.  It can be used to serve a set of packages to easy_install
 or pip.  It includes helpful features like an administrative command
-(:option:`-U`) which will update all its packages to their latest versions
+(``-U``) which will update all its packages to their latest versions
 found on PyPI.
 
 

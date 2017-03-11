@@ -1,3 +1,5 @@
+:orphan: This article should not be added to a toctree for now
+
 .. _install3-osx:
 
 Installing Python 3 on Mac OS X

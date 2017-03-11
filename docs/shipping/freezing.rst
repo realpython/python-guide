@@ -60,7 +60,7 @@ py2app      no      no    yes  yes      MIT     no            yes            yes
 .. note::
     All solutions need MS Visual C++ dll to be installed on target machine, except py2app.
     Only Pyinstaller makes self-executable exe that bundles the dll when
-    passing :option:`--onefile` to :file:`Configure.py`.
+    passing ``--onefile`` to :file:`Configure.py`.
 
 Windows
 -------

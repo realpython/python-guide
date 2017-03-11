@@ -93,7 +93,7 @@ where they were placed.
 Other Notes
 ~~~~~~~~~~~
 
-Running ``virtualenv`` with the option :option:`--no-site-packages` will not
+Running ``virtualenv`` with the option ``--no-site-packages`` will not
 include the packages that are installed globally. This can be useful
 for keeping the package list clean in case it needs to be accessed later.
 [This is the default behavior for ``virtualenv`` 1.7 and later.]
