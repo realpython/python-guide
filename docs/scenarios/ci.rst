@@ -84,3 +84,15 @@ In order to activate testing for your project, go to `the travis-ci site <https:
 and login with your GitHub account. Then activate your project in your
 profile settings and you're ready to go. From now on, your project's tests
 will be run on every push to GitHub.
+
+drone.io
+--------
+
+`drone.io <https://drone.io/>`_ is a hosted continuous integration service.
+It enables you to conveniently set up projects to automatically build, test,
+and deploy as you make changes to your code.
+
+Drone.io integrates seamlessly with Github, Bitbucket and Google Codeas well
+as third party services such as Heroku, Dotcloud, Google AppEngine and more.
+
+This text is copy from http://docs.drone.io/
