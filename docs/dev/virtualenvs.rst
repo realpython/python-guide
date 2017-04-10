@@ -23,6 +23,12 @@ Install virtualenv via pip:
 .. code-block:: console
 
   $ pip install virtualenv
+ 
+Test your installation
+
+.. code-block:: console
+
+   $ virtualenv --version
 
 Basic Usage
 ~~~~~~~~~~~
