@@ -18,7 +18,7 @@ for development purposes, as well as setuptools, pip and virtualenv.
 
 - :ref:`Python 3 on MacOS <install3-osx>`
 - :ref:`Python 3 on Windows <install3-windows>`.
-- :ref:`Python 3 on Linux <install3-liux>`.
+- :ref:`Python 3 on Linux <install3-linux>`.
 
 --------------------------------
 
