@@ -14,7 +14,7 @@ described in the next section before you start building Python applications for
 real-world use. In particular, you should always install Setuptools, as it makes
 it much easier for you to install and manage other third-party Python libraries.
 
-The version of Python that ships with OS X is great for learning but it's not
+The version of Python that ships with OS X is great for learning, but it's not
 good for development. The version shipped with OS X may be out of date from the
 `official current Python release <https://www.python.org/downloads/mac-osx/>`_,
 which is considered the stable production version.
