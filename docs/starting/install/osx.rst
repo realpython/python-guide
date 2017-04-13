@@ -1,7 +1,7 @@
 .. _install-osx:
 
-Installing Python on Mac OS X
-=============================
+Installing Python 2 on Mac OS X
+===============================
 
 .. note::
     Check out our :ref:`guide for installing Python 3 on OS X<install3-osx>`.

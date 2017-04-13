@@ -1,10 +1,10 @@
 .. _install-windows:
 
-Installing Python on Windows
-============================
+Installing Python 2 on Windows
+==============================
 
-First, download the `latest version <https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi>`_
-of Python 2.7 from the official Website. If you want to be sure you are installing a fully
+First, download the `latest version <https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi>`_
+of Python 2.7 from the official website. If you want to be sure you are installing a fully
 up-to-date version, click the Downloads > Windows link from the home page of the
 `Python.org web site <http://python.org>`_ .
 
@@ -34,6 +34,8 @@ You can do this easily by running the following in ``powershell``:
 .. code-block:: console
 
     [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
+
+This is also an option during the installation process.
 
 The second (:file:`Scripts`) directory receives command files when certain
 packages are installed, so it is a very useful addition.
@@ -69,15 +71,15 @@ To install pip, run the Python script available here:
 Virtual Environments
 --------------------
 
-A Virtual Environment is a tool to keep the dependencies required by different projects 
-in separate places, by creating virtual Python environments for them. It solves the 
-"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps 
+A Virtual Environment is a tool to keep the dependencies required by different projects
+in separate places, by creating virtual Python environments for them. It solves the
+"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps
 your global site-packages directory clean and manageable.
 
 For example, you can work on a project which requires Django 1.10 while also
 maintaining a project which requires Django 1.8.
 
-To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
+To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
 
 
 --------------------------------
