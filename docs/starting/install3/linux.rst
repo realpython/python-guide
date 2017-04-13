@@ -22,6 +22,23 @@ If you're using another version of Ubuntu (e.g. the latest LTS release), we reco
     $ sudo apt-get update
     $ sudo apt-get install python3.6
 
+Working with Python 3
+---------------------
+
+At this point, you have the system Python 2.7 available, potentially the
+:ref:`Homebrew version of Python 2 <install-osx>` installed, and the Homebrew
+version of Python 3 as well.
+
+.. code-block:: console
+
+    $ python
+
+will launch the Python 2 interpreter.
+
+.. code-block:: console
+
+    $ python3
+
 
 Setuptools & Pip
 ----------------
@@ -58,6 +75,7 @@ To start using this and see more information: :ref:`Virtual Environments <virtua
 
 You can also use :ref:`virtualenvwrapper <virtualenvwrapper-ref>` to make it easier to
 manage your virtual environments.
+
 
 --------------------------------
 

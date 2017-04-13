@@ -90,7 +90,7 @@ will launch the Python 2 interpreter.
 
     $ python3
 
-will launch the Python 3 interpreter
+will launch the Python 3 interpreter.
 
 ``pip3`` and ``pip`` will both be available.  If the Homebrew version of Python
 2 is not installed, they will be the same.  If the Homebrew version of Python 2

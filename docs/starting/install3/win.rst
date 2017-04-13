@@ -41,6 +41,24 @@ described in the next section before you start building Python applications for
 real-world use. In particular, you should always install Setuptools, as it
 makes it much easier for you to use other third-party Python libraries.
 
+Working with Python 3
+---------------------
+
+At this point, you have the system Python 2.7 available, potentially the
+:ref:`Homebrew version of Python 2 <install-osx>` installed, and the Homebrew
+version of Python 3 as well.
+
+.. code-block:: console
+
+    $ python
+
+will launch the Python 2 interpreter.
+
+.. code-block:: console
+
+    $ python3
+
+
 Setuptools + Pip
 ----------------
 
