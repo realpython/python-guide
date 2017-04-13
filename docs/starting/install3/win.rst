@@ -44,19 +44,19 @@ makes it much easier for you to use other third-party Python libraries.
 Working with Python 3
 ---------------------
 
-At this point, you have the system Python 2.7 available, potentially the
-:ref:`Homebrew version of Python 2 <install-osx>` installed, and the Homebrew
-version of Python 3 as well.
+At this point, you may also have Python 2.7 installed.
 
 .. code-block:: console
 
     $ python
 
-will launch the Python 2 interpreter.
+This will launch the Python 2 interpreter.
 
 .. code-block:: console
 
     $ python3
+
+This will launch the Python 3 interpreter.
 
 
 Setuptools + Pip
