@@ -242,3 +242,81 @@ And on Linux:
 
    $ git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
    $ echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
+
+
+Vagga
+----------
+
+`Vagga <http://vagga.readthedocs.org/en/latest/what_is_vagga.html>`_ is a tool to create
+development environments. It creates linux containers which contain
+all the environment you need for your application in one command.
+
+Install Vagga using `instructions <http://vagga.readthedocs.org/en/latest/what_is_vagga.html>`_
+for your operating system.
+
+Basic Usage
+~~~~~~~~~~~
+
+1. In the directory of your project create :file:`vagga.yaml`:
+
+.. code-block:: yaml
+
+   containers:
+     python:
+       setup:
+       - !Ubuntu trusty
+       - !UbuntuUniverse
+       - !Py3Install [Flask]
+   commands:
+     py3: !Command
+       container: python
+       run: python3
+
+2. Run command:
+
+.. code-block:: console
+
+   $ vagga py3
+   <build log...>
+   Python 3.4.0 (default, Apr 11 2014, 13:05:11)
+   >>>
+
+Every time you change your vagga.yaml file (or dependent file like :file:`requirements.txt`), add or remove python dependency or
+other container configuration, vagga will rebuild the container to keep it up-to-date.
+
+Notes
+~~~~~~~~~~~
+
+Containers' filesystem can be found at :file:`.vagga` directory of your project. You can add
+the python binary of this container to your IDE to use same installed packages in IDE and in the
+application when you run vagga.
+
+For Ubuntu container and Python3 path will be similar to this:
+:file:`/your/project/directory/.vagga/container_name/usr/bin/python3`. In the example above, it's
+:file:`.vagga/python/usr/bin/python3`.
+
+To completely remove your Vagga's development environment just remove whole :file:`.vagga` directory.
+
+
+Difference from virtualenv
+~~~~~~~~~~~
+
+This is advantages listed on the "What is Vagga?" page of it's documentation:
+  - Build container and run program with single command, right after ``git pull``
+  - Automatically rebuild container if project dependencies change
+  - Run multiple processes (e.g. application and database) with single command
+
+Basically, the main difference is that you are able to keep not only python dependencies separately,
+but all environment too. Automatic rebuild of containers makes your environment always up-to-date,
+you don't need to care if some dependencies are changed.
+
+Also it allows you to run some additional applications like database without installing it
+to your local computer: everything will be executed in containers.
+
+In real project you would have :file:`requirements.txt` file with all dependencies listed.
+It can be easily added to your vagga container using ``!Py3Requirements requirements.txt`` commands - and
+if someone in your team changes this file, after ``git pull`` vagga will automatically detect changes and
+rebuild your container.
+
+See all python-related commands of vagga in `Python Installer <http://vagga.readthedocs.org/en/latest/build_commands.html#python-installer>`_
+paragraph of documentation.
