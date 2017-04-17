@@ -94,6 +94,38 @@ Let's see what we got exactly:
     '$13.99', '$31.57', '$8.49', '$14.47', '$15.86', '$11.11',
     '$15.98', '$16.27', '$7.50', '$50.85', '$14.26', '$5.68',
     '$15.00', '$114.07', '$10.09']
+    
+
+Web Scraping Best Practices 
+----------------------------
+1) Make scraping slower, do not DDoS the server.  
+    Include random sleeps in between requests (if making multiple) 
+    
+.. code-block:: python
+   
+    from lxml import html
+    import requests
+    import time
+    i = 0 
+    while(i<5):
+        time.sleep(3) #time out before making another request
+        page = requests.get('http://econpy.pythonanywhere.com/ex/001.html')
+        tree = html.fromstring(page.content)
+        i+=1
+    
+2. Disguise your requests by rotatating IP's and proxy services 
+    Create a pool of IPs and you can randomly choose one for each request.  
+
+3. User agent spoofing.  
+    Since every request made from a client contains a user-agent header, using the same user-agent multiple times leads to the detection     of a bot. User agent spoofing is the best solution for this. Spoof the User agent by making a list of user agents and pick a random     one for each request.
+
+.. code-block:: python
+
+    import requests
+    url = 'http://www.ichangtou.com/#company:data_000008.html'
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+    response = requests.get(url, headers=headers)
+    print(response.content)
 
 Congratulations! We have successfully scraped all the data we wanted from
 a web page using lxml and Requests. We have it stored in memory as two
