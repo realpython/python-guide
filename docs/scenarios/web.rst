@@ -366,7 +366,7 @@ into the corresponding block in the :file:`base.html` page.
 
 .. code-block:: html
 
-    <!{% extends "base.html" %}
+    {% extends "base.html" %}
     {% block content %}
         <p class="important">
         <div id="content">
