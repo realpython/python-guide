@@ -76,6 +76,7 @@ signal that no argument was provided (:py:data:`None` is often a good choice).
         to.append(element)
         return to
 
+Do not forget, you are passing a *list* object as the second argument.
 
 When the Gotcha Isn't a Gotcha
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
