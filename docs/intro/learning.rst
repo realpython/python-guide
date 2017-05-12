@@ -26,10 +26,10 @@ At last it finishes off with  tutorial "How to access MySQL db using python"
 Learn Python for Data Science Interactively
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you prefer an online interactive environment to learn Python for Data Science, `this free python tutorial by DataCamp <https://www.datacamp.com/courses/intro-to-python-for-data-science>`_ is a great way to get started. If you're already somewhat advanced and interested in machine learning, check out this `course on Supervised Learning with scikit-learn <https://www.datacamp.com/courses/supervised-learning-with-scikit-learn?tap_a=5644-dce66f&tap_s=116411-750171>`_, by one the core developers of scikit-learn\
+If you prefer an online interactive environment to learn Python for Data Science, `this free python tutorial by DataCamp <https://www.datacamp.com/courses/intro-to-python-for-data-science?tap_a=5644-dce66f&tap_s=116411-750171>`_ is a great way to get started. If you're already somewhat advanced and interested in machine learning, check out this `course on Supervised Learning with scikit-learn <https://www.datacamp.com/courses/supervised-learning-with-scikit-learn?tap_a=5644-dce66f&tap_s=116411-750171>`_, by one the core developers of scikit-learn.
 
 
-
+`Python for data science <http://datacamp.com/?tap_a=5644-dce66f&tap_s=116411-750171>`_
 
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
