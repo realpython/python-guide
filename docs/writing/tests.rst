@@ -185,7 +185,7 @@ and then running the `py.test` command
 is far less work than would be required for the equivalent functionality with
 the unittest module!
 
-    `py.test <http://pytest.org/latest/>`_
+    `py.test <https://docs.pytest.org/en/latest/>`_
 
 
 Nose
