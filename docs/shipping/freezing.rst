@@ -70,7 +70,13 @@ bbFreeze
 
 Prerequisite is to install :ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
 
-.. todo:: Write steps for most basic .exe
+.. code-block:: python
+
+    from bbfreeze import Freezer
+    
+    freezer = Freezer('script')
+    freezer.addScript('foobar.py')
+    freezer()
 
 py2exe
 ~~~~~~
