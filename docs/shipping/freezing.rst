@@ -70,7 +70,46 @@ bbFreeze
 
 Prerequisite is to install :ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
 
-.. todo:: Write steps for most basic .exe
+1. Install :code:`bbfreeze`:
+
+.. code-block:: console
+    
+    $ pip install bbfreeze
+    
+2. Write most basic :file:`bb_setup.py`
+
+.. code-block:: python
+
+    from bbfreeze import Freezer
+    
+    freezer = Freezer(distdir='dist')
+    freezer.addScript('foobar.py', gui_only=True)
+    freezer()
+    
+.. note::
+    
+    This will work for the most basic one file scripts. For more advanced freezing you will have to provide
+    include and exclude paths like so
+    
+    .. code-block:: python
+    
+        freezer = Freezer(distdir='dist', includes=['my_code'], excludes=['docs'])
+
+3. (Optionally) include icon
+
+.. code-block:: python
+    
+    freezer.setIcon('my_awesome_icon.ico')
+    
+4. Provide the Microsoft Visual C runtime DLL for the freezer. It might be possible to append your :code:`sys.path`
+with Microsoft Visual Studio path but I find it easier to drop :file:`msvcp90.dll` in the same folder where your script
+resides.
+
+5. Freeze!
+
+.. code-block:: console
+    
+    $ python bb_setup.py
 
 py2exe
 ~~~~~~
