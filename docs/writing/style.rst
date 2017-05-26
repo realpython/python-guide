@@ -459,23 +459,23 @@ best to adhere to the guidelines laid out within this document. Some project
 may sway from it from time to time, while others may
 `amend its recommendations <http://docs.python-requests.org/en/master/dev/contributing/#kenneth-reitz-s-code-style>`_.
 
-That being said, conforming your Python code to PEP 8 is generally a good
-idea and helps make code more consistent when working on projects with other
-developers. There is a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
-that can check your code for conformance. Install it by running the following
-command in your terminal:
+That being said, conforming your Python code to PEP 8 is generally a good idea
+and helps make code more consistent when working on projects with other
+developers. There is a command-line program, `pycodestyle <https://github.com/PyCQA/pycodestyle>`_
+(previously known as ``pep8``), that can check your code for conformance.
+Install it by running the following command in your terminal:
 
 
 .. code-block:: console
 
-    $ pip install pep8
+    $ pip install pycodestyle
 
 
 Then run it on a file or series of files to get a report of any violations.
 
 .. code-block:: console
 
-    $ pep8 optparse.py
+    $ pycodestyle optparse.py
     optparse.py:69:11: E401 multiple imports on one line
     optparse.py:77:1: E302 expected 2 blank lines, found 1
     optparse.py:88:5: E301 expected 1 blank line, found 0
