@@ -33,6 +33,9 @@ Test your installation
 Basic Usage
 ~~~~~~~~~~~
 
+Python 2.x
+..........
+
 1. Create a virtual environment for a project:
 
 .. code-block:: console
@@ -91,6 +94,53 @@ installed libraries.
 
 To delete a virtual environment, just delete its folder. (In this case,
 it would be ``rm -rf my_project``.)
+
+Python 3.3+
+...........
+
+The ``venv`` module comes pre-built into Python 3.3 and above. This version is much more flexible since you can extend `EnvBuilder` to make your virtual environments more personalized and powerful.
+
+1. Create a virtual environment for a project:
+
+.. code-block:: console
+
+   $ pyenv /path/to/new/venv
+
+The ``pyvenv`` script will create the target directory and any parent directories that are needed as well. It will place a ``pyvenv.cfg`` file in it and add a ``bin`` (``Scripts`` on Windows) subdirectory which will contain the Python executable files, and a copy of the ``pip`` library which you
+can use to install other packages. The name of the virtual environment can be anything (``venv`` in this case); omitting the name will place the files in the current directory instead.
+
+2. To begin using the virtual environment, it needs to be activated:
+
+.. code-block:: console
+
+   $ source /path/to/new/venv/bin/activate
+
+The name of the current virtual environment will now appear on the left of 
+the prompt (e.g. ``(venv)Your-Computer:your_project UserName$)`` to let you know 
+that it's active. From now on, any package that you install using pip will be 
+placed in the ``venv`` folder, isolated from the global Python installation.
+
+Install packages as usual, for example:
+
+.. code-block:: console
+
+    $ pip install requests
+
+All the packages will be installed in :file:`lib/python3.x/site-packages/`
+
+3. If you are done working in the virtual environment for the moment, you can
+   deactivate it:
+
+.. code-block:: console
+
+   $ deactivate
+
+This puts you back to the system's default Python interpreter with all its
+installed libraries.
+
+To delete a virtual environment, just delete its folder. (In this case, 
+it would be ``rm -rf venv``.)
+
 
 After a while, though, you might end up with a lot of virtual environments
 littered across your system, and its possible you'll forget their names or
