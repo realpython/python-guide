@@ -137,6 +137,18 @@ Recommended for Python development is
 `linter-flake8 <https://github.com/AtomLinter/linter-flake8>`_.
 
 
+Brackets
+--------
+
+    `Brackets <http://brackets.io/>`_ is a lightweight, modern text editor.
+    Visual tools are blended together to offer web design on top of regular
+    coding. It offers inline editing, live previews, and preprocessor support.
+
+Brackets is built with JavaScript, but offers extensive customization potential.
+Some new examples of customization are
+`hdy.Brackets-Shell <https://github.com/johnhidey/hdy.brackets-shell/>`_
+`Brackets Terminal <https://github.com/artoale/brackets-terminal>`_.
+
 IDEs
 ::::
 
@@ -162,8 +174,8 @@ MIT licensed.
 Enthought Canopy
 ----------------
 `Enthought Canopy <https://www.enthought.com/products/canopy/>`_ is a Python
-IDE which is focused towards Scientists and Engineers as it provides pre 
-installed libraries for data analysis. 
+IDE which is focused towards Scientists and Engineers as it provides pre
+installed libraries for data analysis.
 
 Eclipse
 -------
