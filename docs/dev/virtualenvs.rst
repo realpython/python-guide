@@ -50,13 +50,19 @@ This creates a copy of Python in whichever directory you ran the command in,
 placing it in a folder named :file:`my_project`.
 
 You can also use the Python interpreter of your choice (like
-``python2.7``).
+``python2.7``) This you can do by either specifying the interpreter using the ``-p `` option:
 
 .. code-block:: console
 
    $ virtualenv -p /usr/bin/python2.7 my_project
 
-or change the interpreter globally with an env variable in ``~/.bashrc``:
+or by invoking the ``venv`` module directly from your interpreter:
+
+.. code-block:: console
+
+   $ /usr/bin/python2.7 -m venv
+
+or even changing the interpreter globally with an env variable in ``~/.bashrc``:
 
 .. code-block:: console
 
