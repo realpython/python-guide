@@ -29,7 +29,7 @@ You can do this easily by running the following in ``powershell``:
 
 .. code-block:: console
 
-    [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
+    [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python36\;C:\Python36\Scripts\", "User")
 
 This is also an option during the installation process.
 
