@@ -22,6 +22,23 @@ If you're using another version of Ubuntu (e.g. the latest LTS release), we reco
     $ sudo apt-get update
     $ sudo apt-get install python3.6
 
+If you are using other Linux distribution, chances are you already have Python 3
+pre-installed as well. If not, use your distribution's package manager.
+For example on Fedora, you would use `dnf`:
+
+.. code-block:: console
+
+    $ sudo dnf install python3
+
+Note that if the version of the ``python3`` package is not recent enough
+for you, there may be ways of installing more recent versions as well,
+depending on you distribution. For example installing the ``python36`` package
+on Fedora 25 to get Python 3.6. If you are a Fedora user, you might want
+to read about `multiple Python versions available in Fedora`_.
+
+.. _multiple Python versions available in Fedora: https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html
+
+
 Working with Python 3
 ---------------------
 
@@ -58,6 +75,17 @@ To see if pip is installed, open a command prompt and run
     $ command -v pip
 
 To install pip, `follow the official pip installation guide <https://pip.pypa.io/en/latest/installing/>`_ - this will automatically install the latest version of setuptools.
+
+Note that on some Linux distributions including Ubuntu and Fedora the ``pip``
+command is meant for Python 2, while the ``pip3`` command is meant for Python 3.
+
+.. code-block:: console
+
+    $ command -v pip3
+
+However, when using virtual environments (described bellow), you don't need to
+care about that.
+
 
 Virtual Environments
 --------------------
