@@ -3,23 +3,22 @@
 Installing Python 2 on Linux
 ============================
 
-The latest versions of CentOS, Fedora, Redhat Enterprise (RHEL) and Ubuntu
+The latest versions of CentOS, Red Hat Enterprise Linux (RHEL) and Ubuntu
 **come with Python 2.7 out of the box**.
 
 To see which version of Python you have installed, open a command prompt and run
 
 .. code-block:: console
 
-    $ python --version
+    $ python2 --version
 
-Some older versions of RHEL and CentOS come with Python 2.4 which is
-unacceptable for modern Python development. Fortunately, there are
-`Extra Packages for Enterprise Linux`_ which include high
-quality additional packages based on their Fedora counterparts. This
-repository contains a Python 2.6 package specifically designed to install
-side-by-side with the system's Python 2.4 installation.
+However, with the growing popularity of Python 3, some distributions, such as
+Fedora, don't come with Python 2 pre-installed. You can install the ``python2``
+package with your distribution package manager:
 
-.. _Extra Packages for Enterprise Linux: http://fedoraproject.org/wiki/EPEL
+.. code-block:: console
+
+    $ sudo dnf install python2
 
 You do not need to install or configure anything else to use Python. Having
 said that, I would strongly recommend that you install the tools and libraries

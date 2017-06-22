@@ -24,4 +24,4 @@ for development purposes, as well as setuptools, pip and virtualenv.
 
 - :ref:`Python 2 on MacOS <install-osx>`.
 - :ref:`Python 2 on Microsoft Windows <install-windows>`.
-- :ref:`Python 2 on Ubuntu Linux <install-linux>`.
+- :ref:`Python 2 on Linux <install-linux>`.
