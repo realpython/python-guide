@@ -391,7 +391,17 @@ folder named :file:`my` which is not the case. There is an
 dot notation should be used in the Python docs.
 
 If you'd like you could name your module :file:`my_spam.py`, but even our
-friend the underscore should not be seen often in module names.
+friend the underscore should not be seen often in module names. However, using other 
+characters (spaces or hyphens) in module names will prevent importing 
+(- is the subtract operator), so try to keep module names short so there is 
+no need to separate words. And, most of all, don't namespace with underscores, use submodules instead.
+
+.. code-block:: python
+
+  # OK
+  import library.plugin.foo
+  # not OK
+  import library.foo_plugin
 
 Aside from some naming restrictions, nothing special is required for a Python
 file to be a module, but you need to understand the import mechanism in order
