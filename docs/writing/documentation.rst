@@ -205,8 +205,8 @@ more information about a function, what it does, any exceptions it may raise,
 what it returns, or relevant details about the parameters.
 
 For more detailed documentation of code a popular style is the one used for the
-Numpy project, often called `Numpy style`_ docstrings. While it can take up a
-few more lines the previous example, it allows the developer to include a lot 
+Numpy project, often called `Numpy style`_ docstrings. While it can take up more
+lines than the previous example, it allows the developer to include a lot 
 more information about a method, function, or class. ::
 
     def random_number_generator(arg1, arg2):
