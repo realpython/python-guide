@@ -244,7 +244,7 @@ Git_ uses ``.gitignore`` while Mercurial_ uses ``.hgignore``.
 .. _Git: https://git-scm.com/
 .. _Mercurial: https://www.mercurial-scm.org/
 
-At the minimum your ignore files should looks like this.
+At the minimum your ignore files should look like this.
 
 ::
 
