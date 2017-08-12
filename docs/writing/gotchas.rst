@@ -230,13 +230,27 @@ Here's nice trick for removing all of these files, if they already exist::
 Run that from the root directory of your project, and all ``.pyc`` files
 will suddenly vanish. Much better.
 
+Version Control Ignores
+~~~~~~~~~~~~~~~~~~~~~~~
 
+If you still need the ``.pyc`` files for performance reasons, you can always add them
+to the ignore files of your version control repositories. Popular version control
+systems have the ability to use wildcards defined in a file to apply special
+rules.
 
+An ignore file will make sure the matching files don't get checked into the repository.
+Git_ uses ``.gitignore`` while Mercurial_ uses ``.hgignore``.
 
+.. _Git: https://git-scm.com/
+.. _Mercurial: https://www.mercurial-scm.org/
 
+At the minimum your ignore files should look like this.
 
+::
 
+    syntax:glob   # This line is not needed for .gitignore files.
+    *.py[cod]     # Will match .pyc, .pyo and .pyd files.
+    __pycache__/  # Exclude the whole folder
 
-
-
-
+You may wish to include more files and directories depending on your needs.
+The next time you commit to the repository, these files will not be included.
