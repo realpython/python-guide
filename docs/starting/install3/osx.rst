@@ -70,8 +70,7 @@ Pip
 
 Homebrew installs ``pip3`` for you.
 
-``pip3`` is the alias for the Python 3 version of ``pip`` on systems with both
-the Homebrew'd Python 2 and 3 installed.
+``pip3`` is the alias to ``pip`` pointing to the Homebrew'd Python 3.
 
 Working with Python 3
 ---------------------
@@ -84,18 +83,22 @@ version of Python 3 as well.
 
     $ python
 
-will launch the Python 2 interpreter.
+will launch the system Python interpreter.
+
+.. code-block:: console
+
+    $ python2
+
+will launch the homebrew-installed Python 2 interpreter (if any).
 
 .. code-block:: console
 
     $ python3
 
-will launch the Python 3 interpreter.
+will launch the homebrew-installed Python 3 interpreter.
 
-``pip3`` and ``pip`` will both be available.  If the Homebrew version of Python
-2 is not installed, they will be the same.  If the Homebrew version of Python 2
-is installed then ``pip`` will point to Python 2 and ``pip3`` will point to
-Python 3.
+If the Homebrew version of Python 2 is installed then ``pip2`` will point to Python 2.
+If the Homebrew version of Python 3 is installed then ``pip3`` will point to Python 3.
 
 
 Virtual Environments
