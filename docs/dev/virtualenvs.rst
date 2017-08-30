@@ -14,7 +14,7 @@ network services (including web applications), but is also very well suited to
 managing development and testing environments for any kind of project.
 
 .. Note:: This guide is written for Python 3, however, these instructions
-    should work fine on Python 2.7.
+    should work fine on Python 2.7—if you are still using it, for some reason.
 
 
 Make sure you've got Python & pip
