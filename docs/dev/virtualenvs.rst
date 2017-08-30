@@ -1,7 +1,7 @@
 .. _virtualenvironments-ref:
 
-Virtual Environments
-====================
+Pipenv & Virtual Environments
+=============================
 
 A Virtual Environment is a tool to keep the dependencies required by different
 projects in separate places, by creating virtual Python environments for them.
@@ -11,12 +11,30 @@ dilemma, and keeps your global site-packages directory clean and manageable.
 For example, you can work on a project which requires Django 1.10 while also
 maintaining a project which requires Django 1.8.
 
+
+Pipenv
+------
+
+**Pipenv** is a project that aims to bring the best of all packaging worlds to the Python world. It harnesses `Pipfile <https://github.com/pypa/pipfile>`_, `pip <https://github.com/pypa/pip>`_, and `virtualenv <https://github.com/pypa/virtualenv>`_ into one single toolchain. It features very pretty terminal colors.
+
+It automatically creates and manages a virtualenv for your projects, as well as adds/removes packages from your ``Pipfile`` as you install/uninstall packages. The ``lock`` command generates a lockfile (``Pipfile.lock``).
+
+
+Install Pipenv with pip::
+
+    $ pip install pipenv
+    ✨🍰✨
+    
+
+
 virtualenv
 ----------
 
 `virtualenv <http://pypi.python.org/pypi/virtualenv>`_ is a tool to create
 isolated Python environments. virtualenv creates a folder which contains all the
 necessary executables to use the packages that a Python project would need.
+
+It can be used standalone, in place of Pipenv.
 
 Install virtualenv via pip:
 
