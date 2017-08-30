@@ -24,11 +24,11 @@ from your command line. You can check this by simply running:
 
 .. code-block:: bash
 
-    python --version
+    $ python --version
 
 You should get some output like ``3.6.2``. If you do not have Python, please
 install the latest 3.x version from `python.org`_ or refer to the
-`Installing Python`_ section of the Hitchhiker's Guide to Python.
+`Installing Python`_ section of this guide.
 
 .. Note:: If you're newcomer and you get an error like this:
     
@@ -49,7 +49,7 @@ check this by running:
 
 .. code-block:: bash
 
-    pip --version
+    $ pip --version
 
 If you installed Python from source, with an installer from `python.org`_, or
 via `Homebrew`_ you should already have pip. If you're on Linux and installed
@@ -75,7 +75,7 @@ Use ``pip`` to install Pipenv:
 
 .. code-block:: python
 
-    pip install --user pipenv
+    $ pip install --user pipenv
 
 
 .. Note:: This does a `user installation`_ to prevent breaking any system-wide
@@ -104,8 +104,8 @@ tutorial) and run:
 
 .. code-block:: bash
 
-    cd myproject
-    pipenv install requests
+    $ cd myproject
+    $ pipenv install requests
 
 Pipenv will install the excellent `Requests`_ library and create a ``Pipfile``
 for you in your project's directory. The :ref:`Pipfile` is used to track which
@@ -161,7 +161,7 @@ Then you can run this script using ``pipenv run``:
 
 .. code-block:: bash
 
-    pipenv run python main.py
+    $ pipenv run python main.py
 
 You should get output similar to this:
 
