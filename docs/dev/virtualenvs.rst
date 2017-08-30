@@ -3,8 +3,9 @@
 Pipenv & Virtual Environments
 =============================
 
-This tutorial walks you through installing and using Python packages. It will
-show you how to install and use the necessary tools and make strong
+This tutorial walks you through installing and using Python packages. 
+
+It will show you how to install and use the necessary tools and make strong
 recommendations on best practices. Keep in mind that Python is used for a great
 many different purposes, and precisely how you want to manage your dependencies
 may change based on how you decide to publish your software. The guidance
