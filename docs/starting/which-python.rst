@@ -1,5 +1,5 @@
-Picking an Interpreter
-======================
+Picking an Python Interpreter (3 vs. 2)
+=======================================
 
 .. _which-python:
 
