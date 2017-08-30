@@ -54,8 +54,7 @@ check this by running:
 
 If you installed Python from source, with an installer from `python.org`_, or
 via `Homebrew`_ you should already have pip. If you're on Linux and installed
-using your OS package manager, you may have to install pip separately, see
-:doc:`/guides/installing-using-linux-tools`.
+using your OS package manager, you may have to `install pip <https://pip.pypa.io/en/stable/installing/>`_ separately.
 
 .. _getting started tutorial: https://opentechschool.github.io/python-beginners/en/getting_started.html#what-is-python-exactly
 .. _python.org: https://python.org
