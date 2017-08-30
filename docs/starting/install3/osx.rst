@@ -101,19 +101,20 @@ If the Homebrew version of Python 2 is installed then ``pip2`` will point to Pyt
 If the Homebrew version of Python 3 is installed then ``pip3`` will point to Python 3.
 
 
-Virtual Environments
---------------------
+Pipenv & Virtual Environments
+-----------------------------
 
-A Virtual Environment (commonly referred to as a 'virtualenv') is a tool to keep
-the dependencies required by different projects in separate places, by creating
-virtual Python environments for them. It solves the "Project X depends on
-version 1.x but, Project Y needs 4.x" dilemma, and keeps your global
-site-packages directory clean and manageable.
+The next step it to install Pipenv, so you can install dependencies and manage virtual environments. 
+
+A Virtual Environment is a tool to keep the dependencies required by different projects
+in separate places, by creating virtual Python environments for them. It solves the
+"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps
+your global site-packages directory clean and manageable.
 
 For example, you can work on a project which requires Django 1.10 while also
 maintaining a project which requires Django 1.8.
 
-To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
+So, onward! To the :ref:`Pipenv & Virtual Environments <virtualenvironments-ref>` docs!
 
 --------------------------------
 
