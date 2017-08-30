@@ -181,8 +181,8 @@ Congratulations, you now know how to install and use Python packages! ✨ 🍰 �
 
 
 
-virtualenv
-==========
+Lower level: virtualenv
+=======================
 
 `virtualenv <http://pypi.python.org/pypi/virtualenv>`_ is a tool to create
 isolated Python environments. virtualenv creates a folder which contains all the
