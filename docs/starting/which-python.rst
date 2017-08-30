@@ -21,6 +21,10 @@ The basic gist of the state of things is as follows:
 Recommendations
 ~~~~~~~~~~~~~~~
 
+
+.. note:: The use of **Python 3** is *highly* preferred over Python 2. Consider upgrading your applications and infrastructure if you find yourself *still* using Python 2 in production today. If you are using Python 3, congratulations — you are indeed a person of excellent taste.
+  —*Kenneth Reitz*
+
 I'll be blunt:
 
 - Use Python 3 for new Python applications.
