@@ -87,8 +87,10 @@ However, when using virtual environments (described bellow), you don't need to
 care about that.
 
 
-Virtual Environments
---------------------
+Pipenv & Virtual Environments
+-----------------------------
+
+The next step it to install Pipenv, so you can install dependencies and manage virtual environments. 
 
 A Virtual Environment is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them. It solves the
@@ -98,11 +100,7 @@ your global site-packages directory clean and manageable.
 For example, you can work on a project which requires Django 1.10 while also
 maintaining a project which requires Django 1.8.
 
-To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
-
-You can also use :ref:`virtualenvwrapper <virtualenvwrapper-ref>` to make it easier to
-manage your virtual environments.
-
+So, onward! To the :ref:`Pipenv & Virtual Environments <virtualenvironments-ref>` docs!
 
 --------------------------------
 
