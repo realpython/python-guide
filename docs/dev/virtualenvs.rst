@@ -169,9 +169,9 @@ You should get output similar to this:
 
     Your IP is 8.8.8.8
 
-Using ``pipenv run`` ensures that your installed packages are available to
+Using ``$ pipenv run`` ensures that your installed packages are available to
 your script. It's also possible to spawn a new shell that ensures all commands
-have access to your installed packages with ``pipenv shell``.
+have access to your installed packages with ``$ pipenv shell``.
 
 
 Next steps
