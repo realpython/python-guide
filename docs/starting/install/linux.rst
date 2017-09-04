@@ -1,7 +1,9 @@
 .. _install-linux:
 
 Installing Python 2 on Linux
-============================
+=============================
+
+.. image:: https://farm5.staticflickr.com/4268/34435688560_4cc2a7bcbb_k_d.jpg
 
 The latest versions of CentOS, Red Hat Enterprise Linux (RHEL) and Ubuntu
 **come with Python 2.7 out of the box**.
