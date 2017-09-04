@@ -1,6 +1,8 @@
 Testing Your Code
 =================
 
+.. image:: https://farm5.staticflickr.com/4222/33907151414_4caa51c4ae_k_d.jpg
+
 Testing your code is very important.
 
 Getting used to writing testing code and running this code in parallel is now 
