@@ -3,6 +3,8 @@
 Code Style
 ==========
 
+.. image:: https://farm5.staticflickr.com/4223/33907150054_5ee79e8940_k_d.jpg
+
 If you ask Python programmers what they like most about Python, they will
 often cite its high readability.  Indeed, a high level of readability
 is at the heart of the design of the Python language, following the
