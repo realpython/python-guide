@@ -6,8 +6,6 @@
 The Hitchhiker's Guide to Python!
 =================================
 
-.. image:: https://farm5.staticflickr.com/4206/35620636872_7f97b4e497_k_d.jpg
-
 Greetings, Earthling! Welcome to The Hitchhiker's Guide to Python.
 
 **This is a living, breathing guide.**  If you'd like to contribute,
