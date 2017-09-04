@@ -1,6 +1,7 @@
 Continuous Integration
 ======================
 
+.. image:: https://farm5.staticflickr.com/4173/33907150594_9abba7ad0a_k_d.jpg
 
 Why?
 ----
