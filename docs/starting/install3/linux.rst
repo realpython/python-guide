@@ -3,7 +3,7 @@
 Installing Python 3 on Linux
 ============================
 
-.. image:: https://farm5.staticflickr.com/4276/34435689480_8eea0f1bfd_o_d.jpg
+.. image:: https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg
 
 This document describes how to install Python 3.6 on Ubuntu Linux machines.
 
