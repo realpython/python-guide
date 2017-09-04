@@ -1,6 +1,8 @@
 Documentation
 =============
 
+.. image:: https://farm5.staticflickr.com/4178/33928823133_2f3d32cf32_k_d.jpg
+
 Official Documentation
 ----------------------
 
