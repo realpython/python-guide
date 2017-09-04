@@ -4,6 +4,8 @@
 Packaging Your Code
 ===================
 
+.. image:: https://farm5.staticflickr.com/4325/36137234682_be6898bf57_k_d.jpg
+
 Package your code to share it with other developers. For example
 to share a library for other developers to use in their application,
 or for development tools like 'py.test'.
