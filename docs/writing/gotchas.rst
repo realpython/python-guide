@@ -1,6 +1,8 @@
 Common Gotchas
 ==============
 
+.. image:: https://farm5.staticflickr.com/4163/34435688380_b5a740762b_k_d.jpg
+
 For the most part, Python aims to be a clean and consistent language that
 avoids surprises. However, there are a few cases that can be confusing to
 newcomers.
