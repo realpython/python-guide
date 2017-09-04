@@ -3,6 +3,8 @@
 Installing Python 3 on Linux
 ============================
 
+.. image:: https://farm5.staticflickr.com/4276/34435689480_8eea0f1bfd_o_d.jpg
+
 This document describes how to install Python 3.6 on Ubuntu Linux machines.
 
 To see which version of Python 3 you have installed, open a command prompt and run
