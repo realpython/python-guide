@@ -1,6 +1,8 @@
 News
 ====
 
+.. image:: https://farm4.staticflickr.com/3804/33573767786_eececc5d27_k_d.jpg
+
 Planet Python
 ~~~~~~~~~~~~~
 
