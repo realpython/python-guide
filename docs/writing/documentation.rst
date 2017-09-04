@@ -1,6 +1,8 @@
 Documentation
 =============
 
+.. image:: https://farm5.staticflickr.com/4279/35620636012_f66aa88f93_k_d.jpg
+
 Readability is a primary focus for Python developers, in both project
 and code documentation. Following some simple best practices can save
 both you and others a lot of time.
