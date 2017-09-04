@@ -3,6 +3,8 @@
 Installing Python 3 on Windows
 ==============================
 
+.. image:: https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg
+
 First, download the `latest version <https://www.python.org/ftp/python/3.6.2/python-3.6.2.exe>`_
 of Python 3.6 from the official website. If you want to be sure you are installing a fully
 up-to-date version, click the Downloads > Windows link from the home page of the
