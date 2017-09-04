@@ -1,6 +1,8 @@
 Speed
 =====
 
+.. image:: https://farm3.staticflickr.com/2826/33175625804_e225b90f3e_k_d.jpg
+
 CPython, the most commonly used implementation of Python, is slow for CPU bound
 tasks. `PyPy`_ is fast.
 
