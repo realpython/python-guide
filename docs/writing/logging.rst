@@ -1,6 +1,8 @@
 Logging
 =======
 
+.. image:: https://farm5.staticflickr.com/4246/35254379756_c9fe23f843_k_d.jpg
+
 The :mod:`logging` module has been a part of Python's Standard Library since
 version 2.3.  It is succinctly described in :pep:`282`.  The documentation
 is notoriously hard to read, except for the `basic logging tutorial`_.
