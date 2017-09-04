@@ -3,6 +3,8 @@
 Pipenv & Virtual Environments
 =============================
 
+.. image:: https://farm5.staticflickr.com/4290/35294660055_42c02b2316_k_d.jpg
+
 This tutorial walks you through installing and using Python packages. 
 
 It will show you how to install and use the necessary tools and make strong
