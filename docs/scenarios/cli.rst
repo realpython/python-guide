@@ -1,6 +1,8 @@
 Command-line Applications
 =========================
 
+.. image:: https://farm5.staticflickr.com/4272/34435690330_11930b5987_k_d.jpg
+
 Command-line applications, also referred to as
 `Console Applications <http://en.wikipedia.org/wiki/Console_application>`_,
 are computer programs designed to be used from a text interface, such as a
