@@ -4,6 +4,8 @@
 Freezing Your Code
 ==================
 
+.. image:: https://farm5.staticflickr.com/4227/33907151034_e0a9e53402_k_d.jpg
+
 "Freezing" your code is creating a single-file executable file to distribute 
 to end-users, that contains all of your application code as well as the 
 Python interpreter.
