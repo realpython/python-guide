@@ -1,6 +1,8 @@
 Networking
 ==========
 
+.. image:: https://farm3.staticflickr.com/2892/34151833832_6bdfd930af_k_d.jpg
+
 Twisted
 -------
 
