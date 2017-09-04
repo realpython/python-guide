@@ -1,7 +1,7 @@
 Testing Your Code
 =================
 
-.. image:: https://farm5.staticflickr.com/4222/33907151414_4caa51c4ae_k_d.jpg
+.. image:: https://farm5.staticflickr.com/4203/33907151224_0574e7dfc2_k_d.jpg
 
 Testing your code is very important.
 
