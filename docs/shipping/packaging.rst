@@ -154,7 +154,7 @@ Also, if a distribution releases a new security update for Python, then your
 application will automatically start using that new version of Python.
 
 The bdist_rpm command makes `producing an RPM file <https://docs.python.org/3/distutils/builtdist.html#creating-rpm-packages>`_
-for use by distributions like Red Hat or SuSE is trivially easy.
+for use by distributions like Red Hat or SuSE trivially easy.
 
 However, creating and maintaining the different configurations required for
 each distribution's format (e.g. .deb for Debian/Ubuntu, .rpm for Red
