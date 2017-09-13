@@ -18,6 +18,20 @@ Python-related news.
 
     `/r/python <http://reddit.com/r/python>`_
 
+Talk Python Podcast
+~~~~~~~~~~~~~~~~~~~
+
+The #1 Python-focused podcast covering the people and ideas in Python.
+
+    `Talk Python To Me <https://talkpython.fm>`_
+
+Python Bytes Podcast
+~~~~~~~~~~~~~~~~~~~~
+
+A short-form Python podcast covering recent developer headlines.
+
+    `Python Bytes <https://pythonbytes.fm>`_
+
 Pycoder's Weekly
 ~~~~~~~~~~~~~~~~
 
