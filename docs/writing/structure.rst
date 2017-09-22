@@ -774,7 +774,7 @@ compute x + 1, you have to create another integer and give it a name.
 
     my_list = [1, 2, 3]
     my_list[0] = 4
-    print my_list  # [4, 2, 3] <- The same list as changed
+    print my_list  # [4, 2, 3] <- The same list has changed
 
     x = 6
     x = x + 1  # The new x is another object
