@@ -1,3 +1,5 @@
+.. _installation:
+
 Properly Installing Python
 ==========================
 
