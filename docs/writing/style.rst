@@ -1,34 +1,70 @@
 .. _code_style:
 
-Code Style
+Оформление кода
 ==========
 
 .. image:: https://farm5.staticflickr.com/4223/33907150054_5ee79e8940_k_d.jpg
+
+Если Вы спросите программиста Python о том, что ему нравится в питоне больше всего, 
+чаще всего в ответ прозвучит "хорошая читаемость". В самом деле, хорошая читаемость - главная линия
+дизайна языка Python, что делается с учетом известного факта, что код намного чаще читают, чем пишут.
 
 If you ask Python programmers what they like most about Python, they will
 often cite its high readability.  Indeed, a high level of readability
 is at the heart of the design of the Python language, following the
 recognized fact that code is read much more often than it is written.
 
+Причина хорошей читаемости кода на Python - достаточно полный свод правил оформления кода и идиом питона.
+
 One reason for the high readability of Python code is its relatively
 complete set of Code Style guidelines and "Pythonic" idioms.
+
+Когда опытный программист Python говорит, что код не в "питоновском" стиле, 
+это обычно значит, что эти строки не соответствуют общим правилам и не читается.
 
 When a veteran Python developer (a Pythonista) calls portions of
 code not "Pythonic", they usually mean that these lines
 of code do not follow the common guidelines and fail to express its intent in
 what is considered the best (hear: most readable) way.
 
+Есть ряд случаев, когда от правил оформления отступают намеренно, но они достаточно редки.
+
 On some border cases, no best way has been agreed upon on how to express
 an intent in Python code, but these cases are rare.
+
+Общие понятия
+----------------
 
 General concepts
 ----------------
 
+Точный код
+~~~~~~~~~~~~~
+
 Explicit code
 ~~~~~~~~~~~~~
 
+В случае, когда в Python можно выполнить задачу разными способами, следует 
+придерживаться максимально точного и открытого кода.
+
 While any kind of black magic is possible with Python, the
 most explicit and straightforward manner is preferred.
+
+**Плохой вариант**
+
+.. code-block:: python
+
+    def make_complex(*args):
+        x, y = args
+        return dict(**locals())
+
+**Хороший вариант**
+
+.. code-block:: python
+
+    def make_complex(x, y):
+        return {'x': x, 'y': y}
+
 
 **Bad**
 
