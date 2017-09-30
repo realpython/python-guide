@@ -20,6 +20,13 @@ New to Python? Let's properly setup up your Python environment.
     starting/install/osx
     starting/install/win
     starting/install/linux
+
+
+Using Virtualenvs with Pipenv:
+
+.. toctree::
+    :maxdepth: 1
+
     dev/virtualenvs
 
 
