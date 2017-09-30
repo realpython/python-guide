@@ -20,6 +20,22 @@ New to Python? Let's properly setup up your Python environment.
     starting/install/osx
     starting/install/win
     starting/install/linux
+    dev/virtualenvs
+
+
+Python Development Environments
+-------------------------------
+
+This part of the guide focus on the Python development environment,
+and the best-practice tools that are available for writing Python code.
+
+.. toctree::
+   :maxdepth: 2
+
+   dev/env
+   dev/virtualenvs
+   dev/pip-virtualenv
+
 
 
 
@@ -81,22 +97,6 @@ This part of the guide focuses on deploying your Python code.
 
    shipping/packaging
    shipping/freezing
-
-
-Python Development Environments
--------------------------------
-
-This part of the guide focus on the Python development environment,
-and the best-practice tools that are available for writing Python code.
-
-.. toctree::
-   :maxdepth: 2
-
-   dev/env
-   dev/virtualenvs
-   dev/pip-virtualenv
-
-
 
 
 Additional Notes
