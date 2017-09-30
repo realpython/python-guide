@@ -1,14 +1,14 @@
 Getting Started with Python
 ---------------------------
 
-New to Python? Let's properly setup up your Python environment.
+New to Python? Let's properly setup up your Python environment:
 
 .. toctree::
    :maxdepth: 2
 
    starting/which-python
 
-- Properly Install Python
+- Properly Install Python on your system:
 
  .. toctree::
     :maxdepth: 1
