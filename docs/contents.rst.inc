@@ -22,7 +22,7 @@ New to Python? Let's properly setup up your Python environment.
     starting/install/linux
 
 
-Using Virtualenvs with Pipenv:
+- Using Virtualenvs with Pipenv:
 
 .. toctree::
     :maxdepth: 2
