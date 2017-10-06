@@ -5,7 +5,7 @@ Installing Python 3 on Windows
 
 .. image:: https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg
 
-First, download the `latest version <https://www.python.org/ftp/python/3.6.2/python-3.6.2.exe>`_
+First, download the `latest version <https://www.python.org/ftp/python/3.6.3/python-3.6.3.exe>`_
 of Python 3.6 from the official website. If you want to be sure you are installing a fully
 up-to-date version, click the Downloads > Windows link from the home page of the
 `Python.org web site <http://python.org>`_ .
@@ -87,7 +87,7 @@ To install pip, run the Python script available here:
 Pipenv & Virtual Environments
 -----------------------------
 
-The next step it to install Pipenv, so you can install dependencies and manage virtual environments. 
+The next step it to install Pipenv, so you can install dependencies and manage virtual environments.
 
 A Virtual Environment is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them. It solves the
