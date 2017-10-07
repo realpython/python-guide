@@ -22,7 +22,7 @@ managing development and testing environments for any kind of project.
 Make sure you've got Python & pip
 ---------------------------------
 
-Before you go any further, make sure you have Python and that it's avalable
+Before you go any further, make sure you have Python and that it's available
 from your command line. You can check this by simply running:
 
 .. code-block:: bash
