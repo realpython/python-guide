@@ -49,7 +49,7 @@ If you want a more traditional book, *Python For You and Me* is an excellent
 resource for learning all aspects of the language.
 
     `Python for You and Me <https://pymbook.readthedocs.io/>`_
-    `Learn Python Interactively with DataCamp! <https://datacamp.com/>`_
+    `Learn Python Interactively with DataCamp! <https://www.datacamp.com/>`_
 
 
 Online Python Tutor
