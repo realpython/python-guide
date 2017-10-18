@@ -157,7 +157,7 @@ A free introductory book that teaches Python at the beginner level, it assumes
 no previous programming experience.
 
     `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
-    `A Byte of Python for Python 3.x <http://swaroopch.com/notes/Python_en-Preface/>`_
+    `A Byte of Python for Python 3.x <https://python.swaroopch.com/>`_
 
 
 Learn to Program in Python with Codeacademy
