@@ -310,7 +310,7 @@ This can help ensure consistency across installations, across deployments,
 and across developers.
 
 Lastly, remember to exclude the virtual environment folder from source
-control by adding it to the ignore list.
+control by adding it to the ignore list (see :ref:`Version Control Ignores<version_control_ignores>`).
 
 .. _virtualenvwrapper-ref:
 
