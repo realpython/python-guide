@@ -24,7 +24,7 @@ New to Python? Let's properly setup up your Python environment:
 
 - Using Virtualenvs with Pipenv:
 
-.. toctree::
+ .. toctree::
     :maxdepth: 2
 
     dev/virtualenvs
