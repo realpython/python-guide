@@ -85,14 +85,14 @@ command is meant for Python 2, while the ``pip3`` command is meant for Python 3.
 
     $ command -v pip3
 
-However, when using virtual environments (described bellow), you don't need to
+However, when using virtual environments (described below), you don't need to
 care about that.
 
 
 Pipenv & Virtual Environments
 -----------------------------
 
-The next step it to install Pipenv, so you can install dependencies and manage virtual environments. 
+The next step is to install Pipenv, so you can install dependencies and manage virtual environments. 
 
 A Virtual Environment is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them. It solves the
