@@ -49,7 +49,7 @@ If you want a more traditional book, *Python For You and Me* is an excellent
 resource for learning all aspects of the language.
 
     `Python for You and Me <https://pymbook.readthedocs.io/>`_
-    `Learn Python Interactively with DataCamp! <https://datacamp.com/>`_
+    `Learn Python Interactively with DataCamp! <https://www.datacamp.com/>`_
 
 
 Online Python Tutor
@@ -109,7 +109,7 @@ Dive Into Python 3 is a good book for those ready to jump in to Python 3. It's
 a good read if you are moving from Python 2 to 3 or if you already have some
 experience programming in another language.
 
-    `Dive Into Python 3 <http://www.diveinto.org/python3/>`_
+    `Dive Into Python 3 <http://www.diveintopython3.net/>`_
 
 
 Think Python: How to Think Like a Computer Scientist
@@ -157,7 +157,7 @@ A free introductory book that teaches Python at the beginner level, it assumes
 no previous programming experience.
 
     `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
-    `A Byte of Python for Python 3.x <http://swaroopch.com/notes/Python_en-Preface/>`_
+    `A Byte of Python for Python 3.x <https://python.swaroopch.com/>`_
 
 
 Learn to Program in Python with Codeacademy
