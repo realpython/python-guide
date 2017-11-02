@@ -359,7 +359,7 @@ This creates the :file:`my_project` folder inside :file:`~/Envs`.
    $ workon my_project
 
 Alternatively, you can make a project, which creates the virtual environment,
-and also a project directory inside ``$PROJECT_HOME``, which is ``cd`` -ed into
+and also a project directory inside ``$WORKON_HOME``, which is ``cd`` -ed into
 when you ``workon myproject``.
 
 .. code-block:: console
