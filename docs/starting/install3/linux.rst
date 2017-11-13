@@ -18,9 +18,10 @@ If you are using Ubuntu 16.10 or newer, then you can easily install Python 3.6 w
     $ sudo apt-get update
     $ sudo apt-get install python3.6
 
-If you're using another version of Ubuntu (e.g. the latest LTS release), we recommend using the `deadsnakes PPA <https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes>`_ to install Python 3.6::
+If you're using another version of Ubuntu (e.g. the latest LTS release), we recommend using the `deadsnakes PPA <https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa>`_ to install Python 3.6::
 
-    $ sudo add-apt-repository ppa:fkrull/deadsnakes
+    $ sudo apt-get install software-properties-common
+    $ sudo add-apt-repository ppa:deadsnakes/ppa
     $ sudo apt-get update
     $ sudo apt-get install python3.6
 
