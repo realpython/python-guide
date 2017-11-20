@@ -7,7 +7,7 @@ Installing Python 3 on Mac OS X
 
 .. image:: https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg
 
-The latest version of Mac OS X, Sierra, **comes with Python 2.7 out of the box**.
+The latest version of Mac OS X, High Sierra, **comes with Python 2.7 out of the box**.
 
 You do not need to install or configure anything else to use Python 2. These
 instructions document the installation of Python 3.
