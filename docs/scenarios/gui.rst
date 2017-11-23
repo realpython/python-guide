@@ -88,6 +88,16 @@ Qt
 is widely used for developing software with a GUI but can also be used for
 non-GUI applications.
 
+Toga
+----
+`Toga <https://toga.readthedocs.io/en/latest/>`_ is a Python native, OS
+native, cross platform GUI toolkit. Toga consists of a library of base
+components with a shared interface to simplify platform-agnostic GUI
+development.
+
+Toga is available on Mac OS, Windows, Linux (GTK), and mobile platforms such
+as Android and iOS.
+
 Tk
 --
 Tkinter is a thin object-oriented layer on top of Tcl/Tk. **It has the advantage
