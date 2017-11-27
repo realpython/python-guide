@@ -190,23 +190,6 @@ the unittest module!
     `py.test <https://docs.pytest.org/en/latest/>`_
 
 
-Nose
-----
-
-nose extends unittest to make testing easier.
-
-
-.. code-block:: console
-
-    $ pip install nose
-
-nose provides automatic test discovery to save you the hassle of manually
-creating test suites. It also provides numerous plugins for features such as
-xUnit-compatible test output, coverage reporting, and test selection.
-
-    `nose <https://nose.readthedocs.io/en/latest/>`_
-
-
 tox
 ---
 
