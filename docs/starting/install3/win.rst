@@ -64,24 +64,14 @@ This will launch the Python 3 interpreter.
 Setuptools + Pip
 ----------------
 
-The most crucial third-party Python software of all is Setuptools, which
-extends the packaging and installation facilities provided by the distutils in
-the standard library. Once you add Setuptools to your Python system you can
-download and install any compliant Python software product with a single
-command. It also enables you to add this network installation capability to
-your own Python software with very little work.
+The two most crucial third-party Python packages are `setuptools <https://pypi.python.org/pypi/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_,
+which let you download, install and uninstall any compliant Python software
+product with a single command. It also enables you to add this network installation
+capability to your own Python software with very little work.
 
-To obtain the latest version of Setuptools for Windows, run the Python script
-available here: `ez_setup.py <https://bootstrap.pypa.io/ez_setup.py>`_
+All supported versions of Python 3 include pip, so just make sure it's up to date::
 
-
-You'll now have a new command available to you: **easy_install**. It is
-considered by many to be deprecated, so we will install its replacement:
-**pip**. Pip allows for uninstallation of packages, and is actively maintained,
-unlike easy_install.
-
-To install pip, run the Python script available here:
-`get-pip.py <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
+    python -m pip install -U pip
 
 
 Pipenv & Virtual Environments

@@ -24,8 +24,8 @@ Installation Guides
 These guides go over the proper installation of :ref:`Python <which-python>`
 for development purposes, as well as setuptools, pip and virtualenv.
 
-  Python 3 Installation Guides
-  ////////////////////////////
+Python 3 Installation Guides
+////////////////////////////
 
 - :ref:`Python 3 on MacOS <install3-osx>`.
 - :ref:`Python 3 on Windows <install3-windows>`.

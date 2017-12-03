@@ -58,7 +58,9 @@ It is possible to `write code that works on Python 2.6, 2.7, and Python 3
 <https://docs.python.org/3/howto/pyporting.html>`_. This
 ranges from trivial to hard depending upon the kind of software
 you are writing; if you're a beginner there are far more important things to
-worry about.
+worry about.  Note that Python 2.6 is end-of-life upstream, so you shouldn't
+try to write 2.6-compatible code unless you're being paid specifically to
+do that.
 
 Implementations
 ~~~~~~~~~~~~~~~
