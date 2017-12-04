@@ -211,7 +211,7 @@ minimal example of each bug (distinguished exception type and location):
         mean = sum(xs) / len(xs)
         assert min(xs) <= mean(xs) <= max(xs)
 
-.. code-block::
+.. code-block:: none
 
     Falsifying example: test_mean(
         xs=[1.7976321109618856e+308, 6.102390043022755e+303]
