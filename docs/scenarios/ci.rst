@@ -4,7 +4,7 @@ Continuous Integration
 .. image:: https://farm5.staticflickr.com/4173/33907150594_9abba7ad0a_k_d.jpg
 
 .. note::
-    For advice on writing your tests, see :doc:`writing/tests`.
+    For advice on writing your tests, see :doc:`/writing/tests`.
 
 Why?
 ----
