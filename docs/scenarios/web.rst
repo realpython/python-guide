@@ -62,7 +62,7 @@ modules <http://djangopackages.com/>`_ that can be incorporated into a new
 project as-is, or customized to fit your needs.
 
 There are annual Django conferences `in the United States
-<http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
+<http://djangocon.us>`_, `Europe <http://djangocon.eu>`_, and `Australia <http://djangocon.com.au>`_.
 
 The majority of new Python web applications today are built with Django.
 
