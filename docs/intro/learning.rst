@@ -51,6 +51,13 @@ resource for learning all aspects of the language.
     `Python for You and Me <https://pymbook.readthedocs.io/>`_
     `Learn Python Interactively with DataCamp! <https://www.datacamp.com/>`_
 
+Learn Python Step by Step
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Techbeamers.com provides step-by-step tutorials to teach Python. Each tutorial is supplemented with logically added coding snippets and equips with a follow-up quiz on the subject learned. There is a section for `Python interview questions <http://www.techbeamers.com/python-interview-questions-programmers>`_ to help job seekers. You can also read essential `Python tips <http://www.techbeamers.com/essential-python-tips-tricks-programmers>`_ and learn `best coding practices <http://www.techbeamers.com/python-code-optimization-tips-tricks>`_ for writing quality code. Here, you'll get the right platform to learn Python quickly.
+
+`Learn Python Basic to Advanced <http://www.techbeamers.com/python-tutorial-step-by-step>`_
+
 
 Online Python Tutor
 ~~~~~~~~~~~~~~~~~~~
