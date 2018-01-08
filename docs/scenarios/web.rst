@@ -1,6 +1,8 @@
-================
-Web Applications
-================
+=============================
+Web Applications & Frameworks
+=============================
+
+.. image:: https://farm3.staticflickr.com/2891/34309496175_b82d104282_k_d.jpg
 
 As a powerful scripting language adapted to both fast prototyping
 and bigger projects, Python is widely used in web application
@@ -8,6 +10,7 @@ development.
 
 Context
 :::::::
+
 
 
 WSGI
@@ -59,7 +62,7 @@ modules <http://djangopackages.com/>`_ that can be incorporated into a new
 project as-is, or customized to fit your needs.
 
 There are annual Django conferences `in the United States
-<http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
+<http://djangocon.us>`_, `Europe <http://djangocon.eu>`_, and `Australia <http://djangocon.com.au>`_.
 
 The majority of new Python web applications today are built with Django.
 
@@ -221,19 +224,12 @@ how to set up your first application.
 
 Heroku is the recommended PaaS for deploying Python web applications today.
 
-Gondor
-------
+Eldarion
+--------
 
-`Gondor <https://gondor.io/>`_ is a PaaS specialized for deploying Django
-and Pinax applications. Gondor recommends Django version 1.6 and supports any
-WSGI application on Python version 2.7. Gondor can automatically configure your
-Django site if you use :file:`local_settings.py` for site-specific configuration
-information.
-
-Gondor has a guide on deploying `Django projects <https://gondor.io/support/django/setup/>`_.
-
-Gondor is run by a small company and focuses on helping businesses find success with
-Python and Django.
+`Eldarion <http://eldarion.cloud/>`_ (formely known as Gondor) is a PaaS powered
+by Kubernetes, CoreOS, and Docker. They support any WSGI application and have a
+guide on deploying `Django projects <https://eldarion-gondor.github.io/docs/how-to/setup-deploy-first-django-project/>`_.
 
 Templating
 ::::::::::
@@ -372,7 +368,7 @@ into the corresponding block in the :file:`base.html` page.
 
 .. code-block:: html
 
-    <!{% extends "base.html" %}
+    {% extends "base.html" %}
     {% block content %}
         <p class="important">
         <div id="content">
@@ -464,7 +460,7 @@ frameworks.
 
 An example template in Mako looks like:
 
-.. code-block:: html
+.. code-block:: mako
 
     <%inherit file="base.html"/>
     <%

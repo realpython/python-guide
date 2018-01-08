@@ -2,6 +2,8 @@
 Data Serialization
 ==================
 
+.. image:: https://farm3.staticflickr.com/2927/33467946364_3e59bd376a_k_d.jpg
+
 What is data serialization?
 ---------------------------
 

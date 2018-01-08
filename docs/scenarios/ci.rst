@@ -1,6 +1,10 @@
 Continuous Integration
 ======================
 
+.. image:: https://farm5.staticflickr.com/4173/33907150594_9abba7ad0a_k_d.jpg
+
+.. note::
+    For advice on writing your tests, see :doc:`/writing/tests`.
 
 Why?
 ----
@@ -77,7 +81,7 @@ this example content::
 This will get your project tested on all the listed Python versions by
 running the given script, and will only build the master branch. There are a
 lot more options you can enable, like notifications, before and after steps
-and much more. The `travis-ci docs <http://about.travis-ci.org/docs/>`_
+and much more. The `travis-ci docs <https://docs.travis-ci.com/user/languages/python/>`_
 explain all of these options, and are very thorough.
 
 In order to activate testing for your project, go to `the travis-ci site <https://travis-ci.org/>`_

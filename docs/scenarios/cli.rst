@@ -1,6 +1,8 @@
 Command-line Applications
 =========================
 
+.. image:: https://farm5.staticflickr.com/4272/34435690330_11930b5987_k_d.jpg
+
 Command-line applications, also referred to as
 `Console Applications <http://en.wikipedia.org/wiki/Console_application>`_,
 are computer programs designed to be used from a text interface, such as a
@@ -30,7 +32,7 @@ column printer, iterator based progress bars and implicit argument handling.
 Click
 -----
 
-`click <http://click.pocoo.org/>`_ is an upcoming Python package for creating
+`click <http://click.pocoo.org/>`_ is a Python package for creating
 command-line interfaces in a composable way with as little code as
 possible. This “Command-line Interface Creation Kit” is highly
 configurable but comes with good defaults out of the box.

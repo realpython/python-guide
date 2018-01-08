@@ -1,6 +1,8 @@
 Documentation
 =============
 
+.. image:: https://farm5.staticflickr.com/4279/35620636012_f66aa88f93_k_d.jpg
+
 Readability is a primary focus for Python developers, in both project
 and code documentation. Following some simple best practices can save
 both you and others a lot of time.
@@ -205,8 +207,8 @@ more information about a function, what it does, any exceptions it may raise,
 what it returns, or relevant details about the parameters.
 
 For more detailed documentation of code a popular style is the one used for the
-Numpy project, often called `Numpy style`_ docstrings. While it can take up a
-few more lines the previous example, it allows the developer to include a lot 
+Numpy project, often called `Numpy style`_ docstrings. While it can take up more
+lines than the previous example, it allows the developer to include a lot 
 more information about a method, function, or class. ::
 
     def random_number_generator(arg1, arg2):

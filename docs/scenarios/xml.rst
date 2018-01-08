@@ -1,6 +1,8 @@
 XML parsing
 ===========
 
+.. image:: https://farm3.staticflickr.com/2808/33888714601_a1f7d020a2_k_d.jpg
+
 untangle
 --------
 

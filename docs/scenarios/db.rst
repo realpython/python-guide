@@ -1,6 +1,8 @@
 Databases
 =========
 
+.. image:: https://farm5.staticflickr.com/4225/33907152464_a99fdcc8de_k_d.jpg
+
 DB-API
 ------
 

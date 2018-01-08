@@ -20,6 +20,8 @@ This guide is **opinionated** in a way that is almost, but not quite, entirely
 available here. Rather, you'll find a nice concise list of highly recommended
 options.
 
+.. note:: The use of **Python 3** is *highly* preferred over Python 2. Consider upgrading your applications and infrastructure if you find yourself *still* using Python 2 in production today. If you are using Python 3, congratulations — you are indeed a person of excellent taste.
+  —*Kenneth Reitz*
 
 Let's get started! But first, let's make sure you know where your towel is.
 

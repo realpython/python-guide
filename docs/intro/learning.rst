@@ -1,6 +1,8 @@
 Learning Python
 ===============
 
+.. image:: https://farm3.staticflickr.com/2840/32800783863_11a00db52c_k_d.jpg
+
 Beginner
 --------
 
@@ -23,6 +25,14 @@ At last it finishes off with  tutorial "How to access MySQL db using python"
 
    `Python for beginners <http://thepythonguru.com/>`_
 
+Learn Python for Data Science Interactively
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you prefer an online interactive environment to learn Python for Data Science, `this free python tutorial by DataCamp <https://www.datacamp.com/courses/intro-to-python-for-data-science?tap_a=5644-dce66f&tap_s=116411-750171>`_ is a great way to get started. If you're already somewhat advanced and interested in machine learning, check out this `course on Supervised Learning with scikit-learn <https://www.datacamp.com/courses/supervised-learning-with-scikit-learn?tap_a=5644-dce66f&tap_s=116411-750171>`_, by one the core developers of scikit-learn.
+
+
+`Python for data science <http://datacamp.com/?tap_a=5644-dce66f&tap_s=116411-750171>`_
+
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -39,6 +49,15 @@ If you want a more traditional book, *Python For You and Me* is an excellent
 resource for learning all aspects of the language.
 
     `Python for You and Me <https://pymbook.readthedocs.io/>`_
+    `Learn Python Interactively with DataCamp! <https://www.datacamp.com/>`_
+
+Learn Python Step by Step
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Techbeamers.com provides step-by-step tutorials to teach Python. Each tutorial is supplemented with logically added coding snippets and equips with a follow-up quiz on the subject learned. There is a section for `Python interview questions <http://www.techbeamers.com/python-interview-questions-programmers>`_ to help job seekers. You can also read essential `Python tips <http://www.techbeamers.com/essential-python-tips-tricks-programmers>`_ and learn `best coding practices <http://www.techbeamers.com/python-code-optimization-tips-tricks>`_ for writing quality code. Here, you'll get the right platform to learn Python quickly.
+
+`Learn Python Basic to Advanced <http://www.techbeamers.com/python-tutorial-step-by-step>`_
+
 
 Online Python Tutor
 ~~~~~~~~~~~~~~~~~~~
@@ -97,7 +116,7 @@ Dive Into Python 3 is a good book for those ready to jump in to Python 3. It's
 a good read if you are moving from Python 2 to 3 or if you already have some
 experience programming in another language.
 
-    `Dive Into Python 3 <http://www.diveinto.org/python3/>`_
+    `Dive Into Python 3 <http://www.diveintopython3.net/>`_
 
 
 Think Python: How to Think Like a Computer Scientist
@@ -145,7 +164,7 @@ A free introductory book that teaches Python at the beginner level, it assumes
 no previous programming experience.
 
     `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
-    `A Byte of Python for Python 3.x <http://swaroopch.com/notes/Python_en-Preface/>`_
+    `A Byte of Python for Python 3.x <https://python.swaroopch.com/>`_
 
 
 Learn to Program in Python with Codeacademy
@@ -209,6 +228,10 @@ in Python. Magic methods are surrounded by double underscores (i.e. __init__)
 and can make classes and objects behave in different and magical ways.
 
     `A Guide to Python's Magic Methods <http://www.rafekettler.com/magicmethods.html>`_
+
+.. note:: The Rafekettler.com is currently down, you can go to their Github version directly. Here you can find a PDF version:
+    `A Guide to Python's Magic Methods (repo on GitHub) <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_
+    
 
 
 For Engineers and Scientists

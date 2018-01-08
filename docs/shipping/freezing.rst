@@ -4,11 +4,13 @@
 Freezing Your Code
 ==================
 
+.. image:: https://farm5.staticflickr.com/4227/33907151034_e0a9e53402_k_d.jpg
+
 "Freezing" your code is creating a single-file executable file to distribute 
 to end-users, that contains all of your application code as well as the 
 Python interpreter.
 
-Applications such as 'Dropbox', 'Eve Online',  'Civilisation IV', and
+Applications such as 'Dropbox', 'Eve Online',  'Civilization IV', and
 BitTorrent clients do this.
 
 The advantage of distributing this way is that your application will "just work",
@@ -60,7 +62,7 @@ py2app      no      no    yes  yes      MIT     no            yes            yes
 .. note::
     All solutions need MS Visual C++ dll to be installed on target machine, except py2app.
     Only Pyinstaller makes self-executable exe that bundles the dll when
-    passing :option:`--onefile` to :file:`Configure.py`.
+    passing ``--onefile`` to :file:`Configure.py`.
 
 Windows
 -------
@@ -70,7 +72,46 @@ bbFreeze
 
 Prerequisite is to install :ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
 
-.. todo:: Write steps for most basic .exe
+1. Install :code:`bbfreeze`:
+
+.. code-block:: console
+    
+    $ pip install bbfreeze
+    
+2. Write most basic :file:`bb_setup.py`
+
+.. code-block:: python
+
+    from bbfreeze import Freezer
+    
+    freezer = Freezer(distdir='dist')
+    freezer.addScript('foobar.py', gui_only=True)
+    freezer()
+    
+.. note::
+    
+    This will work for the most basic one file scripts. For more advanced freezing you will have to provide
+    include and exclude paths like so
+    
+    .. code-block:: python
+    
+        freezer = Freezer(distdir='dist', includes=['my_code'], excludes=['docs'])
+
+3. (Optionally) include icon
+
+.. code-block:: python
+    
+    freezer.setIcon('my_awesome_icon.ico')
+    
+4. Provide the Microsoft Visual C runtime DLL for the freezer. It might be possible to append your :code:`sys.path`
+with Microsoft Visual Studio path but I find it easier to drop :file:`msvcp90.dll` in the same folder where your script
+resides.
+
+5. Freeze!
+
+.. code-block:: console
+    
+    $ python bb_setup.py
 
 py2exe
 ~~~~~~
@@ -108,7 +149,7 @@ PyInstaller
 Prerequisite is to have installed :ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
 
 - `Most basic tutorial <http://bojan-komazec.blogspot.com/2011/08/how-to-create-windows-executable-from.html>`_
-- `Manual <http://www.pyinstaller.org/export/d3398dd79b68901ae1edd761f3fe0f4ff19cfb1a/project/doc/Manual.html?format=raw>`_
+- `Manual <https://pyinstaller.readthedocs.io/en/stable/>`_
 
 
 OS X
@@ -163,7 +204,7 @@ To create a standalone windowed OS X application, use the :code:`--windowed` opt
 
 This creates a :code:`script.app` in the :code:`dist` folder. Make sure to use GUI packages in your Python code, like `PyQt <https://riverbankcomputing.com/software/pyqt/intro>`_ or `PySide <http://wiki.qt.io/About-PySide>`_, to control the graphical parts of the app.
 
-There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option. 
+There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/spec-files.html#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option. 
 
 
 Linux

@@ -1,6 +1,8 @@
 HTML Scraping
 =============
 
+.. image:: https://farm3.staticflickr.com/2900/34268661876_442428e122_k_d.jpg
+
 Web Scraping
 ------------
 
@@ -49,7 +51,7 @@ will focus on the former.
 
 XPath is a way of locating information in structured documents such as
 HTML or XML documents. A good introduction to XPath is on
-`W3Schools <http://www.w3schools.com/xsl/xpath_intro.asp>`_ .
+`W3Schools <http://www.w3schools.com/xml/xpath_intro.asp>`_ .
 
 There are also various tools for obtaining the XPath of elements such as
 FireBug for Firefox or the Chrome Inspector. If you're using Chrome, you
@@ -103,3 +105,5 @@ using Python or we can save it to a file and share it with the world.
 Some more cool ideas to think about are modifying this script to iterate
 through the rest of the pages of this example dataset, or rewriting this
 application to use threads for improved speed.
+
+If you want to learn how to import data using python - this `DataCamp course on Importing Data <https://www.datacamp.com/courses/importing-data-in-r-part-1?tap_a=5644-dce66f&tap_s=116411-750171>`_ is a great place to start.

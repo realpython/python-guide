@@ -1,17 +1,22 @@
 .. _install-osx:
 
-Installing Python on Mac OS X
-=============================
+Installing Python 2 on Mac OS X
+===============================
 
-The latest version of Mac OS X, El Capitan, **comes with Python 2.7 out of the box**.
+.. image:: https://farm5.staticflickr.com/4268/34435688560_4cc2a7bcbb_k_d.jpg
 
-You do not need to install or configure anything else to use Python. Having
-said that, I would strongly recommend that you install the tools and libraries
-described in the next section before you start building Python applications
-for real-world use. In particular, you should always install Setuptools, as it
-makes it much easier for you to use other third-party Python libraries.
+.. note::
+    Check out our :ref:`guide for installing Python 3 on OS X<install3-osx>`.
 
-The version of Python that ships with OS X is great for learning but it's not
+The latest version of Mac OS X, High Sierra, **comes with Python 2.7 out of the box**.
+
+You do not need to install or configure anything else to use Python. Having said
+that, I would strongly recommend that you install the tools and libraries
+described in the next section before you start building Python applications for
+real-world use. In particular, you should always install Setuptools, as it makes
+it much easier for you to install and manage other third-party Python libraries.
+
+The version of Python that ships with OS X is great for learning, but it's not
 good for development. The version shipped with OS X may be out of date from the
 `official current Python release <https://www.python.org/downloads/mac-osx/>`_,
 which is considered the stable production version.
@@ -30,9 +35,14 @@ minimal but unofficial
 package.
 
 .. note::
-    If you already have Xcode installed or plan to use Homebrew, do not install
-    OSX-GCC-Installer. In combination, the software can cause issues that are
-    difficult to diagnose.
+    If you already have XCode installed, do not install OSX-GCC-Installer.
+    In combination, the software can cause issues that are difficult to
+    diagnose.
+
+.. note::
+    If you perform a fresh install of XCode, you will also need to add the
+    commandline tools by running ``xcode-select --install`` on the terminal.
+
 
 While OS X comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
@@ -67,7 +77,16 @@ or Python 3:
 
     $ brew install python3
 
-This will take a minute or two. 
+This will take a minute or two.
+
+Homebrew names the executable ``python2`` so that you can still run the system Python via the executable ``python``.
+
+
+.. code-block:: console
+
+    $ python -V   # system Python interpreter
+    $ python2 -V  # Homebrew installed Python 2 interpreter
+    $ python3 -V  # Homebrew installed Python 3 interpreter (if installed)
 
 
 Setuptools & Pip
@@ -81,23 +100,29 @@ software over a network (usually the Internet) with a single command
 capability to your own Python software with very little work.
 
 ``pip`` is a tool for easily installing and managing Python packages,
-that is recommended over ``easy_install``. It is superior to ``easy_install`` in `several ways <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_,
+that is recommended over ``easy_install``. It is superior to ``easy_install``
+in `several ways <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_,
 and is actively maintained.
+
+.. code-block:: console
+
+    $ pip2 -V  # pip pointing to the Homebrew installed Python 2 interpreter
+    $ pip3 -V  # pip pointing to the Homebrew installed Python 3 interpreter (if installed)
+
 
 
 Virtual Environments
 --------------------
 
-A Virtual Environment is a tool to keep the dependencies required by different projects 
-in separate places, by creating virtual Python environments for them. It solves the 
-"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps 
+A Virtual Environment (commonly referred to as a 'virtualenv') is a tool to keep the dependencies required by different projects
+in separate places, by creating virtual Python environments for them. It solves the
+"Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps
 your global site-packages directory clean and manageable.
 
 For example, you can work on a project which requires Django 1.10 while also
 maintaining a project which requires Django 1.8.
 
-To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
-
+To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
 
 --------------------------------
 

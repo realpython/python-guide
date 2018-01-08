@@ -1,6 +1,8 @@
 Your Development Environment
 ============================
 
+.. image:: https://farm3.staticflickr.com/2930/33175624924_7febc46cc4_k_d.jpg
+
 
 Text Editors
 ::::::::::::
@@ -35,11 +37,11 @@ source files.
 There is also a handy syntax plugin called syntax_ featuring some improvements
 over the syntax file included in Vim 6.1.
 
-These plugins supply you with a basic environment for developing in Python.
-To get the most out of Vim, you should continually check your code for syntax
-errors and PEP8 compliance. Luckily PEP8_ and Pyflakes_ will do this for you.
-If your Vim is compiled with :option:`+python` you can also utilize some very
-handy plugins to do these checks from within the editor.
+These plugins supply you with a basic environment for developing in Python. To
+get the most out of Vim, you should continually check your code for syntax
+errors and PEP8 compliance. Luckily pycodestyle_ and Pyflakes_ will do this
+for you. If your Vim is compiled with ``+python`` you can also utilize some
+very handy plugins to do these checks from within the editor.
 
 For PEP8 checking and pyflakes, you can install vim-flake8_. Now you can map the
 function ``Flake8`` to any hotkey or action you want in Vim. The plugin will
@@ -68,12 +70,12 @@ Python-mode
 Python-mode_ is a complex solution for working with Python code in Vim.
 It has:
 
-- Asynchronous Python code checking (``pylint``, ``pyflakes``, ``pep8``, ``mccabe``) in any combination
+- Asynchronous Python code checking (``pylint``, ``pyflakes``, ``pycodestyle``, ``mccabe``) in any combination
 - Code refactoring and autocompletion with Rope
 - Fast Python folding
 - Virtualenv support
 - Search through Python documentation and run Python code
-- Auto PEP8_ error fixes
+- Auto pycodestyle_ error fixes
 
 And more.
 
@@ -86,7 +88,7 @@ using ``<Tab>`` key or any other customized keys.
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
 .. _Pyflakes: http://pypi.python.org/pypi/pyflakes/
-.. _PEP8: http://pypi.python.org/pypi/pep8/
+.. _pycodestyle: https://pypi.python.org/pypi/pycodestyle/
 .. _syntastic: https://github.com/scrooloose/syntastic
 .. _Python-mode: https://github.com/klen/python-mode
 .. _SuperTab: http://www.vim.org/scripts/script.php?script_id=1643
@@ -148,10 +150,10 @@ known for IntelliJ IDEA. Both share the same code base and most of PyCharm's
 features can be brought to IntelliJ with the free
 `Python Plug-In <https://plugins.jetbrains.com/plugin/?idea&pluginId=631>`_.  There are two
 versions of PyCharm: Professional Edition (Free 30-day trial) and Community
-Edition(Apache 2.0 License) with fewer features.
+Edition (Apache 2.0 License) with fewer features.
 
 Python (on Visual Studio Code)
------------------------------
+------------------------------
 
 `Python for Visual Studio <https://marketplace.visualstudio.com/items?itemName=donjayamanne.python>`_ is an extension for the `Visual Studio Code IDE <https://code.visualstudio.com>`_.
 This is a free, light weight, open source IDE, with support for Mac, Windows, and Linux.

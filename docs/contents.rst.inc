@@ -1,22 +1,48 @@
 Getting Started with Python
 ---------------------------
 
-New to Python? Let's properly setup up your Python environment.
+New to Python? Let's properly setup up your Python environment:
 
 .. toctree::
    :maxdepth: 2
 
    starting/which-python
 
-- Properly Install Python
+- Properly Install Python on your system:
 
  .. toctree::
     :maxdepth: 1
 
     starting/installation
+    starting/install3/osx
+    starting/install3/win
+    starting/install3/linux
     starting/install/osx
     starting/install/win
     starting/install/linux
+
+
+- Using Virtualenvs with Pipenv:
+
+ .. toctree::
+    :maxdepth: 2
+
+    dev/virtualenvs
+
+
+Python Development Environments
+-------------------------------
+
+This part of the guide focus on the Python development environment,
+and the best-practice tools that are available for writing Python code.
+
+.. toctree::
+   :maxdepth: 2
+
+   dev/env
+   dev/virtualenvs
+   dev/pip-virtualenv
+
 
 
 
@@ -78,22 +104,6 @@ This part of the guide focuses on deploying your Python code.
 
    shipping/packaging
    shipping/freezing
-
-
-Python Development Environments
--------------------------------
-
-This part of the guide focus on the Python development environment,
-and the best-practice tools that are available for writing Python code.
-
-.. toctree::
-   :maxdepth: 2
-
-   dev/env
-   dev/virtualenvs
-   dev/pip-virtualenv
-
-
 
 
 Additional Notes

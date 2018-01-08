@@ -1,6 +1,8 @@
 JSON
 ====
 
+.. image:: https://farm5.staticflickr.com/4174/33928819683_97b5c6a184_k_d.jpg
+
 The `json <https://docs.python.org/2/library/json.html>`_ library can parse
 JSON from strings or files. The library parses JSON into a Python dictionary
 or list. It can also convert Python dictionaries or lists into JSON strings.

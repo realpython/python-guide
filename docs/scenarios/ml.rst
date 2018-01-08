@@ -2,6 +2,8 @@
 Machine Learning
 ================
 
+.. image:: https://farm4.staticflickr.com/3954/34018729885_002ced9b54_k_d.jpg
+
 Python has a vast number of libraries for data analysis, statistics and Machine Learning itself, making it a language of choice for many data scientists. 
 
 Some widely used packages for Machine Learning and other Data Science applications are enlisted below.

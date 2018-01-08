@@ -1,6 +1,8 @@
 Structuring Your Project
 ========================
 
+.. image:: https://farm5.staticflickr.com/4203/33907151224_0574e7dfc2_k_d.jpg
+
 By "structure" we mean the decisions you make concerning
 how your project best meets its objective. We need to consider how to
 best leverage Python's features to create clean, effective code.
@@ -172,6 +174,8 @@ Test Suite
 ::::::::::
 
 
+*For advice on writing your tests, see :doc:`writing/tests`.*
+
 .. csv-table::
    :widths: 20, 40
 
@@ -200,7 +204,7 @@ it. You can do this a few ways:
    package properly.
 
 I highly recommend the latter. Requiring a developer to run
-`setup.py <http://setup.py>`__ develop to test an actively changing
+``setup.py develop`` to test an actively changing
 codebase also requires them to have an isolated environment setup for
 each instance of the codebase.
 
@@ -211,7 +215,7 @@ file:
 
     import os
     import sys
-    sys.path.insert(0, os.path.abspath('..'))
+    sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
     import sample
 
@@ -391,7 +395,17 @@ folder named :file:`my` which is not the case. There is an
 dot notation should be used in the Python docs.
 
 If you'd like you could name your module :file:`my_spam.py`, but even our
-friend the underscore should not be seen often in module names.
+friend the underscore should not be seen often in module names. However, using other 
+characters (spaces or hyphens) in module names will prevent importing 
+(- is the subtract operator), so try to keep module names short so there is 
+no need to separate words. And, most of all, don't namespace with underscores, use submodules instead.
+
+.. code-block:: python
+
+  # OK
+  import library.plugin.foo
+  # not OK
+  import library.foo_plugin
 
 Aside from some naming restrictions, nothing special is required for a Python
 file to be a module, but you need to understand the import mechanism in order
@@ -633,7 +647,7 @@ with the class approach:
 
     class CustomOpen(object):
         def __init__(self, filename):
-          self.file = open(filename)
+            self.file = open(filename)
 
         def __enter__(self):
             return self.file
@@ -762,7 +776,7 @@ compute x + 1, you have to create another integer and give it a name.
 
     my_list = [1, 2, 3]
     my_list[0] = 4
-    print my_list  # [4, 2, 3] <- The same list as changed
+    print my_list  # [4, 2, 3] <- The same list has changed
 
     x = 6
     x = x + 1  # The new x is another object
@@ -785,7 +799,12 @@ its parts, it is much more efficient to accumulate the parts in a list,
 which is mutable, and then glue ('join') the parts together when the
 full string is needed. One thing to notice, however, is that list
 comprehensions are better and faster than constructing a list in a loop
-with calls to ``append()``.
+with calls to ``append()``. 
+
+One other option is using the map function, which can 'map' a function
+('str') to an iterable ('range(20)'). This results in a map object,
+which you can then ('join') together just like the other examples.
+The map function can be even faster than a list comprehension in some cases.
 
 **Bad**
 
@@ -794,7 +813,7 @@ with calls to ``append()``.
     # create a concatenated string from 0 to 19 (e.g. "012..1819")
     nums = ""
     for n in range(20):
-      nums += str(n)   # slow and inefficient
+        nums += str(n)   # slow and inefficient
     print nums
 
 **Good**
@@ -804,16 +823,24 @@ with calls to ``append()``.
     # create a concatenated string from 0 to 19 (e.g. "012..1819")
     nums = []
     for n in range(20):
-      nums.append(str(n))
+        nums.append(str(n))
     print "".join(nums)  # much more efficient
 
-**Best**
+**Better**
 
 .. code-block:: python
 
     # create a concatenated string from 0 to 19 (e.g. "012..1819")
     nums = [str(n) for n in range(20)]
     print "".join(nums)
+    
+**Best**
+
+.. code-block:: python
+
+    # create a concatenated string from 0 to 19 (e.g. "012..1819")
+    nums = map(str, range(20))
+    print "".join(nums) 
 
 One final thing to mention about strings is that using ``join()`` is not always
 best. In the instances where you are creating a new string from a pre-determined

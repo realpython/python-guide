@@ -1,6 +1,8 @@
 Speed
 =====
 
+.. image:: https://farm3.staticflickr.com/2826/33175625804_e225b90f3e_k_d.jpg
+
 CPython, the most commonly used implementation of Python, is slow for CPU bound
 tasks. `PyPy`_ is fast.
 
@@ -448,3 +450,4 @@ Multiprocessing
 .. _`threading`: https://docs.python.org/3/library/threading.html
 .. _`stackoverflow post`: http://stackoverflow.com/questions/26688424/python-threads-are-printing-at-the-same-time-messing-up-the-text-output
 .. _`data race`: https://en.wikipedia.org/wiki/Race_condition
+.. _`Lock`: https://docs.python.org/3/library/threading.html#lock-objects
