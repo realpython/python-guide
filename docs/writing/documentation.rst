@@ -1,82 +1,82 @@
-Documentation
+Dokumentasi
 =============
 
 .. image:: https://farm5.staticflickr.com/4279/35620636012_f66aa88f93_k_d.jpg
 
-Readability is a primary focus for Python developers, in both project
-and code documentation. Following some simple best practices can save
-both you and others a lot of time.
+membaca adalah fokus utama bagi pengembang Python, di kedua proyek
+dan kode dokumentasi . Ikutilah beberapa praktik terbaik sederhana yang dapat menghemat
+waktu orang lain dan waktu anda.
 
-Project Documentation
+Proyek Dokumentasi
 ---------------------
 
-A :file:`README` file at the root directory should give general information
-to both users and maintainers of a project. It should be raw text or
-written in some very easy to read markup, such as :ref:`reStructuredText-ref`
-or Markdown. It should contain a few lines explaining the purpose of the
-project or library (without assuming the user knows anything about the
-project), the URL of the main source for the software, and some basic credit
-information. This file is the main entry point for readers of the code.
+A :file:`README` file pada direktori root harus memberikan informasi umum bagi
+pengguna maupun pengelola proyek. itu harus menjadi teks mentah atau
+di dalam beberapa tulisan  sangat mudah untuk membaca markup, seperti :ref:`reStructuredText-ref`
+atau Markdown. Ini harus berisi  dari  beberapa baris yang menjelaskan tujuan 
+proyek atau perpustakaan (tanpa asumsi pengguna mengetahui tentang
+proyek), URL sumber utama perangkat lunak, dan beberapa dasar kredit
+informasi. File ini merupakan titik masuk utama untuk membaca kode.
 
-An :file:`INSTALL` file is less necessary with Python.  The installation
-instructions are often reduced to one command, such as ``pip install
-module`` or ``python setup.py install`` and added to the :file:`README`
+An :file:`INSTALL` kurang dibutuhkan file dengan Python. Instalasi
+instruksi sering dikurangi menjadi satu perintah, such as ``pip install
+module`` or ``python setup.py install`` dan menambahkan :file:`README`
 file.
 
-A :file:`LICENSE` file should *always* be present and specify the license
-under which the software is made available to the public.
+A :file:`LISENSI` file harus *selalu* Hadir dan menetukan lisensinya
+dimana perangkat lunak yang tersedia untuk umum.
 
-A :file:`TODO` file or a ``TODO`` section in :file:`README` should list the
-planned development for the code.
+A :file:`TODO` atau file ``TODO`` dalam bagian :file:`README` harus mendaftar itu
+rencana untuk pengembangan kode.
 
-A :file:`CHANGELOG` file or section in :file:`README` should compile a short
-overview of the changes in the code base for the latest versions.
+A :file:`CHANGELOG` file atau bagian dalam :file:`README` harus menyusun pendek
+gambaran dari perubahan dalam basis kode untuk versi terbaru.
 
-Project Publication
+Publikasi Proyek
 -------------------
 
-Depending on the project, your documentation might include some or all
-of the following components:
+Tergantung pada proyek, dokumentasi Anda mungkin termasuk semua
+atau beberapa komponen-komponen yang berikut:
 
-- An *introduction* should show a very short overview of what can be
-  done with the product, using one or two extremely simplified use
-  cases. This is the thirty-second pitch for your project.
+- An *pengenalan* harus menunjukkan gambaran yang sangat singkat tentang apa yang
+ dapat dilakukan dengan produk, Menggunakan satu atau menggunakan dua kasus yang sangat
+ sederhana. Ini adalah puncak tiga puluh detik untuk proyek Anda.
 
-- A *tutorial* should show some primary use cases in more detail. The reader
-  will follow a step-by-step procedure to set-up a working prototype.
+- A *tutorial* harus menunjukkan beberapa pengguna utama secara lebih rinci. Pembaca
+  akan mengikuti langkah demi langkah prosedur untuk set-up prototipe kerja.
 
-- An *API reference* is typically generated from the code (see
-  :ref:`docstrings <docstring-ref>`). It will list all publicly available
-  interfaces, parameters, and return values.
+- An *API referensi* biasanya dihasilkan dari kode (lihat
+  :ref:`docstrings <docstring-ref>`). Ini akan mencantumkan semua antarmuka, parameter, dan nilai
+  pengembalian yang tersedia untuk umum.
 
-- *Developer documentation* is intended for potential contributors. This can
-  include code convention and general design strategy of the project.
+- *Dokumentasi pengembangan* ditujukan untuk kontributor potensial. Ini bisa
+termasuk konvensi kode dan strategi desain umum proyek.
 
 .. _sphinx-ref:
 
 Sphinx
 ~~~~~~
 
-Sphinx_ is far and away the most popular Python documentation
-tool. **Use it.**  It converts :ref:`restructuredtext-ref` markup language
-into a range of output formats including HTML, LaTeX (for printable
-PDF versions), manual pages, and plain text.
+Sphinx_ jauh dan jarak alat dokumentasi Python yang paling populer
+. **Use it.**  ini mengubah :ref:`restructuredtext-ref` bahasa markup
+ke berbagai format output termasuk HTML, LaTeX (for printable
+PDF versions), halaman biasa, dan teks biasa.
 
-There is also **great**, **free** hosting for your Sphinx_ docs:
-`Read The Docs`_. Use it. You can configure it with commit hooks to
-your source repository so that rebuilding your documentation will
-happen automatically.
+Ada juga **great**, **free** hosting untuk anda Sphinx_ docs:
+`Read The Docs`_. Gunakan. Anda bisa mengkonfigurasinya dengan commit untuk
+repositori sumber Anda sehingga bisa membangun kembali dokumentasi Anda
+terjadi secara otomatis.
 
-When run, Sphinx_ will import your code and using Python's introspection 
-features it will extract all function, method and class signatures. It will
-also extract the accompanying docstrings, and compile it all into well
-structured and easily readable documentation for your project.  
+ketika dijalankan, Sphinx_ akan mengimpor kode Anda dan menggunakan fitur introspeksi Python,
+ia akan mengekstrak semua fungsi, metode dan tanda tangan kelas. Ini juga
+akan mengekstrak docstrings yang menyertainya,  dan menyusun semuanya menjadi
+dokumentasi yang terstruktur dan mudah dibaca untuk proyek Anda.  
 
-.. note::
+.. Catatan::
 
-    Sphinx is famous for its API generation, but it also works well
-    for general project documentation. This Guide is built with
-    Sphinx_ and is hosted on `Read The Docs`_
+    Sphinx terkenal dengan generasi API-nya, namun juga dengan berfungsi
+    yang baik untuk dokumentasi proyek umum. panduan ini dibangun dengan
+    Sphinx_ dan host ini d `Read The Docs`_
 
 .. _Sphinx: http://sphinx.pocoo.org
 .. _Read The Docs: http://readthedocs.org
@@ -86,27 +86,27 @@ structured and easily readable documentation for your project.
 reStructuredText
 ~~~~~~~~~~~~~~~~
 
-Most Python documentation is written with reStructuredText_. It's like
-Markdown with all the optional extensions built in.
+Sebagian besar dokumentasi Python ditulis dengan reStructuredText_. Ini seperti 
+penurunan dengan semua ekstensi opsional yang ada di dalamnya..
 
-The `reStructuredText Primer`_ and the `reStructuredText Quick
-Reference`_ should help you familiarize yourself with its syntax.
+The `reStructuredText Primer`_ dan `reStructuredText Quick
+Reference`_ should akan membantu Anda membiasakan diri dengan sintaks.
 
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 .. _reStructuredText Primer: http://sphinx.pocoo.org/rest.html
 .. _reStructuredText Quick Reference: http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 
-Code Documentation Advice
+Saran dokumentasi kode
 -------------------------
 
-Comments clarify the code and they are added with purpose of making the
-code easier to understand. In Python, comments begin with a hash
-(number sign) (``#``).
+Komentar memperjelas kode dan ditambahkan dengan tujuan membuat
+kode lebih mudah dipahami. dengan Python, comments komentar dimulai dengan hash
+(tanda Nomor) (``#``).
 
 .. _docstring-ref:
 
-In Python, *docstrings* describe modules, classes, and functions:
+Dengan Python, *docstrings* menjelaskan modul, kelas, dan fungsinya:
 
 .. code-block:: python
 
@@ -114,36 +114,36 @@ In Python, *docstrings* describe modules, classes, and functions:
         """Return the square root of self times self."""
         ...
 
-In general, follow the comment section of :pep:`8#comments` (the "Python Style
-Guide"). More information about docstrings can be found at :pep:`0257#specification` (The Docstring Conventions Guide).
+secara umum, Ikuti bagian komentar :pep:`8#comments` (the "paduan gaya
+phyton"). Informasi lebih lanjut tentang docstrings dapat ditemukan di :pep:`0257#specification` (The Docstring Conventions Guide).
 
-Commenting Sections of Code
+Mengomentari Bagian Kode
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Do not use triple-quote strings to comment code*. This is not a good
-practice, because line-oriented command-line tools such as grep will
-not be aware that the commented code is inactive. It is better to add
-hashes at the proper indentation level for every commented line. Your
-editor probably has the ability to do this easily, and it is worth
-learning the comment/uncomment toggle.
+*jangan gunakan triple-quote string untuk kode komentar*. ini bukan kelakuan yang
+bagus, karena line-oriented command-line alat seperti grep akan
+tidak menyadari bahwa kode berkomentar aktif. Lebih baik menambahkan hash
+pada tingkat indentasi yang tepat untuk setiap baris komentar. anda
+Editor mungkin memiliki kemampuan untuk melakukan ini dengan mudah
+dan perlu mempelajari komentar / tanda komentar untuk beralih.
 
-Docstrings and Magic
+Doktrin and sihir
 ~~~~~~~~~~~~~~~~~~~~
 
-Some tools use docstrings to embed more-than-documentation behavior,
-such as unit test logic. Those can be nice, but you won't ever go
-wrong with vanilla "here's what this does."
+beberapa alat menggunakan doktrin untuk menanamkan lebih-dari pada-dokumentasi perilaku,
+Seperti jenis tes logika. Mereka dapat bagus, tapi kamu tidak akan pernah pergi
+salah dengan vanilla "Berikut adalah apa yang dilakukan."
 
-Tools like Sphinx_ will parse your docstrings as reStructuredText and render it
-correctly as HTML. This makes it very easy to embed snippets of example code in
-a project's documentation.
+alat seperti Sphinx_ anda akan mengurai doktrin sebagai reStructuredText dan merendernya dengan
+benar sebagai HTML. THal ini membuat sangat mudah untuk menanamkan potongan contoh kode
+dalam dokumentasi proyek.
 
-Additionally, Doctest_ will read all embedded docstrings that look like input
-from the Python commandline (prefixed with ">>>") and run them, checking to see
-if the output of the command matches the text on the following line. This
-allows developers to  embed real examples and usage of functions alongside
-their source code, and as a side effect, it also ensures that their code is
-tested and works.
+Selain itu, Doctest_ akan membaca semua doktrin  tertanam yang terlihat
+seperti masukan dari commandline Python (diawali dengan ">>>") dan menjalankannya,  memeriksa apakah
+output dari perintah sesuai dengan teks pada baris berikut. hal
+ini memungkinkan pengembang untuk menanamkan contoh nyata dan penggunaan fungsi di samping
+kode sumber mereka, dan sebagai efek, i ini juga memastikan kode mereka
+diuji dan berfungsi.
 
 ::
     
@@ -158,12 +158,12 @@ tested and works.
 
 .. _Doctest: https://docs.python.org/3/library/doctest.html
 
-Docstrings versus Block comments
+Doktrin versus Blok Komentar
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These aren't interchangeable. For a function or class, the leading
-comment block is a programmer's note. The docstring describes the
-*operation* of the function or class:
+Ini tidak bisa digantikan. Untuk fungsi atau ruang, blok komentar 
+terdepan adalah catatan pemrogram. doktrin menjelaskan
+*pengoperasian* fungsi atau ruang:
 
 .. code-block:: python
 
@@ -172,44 +172,44 @@ comment block is a programmer's note. The docstring describes the
         """Returns the square root of self times self."""
 	...
 
-Unlike block comments, docstrings are built into the Python language itself.
-This means you can use all of Python's powerful introspection capabilities to
-access docstrings at runtime, compared with comments which are optimised out.
-Docstrings are accessible from both the `__doc__` dunder attribute for almost 
-every Python object, as well as with the built in `help()` function.
+Tidak seperti blok komentar, doktrin dibangun ke dalam bahasa Python itu sendiri.
+Ini berarti Anda dapat menggunakan semua kemampuan introspeksi kuat Python untuk
+mengakses docstrings saat waktu berjalan, dibandingkan dengan komentar yang dioptimalkan.
+Doktrin dapat diakses dari `__doc__` dunder atribut untuk hampir
+setiap objek Python, dan juga dengan `help()` fungsi.
 
-While block comments are usually used to explain *what* a section of code is
-doing, or the specifics of an algorithm, docstrings are more intended for
-explaining to other users of your code (or you in 6 months time) *how* a
-particular function can be used and the general purpose of a function, class, 
-or module.  
+Sementara blok komentar biasanya digunakan untuk menjelaskan *apa* bagian kode yang di
+lakukan, atau spesifik dari suatu algoritma, doktrin yang lebih ditujukan  
+untuk menjelaskan kepada pengguna lain dari kode Anda (atau Anda dalam waktu 6 bulan) *bagimana*
+fungsi tertentu dapat digunakan dan tujuan umum fungsi, kelas,
+atau modul.
 
-Writing Docstrings
+menulis doktrin
 ~~~~~~~~~~~~~~~~~~
 
-Depending on the complexity of the function, method, or class being written, a
-one-line docstring may be perfectly appropriate. These are generally used for
-really obvious cases, such as::
+Bergantung pada kompleksitas fungsi, metode, atau kelas yang sedang ditulis,
+dokumentasi satu baris mungkin sangat sesuai. Ini umumnya digunakan untuk ,
+kasus yang benar-benar jelas, seperti::
 
     def add(a, b):
         """Add two numbers and return the result."""
         return a + b
 
-The docstring should describe the function in a way that is easy to understand.
-For simple cases like trivial functions and classes, simply embedding the 
-function's signature (i.e. `add(a, b) -> result`) in the docstring is 
-unnecessary. This is because with Python's `inspect` module, it is already 
-quite easy to find this information if needed, and it is also readily available
-by reading the source code. 
+Doktrin harus menggambarkan fungsinya dengan cara yang mudah dimengerti.
+Untuk kasus sederhana seperti fungsi sepele dan ruang, scukup embedding tanda 
+tangan fungsi (i.e. `add(a, b) -> result`) di doktrin tidak diperlukan
+Ini di karena dengan modul pemeriksaan Python,  sudah cukup mudah
+untuk menemukan informasi ini jika diperlukan, dan ini juga tersedia 
+dengan membaca sumber kodenya. 
 
-In larger or more complex projects however, it is often a good idea to give 
-more information about a function, what it does, any exceptions it may raise, 
-what it returns, or relevant details about the parameters.
+Namun dalam proyek yang lebih besar atau lebih kompleks, Seringkali ide bagus untuk diberikan
+Informasi lebih lanjut tentang fungsi, apa fungsinya, pengecualian apa pun yang mungkin diajukan, 
+apa masalahnya, atau rincian yang relevan tentang parameter.
 
-For more detailed documentation of code a popular style is the one used for the
-Numpy project, often called `Numpy style`_ docstrings. While it can take up more
-lines than the previous example, it allows the developer to include a lot 
-more information about a method, function, or class. ::
+Untuk dokumentasi kode gaya populer yang lebih rinci digunakan untuk
+Proyek Numpy, yang sering disebut dengan doktrin `Numpy style`_. Sementara itu bisa mengambil
+lebih banyak garis dari contoh sebelumnya, memungkinkan pengembang untuk menyertakan lebih
+banyak informasi tentang metode, fungsi, atau kelas. ::
 
     def random_number_generator(arg1, arg2):
         """
@@ -232,49 +232,48 @@ more information about a method, function, or class. ::
         """
         return 42
 
-The `sphinx.ext.napoleon`_ plugin allows Sphinx to parse this style of
-docstrings, making it easy to incorporate NumPy style docstrings into your
-project.
+dengan `sphinx.ext.napoleon`_ Plugin memungkinkan Sphinx untuk mengurai gaya
+doktrin, msehingga mudah untuk menggabungkan doktrin gaya NumPy ke dalam
+proyek Anda
 
-At the end of the day, it doesn't really matter what style is used for writing
-docstrings, their purpose is to serve as documentation for anyone who may need
-to read or make changes to your code. As long as it is correct, understandable
-and gets the relevant points across then it has done the job it was designed to
-do.
+pada akhir hari, tidak masalah apa gaya yang digunakan untuk menulis
+doktrin, ttujuan mereka adalah untuk melayani sebagai dokumentasi bagi siapa saja yang mungkin 
+perlu membaca atau membuat perubahan pada kode Anda. selama itu benar, dimengerti
+dan mendapat poin yang relevan, maka hal itu telah dilakukan pekerjaan yang dirancangnya.
 
 
-For further reading on docstrings, feel free to consult :pep:`257`
+Untuk bacaan lebih lanjut tentang doktrin, silakan berkonsultasi dengan :pep:`257`
 
 .. _thomas-cokelaer.info: http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
 .. _sphinx.ext.napoleon: https://sphinxcontrib-napoleon.readthedocs.io/
 .. _`NumPy style`: http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 
-Other Tools
+Alat lainnya
 -----------
 
-You might see these in the wild. Use :ref:`sphinx-ref`.
+Anda mungkin melihat ini di alam bebas. Use :ref:`sphinx-ref`.
 
 Pycco_
-    Pycco is a "literate-programming-style documentation generator"
-    and is a port of the node.js Docco_. It makes code into a
-    side-by-side HTML code and documentation.
+    Pycco adalah "Melek-program-gaya dokumentasi generator"
+    dan merupakan port dari  node.js Docco_.  Ini membuat kode menjadi
+    kode HTML dan dokumentasi sisi-demi-sisi.
 
 .. _Pycco: https://pycco-docs.github.io/pycco/
 .. _Docco: http://jashkenas.github.com/docco
 
 Ronn_
-    Ronn builds Unix manuals. It converts human readable textfiles to roff
-    for terminal display, and also to HTML for the web.
+    Ronn membangun manual Unix. Ini mengubah teks teks yang dapat dibaca 
+    manusia menjadi layar utama, dan juga HTML untuk web.
 
 .. _Ronn: https://github.com/rtomayko/ronn
 
 Epydoc_
-    Epydoc is discontinued. Use :ref:`sphinx-ref` instead.
+    Epydoc dihentikan. gunakan :ref:`sphinx-ref` sebagai gantinya.
 
 .. _Epydoc: http://epydoc.sourceforge.net
 
 MkDocs_
-    MkDocs is a fast and simple static site generator that's geared towards
-    building project documentation with Markdown.
+    MkDocs adalah generator situs statis yang cepat dan sederhana yang diarahkan
+   untuk membuat dokumentasi proyek dengan Markdown.
 
 .. _MkDocs: http://www.mkdocs.org/
