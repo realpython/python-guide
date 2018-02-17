@@ -96,9 +96,14 @@ that you use. For example, you may be using the ``requests`` library in a lot
 of different projects.
 
 It is surely unnecessary to re-download the same packages/libraries each time
-you start working on a new project (and in a new virtual environment as a result).
-Fortunately, you can configure pip in such a way that it tries to reuse already
-installed packages.
+you start working on a new project (and in a new virtual environment as a
+result). Fortunately, starting with version 6.0, pip provides an `on-by-default
+caching mechanism
+<https://pip.pypa.io/en/stable/reference/pip_install/#caching>`_ that doesn't
+need any configuration.
+
+When using older versions, you can configure pip in such a way that it tries to
+reuse already installed packages, too.
 
 On UNIX systems, you can add the following line to your :file:`.bashrc` or
 :file:`.bash_profile` file.
