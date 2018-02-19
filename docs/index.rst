@@ -1,28 +1,28 @@
-.. pythonguide documentation master file, created by
-   sphinx-quickstart on Wed Aug  4 22:51:11 2010.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. pythonguide documentation master file, inilikha ni
+   sphinx-quickstart noong Wed Aug  4 22:51:11 2010.
+   Maaari mong iangkop ang file na ito sa iyong ganap na kagustuhan, pero ito ay dapat man lang
+   maglaman ng root `toctree` directive.
 
-The Hitchhiker's Guide to Python!
+Ang Gabay ng Hitchhiker sa Python!
 =================================
 
-Greetings, Earthling! Welcome to The Hitchhiker's Guide to Python.
+Maligayang bati, taong lupa! Maligayang pagdating sa Gabay ng Hitchhiker sa Python.
 
-**This is a living, breathing guide.**  If you'd like to contribute,
-`fork us on GitHub <https://github.com/kennethreitz/python-guide>`_!
+**Ito ay isang buhay, humihingang gabay.**  Kung may gusto kang iambag,
+`i-fork kami sa GitHub <https://github.com/kennethreitz/python-guide>`_!
 
-This handcrafted guide exists to provide both novice and expert Python
-developers a best practice handbook to the installation, configuration, and
-usage of Python on a daily basis.
+Itong gawang-kamay na gabay ay umiiral upang mabigyan ang parehong baguhan at ekspertong mga
+tagabuo ng Python ng pinakamagaling na aklat para sa pagsasanay sa pag-install, pagsasaayos, at
+paggamit ng Python sa pang-araw-araw.
 
-This guide is **opinionated** in a way that is almost, but not quite, entirely
-*unlike* Python's official documentation. You won't find a list of every Python web framework
-available here. Rather, you'll find a nice concise list of highly recommended
-options.
+Ang gabay na ito ay **opinyonado** sa paraang halos, ngunit hindi ganap, na lubos
+*hindi tulad* ng opisyal na dokumentasyon ng Python. Hindi ka makakahanap dito ng listahan ng bawat
+web framework ng Python. Sa halip, ikaw ay makakahanap ng magaganda't eksaktong lista ng lubos na
+nirerekomendang mga pagpipilian.
 
-.. note:: The use of **Python 3** is *highly* preferred over Python 2. Consider upgrading your applications and infrastructure if you find yourself *still* using Python 2 in production today. If you are using Python 3, congratulations — you are indeed a person of excellent taste.
+.. tandaan:: Ang paggamit ng **Python 3** ay *lubos* na gugustuhin kaysa sa Python 2. Isiping i-upgrade ang iyong mga application at mga imprastraktura kung ang Python 2 ay *patuloy* mo pa ring ginagamit sa paggawa ngayon. Kung ikaw ay gumagamit ng Python 3, binabati kita — ikaw ay isang taong tunay na may mahusay na panuri.
   —*Kenneth Reitz*
 
-Let's get started! But first, let's make sure you know where your towel is.
+Magsimula na tayo! Pero siguraduhin mo munang alam mo saan ang iyong tuwalya.
 
 .. include:: contents.rst.inc
