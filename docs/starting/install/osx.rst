@@ -69,13 +69,13 @@ Now, we can install Python 2.7:
 
 .. code-block:: console
 
-    $ brew install python
+    $ brew install python@2
 
 or Python 3:
 
 .. code-block:: console
 
-    $ brew install python3
+    $ brew install python
 
 This will take a minute or two.
 
@@ -84,7 +84,7 @@ Homebrew names the executable ``python2`` so that you can still run the system P
 
 .. code-block:: console
 
-    $ python -V   # system Python interpreter
+    $ python -V   # Homebrew installed Python 3 interpreter (if installed)
     $ python2 -V  # Homebrew installed Python 2 interpreter
     $ python3 -V  # Homebrew installed Python 3 interpreter (if installed)
 
@@ -107,7 +107,7 @@ and is actively maintained.
 .. code-block:: console
 
     $ pip2 -V  # pip pointing to the Homebrew installed Python 2 interpreter
-    $ pip3 -V  # pip pointing to the Homebrew installed Python 3 interpreter (if installed)
+    $ pip -V  # pip pointing to the Homebrew installed Python 3 interpreter (if installed)
 
 
 
