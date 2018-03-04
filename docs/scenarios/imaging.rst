@@ -89,8 +89,7 @@ Example
 
 .. code-block:: python
 
-    from cv2 import *
-    import numpy as np
+    import cv2
     #Read Image
     img = cv2.imread('testimg.jpg')
     #Display Image
