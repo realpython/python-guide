@@ -176,6 +176,18 @@ This course also features a built-in interpreter for receiving instant feedback 
     `Learn to Program in Python with Codeacademy <http://www.codecademy.com/en/tracks/python>`_
 
 
+Code the blocks
+~~~~~~~~~~~~~~~
+
+*Code the blocks* provides free and interactive Python tutorials for
+beginners. It combines Python programming with a 3D environment where
+you "place blocks" and construct structures. The tutorials teach you
+how to use Python to create progressively elaborate 3D structures,
+making the process of learning Python fun and engaging.
+
+    `Code the blocks <https://codetheblocks.com/tutorials/introduction>`_
+
+
 Intermediate
 ------------
 
