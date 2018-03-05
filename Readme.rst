@@ -16,7 +16,7 @@ handbook to the installation, configuration, and usage of Python on a daily
 basis.
 
 
-Topics include:
+Topics include: My topics are....................
 
 - Platform and version-specific installations
 - Py2app, Py2exe, bbfreeze, pyInstaller
@@ -30,6 +30,7 @@ Topics include:
 - Documentation: writing it
 - Testing: Jenkins & tox guides
 - How to easily interface ``hg`` from ``git``
+
 
 If you aren't fond of reading reStructuredText, there is an
 almost up-to-date `HTML version at docs.python-guide.org
