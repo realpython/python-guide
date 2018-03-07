@@ -7,7 +7,7 @@ Cryptography
 ------------
 
 `Cryptography <https://cryptography.io/en/latest/>`_ is an actively developed
-library that provides cryptographic recipes and primitives. It supports 
+library that provides cryptographic recipes and primitives. It supports
 Python 2.6-2.7, Python 3.3+ and PyPy.
 
 
@@ -59,7 +59,7 @@ Example
 
 	import gpg
 	import os
-	
+
 	# Encryption to public key specified in rkey.
 	rkey = "0xDEADBEEF"
 	text = "Something to hide."
@@ -107,9 +107,9 @@ Example
 
 	from Crypto.Cipher import AES
 	# Encryption
-	encryption_suite = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
+	encryption_suite = AES.new('This is a key123', AES.MODE_CFB, 'This is an IV456')
 	cipher_text = encryption_suite.encrypt("A really secret message. Not for prying eyes.")
 
 	# Decryption
-	decryption_suite = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
+	decryption_suite = AES.new('This is a key123', AES.MODE_CFB, 'This is an IV456')
 	plain_text = decryption_suite.decrypt(cipher_text)
