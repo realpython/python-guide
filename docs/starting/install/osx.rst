@@ -63,7 +63,7 @@ line at the bottom of your :file:`~/.profile` file
 
 .. code-block:: console
 
-    export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+    export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 Now, we can install Python 2.7:
 
@@ -71,13 +71,11 @@ Now, we can install Python 2.7:
 
     $ brew install python@2
 
-or Python 3:
+Because ``python@2`` is a "keg", we need to update our ``PATH`` again, to point at our new installation:
 
 .. code-block:: console
 
-    $ brew install python
-
-This will take a minute or two.
+    export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
 
 Homebrew names the executable ``python2`` so that you can still run the system Python via the executable ``python``.
 
