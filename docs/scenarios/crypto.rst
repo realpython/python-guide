@@ -45,6 +45,8 @@ GPGME bindings
 
 The `GPGME Python bindings <https://dev.gnupg.org/source/gpgme/browse/master/lang/python/>`_ provide pythonic access to `GPG Made Easy <https://dev.gnupg.org/source/gpgme/browse/master/>`_, a C API for the entire GNU Privacy Guard suite of projects, including GPG, libgcrypt and gpgsm (the S/MIME engine). It supports Python 2.6, 2.7, 3.4 and above. Depends on the SWIG C interface for Python as well as the GnuPG software and libraries.
 
+A more comprehensive `GPGME Python Bindings HOWTO <https://dev.gnupg.org/source/gpgme/browse/master/lang/python/docs/GPGMEpythonHOWTOen.org>`_ is available with the source and a HTML version is available `here <http://files.au.adversary.org/crypto/GPGMEpythonHOWTOen.html>`_.  Python 3 sample scripts from the examples in the HOWTO are also provided with the source and are accessible `here <https://dev.gnupg.org/source/gpgme/browse/master/lang/python/examples/howto/>`_.
+
 Available under the same terms as the rest of the GnuPG Project: GPLv2 and LGPLv2.1, both with the "or any later version" clause.
 
 Installation
@@ -58,27 +60,28 @@ Example
 .. code-block:: python3
 
 	import gpg
-	import os
 	
 	# Encryption to public key specified in rkey.
-	rkey = "0xDEADBEEF"
-	text = "Something to hide."
-	plain = gpg.core.Data(text)
-	cipher = gpg.core.Data()
-	c = gpg.core.Context()
-	c.set_armor(1)
-	c.op_keylist_start(rkey, 0)
-	r = c.op_keylist_next()
-	c.op_encrypt([r], 1, plain, cipher)
-	cipher.seek(0, os.SEEK_SET)
-	ciphertext = cipher.read()
-
+	a_key = input("Enter the fingerprint or key ID to encrypt to: ")
+	filename = input("Enter the filename to encrypt: ")
+	with open(filename, "rb") as afile:
+	    text = afile.read()
+	c = gpg.core.Context(armor=True)
+	rkey = list(c.keylist(pattern=a_key, secret=False))
+	ciphertext, result, sign_result = c.encrypt(text, recipients=rkey,
+	                                            always_trust=True,
+						    add_encrypt_to=True)
+	with open("{0}.asc".format(filename), "wb") as bfile:
+	    bfile.write(ciphertext)
 	# Decryption with corresponding secret key
 	# invokes gpg-agent and pinentry.
-	plaintext = gpg.Context().decrypt(ciphertext)
-
+	with open("{0}.asc".format(filename), "rb") as cfile:
+	    plaintext, result, verify_result = gpg.Context().decrypt(cfile)
+	with open("new-{0}".format(filename), "wb") as dfile:
+	    dfile.write(plaintext)
 	# Matching the data.
-	if text == plaintext[0].decode("utf-8"):
+	# Also running a diff on filename and the new filename should match.
+	if text == plaintext:
 	    print("Hang on ... did you say *all* of GnuPG?  Yep.")
 	else:
 	    pass
