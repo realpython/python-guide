@@ -107,7 +107,9 @@ The rest of the guide will assume that ``python`` references Python 3.
     # Do I have a Python 3 installed?
     $ python --version
     Python 3.6.4 # Success! 
-    # If you still see 2.7 ensure in PATH /usr/local/bin/ takes pecedence over /usr/bin/
+    # If you still see 2.7 ensure in PATH /usr/local/bin/ takes precedence over /usr/bin/
+    # If you are running OSX High Sierra add this to your .bash_profile or .profile instead
+    # export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 Pipenv & Virtual Environments
 -----------------------------
