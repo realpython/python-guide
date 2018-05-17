@@ -27,13 +27,13 @@ for development purposes, as well as setuptools, pip and virtualenv.
 Python 3 Installation Guides
 ////////////////////////////
 
-- :ref:`Python 3 on MacOS <install3-osx>`.
+- :ref:`Python 3 on MacOS <install3-macos>`.
 - :ref:`Python 3 on Windows <install3-windows>`.
 - :ref:`Python 3 on Linux <install3-linux>`.
 
 Legacy Python 2 Installation Guides
 ///////////////////////////////////
 
-- :ref:`Python 2 on MacOS <install-osx>`.
+- :ref:`Python 2 on MacOS <install-macos>`.
 - :ref:`Python 2 on Microsoft Windows <install-windows>`.
 - :ref:`Python 2 on Linux <install-linux>`.

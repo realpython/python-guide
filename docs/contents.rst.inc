@@ -14,10 +14,10 @@ New to Python? Let's properly setup up your Python environment:
     :maxdepth: 1
 
     starting/installation
-    starting/install3/osx
+    starting/install3/macos
     starting/install3/win
     starting/install3/linux
-    starting/install/osx
+    starting/install/macos
     starting/install/win
     starting/install/linux
 
@@ -137,8 +137,3 @@ Contribution notes and legal information (for those interested).
    notes/contribute
    notes/license
    notes/styleguide
-
-
-
-
-

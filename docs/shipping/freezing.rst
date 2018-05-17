@@ -44,15 +44,15 @@ Comparison of Freezing Tools
 
 Solutions and platforms/features supported:
 
-=========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
-Solution    Windows Linux OS X Python 3 License One-file mode Zipfile import Eggs pkg_resources support
-=========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
-bbFreeze    yes     yes   yes  no       MIT     no            yes            yes  yes
-py2exe      yes     no    no   yes      MIT     yes           yes            no   no
-pyInstaller yes     yes   yes  yes      GPL     yes           no             yes  no
-cx_Freeze   yes     yes   yes  yes      PSF     no            yes            yes  no
-py2app      no      no    yes  yes      MIT     no            yes            yes  yes
-=========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
+=========== ======= ===== ===== ======== ======= ============= ============== ==== =====================
+Solution    Windows Linux macOS Python 3 License One-file mode Zipfile import Eggs pkg_resources support
+=========== ======= ===== ===== ======== ======= ============= ============== ==== =====================
+bbFreeze    yes     yes   yes   no       MIT     no            yes            yes  yes
+py2exe      yes     no    no    yes      MIT     yes           yes            no   no
+pyInstaller yes     yes   yes   yes      GPL     yes           no             yes  no
+cx_Freeze   yes     yes   yes   yes      PSF     no            yes            yes  no
+py2app      no      no    yes   yes      MIT     no            yes            yes  yes
+=========== ======= ===== ===== ======== ======= ============= ============== ==== =====================
 
 .. note::
     Freezing Python code on Linux into a Windows executable was only once
@@ -152,8 +152,8 @@ Prerequisite is to have installed :ref:`Python, Setuptools and pywin32 dependenc
 - `Manual <https://pyinstaller.readthedocs.io/en/stable/>`_
 
 
-OS X
-----
+macOS
+-----
 
 
 py2app
@@ -196,7 +196,7 @@ Now :code:`script.spec` can be run with :code:`pyinstaller` (instead of using :c
 
   $ pyinstaller script.spec
 
-To create a standalone windowed OS X application, use the :code:`--windowed` option
+To create a standalone windowed macOS application, use the :code:`--windowed` option
 
 .. code-block:: console
 
@@ -204,7 +204,7 @@ To create a standalone windowed OS X application, use the :code:`--windowed` opt
 
 This creates a :code:`script.app` in the :code:`dist` folder. Make sure to use GUI packages in your Python code, like `PyQt <https://riverbankcomputing.com/software/pyqt/intro>`_ or `PySide <http://wiki.qt.io/About-PySide>`_, to control the graphical parts of the app.
 
-There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/spec-files.html#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option. 
+There are several options in :code:`script.spec` related to macOS app bundles `here <http://pythonhosted.org/PyInstaller/spec-files.html#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option.
 
 
 Linux

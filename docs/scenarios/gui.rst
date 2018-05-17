@@ -18,9 +18,9 @@ and the mailing list https://groups.google.com/forum/#!forum/project-camelot
 
 Cocoa
 -----
-.. note:: The Cocoa framework is only available on OS X. Don't pick this if you're writing a cross-platform application!
+.. note:: The Cocoa framework is only available on macOS. Don't pick this if you're writing a cross-platform application!
 
-GTk
+GTK
 ---
 PyGTK provides Python bindings for the GTK+ toolkit. Like the GTK+ library
 itself, it is currently licensed under the GNU LGPL. It is worth noting that
@@ -47,7 +47,7 @@ such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products
 and so on.
 
 Kivy is actively being developed by a community and is free to use. It operates
-on all major platforms (Linux, OSX, Windows, Android).
+on all major platforms (Linux, macOS, Windows, Android).
 
 The main resource for information is the website: http://kivy.org
 

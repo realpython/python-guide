@@ -161,10 +161,10 @@ each distribution's format (e.g. .deb for Debian/Ubuntu, .rpm for Red
 Hat/Fedora, etc) is a fair amount of work. If your code is an application that
 you plan to distribute on other platforms, then you'll also have to create and
 maintain the separate config required to freeze your application for Windows
-and OSX. It would be much less work to simply create and maintain a single
+and macOS. It would be much less work to simply create and maintain a single
 config for one of the cross platform :ref:`freezing tools
 <freezing-your-code-ref>`, which will produce stand-alone executables for all
-distributions of Linux, as well as Windows and OSX.
+distributions of Linux, as well as Windows and macOS.
 
 Creating a distribution package is also problematic if your code is for a
 version of Python that isn't currently supported by a distribution.
