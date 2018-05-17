@@ -164,8 +164,8 @@ MIT licensed.
 Enthought Canopy
 ----------------
 `Enthought Canopy <https://www.enthought.com/products/canopy/>`_ is a Python
-IDE which is focused towards Scientists and Engineers as it provides pre 
-installed libraries for data analysis. 
+IDE targeted towards scientists and engineers which provides pre-installed
+libraries for data analysis.
 
 Eclipse
 -------
