@@ -109,7 +109,7 @@ TextMate
 --------
 
     `TextMate <http://macromates.com/>`_ brings Apple's approach to operating
-    systems into the world of text editors. By bridging UNIX underpinnings and
+    systems into the world of text editors. By bridging Unix underpinnings and
     GUI, TextMate cherry-picks the best of both worlds to the benefit of expert
     scripters and novice users alike.
 

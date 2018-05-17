@@ -37,7 +37,7 @@ package.
     If you perform a fresh install of Xcode, you will also need to add the
     commandline tools by running ``xcode-select --install`` on the terminal.
 
-While macOS comes with a large number of UNIX utilities, those familiar with
+While macOS comes with a large number of Unix utilities, those familiar with
 Linux systems will notice one key component missing: a package manager.
 `Homebrew <http://brew.sh>`_ fills this void.
 
