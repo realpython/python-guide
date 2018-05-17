@@ -14,8 +14,8 @@ Applications such as 'Dropbox', 'Eve Online',  'Civilization IV', and
 BitTorrent clients do this.
 
 The advantage of distributing this way is that your application will "just work",
-even if the user doesn't already have the required version of Python (or any) 
-installed. On Windows, and even on many Linux distributions and OS X, the right
+even if the user doesn't already have the required version of Python (or any)
+installed. On Windows, and even on many Linux distributions and macOS, the right
 version of Python will not already be installed.
 
 Besides, end-user software should always be in an executable format. Files 
