@@ -199,11 +199,11 @@ a class and function browser, and object inspection.
 WingIDE
 -------
 
-`WingIDE <http://wingware.com/>`_ is a Python specific IDE. It runs on Linux,
-Windows and Mac (as an X11 application, which frustrates some Mac users).
+`WingIDE <http://wingware.com/>`_ is a Python-specific IDE. It runs on Linux,
+Windows, and Mac (as an X11 application, which frustrates some Mac users).
 
-WingIDE offers code completion, syntax highlighting, source browser, graphical
-debugger and support for version control systems.
+WingIDE offers code completion, syntax highlighting, source browser, a graphical
+debugger, and support for version control systems.
 
 
 NINJA-IDE
