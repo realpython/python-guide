@@ -143,7 +143,7 @@ Externally Linking
 * Avoid using labels such as "click here", "this", etc. preferring
   descriptive labels (SEO worthy) instead.
 
-Linking to Sections in the Guide
+Linking to Sections in The Guide
 --------------------------------
 
 To cross-reference other parts of this documentation, use the `:ref:
