@@ -64,7 +64,7 @@ Section headings:
     Lunchtime Doubly So
     -------------------
 
-Sub section headings:
+Subsection headings:
 
 .. code-block:: rest
 
