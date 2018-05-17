@@ -18,7 +18,7 @@ Tutorials that explain how to work with modules that conform to this interface c
 SQLAlchemy
 ----------
 
-`SQLAlchemy <http://www.sqlalchemy.org/>`_ is a commonly used database toolkit.
+`SQLAlchemy <http://www.sqlalchemy.org/>`_ is a commonly-used database toolkit.
 Unlike many database libraries it not only provides an ORM layer but also a
 generalized API for writing database-agnostic code without SQL.
 
