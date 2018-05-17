@@ -109,7 +109,7 @@ experienced developers from other languages a crash course on Python.
     `Crash into Python <http://stephensugden.com/crash_into_python/>`_
 
 
-Dive Into Python 3
+Dive into Python 3
 ~~~~~~~~~~~~~~~~~~
 
 Dive Into Python 3 is a good book for those ready to jump in to Python 3. It's
@@ -119,7 +119,7 @@ experience programming in another language.
     `Dive Into Python 3 <http://www.diveintopython3.net/>`_
 
 
-Think Python: How to Think Like a Computer Scientist
+Think Python: How to Think like a Computer Scientist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Think Python attempts to give an introduction to basic concepts in computer
