@@ -102,7 +102,7 @@ app backends and microservices. Falcon encourages the REST architectural style o
 mapping URIs to resources, trying to do as little as possible while remaining highly effective. 
 
 Falcon highlights four main focuses: speed, reliability, flexibility and debuggability.
-It implements HTTP through “responders” such as ``on_get()``, ``on_put()``, etc.
+It implements HTTP through "responders" such as ``on_get()``, ``on_put()``, etc.
 These responders receive intuitive request and response objects.
 
 Tornado
