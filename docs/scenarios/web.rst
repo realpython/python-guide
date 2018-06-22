@@ -91,6 +91,19 @@ suit your needs. Or, you can easily use any library you want yourself!
 Flask is default choice for any Python web application that isn't a good
 fit for Django.
 
+Falcon
+------
+
+`Falcon <https://falconframework.org/>`_ is a good choice when your goal is
+to build RESTful API microservices that are fast and scalable.
+
+It is a reliable, high-performance Python web framework for building large-scale
+app backends and microservices. Falcon encourages the REST architectural style of
+mapping URIs to resources, trying to do as little as possible while remaining highly effective. 
+
+Falcon highlights four main focuses: speed, reliability, flexibility and debuggability.
+It implements HTTP through "responders" such as ``on_get()``, ``on_put()``, etc.
+These responders receive intuitive request and response objects.
 
 Tornado
 --------
