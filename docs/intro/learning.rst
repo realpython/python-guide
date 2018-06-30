@@ -18,7 +18,7 @@ quick-start guide to the language.
 Python Basics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-pythonbasics.org is an introductiory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are als more in-depth lessons like object oriented programming and regular expressions.
+pythonbasics.org is an introductiory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are also in-depth lessons like object oriented programming and regular expressions.
 
    `Python basics <https://pythonbasics.org/>`_
     
