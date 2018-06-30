@@ -15,6 +15,13 @@ quick-start guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
+Python Basics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+pythonbasics.org is an introductiory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are als more in-depth lessons like object oriented programming and regular expressions.
+
+   `Python basics <https://pythonbasics.org/>`_
+    
 Python for Beginners
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
