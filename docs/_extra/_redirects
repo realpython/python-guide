@@ -2,8 +2,8 @@
 # Docs: https://www.netlify.com/docs/redirects/
 
 # Redirect http to https (avoid one extra hop with an explicit rule for /en/latest/)
-http://docs.python-guide.org/en/latest/*        https://docs.python-guide.org/:splat       302!
-http://docs.python-guide.org/*                  https://docs.python-guide.org/:splat       302!
+# http://docs.python-guide.org/en/latest/*        https://docs.python-guide.org/:splat       302!
+# http://docs.python-guide.org/*                  https://docs.python-guide.org/:splat       302!
 
 # Redirect RTD prefix to /
 /en/latest/*                                    /:splat                                    302!
