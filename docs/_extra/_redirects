@@ -1,5 +1,7 @@
 # https://www.netlify.com/docs/redirects/
 
+# Redirect RTD /en/latest/ prefix
+/en/latest/*        /:splat         301!
 
-# Redirect internal URL to python-guide.org
+# TODO: Redirect internal URL to python-guide.org
 # https://python-guide.netlify.com/* https://docs.python-guide.org/:splat 301!
