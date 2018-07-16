@@ -1,7 +1,9 @@
 {% extends "!layout.html" %}
 
 {%- block extrahead %}
-  {{ super() }}
+  {# No super() because we want to avoid loading an empty custom.css file #}
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   <link rel="canonical" href="http://docs.python-guide.org/{{ pagename }}/"/>
 
