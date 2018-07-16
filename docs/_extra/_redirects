@@ -2,11 +2,12 @@
 # Docs: https://www.netlify.com/docs/redirects/
 
 # Redirect http to https (avoid one extra hop with an explicit rule for /en/latest/)
-http://docs.python-guide.org/en/latest/*        https://docs.python-guide.org/:splat       301!
-http://docs.python-guide.org/*                  https://docs.python-guide.org/:splat       301!
+http://docs.python-guide.org/en/latest/*        https://docs.python-guide.org/:splat       302!
+http://docs.python-guide.org/*                  https://docs.python-guide.org/:splat       302!
 
 # Redirect RTD prefix to /
-/en/latest/*                                    /:splat                                    301!
+/en/latest/*                                    /:splat                                    302!
 
+# TODO: Make those cacheable 301s when we're done
 # TODO: Redirect Netlify URL to python-guide.org
-# https://python-guide.netlify.com/*              https://docs.python-guide.org/:splat       301!
+# https://python-guide.netlify.com/*              https://docs.python-guide.org/:splat       302!
