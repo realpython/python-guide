@@ -1,7 +1,12 @@
-# https://www.netlify.com/docs/redirects/
+# Redirect rules
+# Docs: https://www.netlify.com/docs/redirects/
 
-# Redirect RTD /en/latest/ prefix
-/en/latest/*        /:splat         301!
+# Redirect http to https (avoid one extra hop with an explicit rule for /en/latest/)
+http://docs.python-guide.org/en/latest/*        https://docs.python-guide.org/:splat       301!
+http://docs.python-guide.org/*                  https://docs.python-guide.org/:splat       301!
 
-# TODO: Redirect internal URL to python-guide.org
-# https://python-guide.netlify.com/* https://docs.python-guide.org/:splat 301!
+# Redirect RTD prefix to /
+/en/latest/*                                    /:splat                                    301!
+
+# TODO: Redirect Netlify URL to python-guide.org
+# https://python-guide.netlify.com/*              https://docs.python-guide.org/:splat       301!
