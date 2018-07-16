@@ -106,11 +106,11 @@ html_theme = 'alabaster'
 # documentation.
 html_theme_options = {
     'show_powered_by': False,
-    'github_user': 'kennethreitz',
+    'github_user': 'realpython',
     'github_repo': 'python-guide',
     'github_banner': True,
     'show_related': False,
-    'note_bg': '#FFF59C'
+    'note_bg': '#FFF59C',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

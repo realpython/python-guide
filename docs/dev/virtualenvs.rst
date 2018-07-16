@@ -5,7 +5,7 @@ Pipenv & Virtual Environments
 
 .. image:: https://farm5.staticflickr.com/4290/35294660055_42c02b2316_k_d.jpg
 
-This tutorial walks you through installing and using Python packages. 
+This tutorial walks you through installing and using Python packages.
 
 It will show you how to install and use the necessary tools and make strong
 recommendations on best practices. Keep in mind that Python is used for a great
@@ -34,7 +34,7 @@ install the latest 3.x version from `python.org`_ or refer to the
 `Installing Python`_ section of this guide.
 
 .. Note:: If you're newcomer and you get an error like this:
-    
+
     .. code-block:: python
 
         >>> python
@@ -76,7 +76,7 @@ cases.
 
 Use ``pip`` to install Pipenv:
 
-.. code-block:: python
+.. code-block:: console
 
     $ pip install --user pipenv
 
@@ -211,7 +211,7 @@ Install virtualenv via pip:
 .. code-block:: console
 
   $ pip install virtualenv
- 
+
 Test your installation
 
 .. code-block:: console

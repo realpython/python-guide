@@ -9,7 +9,7 @@ The Hitchhiker's Guide to Python!
 Greetings, Earthling! Welcome to The Hitchhiker's Guide to Python.
 
 **This is a living, breathing guide.**  If you'd like to contribute,
-`fork us on GitHub <https://github.com/kennethreitz/python-guide>`_!
+`fork us on GitHub <https://github.com/realpython/python-guide>`_!
 
 This handcrafted guide exists to provide both novice and expert Python
 developers a best practice handbook to the installation, configuration, and
