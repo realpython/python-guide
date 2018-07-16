@@ -62,7 +62,7 @@ using your OS package manager, you may have to `install pip <https://pip.pypa.io
 .. _python.org: https://python.org
 .. _pip: https://pypi.org/project/pip/
 .. _Homebrew: https://brew.sh
-.. _Installing Python: https://docs.python-guide.org/en/latest/starting/installation/
+.. _Installing Python: https://docs.python-guide.org/starting/installation/
 
 
 Installing Pipenv

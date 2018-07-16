@@ -10,7 +10,7 @@ It looks like this was the result of either:
 
 `Click here to go back to the homepage. <https://docs.python-guide.org/>`_
 
-Or, try `searching <https://docs.python-guide.org/en/latest/search/>`_.
+Or, try `searching <https://docs.python-guide.org/search/>`_.
 
 .. raw:: html
 
