@@ -7,6 +7,8 @@
 
   {% if pagename == 'index' %}
   <link rel="canonical" href="http://docs.python-guide.org/"/>
+  {% elif pagename == '404' %}
+  {# No canonical on our 404 template. #}
   {% else %}
   <link rel="canonical" href="http://docs.python-guide.org/{{ pagename }}/"/>
   {% endif %}
