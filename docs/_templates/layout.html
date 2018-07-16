@@ -3,7 +3,15 @@
 {%- block extrahead %}
   {# No super() because we want to avoid loading an empty custom.css file #}
 
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  {# <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75" /> #}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    div.body {
+      min-width: initial;
+      max-width: initial;
+    }
+  </style>
 
   {% if pagename == 'index' %}
   <link rel="canonical" href="https://docs.python-guide.org/"/>
