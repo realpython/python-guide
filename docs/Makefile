@@ -59,6 +59,10 @@ dirhtml:
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
 
+netlify: dirhtml
+	@cp $(BUILDDIR)/dirhtml/404/index.html $(BUILDDIR)/dirhtml/404.html
+	@cp _extra/* $(BUILDDIR)/dirhtml/
+
 singlehtml:
 	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml
 	@echo

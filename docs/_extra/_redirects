@@ -1,0 +1,5 @@
+# https://www.netlify.com/docs/redirects/
+
+
+# Redirect internal URL to python-guide.org
+# https://python-guide.netlify.com/* https://docs.python-guide.org/:splat 301!
