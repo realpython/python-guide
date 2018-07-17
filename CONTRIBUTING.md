@@ -4,7 +4,7 @@ How to contribute
 This guide is under heavy development. If you would like to contribute, please
 see:
 
-http://docs.python-guide.org/en/latest/notes/contribute/
+https://docs.python-guide.org/notes/contribute/
 
 How to test your changes
 ------------------------
@@ -34,4 +34,4 @@ Style Guide
 
 For all contributions, please follow the `Guide Style Guide`:
 
-http://docs.python-guide.org/en/latest/notes/styleguide/
+https://docs.python-guide.org/notes/styleguide/

@@ -33,4 +33,4 @@ Topics include:
 
 If you aren't fond of reading reStructuredText, there is an
 almost up-to-date `HTML version at docs.python-guide.org
-<http://docs.python-guide.org>`_.
+<https://docs.python-guide.org>`_.
