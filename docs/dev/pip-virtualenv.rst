@@ -3,7 +3,7 @@
 Further Configuration of Pip and Virtualenv
 ===========================================
 
-.. image:: https://farm4.staticflickr.com/3934/34018732105_f0e6758859_k_d.jpg
+.. image:: /_static/photos/34018732105_f0e6758859_k_d.jpg
 
 Requiring an active virtual environment for ``pip``
 ---------------------------------------------------

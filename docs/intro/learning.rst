@@ -1,7 +1,7 @@
 Learning Python
 ===============
 
-.. image:: https://farm3.staticflickr.com/2840/32800783863_11a00db52c_k_d.jpg
+.. image:: /_static/photos/32800783863_11a00db52c_k_d.jpg
 
 Beginner
 --------

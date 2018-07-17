@@ -3,7 +3,7 @@
 Installing Python 2 on Windows
 ==============================
 
-.. image:: https://farm5.staticflickr.com/4268/34435688560_4cc2a7bcbb_k_d.jpg
+.. image:: /_static/photos/34435688560_4cc2a7bcbb_k_d.jpg
 
 .. note::
     Check out our :ref:`guide for installing Python 3 on Windows<install3-windows>`.

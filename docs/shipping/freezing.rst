@@ -4,27 +4,27 @@
 Freezing Your Code
 ==================
 
-.. image:: https://farm5.staticflickr.com/4227/33907151034_e0a9e53402_k_d.jpg
+.. image:: /_static/photos/33907151034_e0a9e53402_k_d.jpg
 
-"Freezing" your code is creating a single-file executable file to distribute 
-to end-users, that contains all of your application code as well as the 
+"Freezing" your code is creating a single-file executable file to distribute
+to end-users, that contains all of your application code as well as the
 Python interpreter.
 
 Applications such as 'Dropbox', 'Eve Online',  'Civilization IV', and
 BitTorrent clients do this.
 
 The advantage of distributing this way is that your application will "just work",
-even if the user doesn't already have the required version of Python (or any) 
+even if the user doesn't already have the required version of Python (or any)
 installed. On Windows, and even on many Linux distributions and OS X, the right
 version of Python will not already be installed.
 
-Besides, end-user software should always be in an executable format. Files 
-ending in ``.py`` are for software engineers and system administrators. 
+Besides, end-user software should always be in an executable format. Files
+ending in ``.py`` are for software engineers and system administrators.
 
-One disadvantage of freezing is that it will increase the size of your 
+One disadvantage of freezing is that it will increase the size of your
 distribution by about 2–12MB. Also, you will be responsible for shipping
-updated versions of your application when security vulnerabilities to 
-Python are patched. 
+updated versions of your application when security vulnerabilities to
+Python are patched.
 
 Alternatives to Freezing
 ------------------------
@@ -75,34 +75,34 @@ Prerequisite is to install :ref:`Python, Setuptools and pywin32 dependency on Wi
 1. Install :code:`bbfreeze`:
 
 .. code-block:: console
-    
+
     $ pip install bbfreeze
-    
+
 2. Write most basic :file:`bb_setup.py`
 
 .. code-block:: python
 
     from bbfreeze import Freezer
-    
+
     freezer = Freezer(distdir='dist')
     freezer.addScript('foobar.py', gui_only=True)
     freezer()
-    
+
 .. note::
-    
+
     This will work for the most basic one file scripts. For more advanced freezing you will have to provide
     include and exclude paths like so
-    
+
     .. code-block:: python
-    
+
         freezer = Freezer(distdir='dist', includes=['my_code'], excludes=['docs'])
 
 3. (Optionally) include icon
 
 .. code-block:: python
-    
+
     freezer.setIcon('my_awesome_icon.ico')
-    
+
 4. Provide the Microsoft Visual C runtime DLL for the freezer. It might be possible to append your :code:`sys.path`
 with Microsoft Visual Studio path but I find it easier to drop :file:`msvcp90.dll` in the same folder where your script
 resides.
@@ -110,7 +110,7 @@ resides.
 5. Freeze!
 
 .. code-block:: console
-    
+
     $ python bb_setup.py
 
 py2exe
@@ -204,7 +204,7 @@ To create a standalone windowed OS X application, use the :code:`--windowed` opt
 
 This creates a :code:`script.app` in the :code:`dist` folder. Make sure to use GUI packages in your Python code, like `PyQt <https://riverbankcomputing.com/software/pyqt/intro>`_ or `PySide <http://wiki.qt.io/About-PySide>`_, to control the graphical parts of the app.
 
-There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/spec-files.html#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option. 
+There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/spec-files.html#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option.
 
 
 Linux

@@ -1,7 +1,7 @@
 Logging
 =======
 
-.. image:: https://farm5.staticflickr.com/4246/35254379756_c9fe23f843_k_d.jpg
+.. image:: /_static/photos/35254379756_c9fe23f843_k_d.jpg
 
 The :mod:`logging` module has been a part of Python's Standard Library since
 version 2.3.  It is succinctly described in :pep:`282`.  The documentation
@@ -37,14 +37,14 @@ Other reasons why logging is better than ``print``:
 Logging in a Library
 --------------------
 
-Notes for `configuring logging for a library`_ are in the 
+Notes for `configuring logging for a library`_ are in the
 `logging tutorial`_.  Because the *user*, not the library, should
 dictate what happens when a logging event occurs, one admonition bears
 repeating:
 
 .. note::
     It is strongly advised that you do not add any handlers other than
-    NullHandler to your library’s loggers.  
+    NullHandler to your library’s loggers.
 
 
 Best practice when instantiating loggers in a library is to only create them
@@ -100,23 +100,23 @@ section of the `logging tutorial`_.
 
     [loggers]
     keys=root
-    
+
     [handlers]
     keys=stream_handler
-    
+
     [formatters]
     keys=formatter
-    
+
     [logger_root]
     level=DEBUG
     handlers=stream_handler
-    
+
     [handler_stream_handler]
     class=StreamHandler
     level=DEBUG
     formatter=formatter
     args=(sys.stderr,)
-    
+
     [formatter_formatter]
     format=%(asctime)s %(name)-12s %(levelname)-8s %(message)s
 
@@ -131,7 +131,7 @@ Then use :meth:`logging.config.fileConfig` in the code:
     fileConfig('logging_config.ini')
     logger = logging.getLogger()
     logger.debug('often makes a very good meal of %s', 'visiting tourists')
-    
+
 
 Example Configuration via a Dictionary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

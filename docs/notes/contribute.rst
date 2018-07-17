@@ -1,7 +1,7 @@
 Contribute
 ~~~~~~~~~~
 
-.. image:: https://farm3.staticflickr.com/2858/33573769116_49c1ef51e7_k_d.jpg
+.. image:: /_static/photos/33573769116_49c1ef51e7_k_d.jpg
 
 Python-guide is under active development, and contributors are welcome.
 

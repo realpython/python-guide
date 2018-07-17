@@ -5,7 +5,7 @@
 Installing Python 3 on Mac OS X
 ===============================
 
-.. image:: https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg
+.. image:: /_static/photos/34435689480_2e6f358510_k_d.jpg
 
 The latest version of Mac OS X, High Sierra, **comes with Python 2.7 out of the box**.
 
@@ -106,13 +106,13 @@ The rest of the guide will assume that ``python`` references Python 3.
 
     # Do I have a Python 3 installed?
     $ python --version
-    Python 3.6.4 # Success! 
+    Python 3.6.4 # Success!
     # If you still see 2.7 ensure in PATH /usr/local/bin/ takes precedence over /usr/bin/
 
 Pipenv & Virtual Environments
 -----------------------------
 
-The next step is to install Pipenv, so you can install dependencies and manage virtual environments. 
+The next step is to install Pipenv, so you can install dependencies and manage virtual environments.
 
 A Virtual Environment is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them. It solves the

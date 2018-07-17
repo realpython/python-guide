@@ -1,7 +1,7 @@
 JSON
 ====
 
-.. image:: https://farm5.staticflickr.com/4174/33928819683_97b5c6a184_k_d.jpg
+.. image:: /_static/photos/33928819683_97b5c6a184_k_d.jpg
 
 The `json <https://docs.python.org/2/library/json.html>`_ library can parse
 JSON from strings or files. The library parses JSON into a Python dictionary
@@ -60,7 +60,7 @@ You can start using simplejson when the json library is not available by
 importing simplejson under a different name:
 
 .. code-block:: python
-    
+
     import simplejson as json
 
 After importing simplejson as json, the above examples will all work as if you

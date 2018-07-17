@@ -3,7 +3,7 @@
 The Community
 =============
 
-.. image:: https://farm5.staticflickr.com/4225/34689432801_78d97ecec9_k_d.jpg
+.. image:: /_static/photos/34689432801_78d97ecec9_k_d.jpg
 
 BDFL
 ----

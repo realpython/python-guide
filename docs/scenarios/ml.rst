@@ -2,9 +2,9 @@
 Machine Learning
 ================
 
-.. image:: https://farm4.staticflickr.com/3954/34018729885_002ced9b54_k_d.jpg
+.. image:: /_static/photos/34018729885_002ced9b54_k_d.jpg
 
-Python has a vast number of libraries for data analysis, statistics and Machine Learning itself, making it a language of choice for many data scientists. 
+Python has a vast number of libraries for data analysis, statistics and Machine Learning itself, making it a language of choice for many data scientists.
 
 Some widely used packages for Machine Learning and other Data Science applications are enlisted below.
 
@@ -45,7 +45,7 @@ Installation
 Through PyPI:
 
 .. code-block:: python
-	
+
 	pip install -U scikit-learn
 
 Through conda:
@@ -61,28 +61,28 @@ Example
 
 For this example, we train a simple classifier on the `Iris dataset <http://en.wikipedia.org/wiki/Iris_flower_data_set>`_, which comes bundled in with scikit-learn.
 
-The dataset takes four features of flowers: sepal length, sepal width, petal length and petal width, and classifies them into three flower species (labels): setosa, versicolor or virginica. The labels have been represented as numbers in the dataset: 0 (setosa), 1 (versicolor) and 2 (virginica). 
+The dataset takes four features of flowers: sepal length, sepal width, petal length and petal width, and classifies them into three flower species (labels): setosa, versicolor or virginica. The labels have been represented as numbers in the dataset: 0 (setosa), 1 (versicolor) and 2 (virginica).
 
 We shuffle the Iris dataset, and divide it into separate training and testing sets: keeping the last 10 data points for testing and rest for training. We then train the classifier on the training set, and predict on the testing set.
 
 .. code-block:: python
 
-	from sklearn.datasets import load_iris 
+	from sklearn.datasets import load_iris
 	from sklearn import tree
 	from sklearn.metrics import accuracy_score
 	import numpy as np
 
 	#loading the iris dataset
-	iris = load_iris() 
+	iris = load_iris()
 
 	x = iris.data #array of the data
 	y = iris.target #array of labels (i.e answers) of each data entry
 
 	#getting label names i.e the three flower species
-	y_names = iris.target_names 
+	y_names = iris.target_names
 
 	#taking random indices to split the dataset into train and test
-	test_ids = np.random.permutation(len(x)) 
+	test_ids = np.random.permutation(len(x))
 
 	#splitting data and labels into train and test
 	#keeping last 10 entries for testing, rest for training

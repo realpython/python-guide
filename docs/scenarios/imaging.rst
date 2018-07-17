@@ -2,7 +2,7 @@
 Image Manipulation
 ==================
 
-.. image:: https://farm5.staticflickr.com/4157/34575689432_3de8e9a348_k_d.jpg
+.. image:: /_static/photos/34575689432_3de8e9a348_k_d.jpg
 
 Most image processing and manipulation techniques can be carried out
 effectively using two libraries: Python Imaging Library (PIL)  and OpenSource
