@@ -14,3 +14,5 @@ https://python-guide.org/*                      https://docs.python-guide.org/:s
 
 # Redirect Netlify version to primary domain
 https://python-guide.netlify.com/*              https://docs.python-guide.org/:splat       301!
+
+/guide-book                                     https://realpython.com/asins/1491933178/   302
