@@ -1,7 +1,7 @@
 GUI Applications
 ================
 
-.. image:: https://farm5.staticflickr.com/4250/33907143624_cd621b535c_k_d.jpg
+.. image:: /_static/photos/33907143624_cd621b535c_k_d.jpg
 
 
 Alphabetical list of GUI Applications.

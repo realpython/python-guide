@@ -1,7 +1,7 @@
 Speed
 =====
 
-.. image:: https://farm3.staticflickr.com/2826/33175625804_e225b90f3e_k_d.jpg
+.. image:: /_static/photos/33175625804_e225b90f3e_k_d.jpg
 
 CPython, the most commonly used implementation of Python, is slow for CPU bound
 tasks. `PyPy`_ is fast.
@@ -234,14 +234,14 @@ Concurrent.futures
 The `concurrent.futures`_ module is a module in the standard library that
 provides a "high-level interface for asynchronously executing callables". It
 abstracts away a lot of the more complicated details about using multiple
-threads or processes for concurrency, and allows the user to focus on 
+threads or processes for concurrency, and allows the user to focus on
 accomplishing the task at hand.
 
 The `concurrent.futures`_ module exposes two main classes, the
 `ThreadPoolExecutor` and the `ProcessPoolExecutor`. The ThreadPoolExecutor
 will create a pool of worker threads that a user can submit jobs to. These jobs
 will then be executed in another thread when the next worker thread becomes
-available.  
+available.
 
 The ProcessPoolExecutor works in the same way, except instead of using multiple
 threads for its workers, it will use multiple processes. This makes it possible
@@ -275,7 +275,7 @@ everything in parallel. :
         # Do something with the result
         print(page.text)
 
-For even more control, the `submit(func, *args, **kwargs)` method will schedule 
+For even more control, the `submit(func, *args, **kwargs)` method will schedule
 a callable to be executed ( as `func(*args, **kwargs)`) and returns a `Future`_
 object that represents the execution of the callable.
 
@@ -389,9 +389,9 @@ still alive (because the join call timed out):
 Because multiple threads have access to the same section of memory, sometimes
 there might be situations where two or more threads are trying to write to the
 same resource at the same time or where the output is dependent on the sequence
-or timing of certain events. This is called a `data race`_ or race condition. 
+or timing of certain events. This is called a `data race`_ or race condition.
 When this happens, the output will be garbled or you may encounter problems
-which are difficult to debug. A good example is this `stackoverflow post`_.  
+which are difficult to debug. A good example is this `stackoverflow post`_.
 
 The way this can be avoided is by using a `Lock`_ that each thread needs to
 acquire before writing to a shared resource. Locks can be acquired and released
@@ -412,7 +412,7 @@ through either the contextmanager protocol (`with` statement), or by using
 
     def monitor_website(some_website):
         """
-        Monitor a website and then if there are any changes, 
+        Monitor a website and then if there are any changes,
         log them to disk.
         """
         while True:
@@ -429,7 +429,7 @@ Here, we have a bunch of threads checking for changes on a list of sites and
 whenever there are any changes, they attempt to write those changes to a file
 by calling `log(changes)`. When `log()` is called, it will wait to acquire
 the lock with `with file_lock:`. This ensures that at any one time, only one
-thread is writing to the file. 
+thread is writing to the file.
 
 Spawning Processes
 ------------------

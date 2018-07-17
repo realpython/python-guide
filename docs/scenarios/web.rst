@@ -2,7 +2,7 @@
 Web Applications & Frameworks
 =============================
 
-.. image:: https://farm3.staticflickr.com/2891/34309496175_b82d104282_k_d.jpg
+.. image:: /_static/photos/34309496175_b82d104282_k_d.jpg
 
 As a powerful scripting language adapted to both fast prototyping
 and bigger projects, Python is widely used in web application
@@ -99,7 +99,7 @@ to build RESTful API microservices that are fast and scalable.
 
 It is a reliable, high-performance Python web framework for building large-scale
 app backends and microservices. Falcon encourages the REST architectural style of
-mapping URIs to resources, trying to do as little as possible while remaining highly effective. 
+mapping URIs to resources, trying to do as little as possible while remaining highly effective.
 
 Falcon highlights four main focuses: speed, reliability, flexibility and debuggability.
 It implements HTTP through "responders" such as ``on_get()``, ``on_put()``, etc.
@@ -120,9 +120,9 @@ Pyramid
 
 `Pyramid <https://trypyramid.com/>`_ is a very flexible framework with a heavy
 focus on modularity. It comes with a small number of libraries ("batteries")
-built-in, and encourages users to extend its base functionality. A set of 
+built-in, and encourages users to extend its base functionality. A set of
 provided cookiecutter templates helps making new project decisions for users.
-It poweres one of the most important parts of python infrastucture 
+It poweres one of the most important parts of python infrastucture
 `PyPI <http://pypi.org/>`_.
 
 Pyramid does not have a large user base, unlike Django and Flask. It's a

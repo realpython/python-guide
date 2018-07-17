@@ -1,7 +1,7 @@
 Interfacing with C/C++ Libraries
 ================================
 
-.. image:: https://farm5.staticflickr.com/4173/34725951345_c8f5959a2e_k_d.jpg
+.. image:: /_static/photos/34725951345_c8f5959a2e_k_d.jpg
 
 C Foreign Function Interface
 ----------------------------
@@ -105,20 +105,20 @@ Example: Overloading __repr__
     :linenos:
 
     %include "string.i"
-    
+
     %module myclass
     %{
     #include <string>
     #include "MyClass.h"
     %}
-    
+
     %extend MyClass {
         std::string __repr__()
         {
             return $self->getName();
         }
     }
-    
+
     %include "MyClass.h"
 
 

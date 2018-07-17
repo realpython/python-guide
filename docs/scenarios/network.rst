@@ -1,7 +1,7 @@
 Networking
 ==========
 
-.. image:: https://farm3.staticflickr.com/2892/34151833832_6bdfd930af_k_d.jpg
+.. image:: /_static/photos/34151833832_6bdfd930af_k_d.jpg
 
 Twisted
 -------
@@ -35,4 +35,4 @@ gevent
 
 `gevent <http://www.gevent.org/>`_ is a coroutine-based Python networking
 library that uses greenlets to provide a high-level synchronous API on top of
-the libev event loop. 
+the libev event loop.

@@ -1,7 +1,7 @@
 Your Development Environment
 ============================
 
-.. image:: https://farm3.staticflickr.com/2930/33175624924_7febc46cc4_k_d.jpg
+.. image:: /_static/photos/33175624924_7febc46cc4_k_d.jpg
 
 
 Text Editors
@@ -164,8 +164,8 @@ MIT licensed.
 Enthought Canopy
 ----------------
 `Enthought Canopy <https://www.enthought.com/products/canopy/>`_ is a Python
-IDE which is focused towards Scientists and Engineers as it provides pre 
-installed libraries for data analysis. 
+IDE which is focused towards Scientists and Engineers as it provides pre
+installed libraries for data analysis.
 
 Eclipse
 -------

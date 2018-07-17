@@ -1,7 +1,7 @@
 News
 ====
 
-.. image:: https://farm4.staticflickr.com/3804/33573767786_eececc5d27_k_d.jpg
+.. image:: /_static/photos/33573767786_eececc5d27_k_d.jpg
 
 Planet Python
 ~~~~~~~~~~~~~
@@ -35,7 +35,7 @@ A short-form Python podcast covering recent developer headlines.
 Pycoder's Weekly
 ~~~~~~~~~~~~~~~~
 
-Pycoder's Weekly is a free weekly Python newsletter for Python developers 
+Pycoder's Weekly is a free weekly Python newsletter for Python developers
 by Python developers (Projects, Articles, News, and Jobs).
 
     `Pycoder's Weekly <http://www.pycoders.com/>`_
