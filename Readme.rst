@@ -3,7 +3,7 @@ Hitchhiker's Guide to Python
 
 **Python Best Practices Guidebook**
 
-.. image:: /_static/photos/33173824932_58add34581_k_d.jpg
+.. image:: https://docs.python-guide.org/_static/photos/33173824932_58add34581_k_d.jpg
 
 -----------
 
