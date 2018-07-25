@@ -40,3 +40,13 @@
     ga('send', 'pageview');
     </script>
 {% endblock %}
+
+{%- block footer %}
+<div class="footer">
+  <div class="bodywrapper" style="display:block;position:relative;">
+    <div style="display:block;width:100%;padding-top:25%;"></div>
+    <div class="rpad" data-unit="4x1" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;"></div>
+  </div>
+  {% if show_copyright %}<p>&copy;{{ copyright }}</p>{% endif %}
+</div>
+{% endblock %}
