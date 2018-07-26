@@ -1,5 +1,5 @@
-Picking an Python Interpreter (3 vs. 2)
-=======================================
+Picking a Python Interpreter (3 vs 2)
+=====================================
 
 .. image:: /_static/photos/34484834733_5b80f65ab1_k_d.jpg
 
