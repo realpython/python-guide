@@ -15,6 +15,15 @@ quick-start guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
+
+OverIQ Python
+~~~~~~~~~~~
+
+OverIQ Python course is designed to get up and running with Python in no time. Once you know the basics of Python you can dive into frameworks like `Django <https://overiq.com/django/1.11/intro-to-django/>`_, `Flask <https://overiq.com/flask/0.12/intro-to-flask/>`_ or `SQLAlchemy <https://overiq.com/sqlalchemy/101/intro-to-sqlalchemy/>`_. 
+
+    `OverIQ Python <https://overiq.com/python/3.4/intro-to-python/>`_
+
+
 Real Python
 ~~~~~~~~~~~
 
