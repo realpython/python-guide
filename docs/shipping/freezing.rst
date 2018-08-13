@@ -116,7 +116,7 @@ resides.
 py2exe
 ~~~~~~
 
-Prerequisite is to install :ref:`Python on Windows <install-windows>`.
+Prerequisite is to install :ref:`Python on Windows <install-windows>`. The last release of py2exe is from the year 2014. There is not active development. 
 
 1. Download and install http://sourceforge.net/projects/py2exe/files/py2exe/
 
