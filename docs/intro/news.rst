@@ -3,6 +3,21 @@ News
 
 .. image:: /_static/photos/33573767786_eececc5d27_k_d.jpg
 
+Pycoder's Weekly
+~~~~~~~~~~~~~~~~
+
+Pycoder's Weekly is a free weekly Python newsletter for Python developers
+by Python developers (Projects, Articles, News, and Jobs).
+
+    `Pycoder's Weekly <https://pycoders.com/>`_
+
+Real Python
+~~~~~~~~~~~
+
+At Real Python you can learn all things Python from the ground up, with weekly free and in-depth tutorials. Everything from the absolute basics of Python, to web development and web scraping, to data visualization, and beyond.
+
+    `Real Python <https://realpython.com/>`_
+
 Planet Python
 ~~~~~~~~~~~~~
 
@@ -31,14 +46,6 @@ Python Bytes Podcast
 A short-form Python podcast covering recent developer headlines.
 
     `Python Bytes <https://pythonbytes.fm>`_
-
-Pycoder's Weekly
-~~~~~~~~~~~~~~~~
-
-Pycoder's Weekly is a free weekly Python newsletter for Python developers
-by Python developers (Projects, Articles, News, and Jobs).
-
-    `Pycoder's Weekly <http://www.pycoders.com/>`_
 
 Python Weekly
 ~~~~~~~~~~~~~
