@@ -88,6 +88,14 @@ Qt
 is widely used for developing software with a GUI but can also be used for
 non-GUI applications.
 
+PySimpleGUI 
+------  
+`PySimpleGUI <https://pysimplegui.readthedocs.io/>`_ is a  wrapper for the Tkinter.  The amount of code required to implement custom GUIs is much shorter using PySimpleGUI than if the same GUI were written directly using tkinter.  Having Tkinter as a base results in the ability to run on a larger number of platforms than other GUI frameworks.
+ 
+  pip install pysimplegui
+
+PySimpleGUI is contained in a single PySimpleGUI.py file.  Should pip installation be impossible, pasting the PySimpleGUI.py file into a project's folder is all that's required to import and begin using.
+
 Toga
 ----
 `Toga <https://toga.readthedocs.io/en/latest/>`_ is a Python native, OS
