@@ -581,6 +581,32 @@ provide a powerful, concise way to work with lists. Also, the :py:func:`map` and
 :py:func:`filter` functions can perform operations on lists using a different,
 more concise syntax.
 
+Starting with Python 3.0, the :py:func:`map` and :py:func:`filter` 
+functions return an iterator instead of a list. If you really need a list, you
+should wrap these functions in :py:func`list` like so
+
+.. code-block:: python
+
+    list(map(...))
+    list(filter(...))
+
+Filtering a list
+~~~~~~~~~~~~~~~~
+
+**Very Bad**:
+
+Never remove items from a list that you are iterating over.
+Python will lose track of its current position.
+
+.. code-block:: python
+
+    # Filter elements greater than 4
+    a = [3, 4, 5]
+    for i in a:
+        if i > 4:
+            a.remove(i)
+
+
 **Bad**:
 
 .. code-block:: python
@@ -598,9 +624,13 @@ more concise syntax.
 
     a = [3, 4, 5]
     b = [i for i in a if i > 4]
-    # Or:
+    # Or (Python 2.x):
     b = filter(lambda x: x > 4, a)
-
+    # Or (Python 3.x)
+    b = list(filter(lambda x: x > 4, a))
+    
+Modifying the values in a list
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Bad**:
 
 .. code-block:: python
@@ -616,8 +646,25 @@ more concise syntax.
 
     a = [3, 4, 5]
     a = [i + 3 for i in a]
-    # Or:
+    # Or (Python 2.x):
     a = map(lambda i: i + 3, a)
+    # Or (Python 3.x)
+    a = list(map(lambda i: i + 3, a))
+    
+**Best**:
+
+Creating a new list instead of modifying the original list will prevent
+unexpected side-effects.
+
+.. code-block:: python
+
+    a = [3, 4, 5]
+    b = [i + 3 for i in a]
+    # Or (Python 2.x):
+    b = map(lambda i: i + 3, a)
+    # Or (Python 3.x)
+    b = list(map(lambda i: i + 3, a))
+
 
 Use :py:func:`enumerate` keep a count of your place in the list.
 
