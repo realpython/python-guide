@@ -606,9 +606,7 @@ Python has standard ways of filtering lists, but there are several things you ne
 Python 2.x vs. 3.x
 ::::::::::::::::::
 
-* Starting with Python 3.0, the :py:func:`map` and :py:func:`filter` 
-functions return an iterator instead of a list. If you really need a list, you
-should wrap these functions in :py:func`list` like so
+* Starting with Python 3.0, the :py:func:`map` and :py:func:`filter` functions return an iterator instead of a list. If you really need a list, you should wrap these functions in :py:func`list` like so
 
 .. code-block:: python
 
@@ -665,38 +663,33 @@ Modifying the values in a list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Bad**:
 
+Remember that assignment never creates a new object. If 2 or more variables refer to the same list, changing one of them changes them all.
+
 .. code-block:: python
 
     # Add three to all list members.
     a = [3, 4, 5]
+    b = a                     # a and b refer to the same list object
+    
     for i in range(len(a)):
-        a[i] += 3
+        a[i] += 3             # b[i] also changes
 
 **Good**:
+
+It's safer to create a new list object and leave the original alone. 
 
 .. code-block:: python
 
     a = [3, 4, 5]
+    b = a
+    
+    # assign the variable "a" to a new list without changing "b"
     a = [i + 3 for i in a]
     # Or (Python 2.x):
     a = map(lambda i: i + 3, a)
     # Or (Python 3.x)
     a = list(map(lambda i: i + 3, a))
     
-**Best**:
-
-Creating a new list instead of modifying the original list will prevent
-unexpected side-effects.
-
-.. code-block:: python
-
-    a = [3, 4, 5]
-    b = [i + 3 for i in a]
-    # Or (Python 2.x):
-    b = map(lambda i: i + 3, a)
-    # Or (Python 3.x)
-    b = list(map(lambda i: i + 3, a))
-
 
 Use :py:func:`enumerate` keep a count of your place in the list.
 
