@@ -597,7 +597,8 @@ Python will lose track of its current position.
         if i > 4:
             a.remove(i)
 
-Python has standard ways of filtering lists, but there are several things you need to consider
+Python has a few standard ways of filtering lists.
+You will need to consider
 
 * Python 2.x vs. 3.x
 * Lists vs. iterators
@@ -606,19 +607,19 @@ Python has standard ways of filtering lists, but there are several things you ne
 Python 2.x vs. 3.x
 ::::::::::::::::::
 
-* Starting with Python 3.0, the :py:func:`map` and :py:func:`filter` functions return an iterator instead of a list. If you really need a list, you should wrap these functions in :py:func`list` like so
+Starting with Python 3.0, the :py:func:`filter` function returns an iterator instead of a list. 
+If you really need a list, you should wrap it in :py:func:`list` like so
 
 .. code-block:: python
 
-    list(map(...))
     list(filter(...))
 
-* List comprehensions and generator expressions work the same in both 2.x and 3.x (except that comprehensions in 2.x "leak" variables into the enclosing namespace)
+List comprehensions and generator expressions work the same in both 2.x and 3.x (except that comprehensions in 2.x "leak" variables into the enclosing namespace)
 
     * comprehensions create a new list object 
     * generators iterate over the original list
 
-* The filter function
+The :py:func:`filter` function
 
     * in 2.x returns a list (use itertools.ifilter if you want an iterator)
     * in 3.x returns an iterator
@@ -663,7 +664,7 @@ Modifying the values in a list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Bad**:
 
-Remember that assignment never creates a new object. If 2 or more variables refer to the same list, changing one of them changes them all.
+Remember that assignment never creates a new object. If two or more variables refer to the same list, changing one of them changes them all.
 
 .. code-block:: python
 
