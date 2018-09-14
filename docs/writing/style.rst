@@ -586,8 +586,7 @@ Filtering a list
 
 **Bad**:
 
-Never remove items from list while you are iterating through it.
-Python will lose track of its current position.
+Never remove items from a list while you are iterating through it.
 
 .. code-block:: python
 
@@ -597,8 +596,17 @@ Python will lose track of its current position.
         if i > 4:
             a.remove(i)
 
+Don't make multiple passes through the list.
+       
+.. code-block:: python
+
+    while i in a:
+        a.remove(i)
+
+**Good**:
+
 Python has a few standard ways of filtering lists.
-You will need to consider
+The approach you use depends on
 
 * Python 2.x vs. 3.x
 * Lists vs. iterators
@@ -608,7 +616,7 @@ Python 2.x vs. 3.x
 ::::::::::::::::::
 
 Starting with Python 3.0, the :py:func:`filter` function returns an iterator instead of a list. 
-If you really need a list, you should wrap it in :py:func:`list` like so
+Wrap it in :py:func:`list` if you truly need a list.
 
 .. code-block:: python
 
