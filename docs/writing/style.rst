@@ -610,7 +610,7 @@ The approach you use depends on
 
 * Python 2.x vs. 3.x
 * Lists vs. iterators
-* Creating a new list vs. modifying the original list
+* Possible side effects of modifying the original list
 
 Python 2.x vs. 3.x
 ::::::::::::::::::
@@ -644,7 +644,7 @@ Creating a new list requires more work and uses more memory. If you a just going
     # Or (2.x)
     filtered_values = filter(lambda i: i != x, sequence) 
 
-    # generators are lazy
+    # generators don't create another list
     filtered_values = (value for value in sequence if value != x)
     # Or (3.x)
     filtered_values = filter(lambda i: i != x, sequence)
@@ -653,8 +653,8 @@ Creating a new list requires more work and uses more memory. If you a just going
 
 
 
-Creating a new list vs. modifying the original list
-:::::::::::::::::::::::::::::::::::::::::::::::::::
+Possible side effects of modifying the original list
+::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Modifying the original list can be risky if there are other variables referencing it. But you can use *slice assignment* if you really want to do that.
 
