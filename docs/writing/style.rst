@@ -581,43 +581,124 @@ provide a powerful, concise way to work with lists. Also, the :py:func:`map` and
 :py:func:`filter` functions can perform operations on lists using a different,
 more concise syntax.
 
+Filtering a list
+~~~~~~~~~~~~~~~~
+
 **Bad**:
+
+Never remove items from a list while you are iterating through it.
 
 .. code-block:: python
 
     # Filter elements greater than 4
     a = [3, 4, 5]
-    b = []
     for i in a:
         if i > 4:
-            b.append(i)
+            a.remove(i)
+
+Don't make multiple passes through the list.
+       
+.. code-block:: python
+
+    while i in a:
+        a.remove(i)
 
 **Good**:
 
+Python has a few standard ways of filtering lists.
+The approach you use depends on
+
+* Python 2.x vs. 3.x
+* Lists vs. iterators
+* Possible side effects of modifying the original list
+
+Python 2.x vs. 3.x
+::::::::::::::::::
+
+Starting with Python 3.0, the :py:func:`filter` function returns an iterator instead of a list. 
+Wrap it in :py:func:`list` if you truly need a list.
+
 .. code-block:: python
 
-    a = [3, 4, 5]
-    b = [i for i in a if i > 4]
-    # Or:
-    b = filter(lambda x: x > 4, a)
+    list(filter(...))
 
+List comprehensions and generator expressions work the same in both 2.x and 3.x (except that comprehensions in 2.x "leak" variables into the enclosing namespace)
+
+    * comprehensions create a new list object 
+    * generators iterate over the original list
+
+The :py:func:`filter` function
+
+    * in 2.x returns a list (use itertools.ifilter if you want an iterator)
+    * in 3.x returns an iterator
+
+Lists vs. iterators
+:::::::::::::::::::
+
+Creating a new list requires more work and uses more memory. If you a just going to loop through the new list, consider using an iterator instead.
+
+.. code-block:: python
+
+    # comprehensions create a new list object
+    filtered_values = [value for value in sequence if value != x]
+    # Or (2.x)
+    filtered_values = filter(lambda i: i != x, sequence) 
+
+    # generators don't create another list
+    filtered_values = (value for value in sequence if value != x)
+    # Or (3.x)
+    filtered_values = filter(lambda i: i != x, sequence)
+    # Or (2.x)
+    filtered_values = itertools.ifilter(lambda i: i != x, sequence) 
+
+
+
+Possible side effects of modifying the original list
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Modifying the original list can be risky if there are other variables referencing it. But you can use *slice assignment* if you really want to do that.
+
+.. code-block:: python
+
+    # replace the contents of the original list
+    sequence[::] = [value for value in sequence if value != x]
+    # Or
+    sequence[::] = (value for value in sequence if value != x)
+    # Or
+    sequence[::] = filter(lambda value: value != x, sequence)
+
+    
+Modifying the values in a list
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Bad**:
+
+Remember that assignment never creates a new object. If two or more variables refer to the same list, changing one of them changes them all.
 
 .. code-block:: python
 
     # Add three to all list members.
     a = [3, 4, 5]
+    b = a                     # a and b refer to the same list object
+    
     for i in range(len(a)):
-        a[i] += 3
+        a[i] += 3             # b[i] also changes
 
 **Good**:
+
+It's safer to create a new list object and leave the original alone. 
 
 .. code-block:: python
 
     a = [3, 4, 5]
+    b = a
+    
+    # assign the variable "a" to a new list without changing "b"
     a = [i + 3 for i in a]
-    # Or:
+    # Or (Python 2.x):
     a = map(lambda i: i + 3, a)
+    # Or (Python 3.x)
+    a = list(map(lambda i: i + 3, a))
+    
 
 Use :py:func:`enumerate` keep a count of your place in the list.
 
