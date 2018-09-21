@@ -15,4 +15,4 @@ https://python-guide.org/*                      https://docs.python-guide.org/:s
 # Redirect Netlify version to primary domain
 https://python-guide.netlify.com/*              https://docs.python-guide.org/:splat       301!
 
-/guide-book                                     https://realpython.com/asins/1491933178/   302
+/guide-book                                     https://www.amazon.com/Hitchhikers-Guide-Python-Practices-Development/dp/1491933178/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=bookforkind-20&linkId=804806ebdacaf3b56567347f3afbdbca   302
