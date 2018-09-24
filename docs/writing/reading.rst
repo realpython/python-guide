@@ -33,7 +33,7 @@ reading. Each one of these projects is a paragon of Python coding.
   for gathering metrics from almost any source.
 
 - `Werkzeug <https://github.com/mitsuhiko/werkzeug>`_
-  Werkzeug started as simple collection of various utilities for WSGI
+  Werkzeug started as a simple collection of various utilities for WSGI
   applications and has become one of the most advanced WSGI utility modules.
   It includes a powerful debugger, full-featured request and response objects,
   HTTP utilities to handle entity tags, cache control headers, HTTP dates,
