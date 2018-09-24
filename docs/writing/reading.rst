@@ -3,10 +3,6 @@ Reading Great Code
 
 .. image:: /_static/photos/34689452831_93d7fd0571_k_d.jpg
 
-One of the core tenets behind the design of Python is creating
-readable code. The motivation behind this design is simple: The number
-one thing that Python programmers do is read code.
-
 One of the secrets of becoming a great Python programmer is to read,
 understand, and comprehend excellent code.
 
