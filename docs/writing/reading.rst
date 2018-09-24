@@ -28,7 +28,7 @@ reading. Each one of these projects is a paragon of Python coding.
 - `Diamond <https://github.com/python-diamond/Diamond>`_
   Diamond is a python daemon that collects metrics
   and publishes them to Graphite or other backends.
-  It is capable of collecting cpu, memory, network, i/o, load and disk metrics.
+  It is capable of collecting cpu, memory, network, i/o, load, and disk metrics.
   Additionally, it features an API for implementing custom collectors
   for gathering metrics from almost any source.
 
