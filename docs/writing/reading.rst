@@ -3,10 +3,6 @@ Reading Great Code
 
 .. image:: /_static/photos/34689452831_93d7fd0571_k_d.jpg
 
-One of the core tenets behind the design of Python is creating
-readable code. The motivation behind this design is simple: The number
-one thing that Python programmers do is read code.
-
 One of the secrets of becoming a great Python programmer is to read,
 understand, and comprehend excellent code.
 
@@ -28,12 +24,12 @@ reading. Each one of these projects is a paragon of Python coding.
 - `Diamond <https://github.com/python-diamond/Diamond>`_
   Diamond is a python daemon that collects metrics
   and publishes them to Graphite or other backends.
-  It is capable of collecting cpu, memory, network, i/o, load and disk metrics.
+  It is capable of collecting CPU, memory, network, I/O, load, and disk metrics.
   Additionally, it features an API for implementing custom collectors
   for gathering metrics from almost any source.
 
 - `Werkzeug <https://github.com/mitsuhiko/werkzeug>`_
-  Werkzeug started as simple collection of various utilities for WSGI
+  Werkzeug started as a simple collection of various utilities for WSGI
   applications and has become one of the most advanced WSGI utility modules.
   It includes a powerful debugger, full-featured request and response objects,
   HTTP utilities to handle entity tags, cache control headers, HTTP dates,
