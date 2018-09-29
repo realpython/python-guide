@@ -129,6 +129,17 @@ Pyramid does not have a large user base, unlike Django and Flask. It's a
 capable framework, but not a very popular choice for new Python web
 applications today.
 
+Masonite
+--------
+
+`Masonite <https://masoniteproject.com/>`_ is a modern and developer centric, "batteries included", web framework. 
+
+The Masonite framework follows the MVC (Model-View-Controller) architecture pattern and is heavily inspired by frameworks such as Rails and Laravel, so if you are coming to Python from a Ruby or PHP background then you will feel right at home!
+
+Masonite comes with a lot of functionality out of the box including a powerful IOC container with auto resolving dependency injection, craft command line tools and the Orator active record style ORM.
+
+Masonite is perfect for beginners or experienced developers alike and works hard to be fast and easy from install through to deployment. Try it once and you’ll fall in love.
+
 Web Servers
 :::::::::::
 
