@@ -132,7 +132,7 @@ applications today.
 Masonite
 --------
 
-`Masonite <https://masoniteproject.com/>`_ is a modern and developer centric, "batteries included", web framework. 
+`Masonite <https://docs.masoniteproject.com>`_ is a modern and developer centric, "batteries included", web framework. 
 
 The Masonite framework follows the MVC (Model-View-Controller) architecture pattern and is heavily inspired by frameworks such as Rails and Laravel, so if you are coming to Python from a Ruby or PHP background then you will feel right at home!
 
