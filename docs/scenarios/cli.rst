@@ -74,3 +74,14 @@ for both simple and complex command line applications as well
 as support rapid development needs without sacrificing quality.
 Cement is flexible, and it's use cases span from the simplicity of a micro-framework
 to the complexity of a meg-framework.
+
+Python Fire
+-----------
+
+`Python Fire <https://github.com/google/python-fire/>`_ is a library for
+automatically generating command line interfaces from absolutely any Python
+object. It can help debug Python code more easily from the command line,
+create CLI interfaces to existing code, allow you to interactively explore
+code in a REPL, and simplify transitioning between Python and Bash (or any
+other shell).
+
