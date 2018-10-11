@@ -22,16 +22,15 @@ Real Python is a repository of free and in-depth Python tutorials created by a d
 
     `Real Python <https://realpython.com/>`_
 
-
 Python Basics
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 pythonbasics.org is an introductiory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are also in-depth lessons like object oriented programming and regular expressions.
 
    `Python basics <https://pythonbasics.org/>`_
 
 Python for Beginners
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 thepythonguru.com is a tutorial focuses on beginner programmers. It covers many python concepts
 in depth. It also teaches you some advance constructs of python like lambda expression, regular expression.
@@ -280,7 +279,7 @@ puts the emphasis on numerical methods and how to implement them in Python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
 
-Miscellaneous topics
+Miscellaneous Topics
 --------------------
 
 Problem Solving with Algorithms and Data Structures
@@ -327,6 +326,14 @@ As the name suggests, it covers everything you need to build and run a complete
 web app from scratch.
 
     `Fullstack Python <https://www.fullstackpython.com>`_
+
+
+PythonistaCafe
+~~~~~~~~~~~~~~
+
+PythonistaCafe is an invite-only, online community of Python and software development enthusiasts helping each other succeed and grow. Think of it as a club of mutual improvement for Pythonistas where a broad range of programming questions, career advice, and other topics are discussed every day.
+
+    `PythonistaCafe <https://www.pythonistacafe.com>`_
 
 
 References
