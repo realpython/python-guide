@@ -120,7 +120,7 @@ Dive Into Python 3 is a good book for those ready to jump in to Python 3. It's
 a good read if you are moving from Python 2 to 3 or if you already have some
 experience programming in another language.
 
-    `Dive Into Python 3 <http://www.diveintopython3.net/>`_
+    `Dive Into Python 3 <http://diveintopython3.problemsolving.io/>`_
 
 
 Think Python: How to Think Like a Computer Scientist
