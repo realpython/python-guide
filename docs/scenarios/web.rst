@@ -51,7 +51,7 @@ Development Web Server
 Django
 ------
 
-`Django <http://www.djangoproject.com>`_ is a "batteries included" web
+`Django <https://www.djangoproject.com>`_ is a "batteries included" web
 application framework, and is an excellent choice for creating content-oriented
 websites. By providing many utilities and patterns out of the box, Django aims
 to make it possible to build complex, database-backed web applications quickly,
@@ -123,7 +123,7 @@ focus on modularity. It comes with a small number of libraries ("batteries")
 built-in, and encourages users to extend its base functionality. A set of
 provided cookiecutter templates helps making new project decisions for users.
 It poweres one of the most important parts of python infrastucture
-`PyPI <http://pypi.org/>`_.
+`PyPI <https://pypi.org/>`_.
 
 Pyramid does not have a large user base, unlike Django and Flask. It's a
 capable framework, but not a very popular choice for new Python web
@@ -169,7 +169,7 @@ servers and provide top performance [3]_.
 Gunicorn
 --------
 
-`Gunicorn <http://gunicorn.org/>`_ (Green Unicorn) is a pure-python WSGI
+`Gunicorn <https://gunicorn.org/>`_ (Green Unicorn) is a pure-python WSGI
 server used to serve Python applications. Unlike other Python web servers,
 it has a thoughtful user-interface, and is extremely easy to use and
 configure.
@@ -237,14 +237,14 @@ details.
 Heroku
 ------
 
-`Heroku <http://www.heroku.com/python>`_ offers first-class support for
+`Heroku <https://www.heroku.com/python>`_ offers first-class support for
 Python 2.7–3.5 applications.
 
 Heroku supports all types of Python web applications, servers, and frameworks.
 Applications can be developed on Heroku for free. Once your application is
 ready for production, you can upgrade to a Hobby or Professional application.
 
-Heroku maintains `detailed articles <https://devcenter.heroku.com/categories/python>`_
+Heroku maintains `detailed articles <https://devcenter.heroku.com/categories/python-support>`_
 on using Python with Heroku, as well as `step-by-step instructions
 <https://devcenter.heroku.com/articles/getting-started-with-python>`_ on
 how to set up your first application.
@@ -254,7 +254,7 @@ Heroku is the recommended PaaS for deploying Python web applications today.
 Eldarion
 --------
 
-`Eldarion <http://eldarion.cloud/>`_ (formely known as Gondor) is a PaaS powered
+`Eldarion <https://eldarion.cloud/>`_ (formely known as Gondor) is a PaaS powered
 by Kubernetes, CoreOS, and Docker. They support any WSGI application and have a
 guide on deploying `Django projects <https://eldarion-gondor.github.io/docs/how-to/setup-deploy-first-django-project/>`_.
 
@@ -417,12 +417,12 @@ Chameleon
 ---------
 
 `Chameleon <https://chameleon.readthedocs.io/>`_ Page Templates are an HTML/XML template
-engine implementation of the `Template Attribute Language (TAL) <http://en.wikipedia.org/wiki/Template_Attribute_Language>`_,
+engine implementation of the `Template Attribute Language (TAL) <https://en.wikipedia.org/wiki/Template_Attribute_Language>`_,
 `TAL Expression Syntax (TALES) <https://chameleon.readthedocs.io/en/latest/reference.html#expressions-tales>`_,
 and `Macro Expansion TAL (Metal) <https://chameleon.readthedocs.io/en/latest/reference.html#macros-metal>`_ syntaxes.
 
 Chameleon is available for Python 2.5 and up (including 3.x and pypy), and
-is commonly used by the `Pyramid Framework <http://trypyramid.com>`_.
+is commonly used by the `Pyramid Framework <https://trypyramid.com/>`_.
 
 Page Templates add within your document structure special element attributes
 and text markup. Using a set of simple language constructs, you control the
@@ -519,5 +519,5 @@ Mako is well respected within the Python web community.
 .. rubric:: References
 
 .. [1] `The mod_python project is now officially dead <http://blog.dscpl.com.au/2010/06/modpython-project-is-now-officially.html>`_
-.. [2] `mod_wsgi vs mod_python <http://www.modpython.org/pipermail/mod_python/2007-July/024080.html>`_
+.. [2] `mod_wsgi vs mod_python <http://modpython.org/pipermail/mod_python/2007-July/024080.html>`_
 .. [3] `Benchmark of Python WSGI Servers <http://nichol.as/benchmark-of-python-web-servers>`_
