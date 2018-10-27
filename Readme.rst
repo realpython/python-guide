@@ -1,11 +1,11 @@
 Hitchhiker's Guide to Python
-============================
+=======================
 
 **Python Best Practices Guidebook**
 
 .. image:: https://farm1.staticflickr.com/628/33173824932_58add34581_k_d.jpg
 
------------
+---------
 
 **Work in progress. If you'd like to help, please do. There's a lot of work to
 be done.**
@@ -27,7 +27,7 @@ Topics include:
 - Exhaustive module recommendations, grouped by topic/purpose
 - Which libraries to use for what
 - Server configurations & tools for various web frameworks
-- Documentation: writing it
+- Documentation: writting it
 - Testing: Jenkins & tox guides
 - How to easily interface ``hg`` from ``git``
 
