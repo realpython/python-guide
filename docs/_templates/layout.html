@@ -11,17 +11,7 @@
       min-width: initial;
       max-width: initial;
     }
-    .algolia-autocomplete{
-      width: 100%;
-      height: 1.5em
-    }
-    #q{
-      width: 100%;
-      height: 100%;
-    }
   </style>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-
 
   {% if pagename == 'index' %}
   <link rel="canonical" href="https://docs.python-guide.org/"/>
@@ -121,3 +111,12 @@
   {% if show_copyright %}<p>&copy;{{ copyright }}</p>{% endif %}
 </div>
 {% endblock %}
+<!-- at the end of the BODY -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+    apiKey: '512b0d6c0c8578bed7662f5279c2249c',
+    indexName: 'python-guide',
+    inputSelector: '#q',
+    debug: false // Set debug to true if you want to inspect the dropdown
+  });
+</script>
