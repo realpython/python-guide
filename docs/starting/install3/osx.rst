@@ -56,6 +56,12 @@ line at the bottom of your :file:`~/.profile` file
 
 .. code-block:: console
 
+    export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+If you have OS X 10.12 (Sierra) or older use this line instead
+
+.. code-block:: console
+
     export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 Now, we can install Python 3:
@@ -106,8 +112,8 @@ The rest of the guide will assume that ``python`` references Python 3.
 
     # Do I have a Python 3 installed?
     $ python --version
-    Python 3.6.4 # Success!
-    # If you still see 2.7 ensure in PATH /usr/local/bin/ takes precedence over /usr/bin/
+    Python 3.7.1 # Success!
+
 
 Pipenv & Virtual Environments
 -----------------------------
