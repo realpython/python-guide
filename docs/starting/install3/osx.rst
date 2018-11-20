@@ -56,6 +56,12 @@ line at the bottom of your :file:`~/.profile` file
 
 .. code-block:: console
 
+    export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+If you have OS X 10.12 (Sierra) or older use this line instead
+
+.. code-block:: console
+
     export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 Now, we can install Python 3:
