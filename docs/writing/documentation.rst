@@ -1,7 +1,7 @@
 Documentation
 =============
 
-.. image:: https://farm5.staticflickr.com/4279/35620636012_f66aa88f93_k_d.jpg
+.. image:: /_static/photos/35620636012_f66aa88f93_k_d.jpg
 
 Readability is a primary focus for Python developers, in both project
 and code documentation. Following some simple best practices can save
@@ -67,10 +67,10 @@ There is also **great**, **free** hosting for your Sphinx_ docs:
 your source repository so that rebuilding your documentation will
 happen automatically.
 
-When run, Sphinx_ will import your code and using Python's introspection 
+When run, Sphinx_ will import your code and using Python's introspection
 features it will extract all function, method and class signatures. It will
 also extract the accompanying docstrings, and compile it all into well
-structured and easily readable documentation for your project.  
+structured and easily readable documentation for your project.
 
 .. note::
 
@@ -146,7 +146,7 @@ their source code, and as a side effect, it also ensures that their code is
 tested and works.
 
 ::
-    
+
     def my_function(a, b):
         """
         >>> my_function(2, 3)
@@ -175,14 +175,14 @@ comment block is a programmer's note. The docstring describes the
 Unlike block comments, docstrings are built into the Python language itself.
 This means you can use all of Python's powerful introspection capabilities to
 access docstrings at runtime, compared with comments which are optimised out.
-Docstrings are accessible from both the `__doc__` dunder attribute for almost 
+Docstrings are accessible from both the `__doc__` dunder attribute for almost
 every Python object, as well as with the built in `help()` function.
 
 While block comments are usually used to explain *what* a section of code is
 doing, or the specifics of an algorithm, docstrings are more intended for
 explaining to other users of your code (or you in 6 months time) *how* a
-particular function can be used and the general purpose of a function, class, 
-or module.  
+particular function can be used and the general purpose of a function, class,
+or module.
 
 Writing Docstrings
 ~~~~~~~~~~~~~~~~~~
@@ -196,19 +196,19 @@ really obvious cases, such as::
         return a + b
 
 The docstring should describe the function in a way that is easy to understand.
-For simple cases like trivial functions and classes, simply embedding the 
-function's signature (i.e. `add(a, b) -> result`) in the docstring is 
-unnecessary. This is because with Python's `inspect` module, it is already 
+For simple cases like trivial functions and classes, simply embedding the
+function's signature (i.e. `add(a, b) -> result`) in the docstring is
+unnecessary. This is because with Python's `inspect` module, it is already
 quite easy to find this information if needed, and it is also readily available
-by reading the source code. 
+by reading the source code.
 
-In larger or more complex projects however, it is often a good idea to give 
-more information about a function, what it does, any exceptions it may raise, 
+In larger or more complex projects however, it is often a good idea to give
+more information about a function, what it does, any exceptions it may raise,
 what it returns, or relevant details about the parameters.
 
 For more detailed documentation of code a popular style is the one used for the
 Numpy project, often called `Numpy style`_ docstrings. While it can take up more
-lines than the previous example, it allows the developer to include a lot 
+lines than the previous example, it allows the developer to include a lot
 more information about a method, function, or class. ::
 
     def random_number_generator(arg1, arg2):

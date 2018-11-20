@@ -1,0 +1,113 @@
+{% extends "!layout.html" %}
+
+{%- block extrahead %}
+  {# No super() because we want to avoid loading an empty custom.css file #}
+
+  {# <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75" /> #}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    div.body {
+      min-width: initial;
+      max-width: initial;
+    }
+  </style>
+
+  {% if pagename == 'index' %}
+  <link rel="canonical" href="https://docs.python-guide.org/"/>
+  <meta property="og:url" content="https://docs.python-guide.org/">
+  {% elif pagename == '404' %}
+  {# No canonical on our 404 template. #}
+  {% else %}
+  <link rel="canonical" href="https://docs.python-guide.org/{{ pagename }}/"/>
+  <meta property="og:url" content="https://docs.python-guide.org/{{ pagename }}">
+  {% endif %}
+
+  <link rel="icon" type="image/png" href="https://media.readthedocs.org/images/favicon.png">
+
+  <meta name="google-site-verification" content="013PxE2_8KX9jdUSC5gr8QsfdxTXr1mFgmD9zplp5II" />
+
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:image" content="https://docs.python-guide.org/_static/social-card.jpg">
+  <meta property="og:image" content="https://docs.python-guide.org/_static/social-card.jpg">
+  <meta property="og:title" content="{{ title }}{{ titlesuffix }}">
+  <meta property="og:type" content="article">
+  {%- if metatags is defined %}
+  {# FIXME: For some reason the `meta` dict is always empty. Extract the desc from the `metatags` text.  #}
+  <meta property="og:description" content="{{ metatags[15:-24] }}">
+  {%- endif %}
+
+  <script>window.rp_prop_id = '29182759436';</script>
+  <script src="https://srv.realpython.net/tag.js" async></script>
+
+  <script src="https://d31vxm9ubutrmw.cloudfront.net/static/js/2169.js"></script>
+
+  {# Alabaster theme native GA integration is outdated (ga.js). #}
+  {# Insert our own GA snippet instead. #}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-37242602-11', 'auto');
+    ga('send', 'pageview');
+    </script>
+{% endblock %}
+
+{# From: https://github.com/bitprophet/alabaster/blob/5f249677242be96601e034edb3697b7482a6abcf/alabaster/layout.html #}
+{# Nav should appear before content, not after #}
+{%- block content %}
+{%- if theme_fixed_sidebar|lower == 'true' %}
+  <div class="document">
+    {{ sidebar() }}
+    {%- block document %}
+      <div class="documentwrapper">
+      {%- if render_sidebar %}
+        <div class="bodywrapper">
+      {%- endif %}
+
+          {%- block relbar_top %}
+            {%- if theme_show_relbar_top|tobool %}
+              <div class="related top">
+                &nbsp;
+                {{- rellink_markup () }}
+              </div>
+            {%- endif %}
+          {% endblock %}
+
+          <div class="body" role="main">
+            <div style="display:block;position:relative; margin-bottom: 1em;">
+              <div style="display:block;width:100%;padding-top:12.5%;"></div>
+              <div class="rpad" data-unit="8x1" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;"></div>
+            </div>
+            {% block body %} {% endblock %}
+          </div>
+
+          {%- block relbar_bottom %}
+            {%- if theme_show_relbar_bottom|tobool %}
+              <div class="related bottom">
+                &nbsp;
+                {{- rellink_markup () }}
+              </div>
+            {%- endif %}
+          {% endblock %}
+
+      {%- if render_sidebar %}
+        </div>
+      {%- endif %}
+      </div>
+    {%- endblock %}
+    <div class="clearer"></div>
+  </div>
+{%- else %}
+{{ super() }}
+{%- endif %}
+{%- endblock %}
+
+{%- block footer %}
+<div class="footer">
+  <div style="text-align: center;" id="waldo-tag-2171"></div>
+  {% if show_copyright %}<p>&copy;{{ copyright }}</p>{% endif %}
+</div>
+{% endblock %}

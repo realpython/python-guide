@@ -3,12 +3,12 @@
 Installing Python 2 on Windows
 ==============================
 
-.. image:: https://farm5.staticflickr.com/4268/34435688560_4cc2a7bcbb_k_d.jpg
+.. image:: /_static/photos/34435688560_4cc2a7bcbb_k_d.jpg
 
 .. note::
     Check out our :ref:`guide for installing Python 3 on Windows<install3-windows>`.
 
-First, download the `latest version <https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi>`_
+First, download the `latest version <https://www.python.org/ftp/python/2.7.15/python-2.7.15.msi>`_
 of Python 2.7 from the official website. If you want to be sure you are installing a fully
 up-to-date version, click the Downloads > Windows link from the home page of the
 `Python.org web site <http://python.org>`_ .

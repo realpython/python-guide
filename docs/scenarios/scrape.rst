@@ -1,7 +1,7 @@
 HTML Scraping
 =============
 
-.. image:: https://farm3.staticflickr.com/2900/34268661876_442428e122_k_d.jpg
+.. image:: /_static/photos/34268661876_442428e122_k_d.jpg
 
 Web Scraping
 ------------
@@ -105,5 +105,3 @@ using Python or we can save it to a file and share it with the world.
 Some more cool ideas to think about are modifying this script to iterate
 through the rest of the pages of this example dataset, or rewriting this
 application to use threads for improved speed.
-
-If you want to learn how to import data using python - this `DataCamp course on Importing Data <https://www.datacamp.com/courses/importing-data-in-r-part-1?tap_a=5644-dce66f&tap_s=116411-750171>`_ is a great place to start.

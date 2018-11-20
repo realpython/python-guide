@@ -1,13 +1,13 @@
 Cryptography
 ============
 
-.. image:: https://farm5.staticflickr.com/4220/33907152824_bf91078cc1_k_d.jpg
+.. image:: /_static/photos/33907152824_bf91078cc1_k_d.jpg
 
 Cryptography
 ------------
 
 `Cryptography <https://cryptography.io/en/latest/>`_ is an actively developed
-library that provides cryptographic recipes and primitives. It supports 
+library that provides cryptographic recipes and primitives. It supports
 Python 2.6-2.7, Python 3.3+ and PyPy.
 
 
@@ -60,7 +60,7 @@ Example
 .. code-block:: python3
 
 	import gpg
-	
+
 	# Encryption to public key specified in rkey.
 	a_key = input("Enter the fingerprint or key ID to encrypt to: ")
 	filename = input("Enter the filename to encrypt: ")

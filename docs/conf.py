@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'pythonguide'
-copyright = u'2016. A <a href="http://kennethreitz.com/pages/open-projects.html">Kenneth Reitz</a> Project. <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>'
+copyright = u'2011–2018 <a href="http://kennethreitz.com/pages/open-projects.html">Kenneth Reitz</a> &amp; <a href="https://realpython.com">Real Python</a>. <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -106,11 +106,11 @@ html_theme = 'alabaster'
 # documentation.
 html_theme_options = {
     'show_powered_by': False,
-    'github_user': 'kennethreitz',
+    'github_user': 'realpython',
     'github_repo': 'python-guide',
     'github_banner': True,
     'show_related': False,
-    'note_bg': '#FFF59C'
+    'note_bg': '#FFF59C',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -241,7 +241,7 @@ man_pages = [
 epub_title = u'pythonguide'
 epub_author = u'Kenneth Reitz'
 epub_publisher = u'Kenneth Reitz'
-epub_copyright = u'2016, Kenneth Reitz'
+epub_copyright = u'2011–2018, Kenneth Reitz & Real Python'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.

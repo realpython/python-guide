@@ -3,7 +3,7 @@
 The Community
 =============
 
-.. image:: https://farm5.staticflickr.com/4225/34689432801_78d97ecec9_k_d.jpg
+.. image:: /_static/photos/34689432801_78d97ecec9_k_d.jpg
 
 BDFL
 ----
@@ -71,7 +71,7 @@ Here's an overview of the PEP acceptance workflow:
 
 
 Python Conferences
---------------------------
+------------------
 
 The major events for the Python community are developer conferences. The two
 most notable conferences are PyCon, which is held in the US, and its European
@@ -81,8 +81,17 @@ A comprehensive list of conferences is maintained at `pycon.org <http://www.pyco
 
 
 Python User Groups
---------------------------
+------------------
 
 User Groups are where a bunch of Python developers meet to present or talk
 about Python topics of interest. A list of local user groups is maintained at
 the `Python Software Foundation Wiki <http://wiki.python.org/moin/LocalUserGroups>`_.
+
+
+Online Communities
+------------------
+
+`PythonistaCafe <https://www.pythonistacafe.com>`_ is an invite-only, online community
+of Python and software development enthusiasts helping each other succeed and grow.
+Think of it as a club of mutual improvement for Pythonistas where a broad range of
+programming questions, career advice, and other topics are discussed every day.

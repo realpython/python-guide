@@ -1,7 +1,7 @@
 Learning Python
 ===============
 
-.. image:: https://farm3.staticflickr.com/2840/32800783863_11a00db52c_k_d.jpg
+.. image:: /_static/photos/32800783863_11a00db52c_k_d.jpg
 
 Beginner
 --------
@@ -15,8 +15,22 @@ quick-start guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
+Real Python
+~~~~~~~~~~~
+
+Real Python is a repository of free and in-depth Python tutorials created by a diverse team of professional Python developers. At Real Python you can learn all things Python from the ground up. Everything from the absolute basics of Python, to web development and web scraping, to data visualization, and beyond.
+
+    `Real Python <https://realpython.com/>`_
+
+Python Basics
+~~~~~~~~~~~~~
+
+pythonbasics.org is an introductiory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are also in-depth lessons like object oriented programming and regular expressions.
+
+   `Python basics <https://pythonbasics.org/>`_
+
 Python for Beginners
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 thepythonguru.com is a tutorial focuses on beginner programmers. It covers many python concepts
 in depth. It also teaches you some advance constructs of python like lambda expression, regular expression.
@@ -24,14 +38,6 @@ At last it finishes off with  tutorial "How to access MySQL db using python"
 
 
    `Python for beginners <http://thepythonguru.com/>`_
-
-Learn Python for Data Science Interactively
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you prefer an online interactive environment to learn Python for Data Science, `this free python tutorial by DataCamp <https://www.datacamp.com/courses/intro-to-python-for-data-science?tap_a=5644-dce66f&tap_s=116411-750171>`_ is a great way to get started. If you're already somewhat advanced and interested in machine learning, check out this `course on Supervised Learning with scikit-learn <https://www.datacamp.com/courses/supervised-learning-with-scikit-learn?tap_a=5644-dce66f&tap_s=116411-750171>`_, by one the core developers of scikit-learn.
-
-
-`Python for data science <http://datacamp.com/?tap_a=5644-dce66f&tap_s=116411-750171>`_
 
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -44,12 +50,10 @@ without having to install Python locally.
 
     `Learn Python <http://www.learnpython.org/>`_
 
-
 If you want a more traditional book, *Python For You and Me* is an excellent
 resource for learning all aspects of the language.
 
     `Python for You and Me <https://pymbook.readthedocs.io/>`_
-    `Learn Python Interactively with DataCamp! <https://www.datacamp.com/>`_
 
 Learn Python Step by Step
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,7 +120,7 @@ Dive Into Python 3 is a good book for those ready to jump in to Python 3. It's
 a good read if you are moving from Python 2 to 3 or if you already have some
 experience programming in another language.
 
-    `Dive Into Python 3 <http://www.diveintopython3.net/>`_
+    `Dive Into Python 3 <http://diveintopython3.problemsolving.io/>`_
 
 
 Think Python: How to Think Like a Computer Scientist
@@ -191,6 +195,15 @@ making the process of learning Python fun and engaging.
 Intermediate
 ------------
 
+Python Tricks: The Book
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Discover Python's best practices with simple examples and start writing even more beautiful + Pythonic code. "Python Tricks: The Book" shows you exactly how.
+
+You’ll master intermediate and advanced-level features in Python with practical examples and a clear narrative:
+
+    `Python Tricks: The Book <https://realpython.com/products/python-tricks-book/>`_
+
 Effective Python
 ~~~~~~~~~~~~~~~~
 
@@ -243,7 +256,7 @@ and can make classes and objects behave in different and magical ways.
 
 .. note:: The Rafekettler.com is currently down, you can go to their Github version directly. Here you can find a PDF version:
     `A Guide to Python's Magic Methods (repo on GitHub) <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_
-    
+
 
 
 For Engineers and Scientists
@@ -266,7 +279,7 @@ puts the emphasis on numerical methods and how to implement them in Python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
 
-Miscellaneous topics
+Miscellaneous Topics
 --------------------
 
 Problem Solving with Algorithms and Data Structures
@@ -313,6 +326,14 @@ As the name suggests, it covers everything you need to build and run a complete
 web app from scratch.
 
     `Fullstack Python <https://www.fullstackpython.com>`_
+
+
+PythonistaCafe
+~~~~~~~~~~~~~~
+
+PythonistaCafe is an invite-only, online community of Python and software development enthusiasts helping each other succeed and grow. Think of it as a club of mutual improvement for Pythonistas where a broad range of programming questions, career advice, and other topics are discussed every day.
+
+    `PythonistaCafe <https://www.pythonistacafe.com>`_
 
 
 References

@@ -1,7 +1,7 @@
 Choosing a License
 ==================
 
-.. image:: https://farm5.staticflickr.com/4228/33907149294_82d7535a6c_k_d.jpg
+.. image:: /_static/photos/33907149294_82d7535a6c_k_d.jpg
 
 Your source publication *needs* a license. In the US, if no license is
 specified, users have no legal right to download, modify, or distribute.

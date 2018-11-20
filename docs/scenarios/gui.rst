@@ -1,7 +1,7 @@
 GUI Applications
 ================
 
-.. image:: https://farm5.staticflickr.com/4250/33907143624_cd621b535c_k_d.jpg
+.. image:: /_static/photos/33907143624_cd621b535c_k_d.jpg
 
 
 Alphabetical list of GUI Applications.
@@ -59,7 +59,9 @@ PySide
 ------
 PySide is a Python binding of the cross-platform GUI toolkit Qt.
 
-  pip install pyside
+.. code-block:: console
+
+  $ pip install pyside
 
 https://wiki.qt.io/Category:LanguageBindings::PySide::Downloads
 
@@ -87,6 +89,16 @@ Qt
 `Qt <http://qt-project.org/>`_ is a cross-platform application framework that
 is widely used for developing software with a GUI but can also be used for
 non-GUI applications.
+
+PySimpleGUI 
+------  
+`PySimpleGUI <https://pysimplegui.readthedocs.io/>`_ is a  wrapper for the Tkinter.  The amount of code required to implement custom GUIs is much shorter using PySimpleGUI than if the same GUI were written directly using tkinter.  Having Tkinter as a base results in the ability to run on a larger number of platforms than other GUI frameworks.
+
+.. code-block:: console 
+
+  $ pip install pysimplegui
+
+PySimpleGUI is contained in a single PySimpleGUI.py file.  Should pip installation be impossible, pasting the PySimpleGUI.py file into a project's folder is all that's required to import and begin using.
 
 Toga
 ----

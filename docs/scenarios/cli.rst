@@ -1,7 +1,7 @@
 Command-line Applications
 =========================
 
-.. image:: https://farm5.staticflickr.com/4272/34435690330_11930b5987_k_d.jpg
+.. image:: /_static/photos/34435690330_11930b5987_k_d.jpg
 
 Command-line applications, also referred to as
 `Console Applications <http://en.wikipedia.org/wiki/Console_application>`_,
@@ -68,9 +68,20 @@ sub-command to do the work.
 Cement
 ------
 
-`Cement <http://builtoncement.com/>`_ is an advanced CLI Application Framework. 
+`Cement <http://builtoncement.com/>`_ is an advanced CLI Application Framework.
 Its goal is to introduce a standard, and feature-full platform
 for both simple and complex command line applications as well
-as support rapid development needs without sacrificing quality. 
-Cement is flexible, and it's use cases span from the simplicity of a micro-framework 
-to the complexity of a meg-framework. 
+as support rapid development needs without sacrificing quality.
+Cement is flexible, and it's use cases span from the simplicity of a micro-framework
+to the complexity of a meg-framework.
+
+Python Fire
+-----------
+
+`Python Fire <https://github.com/google/python-fire/>`_ is a library for
+automatically generating command line interfaces from absolutely any Python
+object. It can help debug Python code more easily from the command line,
+create CLI interfaces to existing code, allow you to interactively explore
+code in a REPL, and simplify transitioning between Python and Bash (or any
+other shell).
+

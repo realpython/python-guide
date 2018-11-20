@@ -3,9 +3,9 @@
 Pipenv & Virtual Environments
 =============================
 
-.. image:: https://farm5.staticflickr.com/4290/35294660055_42c02b2316_k_d.jpg
+.. image:: /_static/photos/35294660055_42c02b2316_k_d.jpg
 
-This tutorial walks you through installing and using Python packages. 
+This tutorial walks you through installing and using Python packages.
 
 It will show you how to install and use the necessary tools and make strong
 recommendations on best practices. Keep in mind that Python is used for a great
@@ -34,7 +34,7 @@ install the latest 3.x version from `python.org`_ or refer to the
 `Installing Python`_ section of this guide.
 
 .. Note:: If you're newcomer and you get an error like this:
-    
+
     .. code-block:: python
 
         >>> python
@@ -47,7 +47,7 @@ install the latest 3.x version from `python.org`_ or refer to the
     `getting started tutorial`_ for an introduction to using your operating
     system's shell and interacting with Python.
 
-Additionally, you'll need to make sure you have :ref:`pip` available. You can
+Additionally, you'll need to make sure you have `pip`_ available. You can
 check this by running:
 
 .. code-block:: bash
@@ -60,22 +60,23 @@ using your OS package manager, you may have to `install pip <https://pip.pypa.io
 
 .. _getting started tutorial: https://opentechschool.github.io/python-beginners/en/getting_started.html#what-is-python-exactly
 .. _python.org: https://python.org
+.. _pip: https://pypi.org/project/pip/
 .. _Homebrew: https://brew.sh
-.. _Installing Python: http://docs.python-guide.org/en/latest/starting/installation/
+.. _Installing Python: https://docs.python-guide.org/starting/installation/
 
 
 Installing Pipenv
 -----------------
 
-:ref:`Pipenv` is a dependency manager for Python projects. If you're familiar
+`Pipenv`_ is a dependency manager for Python projects. If you're familiar
 with Node.js' `npm`_ or Ruby's `bundler`_, it is similar in spirit to those
-tools. While :ref:`pip` can install Python packages, Pipenv is recommended as
+tools. While `pip`_ can install Python packages, Pipenv is recommended as
 it's a higher-level tool that simplifies dependency management for common use
 cases.
 
 Use ``pip`` to install Pipenv:
 
-.. code-block:: python
+.. code-block:: console
 
     $ pip install --user pipenv
 
@@ -100,6 +101,7 @@ Use ``pip`` to install Pipenv:
     user ``PATH`` permanently in the `Control Panel`_. You may need to log
     out for the ``PATH`` changes to take effect.
 
+.. _Pipenv: https://docs.pipenv.org/
 .. _npm: https://www.npmjs.com/
 .. _bundler: http://bundler.io/
 .. _user base: https://docs.python.org/3/library/site.html#site.USER_BASE
@@ -120,10 +122,12 @@ tutorial) and run:
     $ pipenv install requests
 
 Pipenv will install the excellent `Requests`_ library and create a ``Pipfile``
-for you in your project's directory. The :ref:`Pipfile` is used to track which
+for you in your project's directory. The `Pipfile`_ is used to track which
 dependencies your project needs in case you need to re-install them, such as
 when you share your project with others. You should get output similar to this
 (although the exact paths shown will vary):
+
+.. _Pipfile: https://github.com/pypa/pipfile
 
 .. code-block:: text
 
@@ -207,7 +211,7 @@ Install virtualenv via pip:
 .. code-block:: console
 
   $ pip install virtualenv
- 
+
 Test your installation
 
 .. code-block:: console

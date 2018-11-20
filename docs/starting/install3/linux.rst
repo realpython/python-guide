@@ -3,7 +3,7 @@
 Installing Python 3 on Linux
 ============================
 
-.. image:: https://farm5.staticflickr.com/4276/34435689480_2e6f358510_k_d.jpg
+.. image:: /_static/photos/34435689480_2e6f358510_k_d.jpg
 
 This document describes how to install Python 3.6 on Ubuntu Linux machines.
 
@@ -93,7 +93,7 @@ care about that.
 Pipenv & Virtual Environments
 -----------------------------
 
-The next step is to install Pipenv, so you can install dependencies and manage virtual environments. 
+The next step is to install Pipenv, so you can install dependencies and manage virtual environments.
 
 A Virtual Environment is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them. It solves the
