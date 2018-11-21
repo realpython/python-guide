@@ -92,7 +92,7 @@ non-GUI applications.
 
 PySimpleGUI 
 ------  
-`PySimpleGUI <https://pysimplegui.readthedocs.io/>`_ is a  wrapper for the Tkinter.  The amount of code required to implement custom GUIs is much shorter using PySimpleGUI than if the same GUI were written directly using tkinter.  Having Tkinter as a base results in the ability to run on a larger number of platforms than other GUI frameworks.
+`PySimpleGUI <https://pysimplegui.readthedocs.io/>`_ is a  wrapper for Tkinter and Qt (others on the way).  The amount of code required to implement custom GUIs is much shorter using PySimpleGUI than if the same GUI were written directly using tkinter or Qt.  PySimpleGUI code can be "ported" between GUI frameworks by changing import statement.
 
 .. code-block:: console 
 
