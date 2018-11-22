@@ -95,3 +95,11 @@ Online Communities
 of Python and software development enthusiasts helping each other succeed and grow.
 Think of it as a club of mutual improvement for Pythonistas where a broad range of
 programming questions, career advice, and other topics are discussed every day.
+
+
+Python Job Boards
+-----------------
+
+`Python Jobs HQ <https://www.pythonjobshq.com>`_ is a Python job board, by Python Developers
+for Python Developers. The site aggregates Python job postings from across the web and
+also allows employers to post Python job openings directly on the site.
