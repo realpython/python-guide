@@ -1,8 +1,8 @@
 .. _guide-style-guide:
 
-=====================
+#####################
 The Guide Style Guide
-=====================
+#####################
 
 .. image:: /_static/photos/33573755856_7f43d43adf_k_d.jpg
 
@@ -19,8 +19,10 @@ The Guide is written as :ref:`restructuredtext-ref`.
 .. note:: On any page of the rendered HTML you can click "Show Source" to
    see how authors have styled the page.
 
+
+*********
 Relevancy
----------
+*********
 
 Strive to keep any contributions relevant to the :ref:`purpose of The Guide
 <about-ref>`.
@@ -36,8 +38,15 @@ Strive to keep any contributions relevant to the :ref:`purpose of The Guide
   resources, and describe why it's useful to Python.
 * When in doubt, ask.
 
+
+Blank lines
+===========
+
+Two blank lines before a heading and one after the heading.
+
+
 Headings
---------
+========
 
 Use the following styles for headings.
 
@@ -45,34 +54,40 @@ Chapter title:
 
 .. code-block:: rest
 
-    #########
-    Chapter 1
-    #########
+    #############
+    H1: Chapter 1
+    #############
 
 Page title:
 
 .. code-block:: rest
 
-    ===================
-    Time is an Illusion
-    ===================
+    ***********************
+    H2: Time is an Illusion
+    ***********************
 
 Section headings:
 
 .. code-block:: rest
 
-    Lunchtime Doubly So
-    -------------------
+    H3: Lunchtime Doubly So
+    =======================
 
 Sub section headings:
 
 .. code-block:: rest
 
-    Very Deep
-    ~~~~~~~~~
+    H4: Very Deep
+    -------------
+
+Further information on headings formatting can be found on `Style guide for Sphinx-based documentations`_
+or `Sphinx reStructuredText Primer`_.
+
+.. _Style guide for Sphinx-based documentations: https://documentation-style-guide-sphinx.readthedocs.io/en/latest/style-guide.html#headings
+.. _Sphinx reStructuredText Primer: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections
 
 Prose
------
+=====
 
 Wrap text lines at 78 characters. Where necessary, lines may exceed 78
 characters, especially if wrapping would make the source text more difficult
@@ -85,8 +100,9 @@ from this project, due to complete and total lack of taste.
 
 Banishment? Is this a joke? Hopefully we will never have to find out.
 
+
 Code Examples
--------------
+=============
 
 Wrap all code examples at 70 characters to avoid horizontal scrollbars.
 
@@ -122,8 +138,9 @@ Python examples:
         def get_answer():
             return 42
 
+
 Externally Linking
-------------------
+==================
 
 * Prefer labels for well known subjects (ex: proper nouns) when linking:
 
@@ -136,15 +153,16 @@ Externally Linking
 * Prefer to use descriptive labels with inline links instead of leaving bare
   links:
 
-  .. code-block:: rest
+.. code-block:: rest
 
-      Read the `Sphinx Tutorial <http://sphinx.pocoo.org/tutorial.html>`_
+    Read the `Sphinx Tutorial <http://sphinx.pocoo.org/tutorial.html>`_
 
 * Avoid using labels such as "click here", "this", etc. preferring
   descriptive labels (SEO worthy) instead.
 
+
 Linking to Sections in The Guide
---------------------------------
+================================
 
 To cross-reference other parts of this documentation, use the `:ref:
 <http://sphinx.pocoo.org/markup/inline.html#cross-referencing-arbitrary-locations>`_
@@ -157,10 +175,11 @@ To make reference labels more clear and unique, always add a ``-ref`` suffix:
     .. _some-section-ref:
 
     Some Section
-    ------------
+    ============
+
 
 Notes and Warnings
-------------------
+==================
 
 Make use of the appropriate `admonitions directives
 <http://sphinx.pocoo.org/rest.html#directives>`_ when making notes.
@@ -180,8 +199,10 @@ Warnings:
 
     .. warning:: DON'T PANIC
 
+
+*****
 TODOs
------
+*****
 
 Please mark any incomplete areas of The Guide with a `todo directive
 <http://sphinx.pocoo.org/ext/todo.html?highlight=todo#directive-todo>`_. To
@@ -193,4 +214,3 @@ documents or large incomplete sections.
     .. todo::
         Learn the Ultimate Answer to the Ultimate Question
         of Life, The Universe, and Everything
-
