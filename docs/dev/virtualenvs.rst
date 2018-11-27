@@ -16,7 +16,7 @@ presented here is most directly applicable to the development and deployment of
 network services (including web applications), but is also very well suited to
 managing development and testing environments for any kind of project.
 
-.. Note:: This guide is written for Python 3, however, these instructions
+.. note:: This guide is written for Python 3, however, these instructions
     should work fine on Python 2.7—if you are still using it, for some reason.
 
 
@@ -35,7 +35,8 @@ You should get some output like ``3.6.2``. If you do not have Python, please
 install the latest 3.x version from `python.org`_ or refer to the
 `Installing Python`_ section of this guide.
 
-.. Note:: If you're newcomer and you get an error like this:
+.. note::
+    If you're newcomer and you get an error like this:
 
     .. code-block:: python
 
@@ -84,7 +85,8 @@ Use ``pip`` to install Pipenv:
     $ pip install --user pipenv
 
 
-.. Note:: This does a `user installation`_ to prevent breaking any system-wide
+.. note::
+    This does a `user installation`_ to prevent breaking any system-wide
     packages. If ``pipenv`` isn't available in your shell after installation,
     you'll need to add the `user base`_'s binary directory to your ``PATH``.
 
@@ -111,7 +113,6 @@ Use ``pip`` to install Pipenv:
 .. _user installation: https://pip.pypa.io/en/stable/user_guide/#user-installs
 .. _modifying ~/.profile: https://stackoverflow.com/a/14638025
 .. _Control Panel: https://msdn.microsoft.com/en-us/library/windows/desktop/bb776899(v=vs.85).aspx
-
 
 Installing packages for your project
 ====================================
@@ -162,7 +163,6 @@ when you share your project with others. You should get output similar to this
 
 .. _Requests: https://python-requests.org
 
-
 Using installed packages
 ========================
 
@@ -192,7 +192,6 @@ You should get output similar to this:
 Using ``$ pipenv run`` ensures that your installed packages are available to
 your script. It's also possible to spawn a new shell that ensures all commands
 have access to your installed packages with ``$ pipenv shell``.
-
 
 Next steps
 ==========
@@ -322,6 +321,7 @@ control by adding it to the ignore list (see :ref:`Version Control Ignores<versi
 
 .. _virtualenvwrapper-ref:
 
+
 *****************
 virtualenvwrapper
 *****************
@@ -349,7 +349,6 @@ To install (make sure **virtualenv** is already installed):
     $ pip install virtualenvwrapper-win
 
 In Windows, the default path for WORKON_HOME is %USERPROFILE%\Envs
-
 
 Basic Usage
 ===========
@@ -413,6 +412,7 @@ Other useful commands
 
 `Full list of virtualenvwrapper commands <https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html>`_.
 
+
 ******************
 virtualenv-burrito
 ******************
@@ -421,8 +421,9 @@ With `virtualenv-burrito <https://github.com/brainsik/virtualenv-burrito>`_, you
 can have a working virtualenv + virtualenvwrapper environment in a single command.
 
 
+*******
 autoenv
-=======
+*******
 
 When you ``cd`` into a directory containing a :file:`.env`, `autoenv <https://github.com/kennethreitz/autoenv>`_
 automagically activates the environment.
