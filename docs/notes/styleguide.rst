@@ -30,14 +30,14 @@ Strive to keep any contributions relevant to the :ref:`purpose of The Guide
 <about-ref>`.
 
 * Avoid including too much information on subjects that don't directly
-relate to Python development.
+  relate to Python development.
 * Prefer to link to other sources if the information is already out there.
-Be sure to describe what and why you are linking.
+  Be sure to describe what and why you are linking.
 * `Cite <http://sphinx.pocoo.org/rest.html?highlight=citations#citations>`_
-references where needed.
+  references where needed.
 * If a subject isn't directly relevant to Python, but useful in conjunction
-with Python (e.g., Git, GitHub, Databases), reference by linking to useful
-resources, and describe why it's useful to Python.
+  with Python (e.g., Git, GitHub, Databases), reference by linking to useful
+  resources, and describe why it's useful to Python.
 * When in doubt, ask.
 
 
@@ -57,7 +57,7 @@ Blank lines
 * One blank line before all other headings.
 * One blank line after all headings.
 * One blank line before and after a directive, *except for notes, no blank
-lines after it*.
+  lines after it*.
 
 .. code-block:: reStructuredText
 
@@ -178,14 +178,14 @@ Externally Linking
         .. _Sphinx: http://sphinx.pocoo.org
 
 * Prefer to use descriptive labels with inline links instead of leaving bare
-links:
+  links:
 
 .. code-block:: rest
 
     Read the `Sphinx Tutorial <http://sphinx.pocoo.org/tutorial.html>`_
 
 * Avoid using labels such as "click here", "this", etc. preferring
-descriptive labels (SEO worthy) instead.
+  descriptive labels (SEO worthy) instead.
 
 
 ********************************
