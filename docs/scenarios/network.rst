@@ -1,5 +1,7 @@
+
+##########
 Networking
-==========
+##########
 
 .. image:: /_static/photos/34151833832_6bdfd930af_k_d.jpg
 

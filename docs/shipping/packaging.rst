@@ -1,8 +1,9 @@
 .. _packaging-your-code-ref:
 
-===================
+
+###################
 Packaging Your Code
-===================
+###################
 
 .. image:: /_static/photos/36137234682_be6898bf57_k_d.jpg
 

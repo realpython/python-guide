@@ -1,7 +1,9 @@
 .. _install-linux:
 
+
+############################
 Installing Python 2 on Linux
-=============================
+############################
 
 .. image:: /_static/photos/34435688560_4cc2a7bcbb_k_d.jpg
 

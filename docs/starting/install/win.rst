@@ -1,7 +1,9 @@
 .. _install-windows:
 
+
+##############################
 Installing Python 2 on Windows
-==============================
+##############################
 
 .. image:: /_static/photos/34435688560_4cc2a7bcbb_k_d.jpg
 

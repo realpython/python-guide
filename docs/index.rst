@@ -6,8 +6,10 @@
 .. meta::
    :description: An opinionated guide to the Python programming language and a best practice handbook to the installation, configuration, and usage of Python on a daily basis.
 
+
+#################################
 The Hitchhiker's Guide to Python!
-=================================
+#################################
 
 Greetings, Earthling! Welcome to The Hitchhiker's Guide to Python.
 
