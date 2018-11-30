@@ -1,5 +1,7 @@
+
+######################
 Continuous Integration
-======================
+######################
 
 .. image:: /_static/photos/33907150594_9abba7ad0a_k_d.jpg
 

@@ -1,5 +1,7 @@
+
+################
 GUI Applications
-================
+################
 
 .. image:: /_static/photos/33907143624_cd621b535c_k_d.jpg
 

@@ -1,7 +1,9 @@
 .. _installation:
 
+
+##########################
 Properly Installing Python
-==========================
+##########################
 
 .. image:: /_static/photos/36137232412_fdcb0f84eb_k_d.jpg
 

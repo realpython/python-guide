@@ -1,8 +1,9 @@
 .. _freezing-your-code-ref:
 
-==================
+
+##################
 Freezing Your Code
-==================
+##################
 
 .. image:: /_static/photos/33907151034_e0a9e53402_k_d.jpg
 

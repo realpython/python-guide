@@ -1,8 +1,8 @@
 .. _guide-style-guide:
 
-=====================
+#####################
 The Guide Style Guide
-=====================
+#####################
 
 .. image:: /_static/photos/33573755856_7f43d43adf_k_d.jpg
 
