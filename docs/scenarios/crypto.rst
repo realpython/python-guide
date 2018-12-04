@@ -5,8 +5,10 @@ Cryptography
 
 .. image:: /_static/photos/33907152824_bf91078cc1_k_d.jpg
 
+
+************
 Cryptography
-------------
+************
 
 `Cryptography <https://cryptography.io/en/latest/>`_ is an actively developed
 library that provides cryptographic recipes and primitives. It supports
@@ -40,10 +42,9 @@ Example code using high level symmetric encryption recipe:
 	plain_text = cipher_suite.decrypt(cipher_text)
 
 
-
-
+**************
 GPGME bindings
---------------
+**************
 
 The `GPGME Python bindings <https://dev.gnupg.org/source/gpgme/browse/master/lang/python/>`_ provide pythonic access to `GPG Made Easy <https://dev.gnupg.org/source/gpgme/browse/master/>`_, a C API for the entire GNU Privacy Guard suite of projects, including GPG, libgcrypt and gpgsm (the S/MIME engine). It supports Python 2.6, 2.7, 3.4 and above. Depends on the SWIG C interface for Python as well as the GnuPG software and libraries.
 
@@ -52,12 +53,12 @@ A more comprehensive `GPGME Python Bindings HOWTO <https://dev.gnupg.org/source/
 Available under the same terms as the rest of the GnuPG Project: GPLv2 and LGPLv2.1, both with the "or any later version" clause.
 
 Installation
-------------
+~~~~~~~~~~~~
 
 Included by default when compiling GPGME if the configure script locates a supported python version (which it will if it's in $PATH during configuration).
 
 Example
--------
+~~~~~~~
 
 .. code-block:: python3
 
@@ -90,9 +91,9 @@ Example
 
 
 
-
+********
 PyCrypto
---------
+********
 
 `PyCrypto <https://www.dlitz.net/software/pycrypto/>`_ is another library,
 which provides secure hash functions and various encryption algorithms. It

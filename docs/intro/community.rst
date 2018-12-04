@@ -7,16 +7,19 @@ The Community
 
 .. image:: /_static/photos/34689432801_78d97ecec9_k_d.jpg
 
+
+****
 BDFL
-----
+****
 
 Guido van Rossum, the creator of Python, is often referred to as the BDFL — the
 Benevolent Dictator For Life.
 
 
-
+**************************
 Python Software Foundation
---------------------------
+**************************
+
 
 The mission of the Python Software Foundation is to promote, protect, and
 advance the Python programming language, and to support and facilitate the
@@ -25,8 +28,9 @@ growth of a diverse and international community of Python programmers.
 `Learn More about the PSF <http://www.python.org/psf/>`_.
 
 
+****
 PEPs
-----
+****
 
 PEPs are *Python Enhancement Proposals*. They describe changes to Python itself,
 or the standards around it.
@@ -72,8 +76,9 @@ Here's an overview of the PEP acceptance workflow:
 .. image:: ../_static/pep-0001-1.png
 
 
+******************
 Python Conferences
-------------------
+******************
 
 The major events for the Python community are developer conferences. The two
 most notable conferences are PyCon, which is held in the US, and its European
@@ -82,16 +87,18 @@ sibling, EuroPython.
 A comprehensive list of conferences is maintained at `pycon.org <http://www.pycon.org/>`_.
 
 
+******************
 Python User Groups
-------------------
+******************
 
 User Groups are where a bunch of Python developers meet to present or talk
 about Python topics of interest. A list of local user groups is maintained at
 the `Python Software Foundation Wiki <http://wiki.python.org/moin/LocalUserGroups>`_.
 
 
+******************
 Online Communities
-------------------
+******************
 
 `PythonistaCafe <https://www.pythonistacafe.com>`_ is an invite-only, online community
 of Python and software development enthusiasts helping each other succeed and grow.
@@ -99,8 +106,9 @@ Think of it as a club of mutual improvement for Pythonistas where a broad range 
 programming questions, career advice, and other topics are discussed every day.
 
 
+*****************
 Python Job Boards
------------------
+*****************
 
 `Python Jobs HQ <https://www.pythonjobshq.com>`_ is a Python job board, by Python Developers
 for Python Developers. The site aggregates Python job postings from across the web and

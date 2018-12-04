@@ -1,7 +1,9 @@
 .. _install3-windows:
 
+
+##############################
 Installing Python 3 on Windows
-==============================
+##############################
 
 .. image:: /_static/photos/34435689480_2e6f358510_k_d.jpg
 
@@ -17,8 +19,10 @@ Once done, installing Python 3 is very simple, because Chocolatey pushes Python 
 Once you've run this command, you should be able to launch Python directly from to the console.
 (Chocolatey is fantastic and automatically adds Python to your path.)
 
+
+****************
 Setuptools + Pip
-----------------
+****************
 
 The two most crucial third-party Python packages are `setuptools <https://pypi.python.org/pypi/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_,
 which let you download, install and uninstall any compliant Python software
@@ -30,8 +34,9 @@ All supported versions of Python 3 include pip, so just make sure it's up to dat
     python -m pip install -U pip
 
 
+*****************************
 Pipenv & Virtual Environments
------------------------------
+*****************************
 
 The next step is to install Pipenv, so you can install dependencies and manage virtual environments.
 

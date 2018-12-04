@@ -10,8 +10,10 @@ Python has a vast number of libraries for data analysis, statistics and Machine 
 
 Some widely used packages for Machine Learning and other Data Science applications are enlisted below.
 
+
+***********
 Scipy Stack
------------
+***********
 
 The Scipy stack consists of a bunch of core helper packages used in data science, for statistical analysis and visualising data. Because of its huge number of functionalities and ease of use, the Stack is considered a must-have for most data science applications.
 
@@ -34,8 +36,10 @@ For installing the full stack, or individual packages, you can refer to the inst
 
 **NB:** `Anaconda <https://www.continuum.io/anaconda-overview>`_ is highly preferred and recommended for installing and maintaining data science packages seamlessly.
 
+
+************
 scikit-learn
-------------
+************
 
 Scikit is a free and open-source machine learning library for Python. It offers off-the-shelf functions to implement many algorithms like linear regression, classifiers, SVMs, k-means, Neural Networks etc. It also has a few sample datasets which can be directly used for training and testing.
 

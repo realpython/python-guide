@@ -59,8 +59,10 @@ include:
 
 .. _about-ref:
 
+
+****************
 About This Guide
-----------------
+****************
 
 Purpose
 ~~~~~~~

@@ -31,8 +31,10 @@ makes this method unsuitable for distributing applications to end-users.
 The `Python Packaging Guide <https://python-packaging-user-guide.readthedocs.io/>`_
 provides an extensive guide on creating and maintaining Python packages.
 
+
+*************************
 Alternatives to Packaging
-:::::::::::::::::::::::::
+*************************
 
 To distribute applications to end-users, you should
 :ref:`freeze your application <freezing-your-code-ref>`.
@@ -41,8 +43,10 @@ On Linux, you may also want to consider
 :ref:`creating a Linux distro package <packaging-for-linux-distributions-ref>`
 (e.g. a .deb file for Debian or Ubuntu.)
 
+
+*********************
 For Python Developers
-:::::::::::::::::::::
+*********************
 
 If you're writing an open source Python module, `PyPI <http://pypi.python.org>`_
 , more properly known as *The Cheeseshop*, is the place to host it.
@@ -141,8 +145,10 @@ prerequisite for this is that you have an Amazon AWS account with an S3 bucket.
 
 .. _packaging-for-linux-distributions-ref:
 
+
+***********************
 For Linux Distributions
-::::::::::::::::::::::::
+***********************
 
 Creating a Linux distro package is arguably the "right way" to distribute code
 on Linux.

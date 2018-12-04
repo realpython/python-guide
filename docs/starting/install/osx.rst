@@ -23,8 +23,10 @@ good for development. The version shipped with OS X may be out of date from the
 `official current Python release <https://www.python.org/downloads/mac-osx/>`_,
 which is considered the stable production version.
 
+
+**************
 Doing it Right
---------------
+**************
 
 Let's install a real version of Python.
 
@@ -89,8 +91,9 @@ Homebrew names the executable ``python2`` so that you can still run the system P
     $ python3 -V  # Homebrew installed Python 3 interpreter (if installed)
 
 
+****************
 Setuptools & Pip
-----------------
+****************
 
 Homebrew installs Setuptools and ``pip`` for you.
 
@@ -110,9 +113,9 @@ and is actively maintained.
     $ pip -V  # pip pointing to the Homebrew installed Python 3 interpreter (if installed)
 
 
-
+********************
 Virtual Environments
---------------------
+********************
 
 A Virtual Environment (commonly referred to as a 'virtualenv') is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them. It solves the

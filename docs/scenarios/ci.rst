@@ -8,8 +8,10 @@ Continuous Integration
 .. note::
     For advice on writing your tests, see :doc:`/writing/tests`.
 
+
+****
 Why?
-----
+****
 
 Martin Fowler, who first wrote about `Continuous Integration <http://martinfowler.com/articles/continuousIntegration.html>`_
 (short: CI) together with Kent Beck, describes the CI as follows:
@@ -22,24 +24,26 @@ Martin Fowler, who first wrote about `Continuous Integration <http://martinfowle
     significantly reduced integration problems and allows a team to develop
     cohesive software more rapidly.
 
+
+*******
 Jenkins
--------
+*******
 
 `Jenkins CI <http://jenkins-ci.org>`_ is an extensible continuous integration
 engine. Use it.
 
 
-
+********
 Buildbot
---------
+********
 
 `Buildbot <http://docs.buildbot.net/current/>`_ is a Python system to
 automate the compile/test cycle to validate code changes.
 
 
-
+***
 Tox
----
+***
 
 `tox <https://tox.readthedocs.io/en/latest/>`_ is an automation tool providing
 packaging, testing and deployment of Python software right from the console or
@@ -54,8 +58,9 @@ which provides the following features:
   and merging CI and shell-based testing.
 
 
+*********
 Travis-CI
----------
+*********
 
 `Travis-CI <https://travis-ci.org/>`_ is a distributed CI server which builds
 tests for open source projects for free. It provides multiple workers to run

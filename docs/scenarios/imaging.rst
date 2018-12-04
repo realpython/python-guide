@@ -11,8 +11,10 @@ Computer Vision (OpenCV).
 
 A brief description of both is given below.
 
+
+**********************
 Python Imaging Library
-----------------------
+**********************
 
 The `Python Imaging Library <http://www.pythonware.com/products/pil/>`_, or PIL
 for short, is one of the core libraries for image manipulation in Python. Unfortunately,
@@ -63,8 +65,9 @@ There are more examples of the Pillow library in the
 `Pillow tutorial <https://pillow.readthedocs.io/en/3.0.x/handbook/tutorial.html>`_.
 
 
+**************************
 OpenSource Computer Vision
---------------------------
+**************************
 
 OpenSource Computer Vision, more commonly known as OpenCV, is a more advanced
 image manipulation and processing software than PIL. It has been implemented

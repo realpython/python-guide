@@ -1,5 +1,8 @@
+
+
+#################
 Testing Your Code
-=================
+#################
 
 .. image:: /_static/photos/34435687940_8f73fc1fa6_k_d.jpg
 
@@ -71,8 +74,11 @@ Some general rules of testing:
   be to add a test to ensure that the new functionality is not already a
   working path that has not been plugged into the interface.
 
+
+
+**********
 The Basics
-::::::::::
+**********
 
 
 Unittest
@@ -136,8 +142,10 @@ When running this module from the command line as in ``python module.py``, the
 doctests will run and complain if anything is not behaving as described in the
 docstrings.
 
+
+*****
 Tools
-:::::
+*****
 
 
 py.test

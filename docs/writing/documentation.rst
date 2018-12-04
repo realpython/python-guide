@@ -1,5 +1,8 @@
+
+
+#############
 Documentation
-=============
+#############
 
 .. image:: /_static/photos/35620636012_f66aa88f93_k_d.jpg
 
@@ -7,8 +10,10 @@ Readability is a primary focus for Python developers, in both project
 and code documentation. Following some simple best practices can save
 both you and others a lot of time.
 
+
+*********************
 Project Documentation
----------------------
+*********************
 
 A :file:`README` file at the root directory should give general information
 to both users and maintainers of a project. It should be raw text or
@@ -32,8 +37,10 @@ planned development for the code.
 A :file:`CHANGELOG` file or section in :file:`README` should compile a short
 overview of the changes in the code base for the latest versions.
 
+
+*******************
 Project Publication
--------------------
+*******************
 
 Depending on the project, your documentation might include some or all
 of the following components:
@@ -97,8 +104,9 @@ Reference`_ should help you familiarize yourself with its syntax.
 .. _reStructuredText Quick Reference: http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 
+*************************
 Code Documentation Advice
--------------------------
+*************************
 
 Comments clarify the code and they are added with purpose of making the
 code easier to understand. In Python, comments begin with a hash
@@ -249,8 +257,10 @@ For further reading on docstrings, feel free to consult :pep:`257`
 .. _sphinx.ext.napoleon: https://sphinxcontrib-napoleon.readthedocs.io/
 .. _`NumPy style`: http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 
+
+***********
 Other Tools
------------
+***********
 
 You might see these in the wild. Use :ref:`sphinx-ref`.
 

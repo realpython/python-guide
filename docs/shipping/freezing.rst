@@ -27,8 +27,10 @@ distribution by about 2–12MB. Also, you will be responsible for shipping
 updated versions of your application when security vulnerabilities to
 Python are patched.
 
+
+************************
 Alternatives to Freezing
-------------------------
+************************
 
 :ref:`Packaging your code <packaging-your-code-ref>` is for distributing
 libraries or tools to other developers.
@@ -40,8 +42,9 @@ On Linux, an alternative to freezing is to
 .. todo:: Fill in "Freezing Your Code" stub
 
 
+****************************
 Comparison of Freezing Tools
-----------------------------
+****************************
 
 Solutions and platforms/features supported:
 
@@ -65,8 +68,10 @@ py2app      no      no    yes  yes      MIT     no            yes            yes
     Only Pyinstaller makes self-executable exe that bundles the dll when
     passing ``--onefile`` to :file:`Configure.py`.
 
+
+*******
 Windows
--------
+*******
 
 bbFreeze
 ~~~~~~~~
@@ -153,8 +158,9 @@ Prerequisite is to have installed :ref:`Python, Setuptools and pywin32 dependenc
 - `Manual <https://pyinstaller.readthedocs.io/en/stable/>`_
 
 
+****
 OS X
-----
+****
 
 
 py2app
@@ -208,8 +214,9 @@ This creates a :code:`script.app` in the :code:`dist` folder. Make sure to use G
 There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/spec-files.html#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option.
 
 
+*****
 Linux
------
+*****
 
 
 bbFreeze

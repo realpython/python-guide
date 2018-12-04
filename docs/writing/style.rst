@@ -1,7 +1,9 @@
 .. _code_style:
 
+
+##########
 Code Style
-==========
+##########
 
 .. image:: /_static/photos/33907150054_5ee79e8940_k_d.jpg
 
@@ -21,8 +23,10 @@ what is considered the best (hear: most readable) way.
 On some border cases, no best way has been agreed upon on how to express
 an intent in Python code, but these cases are rare.
 
+
+****************
 General concepts
-----------------
+****************
 
 Explicit code
 ~~~~~~~~~~~~~
@@ -260,8 +264,10 @@ is needed.
        return x  # One single exit point for the returned value x will help
                  # when maintaining the code.
 
+
+******
 Idioms
-------
+******
 
 A programming idiom, put simply, is a *way* to write code. The notion of
 programming idioms is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_
@@ -417,8 +423,9 @@ hashtable will often be greater than the time saved by the improved search
 speed.
 
 
+*************
 Zen of Python
--------------
+*************
 
 Also known as :pep:`20`, the guiding principles for Python's design.
 
@@ -450,8 +457,10 @@ Also known as :pep:`20`, the guiding principles for Python's design.
 For some examples of good Python style, see `these slides from a Python user
 group <http://artifex.org/~hblanks/talks/2011/pep20_by_example.pdf>`_.
 
+
+*****
 PEP 8
------
+*****
 
 :pep:`8` is the de-facto code style guide for Python. A high quality,
 easy-to-read version of PEP 8 is also available at `pep8.org <http://pep8.org/>`_.
@@ -504,8 +513,10 @@ Excluding the ``--in-place`` flag will cause the program to output the modified
 code directly to the console for review. The ``--aggressive`` flag will perform
 more substantial changes and can be applied multiple times for greater effect.
 
+
+***********
 Conventions
-----------------
+***********
 
 Here are some conventions you should follow to make your code easier to read.
 

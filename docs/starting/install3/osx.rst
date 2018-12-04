@@ -2,8 +2,10 @@
 
 .. _install3-osx:
 
+
+###############################
 Installing Python 3 on Mac OS X
-===============================
+###############################
 
 .. image:: /_static/photos/34435689480_2e6f358510_k_d.jpg
 
@@ -17,8 +19,10 @@ good for development. The version shipped with OS X may be out of date from the
 `official current Python release <https://www.python.org/downloads/mac-osx/>`_,
 which is considered the stable production version.
 
+
+**************
 Doing it Right
---------------
+**************
 
 Let's install a real version of Python.
 
@@ -72,14 +76,16 @@ Now, we can install Python 3:
 
 This will take a minute or two.
 
-
+***
 Pip
----
+***
 
 Homebrew installs ``pip`` pointing to the Homebrew'd Python 3 for you.
 
+
+*********************
 Working with Python 3
----------------------
+*********************
 
 At this point, you have the system Python 2.7 available, potentially the
 :ref:`Homebrew version of Python 2 <install-osx>` installed, and the Homebrew
@@ -115,8 +121,9 @@ The rest of the guide will assume that ``python`` references Python 3.
     Python 3.7.1 # Success!
 
 
+*****************************
 Pipenv & Virtual Environments
------------------------------
+*****************************
 
 The next step is to install Pipenv, so you can install dependencies and manage virtual environments.
 

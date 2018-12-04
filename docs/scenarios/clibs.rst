@@ -5,8 +5,10 @@ Interfacing with C/C++ Libraries
 
 .. image:: /_static/photos/34725951345_c8f5959a2e_k_d.jpg
 
+
+****************************
 C Foreign Function Interface
-----------------------------
+****************************
 
 `CFFI <https://cffi.readthedocs.io/en/latest/>`_ provides a simple to use
 mechanism for interfacing with C from both CPython and PyPy. It supports two
@@ -29,8 +31,10 @@ ABI Interaction
     # prints: 23
     print("{}".format(length))
 
+
+******
 ctypes
-------
+******
 
 `ctypes <https://docs.python.org/3/library/ctypes.html>`_ is the de facto
 library for interfacing with C/C++ from CPython, and it provides not only
@@ -68,8 +72,10 @@ Struct Equivalents
         _fields_ = [("a", c_int),
                     ("b", c_int)]
 
+
+****
 SWIG
-----
+****
 
 `SWIG <http://www.swig.org>`_, though not strictly Python focused (it supports a
 large number of scripting languages), is a tool for generating bindings for
@@ -124,8 +130,9 @@ Example: Overloading __repr__
     %include "MyClass.h"
 
 
+************
 Boost.Python
-------------
+************
 
 `Boost.Python <http://www.boost.org/doc/libs/1_59_0/libs/python/doc/>`_
 requires a bit more manual work to expose C++ object functionality, but

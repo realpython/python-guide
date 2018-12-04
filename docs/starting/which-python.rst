@@ -8,8 +8,10 @@ Picking a Python Interpreter (3 vs 2)
 
 .. _which-python:
 
+
+***************************
 The State of Python (3 & 2)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+***************************
 
 When choosing a Python interpreter, one looming question is always present:
 "Should I choose Python 2 or Python 3"? The answer is a bit more subtle than
@@ -23,8 +25,10 @@ The basic gist of the state of things is as follows:
 3. Python 2.7 will only receive necessary security updates until 2020 [#pep373_eol]_.
 4. The brand name "Python" encapsulates both Python 3 and Python 2.
 
+
+***************
 Recommendations
-~~~~~~~~~~~~~~~
+***************
 
 
 .. note:: The use of **Python 3** is *highly* preferred over Python 2. Consider upgrading your applications and infrastructure if you find yourself *still* using Python 2 in production today. If you are using Python 3, congratulations — you are indeed a person of excellent taste.
@@ -41,8 +45,10 @@ I'll be blunt:
   simultaneously. Only supporting Python 3 for a new library you want to be widely adopted is a
   political statement and will alienate many of your users. This is not a problem — slowly, over the next three years, this will become less the case.
 
+
+*********
 So.... 3?
-~~~~~~~~~
+*********
 
 If you're choosing a Python interpreter to use, I
 recommend you use the newest Python 3.x, since every version brings new and
@@ -65,8 +71,10 @@ worry about.  Note that Python 2.6 is end-of-life upstream, so you shouldn't
 try to write 2.6-compatible code unless you're being paid specifically to
 do that.
 
+
+***************
 Implementations
-~~~~~~~~~~~~~~~
+***************
 
 When people speak of *Python* they often mean not just the language but also
 the CPython implementation. *Python* is actually a specification for a language

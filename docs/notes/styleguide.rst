@@ -19,8 +19,10 @@ The Guide is written as :ref:`restructuredtext-ref`.
 .. note:: On any page of the rendered HTML you can click "Show Source" to
    see how authors have styled the page.
 
+
+*********
 Relevancy
----------
+*********
 
 Strive to keep any contributions relevant to the :ref:`purpose of The Guide
 <about-ref>`.
@@ -36,8 +38,10 @@ Strive to keep any contributions relevant to the :ref:`purpose of The Guide
   resources, and describe why it's useful to Python.
 * When in doubt, ask.
 
+
+********
 Headings
---------
+********
 
 Use the following styles for headings.
 
@@ -71,8 +75,10 @@ Sub section headings:
     Very Deep
     ~~~~~~~~~
 
+
+*****
 Prose
------
+*****
 
 Wrap text lines at 78 characters. Where necessary, lines may exceed 78
 characters, especially if wrapping would make the source text more difficult
@@ -85,8 +91,10 @@ from this project, due to complete and total lack of taste.
 
 Banishment? Is this a joke? Hopefully we will never have to find out.
 
+
+*************
 Code Examples
--------------
+*************
 
 Wrap all code examples at 70 characters to avoid horizontal scrollbars.
 
@@ -122,8 +130,10 @@ Python examples:
         def get_answer():
             return 42
 
+
+******************
 Externally Linking
-------------------
+******************
 
 * Prefer labels for well known subjects (ex: proper nouns) when linking:
 
@@ -143,8 +153,10 @@ Externally Linking
 * Avoid using labels such as "click here", "this", etc. preferring
   descriptive labels (SEO worthy) instead.
 
+
+********************************
 Linking to Sections in The Guide
---------------------------------
+********************************
 
 To cross-reference other parts of this documentation, use the `:ref:
 <http://sphinx.pocoo.org/markup/inline.html#cross-referencing-arbitrary-locations>`_
@@ -159,8 +171,10 @@ To make reference labels more clear and unique, always add a ``-ref`` suffix:
     Some Section
     ------------
 
+
+******************
 Notes and Warnings
-------------------
+******************
 
 Make use of the appropriate `admonitions directives
 <http://sphinx.pocoo.org/rest.html#directives>`_ when making notes.
@@ -180,8 +194,10 @@ Warnings:
 
     .. warning:: DON'T PANIC
 
+
+*****
 TODOs
------
+*****
 
 Please mark any incomplete areas of The Guide with a `todo directive
 <http://sphinx.pocoo.org/ext/todo.html?highlight=todo#directive-todo>`_. To
