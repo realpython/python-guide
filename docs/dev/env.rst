@@ -1,11 +1,13 @@
+############################
 Your Development Environment
-============================
+############################
 
 .. image:: /_static/photos/33175624924_7febc46cc4_k_d.jpg
 
 
+************
 Text Editors
-::::::::::::
+************
 
 Just about anything that can edit plain text will work for writing Python code,
 however, using a more powerful editor may make your life a bit easier.
@@ -138,9 +140,9 @@ Recommended for Python development is
 `Linter <https://github.com/AtomLinter/Linter>`_ combined with
 `linter-flake8 <https://github.com/AtomLinter/linter-flake8>`_.
 
-
+****
 IDEs
-::::
+****
 
 PyCharm / IntelliJ IDEA
 -----------------------
@@ -231,9 +233,9 @@ based on the Qt gui toolkit, integrating the Scintilla editor control. Eric
 is an open-source software project (GPLv3 licence) with more than ten years of
 active development.
 
-
+*****************
 Interpreter Tools
-:::::::::::::::::
+*****************
 
 
 Virtual Environments
@@ -269,8 +271,10 @@ the creation of different environments, and also makes it possible to use the
 existing pyenv tools to switch to different environments based on environment
 variables or ``.python-version`` files.
 
+
+***********
 Other Tools
-:::::::::::
+***********
 
 IDLE
 ----
