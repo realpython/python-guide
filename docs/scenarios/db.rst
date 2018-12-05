@@ -5,8 +5,10 @@ Databases
 
 .. image:: /_static/photos/33907152464_a99fdcc8de_k_d.jpg
 
+
+******
 DB-API
-------
+******
 
 The Python Database API (DB-API) defines a standard interface for Python
 database access modules. It's documented in :pep:`249`.
@@ -17,8 +19,10 @@ Tutorials that explain how to work with modules that conform to this interface c
 `here <http://halfcooked.com/presentations/osdc2006/python_databases.html>`__ and
 `here <http://web.archive.org/web/20120815130844/http://www.amk.ca/python/writing/DB-API.html>`__.
 
+
+**********
 SQLAlchemy
-----------
+**********
 
 `SQLAlchemy <http://www.sqlalchemy.org/>`_ is a commonly used database toolkit.
 Unlike many database libraries it not only provides an ORM layer but also a
@@ -28,8 +32,10 @@ generalized API for writing database-agnostic code without SQL.
 
     $ pip install sqlalchemy
 
+
+*******
 Records
--------
+*******
 
 `Records <https://github.com/kennethreitz/records>`_ is minimalist SQL library,
 designed for sending raw SQL queries to various databases. Data can be used
@@ -41,8 +47,10 @@ programmatically, or exported to a number of useful data formats.
 
 Also included is a command-line tool for exporting SQL data.
 
+
+**********
 Django ORM
-----------
+**********
 
 The Django ORM is the interface used by `Django <http://www.djangoproject.com>`_
 to provide database access.
@@ -58,8 +66,10 @@ The basics:
 - Django gives you an automatically-generated database-access API; see
   `Making queries <https://docs.djangoproject.com/en/dev/topics/db/queries/>`__.
 
+
+******
 peewee
-------
+******
 
 `peewee <http://docs.peewee-orm.com/en/latest/>`_ is another ORM with a focus
 on being lightweight with support for Python 2.6+ and 3.2+ which supports
@@ -71,8 +81,10 @@ to query data. While SQLite, MySQL and Postgres are supported out-of-the-box,
 there is a `collection of add-ons <https://peewee.readthedocs.io/en/latest/peewee/playhouse.html#playhouse>`_
 available.
 
+
+*******
 PonyORM
--------
+*******
 
 `PonyORM <http://ponyorm.com/>`_ is an ORM that takes a different approach to
 querying the database. Instead of writing an SQL-like language or boolean
@@ -81,9 +93,9 @@ schema editor that can generate PonyORM entities for you. It supports Python
 2.6+ and Python 3.3+ and can connect to SQLite, MySQL, Postgres & Oracle
 
 
-
+*********
 SQLObject
----------
+*********
 
 `SQLObject <http://www.sqlobject.org/>`_ is yet another ORM. It supports a wide
 variety of databases: Common database systems MySQL, Postgres and SQLite and

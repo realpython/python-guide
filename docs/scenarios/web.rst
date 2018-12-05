@@ -9,8 +9,10 @@ As a powerful scripting language adapted to both fast prototyping
 and bigger projects, Python is widely used in web application
 development.
 
+
+*******
 Context
-:::::::
+*******
 
 
 
@@ -25,8 +27,9 @@ can be deployed in any :ref:`WSGI-compliant web server <wsgi-servers-ref>`.
 WSGI is documented in :pep:`3333`.
 
 
+**********
 Frameworks
-::::::::::
+**********
 
 Broadly speaking, a web framework consists of a set of libraries and a main
 handler within which you can build custom code to implement a web application
@@ -141,8 +144,10 @@ Masonite comes with a lot of functionality out of the box including a powerful I
 
 Masonite is perfect for beginners or experienced developers alike and works hard to be fast and easy from install through to deployment. Try it once and you’ll fall in love.
 
+
+***********
 Web Servers
-:::::::::::
+***********
 
 .. _nginx-ref:
 
@@ -159,8 +164,10 @@ to serve high-load websites, Nginx is gradually becoming quite popular.
 
 .. _wsgi-servers-ref:
 
+
+************
 WSGI Servers
-::::::::::::
+************
 
 Stand-alone WSGI servers typically use less resources than traditional web
 servers and provide top performance [3]_.
@@ -215,8 +222,9 @@ I do not recommend using uWSGI unless you know why you need it.
 .. _server-best-practices-ref:
 
 
+*********************
 Server Best Practices
-:::::::::::::::::::::
+*********************
 
 The majority of self-hosted Python applications today are hosted with a WSGI
 server such as :ref:`Gunicorn <gunicorn-ref>`, either directly or behind a
@@ -226,8 +234,10 @@ The WSGI servers serve the Python applications while the web server handles
 tasks better suited for it such as static file serving, request routing, DDoS
 protection, and basic authentication.
 
+
+*******
 Hosting
-:::::::
+*******
 
 Platform-as-a-Service (PaaS) is a type of cloud computing infrastructure
 which abstracts and manages infrastructure, routing, and scaling of web
@@ -259,8 +269,10 @@ Eldarion
 by Kubernetes, CoreOS, and Docker. They support any WSGI application and have a
 guide on deploying `Django projects <https://eldarion-gondor.github.io/docs/how-to/setup-deploy-first-django-project/>`_.
 
+
+**********
 Templating
-::::::::::
+**********
 
 Most WSGI applications are responding to HTTP requests to serve content in HTML
 or other markup languages. Instead of generating directly textual content from

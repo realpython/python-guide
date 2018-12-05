@@ -1,5 +1,8 @@
+
+
+#######
 Logging
-=======
+#######
 
 .. image:: /_static/photos/35254379756_c9fe23f843_k_d.jpg
 
@@ -17,8 +20,9 @@ Logging serves two purposes:
   reports or to optimize a business goal.
 
 
+*************
 ... or Print?
--------------
+*************
 
 The only time that ``print`` is a better option than logging is when
 the goal is to display a help statement for a command line application.
@@ -34,8 +38,9 @@ Other reasons why logging is better than ``print``:
   :attr:`logging.Logger.disabled` to ``True``.
 
 
+********************
 Logging in a Library
---------------------
+********************
 
 Notes for `configuring logging for a library`_ are in the
 `logging tutorial`_.  Because the *user*, not the library, should
@@ -61,8 +66,9 @@ this in your ``__init__.py``
     logging.getLogger(__name__).addHandler(logging.NullHandler())
 
 
+*************************
 Logging in an Application
--------------------------
+*************************
 
 The `twelve factor app <http://12factor.net>`_, an authoritative reference
 for good practice in application development, contains a section on

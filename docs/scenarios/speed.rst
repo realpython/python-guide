@@ -37,8 +37,10 @@ and PyPy's processing.
    1.54693889618
    1.60109114647
 
+
+*******
 Context
-:::::::
+*******
 
 
 The GIL
@@ -65,8 +67,10 @@ The GIL
 `Special care`_ must be taken when writing C extensions to make sure you
 register your threads with the interpreter.
 
+
+************
 C Extensions
-::::::::::::
+************
 
 
 Cython
@@ -226,8 +230,10 @@ Pyrex
 Shedskin?
 ---------
 
+
+***********
 Concurrency
-:::::::::::
+***********
 
 
 Concurrent.futures

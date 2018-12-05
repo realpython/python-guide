@@ -5,8 +5,10 @@ Scientific Applications
 
 .. image:: /_static/photos/33925223870_97e44f5629_k_d.jpg
 
+
+*******
 Context
-:::::::
+*******
 
 Python is frequently used for high-performance scientific applications. It
 is widely used in academia and scientific projects because it is easy to write
@@ -21,8 +23,9 @@ Python ecosystem can be found in the `Python Scientific Lecture Notes
 <http://scipy-lectures.github.com/>`_
 
 
+*****
 Tools
-:::::
+*****
 
 IPython
 -------
@@ -37,8 +40,9 @@ store chunks of Python code along side the results and additional comments
 file formats.
 
 
+*********
 Libraries
-:::::::::
+*********
 
 NumPy
 -----
@@ -112,8 +116,9 @@ The library handles presentation of stimuli, scripting of experimental design
 and data collection.
 
 
+*********
 Resources
-:::::::::
+*********
 
 Installation of scientific Python packages can be troublesome, as many of
 these packages are implemented as Python C extensions which need to be compiled.

@@ -5,8 +5,10 @@ HTML Scraping
 
 .. image:: /_static/photos/34268661876_442428e122_k_d.jpg
 
+
+************
 Web Scraping
-------------
+************
 
 Web sites are written using HTML, which means that each web page is a
 structured document. Sometimes it would be great to obtain some data from
@@ -18,8 +20,10 @@ computer program to sift through a web page and gather the data that you need
 in a format most useful to you while at the same time preserving the structure
 of the data.
 
+
+*****************
 lxml and Requests
------------------
+*****************
 
 `lxml <http://lxml.de/>`_ is a pretty extensive library written for parsing
 XML and HTML documents very quickly, even handling messed up tags in the

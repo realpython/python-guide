@@ -6,8 +6,10 @@ Learning Python
 
 .. image:: /_static/photos/32800783863_11a00db52c_k_d.jpg
 
+
+********
 Beginner
---------
+********
 
 The Python Tutorial
 ~~~~~~~~~~~~~~~~~~~~
@@ -195,8 +197,9 @@ making the process of learning Python fun and engaging.
     `Code the blocks <https://codetheblocks.com/tutorials/introduction>`_
 
 
+************
 Intermediate
-------------
+************
 
 Python Tricks: The Book
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -218,8 +221,9 @@ programmers.
     `Effective Python <http://www.effectivepython.com/>`_
 
 
+********
 Advanced
---------
+********
 
 Pro Python
 ~~~~~~~~~~
@@ -261,9 +265,9 @@ and can make classes and objects behave in different and magical ways.
     `A Guide to Python's Magic Methods (repo on GitHub) <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_
 
 
-
+****************************
 For Engineers and Scientists
-----------------------------
+****************************
 
 A Primer on Scientific Programming with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -282,8 +286,10 @@ puts the emphasis on numerical methods and how to implement them in Python.
 
     `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
 
+
+********************
 Miscellaneous Topics
---------------------
+********************
 
 Problem Solving with Algorithms and Data Structures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -339,8 +345,9 @@ PythonistaCafe is an invite-only, online community of Python and software develo
     `PythonistaCafe <https://www.pythonistacafe.com>`_
 
 
+**********
 References
-----------
+**********
 
 Python in a Nutshell
 ~~~~~~~~~~~~~~~~~~~~

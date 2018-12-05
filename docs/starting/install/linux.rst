@@ -33,8 +33,10 @@ described in the next section before you start building Python applications
 for real-world use. In particular, you should always install Setuptools and pip, as
 it makes it much easier for you to use other third-party Python libraries.
 
+
+****************
 Setuptools & Pip
-----------------
+****************
 
 The two most crucial third-party Python packages are `setuptools <https://pypi.python.org/pypi/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_.
 
@@ -53,8 +55,10 @@ To see if pip is installed, open a command prompt and run
 
 To install pip, `follow the official pip installation guide <https://pip.pypa.io/en/latest/installing/>`_ - this will automatically install the latest version of setuptools.
 
+
+********************
 Virtual Environments
---------------------
+********************
 
 A Virtual Environment is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them. It solves the

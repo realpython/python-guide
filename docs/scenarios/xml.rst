@@ -5,8 +5,10 @@ XML parsing
 
 .. image:: /_static/photos/33888714601_a1f7d020a2_k_d.jpg
 
+
+********
 untangle
---------
+********
 
 `untangle <https://github.com/stchris/untangle>`_ is a simple library which
 takes an XML document and returns a Python object which mirrors the nodes and
@@ -36,8 +38,10 @@ and then you can get the child elements name like this:
 
 untangle also supports loading XML from a string or an URL.
 
+
+*********
 xmltodict
----------
+*********
 
 `xmltodict <http://github.com/martinblech/xmltodict>`_ is another simple
 library that aims at making XML feel like working with JSON.

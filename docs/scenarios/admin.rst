@@ -5,8 +5,10 @@ Systems Administration
 
 .. image:: /_static/photos/34435690580_3afec7d4cd_k_d.jpg
 
+
+******
 Fabric
-------
+******
 
 `Fabric <http://docs.fabfile.org>`_ is a library for simplifying system
 administration tasks. While Chef and Puppet tend to focus on managing servers
@@ -73,8 +75,10 @@ programs, and host grouping.
 
     `Fabric Documentation <http://docs.fabfile.org>`_
 
+
+****
 Salt
-----
+****
 
 `Salt <http://saltstack.org/>`_ is an open source infrastructure management
 tool.  It supports remote command execution from a central point (master host)
@@ -132,8 +136,9 @@ State files can be written using YAML, the Jinja2 template system or pure Python
     `Salt Documentation <http://docs.saltstack.com>`_
 
 
+******
 Psutil
-------
+******
 
 `Psutil <https://github.com/giampaolo/psutil/>`_ is an interface to different
 system information (e.g. CPU, memory, disks, network, users and processes).
@@ -188,8 +193,10 @@ A full terminal application like a widely extended top which is based on
 psutil and with the ability of a client-server monitoring is
 `glance <https://github.com/nicolargo/glances/>`_.
 
+
+*******
 Ansible
--------
+*******
 
 `Ansible <http://ansible.com/>`_  is an open source system automation tool.
 The biggest advantage over Puppet or Chef is it does not require an agent on
@@ -240,8 +247,10 @@ about Ansible, read the `Ansible Docs <http://docs.ansible.com/>`_.
 great and detailed introduction to getting started with Ansible.
 
 
+****
 Chef
-----
+****
+
 `Chef <https://www.chef.io/chef/>`_  is a systems and cloud infrastructure automation
 framework that makes it easy to deploy servers and applications to any physical,
 virtual, or cloud location. In case this is your choice for configuration management,
@@ -271,8 +280,10 @@ found on the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
 
 - `Chef Documentation <https://docs.chef.io/>`_
 
+
+******
 Puppet
-------
+******
 
 `Puppet <http://puppetlabs.com>`_ is IT Automation and configuration management
 software from Puppet Labs that allows System Administrators to define the state
@@ -367,13 +378,17 @@ everytime the sshd configuration file is changed.
 
 For more information, refer to the `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
 
+
+*********
 Blueprint
----------
+*********
 
 .. todo:: Write about Blueprint
 
+
+********
 Buildout
---------
+********
 
 `Buildout <http://www.buildout.org>`_ is an open source software build tool.
 Buildout is created using the Python programming language. It implements a
@@ -382,8 +397,10 @@ Buildout is primarily used to download and set up dependencies in Python eggs
 format of the software being developed or deployed. Recipes for build tasks in any
 environment can be created, and many are already available.
 
+
+*******
 Shinken
--------
+*******
 
 `Shinken <http://www.shinken-monitoring.org/>`_ is a modern, Nagios compatible
 monitoring framework written in Python. Its main goal is to give users a flexible
