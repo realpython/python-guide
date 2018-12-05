@@ -1,12 +1,15 @@
 .. _pip-virtualenv:
 
+###########################################
 Further Configuration of Pip and Virtualenv
-===========================================
+###########################################
 
 .. image:: /_static/photos/34018732105_f0e6758859_k_d.jpg
 
+
+***************************************************
 Requiring an active virtual environment for ``pip``
----------------------------------------------------
+***************************************************
 
 By now it should be clear that using virtual environments is a great way to
 keep your development environment clean and keeping different projects'
@@ -87,8 +90,10 @@ install packages globally by running ``gpip install``. You can change the name
 of the function to anything you like, just keep in mind that you will have to
 use that name when trying to install packages globally with pip.
 
+
+*******************************
 Caching packages for future use
--------------------------------
+*******************************
 
 Every developer has preferred libraries and when you are working on a lot of
 different projects, you are bound to have some overlap between the libraries

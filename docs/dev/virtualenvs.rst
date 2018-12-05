@@ -1,7 +1,9 @@
 .. _virtualenvironments-ref:
 
+
+#############################
 Pipenv & Virtual Environments
-=============================
+#############################
 
 .. image:: /_static/photos/35294660055_42c02b2316_k_d.jpg
 
@@ -18,9 +20,9 @@ managing development and testing environments for any kind of project.
 .. Note:: This guide is written for Python 3, however, these instructions
     should work fine on Python 2.7—if you are still using it, for some reason.
 
-
+*********************************
 Make sure you've got Python & pip
----------------------------------
+*********************************
 
 Before you go any further, make sure you have Python and that it's available
 from your command line. You can check this by simply running:
@@ -64,9 +66,9 @@ using your OS package manager, you may have to `install pip <https://pip.pypa.io
 .. _Homebrew: https://brew.sh
 .. _Installing Python: https://docs.python-guide.org/starting/installation/
 
-
+*****************
 Installing Pipenv
------------------
+*****************
 
 `Pipenv`_ is a dependency manager for Python projects. If you're familiar
 with Node.js' `npm`_ or Ruby's `bundler`_, it is similar in spirit to those
@@ -109,8 +111,10 @@ Use ``pip`` to install Pipenv:
 .. _modifying ~/.profile: https://stackoverflow.com/a/14638025
 .. _Control Panel: https://msdn.microsoft.com/en-us/library/windows/desktop/bb776899(v=vs.85).aspx
 
+
+************************************
 Installing packages for your project
-------------------------------------
+************************************
 
 Pipenv manages dependencies on a per-project basis. To install packages,
 change into your project's directory (or just an empty directory for this
@@ -159,8 +163,9 @@ when you share your project with others. You should get output similar to this
 .. _Requests: https://python-requests.org
 
 
+************************
 Using installed packages
-------------------------
+************************
 
 Now that Requests is installed you can create a simple ``main.py`` file to
 use it:
@@ -190,8 +195,9 @@ your script. It's also possible to spawn a new shell that ensures all commands
 have access to your installed packages with ``$ pipenv shell``.
 
 
+**********
 Next steps
-----------
+**********
 
 Congratulations, you now know how to install and use Python packages! ✨ 🍰 ✨
 
@@ -219,7 +225,7 @@ Test your installation
    $ virtualenv --version
 
 Basic Usage
-~~~~~~~~~~~
+-----------
 
 1. Create a virtual environment for a project:
 
@@ -285,7 +291,7 @@ littered across your system, and its possible you'll forget their names or
 where they were placed.
 
 Other Notes
-~~~~~~~~~~~
+-----------
 
 Running ``virtualenv`` with the option ``--no-site-packages`` will not
 include the packages that are installed globally. This can be useful
@@ -318,8 +324,10 @@ control by adding it to the ignore list (see :ref:`Version Control Ignores<versi
 
 .. _virtualenvwrapper-ref:
 
+
+*****************
 virtualenvwrapper
------------------
+*****************
 
 `virtualenvwrapper <https://virtualenvwrapper.readthedocs.io/en/latest/index.html>`_
 provides a set of commands which makes working with virtual environments much
@@ -346,7 +354,7 @@ To install (make sure **virtualenv** is already installed):
 In Windows, the default path for WORKON_HOME is %USERPROFILE%\Envs
 
 Basic Usage
-~~~~~~~~~~~
+===========
 
 1. Create a virtual environment:
 
@@ -390,7 +398,7 @@ can quickly switch between environments.
    $ rmvirtualenv venv
 
 Other useful commands
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 ``lsvirtualenv``
   List all of the environments.
@@ -407,14 +415,17 @@ Other useful commands
 
 `Full list of virtualenvwrapper commands <https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html>`_.
 
+
+******************
 virtualenv-burrito
-------------------
+******************
 
 With `virtualenv-burrito <https://github.com/brainsik/virtualenv-burrito>`_, you
 can have a working virtualenv + virtualenvwrapper environment in a single command.
 
+*******
 autoenv
--------
+*******
 When you ``cd`` into a directory containing a :file:`.env`, `autoenv <https://github.com/kennethreitz/autoenv>`_
 automagically activates the environment.
 
