@@ -23,7 +23,7 @@ Install Fabric:
 
 The following code will create two tasks that we can use: ``memory_usage`` and
 ``deploy``. The former will output the memory usage on each machine. The
-latter will ssh into each server, cd to our project directory, activate the
+latter will SSH into each server, cd to our project directory, activate the
 virtual environment, pull the newest codebase, and restart the application
 server.
 
@@ -101,7 +101,7 @@ The following command lists all available minion hosts, using the ping module.
 
     $ salt '*' test.ping
 
-The host filtering is accomplished by matching the minion id,
+The host filtering is accomplished by matching the minion id
 or using the grains system. The
 `grains <http://docs.saltstack.org/en/latest/topics/targeting/grains.html>`_
 system uses static host information like the operating system version or the
@@ -131,7 +131,7 @@ it will install and start the Apache server:
         - require:
           - pkg: apache
 
-State files can be written using YAML, the Jinja2 template system or pure Python.
+State files can be written using YAML, the Jinja2 template system, or pure Python.
 
     `Salt Documentation <http://docs.saltstack.com>`_
 
@@ -141,7 +141,7 @@ Psutil
 ******
 
 `Psutil <https://github.com/giampaolo/psutil/>`_ is an interface to different
-system information (e.g. CPU, memory, disks, network, users and processes).
+system information (e.g. CPU, memory, disks, network, users, and processes).
 
 Here is an example to be aware of some server overload. If any of the
 tests (net, CPU) fail, it will send an email.
@@ -263,9 +263,9 @@ configures itself and this distributed approach makes Chef a scalable automation
 
 Chef works by using custom recipes (configuration elements), implemented in cookbooks. Cookbooks, which are basically
 packages for infrastructure choices, are usually stored in your Chef server.
-Read the `Digital Ocean tutorial series
+Read the `DigitalOcean tutorial series
 <https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_
-on chef to learn how to create a simple Chef Server.
+on Chef to learn how to create a simple Chef Server.
 
 To create a simple cookbook the `knife <https://docs.chef.io/knife.html>`_ command is used:
 
@@ -299,8 +299,8 @@ Puppet Agents are installed on nodes whose state needs to be monitored or
 changed.  A designated server known as the Puppet Master is responsible for
 orchestrating the agent nodes.
 
-Agent nodes send basic facts about the system such as to the operating system,
-kernel, architecture, ip address, hostname etc. to the Puppet Master.
+Agent nodes send basic facts about the system such as the operating system,
+kernel, architecture, IP address, hostname, etc. to the Puppet Master.
 The Puppet Master then compiles a catalog with information provided by the
 agents on how each node should be configured and sends it to the agent. The
 agent enforces the change as prescribed in the catalog and sends a report back
@@ -320,7 +320,7 @@ your Puppet modules.
     Ubuntu
 
 Writing Modules in Puppet is pretty straight forward. Puppet Manifests together
-form Puppet Modules. Puppet manifest end with an extension of ``.pp``.
+form Puppet Modules. Puppet manifests end with an extension of ``.pp``.
 Here is an example of 'Hello World' in Puppet.
 
 .. code-block:: puppet
@@ -334,7 +334,7 @@ Here is an example of 'Hello World' in Puppet.
 Here is another example with system based logic. Note how the operating system
 fact is being used as a variable prepended with the ``$`` sign. Similarly, this
 holds true for other facts such as hostname which can be referenced by
-``$hostname``
+``$hostname``.
 
 .. code-block:: puppet
 
@@ -346,10 +346,10 @@ holds true for other facts such as hostname which can be referenced by
     }
 
 There are several resource types for Puppet but the package-file-service
-paradigm is all you need for undertaking majority of the configuration
+paradigm is all you need for undertaking the majority of the configuration
 management. The following Puppet code makes sure that the OpenSSH-Server
 package is installed in a system and the sshd service is notified to restart
-everytime the sshd configuration file is changed.
+every time the sshd configuration file is changed.
 
 .. code-block:: puppet
 
@@ -407,6 +407,6 @@ monitoring framework written in Python. Its main goal is to give users a flexibl
 architecture for their monitoring system that is designed to scale to large
 environments.
 
-Shinken is backwards-compatible with the Nagios configuration standard, and
-plugins.It works on any operating system, and architecture that supports Python
-which includes Windows, GNU/Linux, and FreeBSD.
+Shinken is backwards-compatible with the Nagios configuration standard and
+plugins. It works on any operating system and architecture that supports Python,
+which includes Windows, Linux, and FreeBSD.

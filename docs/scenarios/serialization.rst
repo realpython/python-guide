@@ -12,7 +12,7 @@ What is data serialization?
 
 Data serialization is the concept of converting structured data into a format
 that allows it to be shared or stored in such a way that its original
-structure to be recovered. In some cases, the secondary intention of data
+structure can be recovered. In some cases, the secondary intention of data
 serialization is to minimize the size of the serialized data which then
 minimizes disk space or bandwidth requirements.
 

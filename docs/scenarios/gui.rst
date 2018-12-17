@@ -14,12 +14,12 @@ Camelot
 *******
 
 `Camelot <http://www.python-camelot.com>`_ provides components for building
-applications on top of Python, SQLAlchemy and Qt.  It is inspired by
+applications on top of Python, SQLAlchemy, and Qt.  It is inspired by
 the Django admin interface.
 
 The main resource for information is the website:
 http://www.python-camelot.com
-and the mailing list https://groups.google.com/forum/#!forum/project-camelot
+and the mailing list https://groups.google.com/forum/#!forum/project-camelot.
 
 
 *****
@@ -44,7 +44,7 @@ applications be ported from PyGTK to PyGObject.
 PyGObject aka (PyGi)
 ********************
 
-`PyGObject <https://wiki.gnome.org/Projects/PyGObject>`_ provides Python bindings, which gives access to the entire GNOME software platform.
+`PyGObject <https://wiki.gnome.org/Projects/PyGObject>`_ provides Python bindings which gives access to the entire GNOME software platform.
 It is fully compatible with GTK+ 3. Here is a tutorial to get started with `Python GTK+ 3 Tutorial <https://python-gtk-3-tutorial.readthedocs.io/en/latest/>`_.
 
 `API Reference <http://lazka.github.io/pgi-docs/>`_
@@ -59,8 +59,8 @@ enabled media rich applications. The aim is to allow for quick and easy
 interaction design and rapid prototyping, while making your code reusable
 and deployable.
 
-Kivy is written in Python, based on OpenGL and supports different input devices
-such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products
+Kivy is written in Python, based on OpenGL, and supports different input devices
+such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products,
 and so on.
 
 Kivy is actively being developed by a community and is free to use. It operates
@@ -111,7 +111,7 @@ application source code to be executed as a standalone desktop application.
 
 `Python Wiki for PyjamasDesktop <http://wiki.python.org/moin/PyjamasDesktop>`_.
 
-The main website; `pyjs Desktop <http://pyjs.org/>`_.
+The main website: `pyjs Desktop <http://pyjs.org/>`_.
 
 
 **
@@ -127,13 +127,13 @@ non-GUI applications.
 PySimpleGUI
 ***********
 
-`PySimpleGUI <https://pysimplegui.readthedocs.io/>`_ is a  wrapper for Tkinter and Qt (others on the way).  The amount of code required to implement custom GUIs is much shorter using PySimpleGUI than if the same GUI were written directly using tkinter or Qt.  PySimpleGUI code can be "ported" between GUI frameworks by changing import statement.
+`PySimpleGUI <https://pysimplegui.readthedocs.io/>`_ is a  wrapper for Tkinter and Qt (others on the way).  The amount of code required to implement custom GUIs is much shorter using PySimpleGUI than if the same GUI were written directly using Tkinter or Qt.  PySimpleGUI code can be "ported" between GUI frameworks by changing import statements.
 
 .. code-block:: console
 
   $ pip install pysimplegui
 
-PySimpleGUI is contained in a single PySimpleGUI.py file.  Should pip installation be impossible, pasting the PySimpleGUI.py file into a project's folder is all that's required to import and begin using.
+PySimpleGUI is contained in a single PySimpleGUI.py file.  Should pip installation be impossible, copying the PySimpleGUI.py file into a project's folder is all that's required to import and begin using.
 
 
 ****
@@ -145,7 +145,7 @@ native, cross platform GUI toolkit. Toga consists of a library of base
 components with a shared interface to simplify platform-agnostic GUI
 development.
 
-Toga is available on Mac OS, Windows, Linux (GTK), and mobile platforms such
+Toga is available on mOS, Windows, Linux (GTK), and mobile platforms such
 as Android and iOS.
 
 

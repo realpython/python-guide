@@ -135,7 +135,7 @@ Python examples:
 Externally Linking
 ******************
 
-* Prefer labels for well known subjects (ex: proper nouns) when linking:
+* Prefer labels for well known subjects (e.g. proper nouns) when linking:
 
   .. code-block:: rest
 
@@ -150,7 +150,7 @@ Externally Linking
 
       Read the `Sphinx Tutorial <http://sphinx.pocoo.org/tutorial.html>`_
 
-* Avoid using labels such as "click here", "this", etc. preferring
+* Avoid using labels such as "click here", "this", etc., preferring
   descriptive labels (SEO worthy) instead.
 
 
@@ -209,4 +209,3 @@ documents or large incomplete sections.
     .. todo::
         Learn the Ultimate Answer to the Ultimate Question
         of Life, The Universe, and Everything
-

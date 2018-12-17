@@ -17,7 +17,7 @@ pip install --user sphinx
 
 Then navigate to the directory of the Makefile and ```make build``` or ```make html```. Sphinx will then generate the HTML in a folder called `_build/html/`
 
-After navigating to this folder, you can then use Python's built in webserver to view your changes locally:
+After navigating to this folder, you can then use Python's built in web server to view your changes locally:
 
 ``` bash
 python3 -m http.server
