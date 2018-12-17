@@ -95,19 +95,19 @@ version of Python 3 as well.
 
     $ python
 
-will launch the homebrew-installed Python 3 interpreter.
+will launch the Homebrew-installed Python 3 interpreter.
 
 .. code-block:: console
 
     $ python2
 
-will launch the homebrew-installed Python 2 interpreter (if any).
+will launch the Homebrew-installed Python 2 interpreter (if any).
 
 .. code-block:: console
 
     $ python3
 
-will launch the homebrew-installed Python 3 interpreter.
+will launch the Homebrew-installed Python 3 interpreter.
 
 If the Homebrew version of Python 2 is installed then ``pip2`` will point to Python 2.
 If the Homebrew version of Python 3 is installed then ``pip`` will point to Python 3.
