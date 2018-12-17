@@ -64,7 +64,7 @@ such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, Apple's products
 and so on.
 
 Kivy is actively being developed by a community and is free to use. It operates
-on all major platforms (Linux, OSX, Windows, Android).
+on all major platforms (Linux, OS X, Windows, Android).
 
 The main resource for information is the website: http://kivy.org
 
@@ -124,12 +124,12 @@ non-GUI applications.
 
 
 ***********
-PySimpleGUI 
+PySimpleGUI
 ***********
 
 `PySimpleGUI <https://pysimplegui.readthedocs.io/>`_ is a  wrapper for Tkinter and Qt (others on the way).  The amount of code required to implement custom GUIs is much shorter using PySimpleGUI than if the same GUI were written directly using tkinter or Qt.  PySimpleGUI code can be "ported" between GUI frameworks by changing import statement.
 
-.. code-block:: console 
+.. code-block:: console
 
   $ pip install pysimplegui
 
