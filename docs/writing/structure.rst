@@ -441,8 +441,8 @@ bad practice. **Using** ``import *`` **makes code harder to read and makes
 dependencies less compartmentalized**.
 
 Using ``from modu import func`` is a way to pinpoint the function you want to
-import and put it in the global namespace. While much less harmful than ``import
-*`` because it shows explicitly what is imported in the global namespace, its
+import and put it in the local namespace. While much less harmful than ``import
+*`` because it shows explicitly what is imported in the local namespace, its
 only advantage over a simpler ``import modu`` is that it will save a little
 typing.
 
