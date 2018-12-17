@@ -12,9 +12,149 @@ What is data serialization?
 
 Data serialization is the concept of converting structured data into a format
 that allows it to be shared or stored in such a way that its original
-structure to be recovered. In some cases, the secondary intention of data
+structure can be recovered or reconstructed. In some cases, the secondary intention of data
 serialization is to minimize the size of the serialized data which then
 minimizes disk space or bandwidth requirements.
+
+********************
+Flat vs. Nested data
+********************
+
+Before beginning to serialize data, it is important to identify or decide how the
+data needs to be structured during data serialization - flat or nested.
+The differences in the two styles are shown in the below examples.
+
+Flat style:
+
+.. code-block:: python
+
+        { "Type" : "A", "field1": "value1", "field2": "value2", "field3": "value3" }
+
+
+Nested style:
+
+.. code-block:: python
+
+        {"A"
+            { "field1": "value1", "field2": "value2", "field3": "value3" } }
+
+
+For more reading on the two styles, please see the discussion on
+`Python mailing list <https://mail.python.org/pipermail/python-list/2010-October/590762.html>`__,
+`IETF mailing list <https://www.ietf.org/mail-archive/web/json/current/msg03739.html>`__ and
+`here <https://softwareengineering.stackexchange.com/questions/350623/flat-or-nested-json-for-hierarchal-data>`__.
+
+****************
+Serializing Text
+****************
+
+=======================
+Simple file (flat data)
+=======================
+
+If the data to be serialized is located in a file and contains flat data, Python offers two methods to serialize data.
+
+repr
+----
+
+The repr method in Python takes a single object parameter and returns a printable representation of the input
+
+.. code-block:: python
+
+        # input as flat text
+        a =  { "Type" : "A", "field1": "value1", "field2": "value2", "field3": "value3" }
+
+        # the same input can also be read from a file
+        a =
+
+        # returns a printable representation of the input;
+        # the output can be written to a file as well
+        print(repr(a))
+
+        # write content to files using repr
+        with open('/tmp/file.py') as f:f.write(repr(a))
+
+ast.literal_eval
+________________
+
+The literal_eval method safely parses and evaluates an expression for a Python datatype.
+Supported data types are: strings, numbers, tuples, lists, dicts, booleans and None.
+
+.. code-block:: python
+
+        with open('/tmp/file.py', 'r') as f: inp = ast.literal_eval(f.read())
+
+====================
+CSV file (flat data)
+====================
+
+The CSV module in Python implements classes to read and write tabular
+data in CSV format.
+
+Simple example for reading:
+
+.. code-block:: python
+
+        import csv
+        with open('/tmp/file.csv', newline='') as f:
+            reader = csv.reader(f)
+            for row in reader:
+                print(row)
+
+Simple example for writing:
+
+.. code-block:: python
+
+        import csv
+        with open('/temp/file.csv', 'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerows(iterable)
+
+
+The module's contents, functions and examples can be found
+`here <https://docs.python.org/3/library/csv.html>`__.
+
+==================
+YAML (nested data)
+==================
+
+There are many third party modules to parse and read/write YAML file
+structures in Python. One such example is below.
+
+.. code-block:: python
+
+        import yaml
+        with open('/tmp/file.yaml', 'r', newline='') as f:
+            try:
+                print(yaml.load(f))
+            except yaml.YAMLError as ymlexcp:
+                print(ymlexcp)
+
+Documentation on the third party module can be found
+`here <https://pyyaml.org/wiki/PyYAMLDocumentation>`__.
+
+=======================
+JSON file (nested data)
+=======================
+
+Python's JSON module can be used to read and write JSON files.
+Example code is below.
+
+Reading:
+
+.. code-block:: python
+
+        import json
+        with open('/tmp/file.json', 'r') as f:
+            data = json.dump(f)
+
+Writing:
+
+.. code-block:: python
+
+        import json
+        with open('/tmp/file.json', 'w') as f:
+            json.dump(data, f, sort_keys=True)
 
 
 ******
