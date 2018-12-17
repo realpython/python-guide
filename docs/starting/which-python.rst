@@ -88,7 +88,7 @@ written in C. It compiles Python code to intermediate bytecode which is then
 interpreted by a virtual machine. CPython provides the highest
 level of compatibility with Python packages and C extension modules.
 
-If you are writing open-source Python code and want to reach the widest possible
+If you are writing open source Python code and want to reach the widest possible
 audience, targeting CPython is best. To use packages which rely on C extensions
 to function, CPython is your only implementation option.
 
