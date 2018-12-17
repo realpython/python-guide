@@ -8,7 +8,7 @@ Installing Python 3 on Windows
 .. image:: /_static/photos/34435689480_2e6f358510_k_d.jpg
 
 First, follow the installation instructions for `Chocolatey <https://chocolatey.org/install>`_.
-It's a community system packager manager for Windows 7+. (It's very much like Homebrew on OSX.)
+It's a community system packager manager for Windows 7+. (It's very much like Homebrew on OS X.)
 
 Once done, installing Python 3 is very simple, because Chocolatey pushes Python 3 as the default.
 
