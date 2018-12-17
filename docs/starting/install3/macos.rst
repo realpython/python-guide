@@ -1,21 +1,21 @@
 :orphan: This article should not be added to a toctree for now
 
-.. _install3-osx:
+.. _install3-macos:
 
 
 ###############################
-Installing Python 3 on Mac OS X
+Installing Python 3 on macOS
 ###############################
 
 .. image:: /_static/photos/34435689480_2e6f358510_k_d.jpg
 
-The latest version of Mac OS X, High Sierra, **comes with Python 2.7 out of the box**.
+The latest version of macOS, High Sierra, **comes with Python 2.7 out of the box**.
 
 You do not need to install or configure anything else to use Python 2. These
 instructions document the installation of Python 3.
 
-The version of Python that ships with OS X is great for learning, but it's not
-good for development. The version shipped with OS X may be out of date from the
+The version of Python that ships with macOS is great for learning, but it's not
+good for development. The version shipped with macOS may be out of date from the
 `official current Python release <https://www.python.org/downloads/mac-osx/>`_,
 which is considered the stable production version.
 
@@ -41,7 +41,7 @@ package.
     If you perform a fresh install of XCode, you will also need to add the
     commandline tools by running ``xcode-select --install`` on the terminal.
 
-While OS X comes with a large number of UNIX utilities, those familiar with
+While macOS comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a package manager.
 `Homebrew <http://brew.sh>`_ fills this void.
 
@@ -62,7 +62,7 @@ line at the bottom of your :file:`~/.profile` file
 
     export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-If you have OS X 10.12 (Sierra) or older use this line instead
+If you have macOS 10.12 (Sierra) or older use this line instead
 
 .. code-block:: console
 
@@ -88,7 +88,7 @@ Working with Python 3
 *********************
 
 At this point, you have the system Python 2.7 available, potentially the
-:ref:`Homebrew version of Python 2 <install-osx>` installed, and the Homebrew
+:ref:`Homebrew version of Python 2 <install-macos>` installed, and the Homebrew
 version of Python 3 as well.
 
 .. code-block:: console

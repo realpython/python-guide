@@ -147,7 +147,7 @@ inverse approach to that taken by IronPython (see above), to which it
 is more complementary than competing with.
 
 In conjunction with Mono, pythonnet enables native Python
-installations on non-Windows operating systems, such as OS X and
+installations on non-Windows operating systems, such as macOS and
 Linux, to operate within the .NET framework.  It can be run in
 addition to IronPython without conflict.
 

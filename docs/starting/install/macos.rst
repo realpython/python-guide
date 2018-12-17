@@ -1,16 +1,16 @@
-.. _install-osx:
+.. _install-macos:
 
 
 ###############################
-Installing Python 2 on Mac OS X
+Installing Python 2 on macOS
 ###############################
 
 .. image:: /_static/photos/34435688560_4cc2a7bcbb_k_d.jpg
 
 .. note::
-    Check out our :ref:`guide for installing Python 3 on OS X<install3-osx>`.
+    Check out our :ref:`guide for installing Python 3 on macOS<install3-macos>`.
 
-The latest version of Mac OS X, High Sierra, **comes with Python 2.7 out of the box**.
+The latest version of macOS, High Sierra, **comes with Python 2.7 out of the box**.
 
 You do not need to install or configure anything else to use Python. Having said
 that, I would strongly recommend that you install the tools and libraries
@@ -18,8 +18,8 @@ described in the next section before you start building Python applications for
 real-world use. In particular, you should always install Setuptools, as it makes
 it much easier for you to install and manage other third-party Python libraries.
 
-The version of Python that ships with OS X is great for learning, but it's not
-good for development. The version shipped with OS X may be out of date from the
+The version of Python that ships with macOS is great for learning, but it's not
+good for development. The version shipped with macOS may be out of date from the
 `official current Python release <https://www.python.org/downloads/mac-osx/>`_,
 which is considered the stable production version.
 
@@ -48,7 +48,7 @@ package.
     commandline tools by running ``xcode-select --install`` on the terminal.
 
 
-While OS X comes with a large number of UNIX utilities, those familiar with
+While macOS comes with a large number of UNIX utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
 `Homebrew <http://brew.sh>`_ fills this void.
 

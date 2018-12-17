@@ -211,7 +211,7 @@ NINJA-IDE
 
 `NINJA-IDE <http://www.ninja-ide.org/>`_ (from the recursive acronym: "Ninja-IDE
 Is Not Just Another IDE") is a cross-platform IDE, specially designed to build
-Python applications, and runs on Linux/X11, Mac OS X and Windows desktop
+Python applications, and runs on Linux/X11, macOS and Windows desktop
 operating systems. Installers for these platforms can be downloaded from the
 website.
 

@@ -39,7 +39,7 @@ environment is needed to install packages.
     Could not find an activated virtualenv (required).
 
 You can also do this configuration by editing your :file:`pip.conf` or
-:file:`pip.ini` file. :file:`pip.conf` is used by Unix and Mac OS X operating
+:file:`pip.ini` file. :file:`pip.conf` is used by Unix and macOS operating
 systems and it can be found at:
 
 .. code-block:: console
