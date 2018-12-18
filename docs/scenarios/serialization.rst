@@ -21,7 +21,7 @@ Flat vs. Nested data
 ********************
 
 Before beginning to serialize data, it is important to identify or decide how the
-data needs to be structured during data serialization - flat or nested.
+data should to be structured during data serialization - flat or nested.
 The differences in the two styles are shown in the below examples.
 
 Flat style:
@@ -42,7 +42,7 @@ Nested style:
 For more reading on the two styles, please see the discussion on
 `Python mailing list <https://mail.python.org/pipermail/python-list/2010-October/590762.html>`__,
 `IETF mailing list <https://www.ietf.org/mail-archive/web/json/current/msg03739.html>`__ and
-`here <https://softwareengineering.stackexchange.com/questions/350623/flat-or-nested-json-for-hierarchal-data>`__.
+`in stackexchange <https://softwareengineering.stackexchange.com/questions/350623/flat-or-nested-json-for-hierarchal-data>`__.
 
 ****************
 Serializing Text
@@ -57,7 +57,7 @@ If the data to be serialized is located in a file and contains flat data, Python
 repr
 ----
 
-The repr method in Python takes a single object parameter and returns a printable representation of the input
+The repr method in Python takes a single object parameter and returns a printable representation of the input:
 
 .. code-block:: python
 
@@ -79,7 +79,7 @@ ast.literal_eval
 ----------------
 
 The literal_eval method safely parses and evaluates an expression for a Python datatype.
-Supported data types are: strings, numbers, tuples, lists, dicts, booleans and None.
+Supported data types are: strings, numbers, tuples, lists, dicts, booleans, and None.
 
 .. code-block:: python
 
@@ -114,8 +114,8 @@ Simple example for writing:
             writer.writerows(iterable)
 
 
-The module's contents, functions and examples can be found
-`here <https://docs.python.org/3/library/csv.html>`__.
+The module's contents, functions, and examples can be found
+`in the Python documentation <https://docs.python.org/3/library/csv.html>`__.
 
 ==================
 YAML (nested data)
@@ -178,7 +178,7 @@ Example:
         root = tree.getroot()
 
 More documentation on using the `xml.dom` and `xml.sax` packages can be found
-`here <https://docs.python.org/3/library/xml.html>`__.
+`in the Python XML library documentation <https://docs.python.org/3/library/xml.html>`__.
 
 
 *******
@@ -186,21 +186,21 @@ Binary
 *******
 
 =======================
-Numpy Array (flat data)
+NumPy Array (flat data)
 =======================
 
-Python's Numpy array can be used to serialize and deserialize data to and from byte representation.
+Python's NumPy array can be used to serialize and deserialize data to and from byte representation.
 
 Example:
 
 .. code-block:: python
 
-    import numpy as np
+    import NumPy as np
 
-    # Converting Numpy array to byte format
+    # Converting NumPy array to byte format
     byte_output = np.array([ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]).tobytes()
 
-    # Converting byte format back to Numpy array
+    # Converting byte format back to NumPy array
     array_format = np.frombuffer(byte_output)
 
 
