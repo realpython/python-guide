@@ -48,7 +48,7 @@ GPGME bindings
 
 The `GPGME Python bindings <https://dev.gnupg.org/source/gpgme/browse/master/lang/python/>`_ provide pythonic access to `GPG Made Easy <https://dev.gnupg.org/source/gpgme/browse/master/>`_, a C API for the entire GNU Privacy Guard suite of projects, including GPG, libgcrypt and gpgsm (the S/MIME engine). It supports Python 2.6, 2.7, 3.4 and above. Depends on the SWIG C interface for Python as well as the GnuPG software and libraries.
 
-A more comprehensive `GPGME Python Bindings HOWTO <https://dev.gnupg.org/source/gpgme/browse/master/lang/python/docs/GPGMEpythonHOWTOen.org>`_ is available with the source and a HTML version is available `here <http://files.au.adversary.org/crypto/GPGMEpythonHOWTOen.html>`_.  Python 3 sample scripts from the examples in the HOWTO are also provided with the source and are accessible `here <https://dev.gnupg.org/source/gpgme/browse/master/lang/python/examples/howto/>`_.
+A more comprehensive `GPGME Python Bindings HOWTO <https://dev.gnupg.org/source/gpgme/browse/master/lang/python/docs/GPGMEpythonHOWTOen.org>`_ is available with the source, and a HTML version is available `on http://files.au.adversary.org <http://files.au.adversary.org/crypto/GPGMEpythonHOWTOen.html>`_.  Python 3 sample scripts from the examples in the HOWTO are also provided with the source and are accessible `on gnupg.org <https://dev.gnupg.org/source/gpgme/browse/master/lang/python/examples/howto/>`_.
 
 Available under the same terms as the rest of the GnuPG Project: GPLv2 and LGPLv2.1, both with the "or any later version" clause.
 
