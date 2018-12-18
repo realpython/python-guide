@@ -252,7 +252,7 @@ pyenv
 of the Python interpreter to be installed at the same time.  This solves the
 problem of having different projects requiring different versions of Python.
 For example, it becomes very easy to install Python 2.7 for compatibility in
-one project, whilst still using Python 3.4 as the default interpreter.
+one project, while still using Python 3.4 as the default interpreter.
 pyenv isn't just limited to the CPython versions - it will also install PyPy,
 anaconda, miniconda, stackless, jython, and ironpython interpreters.
 
