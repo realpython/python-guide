@@ -219,7 +219,7 @@ Test your installation
    $ virtualenv --version
 
 Basic Usage
-~~~~~~~~~~~
+-----------
 
 1. Create a virtual environment for a project:
 
@@ -285,7 +285,7 @@ littered across your system, and its possible you'll forget their names or
 where they were placed.
 
 Other Notes
-~~~~~~~~~~~
+-----------
 
 Running ``virtualenv`` with the option ``--no-site-packages`` will not
 include the packages that are installed globally. This can be useful
