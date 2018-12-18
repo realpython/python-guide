@@ -296,7 +296,7 @@ littered across your system, and its possible you'll forget their names or
 where they were placed.
 
 .. note::
-    Python has included venv module from 3.3. For more details: `venv <https://docs.python.org/3/library/venv.html>`_.
+    Python has included venv module from version 3.3. For more details: `venv <https://docs.python.org/3/library/venv.html>`_.
 
 Other Notes
 ~~~~~~~~~~~
