@@ -27,18 +27,18 @@ Doing it Right
 Let's install a real version of Python.
 
 Before installing Python, you'll need to install GCC. GCC can be obtained
-by downloading `XCode <http://developer.apple.com/xcode/>`_, the smaller
+by downloading `Xcode <http://developer.apple.com/xcode/>`_, the smaller
 `Command Line Tools <https://developer.apple.com/downloads/>`_ (must have an
 Apple account) or the even smaller `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
 package.
 
 .. note::
-    If you already have XCode installed, do not install OSX-GCC-Installer.
+    If you already have Xcode installed, do not install OSX-GCC-Installer.
     In combination, the software can cause issues that are difficult to
     diagnose.
 
 .. note::
-    If you perform a fresh install of XCode, you will also need to add the
+    If you perform a fresh install of Xcode, you will also need to add the
     commandline tools by running ``xcode-select --install`` on the terminal.
 
 While OS X comes with a large number of UNIX utilities, those familiar with
@@ -46,7 +46,7 @@ Linux systems will notice one key component missing: a package manager.
 `Homebrew <http://brew.sh>`_ fills this void.
 
 To `install Homebrew <http://brew.sh/#install>`_, open :file:`Terminal` or
-your favorite OSX terminal emulator and run
+your favorite OS X terminal emulator and run
 
 .. code-block:: console
 
@@ -95,19 +95,19 @@ version of Python 3 as well.
 
     $ python
 
-will launch the homebrew-installed Python 3 interpreter.
+will launch the Homebrew-installed Python 3 interpreter.
 
 .. code-block:: console
 
     $ python2
 
-will launch the homebrew-installed Python 2 interpreter (if any).
+will launch the Homebrew-installed Python 2 interpreter (if any).
 
 .. code-block:: console
 
     $ python3
 
-will launch the homebrew-installed Python 3 interpreter.
+will launch the Homebrew-installed Python 3 interpreter.
 
 If the Homebrew version of Python 2 is installed then ``pip2`` will point to Python 2.
 If the Homebrew version of Python 3 is installed then ``pip`` will point to Python 3.

@@ -39,12 +39,12 @@ minimal but unofficial
 package.
 
 .. note::
-    If you already have XCode installed, do not install OSX-GCC-Installer.
+    If you already have Xcode installed, do not install OSX-GCC-Installer.
     In combination, the software can cause issues that are difficult to
     diagnose.
 
 .. note::
-    If you perform a fresh install of XCode, you will also need to add the
+    If you perform a fresh install of Xcode, you will also need to add the
     commandline tools by running ``xcode-select --install`` on the terminal.
 
 
@@ -53,7 +53,7 @@ Linux systems will notice one key component missing: a decent package manager.
 `Homebrew <http://brew.sh>`_ fills this void.
 
 To `install Homebrew <http://brew.sh/#install>`_, open :file:`Terminal` or
-your favorite OSX terminal emulator and run
+your favorite OS X terminal emulator and run
 
 .. code-block:: console
 
