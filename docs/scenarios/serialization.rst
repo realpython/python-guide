@@ -74,8 +74,9 @@ The repr method in Python takes a single object parameter and returns a printabl
         # write content to files using repr
         with open('/tmp/file.py') as f:f.write(repr(a))
 
+
 ast.literal_eval
-________________
+----------------
 
 The literal_eval method safely parses and evaluates an expression for a Python datatype.
 Supported data types are: strings, numbers, tuples, lists, dicts, booleans and None.
@@ -95,6 +96,7 @@ Simple example for reading:
 
 .. code-block:: python
 
+        # Reading CSV content from a file
         import csv
         with open('/tmp/file.csv', newline='') as f:
             reader = csv.reader(f)
@@ -105,6 +107,7 @@ Simple example for writing:
 
 .. code-block:: python
 
+        # Writing CSV content to a file
         import csv
         with open('/temp/file.csv', 'w', newline='') as f:
             writer = csv.writer(f)
@@ -123,6 +126,7 @@ structures in Python. One such example is below.
 
 .. code-block:: python
 
+        # Reading YAML content from a file using the load method
         import yaml
         with open('/tmp/file.yaml', 'r', newline='') as f:
             try:
@@ -144,22 +148,66 @@ Reading:
 
 .. code-block:: python
 
+        # Reading JSON content from a file
         import json
         with open('/tmp/file.json', 'r') as f:
-            data = json.dump(f)
+            data = json.load(f)
 
 Writing:
 
 .. code-block:: python
 
+        # writing JSON content to a file using the dump method
         import json
         with open('/tmp/file.json', 'w') as f:
             json.dump(data, f, sort_keys=True)
 
+=================
+XML (nested data)
+=================
 
-******
-Pickle
-******
+XML parsing in Python is possible using the `xml` package.
+
+Example:
+
+.. code-block:: python
+
+        # reading XML content from a file
+        import xml.etree.ElementTree as ET
+        tree = ET.parse('country_data.xml')
+        root = tree.getroot()
+
+More documentation on using the `xml.dom` and `xml.sax` packages can be found
+`here <https://docs.python.org/3/library/xml.html>`__.
+
+
+*******
+Binary
+*******
+
+=======================
+Numpy Array (flat data)
+=======================
+
+Python's Numpy array can be used to serialize and deserialize data to and from byte representation.
+
+Example:
+
+.. code-block:: python
+
+    import numpy as np
+
+    # Converting Numpy array to byte format
+    byte_output = np.array([ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]).tobytes()
+
+    # Converting byte format back to Numpy array
+    array_format = np.frombuffer(byte_output)
+
+
+
+====================
+Pickle (nested data)
+====================
 
 The native data serialization module for Python is called `Pickle
 <https://docs.python.org/2/library/pickle.html>`_.
