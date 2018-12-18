@@ -32,13 +32,13 @@ tedious, so add the directories for your default Python version to the :envvar:`
 Assuming that your Python installation is in :file:`C:\\Python27\\`, add this to your
 :envvar:`PATH`:
 
-.. code-block:: console
+.. code-block:: doscon
 
     C:\Python27\;C:\Python27\Scripts\
 
 You can do this easily by running the following in ``powershell``:
 
-.. code-block:: console
+.. code-block:: powershell
 
     [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
 
@@ -68,9 +68,9 @@ pip by default.
 
 To see if pip is installed, open a command prompt and run
 
-.. code-block:: console
+.. code-block:: doscon
 
-    $ command -v pip
+    command -v pip
 
 To install pip, `follow the official pip installation guide <https://pip.pypa.io/en/latest/installing/>`_ - this will automatically install the latest version of setuptools.
 

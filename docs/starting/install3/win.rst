@@ -12,7 +12,7 @@ It's a community system packager manager for Windows 7+. (It's very much like Ho
 
 Once done, installing Python 3 is very simple, because Chocolatey pushes Python 3 as the default.
 
-.. code-block:: console
+.. code-block:: doscon
 
     choco install python
 
@@ -29,7 +29,9 @@ which let you download, install and uninstall any compliant Python software
 product with a single command. It also enables you to add this network installation
 capability to your own Python software with very little work.
 
-All supported versions of Python 3 include pip, so just make sure it's up to date::
+All supported versions of Python 3 include pip, so just make sure it's up to date:
+
+.. code-block:: doscon
 
     python -m pip install -U pip
 
