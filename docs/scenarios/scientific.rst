@@ -160,7 +160,7 @@ add-ons are available for academics and researchers.
 Canopy
 ------
 
-`Canopy <https://www.enthought.com/products/canopy/>`_ is another scientific
+`Canopy <https://www.enthought.com/product/canopy/>`_ is another scientific
 Python distribution, produced by `Enthought <https://www.enthought.com/>`_.
 A limited 'Canopy Express' variant is available for free, but Enthought
 charges for the full distribution. Free licenses are available for academics.

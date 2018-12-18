@@ -43,7 +43,7 @@ untangle also supports loading XML from a string or a URL.
 xmltodict
 *********
 
-`xmltodict <http://github.com/martinblech/xmltodict>`_ is another simple
+`xmltodict <https://github.com/martinblech/xmltodict>`_ is another simple
 library that aims at making XML feel like working with JSON.
 
 An XML file like this:

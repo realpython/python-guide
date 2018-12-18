@@ -271,7 +271,7 @@ Idioms
 
 A programming idiom, put simply, is a *way* to write code. The notion of
 programming idioms is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_
-and at `Stack Overflow <http://stackoverflow.com/questions/302459/what-is-a-programming-idiom>`_.
+and at `Stack Overflow <https://stackoverflow.com/questions/302459/what-is-a-programming-idiom>`_.
 
 Idiomatic Python code is often referred to as being *Pythonic*.
 
@@ -403,7 +403,7 @@ hand, the hash of the item will tell Python where in the set to look for
 a matching item. As a result, the search can be done quickly, even if the
 set is large. Searching in dictionaries works the same way. For
 more information see this
-`StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_
+`StackOverflow <https://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_
 page. For detailed information on the amount of time various common operations
 take on each of these data structures, see
 `this page <https://wiki.python.org/moin/TimeComplexity?>`_.
@@ -496,7 +496,7 @@ Then run it on a file or series of files to get a report of any violations.
     optparse.py:472:29: E221 multiple spaces before operator
     optparse.py:544:21: W601 .has_key() is deprecated, use 'in'
 
-The program `autopep8 <https://pypi.python.org/pypi/autopep8/>`_ can be used to
+The program `autopep8 <https://pypi.org/project/autopep8/>`_ can be used to
 automatically reformat code in the PEP 8 style. Install the program with:
 
 .. code-block:: console

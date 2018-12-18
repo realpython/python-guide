@@ -46,7 +46,7 @@ POSIX-style usage instructions.
 Plac
 ****
 
-`Plac <https://pypi.python.org/pypi/plac>`_ is a simple wrapper
+`Plac <https://pypi.org/project/plac>`_ is a simple wrapper
 over the Python standard library `argparse <http://docs.python.org/2/library/argparse.html>`_,
 which hides most of its complexity by using a declarative interface: the
 argument parser is inferred rather than written down imperatively. This

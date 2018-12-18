@@ -41,14 +41,14 @@ thepythonguru.com is a tutorial focused on beginner programmers. It covers many 
 in depth. It also teaches you some advanced constructs of Python like lambda expressions and regular expressions.
 And last it finishes off with the tutorial "How to access MySQL db using Python"
 
-   `Python for Beginners <http://thepythonguru.com/>`_
+   `Python for Beginners <https://thepythonguru.com/>`_
 
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Learnpython.org is an easy non-intimidating way to get introduced to Python.
 The website takes the same approach used on the popular
-`Try Ruby <http://tryruby.org/>`_ website. It has an interactive Python
+`Try Ruby <https://ruby.github.io/TryRuby>`_ website. It has an interactive Python
 interpreter built into the site that allows you to go through the lessons
 without having to install Python locally.
 
@@ -65,9 +65,9 @@ resource for learning all aspects of the language.
 Learn Python Step by Step
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Techbeamers.com provides step-by-step tutorials to teach Python. Each tutorial is supplemented with logically added coding snippets and equips with a follow-up quiz on the subject learned. There is a section for `Python interview questions <http://www.techbeamers.com/python-interview-questions-programmers>`_ to help job seekers. You can also read essential `Python tips <http://www.techbeamers.com/essential-python-tips-tricks-programmers>`_ and learn `best coding practices <http://www.techbeamers.com/python-code-optimization-tips-tricks>`_ for writing quality code. Here, you'll get the right platform to learn Python quickly.
+Techbeamers.com provides step-by-step tutorials to teach Python. Each tutorial is supplemented with logically added coding snippets and equips with a follow-up quiz on the subject learned. There is a section for `Python interview questions <https://www.techbeamers.com/python-interview-questions-programmers>`_ to help job seekers. You can also read essential `Python tips <https://www.techbeamers.com/essential-python-tips-tricks-programmers>`_ and learn `best coding practices <https://www.techbeamers.com/python-code-optimization-tips-tricks>`_ for writing quality code. Here, you'll get the right platform to learn Python quickly.
 
-`Learn Python Basic to Advanced <http://www.techbeamers.com/python-tutorial-step-by-step>`_
+`Learn Python Basic to Advanced <https://www.techbeamers.com/python-tutorial-step-by-step>`_
 
 
 Online Python Tutor
@@ -108,7 +108,7 @@ Learn Python the Hard Way
 This is an excellent beginner programmer's guide to Python. It covers "hello
 world" from the console to the web.
 
-    `Learn Python the Hard Way <http://learnpythonthehardway.org/book/>`_
+    `Learn Python the Hard Way <https://learnpythonthehardway.org/book/>`_
 
 
 Crash into Python
@@ -117,7 +117,7 @@ Crash into Python
 Also known as *Python for Programmers with 3 Hours*, this guide gives
 experienced developers from other languages a crash course on Python.
 
-    `Crash into Python <http://stephensugden.com/crash_into_python/>`_
+    `Crash into Python <https://stephensugden.com/crash_into_python/>`_
 
 
 Dive Into Python 3
@@ -161,11 +161,11 @@ For those used to languages and figuring out puzzles on their own, this can be
 a fun, attractive option. For those new to Python and programming, having an
 additional resource or reference will be helpful.
 
-    `Python Koans <http://bitbucket.org/gregmalcolm/python_koans>`_
+    `Python Koans <https://bitbucket.org/gregmalcolm/python_koans>`_
 
 More information about test driven development can be found at these resources:
 
-    `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_
+    `Test Driven Development <https://en.wikipedia.org/wiki/Test-driven_development>`_
 
 
 A Byte of Python
@@ -178,13 +178,15 @@ no previous programming experience.
     `A Byte of Python for Python 3.x <https://python.swaroopch.com/>`_
 
 
-Learn to Program in Python with Codeacademy
+Computer Science Path on Codecademy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Codeacademy course for the absolute Python beginner. This free and interactive course provides and teaches the basics (and beyond) of Python programming while testing the user's knowledge in between progress.
+A Codeacademy course for the absolute Python beginner. This free and interactive 
+course provides and teaches the basics (and beyond) of Python programming while 
+testing the user's knowledge in between progress.
 This course also features a built-in interpreter for receiving instant feedback on your learning.
 
-    `Learn to Program in Python with Codeacademy <http://www.codecademy.com/en/tracks/python>`_
+    `Computer Science Path on Codecademy <https://www.codecademy.com/learn/paths/computer-science>`_
 
 
 Code the blocks
@@ -220,7 +222,7 @@ pages, it is a very brief overview of some of the most common adapations
 programmers need to make to become efficient intermediate level Python
 programmers.
 
-    `Effective Python <http://www.effectivepython.com/>`_
+    `Effective Python <https://effectivepython.com/>`_
 
 
 ********
@@ -251,7 +253,7 @@ and eventually an application, including a chapter on using zc.buildout.  Later
 chapters detail best practices such as writing documentation, test-driven
 development, version control, optimization, and profiling.
 
-    `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
+    `Expert Python Programming <https://www.packtpub.com/application-development/expert-python-programming>`_
 
 
 A Guide to Python's Magic Methods
@@ -278,7 +280,7 @@ A Primer on Scientific Programming with Python, written by Hans Petter
 Langtangen, mainly covers Python's usage in the scientific field. In the book,
 examples are chosen from mathematics and the natural sciences.
 
-    `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-30292-3>`_
+    `A Primer on Scientific Programming with Python <https://www.springer.com/us/book/9783642302930#otherversion=9783642302923>`_
 
 Numerical Methods in Engineering with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -286,7 +288,7 @@ Numerical Methods in Engineering with Python
 Numerical Methods in Engineering with Python, written by Jaan Kiusalaas,
 puts the emphasis on numerical methods and how to implement them in Python.
 
-    `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
+    `Numerical Methods in Engineering with Python <https://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
 
 
 ********************
@@ -405,6 +407,6 @@ some commonly used piece of code, followed by an explanation of why the idiom
 is important. It also contains two code samples for each idiom: the "Harmful"
 way to write it and the "Idiomatic" way.
 
-	`For Python 2.7.3+ <http://www.amazon.com/Writing-Idiomatic-Python-2-7-3-Knupp/dp/1482372177/>`_
+	`For Python 2.7.3+ <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5KG0F8/>`_
 
-	`For Python 3.3+  <http://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_
+	`For Python 3.3+  <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_

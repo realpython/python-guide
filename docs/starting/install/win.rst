@@ -13,7 +13,7 @@ Installing Python 2 on Windows
 First, download the `latest version <https://www.python.org/ftp/python/2.7.15/python-2.7.15.msi>`_
 of Python 2.7 from the official website. If you want to be sure you are installing a fully
 up-to-date version, click the Downloads > Windows link from the home page of the
-`Python.org web site <http://python.org>`_ .
+`Python.org web site <https://python.org>`_ .
 
 The Windows version is provided as an MSI package. To install it manually, just
 double-click the file. The MSI package format allows Windows administrators to
@@ -57,7 +57,7 @@ makes it much easier for you to use other third-party Python libraries.
 Setuptools + Pip
 ****************
 
-The two most crucial third-party Python packages are `setuptools <https://pypi.python.org/pypi/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_.
+The two most crucial third-party Python packages are `setuptools <https://pypi.org/project/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_.
 
 Once installed, you can download, install and uninstall any compliant Python software
 product with a single command. It also enables you to add this network installation
@@ -92,5 +92,5 @@ To start using this and see more information: :ref:`Virtual Environments <virtua
 
 --------------------------------
 
-This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
+This page is a remixed version of `another guide <https://www.stuartellis.name/articles/python-development-windows/>`_,
 which is available under the same license.

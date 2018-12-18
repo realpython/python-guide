@@ -29,7 +29,7 @@ pooling are 100% automatic, powered by urllib3, which is embedded within
 Requests.
 
 - `Documentation <http://docs.python-requests.org/en/latest/index.html>`_
-- `PyPi <http://pypi.python.org/pypi/requests>`_
+- `PyPi <http://pypi.org/project/requests>`_
 - `GitHub <https://github.com/kennethreitz/requests>`_
 
 
