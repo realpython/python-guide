@@ -25,7 +25,7 @@ Make sure you've got Python & pip
 Before you go any further, make sure you have Python and that it's available
 from your command line. You can check this by simply running:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ python --version
 
@@ -50,7 +50,7 @@ install the latest 3.x version from `python.org`_ or refer to the
 Additionally, you'll need to make sure you have `pip`_ available. You can
 check this by running:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ pip --version
 
@@ -116,7 +116,7 @@ Pipenv manages dependencies on a per-project basis. To install packages,
 change into your project's directory (or just an empty directory for this
 tutorial) and run:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ cd myproject
     $ pipenv install requests
@@ -175,7 +175,7 @@ use it:
 
 Then you can run this script using ``pipenv run``:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ pipenv run python main.py
 
