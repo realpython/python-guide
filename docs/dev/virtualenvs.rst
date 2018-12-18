@@ -264,9 +264,9 @@ the prompt (e.g. ``(venv)Your-Computer:your_project UserName$)`` to let you know
 that it's active. From now on, any package that you install using pip will be
 placed in the ``venv`` folder, isolated from the global Python installation.
 
-For windows, same command which is mentioned in step 1 can be used for creation of virtual environment. But, to activate, we use the following command.
+For Windows, same command which is mentioned in step 1 can be used for creation of virtual environment. But, to activate, we use the following command.
 
-Assuming that, you are in project directory:
+Assuming that you are in project directory:
 
 .. code-block:: powershell
 
@@ -296,7 +296,7 @@ littered across your system, and its possible you'll forget their names or
 where they were placed.
 
 .. note::
-    Python has included virtual environment module from 3.3. It works in the simliar way as mentioned above. For details: `venv <https://docs.python.org/3/library/venv.html>`_.
+    Python has included venv module from 3.3. For more details: `venv <https://docs.python.org/3/library/venv.html>`_.
 
 Other Notes
 ~~~~~~~~~~~
