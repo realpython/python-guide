@@ -97,11 +97,12 @@ different scenarios.
 Shipping Great Python Code
 --------------------------
 
-This part of the guide focuses on deploying your Python code.
+This part of the guide focuses on sharing and deploying your Python code.
 
 .. toctree::
    :maxdepth: 2
 
+   shipping/publishing
    shipping/packaging
    shipping/freezing
 
@@ -137,8 +138,3 @@ Contribution notes and legal information (for those interested).
    notes/contribute
    notes/license
    notes/styleguide
-
-
-
-
-
