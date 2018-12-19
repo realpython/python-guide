@@ -41,7 +41,7 @@ For installing the full stack, or individual packages, you can refer to the inst
 scikit-learn
 ************
 
-Scikit is a free and open-source machine learning library for Python. It offers off-the-shelf functions to implement many algorithms like linear regression, classifiers, SVMs, k-means, Neural Networks etc. It also has a few sample datasets which can be directly used for training and testing.
+Scikit is a free and open source machine learning library for Python. It offers off-the-shelf functions to implement many algorithms like linear regression, classifiers, SVMs, k-means, Neural Networks etc. It also has a few sample datasets which can be directly used for training and testing.
 
 Because of its speed, robustness and easiness to use, it's one of the most widely-used libraries for many Machine Learning applications.
 

@@ -25,7 +25,7 @@ reading. Each one of these projects is a paragon of Python coding.
   best intentions in mind.
 
 - `Diamond <https://github.com/python-diamond/Diamond>`_
-  Diamond is a python daemon that collects metrics
+  Diamond is a Python daemon that collects metrics
   and publishes them to Graphite or other backends.
   It is capable of collecting CPU, memory, network, I/O, load, and disk metrics.
   Additionally, it features an API for implementing custom collectors
@@ -36,7 +36,7 @@ reading. Each one of these projects is a paragon of Python coding.
   applications and has become one of the most advanced WSGI utility modules.
   It includes a powerful debugger, full-featured request and response objects,
   HTTP utilities to handle entity tags, cache control headers, HTTP dates,
-  cookie handling, file uploads, a powerful URL routing system and a bunch
+  cookie handling, file uploads, a powerful URL routing system, and a bunch
   of community-contributed addon modules.
 
 - `Requests <https://github.com/kennethreitz/requests>`_
@@ -49,4 +49,4 @@ reading. Each one of these projects is a paragon of Python coding.
 
 .. todo:: Include code examples of exemplary code from each of the projects listed. Explain why it is excellent code. Use complex examples.
 
-.. todo:: Explain techniques to rapidly identify data structures, algorithms and determine what the code is doing.
+.. todo:: Explain techniques to rapidly identify data structures and algorithms and determine what the code is doing.

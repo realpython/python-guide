@@ -1,6 +1,6 @@
 .. _pip-virtualenv:
 
-Further Configuration of Pip and Virtualenv
+Further Configuration of pip and Virtualenv
 ===========================================
 
 .. image:: /_static/photos/34018732105_f0e6758859_k_d.jpg
