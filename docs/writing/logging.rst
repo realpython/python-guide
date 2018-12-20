@@ -58,7 +58,7 @@ hierarchy of loggers using dot notation, so using ``__name__`` ensures
 no name collisions.
 
 Here is an example of best practice from the `requests source`_ -- place
-this in your ``__init__.py``
+this in your ``__init__.py``:
 
 .. code-block:: python
 
@@ -83,7 +83,7 @@ There are at least three ways to configure a logger:
 - Using an INI-formatted file:
     - **Pro**: possible to update configuration while running using the
       function :func:`logging.config.listen` to listen on a socket.
-    - **Con**: less control (*e.g.* custom subclassed filters or loggers)
+    - **Con**: less control (e.g. custom subclassed filters or loggers)
       than possible when configuring a logger in code.
 - Using a dictionary or a JSON-formatted file:
     - **Pro**: in addition to updating while running, it is possible to load

@@ -212,7 +212,7 @@ Install virtualenv via pip:
 
   $ pip install virtualenv
 
-Test your installation
+Test your installation:
 
 .. code-block:: console
 
@@ -226,23 +226,26 @@ Basic Usage
 .. code-block:: console
 
    $ cd my_project_folder
-   $ virtualenv my_project
+   $ virtualenv venv
 
-``virtualenv my_project`` will create a folder in the current directory which will
+``virtualenv venv`` will create a folder in the current directory which will
 contain the Python executable files, and a copy of the ``pip`` library which you
 can use to install other packages. The name of the virtual environment (in this
-case, it was ``my_project``) can be anything; omitting the name will place the files
+case, it was ``venv``) can be anything; omitting the name will place the files
 in the current directory instead.
 
+.. note::
+    'venv' is the general convention used globally. As it is readily available in ignore files (eg: .gitignore')
+
 This creates a copy of Python in whichever directory you ran the command in,
-placing it in a folder named :file:`my_project`.
+placing it in a folder named :file:`venv`.
 
 You can also use the Python interpreter of your choice (like
 ``python2.7``).
 
 .. code-block:: console
 
-   $ virtualenv -p /usr/bin/python2.7 my_project
+   $ virtualenv -p /usr/bin/python2.7 venv
 
 or change the interpreter globally with an env variable in ``~/.bashrc``:
 
@@ -254,12 +257,20 @@ or change the interpreter globally with an env variable in ``~/.bashrc``:
 
 .. code-block:: console
 
-   $ source my_project/bin/activate
+   $ source venv/bin/activate
 
 The name of the current virtual environment will now appear on the left of
-the prompt (e.g. ``(my_project)Your-Computer:your_project UserName$)`` to let you know
+the prompt (e.g. ``(venv)Your-Computer:your_project UserName$)`` to let you know
 that it's active. From now on, any package that you install using pip will be
-placed in the ``my_project`` folder, isolated from the global Python installation.
+placed in the ``venv`` folder, isolated from the global Python installation.
+
+For Windows, same command which is mentioned in step 1 can be used for creation of virtual environment. But, to activate, we use the following command.
+
+Assuming that you are in project directory:
+
+.. code-block:: powershell
+
+   PS C:\Users\suryav> \venv\Scripts\activate
 
 Install packages as usual, for example:
 
@@ -281,8 +292,11 @@ To delete a virtual environment, just delete its folder. (In this case,
 it would be ``rm -rf my_project``.)
 
 After a while, though, you might end up with a lot of virtual environments
-littered across your system, and its possible you'll forget their names or
+littered across your system, and it's possible you'll forget their names or
 where they were placed.
+
+.. note::
+    Python has included venv module from version 3.3. For more details: `venv <https://docs.python.org/3/library/venv.html>`_.
 
 Other Notes
 ~~~~~~~~~~~
@@ -293,7 +307,7 @@ for keeping the package list clean in case it needs to be accessed later.
 [This is the default behavior for ``virtualenv`` 1.7 and later.]
 
 In order to keep your environment consistent, it's a good idea to "freeze"
-the current state of the environment packages. To do this, run
+the current state of the environment packages. To do this, run:
 
 .. code-block:: console
 
@@ -302,7 +316,7 @@ the current state of the environment packages. To do this, run
 This will create a :file:`requirements.txt` file, which contains a simple
 list of all the packages in the current environment, and their respective
 versions. You can see the list of installed packages without the requirements
-format using "pip list". Later it will be easier for a different developer
+format using ``pip list``. Later it will be easier for a different developer
 (or you, if you need to re-create the environment) to install the same packages
 using the same versions:
 
@@ -343,7 +357,7 @@ To install (make sure **virtualenv** is already installed):
 
   $ pip install virtualenvwrapper-win
 
-In Windows, the default path for WORKON_HOME is %USERPROFILE%\Envs
+In Windows, the default path for WORKON_HOME is %USERPROFILE%\\Envs
 
 Basic Usage
 ~~~~~~~~~~~
@@ -363,7 +377,7 @@ This creates the :file:`my_project` folder inside :file:`~/Envs`.
    $ workon my_project
 
 Alternatively, you can make a project, which creates the virtual environment,
-and also a project directory inside ``$WORKON_HOME``, which is ``cd`` -ed into
+and also a project directory inside ``$WORKON_HOME``, which is ``cd``-ed into
 when you ``workon myproject``.
 
 .. code-block:: console

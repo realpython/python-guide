@@ -81,7 +81,7 @@ The Basics
 **********
 
 
-Unittest
+unittest
 --------
 
 :mod:`unittest` is the batteries-included test module in the Python standard
@@ -170,7 +170,7 @@ functions:
     def test_answer():
         assert func(3) == 5
 
-and then running the `py.test` command
+and then running the `py.test` command:
 
 .. code-block:: console
 
@@ -236,14 +236,14 @@ tox
 ---
 
 tox is a tool for automating test environment management and testing against
-multiple interpreter configurations
+multiple interpreter configurations.
 
 .. code-block:: console
 
     $ pip install tox
 
 tox allows you to configure complicated multi-parameter test matrices via a
-simple ini-style configuration file.
+simple INI-style configuration file.
 
     `tox <https://tox.readthedocs.io/en/latest/>`_
 
@@ -254,7 +254,7 @@ Unittest2
 unittest2 is a backport of Python 2.7's unittest module which has an improved
 API and better assertions over the one available in previous versions of Python.
 
-If you're using Python 2.6 or below, you can install it with pip
+If you're using Python 2.6 or below, you can install it with pip:
 
 .. code-block:: console
 
@@ -326,4 +326,3 @@ always returns the same result (but only for the duration of the test).
 Mock has many other ways you can configure it and control its behavior.
 
     `mock <http://www.voidspace.org.uk/python/mock/>`_
-

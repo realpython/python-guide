@@ -211,7 +211,7 @@ I highly recommend the latter. Requiring a developer to run
 codebase also requires them to have an isolated environment setup for
 each instance of the codebase.
 
-To give the individual tests import context, create a tests/context.py
+To give the individual tests import context, create a ``tests/context.py``
 file:
 
 ::
@@ -247,8 +247,8 @@ Makefile
 
 
 If you look at most of my projects or any Pocoo project, you'll notice a
-Makefile laying around. Why? These projects aren't written in C... In
-short, make is a incredibly useful tool for defining generic tasks for
+Makefile lying around. Why? These projects aren't written in C... In
+short, make is an incredibly useful tool for defining generic tasks for
 your project.
 
 **Sample Makefile:**
@@ -334,7 +334,7 @@ include:
 - Multiple and messy circular dependencies: if your classes
   Table and Chair in :file:`furn.py` need to import Carpenter from
   :file:`workers.py` to answer a question such as ``table.isdoneby()``,
-  and if conversely the class Carpenter needs to import Table and Chair,
+  and if conversely the class Carpenter needs to import Table and Chair
   to answer the question ``carpenter.whatdo()``, then you
   have a circular dependency. In this case you will have to resort to
   fragile hacks such as using import statements inside
@@ -402,7 +402,7 @@ If you'd like you could name your module :file:`my_spam.py`, but even our
 friend the underscore should not be seen often in module names. However, using other
 characters (spaces or hyphens) in module names will prevent importing
 (- is the subtract operator), so try to keep module names short so there is
-no need to separate words. And, most of all, don't namespace with underscores, use submodules instead.
+no need to separate words. And, most of all, don't namespace with underscores; use submodules instead.
 
 .. code-block:: python
 
@@ -473,7 +473,7 @@ typing.
 
 As mentioned in the :ref:`code_style` section, readability is one of the main
 features of Python. Readability means to avoid useless boilerplate text and
-clutter, therefore some efforts are spent trying to achieve a certain level of
+clutter; therefore some efforts are spent trying to achieve a certain level of
 brevity. But terseness and obscurity are the limits where brevity should stop.
 Being able to tell immediately where a class or function comes from, as in the
 ``modu.func`` idiom, greatly improves code readability and understandability in
@@ -494,7 +494,7 @@ used to gather all package-wide definitions.
 
 A file :file:`modu.py` in the directory :file:`pack/` is imported with the
 statement ``import pack.modu``. This statement will look for an
-:file:`__init__.py` file in :file:`pack`, execute all of its top-level
+:file:`__init__.py` file in :file:`pack` and execute all of its top-level
 statements. Then it will look for a file named :file:`pack/modu.py` and
 execute all of its top-level statements. After these operations, any variable,
 function, or class defined in :file:`modu.py` is available in the pack.modu
@@ -549,9 +549,9 @@ programming, comes from the "state" part of the equation.
 
 In some architectures, typically web applications, multiple instances of Python
 processes are spawned to respond to external requests that can happen at the
-same time. In this case, holding some state into instantiated objects, which
+same time. In this case, holding some state in instantiated objects, which
 means keeping some static information about the world, is prone to concurrency
-problems or race-conditions. Sometimes, between the initialization of the state
+problems or race conditions. Sometimes, between the initialization of the state
 of an object (usually done with the ``__init__()`` method) and the actual use
 of the object state through one of its methods, the world may have changed, and
 the retained state may be outdated. For example, a request may load an item in
@@ -580,7 +580,7 @@ logic (called pure functions) allow the following benefits:
 - Pure functions are much easier to change or replace if they need to
   be refactored or optimized.
 
-- Pure functions are easier to test with unit-tests: There is less
+- Pure functions are easier to test with unit tests: There is less
   need for complex context setup and data cleaning afterwards.
 
 - Pure functions are easier to manipulate, decorate, and pass around.
@@ -622,7 +622,7 @@ clearer and thus preferred.
     # bar() is decorated
 
 This mechanism is useful for separating concerns and avoiding
-external un-related logic 'polluting' the core logic of the function
+external unrelated logic 'polluting' the core logic of the function
 or method. A good example of a piece of functionality that is better handled
 with decoration is `memoization <https://en.wikipedia.org/wiki/Memoization#Overview>`__ or caching: you want to store the results of an
 expensive function in a table and use them directly instead of recomputing
@@ -874,7 +874,7 @@ like above or in cases where you are adding to an existing string, using
 .. note::
     You can also use the :ref:`% <python:string-formatting>` formatting operator
     to concatenate a pre-determined number of strings besides :py:meth:`str.join`
-    and ``+``. However, :pep:`3101`, discourages the usage of the ``%`` operator
+    and ``+``. However, :pep:`3101` discourages the usage of the ``%`` operator
     in favor of the :py:meth:`str.format` method.
 
 .. code-block:: python
