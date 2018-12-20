@@ -270,7 +270,7 @@ Assuming that you are in project directory:
 
 .. code-block:: powershell
 
-   PS C:\Users\suryav> \venv\bin\activate
+   PS C:\Users\suryav> \venv\Scripts\activate
 
 Install packages as usual, for example:
 
