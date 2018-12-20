@@ -212,7 +212,7 @@ Install virtualenv via pip:
 
   $ pip install virtualenv
 
-Test your installation
+Test your installation:
 
 .. code-block:: console
 
@@ -292,7 +292,7 @@ To delete a virtual environment, just delete its folder. (In this case,
 it would be ``rm -rf my_project``.)
 
 After a while, though, you might end up with a lot of virtual environments
-littered across your system, and its possible you'll forget their names or
+littered across your system, and it's possible you'll forget their names or
 where they were placed.
 
 .. note::
@@ -307,7 +307,7 @@ for keeping the package list clean in case it needs to be accessed later.
 [This is the default behavior for ``virtualenv`` 1.7 and later.]
 
 In order to keep your environment consistent, it's a good idea to "freeze"
-the current state of the environment packages. To do this, run
+the current state of the environment packages. To do this, run:
 
 .. code-block:: console
 
@@ -316,7 +316,7 @@ the current state of the environment packages. To do this, run
 This will create a :file:`requirements.txt` file, which contains a simple
 list of all the packages in the current environment, and their respective
 versions. You can see the list of installed packages without the requirements
-format using "pip list". Later it will be easier for a different developer
+format using ``pip list``. Later it will be easier for a different developer
 (or you, if you need to re-create the environment) to install the same packages
 using the same versions:
 
@@ -357,7 +357,7 @@ To install (make sure **virtualenv** is already installed):
 
   $ pip install virtualenvwrapper-win
 
-In Windows, the default path for WORKON_HOME is %USERPROFILE%\Envs
+In Windows, the default path for WORKON_HOME is %USERPROFILE%\\Envs
 
 Basic Usage
 ~~~~~~~~~~~
@@ -377,7 +377,7 @@ This creates the :file:`my_project` folder inside :file:`~/Envs`.
    $ workon my_project
 
 Alternatively, you can make a project, which creates the virtual environment,
-and also a project directory inside ``$WORKON_HOME``, which is ``cd`` -ed into
+and also a project directory inside ``$WORKON_HOME``, which is ``cd``-ed into
 when you ``workon myproject``.
 
 .. code-block:: console

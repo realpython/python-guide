@@ -25,7 +25,7 @@ information. This file is the main entry point for readers of the code.
 
 An :file:`INSTALL` file is less necessary with Python.  The installation
 instructions are often reduced to one command, such as ``pip install
-module`` or ``python setup.py install`` and added to the :file:`README`
+module`` or ``python setup.py install``, and added to the :file:`README`
 file.
 
 A :file:`LICENSE` file should *always* be present and specify the license
@@ -75,7 +75,7 @@ your source repository so that rebuilding your documentation will
 happen automatically.
 
 When run, Sphinx_ will import your code and using Python's introspection
-features it will extract all function, method and class signatures. It will
+features it will extract all function, method, and class signatures. It will
 also extract the accompanying docstrings, and compile it all into well
 structured and easily readable documentation for your project.
 
@@ -215,7 +215,7 @@ more information about a function, what it does, any exceptions it may raise,
 what it returns, or relevant details about the parameters.
 
 For more detailed documentation of code a popular style is the one used for the
-Numpy project, often called `Numpy style`_ docstrings. While it can take up more
+NumPy project, often called `NumPy style`_ docstrings. While it can take up more
 lines than the previous example, it allows the developer to include a lot
 more information about a method, function, or class. ::
 
@@ -245,8 +245,8 @@ docstrings, making it easy to incorporate NumPy style docstrings into your
 project.
 
 At the end of the day, it doesn't really matter what style is used for writing
-docstrings, their purpose is to serve as documentation for anyone who may need
-to read or make changes to your code. As long as it is correct, understandable
+docstrings; their purpose is to serve as documentation for anyone who may need
+to read or make changes to your code. As long as it is correct, understandable,
 and gets the relevant points across then it has done the job it was designed to
 do.
 
