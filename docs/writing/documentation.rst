@@ -182,7 +182,7 @@ comment block is a programmer's note. The docstring describes the
 
 Unlike block comments, docstrings are built into the Python language itself.
 This means you can use all of Python's powerful introspection capabilities to
-access docstrings at runtime, compared with comments which are optimised out.
+access docstrings at runtime, compared with comments which are optimized out.
 Docstrings are accessible from both the `__doc__` dunder attribute for almost
 every Python object, as well as with the built in `help()` function.
 
