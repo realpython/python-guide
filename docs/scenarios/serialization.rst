@@ -10,9 +10,9 @@ Data Serialization
 What is data serialization?
 ***************************
 
-Data serialization is the concept of converting structured data into a format
+Data serialization is the process of converting structured data into a format
 that allows it to be shared or stored in such a way that its original
-structure can be recovered or reconstructed. In some cases, the secondary intention of data
+structure should be recovered or reconstructed. In some cases, the secondary intention of data
 serialization is to minimize the size of the serialized data which then
 minimizes disk space or bandwidth requirements.
 
@@ -21,7 +21,7 @@ Flat vs. Nested data
 ********************
 
 Before beginning to serialize data, it is important to identify or decide how the
-data should to be structured during data serialization - flat or nested.
+data should be structured during data serialization - flat or nested.
 The differences in the two styles are shown in the below examples.
 
 Flat style:
@@ -65,7 +65,7 @@ The repr method in Python takes a single object parameter and returns a printabl
         a =  { "Type" : "A", "field1": "value1", "field2": "value2", "field3": "value3" }
 
         # the same input can also be read from a file
-        a =
+        a = open('/tmp/file.py', 'r')
 
         # returns a printable representation of the input;
         # the output can be written to a file as well
@@ -135,7 +135,7 @@ structures in Python. One such example is below.
                 print(ymlexcp)
 
 Documentation on the third party module can be found
-`here <https://pyyaml.org/wiki/PyYAMLDocumentation>`__.
+`in the PyYAML Documentation <https://pyyaml.org/wiki/PyYAMLDocumentation>`__.
 
 =======================
 JSON file (nested data)
@@ -157,7 +157,7 @@ Writing:
 
 .. code-block:: python
 
-        # writing JSON content to a file using the dump method
+        # Writing JSON content to a file using the dump method
         import json
         with open('/tmp/file.json', 'w') as f:
             json.dump(data, f, sort_keys=True)
