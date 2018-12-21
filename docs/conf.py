@@ -279,5 +279,5 @@ epub_exclude_files = [
 todo_include_todos = True
 
 intersphinx_mapping = {
-    'python': ('http://docs.python.org/', None),
+    'python': ('https://docs.python.org/3', None),
 }

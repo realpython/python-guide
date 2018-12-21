@@ -219,7 +219,7 @@ Test your installation:
    $ virtualenv --version
 
 Basic Usage
-~~~~~~~~~~~
+-----------
 
 1. Create a virtual environment for a project:
 
@@ -299,7 +299,7 @@ where they were placed.
     Python has included venv module from version 3.3. For more details: `venv <https://docs.python.org/3/library/venv.html>`_.
 
 Other Notes
-~~~~~~~~~~~
+-----------
 
 Running ``virtualenv`` with the option ``--no-site-packages`` will not
 include the packages that are installed globally. This can be useful

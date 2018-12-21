@@ -136,7 +136,7 @@ applications today.
 Masonite
 --------
 
-`Masonite <https://docs.masoniteproject.com>`_ is a modern and developer centric, "batteries included", web framework. 
+`Masonite <https://docs.masoniteproject.com>`_ is a modern and developer centric, "batteries included", web framework.
 
 The Masonite framework follows the MVC (Model-View-Controller) architecture pattern and is heavily inspired by frameworks such as Rails and Laravel, so if you are coming to Python from a Ruby or PHP background then you will feel right at home!
 
@@ -170,7 +170,7 @@ WSGI Servers
 ************
 
 Stand-alone WSGI servers typically use less resources than traditional web
-servers and provide top performance [3]_.
+servers and provide top performance [1]_.
 
 .. _gunicorn-ref:
 
@@ -531,6 +531,4 @@ Mako is well respected within the Python web community.
 
 .. rubric:: References
 
-.. [1] `The mod_python project is now officially dead <http://blog.dscpl.com.au/2010/06/modpython-project-is-now-officially.html>`_
-.. [2] `mod_wsgi vs mod_python <http://modpython.org/pipermail/mod_python/2007-July/024080.html>`_
-.. [3] `Benchmark of Python WSGI Servers <http://nichol.as/benchmark-of-python-web-servers>`_
+.. [1] `Benchmark of Python WSGI Servers <http://nichol.as/benchmark-of-python-web-servers>`_
