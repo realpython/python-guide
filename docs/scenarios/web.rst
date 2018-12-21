@@ -41,7 +41,7 @@ URL Routing
   be invoked
 
 Request and Response Objects
-  Encapsulate the information received from or sent to a user's browser
+  Encapsulates the information received from or sent to a user's browser
 
 Template Engine
   Allows for separating Python code implementing an application's logic from
@@ -105,14 +105,14 @@ It is a reliable, high-performance Python web framework for building large-scale
 app backends and microservices. Falcon encourages the REST architectural style of
 mapping URIs to resources, trying to do as little as possible while remaining highly effective.
 
-Falcon highlights four main focuses: speed, reliability, flexibility and debuggability.
+Falcon highlights four main focuses: speed, reliability, flexibility, and debuggability.
 It implements HTTP through "responders" such as ``on_get()``, ``on_put()``, etc.
 These responders receive intuitive request and response objects.
 
 Tornado
 --------
 
-`Tornado <http://www.tornadoweb.org/>`_ is an asyncronous web framework
+`Tornado <http://www.tornadoweb.org/>`_ is an asynchronous web framework
 for Python that has its own event loop. This allows it to natively support
 WebSockets, for example. Well-written Tornado applications are known to
 have excellent performance characteristics.
@@ -126,7 +126,7 @@ Pyramid
 focus on modularity. It comes with a small number of libraries ("batteries")
 built-in, and encourages users to extend its base functionality. A set of
 provided cookiecutter templates helps making new project decisions for users.
-It poweres one of the most important parts of python infrastucture
+It powers one of the most important parts of python infrastucture
 `PyPI <https://pypi.org/>`_.
 
 Pyramid does not have a large user base, unlike Django and Flask. It's a
@@ -140,7 +140,7 @@ Masonite
 
 The Masonite framework follows the MVC (Model-View-Controller) architecture pattern and is heavily inspired by frameworks such as Rails and Laravel, so if you are coming to Python from a Ruby or PHP background then you will feel right at home!
 
-Masonite comes with a lot of functionality out of the box including a powerful IOC container with auto resolving dependency injection, craft command line tools and the Orator active record style ORM.
+Masonite comes with a lot of functionality out of the box including a powerful IOC container with auto resolving dependency injection, craft command line tools, and the Orator active record style ORM.
 
 Masonite is perfect for beginners or experienced developers alike and works hard to be fast and easy from install through to deployment. Try it once and you’ll fall in love.
 
@@ -155,7 +155,7 @@ Nginx
 -----
 
 `Nginx <http://nginx.org/>`_ (pronounced "engine-x") is a web server and
-reverse-proxy for HTTP, SMTP and other protocols. It is known for its
+reverse-proxy for HTTP, SMTP, and other protocols. It is known for its
 high performance, relative simplicity, and compatibility with many
 application servers (like WSGI servers). It also includes handy features
 like load-balancing, basic authentication, streaming, and others. Designed
@@ -177,9 +177,9 @@ servers and provide top performance [1]_.
 Gunicorn
 --------
 
-`Gunicorn <https://gunicorn.org/>`_ (Green Unicorn) is a pure-python WSGI
+`Gunicorn <https://gunicorn.org/>`_ (Green Unicorn) is a pure-Python WSGI
 server used to serve Python applications. Unlike other Python web servers,
-it has a thoughtful user-interface, and is extremely easy to use and
+it has a thoughtful user interface, and is extremely easy to use and
 configure.
 
 Gunicorn has sane and reasonable defaults for configurations. However, some
@@ -192,7 +192,7 @@ Gunicorn is the recommended choice for new Python web applications today.
 Waitress
 --------
 
-`Waitress <https://waitress.readthedocs.io>`_ is a pure-python WSGI server
+`Waitress <https://waitress.readthedocs.io>`_ is a pure-Python WSGI server
 that claims "very acceptable performance". Its documentation is not very
 detailed, but it does offer some nice functionality that Gunicorn doesn't have
 (e.g. HTTP request buffering).
@@ -207,13 +207,13 @@ uWSGI
 `uWSGI <https://uwsgi-docs.readthedocs.io>`_ is a full stack for building
 hosting services.  In addition to process management, process monitoring,
 and other functionality, uWSGI acts as an application server for various
-programming languages and protocols - including Python and WSGI. uWSGI can
+programming languages and protocols -- including Python and WSGI. uWSGI can
 either be run as a stand-alone web router, or be run behind a full web
 server (such as Nginx or Apache).  In the latter case, a web server can
 configure uWSGI and an application's operation over the
 `uwsgi protocol <https://uwsgi-docs.readthedocs.io/en/latest/Protocol.html>`_.
 uWSGI's web server support allows for dynamically configuring
-Python, passing environment variables and further tuning.  For full details,
+Python, passing environment variables, and further tuning.  For full details,
 see `uWSGI magic
 variables <https://uwsgi-docs.readthedocs.io/en/latest/Vars.html>`_.
 
@@ -275,7 +275,7 @@ Templating
 **********
 
 Most WSGI applications are responding to HTTP requests to serve content in HTML
-or other markup languages. Instead of generating directly textual content from
+or other markup languages. Instead of directly generating textual content from
 Python, the concept of separation of concerns advises us to use templates. A
 template engine manages a suite of template files, with a system of hierarchy
 and inclusion to avoid unnecessary repetition, and is in charge of rendering
@@ -313,10 +313,10 @@ Jinja2
 `Jinja2 <http://jinja.pocoo.org/>`_ is a very well-regarded template engine.
 
 It uses a text-based template language and can thus be used to generate any
-type markup, not just HTML. It allows customization of filters, tags, tests
+type of markup, not just HTML. It allows customization of filters, tags, tests,
 and globals. It features many improvements over Django's templating system.
 
-Here some important html tags in Jinja2:
+Here some important HTML tags in Jinja2:
 
 .. code-block:: html
 
@@ -336,7 +336,7 @@ Here some important html tags in Jinja2:
     {% endfor %}
 
 
-The next listings is an example of a web site in combination with the Tornado
+The next listings are an example of a web site in combination with the Tornado
 web server. Tornado is not very complicated to use.
 
 .. code-block:: python
@@ -434,12 +434,12 @@ engine implementation of the `Template Attribute Language (TAL) <https://en.wiki
 `TAL Expression Syntax (TALES) <https://chameleon.readthedocs.io/en/latest/reference.html#expressions-tales>`_,
 and `Macro Expansion TAL (Metal) <https://chameleon.readthedocs.io/en/latest/reference.html#macros-metal>`_ syntaxes.
 
-Chameleon is available for Python 2.5 and up (including 3.x and pypy), and
+Chameleon is available for Python 2.5 and up (including 3.x and PyPy), and
 is commonly used by the `Pyramid Framework <https://trypyramid.com/>`_.
 
 Page Templates add within your document structure special element attributes
 and text markup. Using a set of simple language constructs, you control the
-document flow, element repetition, text replacement and translation. Because
+document flow, element repetition, text replacement, and translation. Because
 of the attribute-based syntax, unrendered page templates are valid HTML and can
 be viewed in a browser and even edited in WYSIWYG editors. This can make
 round-trip collaboration with designers and prototyping with static files in a
@@ -493,7 +493,7 @@ Mako
 ----
 
 `Mako <http://www.makotemplates.org/>`_ is a template language that compiles to Python
-for maximum performance. Its syntax and api is borrowed from the best parts of other
+for maximum performance. Its syntax and API are borrowed from the best parts of other
 templating languages like Django and Jinja2 templates. It is the default template
 language included with the `Pylons and Pyramid <http://www.pylonsproject.org/>`_ web
 frameworks.

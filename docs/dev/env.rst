@@ -188,7 +188,7 @@ Spyder
 
 `Spyder <https://github.com/spyder-ide/spyder>`_ is an IDE specifically geared
 toward working with scientific Python libraries (namely
-`Scipy <http://www.scipy.org/>`_). It includes integration with pyflakes_,
+`SciPy <http://www.scipy.org/>`_). It includes integration with pyflakes_,
 `pylint <http://www.logilab.org/857>`_ and
 `rope <https://github.com/python-rope/rope>`_.
 

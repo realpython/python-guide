@@ -12,8 +12,8 @@ Twisted
 
 `Twisted <http://twistedmatrix.com/trac/>`_ is an event-driven networking
 engine. It can be used to build applications around many different networking
-protocols, including http servers and clients, applications using SMTP, POP3,
-IMAP or SSH protocols, instant messaging
+protocols, including HTTP servers and clients, applications using SMTP, POP3,
+IMAP, or SSH protocols, instant messaging,
 and `much more <http://twistedmatrix.com/trac/wiki/Documentation>`_.
 
 
@@ -30,8 +30,8 @@ message queuing without a message broker. The basic patterns for this are:
   remote procedure call and task distribution pattern.
 - publish-subscribe: connects a set of publishers to a set of subscribers.
   This is a data distribution pattern.
-- push-pull (or pipeline): connects nodes in a fan-out / fan-in pattern that
-  can have multiple steps, and loops. This is a parallel task distribution
+- push-pull (or pipeline): connects nodes in a fan-out/fan-in pattern that
+  can have multiple steps and loops. This is a parallel task distribution
   and collection pattern.
 
 For a quick start, read the `ZeroMQ guide <http://zguide.zeromq.org/page:all>`_.

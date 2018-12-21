@@ -87,7 +87,7 @@ Python News is the news section in the official Python web site
 Import Python Weekly
 ********************
 
-Weekly Python Newsletter containing Python Articles, Projects, Videos, Tweets
+Weekly Python Newsletter containing Python Articles, Projects, Videos, and Tweets
 delivered in your inbox.  Keep Your Python Programming Skills Updated.
 
     `Import Python Weekly Newsletter <http://www.importpython.com/newsletter/>`_
@@ -97,6 +97,6 @@ delivered in your inbox.  Keep Your Python Programming Skills Updated.
 Awesome Python Newsletter
 *************************
 
-A weekly overview of the most popular Python news, articles and packages.
+A weekly overview of the most popular Python news, articles, and packages.
 
     `Awesome Python Newsletter <https://python.libhunt.com/newsletter>`_

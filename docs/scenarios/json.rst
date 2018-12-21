@@ -52,7 +52,7 @@ You can also convert the following to JSON:
 simplejson
 **********
 
-The JSON library was added to Python in version 2.6.
+The json library was added to Python in version 2.6.
 If you're using an earlier version of Python, the
 `simplejson <https://simplejson.readthedocs.io/en/latest/>`_ library is
 available via PyPI.
@@ -68,5 +68,5 @@ importing simplejson under a different name:
 
     import simplejson as json
 
-After importing simplejson as json, the above examples will all work as if you
+After importing simplejson as `json`, the above examples will all work as if you
 were using the standard json library.

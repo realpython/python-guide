@@ -6,16 +6,16 @@ Machine Learning
 
 .. image:: /_static/photos/34018729885_002ced9b54_k_d.jpg
 
-Python has a vast number of libraries for data analysis, statistics and Machine Learning itself, making it a language of choice for many data scientists.
+Python has a vast number of libraries for data analysis, statistics, and Machine Learning itself, making it a language of choice for many data scientists.
 
-Some widely used packages for Machine Learning and other Data Science applications are enlisted below.
+Some widely used packages for Machine Learning and other data science applications are listed below.
 
 
 ***********
-Scipy Stack
+SciPy Stack
 ***********
 
-The Scipy stack consists of a bunch of core helper packages used in data science, for statistical analysis and visualising data. Because of its huge number of functionalities and ease of use, the Stack is considered a must-have for most data science applications.
+The SciPy stack consists of a bunch of core helper packages used in data science for statistical analysis and visualising data. Because of its huge number of functionalities and ease of use, the Stack is considered a must-have for most data science applications.
 
 The Stack consists of the following packages (link to documentation given):
 
@@ -41,9 +41,9 @@ For installing the full stack, or individual packages, you can refer to the inst
 scikit-learn
 ************
 
-Scikit is a free and open source machine learning library for Python. It offers off-the-shelf functions to implement many algorithms like linear regression, classifiers, SVMs, k-means, Neural Networks etc. It also has a few sample datasets which can be directly used for training and testing.
+Scikit is a free and open source machine learning library for Python. It offers off-the-shelf functions to implement many algorithms like linear regression, classifiers, SVMs, k-means, Neural Networks, etc. It also has a few sample datasets which can be directly used for training and testing.
 
-Because of its speed, robustness and easiness to use, it's one of the most widely-used libraries for many Machine Learning applications.
+Because of its speed, robustness, and ease of, it's one of the most widely-used libraries for many Machine Learning applications.
 
 Installation
 ~~~~~~~~~~~~
@@ -60,16 +60,16 @@ Through conda:
 
 	conda install scikit-learn
 
-scikit-learn also comes in shipped with Anaconda (mentioned above). For more installation instructions, refer to `this link <http://scikit-learn.org/stable/install.html>`_.
+scikit-learn also comes shipped with Anaconda (mentioned above). For more installation instructions, refer to `this link <http://scikit-learn.org/stable/install.html>`_.
 
 Example
 ~~~~~~~
 
 For this example, we train a simple classifier on the `Iris dataset <http://en.wikipedia.org/wiki/Iris_flower_data_set>`_, which comes bundled in with scikit-learn.
 
-The dataset takes four features of flowers: sepal length, sepal width, petal length and petal width, and classifies them into three flower species (labels): setosa, versicolor or virginica. The labels have been represented as numbers in the dataset: 0 (setosa), 1 (versicolor) and 2 (virginica).
+The dataset takes four features of flowers: sepal length, sepal width, petal length, and petal width, and classifies them into three flower species (labels): setosa, versicolor, or virginica. The labels have been represented as numbers in the dataset: 0 (setosa), 1 (versicolor), and 2 (virginica).
 
-We shuffle the Iris dataset, and divide it into separate training and testing sets: keeping the last 10 data points for testing and rest for training. We then train the classifier on the training set, and predict on the testing set.
+We shuffle the Iris dataset and divide it into separate training and testing sets, keeping the last 10 data points for testing and rest for training. We then train the classifier on the training set and predict on the testing set.
 
 .. code-block:: python
 
@@ -120,6 +120,6 @@ Since we're splitting randomly and the classifier trains on every iteration, the
 	[0 1 1 1 0 2 0 2 2 2]
 	100.0
 
-The first line contains the labels (i.e flower species) of the testing data as predicted by our classifier, and the second line contains the actual flower species as given in the dataset. We thus get an accuracy of 100% this time.
+The first line contains the labels (i.e. flower species) of the testing data as predicted by our classifier, and the second line contains the actual flower species as given in the dataset. We thus get an accuracy of 100% this time.
 
 More on scikit-learn can be read in the `documentation <http://scikit-learn.org/stable/user_guide.html>`_.

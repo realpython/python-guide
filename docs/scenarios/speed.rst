@@ -200,8 +200,8 @@ These lines both need a remark:
 The `pyximport` module allows you to import :file:`*.pyx` files (e.g.,
 :file:`primesCy.pyx`) with the Cython-compiled version of the `primes`
 function. The `pyximport.install()` command allows the Python interpreter to
-start the Cython compiler directly to generate C-code, which is automatically
-compiled to a :file:`*.so` C-library. Cython is then able to import this
+start the Cython compiler directly to generate C code, which is automatically
+compiled to a :file:`*.so` C library. Cython is then able to import this
 library for you in your Python code, easily and efficiently. With the
 `time.time()` function you are able to compare the time between these 2
 different calls to find 500 prime numbers. On a standard notebook (dual core
@@ -214,7 +214,7 @@ AMD E-450 1.6 GHz), the measured values are:
     Python time: 0.0566 seconds
 
 
-And here the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_ machine:
+And here is the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_ machine:
 
 .. code-block:: console
 
@@ -253,7 +253,7 @@ available.
 
 The ProcessPoolExecutor works in the same way, except instead of using multiple
 threads for its workers, it will use multiple processes. This makes it possible
-to side-step the GIL, however because of the way things are passed to worker
+to side-step the GIL; however, because of the way things are passed to worker
 processes, only picklable objects can be executed and returned.
 
 Because of the way the GIL works, a good rule of thumb is to use a
@@ -264,7 +264,7 @@ executor when the task is computationally expensive.
 There are two main ways of executing things in parallel using the two
 Executors. One way is with the `map(func, iterables)` method. This works
 almost exactly like the builtin `map()` function, except it will execute
-everything in parallel. :
+everything in parallel.
 
 .. code-block:: python
 
@@ -304,7 +304,7 @@ result()
     the scheduled callable returns by default.
 exception()
     Return the exception raised by the call. If no exception was raised then
-    this returns `None`. Note that this will block just like `result()`.
+    this returns None. Note that this will block just like `result()`.
 add_done_callback(fn)
     Attach a callback function that will be executed (as `fn(future)`) when the
     scheduled callable returns.
@@ -357,14 +357,14 @@ futures provided have completed.
 For more information, on using the `concurrent.futures`_ module, consult the
 official documentation.
 
-Threading
+threading
 ---------
 
 The standard library comes with a `threading`_ module that allows a user to
 work with multiple threads manually.
 
 Running a function in another thread is as simple as passing a callable and
-it's arguments to `Thread`'s constructor and then calling `start()`:
+its arguments to `Thread`'s constructor and then calling `start()`:
 
 .. code-block:: python
 
@@ -399,7 +399,7 @@ there might be situations where two or more threads are trying to write to the
 same resource at the same time or where the output is dependent on the sequence
 or timing of certain events. This is called a `data race`_ or race condition.
 When this happens, the output will be garbled or you may encounter problems
-which are difficult to debug. A good example is this `stackoverflow post`_.
+which are difficult to debug. A good example is this `Stack Overflow post`_.
 
 The way this can be avoided is by using a `Lock`_ that each thread needs to
 acquire before writing to a shared resource. Locks can be acquired and released

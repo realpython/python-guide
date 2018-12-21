@@ -36,11 +36,11 @@ ABI Interaction
 ctypes
 ******
 
-`ctypes <https://docs.python.org/3/library/ctypes.html>`_ is the de facto
+`ctypes <https://docs.python.org/3/library/ctypes.html>`_ is the de facto standard
 library for interfacing with C/C++ from CPython, and it provides not only
 full access to the native C interface of most major operating systems (e.g.,
 kernel32 on Windows, or libc on \*nix), but also provides support for loading
-and interfacing with dynamic libraries, such as DLLs or shared objects at
+and interfacing with dynamic libraries, such as DLLs or shared objects, at
 runtime. It does bring along with it a whole host of types for interacting
 with system APIs, and allows you to rather easily define your own complex
 types, such as structs and unions, and allows you to modify things such as
@@ -82,7 +82,7 @@ large number of scripting languages), is a tool for generating bindings for
 interpreted languages from C/C++ header files. It is extremely simple to use:
 the consumer simply needs to define an interface file (detailed in the
 tutorial and documentations), include the requisite C/C++ headers, and run
-the build tool against them. While it does have some limits, (it currently
+the build tool against them. While it does have some limits (it currently
 seems to have issues with a small subset of newer C++ features, and getting
 template-heavy code to work can be a bit verbose), it provides a great deal
 of power and exposes lots of features to Python with little effort.
@@ -137,5 +137,5 @@ Boost.Python
 `Boost.Python <http://www.boost.org/doc/libs/1_59_0/libs/python/doc/>`_
 requires a bit more manual work to expose C++ object functionality, but
 it is capable of providing all the same features SWIG does and then some,
-to include providing wrappers to access PyObjects in C++, extracting SWIG-
+to include providing wrappers to access PyObjects in C++, extracting SWIG
 wrapper objects, and even embedding bits of Python into your C++ code.
