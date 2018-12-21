@@ -140,11 +140,10 @@ out.
 Anaconda
 --------
 
-`Continuum Analytics <http://continuum.io/>`_ offers the `Anaconda
-Python Distribution <https://store.continuum.io/cshop/anaconda>`_ which
+The `Anaconda Python Distribution <https://www.anaconda.com/>`_
 includes all the common scientific Python packages as well as many packages
-related to data analytics and big data. Anaconda itself is free, and
-Continuum sells a number of proprietary add-ons. Free licenses for the
+related to data analytics and big data. Anaconda itself is free, and a number
+of proprietary add-ons are available for a fee. Free licenses for the
 add-ons are available for academics and researchers.
 
 Canopy
