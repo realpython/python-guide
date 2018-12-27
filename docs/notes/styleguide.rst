@@ -57,23 +57,23 @@ Page title:
 
 .. code-block:: rest
 
-    ===================
+    *******************
     Time is an Illusion
-    ===================
+    *******************
 
 Section headings:
 
 .. code-block:: rest
 
     Lunchtime Doubly So
-    -------------------
+    ===================
 
 Sub section headings:
 
 .. code-block:: rest
 
     Very Deep
-    ~~~~~~~~~
+    ---------
 
 
 *****
