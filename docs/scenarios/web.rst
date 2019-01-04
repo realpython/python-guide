@@ -159,8 +159,8 @@ parsing), data valdiation, and automatic API documentation with **OpenAPI 3**
 (including **JSON Schema**).
 
 It includes tools and utilities for security and authentication (including OAuth2 with JWT
-tokens), a dependency injection system, 2 alternative web user interfaces for automatic,
-interactive, API documentation, and other features.
+tokens), a dependency injection system, automatic generation of interactive API
+documentation, and other features.
 
 
 ***********
