@@ -225,7 +225,7 @@ minimal example of each bug (distinguished exception type and location):
         xs=[1.7976321109618856e+308, 6.102390043022755e+303]
     )
 
-Hypothesis is practical as well as very powerful, and will often find bugs
+Hypothesis is practical as well as very powerful and will often find bugs
 that escaped all other forms of testing.  It integrates well with py.test,
 and has a strong focus on usability in both simple and advanced scenarios.
 
