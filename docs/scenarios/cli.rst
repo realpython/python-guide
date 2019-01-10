@@ -25,16 +25,6 @@ Some popular command-line applications include:
 
 
 *****
-Clint
-*****
-
-`clint <https://pypi.python.org/pypi/clint/>`_ is a Python module which is
-filled with very useful tools for developing command-line applications.
-It supports features such as: CLI colors and indents, simple and powerful
-column printer, iterator based progress bars, and implicit argument handling.
-
-
-*****
 Click
 *****
 
