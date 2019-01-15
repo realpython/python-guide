@@ -809,16 +809,12 @@ and can be used as a key for a dictionary.
 
 One peculiarity of Python that can surprise beginners is that
 strings are immutable. This means that when constructing a string from
-its parts, it is much more efficient to accumulate the parts in a list,
-which is mutable, and then glue ('join') the parts together when the
-full string is needed. One thing to notice, however, is that list
-comprehensions are better and faster than constructing a list in a loop
-with calls to ``append()``.
-
-One other option is using the map function, which can 'map' a function
-('str') to an iterable ('range(20)'). This results in a map object,
-which you can then ('join') together just like the other examples.
-The map function can be even faster than a list comprehension in some cases.
+its parts, appending each part to the string is inefficient because
+the entirety of the string is copied on each append.
+Instead, it is much more efficient to accumulate the parts in a list,
+which is mutable, and then glue (``join``) the parts together when the
+full string is needed. List comprehensions are usually the fastest and
+most idiomatic way to do this.
 
 **Bad**
 
@@ -830,7 +826,7 @@ The map function can be even faster than a list comprehension in some cases.
         nums += str(n)   # slow and inefficient
     print nums
 
-**Good**
+**Better**
 
 .. code-block:: python
 
@@ -840,20 +836,12 @@ The map function can be even faster than a list comprehension in some cases.
         nums.append(str(n))
     print "".join(nums)  # much more efficient
 
-**Better**
-
-.. code-block:: python
-
-    # create a concatenated string from 0 to 19 (e.g. "012..1819")
-    nums = [str(n) for n in range(20)]
-    print "".join(nums)
-
 **Best**
 
 .. code-block:: python
 
     # create a concatenated string from 0 to 19 (e.g. "012..1819")
-    nums = map(str, range(20))
+    nums = [str(n) for n in range(20)]
     print "".join(nums)
 
 One final thing to mention about strings is that using ``join()`` is not always
