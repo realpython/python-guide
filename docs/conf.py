@@ -11,7 +11,9 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import datetime
+import os
+import sys
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -45,8 +47,11 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
+current_year = datetime.datetime.now().year
 project = u'pythonguide'
-copyright = u'2011–2018 <a href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a href="https://realpython.com">Real Python</a>. <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>'
+copyright = (u'2011-{} <a href="http://kennethreitz.com/pages/open-projects.html">Kenneth Reitz</a>'
+             ' &amp; <a href="https://realpython.com">Real Python</a>.'
+             ' <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>').format(current_year)
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -241,7 +246,7 @@ man_pages = [
 epub_title = u'pythonguide'
 epub_author = u'Kenneth Reitz'
 epub_publisher = u'Kenneth Reitz'
-epub_copyright = u'2011–2018, Kenneth Reitz & Real Python'
+epub_copyright = u'2011–{}, Kenneth Reitz & Real Python'.format(current_year)
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
