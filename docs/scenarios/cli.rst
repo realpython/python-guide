@@ -5,13 +5,12 @@ Command-line Applications
 
 .. image:: /_static/photos/34435690330_11930b5987_k_d.jpg
 
-Command-line applications, also referred to as
-`Console Applications <http://en.wikipedia.org/wiki/Console_application>`_,
-are computer programs designed to be used from a text interface, such as a
-`shell <http://en.wikipedia.org/wiki/Shell_(computing)>`_. Command-line
-applications usually accept various inputs as arguments, often referred to as
-parameters or sub-commands, as well as options, often referred to as flags or
-switches.
+Command-line applications, also referred to as `Console Applications
+<http://en.wikipedia.org/wiki/Console_application>`_, are computer programs
+designed to be used from a text interface, such as a `shell
+<http://en.wikipedia.org/wiki/Shell_(computing)>`_. Command-line applications
+usually accept various inputs as arguments, often referred to as parameters or
+sub-commands, as well as options, often referred to as flags or switches.
 
 Some popular command-line applications include:
 
@@ -29,9 +28,9 @@ Click
 *****
 
 `click <http://click.pocoo.org/>`_ is a Python package for creating
-command-line interfaces in a composable way with as little code as
-possible. This “Command-Line Interface Creation Kit” is highly
-configurable but comes with good defaults out of the box.
+command-line interfaces in a composable way with as little code as possible.
+This “Command-Line Interface Creation Kit” is highly configurable but comes
+with good defaults out of the box.
 
 
 ******
@@ -72,12 +71,12 @@ sub-command to do the work.
 Cement
 ******
 
-`Cement <http://builtoncement.com/>`_ is an advanced CLI Application Framework.
-Its goal is to introduce a standard and feature-full platform
-for both simple and complex command line applications as well
-as support rapid development needs without sacrificing quality.
-Cement is flexible, and its use cases span from the simplicity of a micro-framework
-to the complexity of a mega-framework.
+`Cement <http://builtoncement.com/>`_ is an advanced CLI Application
+Framework. Its goal is to introduce a standard and feature-full platform for
+both simple and complex command line applications as well as support rapid
+development needs without sacrificing quality. Cement is flexible, and its use
+cases span from the simplicity of a micro-framework to the complexity of a
+mega-framework.
 
 
 ***********
