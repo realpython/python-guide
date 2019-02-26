@@ -891,4 +891,4 @@ Further Reading
 ***************
 
 - http://docs.python.org/3/library/
-- http://www.diveintopython.net/toc/index.html
+- https://www.diveinto.org/python3/
