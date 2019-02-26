@@ -33,11 +33,7 @@ Cocoa
 GTk
 ***
 
-PyGTK provides Python bindings for the GTK+ toolkit. Like the GTK+ library
-itself, it is currently licensed under the GNU LGPL. It is worth noting that
-PyGTK only currently supports the Gtk-2.X API (NOT Gtk-3.0). It is currently
-recommended that PyGTK not be used for new projects and that existing
-applications be ported from PyGTK to PyGObject.
+.. note:: PyGTK provides Python bindings for the GTK+ toolkit. However, it has been superseded by PyGObject. PyGTK should not be used for new projects and existing projects should be ported to PyGObject.
 
 
 ********************
@@ -101,17 +97,14 @@ http://www.riverbankcomputing.co.uk/software/pyqt/download
 
 
 *****************************
-PyjamasDesktop (pyjs Desktop)
+Pyjs Desktop (formerly Pyjamas Desktop)
 *****************************
 
-PyjamasDesktop is a port of Pyjamas. PyjamasDesktop is application widget set
-for desktop and a cross-platform framework. (After release v0.6 PyjamasDesktop
-is a part of Pyjamas (Pyjs)). Briefly, it allows the exact same Python web
+Pyjs Desktop is a application widget set for desktop and a cross-platform framework. It allows the exact same Python web
 application source code to be executed as a standalone desktop application.
 
-`Python Wiki for PyjamasDesktop <http://wiki.python.org/moin/PyjamasDesktop>`_.
 
-The main website: `pyjs Desktop <http://pyjs.org/>`_.
+The main website: `pyjs <http://pyjs.org/>`_.
 
 
 **
@@ -177,5 +170,5 @@ extension module (native code) that wraps the popular wxWidgets cross platform
 GUI library, which is written in C++.
 
 **Install (Stable) wxPython**
-*go to http://www.wxpython.org/download.php#stable and download the appropriate
+*go to https://www.wxpython.org/pages/downloads/ and download the appropriate
 package for your OS.*
