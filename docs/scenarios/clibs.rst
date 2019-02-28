@@ -12,9 +12,9 @@ C Foreign Function Interface
 
 `CFFI <https://cffi.readthedocs.io/en/latest/>`_ provides a simple to use
 mechanism for interfacing with C from both CPython and PyPy. It supports two
-modes: an inline ABI compatibility mode (example provided below), which allows
+modes: an inline `ABI <https://stackoverflow.com/questions/2171177/what-is-an-application-binary-interface-abi>`_ compatibility mode (example provided below), which allows
 you to dynamically load and run functions from executable modules (essentially
-exposing the same functionality as LoadLibrary or dlopen), and an API mode,
+exposing the same functionality as `LoadLibrary <https://docs.microsoft.com/en-us/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya>`_ or `dlopen <https://www.tldp.org/HOWTO/C++-dlopen/index.html>`_), and an API mode,
 which allows you to build C extension modules.
 
 ABI Interaction
@@ -41,13 +41,13 @@ library for interfacing with C/C++ from CPython, and it provides not only
 full access to the native C interface of most major operating systems (e.g.,
 kernel32 on Windows, or libc on \*nix), but also provides support for loading
 and interfacing with dynamic libraries, such as DLLs or shared objects, at
-runtime. It does bring along with it a whole host of types for interacting
+runtime. It brings along with it a whole host of types for interacting
 with system APIs, and allows you to rather easily define your own complex
 types, such as structs and unions, and allows you to modify things such as
 padding and alignment, if needed. It can be a bit crufty to use, but in
-conjunction with the `struct <https://docs.python.org/3.5/library/struct.html>`_
+conjunction with the `struct <https://docs.python.org/3/library/struct.html>`_
 module, you are essentially provided full control over how your data types get
-translated into something usable by a pure C(++) method.
+translated into something usable by a pure C/C++ method.
 
 Struct Equivalents
 ~~~~~~~~~~~~~~~~~~
