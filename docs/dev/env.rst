@@ -87,10 +87,10 @@ using ``<Tab>`` key or any other customized keys.
 
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
-.. _Pyflakes: http://pypi.python.org/pypi/pyflakes/
-.. _pycodestyle: https://pypi.python.org/pypi/pycodestyle/
-.. _syntastic: https://github.com/scrooloose/syntastic
-.. _Python-mode: https://github.com/klen/python-mode
+.. _Pyflakes: http://pypi.org/project/pyflakes/
+.. _pycodestyle: https://pypi.org/project/pycodestyle/
+.. _syntastic: https://github.com/vim-syntastic/syntastic
+.. _Python-mode: https://github.com/python-mode/python-mode
 .. _SuperTab: http://www.vim.org/scripts/script.php?script_id=1643
 .. _vim-flake8: https://github.com/nvie/vim-flake8
 
@@ -103,7 +103,7 @@ Emacs user is `Python Programming in Emacs`_ at EmacsWiki.
 
 1. Emacs itself comes with a Python mode.
 
-.. _Python Programming in Emacs: http://emacswiki.org/emacs/PythonProgrammingInEmacs
+.. _Python Programming in Emacs: https://www.emacswiki.org/emacs/PythonProgrammingInEmacs
 
 TextMate
 --------
@@ -135,7 +135,7 @@ Atom
 Atom is web native (HTML, CSS, JS), focusing on modular design and easy plugin
 development. It comes with native package control and a plethora of packages.
 Recommended for Python development is
-`Linter <https://github.com/AtomLinter/Linter>`_ combined with
+`Linter <https://github.com/steelbrain/linter>`_ combined with
 `linter-flake8 <https://github.com/AtomLinter/linter-flake8>`_.
 
 
@@ -163,7 +163,7 @@ MIT licensed.
 
 Enthought Canopy
 ----------------
-`Enthought Canopy <https://www.enthought.com/products/canopy/>`_ is a Python
+`Enthought Canopy <https://www.enthought.com/product/canopy/>`_ is a Python
 IDE which is focused towards Scientists and Engineers as it provides pre
 installed libraries for data analysis.
 
@@ -171,13 +171,13 @@ Eclipse
 -------
 
 The most popular Eclipse plugin for Python development is Aptana's
-`PyDev <http://pydev.org>`_.
+`PyDev <https://pydev.org>`_.
 
 
 Komodo IDE
 ----------
 
-`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by
+`Komodo IDE <https://www.activestate.com/products/komodo-ide/>`_ is developed by
 ActiveState and is a commercial IDE for Windows, Mac, and Linux.
 `KomodoEdit <https://github.com/Komodo/KomodoEdit>`_ is the open source
 alternative.
@@ -188,8 +188,8 @@ Spyder
 
 `Spyder <https://github.com/spyder-ide/spyder>`_ is an IDE specifically geared
 toward working with scientific Python libraries (namely
-`SciPy <http://www.scipy.org/>`_). It includes integration with pyflakes_,
-`pylint <http://www.logilab.org/857>`_ and
+`SciPy <https://www.scipy.org/>`_). It includes integration with pyflakes_,
+`pylint <https://www.logilab.org/857>`_ and
 `rope <https://github.com/python-rope/rope>`_.
 
 Spyder is open source (free), offers code completion, syntax highlighting,
@@ -242,13 +242,13 @@ Virtual Environments
 Virtual Environments provide a powerful way to isolate project package dependencies. This means that you can use packages particular to a Python project without installing them system wide and thus avoiding potential version conflicts.
 
 To start using and see more information:
-`Virtual Environments <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs.
+`Virtual Environments <https://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs.
 
 
 pyenv
 -----
 
-`pyenv <https://github.com/yyuu/pyenv>`_ is a tool to allow multiple versions
+`pyenv <https://github.com/pyenv/pyenv-virtualenv>`_ is a tool to allow multiple versions
 of the Python interpreter to be installed at the same time.  This solves the
 problem of having different projects requiring different versions of Python.
 For example, it becomes very easy to install Python 2.7 for compatibility in
@@ -264,7 +264,7 @@ pyenv.  pyenv then works out which version of Python should be run based on
 environment variables, ``.python-version`` files, and the global default.
 
 pyenv isn't a tool for managing virtual environments, but there is the plugin
-`pyenv-virtualenv <https://github.com/yyuu/pyenv-virtualenv>`_ which automates
+`pyenv-virtualenv <https://github.com/pyenv/pyenv-virtualenv>`_ which automates
 the creation of different environments, and also makes it possible to use the
 existing pyenv tools to switch to different environments based on environment
 variables or ``.python-version`` files.
@@ -314,7 +314,7 @@ To download and install IPython with all its optional dependencies for the noteb
 BPython
 -------
 
-`bpython <http://bpython-interpreter.org/>`_ is an alternative interface to the
+`bpython <https://bpython-interpreter.org/>`_ is an alternative interface to the
 Python interpreter for Unix-like operating systems. It has the following
 features:
 
@@ -334,8 +334,8 @@ features:
 ptpython
 --------
 
-`ptpython <https://github.com/jonathanslenders/ptpython/>`_ is a REPL build
-on top of the `prompt_toolkit <http://github.com/jonathanslenders/python-prompt-toolkit>`_
+`ptpython <https://github.com/prompt-toolkit/ptpython>`_ is a REPL build
+on top of the `prompt_toolkit <https://github.com/prompt-toolkit/python-prompt-toolkit>`_
 library. It is considered to be an alternative to BPython_. Features include:
 
 * Syntax highlighting

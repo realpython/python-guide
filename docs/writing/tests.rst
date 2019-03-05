@@ -274,7 +274,7 @@ This way if you ever switch to a newer Python version and no longer need the
 unittest2 module, you can simply change the import in your test module without
 the need to change any other code.
 
-    `unittest2 <http://pypi.python.org/pypi/unittest2>`_
+    `unittest2 <http://pypi.org/project/unittest2>`_
 
 
 mock

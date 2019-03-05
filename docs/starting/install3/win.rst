@@ -24,7 +24,7 @@ Once you've run this command, you should be able to launch Python directly from 
 Setuptools + Pip
 ****************
 
-The two most crucial third-party Python packages are `setuptools <https://pypi.python.org/pypi/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_,
+The two most crucial third-party Python packages are `setuptools <https://pypi.org/project/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_,
 which let you download, install and uninstall any compliant Python software
 product with a single command. It also enables you to add this network installation
 capability to your own Python software with very little work.
@@ -52,5 +52,5 @@ So, onward! To the :ref:`Pipenv & Virtual Environments <virtualenvironments-ref>
 
 --------------------------------
 
-This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
+This page is a remixed version of `another guide <https://www.stuartellis.name/articles/python-development-windows/>`_,
 which is available under the same license.

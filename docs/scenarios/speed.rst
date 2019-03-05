@@ -76,7 +76,7 @@ C Extensions
 Cython
 ------
 
-`Cython <http://cython.org/>`_ implements a superset of the Python language
+`Cython <https://cython.org/>`_ implements a superset of the Python language
 with which you are able to write C and C++ modules for Python. Cython also
 allows you to call functions from compiled C libraries. Using Cython allows
 you to take advantage of Python's strong typing of variables and operations.
@@ -448,14 +448,14 @@ Multiprocessing
 
 
 .. _`PyPy`: http://pypy.org
-.. _`The GIL`: http://wiki.python.org/moin/GlobalInterpreterLock
+.. _`The GIL`: https://wiki.python.org/moin/GlobalInterpreterLock
 .. _`guide`: http://www.dabeaz.com/python/UnderstandingGIL.pdf
 .. _`New GIL`: http://www.dabeaz.com/python/NewGIL.pdf
-.. _`Special care`: http://docs.python.org/c-api/init.html#threads
+.. _`Special care`: https://docs.python.org/c-api/init.html#threads
 .. _`David Beazley's`: http://www.dabeaz.com/GIL/gilvis/measure2.py
 .. _`concurrent.futures`: https://docs.python.org/3/library/concurrent.futures.html
 .. _`Future`: https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future
 .. _`threading`: https://docs.python.org/3/library/threading.html
-.. _`stackoverflow post`: http://stackoverflow.com/questions/26688424/python-threads-are-printing-at-the-same-time-messing-up-the-text-output
+.. _`stackoverflow post`: https://stackoverflow.com/questions/26688424/python-threads-are-printing-at-the-same-time-messing-up-the-text-output
 .. _`data race`: https://en.wikipedia.org/wiki/Race_condition
 .. _`Lock`: https://docs.python.org/3/library/threading.html#lock-objects

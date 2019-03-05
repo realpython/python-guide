@@ -10,19 +10,19 @@ Networking
 Twisted
 *******
 
-`Twisted <http://twistedmatrix.com/trac/>`_ is an event-driven networking
+`Twisted <https://twistedmatrix.com/trac/>`_ is an event-driven networking
 engine. It can be used to build applications around many different networking
 protocols, including HTTP servers and clients, applications using SMTP, POP3,
 IMAP, or SSH protocols, instant messaging,
-and `much more <http://twistedmatrix.com/trac/wiki/Documentation>`_.
+and `much more <https://twistedmatrix.com/trac/wiki/Documentation>`_.
 
 
 *****
 PyZMQ
 *****
 
-`PyZMQ <http://zeromq.github.com/pyzmq/>`_ is the Python binding for
-`ZeroMQ <http://www.zeromq.org/>`_, which is a high-performance asynchronous
+`PyZMQ <https://zeromq.github.com/pyzmq/>`_ is the Python binding for
+`ZeroMQ <http://zeromq.org/>`_, which is a high-performance asynchronous
 messaging library. One great advantage of ZeroMQ is that it can be used for
 message queuing without a message broker. The basic patterns for this are:
 

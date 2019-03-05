@@ -52,7 +52,7 @@ Also included is a command-line tool for exporting SQL data.
 Django ORM
 **********
 
-The Django ORM is the interface used by `Django <http://www.djangoproject.com>`_
+The Django ORM is the interface used by `Django <https://www.djangoproject.com>`_
 to provide database access.
 
 It's based on the idea of
