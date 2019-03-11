@@ -118,7 +118,7 @@ tutorial) and run:
 
 .. code-block:: console
 
-    $ cd myproject
+    $ cd project_folder
     $ pipenv install requests
 
 Pipenv will install the excellent `Requests`_ library and create a ``Pipfile``
@@ -225,7 +225,7 @@ Basic Usage
 
 .. code-block:: console
 
-   $ cd my_project_folder
+   $ cd project_folder
    $ virtualenv venv
 
 ``virtualenv venv`` will create a folder in the current directory which will
@@ -260,19 +260,19 @@ or change the interpreter globally with an env variable in ``~/.bashrc``:
    $ source venv/bin/activate
 
 The name of the current virtual environment will now appear on the left of
-the prompt (e.g. ``(venv)Your-Computer:your_project UserName$)`` to let you know
+the prompt (e.g. ``(venv)Your-Computer:project_folder UserName$)`` to let you know
 that it's active. From now on, any package that you install using pip will be
 placed in the ``venv`` folder, isolated from the global Python installation.
 
-For Windows, same command which is mentioned in step 1 can be used for creation of virtual environment. But, to activate, we use the following command.
+For Windows, the same command mentioned in step 1 can be used to create a virtual environment. However, activating the environment requires a slightly different command.
 
-Assuming that you are in project directory:
+Assuming that you are in your project directory:
 
-.. code-block:: powershell
+.. code-block:: console
 
-   PS C:\Users\suryav> \venv\Scripts\activate
+    C:\Users\SomeUser\project_folder> venv\Scripts\activate
 
-Install packages as usual, for example:
+Install packages using the ``pip`` command:
 
 .. code-block:: console
 
@@ -283,13 +283,13 @@ Install packages as usual, for example:
 
 .. code-block:: console
 
-   $ deactivate
+    $ deactivate
 
 This puts you back to the system's default Python interpreter with all its
 installed libraries.
 
 To delete a virtual environment, just delete its folder. (In this case,
-it would be ``rm -rf my_project``.)
+it would be ``rm -rf project_folder``.)
 
 After a while, though, you might end up with a lot of virtual environments
 littered across your system, and it's possible you'll forget their names or
@@ -366,23 +366,23 @@ Basic Usage
 
 .. code-block:: console
 
-   $ mkvirtualenv my_project
+   $ mkvirtualenv project_folder
 
-This creates the :file:`my_project` folder inside :file:`~/Envs`.
+This creates the :file:`project_folder` folder inside :file:`~/Envs`.
 
 2. Work on a virtual environment:
 
 .. code-block:: console
 
-   $ workon my_project
+   $ workon project_folder
 
 Alternatively, you can make a project, which creates the virtual environment,
 and also a project directory inside ``$WORKON_HOME``, which is ``cd``-ed into
-when you ``workon myproject``.
+when you ``workon project_folder``.
 
 .. code-block:: console
 
-   $ mkproject myproject
+   $ mkproject project_folder
 
 **virtualenvwrapper** provides tab-completion on environment names. It really
 helps when you have a lot of environments and have trouble remembering their
