@@ -109,7 +109,10 @@ Command line examples:
         $ run command --help
         $ ls ..
 
-Be sure to include the ``$`` prefix before each line.
+Be sure to include the ``$`` prefix before each line for Unix console examples.
+
+For Windows console examples, use ``doscon`` or ``powershell`` instead of
+``console``, and omit the ``$`` prefix.
 
 Python interpreter examples:
 
