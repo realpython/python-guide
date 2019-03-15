@@ -10,7 +10,7 @@ Installing Python 2 on Mac OS X
 .. note::
     Check out our :ref:`guide for installing Python 3 on OS X<install3-osx>`.
 
-The latest version of Mac OS X, High Sierra, **comes with Python 2.7 out of the box**.
+**Mac OS X comes with Python 2.7 out of the box.**
 
 You do not need to install or configure anything else to use Python. Having said
 that, I would strongly recommend that you install the tools and libraries
@@ -33,7 +33,7 @@ Let's install a real version of Python.
 Before installing Python, you'll need to install a C compiler. The fastest way
 is to install the Xcode Command Line Tools by running
 ``xcode-select --install``. You can also download the full version of
-`Xcode <http://developer.apple.com/xcode/>`_ from the Mac App Store, or the
+`Xcode <https://developer.apple.com/xcode/>`_ from the Mac App Store, or the
 minimal but unofficial
 `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
 package.
@@ -50,9 +50,9 @@ package.
 
 While OS X comes with a large number of Unix utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
-`Homebrew <http://brew.sh>`_ fills this void.
+`Homebrew <https://brew.sh>`_ fills this void.
 
-To `install Homebrew <http://brew.sh/#install>`_, open :file:`Terminal` or
+To `install Homebrew <https://brew.sh/#install>`_, open :file:`Terminal` or
 your favorite OS X terminal emulator and run
 
 .. code-block:: console
@@ -129,5 +129,5 @@ To start using this and see more information: :ref:`Virtual Environments <virtua
 
 --------------------------------
 
-This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
+This page is a remixed version of `another guide <https://www.stuartellis.name/articles/python-development-windows/>`_,
 which is available under the same license.

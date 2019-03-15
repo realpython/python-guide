@@ -61,7 +61,7 @@ py2app      no      no    yes  yes      MIT     no            yes            yes
 .. note::
     Freezing Python code on Linux into a Windows executable was only once
     supported in PyInstaller `and later dropped
-    <http://stackoverflow.com/questions/2950971/cross-compiling-a-python-script-on-linux-into-a-windows-executable#comment11890276_2951046>`_.
+    <https://stackoverflow.com/questions/2950971/cross-compiling-a-python-script-on-linux-into-a-windows-executable#comment11890276_2951046>`_.
 
 .. note::
     All solutions need a Microsoft Visual C++ to be installed on the target machine, except py2app.
@@ -139,7 +139,7 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`. The last 
 
 3. (Optionally) `include icon <http://www.py2exe.org/index.cgi/CustomIcons>`_
 
-4. (Optionally) `one-file mode <http://stackoverflow.com/questions/112698/py2exe-generate-single-executable-file#113014>`_
+4. (Optionally) `one-file mode <https://stackoverflow.com/questions/112698/py2exe-generate-single-executable-file#113014>`_
 
 5. Generate :file:`.exe` into :file:`dist` directory:
 

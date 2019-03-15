@@ -392,10 +392,11 @@ Buildout
 
 `Buildout <http://www.buildout.org>`_ is an open source software build tool.
 Buildout is created using the Python programming language. It implements a
-principle of separation of configuration from the scripts that do the setting up.
-Buildout is primarily used to download and set up dependencies in Python eggs
-format of the software being developed or deployed. Recipes for build tasks in any
-environment can be created, and many are already available.
+principle of separation of configuration from the scripts that do the setting
+up. Buildout is primarily used to download and set up dependencies in `Python
+eggs <https://stackoverflow.com/questions/2051192/what-is-a-python-egg>`_
+format of the software being developed or deployed. Recipes for build tasks in
+any environment can be created, and many are already available.
 
 
 *******

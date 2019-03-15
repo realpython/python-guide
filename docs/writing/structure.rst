@@ -675,7 +675,7 @@ by the ``with`` statement. CustomOpen is first instantiated and then its
 is finished executing, the ``__exit__`` method is then called.
 
 And now the generator approach using Python's own
-`contextlib <https://docs.python.org/2/library/contextlib.html>`_:
+`contextlib <https://docs.python.org/3/library/contextlib.html>`_:
 
 .. code-block:: python
 
@@ -890,5 +890,5 @@ Runners
 Further Reading
 ***************
 
-- http://docs.python.org/2/library/
-- http://www.diveintopython.net/toc/index.html
+- http://docs.python.org/3/library/
+- https://www.diveinto.org/python3/

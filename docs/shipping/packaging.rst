@@ -48,7 +48,7 @@ On Linux, you may also want to consider
 For Python Developers
 *********************
 
-If you're writing an open source Python module, `PyPI <http://pypi.python.org>`_
+If you're writing an open source Python module, `PyPI <http://pypi.org>`_
 , more properly known as *The Cheeseshop*, is the place to host it.
 
 
@@ -56,8 +56,8 @@ If you're writing an open source Python module, `PyPI <http://pypi.python.org>`_
 Pip vs. easy_install
 --------------------
 
-Use `pip <http://pypi.python.org/pypi/pip>`_.  More details
-`here <http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_.
+Use `pip <http://pypi.org/project/pip>`_.  More details
+`here <https://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_.
 
 
 Personal PyPI
@@ -105,7 +105,7 @@ I got fooled by that, one time. But if you feel that creating a folder called
 pypiserver
 ++++++++++
 
-`pypiserver <https://pypi.python.org/pypi/pypiserver>`_ is a minimal PyPI
+`pypiserver <https://pypi.org/project/pypiserver>`_ is a minimal PyPI
 compatible server.  It can be used to serve a set of packages to easy_install
 or pip.  It includes helpful features like an administrative command
 (``-U``) which will update all its packages to their latest versions

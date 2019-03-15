@@ -91,12 +91,23 @@ are available in the `matplotlib gallery
 Pandas
 ------
 
-`Pandas <http://pandas.pydata.org/>`_ is data manipulation library
+`Pandas <http://pandas.pydata.org/>`_ is a data manipulation library
 based on NumPy which provides many useful functions for accessing,
 indexing, merging, and grouping data easily. The main data structure (DataFrame)
 is close to what could be found in the R statistical package; that is,
 heterogeneous data tables with name indexing, time series operations, and
 auto-alignment of data.
+
+xarray
+------
+
+`xarray <http://xarray.pydata.org/en/stable/>`_ is similar to Pandas, but it 
+is intended for wrapping multidimensional scientific data. By labelling the 
+data with dimensions, coordinates, and attributes, it makes complex 
+multidimensional operations clearer and more intuitive. It also wraps 
+matplotlib for quick plotting, and can apply most operations in parallel using 
+`dask <http://xarray.pydata.org/en/stable/dask.html>`_.
+
 
 Rpy2
 ----
@@ -149,7 +160,7 @@ add-ons are available for academics and researchers.
 Canopy
 ------
 
-`Canopy <https://www.enthought.com/products/canopy/>`_ is another scientific
+`Canopy <https://www.enthought.com/product/canopy/>`_ is another scientific
 Python distribution, produced by `Enthought <https://www.enthought.com/>`_.
 A limited 'Canopy Express' variant is available for free, but Enthought
 charges for the full distribution. Free licenses are available for academics.
