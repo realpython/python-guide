@@ -289,7 +289,7 @@ This puts you back to the system's default Python interpreter with all its
 installed libraries.
 
 To delete a virtual environment, just delete its folder. (In this case,
-it would be ``rm -rf project_folder``.)
+it would be ``rm -rf venv``.)
 
 After a while, though, you might end up with a lot of virtual environments
 littered across your system, and it's possible you'll forget their names or
