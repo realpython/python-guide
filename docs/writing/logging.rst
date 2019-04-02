@@ -10,6 +10,8 @@ The :mod:`logging` module has been a part of Python's Standard Library since
 version 2.3.  It is succinctly described in :pep:`282`.  The documentation
 is notoriously hard to read, except for the `basic logging tutorial`_.
 
+As an alternative, `loguru <https://github.com/Delgan/loguru>`_ provides an approach to logging nearly as simple as using a simple ``print`` statement.
+
 Logging serves two purposes:
 
 - **Diagnostic logging** records events related to the application's
