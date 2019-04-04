@@ -108,9 +108,9 @@ We shuffle the Iris dataset and divide it into separate training and testing set
 	#predictions on the test dataset
 	pred = clf.predict(x_test)
 
-	print pred #predicted labels i.e flower species
-	print y_test #actual labels
-	print (accuracy_score(pred, y_test))*100 #prediction accuracy
+	print(pred) #predicted labels i.e flower species
+	print(y_test)#actual labels
+	print(accuracy_score(pred, y_test))*100 #prediction accuracy
 
 Since we're splitting randomly and the classifier trains on every iteration, the accuracy may vary. Running the above code gives:
 

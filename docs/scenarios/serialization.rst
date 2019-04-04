@@ -72,7 +72,8 @@ The repr method in Python takes a single object parameter and returns a printabl
         print(repr(a))
 
         # write content to files using repr
-        with open('/tmp/file.py') as f:f.write(repr(a))
+        with open('/tmp/file.py') as f:
+            f.write(repr(a))
 
 
 ast.literal_eval
@@ -83,7 +84,8 @@ Supported data types are: strings, numbers, tuples, lists, dicts, booleans, and 
 
 .. code-block:: python
 
-        with open('/tmp/file.py', 'r') as f: inp = ast.literal_eval(f.read())
+        with open('/tmp/file.py', 'r') as f:
+            inp = ast.literal_eval(f.read())
 
 ====================
 CSV file (flat data)

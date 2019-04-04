@@ -183,7 +183,7 @@ tests (net, CPU) fail, it will send an email.
     FROM = "webmaster@your_domain.com"
     SUBJECT = "Your domain is out of system resources!"
     text = "Go and fix your server!"
-    BODY = string.join(("From: %s" %FROM,"To: %s" %TO,"Subject: %s" %SUBJECT, "",text), "\r\n")
+    BODY = "\r\n".join(("From: %s" %FROM,"To: %s" %TO,"Subject: %s" %SUBJECT, "",text))
     server = smtplib.SMTP('127.0.0.1')
     server.sendmail(FROM, [TO], BODY)
     server.quit()

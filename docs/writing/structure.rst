@@ -790,7 +790,7 @@ compute x + 1, you have to create another integer and give it a name.
 
     my_list = [1, 2, 3]
     my_list[0] = 4
-    print my_list  # [4, 2, 3] <- The same list has changed
+    print(my_list)  # [4, 2, 3] <- The same list has changed
 
     x = 6
     x = x + 1  # The new x is another object
@@ -824,7 +824,7 @@ most idiomatic way to do this.
     nums = ""
     for n in range(20):
         nums += str(n)   # slow and inefficient
-    print nums
+    print(nums)
 
 **Better**
 
@@ -834,7 +834,7 @@ most idiomatic way to do this.
     nums = []
     for n in range(20):
         nums.append(str(n))
-    print "".join(nums)  # much more efficient
+    print("".join(nums))  # much more efficient
 
 **Best**
 
@@ -842,7 +842,7 @@ most idiomatic way to do this.
 
     # create a concatenated string from 0 to 19 (e.g. "012..1819")
     nums = [str(n) for n in range(20)]
-    print "".join(nums)
+    print("".join(nums))
 
 One final thing to mention about strings is that using ``join()`` is not always
 best. In the instances where you are creating a new string from a pre-determined
