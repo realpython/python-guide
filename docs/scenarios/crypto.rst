@@ -89,34 +89,3 @@ Example
 	    print("Hang on ... did you say *all* of GnuPG?  Yep.")
 	else:
 	    pass
-
-
-
-********
-PyCrypto
-********
-
-`PyCrypto <https://www.dlitz.net/software/pycrypto/>`_ is another library,
-which provides secure hash functions and various encryption algorithms. It
-supports Python version 2.1 through 3.3.
-
-Installation
-~~~~~~~~~~~~
-
-.. code-block:: console
-
-    $ pip install pycrypto
-
-Example
-~~~~~~~
-
-.. code-block:: python
-
-	from Crypto.Cipher import AES
-	# Encryption
-	encryption_suite = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
-	cipher_text = encryption_suite.encrypt("A really secret message. Not for prying eyes.")
-
-	# Decryption
-	decryption_suite = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
-	plain_text = decryption_suite.decrypt(cipher_text)
