@@ -20,16 +20,13 @@
   height: 100%;
 }
 </style>
-<input id="doc_search" placeholder="Search the Guide" autofocus/>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-  <script type="text/javascript"> docsearch({
-      apiKey: '512b0d6c0c8578bed7662f5279c2249c',
-      indexName: 'python-guide',
-      inputSelector: "#doc_search",
-      debug: false // Set debug to true if you want to inspect the dropdown
-    });
-</script>
-
+<input id="doc_search" placeholder="Search the doc" autofocus/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js" onload="docsearch({
+  apiKey: '512b0d6c0c8578bed7662f5279c2249c',
+  indexName: 'python-guide',
+  inputSelector: '#doc_search',
+  debug: false // Set debug to true if you want to inspect the dropdown
+})" async></script>
 
 <p>
   This opinionated guide exists to provide both novice and expert Python developers a best practice handbook to the installation, configuration, and usage of Python on a daily basis.
