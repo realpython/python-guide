@@ -30,7 +30,7 @@ Real Python is a repository of free and in-depth Python tutorials created by a d
 Python Basics
 ~~~~~~~~~~~~~
 
-pythonbasics.org is an introductiory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are also in-depth lessons like object oriented programming and regular expressions.
+pythonbasics.org is an introductory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are also in-depth lessons like object oriented programming and regular expressions.
 
    `Python basics <https://pythonbasics.org/>`_
 
@@ -181,7 +181,7 @@ no previous programming experience.
 Computer Science Path on Codecademy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Codeacademy course for the absolute Python beginner. This free and interactive 
+A Codecademy course for the absolute Python beginner. This free and interactive
 course provides and teaches the basics (and beyond) of Python programming while 
 testing the user's knowledge in between progress.
 This course also features a built-in interpreter for receiving instant feedback on your learning.
@@ -218,7 +218,7 @@ Effective Python
 ~~~~~~~~~~~~~~~~
 
 This book contains 59 specific ways to improve writing Pythonic code. At 227
-pages, it is a very brief overview of some of the most common adapations
+pages, it is a very brief overview of some of the most common adaptations
 programmers need to make to become efficient intermediate level Python
 programmers.
 

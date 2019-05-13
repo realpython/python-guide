@@ -126,7 +126,7 @@ Pyramid
 focus on modularity. It comes with a small number of libraries ("batteries")
 built-in, and encourages users to extend its base functionality. A set of
 provided cookiecutter templates helps making new project decisions for users.
-It powers one of the most important parts of python infrastucture
+It powers one of the most important parts of python infrastructure
 `PyPI <https://pypi.org/>`_.
 
 Pyramid does not have a large user base, unlike Django and Flask. It's a
@@ -155,7 +155,7 @@ and `Pydantic <https://pydantic-docs.helpmanual.io>`_.
 
 FastAPI takes advantage of standard Python type declarations in function parameters
 to declare request parameters and bodies, perform data conversion (serialization,
-parsing), data valdiation, and automatic API documentation with **OpenAPI 3**
+parsing), data validation, and automatic API documentation with **OpenAPI 3**
 (including **JSON Schema**).
 
 It includes tools and utilities for security and authentication (including OAuth2 with JWT
@@ -283,7 +283,7 @@ Heroku is the recommended PaaS for deploying Python web applications today.
 Eldarion
 --------
 
-`Eldarion <https://eldarion.cloud/>`_ (formely known as Gondor) is a PaaS powered
+`Eldarion <https://eldarion.cloud/>`_ (formerly known as Gondor) is a PaaS powered
 by Kubernetes, CoreOS, and Docker. They support any WSGI application and have a
 guide on deploying `Django projects <https://eldarion-gondor.github.io/docs/how-to/setup-deploy-first-django-project/>`_.
 
