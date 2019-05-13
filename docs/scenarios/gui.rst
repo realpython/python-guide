@@ -146,7 +146,7 @@ Toga
 cross platform GUI toolkit. Toga consists of a library of base components with a
 shared interface to simplify platform-agnostic GUI development.
 
-Toga is available on mOS, Windows, Linux (GTK), and mobile platforms such as
+Toga is available on macOS, Windows, Linux (GTK), and mobile platforms such as
 Android and iOS.
 
 

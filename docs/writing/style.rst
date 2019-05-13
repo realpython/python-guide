@@ -643,7 +643,7 @@ Never use a list comprehension just for its side effects.
 
 .. code-block:: python
 
-    [print(x) for x in seqeunce]
+    [print(x) for x in sequence]
 
 **Good**:
 

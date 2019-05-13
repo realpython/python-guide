@@ -201,7 +201,7 @@ the unittest module!
 Hypothesis
 ----------
 
-Hypothesis is a library which lets you write tests that are parametrized by
+Hypothesis is a library which lets you write tests that are parameterized by
 a source of examples.  It then generates simple and comprehensible examples
 that make your tests fail, letting you find more bugs with less work.
 
