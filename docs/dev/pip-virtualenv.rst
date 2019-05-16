@@ -51,7 +51,7 @@ can be found at:
 
 .. code-block:: console
 
-    %HOME%\pip\pip.ini
+    %USERPROFILE%\pip\pip.ini
 
 If you don't have a :file:`pip.conf` or :file:`pip.ini` file at these locations,
 you can create a new file with the correct name for your operating system.
@@ -122,7 +122,7 @@ add the following line to your :file:`pip.ini` file under ``[global]`` settings:
 
 .. code-block:: console
 
-    download-cache = %HOME%\pip\cache
+    download-cache = %USERPROFILE%\pip\cache
 
 Similarly, on Unix systems you should simply add the following line to your
 :file:`pip.conf` file under ``[global]`` settings:
