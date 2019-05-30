@@ -48,6 +48,19 @@ programmatically or exported to a number of useful data formats.
 Also included is a command-line tool for exporting SQL data.
 
 
+******
+PugSQL
+******
+
+`PugSQL <https://pugsql.org>`_ is a simple Python interface for organizing
+and using parameterized, handwritten SQL. It is an anti-ORM that is
+philosophically lo-fi, but it still presents a clean interface in Python.
+
+.. code-block:: console
+
+    $ pip install pugsql
+
+
 **********
 Django ORM
 **********
