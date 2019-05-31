@@ -221,6 +221,45 @@ Linux
 
 bbFreeze
 ~~~~~~~~
+.. warning:: bbFreeze will ONLY work in Python 2.x environment, since it's no longer being maintained as stated by it's former maintainer. If you're interested in it, check the repository in `here <https://github.com/schmir/bbfreeze>`_.
+
+bbFreeze can be used with all distributions that has Python installed along with pip2 and/or easy_install.
+
+For pip2, use the following:
+
+.. code-block:: console
+
+  $ pip2 install bbfreeze
+
+Or, for easy_install:
+
+.. code-block:: console
+
+  $ easy_install bbfreeze
+
+With bbFreeze installed, you're ready to freeze your applications. 
+
+Let's assume you have a script, say, "hello.py" and a module called "module.py" and you have a function in it that's being used in your script.
+No need to worry, you can just ask to freeze the main entrypoint of your script and it should freeze entirely:
+
+.. code-block:: console
+
+  $ bbfreeze script.py
+
+With this, it creates a folder called dist/, of which contains the executable of the script and required .so (shared objects) files linked against libraries used within the Python script.
+
+Alternatively, you can create a script that does the freezing for you. An API for the freezer is available from the library within:
+
+.. code-block:: python
+
+   from bbfreeze import Freezer
+
+   freezer = Freezer(distdir='dist')
+   freezer.addScript('script.py', gui_only=True) # Enable gui_only kwarg for app that uses GUI packages.
+   freezer()
 
 PyInstaller
 ~~~~~~~~~~~
+PyInstaller can be used in a similar fashion as in OS X. The installation goes in the same manner as shown in the OS X section.
+
+Don't forget to have dependencies such as Python and pip installed for usage.
