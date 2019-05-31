@@ -427,20 +427,15 @@ virtualenv-burrito
 With `virtualenv-burrito <https://github.com/brainsik/virtualenv-burrito>`_, you
 can have a working virtualenv + virtualenvwrapper environment in a single command.
 
-autoenv
+direnv
 -------
-When you ``cd`` into a directory containing a :file:`.env`, `autoenv <https://github.com/kennethreitz/autoenv>`_
+When you ``cd`` into a directory containing a :file:`.env`, `direnv <https://direnv.net>`_
 automagically activates the environment.
 
 Install it on Mac OS X using ``brew``:
 
 .. code-block:: console
 
-   $ brew install autoenv
+   $ brew install direnv
 
-And on Linux:
-
-.. code-block:: console
-
-   $ git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
-   $ echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
+On Linux follow the instructions at `direnv.net <https://direnv.net>`
