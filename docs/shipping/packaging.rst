@@ -83,7 +83,7 @@ Go to your command prompt and type:
 .. code-block:: console
 
    $ cd archive
-   $ python -m SimpleHTTPServer 9000
+   $ python -m http.server 9000
 
 This runs a simple HTTP server running on port 9000 and will list all packages
 (like **MyPackage**). Now you can install **MyPackage** using any Python
