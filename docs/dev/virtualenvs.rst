@@ -260,7 +260,7 @@ or change the interpreter globally with an env variable in ``~/.bashrc``:
    $ source venv/bin/activate
 
 The name of the current virtual environment will now appear on the left of
-the prompt (e.g. ``(venv)Your-Computer:project_folder UserName$)`` to let you know
+the prompt (e.g. ``(venv)Your-Computer:project_folder UserName$``) to let you know
 that it's active. From now on, any package that you install using pip will be
 placed in the ``venv`` folder, isolated from the global Python installation.
 
