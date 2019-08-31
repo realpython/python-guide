@@ -120,6 +120,12 @@ The rest of the guide will assume that ``python`` references Python 3.
     $ python --version
     Python 3.7.1 # Success!
 
+If your ``pip`` still point to Python 2 then you add these line to .bash_profile file
+
+.. code-block:: console
+
+    alias python="python3" # to use Python 3 rather than Python 2
+
 
 *****************************
 Pipenv & Virtual Environments
