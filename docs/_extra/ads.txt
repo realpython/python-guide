@@ -143,3 +143,8 @@ rhythmone.com, 2241341073, RESELLER, a670c89d4a324e47
 rtk.io, 819, DIRECT
 rubiconproject.com, 17790, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 17792, RESELLER, 0bfd66d529a55807
+
+triplelift.com, 7205, DIRECT, 6c33edb13117fd86
+appnexus.com, 1314, RESELLER
+spotxchange.com, 228454, RESELLER, 7842df1d2fe2db34
+spotx.tv, 228454, RESELLER, 7842df1d2fe2db34
