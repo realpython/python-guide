@@ -46,17 +46,18 @@ On Linux, an alternative to freezing is to
 Comparison of Freezing Tools
 ****************************
 
+Date of this writing: Oct 5, 2019
 Solutions and platforms/features supported:
 
-=========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
-Solution    Windows Linux OS X Python 3 License One-file mode Zipfile import Eggs pkg_resources support
-=========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
-bbFreeze    yes     yes   yes  no       MIT     no            yes            yes  yes
-py2exe      yes     no    no   yes      MIT     yes           yes            no   no
-pyInstaller yes     yes   yes  yes      GPL     yes           no             yes  no
-cx_Freeze   yes     yes   yes  yes      PSF     no            yes            yes  no
-py2app      no      no    yes  yes      MIT     no            yes            yes  yes
-=========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
+=========== ======= ===== ==== ======== ======= ============= ============== ==== ===================== =====================
+Solution    Windows Linux OS X Python 3 License One-file mode Zipfile import Eggs pkg_resources support Latest release date
+=========== ======= ===== ==== ======== ======= ============= ============== ==== ===================== =====================
+bbFreeze    yes     yes   yes  no       MIT     no            yes            yes  yes                   Jan 20, 2014
+py2exe      yes     no    no   yes      MIT     yes           yes            no   no                    Oct 21, 2014
+pyInstaller yes     yes   yes  yes      GPL     yes           no             yes  no                    Jul 9, 2019
+cx_Freeze   yes     yes   yes  yes      PSF     no            yes            yes  no                    Aug 29, 2019
+py2app      no      no    yes  yes      MIT     no            yes            yes  yes                   Mar 25, 2019
+=========== ======= ===== ==== ======== ======= ============= ============== ==== ===================== =====================
 
 .. note::
     Freezing Python code on Linux into a Windows executable was only once
