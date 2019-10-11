@@ -49,7 +49,7 @@ master_doc = 'index'
 # General information about the project.
 current_year = datetime.datetime.now().year
 project = u'pythonguide'
-copyright = (u'2011-{} <a href="http://kennethreitz.com/pages/open-projects.html">Kenneth Reitz</a>'
+copyright = (u'2011-{} <a href="https://www.kennethreitz.org/projects">Kenneth Reitz</a>'
              ' &amp; <a href="https://realpython.com">Real Python</a>.'
              ' <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>').format(current_year)
 
