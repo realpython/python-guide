@@ -101,7 +101,7 @@ Use ``pip`` to install Pipenv:
     user ``PATH`` permanently in the `Control Panel`_. You may need to log
     out for the ``PATH`` changes to take effect.
 
-.. _Pipenv: https://docs.pipenv.org/
+.. _Pipenv: https://pipenv.kennethreitz.org/
 .. _npm: https://www.npmjs.com/
 .. _bundler: http://bundler.io/
 .. _user base: https://docs.python.org/3/library/site.html#site.USER_BASE
