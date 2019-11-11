@@ -455,7 +455,7 @@ Also known as :pep:`20`, the guiding principles for Python's design.
     Namespaces are one honking great idea -- let's do more of those!
 
 For some examples of good Python style, see `these slides from a Python user
-group <http://artifex.org/~hblanks/talks/2011/pep20_by_example.pdf>`_.
+group <https://github.com/hblanks/zen-of-python-by-example>`_.
 
 
 *****
