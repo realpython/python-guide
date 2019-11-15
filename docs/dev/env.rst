@@ -248,7 +248,7 @@ To start using and see more information:
 pyenv
 -----
 
-`pyenv <https://github.com/pyenv/pyenv-virtualenv>`_ is a tool to allow multiple versions
+`pyenv <https://github.com/pyenv/pyenv>`_ is a tool to allow multiple versions
 of the Python interpreter to be installed at the same time.  This solves the
 problem of having different projects requiring different versions of Python.
 For example, it becomes very easy to install Python 2.7 for compatibility in
