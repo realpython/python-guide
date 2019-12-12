@@ -31,7 +31,7 @@ Strive to keep any contributions relevant to the :ref:`purpose of The Guide
   relate to Python development.
 * Prefer to link to other sources if the information is already out there.
   Be sure to describe what and why you are linking.
-* `Cite <http://sphinx.pocoo.org/rest.html?highlight=citations#citations>`_
+* `Cite <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#citations>`_
   references where needed.
 * If a subject isn't directly relevant to Python, but useful in conjunction
   with Python (e.g., Git, GitHub, Databases), reference by linking to useful
@@ -146,14 +146,14 @@ Externally Linking
 
       Sphinx_ is used to document Python.
 
-      .. _Sphinx: http://sphinx.pocoo.org
+      .. _Sphinx: https://www.sphinx-doc.org
 
 * Prefer to use descriptive labels with inline links instead of leaving bare
   links:
 
   .. code-block:: rest
 
-      Read the `Sphinx Tutorial <http://sphinx.pocoo.org/tutorial.html>`_
+      Read the `Sphinx Tutorial <https://www.sphinx-doc.org/en/master/usage/quickstart.html>`_
 
 * Avoid using labels such as "click here", "this", etc., preferring
   descriptive labels (SEO worthy) instead.
@@ -164,7 +164,7 @@ Linking to Sections in The Guide
 ********************************
 
 To cross-reference other parts of this documentation, use the `:ref:
-<http://sphinx.pocoo.org/markup/inline.html#cross-referencing-arbitrary-locations>`_
+<https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#role-ref>`_
 keyword and labels.
 
 To make reference labels more clear and unique, always add a ``-ref`` suffix:
@@ -182,7 +182,7 @@ Notes and Warnings
 ******************
 
 Make use of the appropriate `admonitions directives
-<http://sphinx.pocoo.org/rest.html#directives>`_ when making notes.
+<https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#directives>`_ when making notes.
 
 Notes:
 
@@ -205,7 +205,7 @@ TODOs
 *****
 
 Please mark any incomplete areas of The Guide with a `todo directive
-<http://sphinx.pocoo.org/ext/todo.html?highlight=todo#directive-todo>`_. To
+<https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>`_. To
 avoid cluttering the :ref:`todo-list-ref`, use a single ``todo`` for stub
 documents or large incomplete sections.
 

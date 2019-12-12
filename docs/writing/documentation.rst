@@ -85,7 +85,7 @@ structured and easily readable documentation for your project.
     for general project documentation. This Guide is built with
     Sphinx_ and is hosted on `Read The Docs`_
 
-.. _Sphinx: http://sphinx.pocoo.org
+.. _Sphinx: https://www.sphinx-doc.org
 .. _Read The Docs: http://readthedocs.org
 
 .. _restructuredtext-ref:
@@ -100,7 +100,7 @@ The `reStructuredText Primer`_ and the `reStructuredText Quick
 Reference`_ should help you familiarize yourself with its syntax.
 
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
-.. _reStructuredText Primer: http://sphinx.pocoo.org/rest.html
+.. _reStructuredText Primer: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 .. _reStructuredText Quick Reference: http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 
