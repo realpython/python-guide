@@ -7,7 +7,7 @@ Installing Python 3 on Linux
 
 .. image:: /_static/photos/34435689480_2e6f358510_k_d.jpg
 
-This document describes how to install Python 3.6 on Ubuntu Linux machines.
+This document describes how to install Python 3.6 or 3.8 on Ubuntu Linux machines.
 
 To see which version of Python 3 you have installed, open a command prompt and run
 
@@ -20,12 +20,12 @@ If you are using Ubuntu 16.10 or newer, then you can easily install Python 3.6 w
     $ sudo apt-get update
     $ sudo apt-get install python3.6
 
-If you're using another version of Ubuntu (e.g. the latest LTS release), we recommend using the `deadsnakes PPA <https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa>`_ to install Python 3.6::
+If you're using another version of Ubuntu (e.g. the latest LTS release) or you want to use a more current Python, we recommend using the `deadsnakes PPA <https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa>`_ to install Python 3.8::
 
     $ sudo apt-get install software-properties-common
     $ sudo add-apt-repository ppa:deadsnakes/ppa
     $ sudo apt-get update
-    $ sudo apt-get install python3.6
+    $ sudo apt-get install python3.8
 
 If you are using other Linux distribution, chances are you already have Python 3
 pre-installed as well. If not, use your distribution's package manager.
