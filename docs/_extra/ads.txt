@@ -148,3 +148,6 @@ triplelift.com, 7205, DIRECT, 6c33edb13117fd86
 appnexus.com, 1314, RESELLER
 spotxchange.com, 228454, RESELLER, 7842df1d2fe2db34
 spotx.tv, 228454, RESELLER, 7842df1d2fe2db34
+
+google.com, pub-4641608711979091, DIRECT, f08c47fec0942fa0
+Newormedia.com, 2169, DIRECT
