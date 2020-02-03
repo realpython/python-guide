@@ -161,7 +161,7 @@ For those used to languages and figuring out puzzles on their own, this can be
 a fun, attractive option. For those new to Python and programming, having an
 additional resource or reference will be helpful.
 
-    `Python Koans <https://bitbucket.org/gregmalcolm/python_koans>`_
+    `Python Koans <https://github.com/gregmalcolm/python_koans>`_
 
 More information about test driven development can be found at these resources:
 
