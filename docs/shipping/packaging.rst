@@ -193,4 +193,4 @@ Useful Tools
 
 - `fpm <https://github.com/jordansissel/fpm>`_
 - `alien <http://joeyh.name/code/alien/>`_
-- `dh-virtualenv <https://dh-virtualenv.readthedocs.io/en/latest/info.html>`_ (for APT/DEB omnibus packaging)
+- `dh-virtualenv <https://dh-virtualenv.readthedocs.io/>`_ (for APT/DEB omnibus packaging)
