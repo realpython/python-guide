@@ -27,7 +27,7 @@ Some popular command-line applications include:
 Click
 *****
 
-`click <http://click.pocoo.org/>`_ is a Python package for creating
+`click <https://click.palletsprojects.com>`_ is a Python package for creating
 command-line interfaces in a composable way with as little code as possible.
 This “Command-Line Interface Creation Kit” is highly configurable but comes
 with good defaults out of the box.
