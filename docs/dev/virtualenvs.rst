@@ -201,7 +201,7 @@ Congratulations, you now know how to install and use Python packages! ✨ 🍰 �
 
 
 Project Isolation with Virtual Environments
-=======================
+===========================================
 
 If you choose not to use Pipenv or it does not fit your needs, you can
 use the `venv <https://docs.python.org/3/library/venv.html>`_ tool directly to create
@@ -221,6 +221,12 @@ Basic Usage
    $ cd project_folder
    $ python -m venv venv
 
+On Windows use this command:
+
+.. code-block:: console
+
+   $ py -m venv venv
+
 ``python -m venv venv`` will create a folder in the current directory which will
 contain the Python executable files, and a copy of the ``pip`` application which you
 can use to install other packages. The name of the virtual environment (in this
@@ -232,11 +238,18 @@ case, it was ``venv``) can be anything.
 This creates a copy of Python in whichever directory you ran the command in,
 placing it in a folder named :file:`venv`.
 
-You can also use the Python interpreter of your choice (like ``python3.8``).
+You can also use the Python interpreter of your choice, like ``python3.8``. Sometimes ``python`` will still point to a Python 2 interpreter, so you can do this instead to be sure you are using the right Python version.
 
 .. code-block:: console
 
    $ python3.8 -m venv venv
+
+
+On Windows use this command:
+
+.. code-block:: console
+
+   $ py -3.8 -m venv venv
 
 
 2. To begin using the virtual environment, you can either invoke the virtual environment's executables
@@ -326,8 +339,27 @@ and across developers.
 Lastly, remember to exclude the virtual environment folder from source
 control by adding it to the ignore list (see :ref:`Version Control Ignores<version_control_ignores>`).
 
+
+Other Tools
+-----------
+
+tox and nox
+~~~~~~~~~~~
+
+`tox <https://tox.readthedocs.io/en/latest/>`_ and  `nox <https://nox.thea.codes/en/stable/>`_ are widely used command-line tools that automate environment setup and task execution. They are used to run tests across multiple Python versions, among other things. They do this by reading a configuration file, either ``tox.ini`` for tox, or ``noxfile.py`` for nox.
+
+For example, if you have unit tests that you want to run with Python 3.6, 3.7, and 3.8, you can use one of these tools to automate virtual environment creation and test execution with all three Python versions. You can also run specific tasks like running a lint check, or publishing a new version of your package.
+
+The main difference between the two tools are ``tox`` uses a custom file format for configuration, while ``nox`` uses a standard Python file for configuration.
+
+
+pipx
+~~~~
+`pipx <https://github.com/pipxproject/pipx>`_ is a tool to install system-wide command line tools, each to their own individual environment. Unlike ``pip`` which installs all packages to the same environment, ``pipx`` isolates tools in their own virtual environment, and exposes the command-line tools to your shell. ``pipx`` is used for installing command-line tools, similar to ``brew`` or ``apt``, but for Python applications. It's not used to intall libraries.
+
+
 direnv
--------
+~~~~~~
 When you ``cd`` into a directory containing a :file:`.env`, `direnv <https://direnv.net>`_
 automagically activates the environment.
 
