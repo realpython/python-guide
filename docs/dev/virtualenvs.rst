@@ -311,9 +311,9 @@ where they were placed, so try to follow a convention across your projects.
 Other Notes
 -----------
 
-Running ``python -m venv`` with the option ``--no-site-packages`` will not
-include the packages that are installed globally. This can be useful
-for keeping the package list clean in case it needs to be accessed later.
+Running ``python -m venv`` with the option ``--system-site-packages`` will include
+the packages that are installed globally. Usually you do not want to do this so
+the package list remains clean in case it needs to be accessed later.
 
 In order to keep your environment consistent, it's a good idea to "freeze"
 the current state of the environment packages. To do this, run:
@@ -343,20 +343,7 @@ control by adding it to the ignore list (see :ref:`Version Control Ignores<versi
 Other Tools
 -----------
 
-tox and nox
-~~~~~~~~~~~
-
-`tox <https://tox.readthedocs.io/en/latest/>`_ and  `nox <https://nox.thea.codes/en/stable/>`_ are widely used command-line tools that automate environment setup and task execution. They are used to run tests across multiple Python versions, among other things. They do this by reading a configuration file, either ``tox.ini`` for tox, or ``noxfile.py`` for nox.
-
-For example, if you have unit tests that you want to run with Python 3.6, 3.7, and 3.8, you can use one of these tools to automate virtual environment creation and test execution with all three Python versions. You can also run specific tasks like running a lint check, or publishing a new version of your package.
-
-The main difference between the two tools are ``tox`` uses a custom file format for configuration, while ``nox`` uses a standard Python file for configuration.
-
-
-pipx
-~~~~
-`pipx <https://github.com/pipxproject/pipx>`_ is a tool to install system-wide command line tools, each to their own individual environment. Unlike ``pip`` which installs all packages to the same environment, ``pipx`` isolates tools in their own virtual environment, and exposes the command-line tools to your shell. ``pipx`` is used for installing command-line tools, similar to ``brew`` or ``apt``, but for Python applications. It's not used to intall libraries.
-
+There are many tools to complement usage of pip and virtual environments. Here are some useful ones we like.
 
 direnv
 ~~~~~~
@@ -370,3 +357,25 @@ Install it on Mac OS X using ``brew``:
    $ brew install direnv
 
 On Linux follow the instructions at `direnv.net <https://direnv.net>`_
+
+pip-tools
+~~~~~~~~~
+`pip-tools <https://github.com/jazzband/pip-tools>`_ is a suite of two tools that complement pip and virtual environments. It has similar functionaly to pipenv, and in fact pipenv uses pip-tools in its implementation. However, compared to pipenv, pip-tools lets you have a little more control over how and when operations are performed.
+
+It does two things:
+1.) Generate a complete dependency list (lockfile, or ``requirements.txt`` file) from abstract dependencies. It does this with a full dependency resolver, which pip does not currently have, and can optionally generate the lockfile with hashes.
+2.) Synchronize a virtual environment to exactly match a requirements lockfile.
+
+pipx
+~~~~
+`pipx <https://github.com/pipxproject/pipx>`_ is a tool to install system-wide command line tools, each to their own individual environment. Unlike ``pip`` which installs all packages to the same environment, ``pipx`` isolates tools in their own virtual environment, and exposes the command-line tools to your shell. ``pipx`` is used for installing command-line tools, similar to ``brew`` or ``apt``, but for Python applications. It's not used to install libraries.
+
+
+tox and nox
+~~~~~~~~~~~
+
+`tox <https://tox.readthedocs.io/en/latest/>`_ and  `nox <https://nox.thea.codes/en/stable/>`_ are widely used command-line tools that automate environment setup and task execution. tox and nox are often used to run tests across multiple Python versions, among other things. They do this by reading a configuration file, either ``tox.ini`` for tox, or ``noxfile.py`` for nox.
+
+For example, if you have unit tests that you want to run with Python 3.6, 3.7, and 3.8, you can use one of these tools. It will create three virtual environments, one for each Python version, then install necessary dependencies, and finally run tests in each environment. You can also run specific tasks like running a lint check, or publishing a new version of your package.
+
+The main difference between the two tools are ``tox`` uses a custom file format for configuration, while ``nox`` uses a standard Python file for configuration.
