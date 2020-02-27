@@ -234,7 +234,7 @@ active development.
 Mu
 --
 
-`Mu <https://codewith.mu/>` is a minimalist Python IDE which can run Python 3 code
+`Mu <https://codewith.mu/>`_ is a minimalist Python IDE which can run Python 3 code
 locally and can also deploy code to the BBC micro:bit and to Adafruit boards running
 CircuitPython.
 
