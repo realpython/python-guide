@@ -231,6 +231,18 @@ based on the Qt GUI toolkit, integrating the Scintilla editor control. Eric
 is an open source software project (GPLv3 licence) with more than ten years of
 active development.
 
+Mu
+--
+
+`Mu <https://codewith.mu/>` is a minimalist Python IDE which can run Python 3 code
+locally and can also deploy code to the BBC micro:bit and to Adafruit boards running
+CircuitPython.
+
+Intended for beginners, mu includes a Python 3 interpreter, and is easy to install
+on Windows, OS/X and Linux. It runs well on the Raspberry Pi.
+
+There's an active support community on gitter.
+
 
 Interpreter Tools
 :::::::::::::::::
