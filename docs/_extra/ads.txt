@@ -151,3 +151,6 @@ spotx.tv, 228454, RESELLER, 7842df1d2fe2db34
 
 google.com, pub-4641608711979091, DIRECT, f08c47fec0942fa0
 Newormedia.com, 2169, DIRECT
+
+yieldmo.com, 2417496099628458357, DIRECT
+rhythmone.com, 2310154583, DIRECT, a670c89d4a324e47
