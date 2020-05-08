@@ -1,7 +1,9 @@
 .. _pip-virtualenv:
 
-Further Configuration of Pip and Virtualenv
+Further Configuration of pip and Virtualenv
 ===========================================
+
+.. image:: /_static/photos/34018732105_f0e6758859_k_d.jpg
 
 Requiring an active virtual environment for ``pip``
 ---------------------------------------------------
@@ -49,7 +51,7 @@ can be found at:
 
 .. code-block:: console
 
-    %HOME%\pip\pip.ini
+    %USERPROFILE%\pip\pip.ini
 
 If you don't have a :file:`pip.conf` or :file:`pip.ini` file at these locations,
 you can create a new file with the correct name for your operating system.
@@ -94,11 +96,16 @@ that you use. For example, you may be using the ``requests`` library in a lot
 of different projects.
 
 It is surely unnecessary to re-download the same packages/libraries each time
-you start working on a new project (and in a new virtual environment as a result).
-Fortunately, you can configure pip in such a way that it tries to reuse already
-installed packages.
+you start working on a new project (and in a new virtual environment as a
+result). Fortunately, starting with version 6.0, pip provides an `on-by-default
+caching mechanism
+<https://pip.pypa.io/en/stable/reference/pip_install/#caching>`_ that doesn't
+need any configuration.
 
-On UNIX systems, you can add the following line to your :file:`.bashrc` or
+When using older versions, you can configure pip in such a way that it tries to
+reuse already installed packages, too.
+
+On Unix systems, you can add the following line to your :file:`.bashrc` or
 :file:`.bash_profile` file.
 
 .. code-block:: console
@@ -115,9 +122,9 @@ add the following line to your :file:`pip.ini` file under ``[global]`` settings:
 
 .. code-block:: console
 
-    download-cache = %HOME%\pip\cache
+    download-cache = %USERPROFILE%\pip\cache
 
-Similarly, on UNIX systems you should simply add the following line to your
+Similarly, on Unix systems you should simply add the following line to your
 :file:`pip.conf` file under ``[global]`` settings:
 
 .. code-block:: console

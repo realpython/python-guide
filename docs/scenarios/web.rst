@@ -1,13 +1,18 @@
-=============================
+
+#############################
 Web Applications & Frameworks
-=============================
+#############################
+
+.. image:: /_static/photos/34309496175_b82d104282_k_d.jpg
 
 As a powerful scripting language adapted to both fast prototyping
 and bigger projects, Python is widely used in web application
 development.
 
+
+*******
 Context
-:::::::
+*******
 
 
 
@@ -22,8 +27,9 @@ can be deployed in any :ref:`WSGI-compliant web server <wsgi-servers-ref>`.
 WSGI is documented in :pep:`3333`.
 
 
+**********
 Frameworks
-::::::::::
+**********
 
 Broadly speaking, a web framework consists of a set of libraries and a main
 handler within which you can build custom code to implement a web application
@@ -35,7 +41,7 @@ URL Routing
   be invoked
 
 Request and Response Objects
-  Encapsulate the information received from or sent to a user's browser
+  Encapsulates the information received from or sent to a user's browser
 
 Template Engine
   Allows for separating Python code implementing an application's logic from
@@ -49,7 +55,7 @@ Development Web Server
 Django
 ------
 
-`Django <http://www.djangoproject.com>`_ is a "batteries included" web
+`Django <https://www.djangoproject.com>`_ is a "batteries included" web
 application framework, and is an excellent choice for creating content-oriented
 websites. By providing many utilities and patterns out of the box, Django aims
 to make it possible to build complex, database-backed web applications quickly,
@@ -60,7 +66,7 @@ modules <http://djangopackages.com/>`_ that can be incorporated into a new
 project as-is, or customized to fit your needs.
 
 There are annual Django conferences `in the United States
-<http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
+<http://djangocon.us>`_, `Europe <http://djangocon.eu>`_, and `Australia <http://djangocon.com.au>`_.
 
 The majority of new Python web applications today are built with Django.
 
@@ -89,11 +95,24 @@ suit your needs. Or, you can easily use any library you want yourself!
 Flask is default choice for any Python web application that isn't a good
 fit for Django.
 
+Falcon
+------
+
+`Falcon <https://falconframework.org/>`_ is a good choice when your goal is
+to build RESTful API microservices that are fast and scalable.
+
+It is a reliable, high-performance Python web framework for building large-scale
+app backends and microservices. Falcon encourages the REST architectural style of
+mapping URIs to resources, trying to do as little as possible while remaining highly effective.
+
+Falcon highlights four main focuses: speed, reliability, flexibility, and debuggability.
+It implements HTTP through "responders" such as ``on_get()``, ``on_put()``, etc.
+These responders receive intuitive request and response objects.
 
 Tornado
 --------
 
-`Tornado <http://www.tornadoweb.org/>`_ is an asyncronous web framework
+`Tornado <http://www.tornadoweb.org/>`_ is an asynchronous web framework
 for Python that has its own event loop. This allows it to natively support
 WebSockets, for example. Well-written Tornado applications are known to
 have excellent performance characteristics.
@@ -105,14 +124,48 @@ Pyramid
 
 `Pyramid <https://trypyramid.com/>`_ is a very flexible framework with a heavy
 focus on modularity. It comes with a small number of libraries ("batteries")
-built-in, and encourages users to extend its base functionality.
+built-in, and encourages users to extend its base functionality. A set of
+provided cookiecutter templates helps making new project decisions for users.
+It powers one of the most important parts of python infrastructure
+`PyPI <https://pypi.org/>`_.
 
 Pyramid does not have a large user base, unlike Django and Flask. It's a
 capable framework, but not a very popular choice for new Python web
 applications today.
 
+Masonite
+--------
+
+`Masonite <https://docs.masoniteproject.com>`_ is a modern and developer centric, "batteries included", web framework.
+
+The Masonite framework follows the MVC (Model-View-Controller) architecture pattern and is heavily inspired by frameworks such as Rails and Laravel, so if you are coming to Python from a Ruby or PHP background then you will feel right at home!
+
+Masonite comes with a lot of functionality out of the box including a powerful IOC container with auto resolving dependency injection, craft command line tools, and the Orator active record style ORM.
+
+Masonite is perfect for beginners or experienced developers alike and works hard to be fast and easy from install through to deployment. Try it once and you’ll fall in love.
+
+FastAPI
+-------
+
+`FastAPI <https://fastapi.tiangolo.com>`_ is a modern web framework for building
+APIs with Python 3.6+.
+
+It has very high performance as it is based on `Starlette <https://www.starlette.io>`_
+and `Pydantic <https://pydantic-docs.helpmanual.io>`_.
+
+FastAPI takes advantage of standard Python type declarations in function parameters
+to declare request parameters and bodies, perform data conversion (serialization,
+parsing), data validation, and automatic API documentation with **OpenAPI 3**
+(including **JSON Schema**).
+
+It includes tools and utilities for security and authentication (including OAuth2 with JWT
+tokens), a dependency injection system, automatic generation of interactive API
+documentation, and other features.
+
+
+***********
 Web Servers
-:::::::::::
+***********
 
 .. _nginx-ref:
 
@@ -120,7 +173,7 @@ Nginx
 -----
 
 `Nginx <http://nginx.org/>`_ (pronounced "engine-x") is a web server and
-reverse-proxy for HTTP, SMTP and other protocols. It is known for its
+reverse-proxy for HTTP, SMTP, and other protocols. It is known for its
 high performance, relative simplicity, and compatibility with many
 application servers (like WSGI servers). It also includes handy features
 like load-balancing, basic authentication, streaming, and others. Designed
@@ -129,20 +182,22 @@ to serve high-load websites, Nginx is gradually becoming quite popular.
 
 .. _wsgi-servers-ref:
 
+
+************
 WSGI Servers
-::::::::::::
+************
 
 Stand-alone WSGI servers typically use less resources than traditional web
-servers and provide top performance [3]_.
+servers and provide top performance [1]_.
 
 .. _gunicorn-ref:
 
 Gunicorn
 --------
 
-`Gunicorn <http://gunicorn.org/>`_ (Green Unicorn) is a pure-python WSGI
+`Gunicorn <https://gunicorn.org/>`_ (Green Unicorn) is a pure-Python WSGI
 server used to serve Python applications. Unlike other Python web servers,
-it has a thoughtful user-interface, and is extremely easy to use and
+it has a thoughtful user interface, and is extremely easy to use and
 configure.
 
 Gunicorn has sane and reasonable defaults for configurations. However, some
@@ -155,7 +210,7 @@ Gunicorn is the recommended choice for new Python web applications today.
 Waitress
 --------
 
-`Waitress <https://waitress.readthedocs.io>`_ is a pure-python WSGI server
+`Waitress <https://waitress.readthedocs.io>`_ is a pure-Python WSGI server
 that claims "very acceptable performance". Its documentation is not very
 detailed, but it does offer some nice functionality that Gunicorn doesn't have
 (e.g. HTTP request buffering).
@@ -170,13 +225,13 @@ uWSGI
 `uWSGI <https://uwsgi-docs.readthedocs.io>`_ is a full stack for building
 hosting services.  In addition to process management, process monitoring,
 and other functionality, uWSGI acts as an application server for various
-programming languages and protocols - including Python and WSGI. uWSGI can
+programming languages and protocols -- including Python and WSGI. uWSGI can
 either be run as a stand-alone web router, or be run behind a full web
 server (such as Nginx or Apache).  In the latter case, a web server can
 configure uWSGI and an application's operation over the
 `uwsgi protocol <https://uwsgi-docs.readthedocs.io/en/latest/Protocol.html>`_.
 uWSGI's web server support allows for dynamically configuring
-Python, passing environment variables and further tuning.  For full details,
+Python, passing environment variables, and further tuning.  For full details,
 see `uWSGI magic
 variables <https://uwsgi-docs.readthedocs.io/en/latest/Vars.html>`_.
 
@@ -185,8 +240,9 @@ I do not recommend using uWSGI unless you know why you need it.
 .. _server-best-practices-ref:
 
 
+*********************
 Server Best Practices
-:::::::::::::::::::::
+*********************
 
 The majority of self-hosted Python applications today are hosted with a WSGI
 server such as :ref:`Gunicorn <gunicorn-ref>`, either directly or behind a
@@ -196,8 +252,10 @@ The WSGI servers serve the Python applications while the web server handles
 tasks better suited for it such as static file serving, request routing, DDoS
 protection, and basic authentication.
 
+
+*******
 Hosting
-:::::::
+*******
 
 Platform-as-a-Service (PaaS) is a type of cloud computing infrastructure
 which abstracts and manages infrastructure, routing, and scaling of web
@@ -208,14 +266,14 @@ details.
 Heroku
 ------
 
-`Heroku <http://www.heroku.com/python>`_ offers first-class support for
+`Heroku <https://www.heroku.com/python>`_ offers first-class support for
 Python 2.7–3.5 applications.
 
 Heroku supports all types of Python web applications, servers, and frameworks.
 Applications can be developed on Heroku for free. Once your application is
 ready for production, you can upgrade to a Hobby or Professional application.
 
-Heroku maintains `detailed articles <https://devcenter.heroku.com/categories/python>`_
+Heroku maintains `detailed articles <https://devcenter.heroku.com/categories/python-support>`_
 on using Python with Heroku, as well as `step-by-step instructions
 <https://devcenter.heroku.com/articles/getting-started-with-python>`_ on
 how to set up your first application.
@@ -225,15 +283,17 @@ Heroku is the recommended PaaS for deploying Python web applications today.
 Eldarion
 --------
 
-`Eldarion <http://eldarion.cloud/>`_ (formely known as Gondor) is a PaaS powered
+`Eldarion <https://eldarion.cloud/>`_ (formerly known as Gondor) is a PaaS powered
 by Kubernetes, CoreOS, and Docker. They support any WSGI application and have a
 guide on deploying `Django projects <https://eldarion-gondor.github.io/docs/how-to/setup-deploy-first-django-project/>`_.
 
+
+**********
 Templating
-::::::::::
+**********
 
 Most WSGI applications are responding to HTTP requests to serve content in HTML
-or other markup languages. Instead of generating directly textual content from
+or other markup languages. Instead of directly generating textual content from
 Python, the concept of separation of concerns advises us to use templates. A
 template engine manages a suite of template files, with a system of hierarchy
 and inclusion to avoid unnecessary repetition, and is in charge of rendering
@@ -271,10 +331,10 @@ Jinja2
 `Jinja2 <http://jinja.pocoo.org/>`_ is a very well-regarded template engine.
 
 It uses a text-based template language and can thus be used to generate any
-type markup, not just HTML. It allows customization of filters, tags, tests
+type of markup, not just HTML. It allows customization of filters, tags, tests,
 and globals. It features many improvements over Django's templating system.
 
-Here some important html tags in Jinja2:
+Here some important HTML tags in Jinja2:
 
 .. code-block:: html
 
@@ -294,7 +354,7 @@ Here some important html tags in Jinja2:
     {% endfor %}
 
 
-The next listings is an example of a web site in combination with the Tornado
+The next listings are an example of a web site in combination with the Tornado
 web server. Tornado is not very complicated to use.
 
 .. code-block:: python
@@ -388,16 +448,16 @@ Chameleon
 ---------
 
 `Chameleon <https://chameleon.readthedocs.io/>`_ Page Templates are an HTML/XML template
-engine implementation of the `Template Attribute Language (TAL) <http://en.wikipedia.org/wiki/Template_Attribute_Language>`_,
+engine implementation of the `Template Attribute Language (TAL) <https://en.wikipedia.org/wiki/Template_Attribute_Language>`_,
 `TAL Expression Syntax (TALES) <https://chameleon.readthedocs.io/en/latest/reference.html#expressions-tales>`_,
 and `Macro Expansion TAL (Metal) <https://chameleon.readthedocs.io/en/latest/reference.html#macros-metal>`_ syntaxes.
 
-Chameleon is available for Python 2.5 and up (including 3.x and pypy), and
-is commonly used by the `Pyramid Framework <http://trypyramid.com>`_.
+Chameleon is available for Python 2.5 and up (including 3.x and PyPy), and
+is commonly used by the `Pyramid Framework <https://trypyramid.com/>`_.
 
 Page Templates add within your document structure special element attributes
 and text markup. Using a set of simple language constructs, you control the
-document flow, element repetition, text replacement and translation. Because
+document flow, element repetition, text replacement, and translation. Because
 of the attribute-based syntax, unrendered page templates are valid HTML and can
 be viewed in a browser and even edited in WYSIWYG editors. This can make
 round-trip collaboration with designers and prototyping with static files in a
@@ -451,7 +511,7 @@ Mako
 ----
 
 `Mako <http://www.makotemplates.org/>`_ is a template language that compiles to Python
-for maximum performance. Its syntax and api is borrowed from the best parts of other
+for maximum performance. Its syntax and API are borrowed from the best parts of other
 templating languages like Django and Jinja2 templates. It is the default template
 language included with the `Pylons and Pyramid <http://www.pylonsproject.org/>`_ web
 frameworks.
@@ -489,6 +549,4 @@ Mako is well respected within the Python web community.
 
 .. rubric:: References
 
-.. [1] `The mod_python project is now officially dead <http://blog.dscpl.com.au/2010/06/modpython-project-is-now-officially.html>`_
-.. [2] `mod_wsgi vs mod_python <http://www.modpython.org/pipermail/mod_python/2007-July/024080.html>`_
-.. [3] `Benchmark of Python WSGI Servers <http://nichol.as/benchmark-of-python-web-servers>`_
+.. [1] `Benchmark of Python WSGI Servers <http://nichol.as/benchmark-of-python-web-servers>`_

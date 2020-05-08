@@ -1,5 +1,9 @@
+
+#####
 Speed
-=====
+#####
+
+.. image:: /_static/photos/33175625804_e225b90f3e_k_d.jpg
 
 CPython, the most commonly used implementation of Python, is slow for CPU bound
 tasks. `PyPy`_ is fast.
@@ -33,8 +37,10 @@ and PyPy's processing.
    1.54693889618
    1.60109114647
 
+
+*******
 Context
-:::::::
+*******
 
 
 The GIL
@@ -61,14 +67,16 @@ The GIL
 `Special care`_ must be taken when writing C extensions to make sure you
 register your threads with the interpreter.
 
+
+************
 C Extensions
-::::::::::::
+************
 
 
 Cython
 ------
 
-`Cython <http://cython.org/>`_ implements a superset of the Python language
+`Cython <https://cython.org/>`_ implements a superset of the Python language
 with which you are able to write C and C++ modules for Python. Cython also
 allows you to call functions from compiled C libraries. Using Cython allows
 you to take advantage of Python's strong typing of variables and operations.
@@ -192,8 +200,8 @@ These lines both need a remark:
 The `pyximport` module allows you to import :file:`*.pyx` files (e.g.,
 :file:`primesCy.pyx`) with the Cython-compiled version of the `primes`
 function. The `pyximport.install()` command allows the Python interpreter to
-start the Cython compiler directly to generate C-code, which is automatically
-compiled to a :file:`*.so` C-library. Cython is then able to import this
+start the Cython compiler directly to generate C code, which is automatically
+compiled to a :file:`*.so` C library. Cython is then able to import this
 library for you in your Python code, easily and efficiently. With the
 `time.time()` function you are able to compare the time between these 2
 different calls to find 500 prime numbers. On a standard notebook (dual core
@@ -206,7 +214,7 @@ AMD E-450 1.6 GHz), the measured values are:
     Python time: 0.0566 seconds
 
 
-And here the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_ machine:
+And here is the output of an embedded `ARM beaglebone <http://beagleboard.org/Products/BeagleBone>`_ machine:
 
 .. code-block:: console
 
@@ -222,8 +230,10 @@ Pyrex
 Shedskin?
 ---------
 
+
+***********
 Concurrency
-:::::::::::
+***********
 
 
 Concurrent.futures
@@ -232,18 +242,18 @@ Concurrent.futures
 The `concurrent.futures`_ module is a module in the standard library that
 provides a "high-level interface for asynchronously executing callables". It
 abstracts away a lot of the more complicated details about using multiple
-threads or processes for concurrency, and allows the user to focus on 
+threads or processes for concurrency, and allows the user to focus on
 accomplishing the task at hand.
 
 The `concurrent.futures`_ module exposes two main classes, the
 `ThreadPoolExecutor` and the `ProcessPoolExecutor`. The ThreadPoolExecutor
 will create a pool of worker threads that a user can submit jobs to. These jobs
 will then be executed in another thread when the next worker thread becomes
-available.  
+available.
 
 The ProcessPoolExecutor works in the same way, except instead of using multiple
 threads for its workers, it will use multiple processes. This makes it possible
-to side-step the GIL, however because of the way things are passed to worker
+to side-step the GIL; however, because of the way things are passed to worker
 processes, only picklable objects can be executed and returned.
 
 Because of the way the GIL works, a good rule of thumb is to use a
@@ -254,7 +264,7 @@ executor when the task is computationally expensive.
 There are two main ways of executing things in parallel using the two
 Executors. One way is with the `map(func, iterables)` method. This works
 almost exactly like the builtin `map()` function, except it will execute
-everything in parallel. :
+everything in parallel.
 
 .. code-block:: python
 
@@ -273,7 +283,7 @@ everything in parallel. :
         # Do something with the result
         print(page.text)
 
-For even more control, the `submit(func, *args, **kwargs)` method will schedule 
+For even more control, the `submit(func, *args, **kwargs)` method will schedule
 a callable to be executed ( as `func(*args, **kwargs)`) and returns a `Future`_
 object that represents the execution of the callable.
 
@@ -294,7 +304,7 @@ result()
     the scheduled callable returns by default.
 exception()
     Return the exception raised by the call. If no exception was raised then
-    this returns `None`. Note that this will block just like `result()`.
+    this returns None. Note that this will block just like `result()`.
 add_done_callback(fn)
     Attach a callback function that will be executed (as `fn(future)`) when the
     scheduled callable returns.
@@ -347,14 +357,14 @@ futures provided have completed.
 For more information, on using the `concurrent.futures`_ module, consult the
 official documentation.
 
-Threading
+threading
 ---------
 
 The standard library comes with a `threading`_ module that allows a user to
 work with multiple threads manually.
 
 Running a function in another thread is as simple as passing a callable and
-it's arguments to `Thread`'s constructor and then calling `start()`:
+its arguments to `Thread`'s constructor and then calling `start()`:
 
 .. code-block:: python
 
@@ -387,9 +397,9 @@ still alive (because the join call timed out):
 Because multiple threads have access to the same section of memory, sometimes
 there might be situations where two or more threads are trying to write to the
 same resource at the same time or where the output is dependent on the sequence
-or timing of certain events. This is called a `data race`_ or race condition. 
+or timing of certain events. This is called a `data race`_ or race condition.
 When this happens, the output will be garbled or you may encounter problems
-which are difficult to debug. A good example is this `stackoverflow post`_.  
+which are difficult to debug. A good example is this `Stack Overflow post`_.
 
 The way this can be avoided is by using a `Lock`_ that each thread needs to
 acquire before writing to a shared resource. Locks can be acquired and released
@@ -410,7 +420,7 @@ through either the contextmanager protocol (`with` statement), or by using
 
     def monitor_website(some_website):
         """
-        Monitor a website and then if there are any changes, 
+        Monitor a website and then if there are any changes,
         log them to disk.
         """
         while True:
@@ -427,7 +437,7 @@ Here, we have a bunch of threads checking for changes on a list of sites and
 whenever there are any changes, they attempt to write those changes to a file
 by calling `log(changes)`. When `log()` is called, it will wait to acquire
 the lock with `with file_lock:`. This ensures that at any one time, only one
-thread is writing to the file. 
+thread is writing to the file.
 
 Spawning Processes
 ------------------
@@ -438,14 +448,14 @@ Multiprocessing
 
 
 .. _`PyPy`: http://pypy.org
-.. _`The GIL`: http://wiki.python.org/moin/GlobalInterpreterLock
+.. _`The GIL`: https://wiki.python.org/moin/GlobalInterpreterLock
 .. _`guide`: http://www.dabeaz.com/python/UnderstandingGIL.pdf
 .. _`New GIL`: http://www.dabeaz.com/python/NewGIL.pdf
-.. _`Special care`: http://docs.python.org/c-api/init.html#threads
+.. _`Special care`: https://docs.python.org/c-api/init.html#threads
 .. _`David Beazley's`: http://www.dabeaz.com/GIL/gilvis/measure2.py
 .. _`concurrent.futures`: https://docs.python.org/3/library/concurrent.futures.html
 .. _`Future`: https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future
 .. _`threading`: https://docs.python.org/3/library/threading.html
-.. _`stackoverflow post`: http://stackoverflow.com/questions/26688424/python-threads-are-printing-at-the-same-time-messing-up-the-text-output
+.. _`Stack Overflow post`: https://stackoverflow.com/questions/26688424/python-threads-are-printing-at-the-same-time-messing-up-the-text-output
 .. _`data race`: https://en.wikipedia.org/wiki/Race_condition
 .. _`Lock`: https://docs.python.org/3/library/threading.html#lock-objects

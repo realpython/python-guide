@@ -1,5 +1,10 @@
+
+
+############
 Introduction
-============
+############
+
+.. image:: /_static/photos/34725946825_0f85497e60_k_d.jpg
 
 From the `official Python website <http://python.org/about/>`_:
 
@@ -23,11 +28,11 @@ include:
   object serialization, and much more.
 
   Additionally, the
-  `Python Package Index <http://pypi.python.org/pypi/>`_ is available
+  `Python Package Index <https://pypi.org>`_ is available
   for users to submit their packages for widespread use, similar to
-  Perl's `CPAN <http://www.cpan.org>`_. There is a thriving community
+  Perl's `CPAN <https://www.cpan.org>`_. There is a thriving community
   of very powerful Python frameworks and tools like
-  the `Django <http://www.djangoproject.com>`_ web framework and the
+  the `Django <https://www.djangoproject.com>`_ web framework and the
   `NumPy <http://numpy.scipy.org>`_ set of math routines.
 
 * **integration with other systems**
@@ -54,8 +59,10 @@ include:
 
 .. _about-ref:
 
+
+****************
 About This Guide
-----------------
+****************
 
 Purpose
 ~~~~~~~

@@ -1,11 +1,13 @@
 Your Development Environment
 ============================
 
+.. image:: /_static/photos/33175624924_7febc46cc4_k_d.jpg
+
 
 Text Editors
 ::::::::::::
 
-Just about anything that can edit plain text will work for writing Python code,
+Just about anything that can edit plain text will work for writing Python code;
 however, using a more powerful editor may make your life a bit easier.
 
 
@@ -85,29 +87,29 @@ using ``<Tab>`` key or any other customized keys.
 
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
-.. _Pyflakes: http://pypi.python.org/pypi/pyflakes/
-.. _pycodestyle: https://pypi.python.org/pypi/pycodestyle/
-.. _syntastic: https://github.com/scrooloose/syntastic
-.. _Python-mode: https://github.com/klen/python-mode
+.. _Pyflakes: http://pypi.org/project/pyflakes/
+.. _pycodestyle: https://pypi.org/project/pycodestyle/
+.. _syntastic: https://github.com/vim-syntastic/syntastic
+.. _Python-mode: https://github.com/python-mode/python-mode
 .. _SuperTab: http://www.vim.org/scripts/script.php?script_id=1643
 .. _vim-flake8: https://github.com/nvie/vim-flake8
 
 Emacs
 -----
 
-Emacs is another powerful text editor. It is fully programmable (lisp), but
+Emacs is another powerful text editor. It is fully programmable (Lisp), but
 it can be some work to wire up correctly. A good start if you're already an
 Emacs user is `Python Programming in Emacs`_ at EmacsWiki.
 
 1. Emacs itself comes with a Python mode.
 
-.. _Python Programming in Emacs: http://emacswiki.org/emacs/PythonProgrammingInEmacs
+.. _Python Programming in Emacs: https://www.emacswiki.org/emacs/PythonProgrammingInEmacs
 
 TextMate
 --------
 
     `TextMate <http://macromates.com/>`_ brings Apple's approach to operating
-    systems into the world of text editors. By bridging UNIX underpinnings and
+    systems into the world of text editors. By bridging Unix underpinnings and
     GUI, TextMate cherry-picks the best of both worlds to the benefit of expert
     scripters and novice users alike.
 
@@ -115,8 +117,8 @@ Sublime Text
 ------------
 
     `Sublime Text <http://www.sublimetext.com/>`_ is a sophisticated text
-    editor for code, markup and prose. You'll love the slick user interface,
-    extraordinary features and amazing performance.
+    editor for code, markup, and prose. You'll love the slick user interface,
+    extraordinary features, and amazing performance.
 
 Sublime Text has excellent support for editing Python code and uses Python for
 its plugin API. It also has a diverse variety of plugins,
@@ -131,9 +133,9 @@ Atom
     editors.
 
 Atom is web native (HTML, CSS, JS), focusing on modular design and easy plugin
-development. It comes with native package control and plethora of packages.
+development. It comes with native package control and a plethora of packages.
 Recommended for Python development is
-`Linter <https://github.com/AtomLinter/Linter>`_ combined with
+`Linter <https://github.com/steelbrain/linter>`_ combined with
 `linter-flake8 <https://github.com/AtomLinter/linter-flake8>`_.
 
 
@@ -153,29 +155,29 @@ Edition (Apache 2.0 License) with fewer features.
 Python (on Visual Studio Code)
 ------------------------------
 
-`Python for Visual Studio <https://marketplace.visualstudio.com/items?itemName=donjayamanne.python>`_ is an extension for the `Visual Studio Code IDE <https://code.visualstudio.com>`_.
-This is a free, light weight, open source IDE, with support for Mac, Windows, and Linux.
+`Python for Visual Studio <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_ is an extension for the `Visual Studio Code IDE <https://code.visualstudio.com>`_.
+This is a free, lightweight, open source IDE, with support for Mac, Windows, and Linux.
 Built using open source technologies such as Node.js and Python, with compelling features such as Intellisense (autocompletion), local and remote debugging, linting, and the like.
 
 MIT licensed.
 
 Enthought Canopy
 ----------------
-`Enthought Canopy <https://www.enthought.com/products/canopy/>`_ is a Python
-IDE which is focused towards Scientists and Engineers as it provides pre 
-installed libraries for data analysis. 
+`Enthought Canopy <https://www.enthought.com/product/canopy/>`_ is a Python
+IDE which is focused towards Scientists and Engineers as it provides pre
+installed libraries for data analysis.
 
 Eclipse
 -------
 
 The most popular Eclipse plugin for Python development is Aptana's
-`PyDev <http://pydev.org>`_.
+`PyDev <https://pydev.org>`_.
 
 
 Komodo IDE
 ----------
 
-`Komodo IDE <http://www.activestate.com/komodo-ide>`_ is developed by
+`Komodo IDE <https://www.activestate.com/products/komodo-ide/>`_ is developed by
 ActiveState and is a commercial IDE for Windows, Mac, and Linux.
 `KomodoEdit <https://github.com/Komodo/KomodoEdit>`_ is the open source
 alternative.
@@ -186,11 +188,11 @@ Spyder
 
 `Spyder <https://github.com/spyder-ide/spyder>`_ is an IDE specifically geared
 toward working with scientific Python libraries (namely
-`Scipy <http://www.scipy.org/>`_). It includes integration with pyflakes_,
-`pylint <http://www.logilab.org/857>`_ and
+`SciPy <https://www.scipy.org/>`_). It includes integration with pyflakes_,
+`pylint <https://www.logilab.org/857>`_ and
 `rope <https://github.com/python-rope/rope>`_.
 
-Spyder is open-source (free), offers code completion, syntax highlighting,
+Spyder is open source (free), offers code completion, syntax highlighting,
 a class and function browser, and object inspection.
 
 
@@ -198,7 +200,7 @@ WingIDE
 -------
 
 `WingIDE <http://wingware.com/>`_ is a Python specific IDE. It runs on Linux,
-Windows and Mac (as an X11 application, which frustrates some Mac users).
+Windows, and Mac (as an X11 application, which frustrates some Mac users).
 
 WingIDE offers code completion, syntax highlighting, source browser, graphical
 debugger and support for version control systems.
@@ -209,11 +211,11 @@ NINJA-IDE
 
 `NINJA-IDE <http://www.ninja-ide.org/>`_ (from the recursive acronym: "Ninja-IDE
 Is Not Just Another IDE") is a cross-platform IDE, specially designed to build
-Python applications, and runs on Linux/X11, Mac OS X and Windows desktop
+Python applications, and runs on Linux/X11, Mac OS X, and Windows desktop
 operating systems. Installers for these platforms can be downloaded from the
 website.
 
-NINJA-IDE is open-source software (GPLv3 licence) and is developed
+NINJA-IDE is open source software (GPLv3 licence) and is developed
 in Python and Qt. The source files can be downloaded from
 `GitHub <https://github.com/ninja-ide>`_.
 
@@ -222,11 +224,11 @@ Eric (The Eric Python IDE)
 --------------------------
 
 `Eric <http://eric-ide.python-projects.org/>`_ is a full featured Python IDE
-offering sourcecode autocompletion, syntax highlighting, support for version
-control systems, python 3 support, integrated web browser, python shell,
-integrated debugger and a flexible plug-in system. Written in python, it is
-based on the Qt gui toolkit, integrating the Scintilla editor control. Eric
-is an open-source software project (GPLv3 licence) with more than ten years of
+offering source code autocompletion, syntax highlighting, support for version
+control systems, Python 3 support, integrated web browser, python shell,
+integrated debugger, and a flexible plug-in system. Written in Python, it is
+based on the Qt GUI toolkit, integrating the Scintilla editor control. Eric
+is an open source software project (GPLv3 licence) with more than ten years of
 active development.
 
 
@@ -240,19 +242,19 @@ Virtual Environments
 Virtual Environments provide a powerful way to isolate project package dependencies. This means that you can use packages particular to a Python project without installing them system wide and thus avoiding potential version conflicts.
 
 To start using and see more information:
-`Virtual Environments <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs.
+`Virtual Environments <https://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs.
 
 
 pyenv
 -----
 
-`pyenv <https://github.com/yyuu/pyenv>`_ is a tool to allow multiple versions
+`pyenv <https://github.com/pyenv/pyenv>`_ is a tool to allow multiple versions
 of the Python interpreter to be installed at the same time.  This solves the
 problem of having different projects requiring different versions of Python.
 For example, it becomes very easy to install Python 2.7 for compatibility in
-one project, whilst still using Python 3.4 as the default interpreter.
-pyenv isn't just limited to the CPython versions - it will also install PyPy,
-anaconda, miniconda, stackless, jython, and ironpython interpreters.
+one project, while still using Python 3.4 as the default interpreter.
+pyenv isn't just limited to the CPython versions – it will also install PyPy,
+Anaconda, miniconda, stackless, Jython, and IronPython interpreters.
 
 pyenv works by filling a ``shims`` directory with fake versions of the Python
 interpreter (plus other tools like ``pip`` and ``2to3``).  When the system
@@ -262,7 +264,7 @@ pyenv.  pyenv then works out which version of Python should be run based on
 environment variables, ``.python-version`` files, and the global default.
 
 pyenv isn't a tool for managing virtual environments, but there is the plugin
-`pyenv-virtualenv <https://github.com/yyuu/pyenv-virtualenv>`_ which automates
+`pyenv-virtualenv <https://github.com/pyenv/pyenv-virtualenv>`_ which automates
 the creation of different environments, and also makes it possible to use the
 existing pyenv tools to switch to different environments based on environment
 variables or ``.python-version`` files.
@@ -274,7 +276,7 @@ IDLE
 ----
 
 :ref:`IDLE <python:idle>` is an integrated development environment that is
-part of Python standard library. It is completely written in Python and uses
+part of the Python standard distribution. It is completely written in Python and uses
 the Tkinter GUI toolkit. Though IDLE is not suited for full-blown development
 using Python, it is quite helpful to try out small Python snippets and
 experiment with different features in Python.
@@ -292,18 +294,18 @@ IPython
 `IPython <http://ipython.org/>`_ provides a rich toolkit to help you make the
 most out of using Python interactively. Its main components are:
 
-* Powerful Python shells (terminal- and Qt-based).
+* Powerful Python shells (terminal- and Qt-based)
 * A web-based notebook with the same core features but support for rich media,
-  text, code, mathematical expressions and inline plots.
-* Support for interactive data visualization and use of GUI toolkits.
-* Flexible, embeddable interpreters to load into your own projects.
-* Tools for high level and interactive parallel computing.
+  text, code, mathematical expressions and inline plots
+* Support for interactive data visualization and use of GUI toolkits
+* Flexible, embeddable interpreters to load into your own projects
+* Tools for high level and interactive parallel computing
 
 .. code-block:: console
 
     $ pip install ipython
 
-To download and install IPython with all it's optional dependencies for the notebook, qtconsole, tests, and other functionalities
+To download and install IPython with all its optional dependencies for the notebook, qtconsole, tests, and other functionalities:
 
 .. code-block:: console
 
@@ -312,18 +314,18 @@ To download and install IPython with all it's optional dependencies for the note
 BPython
 -------
 
-`bpython <http://bpython-interpreter.org/>`_ is an alternative interface to the
+`bpython <https://bpython-interpreter.org/>`_ is an alternative interface to the
 Python interpreter for Unix-like operating systems. It has the following
 features:
 
-* In-line syntax highlighting.
-* Readline-like autocomplete with suggestions displayed as you type.
-* Expected parameter list for any Python function.
-* "Rewind" function to pop the last line of code from memory and re-evaluate.
-* Send entered code off to a pastebin.
-* Save entered code to a file.
-* Auto-indentation.
-* Python 3 support.
+* In-line syntax highlighting
+* Readline-like autocomplete with suggestions displayed as you type
+* Expected parameter list for any Python function
+* "Rewind" function to pop the last line of code from memory and re-evaluate
+* Send entered code off to a pastebin
+* Save entered code to a file
+* Auto-indentation
+* Python 3 support
 
 .. code-block:: console
 
@@ -332,19 +334,19 @@ features:
 ptpython
 --------
 
-`ptpython <https://github.com/jonathanslenders/ptpython/>`_ is a REPL build
-on top of the `prompt_toolkit <http://github.com/jonathanslenders/python-prompt-toolkit>`_
+`ptpython <https://github.com/prompt-toolkit/ptpython>`_ is a REPL build
+on top of the `prompt_toolkit <https://github.com/prompt-toolkit/python-prompt-toolkit>`_
 library. It is considered to be an alternative to BPython_. Features include:
 
 * Syntax highlighting
 * Autocompletion
 * Multiline editing
-* Emacs and VIM Mode
+* Emacs and Vim Modes
 * Embedding REPL inside of your code
-* Syntax Validation
+* Syntax validation
 * Tab pages
 * Support for integrating with IPython_'s shell, by installing IPython
-  ``pip install ipython`` and running ``ptipython``.
+  (``pip install ipython``) and running ``ptipython``.
 
 .. code-block:: console
 

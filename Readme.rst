@@ -3,6 +3,10 @@ Hitchhiker's Guide to Python
 
 **Python Best Practices Guidebook**
 
+→ Read the free guide at: `docs.python-guide.org <https://docs.python-guide.org>`_
+
+.. image:: https://farm1.staticflickr.com/628/33173824932_58add34581_k_d.jpg
+
 -----------
 
 **Work in progress. If you'd like to help, please do. There's a lot of work to
@@ -16,7 +20,7 @@ basis.
 
 Topics include:
 
-- Platform- and version-specific installations
+- Platform and version-specific installations
 - Py2app, Py2exe, bbfreeze, pyInstaller
 - Pip
 - Numpy, scipy, statpy, pyplot, matplotlib
@@ -31,4 +35,4 @@ Topics include:
 
 If you aren't fond of reading reStructuredText, there is an
 almost up-to-date `HTML version at docs.python-guide.org
-<http://docs.python-guide.org>`_.
+<https://docs.python-guide.org>`_.

@@ -1,0 +1,28 @@
+:orphan:
+
+#################
+404 — Not Found
+#################
+
+**Sorry, but we couldn't find the page you requested.**
+
+It looks like this was the result of either:
+
+- a mistyped address
+- an out-of-date link
+
+`Click here to go back to the homepage. <https://docs.python-guide.org/>`_
+
+Or, try `searching <https://docs.python-guide.org/search/>`_.
+
+.. raw:: html
+
+    <script>
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'error',
+        eventAction: '404',
+        eventLabel: document.referrer,
+        nonInteraction: true
+      });
+    </script>

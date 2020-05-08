@@ -1,12 +1,19 @@
 .. _install-windows:
 
-Installing Python 2 on Windows
-==============================
 
-First, download the `latest version <https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi>`_
+##############################
+Installing Python 2 on Windows
+##############################
+
+.. image:: /_static/photos/34435688560_4cc2a7bcbb_k_d.jpg
+
+.. note::
+    Check out our :ref:`guide for installing Python 3 on Windows<install3-windows>`.
+
+First, download the `latest version <https://www.python.org/ftp/python/2.7.15/python-2.7.15.msi>`_
 of Python 2.7 from the official website. If you want to be sure you are installing a fully
 up-to-date version, click the Downloads > Windows link from the home page of the
-`Python.org web site <http://python.org>`_ .
+`Python.org web site <https://python.org>`_ .
 
 The Windows version is provided as an MSI package. To install it manually, just
 double-click the file. The MSI package format allows Windows administrators to
@@ -25,13 +32,13 @@ tedious, so add the directories for your default Python version to the :envvar:`
 Assuming that your Python installation is in :file:`C:\\Python27\\`, add this to your
 :envvar:`PATH`:
 
-.. code-block:: console
+.. code-block:: doscon
 
     C:\Python27\;C:\Python27\Scripts\
 
 You can do this easily by running the following in ``powershell``:
 
-.. code-block:: console
+.. code-block:: powershell
 
     [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
 
@@ -45,31 +52,32 @@ described in the next section before you start building Python applications for
 real-world use. In particular, you should always install Setuptools, as it
 makes it much easier for you to use other third-party Python libraries.
 
+
+****************
 Setuptools + Pip
-----------------
+****************
 
-The most crucial third-party Python software of all is Setuptools, which
-extends the packaging and installation facilities provided by the distutils in
-the standard library. Once you add Setuptools to your Python system you can
-download and install any compliant Python software product with a single
-command. It also enables you to add this network installation capability to
-your own Python software with very little work.
+The two most crucial third-party Python packages are `setuptools <https://pypi.org/project/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_.
 
-To obtain the latest version of Setuptools for Windows, run the Python script
-available here: `ez_setup.py <https://bootstrap.pypa.io/ez_setup.py>`_
+Once installed, you can download, install and uninstall any compliant Python software
+product with a single command. It also enables you to add this network installation
+capability to your own Python software with very little work.
 
+Python 2.7.9 and later (on the python2 series), and Python 3.4 and later include
+pip by default.
 
-You'll now have a new command available to you: **easy_install**. It is
-considered by many to be deprecated, so we will install its replacement:
-**pip**. Pip allows for uninstallation of packages, and is actively maintained,
-unlike easy_install.
+To see if pip is installed, open a command prompt and run
 
-To install pip, run the Python script available here:
-`get-pip.py <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
+.. code-block:: doscon
+
+    command -v pip
+
+To install pip, `follow the official pip installation guide <https://pip.pypa.io/en/latest/installing/>`_ - this will automatically install the latest version of setuptools.
 
 
+********************
 Virtual Environments
---------------------
+********************
 
 A Virtual Environment is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them. It solves the
@@ -84,5 +92,5 @@ To start using this and see more information: :ref:`Virtual Environments <virtua
 
 --------------------------------
 
-This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
+This page is a remixed version of `another guide <https://www.stuartellis.name/articles/python-development-windows/>`_,
 which is available under the same license.

@@ -1,12 +1,16 @@
 .. _install-osx:
 
+
+###############################
 Installing Python 2 on Mac OS X
-===============================
+###############################
+
+.. image:: /_static/photos/34435688560_4cc2a7bcbb_k_d.jpg
 
 .. note::
     Check out our :ref:`guide for installing Python 3 on OS X<install3-osx>`.
 
-The latest version of Mac OS X, Sierra, **comes with Python 2.7 out of the box**.
+**Mac OS X comes with Python 2.7 out of the box.**
 
 You do not need to install or configure anything else to use Python. Having said
 that, I would strongly recommend that you install the tools and libraries
@@ -19,35 +23,37 @@ good for development. The version shipped with OS X may be out of date from the
 `official current Python release <https://www.python.org/downloads/mac-osx/>`_,
 which is considered the stable production version.
 
+
+**************
 Doing it Right
---------------
+**************
 
 Let's install a real version of Python.
 
 Before installing Python, you'll need to install a C compiler. The fastest way
 is to install the Xcode Command Line Tools by running
 ``xcode-select --install``. You can also download the full version of
-`Xcode <http://developer.apple.com/xcode/>`_ from the Mac App Store, or the
+`Xcode <https://developer.apple.com/xcode/>`_ from the Mac App Store, or the
 minimal but unofficial
 `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
 package.
 
 .. note::
-    If you already have XCode installed, do not install OSX-GCC-Installer.
+    If you already have Xcode installed, do not install OSX-GCC-Installer.
     In combination, the software can cause issues that are difficult to
     diagnose.
 
 .. note::
-    If you perform a fresh install of XCode, you will also need to add the
+    If you perform a fresh install of Xcode, you will also need to add the
     commandline tools by running ``xcode-select --install`` on the terminal.
 
 
-While OS X comes with a large number of UNIX utilities, those familiar with
+While OS X comes with a large number of Unix utilities, those familiar with
 Linux systems will notice one key component missing: a decent package manager.
-`Homebrew <http://brew.sh>`_ fills this void.
+`Homebrew <https://brew.sh>`_ fills this void.
 
-To `install Homebrew <http://brew.sh/#install>`_, open :file:`Terminal` or
-your favorite OSX terminal emulator and run
+To `install Homebrew <https://brew.sh/#install>`_, open :file:`Terminal` or
+your favorite OS X terminal emulator and run
 
 .. code-block:: console
 
@@ -61,25 +67,33 @@ line at the bottom of your :file:`~/.profile` file
 
 .. code-block:: console
 
-    export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+    export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 Now, we can install Python 2.7:
 
 .. code-block:: console
 
-    $ brew install python
+    $ brew install python@2
 
-or Python 3:
+Because ``python@2`` is a "keg", we need to update our ``PATH`` again, to point at our new installation:
 
 .. code-block:: console
 
-    $ brew install python3
+    export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
 
-This will take a minute or two.
+Homebrew names the executable ``python2`` so that you can still run the system Python via the executable ``python``.
 
 
+.. code-block:: console
+
+    $ python -V   # Homebrew installed Python 3 interpreter (if installed)
+    $ python2 -V  # Homebrew installed Python 2 interpreter
+    $ python3 -V  # Homebrew installed Python 3 interpreter (if installed)
+
+
+****************
 Setuptools & Pip
-----------------
+****************
 
 Homebrew installs Setuptools and ``pip`` for you.
 
@@ -93,9 +107,15 @@ that is recommended over ``easy_install``. It is superior to ``easy_install``
 in `several ways <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_,
 and is actively maintained.
 
+.. code-block:: console
 
+    $ pip2 -V  # pip pointing to the Homebrew installed Python 2 interpreter
+    $ pip -V  # pip pointing to the Homebrew installed Python 3 interpreter (if installed)
+
+
+********************
 Virtual Environments
---------------------
+********************
 
 A Virtual Environment (commonly referred to as a 'virtualenv') is a tool to keep the dependencies required by different projects
 in separate places, by creating virtual Python environments for them. It solves the
@@ -109,5 +129,5 @@ To start using this and see more information: :ref:`Virtual Environments <virtua
 
 --------------------------------
 
-This page is a remixed version of `another guide <http://www.stuartellis.eu/articles/python-development-windows/>`_,
+This page is a remixed version of `another guide <https://www.stuartellis.name/articles/python-development-windows/>`_,
 which is available under the same license.

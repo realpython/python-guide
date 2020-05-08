@@ -1,5 +1,10 @@
+
+
+##############
 Common Gotchas
-==============
+##############
+
+.. image:: /_static/photos/34435688380_b5a740762b_k_d.jpg
 
 For the most part, Python aims to be a clean and consistent language that
 avoids surprises. However, there are a few cases that can be confusing to
@@ -14,8 +19,10 @@ the surprise.
 
 .. _default_args:
 
+
+*************************
 Mutable Default Arguments
--------------------------
+*************************
 
 Seemingly the *most* common surprise new Python programmers encounter is
 Python's treatment of mutable default arguments in function definitions.
@@ -35,10 +42,10 @@ What You Might Have Expected to Happen
 .. code-block:: python
 
     my_list = append_to(12)
-    print my_list
+    print(my_list)
 
     my_other_list = append_to(42)
-    print my_other_list
+    print(my_other_list)
 
 A new list is created each time the function is called if a second argument
 isn't provided, so that the output is::
@@ -86,8 +93,9 @@ to maintain state between calls of a function. This is often done when writing
 a caching function.
 
 
+****************************
 Late Binding Closures
----------------------
+****************************
 
 Another common source of confusion is the way Python binds its variables in
 closures (or in the surrounding global scope).
@@ -106,7 +114,7 @@ What You Might Have Expected to Happen
 .. testcode::
 
     for multiplier in create_multipliers():
-        print multiplier(2)
+        print(multiplier(2))
 
 A list containing five functions that each have their own closed-over ``i``
 variable that multiplies their argument, producing::
@@ -187,9 +195,9 @@ lots of situations. Looping to create unique functions is unfortunately a case
 where they can cause hiccups.
 
 
-
+*********************************
 Bytecode (.pyc) Files Everywhere!
----------------------------------
+*********************************
 
 By default, when executing Python code from files, the Python interpreter
 will automatically write a bytecode version of that file to disk, e.g.
@@ -197,7 +205,7 @@ will automatically write a bytecode version of that file to disk, e.g.
 
 These ``.pyc`` files should not be checked into your source code repositories.
 
-Theoretically, this behavior is on by default, for performance reasons.
+Theoretically, this behavior is on by default for performance reasons.
 Without these bytecode files present, Python would re-generate the bytecode
 every time the file is loaded.
 
@@ -230,13 +238,29 @@ Here's nice trick for removing all of these files, if they already exist::
 Run that from the root directory of your project, and all ``.pyc`` files
 will suddenly vanish. Much better.
 
+.. _version_control_ignores:
 
+Version Control Ignores
+~~~~~~~~~~~~~~~~~~~~~~~
 
+If you still need the ``.pyc`` files for performance reasons, you can always add them
+to the ignore files of your version control repositories. Popular version control
+systems have the ability to use wildcards defined in a file to apply special
+rules.
 
+An ignore file will make sure the matching files don't get checked into the repository.
+Git_ uses ``.gitignore`` while Mercurial_ uses ``.hgignore``.
 
+.. _Git: https://git-scm.com/
+.. _Mercurial: https://www.mercurial-scm.org/
 
+At the minimum your ignore files should look like this.
 
+::
 
+    syntax:glob   # This line is not needed for .gitignore files.
+    *.py[cod]     # Will match .pyc, .pyo and .pyd files.
+    __pycache__/  # Exclude the whole folder
 
-
-
+You may wish to include more files and directories depending on your needs.
+The next time you commit to the repository, these files will not be included.

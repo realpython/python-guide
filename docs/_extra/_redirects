@@ -1,0 +1,18 @@
+# Redirect rules
+# Docs: https://www.netlify.com/docs/redirects/
+
+# Redirect http to https (avoid one extra hop with an explicit rule for /en/latest/)
+http://docs.python-guide.org/en/latest/*        https://docs.python-guide.org/:splat       301!
+http://docs.python-guide.org/*                  https://docs.python-guide.org/:splat       301!
+
+# Redirect RTD prefix to /
+/en/latest/*                                    /:splat                                    301!
+
+# Redirect domain aliases to primary domain
+http://python-guide.org/*                       http://docs.python-guide.org/:splat        301!
+https://python-guide.org/*                      https://docs.python-guide.org/:splat       301!
+
+# Redirect Netlify version to primary domain
+https://python-guide.netlify.com/*              https://docs.python-guide.org/:splat       301!
+
+/guide-book                                     https://www.amazon.com/Hitchhikers-Guide-Python-Practices-Development/dp/1491933178/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=bookforkind-20&linkId=804806ebdacaf3b56567347f3afbdbca   302

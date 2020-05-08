@@ -1,8 +1,15 @@
-Learning Python
-===============
 
+
+###############
+Learning Python
+###############
+
+.. image:: /_static/photos/32800783863_11a00db52c_k_d.jpg
+
+
+********
 Beginner
---------
+********
 
 The Python Tutorial
 ~~~~~~~~~~~~~~~~~~~~
@@ -13,47 +20,60 @@ quick-start guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
+Real Python
+~~~~~~~~~~~
+
+Real Python is a repository of free and in-depth Python tutorials created by a diverse team of professional Python developers. At Real Python you can learn all things Python from the ground up. Everything from the absolute basics of Python, to web development and web scraping, to data visualization, and beyond.
+
+    `Real Python <https://realpython.com/>`_
+
+Python Basics
+~~~~~~~~~~~~~
+
+pythonbasics.org is an introductory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are also in-depth lessons like object oriented programming and regular expressions.
+
+   `Python basics <https://pythonbasics.org/>`_
+
 Python for Beginners
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
-thepythonguru.com is a tutorial focuses on beginner programmers. It covers many python concepts
-in depth. It also teaches you some advance constructs of python like lambda expression, regular expression.
-At last it finishes off with  tutorial "How to access MySQL db using python"
+thepythonguru.com is a tutorial focused on beginner programmers. It covers many Python concepts
+in depth. It also teaches you some advanced constructs of Python like lambda expressions and regular expressions.
+And last it finishes off with the tutorial "How to access MySQL db using Python"
 
-
-   `Python for beginners <http://thepythonguru.com/>`_
-
-Learn Python for Data Science Interactively
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you prefer an online interactive environment to learn Python for Data Science, `this free python tutorial by DataCamp <https://www.datacamp.com/courses/intro-to-python-for-data-science?tap_a=5644-dce66f&tap_s=116411-750171>`_ is a great way to get started. If you're already somewhat advanced and interested in machine learning, check out this `course on Supervised Learning with scikit-learn <https://www.datacamp.com/courses/supervised-learning-with-scikit-learn?tap_a=5644-dce66f&tap_s=116411-750171>`_, by one the core developers of scikit-learn.
-
-
-`Python for data science <http://datacamp.com/?tap_a=5644-dce66f&tap_s=116411-750171>`_
+   `Python for Beginners <https://thepythonguru.com/>`_
 
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Learnpython.org is an easy non-intimidating way to get introduced to Python.
 The website takes the same approach used on the popular
-`Try Ruby <http://tryruby.org/>`_ website, it has an interactive Python
+`Try Ruby <https://ruby.github.io/TryRuby>`_ website. It has an interactive Python
 interpreter built into the site that allows you to go through the lessons
 without having to install Python locally.
 
     `Learn Python <http://www.learnpython.org/>`_
 
+Python for You and Me
+~~~~~~~~~~~~~~~~~~~~~
 
 If you want a more traditional book, *Python For You and Me* is an excellent
 resource for learning all aspects of the language.
 
     `Python for You and Me <https://pymbook.readthedocs.io/>`_
-    `Learn Python Interactively with DataCamp! <https://datacamp.com/>`_
+
+Learn Python Step by Step
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Techbeamers.com provides step-by-step tutorials to teach Python. Each tutorial is supplemented with logically added coding snippets and equips with a follow-up quiz on the subject learned. There is a section for `Python interview questions <https://www.techbeamers.com/python-interview-questions-programmers>`_ to help job seekers. You can also read essential `Python tips <https://www.techbeamers.com/essential-python-tips-tricks-programmers>`_ and learn `best coding practices <https://www.techbeamers.com/python-code-optimization-tips-tricks>`_ for writing quality code. Here, you'll get the right platform to learn Python quickly.
+
+`Learn Python Basic to Advanced <https://www.techbeamers.com/python-tutorial-step-by-step>`_
 
 
 Online Python Tutor
 ~~~~~~~~~~~~~~~~~~~
 
-Online Python Tutor gives you a visual step by step
+Online Python Tutor gives you a visual step-by-step
 representation of how your program runs. Python Tutor
 helps people overcome a fundamental barrier to learning
 programming by understanding what happens as the computer
@@ -88,7 +108,7 @@ Learn Python the Hard Way
 This is an excellent beginner programmer's guide to Python. It covers "hello
 world" from the console to the web.
 
-    `Learn Python the Hard Way <http://learnpythonthehardway.org/book/>`_
+    `Learn Python the Hard Way <https://learnpythonthehardway.org/book/>`_
 
 
 Crash into Python
@@ -97,7 +117,7 @@ Crash into Python
 Also known as *Python for Programmers with 3 Hours*, this guide gives
 experienced developers from other languages a crash course on Python.
 
-    `Crash into Python <http://stephensugden.com/crash_into_python/>`_
+    `Crash into Python <https://stephensugden.com/crash_into_python/>`_
 
 
 Dive Into Python 3
@@ -107,7 +127,7 @@ Dive Into Python 3 is a good book for those ready to jump in to Python 3. It's
 a good read if you are moving from Python 2 to 3 or if you already have some
 experience programming in another language.
 
-    `Dive Into Python 3 <http://www.diveinto.org/python3/>`_
+    `Dive Into Python 3 <http://diveintopython3.problemsolving.io/>`_
 
 
 Think Python: How to Think Like a Computer Scientist
@@ -115,7 +135,7 @@ Think Python: How to Think Like a Computer Scientist
 
 Think Python attempts to give an introduction to basic concepts in computer
 science through the use of the Python language. The focus was to create a book
-with plenty of exercises, minimal jargon and a section in each chapter devoted
+with plenty of exercises, minimal jargon, and a section in each chapter devoted
 to the subject of debugging.
 
 While exploring the various features available in the Python language the
@@ -123,7 +143,7 @@ author weaves in various design patterns and best practices.
 
 The book also includes several case studies which have the reader explore the
 topics discussed in the book in greater detail by applying those topics to
-real-world examples. Case studies include assignments in GUI and Markov
+real-world examples. Case studies include assignments in GUI programming and Markov
 Analysis.
 
     `Think Python <http://greenteapress.com/thinkpython/html/index.html>`_
@@ -133,7 +153,7 @@ Python Koans
 ~~~~~~~~~~~~
 
 Python Koans is a port of Edgecase's Ruby Koans.  It uses a test-driven
-approach, q.v. TEST DRIVEN DESIGN SECTION to provide an interactive tutorial
+approach to provide an interactive tutorial
 teaching basic Python concepts.  By fixing assertion statements that fail in a
 test script, this provides sequential steps to learning Python.
 
@@ -141,11 +161,11 @@ For those used to languages and figuring out puzzles on their own, this can be
 a fun, attractive option. For those new to Python and programming, having an
 additional resource or reference will be helpful.
 
-    `Python Koans <http://bitbucket.org/gregmalcolm/python_koans>`_
+    `Python Koans <https://bitbucket.org/gregmalcolm/python_koans>`_
 
 More information about test driven development can be found at these resources:
 
-    `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_
+    `Test Driven Development <https://en.wikipedia.org/wiki/Test-driven_development>`_
 
 
 A Byte of Python
@@ -155,34 +175,59 @@ A free introductory book that teaches Python at the beginner level, it assumes
 no previous programming experience.
 
     `A Byte of Python for Python 2.x <http://www.ibiblio.org/swaroopch/byteofpython/read/>`_
-    `A Byte of Python for Python 3.x <http://swaroopch.com/notes/Python_en-Preface/>`_
+    `A Byte of Python for Python 3.x <https://python.swaroopch.com/>`_
 
 
-Learn to Program in Python with Codeacademy
+Computer Science Path on Codecademy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Codeacademy course for the absolute Python beginner. This free and interactive course provides and teaches the basics (and beyond) of Python programming whilst testing the user's knowledge in between progress.
+A Codecademy course for the absolute Python beginner. This free and interactive
+course provides and teaches the basics (and beyond) of Python programming while 
+testing the user's knowledge in between progress.
 This course also features a built-in interpreter for receiving instant feedback on your learning.
 
-    `Learn to Program in Python with Codeacademy <http://www.codecademy.com/en/tracks/python>`_
+    `Computer Science Path on Codecademy <https://www.codecademy.com/learn/paths/computer-science>`_
 
 
+Code the blocks
+~~~~~~~~~~~~~~~
+
+*Code the blocks* provides free and interactive Python tutorials for
+beginners. It combines Python programming with a 3D environment where
+you "place blocks" and construct structures. The tutorials teach you
+how to use Python to create progressively more elaborate 3D structures,
+making the process of learning Python fun and engaging.
+
+    `Code the blocks <https://codetheblocks.com/tutorials/introduction>`_
+
+
+************
 Intermediate
-------------
+************
+
+Python Tricks: The Book
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Discover Python's best practices with simple examples and start writing even more beautiful + Pythonic code. *Python Tricks: The Book* shows you exactly how.
+
+You’ll master intermediate and advanced-level features in Python with practical examples and a clear narrative.
+
+    `Python Tricks: The Book <https://realpython.com/products/python-tricks-book/>`_
 
 Effective Python
 ~~~~~~~~~~~~~~~~
 
 This book contains 59 specific ways to improve writing Pythonic code. At 227
-pages, it is a very brief overview of some of the most commons adapations
+pages, it is a very brief overview of some of the most common adaptations
 programmers need to make to become efficient intermediate level Python
 programmers.
 
-    `Effective Python <http://www.effectivepython.com/>`_
+    `Effective Python <https://effectivepython.com/>`_
 
 
+********
 Advanced
---------
+********
 
 Pro Python
 ~~~~~~~~~~
@@ -200,15 +245,15 @@ Expert Python Programming deals with best practices in programming Python and
 is focused on the more advanced crowd.
 
 It starts with topics like decorators (with caching, proxy, and context manager
-case-studies), method resolution order, using super() and meta-programming, and
+case studies), method resolution order, using super() and meta-programming, and
 general :pep:`8` best practices.
 
 It has a detailed, multi-chapter case study on writing and releasing a package
 and eventually an application, including a chapter on using zc.buildout.  Later
 chapters detail best practices such as writing documentation, test-driven
-development, version control, optimization and profiling.
+development, version control, optimization, and profiling.
 
-    `Expert Python Programming <http://www.packtpub.com/expert-python-programming/book>`_
+    `Expert Python Programming <https://www.packtpub.com/application-development/expert-python-programming>`_
 
 
 A Guide to Python's Magic Methods
@@ -220,13 +265,13 @@ and can make classes and objects behave in different and magical ways.
 
     `A Guide to Python's Magic Methods <http://www.rafekettler.com/magicmethods.html>`_
 
-.. note:: The Rafekettler.com is currently down, you can go to their Github version directly. Here you can find a PDF version:
+.. note:: Rafekettler.com is currently down; you can go to their GitHub version directly. Here you can find a PDF version:
     `A Guide to Python's Magic Methods (repo on GitHub) <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_
-    
 
 
+****************************
 For Engineers and Scientists
-----------------------------
+****************************
 
 A Primer on Scientific Programming with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -235,7 +280,7 @@ A Primer on Scientific Programming with Python, written by Hans Petter
 Langtangen, mainly covers Python's usage in the scientific field. In the book,
 examples are chosen from mathematics and the natural sciences.
 
-    `A Primer on Scientific Programming with Python <http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-30292-3>`_
+    `A Primer on Scientific Programming with Python <https://www.springer.com/us/book/9783642302930#otherversion=9783642302923>`_
 
 Numerical Methods in Engineering with Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -243,10 +288,12 @@ Numerical Methods in Engineering with Python
 Numerical Methods in Engineering with Python, written by Jaan Kiusalaas,
 puts the emphasis on numerical methods and how to implement them in Python.
 
-    `Numerical Methods in Engineering with Python <http://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
+    `Numerical Methods in Engineering with Python <https://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition>`_
 
-Miscellaneous topics
---------------------
+
+********************
+Miscellaneous Topics
+********************
 
 Problem Solving with Algorithms and Data Structures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -274,7 +321,7 @@ Transforming Code into Beautiful, Idiomatic Python
 
 Transforming Code into Beautiful, Idiomatic Python is a video by Raymond Hettinger.
 Learn to take better advantage of Python's best features and improve existing code
-through a series of code transformations, "When you see this, do that instead."
+through a series of code transformations: "When you see this, do that instead."
 
     `Transforming Code into Beautiful, Idiomatic Python <https://www.youtube.com/watch?v=OSGv2VnC0go>`_
 
@@ -285,7 +332,7 @@ Fullstack Python
 Fullstack Python offers a complete top-to-bottom resource for web development
 using Python.
 
-From setting up the webserver, to designing the front-end, choosing a database,
+From setting up the web server, to designing the front-end, choosing a database,
 optimizing/scaling, etc.
 
 As the name suggests, it covers everything you need to build and run a complete
@@ -294,14 +341,23 @@ web app from scratch.
     `Fullstack Python <https://www.fullstackpython.com>`_
 
 
+PythonistaCafe
+~~~~~~~~~~~~~~
+
+PythonistaCafe is an invite-only, online community of Python and software development enthusiasts helping each other succeed and grow. Think of it as a club of mutual improvement for Pythonistas where a broad range of programming questions, career advice, and other topics are discussed every day.
+
+    `PythonistaCafe <https://www.pythonistacafe.com>`_
+
+
+**********
 References
-----------
+**********
 
 Python in a Nutshell
 ~~~~~~~~~~~~~~~~~~~~
 
 Python in a Nutshell, written by Alex Martelli, covers most cross-platform
-Python's usage, from its syntax to built-in libraries to advanced topics such
+Python usage, from its syntax to built-in libraries to advanced topics such
 as writing C extensions.
 
     `Python in a Nutshell <http://shop.oreilly.com/product/9780596001889.do>`_
@@ -309,7 +365,7 @@ as writing C extensions.
 The Python Language Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is Python's reference manual, it covers the syntax and the core semantics
+This is Python's reference manual. It covers the syntax and the core semantics
 of the language.
 
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_
@@ -336,7 +392,7 @@ Python Cookbook
 ~~~~~~~~~~~~~~~
 
 Python Cookbook, written by David Beazley and Brian K. Jones, is packed with
-practical recipes. This book covers the core python language as well as tasks
+practical recipes. This book covers the core Python language as well as tasks
 common to a wide variety of application domains.
 
     `Python Cookbook <http://shop.oreilly.com/product/0636920027072.do>`_
@@ -344,13 +400,13 @@ common to a wide variety of application domains.
 Writing Idiomatic Python
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-"Writing Idiomatic Python", written by Jeff Knupp, contains the most common and
+Writing Idiomatic Python, written by Jeff Knupp, contains the most common and
 important Python idioms in a format that maximizes identification and
 understanding.  Each idiom is presented as a recommendation of a way to write
 some commonly used piece of code, followed by an explanation of why the idiom
 is important. It also contains two code samples for each idiom: the "Harmful"
 way to write it and the "Idiomatic" way.
 
-	`For Python 2.7.3+ <http://www.amazon.com/Writing-Idiomatic-Python-2-7-3-Knupp/dp/1482372177/>`_
+	`For Python 2.7.3+ <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5KG0F8/>`_
 
-	`For Python 3.3+  <http://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_
+	`For Python 3.3+  <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_

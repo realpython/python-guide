@@ -1,8 +1,14 @@
-Systems Administration
-======================
 
+######################
+Systems Administration
+######################
+
+.. image:: /_static/photos/34435690580_3afec7d4cd_k_d.jpg
+
+
+******
 Fabric
-------
+******
 
 `Fabric <http://docs.fabfile.org>`_ is a library for simplifying system
 administration tasks. While Chef and Puppet tend to focus on managing servers
@@ -17,7 +23,7 @@ Install Fabric:
 
 The following code will create two tasks that we can use: ``memory_usage`` and
 ``deploy``. The former will output the memory usage on each machine. The
-latter will ssh into each server, cd to our project directory, activate the
+latter will SSH into each server, cd to our project directory, activate the
 virtual environment, pull the newest codebase, and restart the application
 server.
 
@@ -69,8 +75,10 @@ programs, and host grouping.
 
     `Fabric Documentation <http://docs.fabfile.org>`_
 
+
+****
 Salt
-----
+****
 
 `Salt <http://saltstack.org/>`_ is an open source infrastructure management
 tool.  It supports remote command execution from a central point (master host)
@@ -93,7 +101,7 @@ The following command lists all available minion hosts, using the ping module.
 
     $ salt '*' test.ping
 
-The host filtering is accomplished by matching the minion id,
+The host filtering is accomplished by matching the minion id
 or using the grains system. The
 `grains <http://docs.saltstack.org/en/latest/topics/targeting/grains.html>`_
 system uses static host information like the operating system version or the
@@ -123,16 +131,17 @@ it will install and start the Apache server:
         - require:
           - pkg: apache
 
-State files can be written using YAML, the Jinja2 template system or pure Python.
+State files can be written using YAML, the Jinja2 template system, or pure Python.
 
     `Salt Documentation <http://docs.saltstack.com>`_
 
 
+******
 Psutil
-------
+******
 
 `Psutil <https://github.com/giampaolo/psutil/>`_ is an interface to different
-system information (e.g. CPU, memory, disks, network, users and processes).
+system information (e.g. CPU, memory, disks, network, users, and processes).
 
 Here is an example to be aware of some server overload. If any of the
 tests (net, CPU) fail, it will send an email.
@@ -184,8 +193,10 @@ A full terminal application like a widely extended top which is based on
 psutil and with the ability of a client-server monitoring is
 `glance <https://github.com/nicolargo/glances/>`_.
 
+
+*******
 Ansible
--------
+*******
 
 `Ansible <http://ansible.com/>`_  is an open source system automation tool.
 The biggest advantage over Puppet or Chef is it does not require an agent on
@@ -232,43 +243,47 @@ The Ansible playbook will ping all of the servers in the :file:`hosts.yml` file.
 You can also select groups of servers using Ansible. For more information
 about Ansible, read the `Ansible Docs <http://docs.ansible.com/>`_.
 
-`An Ansible tutorial <https://serversforhackers.com/an-ansible-tutorial/>`_ is also a 
+`An Ansible tutorial <https://serversforhackers.com/an-ansible-tutorial/>`_ is also a
 great and detailed introduction to getting started with Ansible.
 
 
+****
 Chef
-----
-`Chef <https://www.chef.io/chef/>`_  is a systems and cloud infrastructure automation 
-framework that makes it easy to deploy servers and applications to any physical, 
-virtual, or cloud location. In case this is your choice for configuration management, 
-you will primarily use Ruby to write your infrastructure code. 
+****
 
-Chef clients run on every server that is part of your infrastructure and these regularly 
-check with your Chef server to ensure your system is always aligned and represents the 
-desired state. Since each individual server has its own distinct Chef client, each server 
+`Chef <https://www.chef.io/chef/>`_  is a systems and cloud infrastructure automation
+framework that makes it easy to deploy servers and applications to any physical,
+virtual, or cloud location. In case this is your choice for configuration management,
+you will primarily use Ruby to write your infrastructure code.
+
+Chef clients run on every server that is part of your infrastructure and these regularly
+check with your Chef server to ensure your system is always aligned and represents the
+desired state. Since each individual server has its own distinct Chef client, each server
 configures itself and this distributed approach makes Chef a scalable automation platform.
 
-Chef works by using custom recipes (configuration elements), implemented in cookbooks. Cookbooks, which are basically 
-packages for infrastructure choices, are usually stored in your Chef server. 
-Read the `Digital Ocean tutorial series 
-<https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_ 
-on chef to learn how to create a simple Chef Server.
+Chef works by using custom recipes (configuration elements), implemented in cookbooks. Cookbooks, which are basically
+packages for infrastructure choices, are usually stored in your Chef server.
+Read the `DigitalOcean tutorial series
+<https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_
+on Chef to learn how to create a simple Chef Server.
 
 To create a simple cookbook the `knife <https://docs.chef.io/knife.html>`_ command is used:
 
-.. code-block:: console 
+.. code-block:: console
 
     knife cookbook create cookbook_name
 
-`Getting started with Chef <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_ 
-is a good starting point for Chef Beginners and many community maintained cookbooks that can 
-serve as a good reference or tweaked to serve your infrastructure configuration needs can be 
+`Getting started with Chef <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_
+is a good starting point for Chef Beginners and many community maintained cookbooks that can
+serve as a good reference or tweaked to serve your infrastructure configuration needs can be
 found on the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
 
 - `Chef Documentation <https://docs.chef.io/>`_
 
+
+******
 Puppet
-------
+******
 
 `Puppet <http://puppetlabs.com>`_ is IT Automation and configuration management
 software from Puppet Labs that allows System Administrators to define the state
@@ -284,8 +299,8 @@ Puppet Agents are installed on nodes whose state needs to be monitored or
 changed.  A designated server known as the Puppet Master is responsible for
 orchestrating the agent nodes.
 
-Agent nodes send basic facts about the system such as to the operating system,
-kernel, architecture, ip address, hostname etc. to the Puppet Master.
+Agent nodes send basic facts about the system such as the operating system,
+kernel, architecture, IP address, hostname, etc. to the Puppet Master.
 The Puppet Master then compiles a catalog with information provided by the
 agents on how each node should be configured and sends it to the agent. The
 agent enforces the change as prescribed in the catalog and sends a report back
@@ -302,10 +317,10 @@ your Puppet modules.
 .. code-block:: console
 
     $ facter operatingsystem
-    Ubuntu  
+    Ubuntu
 
 Writing Modules in Puppet is pretty straight forward. Puppet Manifests together
-form Puppet Modules. Puppet manifest end with an extension of ``.pp``.
+form Puppet Modules. Puppet manifests end with an extension of ``.pp``.
 Here is an example of 'Hello World' in Puppet.
 
 .. code-block:: puppet
@@ -319,7 +334,7 @@ Here is an example of 'Hello World' in Puppet.
 Here is another example with system based logic. Note how the operating system
 fact is being used as a variable prepended with the ``$`` sign. Similarly, this
 holds true for other facts such as hostname which can be referenced by
-``$hostname``
+``$hostname``.
 
 .. code-block:: puppet
 
@@ -331,10 +346,10 @@ holds true for other facts such as hostname which can be referenced by
     }
 
 There are several resource types for Puppet but the package-file-service
-paradigm is all you need for undertaking majority of the configuration
+paradigm is all you need for undertaking the majority of the configuration
 management. The following Puppet code makes sure that the OpenSSH-Server
 package is installed in a system and the sshd service is notified to restart
-everytime the sshd configuration file is changed.
+every time the sshd configuration file is changed.
 
 .. code-block:: puppet
 
@@ -363,29 +378,36 @@ everytime the sshd configuration file is changed.
 
 For more information, refer to the `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
 
+
+*********
 Blueprint
----------
+*********
 
 .. todo:: Write about Blueprint
 
+
+********
 Buildout
---------
+********
 
 `Buildout <http://www.buildout.org>`_ is an open source software build tool.
-Buildout is created using the Python programming language. It implements a 
-principle of separation of configuration from the scripts that do the setting up.
-Buildout is primarily used to download and set up dependencies in Python eggs
-format of the software being developed or deployed. Recipes for build tasks in any
-environment can be created, and many are already available.
+Buildout is created using the Python programming language. It implements a
+principle of separation of configuration from the scripts that do the setting
+up. Buildout is primarily used to download and set up dependencies in `Python
+eggs <https://stackoverflow.com/questions/2051192/what-is-a-python-egg>`_
+format of the software being developed or deployed. Recipes for build tasks in
+any environment can be created, and many are already available.
 
+
+*******
 Shinken
--------
+*******
 
 `Shinken <http://www.shinken-monitoring.org/>`_ is a modern, Nagios compatible
 monitoring framework written in Python. Its main goal is to give users a flexible
 architecture for their monitoring system that is designed to scale to large
 environments.
 
-Shinken is backwards-compatible with the Nagios configuration standard, and
-plugins.It works on any operating system, and architecture that supports Python
-which includes Windows, GNU/Linux, and FreeBSD.
+Shinken is backwards-compatible with the Nagios configuration standard and
+plugins. It works on any operating system and architecture that supports Python,
+which includes Windows, Linux, and FreeBSD.

@@ -1,8 +1,14 @@
-XML parsing
-===========
 
+###########
+XML parsing
+###########
+
+.. image:: /_static/photos/33888714601_a1f7d020a2_k_d.jpg
+
+
+********
 untangle
---------
+********
 
 `untangle <https://github.com/stchris/untangle>`_ is a simple library which
 takes an XML document and returns a Python object which mirrors the nodes and
@@ -24,18 +30,20 @@ can be loaded like this:
     import untangle
     obj = untangle.parse('path/to/file.xml')
 
-and then you can get the child elements name like this:
+and then you can get the child element's name attribute like this:
 
 .. code-block:: python
 
     obj.root.child['name']
 
-untangle also supports loading XML from a string or an URL.
+untangle also supports loading XML from a string or a URL.
 
+
+*********
 xmltodict
----------
+*********
 
-`xmltodict <http://github.com/martinblech/xmltodict>`_ is another simple
+`xmltodict <https://github.com/martinblech/xmltodict>`_ is another simple
 library that aims at making XML feel like working with JSON.
 
 An XML file like this:
@@ -61,7 +69,7 @@ can be loaded into a Python dict like this:
     with open('path/to/file.xml') as fd:
         doc = xmltodict.parse(fd.read())
 
-and then you can access elements, attributes and values like this:
+and then you can access elements, attributes, and values like this:
 
 .. code-block:: python
 
@@ -71,5 +79,5 @@ and then you can access elements, attributes and values like this:
     doc['mydocument']['plus']['#text'] # == u'element as well'
 
 xmltodict also lets you roundtrip back to XML with the unparse function,
-has a streaming mode suitable for handling files that don't fit in memory
-and supports namespaces.
+has a streaming mode suitable for handling files that don't fit in memory,
+and supports XML namespaces.
