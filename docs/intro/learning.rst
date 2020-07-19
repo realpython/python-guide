@@ -236,7 +236,7 @@ This book is for intermediate to advanced Python programmers who are looking to
 understand how and why Python works the way it does and how they can take their
 code to the next level.
 
-    `Pro Python <http://propython.com>`_
+    `Pro Python <https://www.apress.com/gp/book/9781430227571>`_
 
 
 Expert Python Programming
