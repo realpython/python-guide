@@ -60,7 +60,7 @@ it is important.
 Sample Repository
 :::::::::::::::::
 
-**tl;dr**: This is what `Kenneth Reitz recommended in 2013<https://www.kennethreitz.org/essays/repository-structure-and-python>`.
+**tl;dr**: This is what `Kenneth Reitz recommended in 2013 <https://www.kennethreitz.org/essays/repository-structure-and-python>`__.
 
 This repository is `available on
 GitHub <https://github.com/kennethreitz/samplemod>`__.
