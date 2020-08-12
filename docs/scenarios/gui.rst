@@ -98,9 +98,9 @@ PyQt provides Python bindings for the Qt Framework (see below).
 http://www.riverbankcomputing.co.uk/software/pyqt/download
 
 
-*****************************
+***************************************
 Pyjs Desktop (formerly Pyjamas Desktop)
-*****************************
+***************************************
 
 Pyjs Desktop is a application widget set for desktop and a cross-platform
 framework. It allows the exact same Python web application source code to be
