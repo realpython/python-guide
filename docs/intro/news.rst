@@ -63,15 +63,6 @@ A short-form Python podcast covering recent developer headlines.
     `Python Bytes <https://pythonbytes.fm>`_
 
 
-*************
-Python Weekly
-*************
-
-Python Weekly is a free weekly newsletter featuring curated news, articles,
-new releases, jobs, etc. related to Python.
-
-    `Python Weekly <https://www.pythonweekly.com/>`_
-
 
 ***********
 Python News
@@ -82,15 +73,6 @@ Python News is the news section in the official Python web site
 
     `Python News <http://www.python.org/blogs/>`_
 
-
-********************
-Import Python Weekly
-********************
-
-Weekly Python Newsletter containing Python Articles, Projects, Videos, and Tweets
-delivered in your inbox.  Keep Your Python Programming Skills Updated.
-
-    `Import Python Weekly Newsletter <http://www.importpython.com/newsletter/>`_
 
 
 *************************
