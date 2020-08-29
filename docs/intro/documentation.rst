@@ -4,7 +4,6 @@
 Documentation
 #############
 
-.. image:: /_static/photos/33928823133_2f3d32cf32_k_d.jpg
 
 
 **********************
