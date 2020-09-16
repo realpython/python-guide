@@ -20,9 +20,9 @@ one might think.
 
 The basic gist of the state of things is as follows:
 
-1. Most production applications today use Python 2.7.
+1. Most production applications today use Python 3.
 2. Python 3 is ready for the production deployment of applications today.
-3. Python 2.7 will only receive necessary security updates until 2020 [#pep373_eol]_.
+3. Python 2 reached the end of its life on January 1, 2020 [#pep373_eol]_.
 4. The brand name "Python" encapsulates both Python 3 and Python 2.
 
 
@@ -40,10 +40,6 @@ I'll be blunt:
 - If you're learning Python for the first time, familiarizing yourself with Python 2.7 will be very
   useful, but not more useful than learning Python 3.
 - Learn both. They are both "Python".
-- Software that is already built often depends on Python 2.7.
-- If you are writing a new open source Python library, it's best to write it for both Python 2 and 3
-  simultaneously. Only supporting Python 3 for a new library you want to be widely adopted is a
-  political statement and will alienate many of your users. This is not a problem — slowly, over the next three years, this will become less the case.
 
 
 *********
@@ -58,8 +54,6 @@ Given such, only use Python 2 if you have a strong reason to, such as a
 pre-existing code-base, a Python 2 exclusive library, simplicity/familiarity,
 or, of course, you absolutely love and are inspired by Python 2. No harm in that.
 
-Check out `Can I Use Python 3? <https://caniusepython3.com/>`_ to see if any
-software you're depending on will block your adoption of Python 3.
 
 `Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
 
@@ -67,9 +61,7 @@ It is possible to `write code that works on Python 2.6, 2.7, and Python 3
 <https://docs.python.org/3/howto/pyporting.html>`_. This
 ranges from trivial to hard depending upon the kind of software
 you are writing; if you're a beginner there are far more important things to
-worry about.  Note that Python 2.6 is end-of-life upstream, so you shouldn't
-try to write 2.6-compatible code unless you're being paid specifically to
-do that.
+worry about.
 
 
 ***************
@@ -135,7 +127,8 @@ expose Python code to other languages in the .NET framework.
 IronPython directly into the Visual Studio development environment, making it
 an ideal choice for Windows developers.
 
-IronPython supports Python 2.7. [#iron_ver]_
+IronPython supports Python 2.7. [#iron_ver]_ IronPython 3 [#iron_ver3]_
+is being developed, but is not ready for use as of September 2020.
 
 PythonNet
 ---------
@@ -151,16 +144,16 @@ installations on non-Windows operating systems, such as OS X and
 Linux, to operate within the .NET framework.  It can be run in
 addition to IronPython without conflict.
 
-Pythonnet supports from Python 2.6 up to Python 3.5. [#pythonnet_ver1]_ [#pythonnet_ver2]_
+Pythonnet is compatible with Python 2.7 and 3.5-3.8. [#pythonnet_ver1]_
 
 .. [#pypy_ver] http://pypy.org/compat.html
 
 .. [#jython_ver] https://hg.python.org/jython/file/412a8f9445f7/NEWS
 
-.. [#iron_ver] http://ironpython.codeplex.com/releases/view/81726
+.. [#iron_ver] https://ironpython.net/download/
 
-.. [#pythonnet_ver1] https://travis-ci.org/pythonnet/pythonnet
+.. [#iron_ver3] https://github.com/IronLanguages/ironpython3
 
-.. [#pythonnet_ver2] https://ci.appveyor.com/project/TonyRoberts/pythonnet-480xs
+.. [#pythonnet_ver1] https://pythonnet.github.io/
 
 .. [#pep373_eol] https://www.python.org/dev/peps/pep-0373/#id2
