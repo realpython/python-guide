@@ -248,35 +248,6 @@ simple INI-style configuration file.
     `tox <https://tox.readthedocs.io/en/latest/>`_
 
 
-Unittest2
----------
-
-unittest2 is a backport of Python 2.7's unittest module which has an improved
-API and better assertions over the one available in previous versions of Python.
-
-If you're using Python 2.6 or below, you can install it with pip:
-
-.. code-block:: console
-
-    $ pip install unittest2
-
-You may want to import the module under the name unittest to make porting code
-to newer versions of the module easier in the future
-
-.. code-block:: python
-
-    import unittest2 as unittest
-
-    class MyTest(unittest.TestCase):
-        ...
-
-This way if you ever switch to a newer Python version and no longer need the
-unittest2 module, you can simply change the import in your test module without
-the need to change any other code.
-
-    `unittest2 <http://pypi.org/project/unittest2>`_
-
-
 mock
 ----
 
