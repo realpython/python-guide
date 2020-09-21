@@ -37,8 +37,8 @@ For example on Fedora, you would use `dnf`:
 
 Note that if the version of the ``python3`` package is not recent enough
 for you, there may be ways of installing more recent versions as well,
-depending on you distribution. For example installing the ``python36`` package
-on Fedora 25 to get Python 3.6. If you are a Fedora user, you might want
+depending on you distribution. For example installing the ``python3.9`` package
+on Fedora 32 to get Python 3.9. If you are a Fedora user, you might want
 to read about `multiple Python versions available in Fedora`_.
 
 .. _multiple Python versions available in Fedora: https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html
@@ -54,13 +54,13 @@ At this point, you may have system Python 2.7 available as well.
 
     $ python
 
-This will launch the Python 2 interpreter.
+This might launch the Python 2 interpreter.
 
 .. code-block:: console
 
     $ python3
 
-This will launch the Python 3 interpreter.
+This will always launch the Python 3 interpreter.
 
 
 ****************
