@@ -146,7 +146,7 @@ addition to IronPython without conflict.
 
 Pythonnet is compatible with Python 2.7 and 3.5-3.8. [#pythonnet_ver1]_
 
-.. [#pypy_ver] http://pypy.org/compat.html
+.. [#pypy_ver] https://pypy.org/compat.html
 
 .. [#jython_ver] https://hg.python.org/jython/file/412a8f9445f7/NEWS
 
