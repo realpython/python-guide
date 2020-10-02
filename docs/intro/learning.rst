@@ -128,6 +128,19 @@ a good read if you are moving from Python 2 to 3 or if you already have some
 experience programming in another language.
 
     `Dive Into Python 3 <http://diveintopython3.problemsolving.io/>`_
+    
+    
+
+
+Learn python with a competitive mindset
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is an excellent beginner programmer's guide to Python to enahnce yourself as a competitive programmer. It covers "hello
+world" to various other challenging and interesting problems. Practicing problems here will take you a long way, by developing knowledge
+in python but also problem solving skils.
+
+    `Learn Python with a competitive attitude <https://www.hackerrank.com/domains/python/>`_
+
 
 
 Think Python: How to Think Like a Computer Scientist
