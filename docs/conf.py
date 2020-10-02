@@ -10,7 +10,7 @@
 #
 # All configuration values have a default; values that are commented out
 # serve to show the default.
-
+# these all are pre installed libraries you need not pip them
 import datetime
 import os
 import sys
