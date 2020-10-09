@@ -33,6 +33,14 @@ Topics include:
 - Testing: Jenkins & tox guides
 - How to easily interface ``hg`` from ``git``
 
+
+#### Python Courses Link
+
+- [Python Curso em Vídeo](https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0) 
+- [Python for Everybody](https://py4e.com) 
+- [Python para Zumbis](https://www.pycursos.com/python-para-zumbis/) 
+- [Análise de dados em Python - Câmara dos Deputados - LabHacker](https://www.youtube.com/playlist?list=PLqiFjCF_dtcymXtdjwAP4s7tRoW4CYwnH) 
+
 If you aren't fond of reading reStructuredText, there is an
 almost up-to-date `HTML version at docs.python-guide.org
 <https://docs.python-guide.org>`_.
