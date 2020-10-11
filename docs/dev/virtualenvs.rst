@@ -438,4 +438,4 @@ Install it on Mac OS X using ``brew``:
 
    $ brew install direnv
 
-On Linux follow the instructions at `direnv.net <https://direnv.net>`
+On Linux follow the instructions at `direnv.net <https://direnv.net>`_
