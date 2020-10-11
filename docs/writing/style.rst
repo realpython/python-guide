@@ -496,6 +496,14 @@ Then run it on a file or series of files to get a report of any violations.
     optparse.py:472:29: E221 multiple spaces before operator
     optparse.py:544:21: W601 .has_key() is deprecated, use 'in'
 
+Auto-Formatting
+~~~~~~~~~~~~~~~
+
+There are several auto-formatting tools that can reformat your code,
+in order to comply with PEP 8.
+
+**autopep8**
+
 The program `autopep8 <https://pypi.org/project/autopep8/>`_ can be used to
 automatically reformat code in the PEP 8 style. Install the program with:
 
@@ -513,6 +521,49 @@ Excluding the ``--in-place`` flag will cause the program to output the modified
 code directly to the console for review. The ``--aggressive`` flag will perform
 more substantial changes and can be applied multiple times for greater effect.
 
+**yapf**
+
+While autopep8 focuses on solving the PEP 8 violations, `yapf <https://github.com/google/yapf>`_
+tries to improve the format of your code aside from complying with PEP 8.
+This formatter aims at providing as good looking code as a programmer who
+writes PEP 8 compliant code.
+It gets installed with:
+
+.. code-block:: console
+
+    $ pip install yapf
+
+Run the auto-formatting of a file with:
+
+.. code-block:: console
+
+    $ yapf --in-place optparse.py
+
+Similar to autopep8, running the command without the ``--in-place`` flag will
+output the diff for review before applying the changes.
+
+**black**
+
+The auto-formatter `black <https://github.com/psf/black>`_ offers an
+opinionated and deterministic reformatting of your code base.
+Its main focus lies in providing a uniform code style without the need of
+configuration throughout its users. Hence, users of black are able to forget
+about formatting altogether. Also, due to the deterministic approach minimal
+git diffs with only the relevant changes are guaranteed. You can install the
+tool as follows:
+
+.. code-block:: console
+
+    $ pip install black
+
+A python file can be formatted with:
+
+.. code-block:: console
+
+    $ black optparse.py
+
+Adding the ``--diff`` flag provides the code modification for review without
+direct application.
 
 ***********
 Conventions
