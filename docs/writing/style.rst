@@ -226,7 +226,7 @@ but making a public property private might be a much harder operation.
 Returning values
 ~~~~~~~~~~~~~~~~
 
-When a function grows in complexity it is not uncommon to use multiple return
+When a function grows in complexity, it is not uncommon to use multiple return
 statements inside the function's body. However, in order to keep a clear intent
 and a sustainable readability level, it is preferable to avoid returning
 meaningful values from many output points in the body.
@@ -639,11 +639,11 @@ Short Ways to Manipulate Lists
 
 `List comprehensions
 <http://docs.python.org/tutorial/datastructures.html#list-comprehensions>`_
-provide a powerful, concise way to work with lists.
+provides a powerful, concise way to work with lists.
 
 `Generator expressions
 <http://docs.python.org/tutorial/classes.html#generator-expressions>`_
-follow almost the same syntax as list comprehensions but return a generator
+follows almost the same syntax as list comprehensions but return a generator
 instead of a list.
 
 Creating a new list requires more work and uses more memory. If you are just going
@@ -829,7 +829,7 @@ a white space added to the end of the line, after the backslash, will break the
 code and may have unexpected results.
 
 A better solution is to use parentheses around your elements. Left with an
-unclosed parenthesis on an end-of-line the Python interpreter will join the
+unclosed parenthesis on an end-of-line, the Python interpreter will join the
 next line until the parentheses are closed. The same behavior holds for curly
 and square braces.
 
