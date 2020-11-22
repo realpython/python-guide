@@ -10,7 +10,7 @@ The :mod:`logging` module has been a part of Python's Standard Library since
 version 2.3.  It is succinctly described in :pep:`282`.  The documentation
 is notoriously hard to read, except for the `basic logging tutorial`_.
 
-As an alternative, `loguru <https://github.com/Delgan/loguru>`_ provides an approach to logging nearly as simple as using a simple ``print`` statement.
+As an alternative, `loguru <https://github.com/Delgan/loguru>`_ provides an approach for logging, nearly as simple as using a simple ``print`` statement.
 
 Logging serves two purposes:
 
@@ -59,7 +59,7 @@ using the ``__name__`` global variable: the :mod:`logging` module creates a
 hierarchy of loggers using dot notation, so using ``__name__`` ensures
 no name collisions.
 
-Here is an example of best practice from the `requests source`_ -- place
+Here is an example of the best practice from the `requests source`_ -- place
 this in your ``__init__.py``:
 
 .. code-block:: python
@@ -83,7 +83,7 @@ application environment.
 There are at least three ways to configure a logger:
 
 - Using an INI-formatted file:
-    - **Pro**: possible to update configuration while running using the
+    - **Pro**: possible to update configuration while running, using the
       function :func:`logging.config.listen` to listen on a socket.
     - **Con**: less control (e.g. custom subclassed filters or loggers)
       than possible when configuring a logger in code.
@@ -94,13 +94,13 @@ There are at least three ways to configure a logger:
     - **Con**: less control than when configuring a logger in code.
 - Using code:
     - **Pro**: complete control over the configuration.
-    - **Con**: modifications require a change to source code.
+    - **Con**: modifications require a change to the source code.
 
 
 Example Configuration via an INI File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let us say the file is named ``logging_config.ini``.
+Let us say that the file is named ``logging_config.ini``.
 More details for the file format are in the `logging configuration`_
 section of the `logging tutorial`_.
 

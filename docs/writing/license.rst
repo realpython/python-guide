@@ -6,8 +6,8 @@ Choosing a License
 
 .. image:: /_static/photos/33907149294_82d7535a6c_k_d.jpg
 
-Your source publication *needs* a license. In the US, if no license is
-specified, users have no legal right to download, modify, or distribute.
+Your source publication *needs* a license. In the US, unless a license is
+specified, users have no legal right to download, modify, or distribute the product.
 Furthermore, people can't contribute to your code unless you tell them what
 rules to play by. Choosing a license is complicated, so here are some pointers:
 

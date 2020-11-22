@@ -18,7 +18,7 @@ the project? What features and functions can be grouped together and
 isolated? By answering questions like these you can begin to plan, in
 a broad sense, what your finished product will look like.
 
-In this section we take a closer look at Python's module and import
+In this section, we take a closer look at Python's modules and import
 systems as they are the central elements to enforcing structure in your
 project. We then discuss various perspectives on how to build code which
 can be extended and tested reliably.
@@ -32,7 +32,7 @@ It's Important.
 :::::::::::::::
 
 Just as Code Style, API Design, and Automation are essential for a
-healthy development cycle, Repository structure is a crucial part of
+healthy development cycle. Repository structure is a crucial part of
 your project's
 `architecture <http://www.amazon.com/gp/product/1257638017/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=39095&creativeASIN=1257638017>`__.
 
@@ -54,8 +54,7 @@ documentation.
 
 Of course, first impressions aren't everything. You and your colleagues
 will spend countless hours working with this repository, eventually
-becoming intimately familiar with every nook and cranny. The layout of
-it is important.
+becoming intimately familiar with every nook and cranny. The layout is important.
 
 Sample Repository
 :::::::::::::::::
@@ -126,7 +125,7 @@ If you aren't sure which license you should use for your project, check
 out `choosealicense.com <http://choosealicense.com>`_.
 
 Of course, you are also free to publish code without a license, but this
-would prevent many people from potentially using your code.
+would prevent many people from potentially using or contributing to your code.
 
 Setup.py
 ::::::::
@@ -157,8 +156,8 @@ should be placed at the root of the repository. It should specify the
 dependencies required to contribute to the project: testing, building,
 and generating documentation.
 
-If your project has no development dependencies, or you prefer
-development environment setup via ``setup.py``, this file may be
+If your project has no development dependencies, or if you prefer
+setting up a development environment via ``setup.py``, this file may be
 unnecessary.
 
 Documentation
