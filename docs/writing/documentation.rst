@@ -45,7 +45,7 @@ Project Publication
 Depending on the project, your documentation might include some or all
 of the following components:
 
-- An *introduction* should show a very short overview of what can be
+- An *introduction* should give a very short overview of what can be
   done with the product, using one or two extremely simplified use
   cases. This is the thirty-second pitch for your project.
 
@@ -94,7 +94,7 @@ reStructuredText
 ~~~~~~~~~~~~~~~~
 
 Most Python documentation is written with reStructuredText_. It's like
-Markdown with all the optional extensions built in.
+Markdown, but with all the optional extensions built in.
 
 The `reStructuredText Primer`_ and the `reStructuredText Quick
 Reference`_ should help you familiarize yourself with its syntax.
@@ -149,8 +149,8 @@ a project's documentation.
 Additionally, Doctest_ will read all embedded docstrings that look like input
 from the Python commandline (prefixed with ">>>") and run them, checking to see
 if the output of the command matches the text on the following line. This
-allows developers to  embed real examples and usage of functions alongside
-their source code, and as a side effect, it also ensures that their code is
+allows developers to embed real examples and usage of functions alongside
+their source code. As a side effect, it also ensures that their code is
 tested and works.
 
 ::
@@ -187,8 +187,8 @@ Docstrings are accessible from both the `__doc__` dunder attribute for almost
 every Python object, as well as with the built in `help()` function.
 
 While block comments are usually used to explain *what* a section of code is
-doing, or the specifics of an algorithm, docstrings are more intended for
-explaining to other users of your code (or you in 6 months time) *how* a
+doing, or the specifics of an algorithm, docstrings are more intended towards
+explaining other users of your code (or you in 6 months time) *how* a
 particular function can be used and the general purpose of a function, class,
 or module.
 
@@ -214,7 +214,7 @@ In larger or more complex projects however, it is often a good idea to give
 more information about a function, what it does, any exceptions it may raise,
 what it returns, or relevant details about the parameters.
 
-For more detailed documentation of code a popular style is the one used for the
+For more detailed documentation of code a popular style used, is the one used by the
 NumPy project, often called `NumPy style`_ docstrings. While it can take up more
 lines than the previous example, it allows the developer to include a lot
 more information about a method, function, or class. ::
