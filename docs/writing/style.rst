@@ -8,7 +8,7 @@ Code Style
 .. image:: /_static/photos/33907150054_5ee79e8940_k_d.jpg
 
 If you ask Python programmers what they like most about Python, they will
-often cite its high readability.  Indeed, a high level of readability
+often cite its high readability. Indeed, a high level of readability
 is at the heart of the design of the Python language, following the
 recognized fact that code is read much more often than it is written.
 
@@ -644,7 +644,7 @@ provide a powerful, concise way to work with lists.
 `Generator expressions
 <http://docs.python.org/tutorial/classes.html#generator-expressions>`_
 follow almost the same syntax as list comprehensions but return a generator
-instead of a list. 
+instead of a list.
 
 Creating a new list requires more work and uses more memory. If you are just going
 to loop through the new list, prefer using an iterator instead.
@@ -668,7 +668,7 @@ example if you need to use the result multiple times.
 
 
 If your logic is too complicated for a short list comprehension or generator
-expression, consider using a generator function instead of returning a list. 
+expression, consider using a generator function instead of returning a list.
 
 **Good**:
 
@@ -688,7 +688,7 @@ expression, consider using a generator function instead of returning a list.
         yield current_batch
 
 
-Never use a list comprehension just for its side effects. 
+Never use a list comprehension just for its side effects.
 
 **Bad**:
 
@@ -701,7 +701,7 @@ Never use a list comprehension just for its side effects.
 .. code-block:: python
 
     for x in sequence:
-        print(x) 
+        print(x)
 
 
 Filtering a list
@@ -728,7 +728,7 @@ Don't make multiple passes through the list.
 
 **Good**:
 
-Use a list comprehension or generator expression. 
+Use a list comprehension or generator expression.
 
 .. code-block:: python
 
