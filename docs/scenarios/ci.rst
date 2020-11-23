@@ -65,7 +65,7 @@ Travis-CI
 tests for open source projects for free. It provides multiple workers to run
 Python tests on and seamlessly integrates with GitHub. You can even have it
 comment on your Pull Requests whether this particular changeset breaks the
-build or not. So if you are hosting your code on GitHub, Travis-CI is a great
+build or not. So, if you are hosting your code on GitHub, Travis-CI is a great
 and easy way to get started with Continuous Integration.
 
 In order to get started, add a :file:`.travis.yml` file to your repository with

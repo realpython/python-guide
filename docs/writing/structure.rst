@@ -18,7 +18,7 @@ the project? What features and functions can be grouped together and
 isolated? By answering questions like these you can begin to plan, in
 a broad sense, what your finished product will look like.
 
-In this section we take a closer look at Python's module and import
+In this section, we take a closer look at Python's modules and import
 systems as they are the central elements to enforcing structure in your
 project. We then discuss various perspectives on how to build code which
 can be extended and tested reliably.
@@ -32,7 +32,7 @@ It's Important.
 :::::::::::::::
 
 Just as Code Style, API Design, and Automation are essential for a
-healthy development cycle, Repository structure is a crucial part of
+healthy development cycle. Repository structure is a crucial part of
 your project's
 `architecture <http://www.amazon.com/gp/product/1257638017/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=39095&creativeASIN=1257638017>`__.
 
@@ -54,8 +54,7 @@ documentation.
 
 Of course, first impressions aren't everything. You and your colleagues
 will spend countless hours working with this repository, eventually
-becoming intimately familiar with every nook and cranny. The layout of
-it is important.
+becoming intimately familiar with every nook and cranny. The layout is important.
 
 Sample Repository
 :::::::::::::::::
@@ -126,7 +125,7 @@ If you aren't sure which license you should use for your project, check
 out `choosealicense.com <http://choosealicense.com>`_.
 
 Of course, you are also free to publish code without a license, but this
-would prevent many people from potentially using your code.
+would prevent many people from potentially using or contributing to your code.
 
 Setup.py
 ::::::::
@@ -157,8 +156,8 @@ should be placed at the root of the repository. It should specify the
 dependencies required to contribute to the project: testing, building,
 and generating documentation.
 
-If your project has no development dependencies, or you prefer
-development environment setup via ``setup.py``, this file may be
+If your project has no development dependencies, or if you prefer
+setting up a development environment via ``setup.py``, this file may be
 unnecessary.
 
 Documentation
@@ -331,42 +330,42 @@ Easy structuring of a project means it is also easy
 to do it poorly. Some signs of a poorly structured project
 include:
 
-- Multiple and messy circular dependencies: if your classes
+- Multiple and messy circular dependencies: If the classes
   Table and Chair in :file:`furn.py` need to import Carpenter from
   :file:`workers.py` to answer a question such as ``table.isdoneby()``,
   and if conversely the class Carpenter needs to import Table and Chair
   to answer the question ``carpenter.whatdo()``, then you
   have a circular dependency. In this case you will have to resort to
-  fragile hacks such as using import statements inside
+  fragile hacks such as using import statements inside your
   methods or functions.
 
-- Hidden coupling: each and every change in Table's implementation
+- Hidden coupling: Each and every change in Table's implementation
   breaks 20 tests in unrelated test cases because it breaks Carpenter's code,
-  which requires very careful surgery to adapt the change. This means
+  which requires very careful surgery to adapt to the change. This means
   you have too many assumptions about Table in Carpenter's code or the
   reverse.
 
-- Heavy usage of global state or context: instead of explicitly
+- Heavy usage of global state or context: Instead of explicitly
   passing ``(height, width, type, wood)`` to each other, Table
   and Carpenter rely on global variables that can be modified
   and are modified on the fly by different agents. You need to
-  scrutinize all access to these global variables to understand why
+  scrutinize all access to these global variables in order to understand why
   a rectangular table became a square, and discover that remote
   template code is also modifying this context, messing with
-  table dimensions.
+  the table dimensions.
 
 - Spaghetti code: multiple pages of nested if clauses and for loops
   with a lot of copy-pasted procedural code and no
   proper segmentation are known as spaghetti code. Python's
-  meaningful indentation (one of its most controversial features) make
-  it very hard to maintain this kind of code. So the good news is that
+  meaningful indentation (one of its most controversial features) makes
+  it very hard to maintain this kind of code. The good news is that
   you might not see too much of it.
 
 - Ravioli code is more likely in Python: it consists of hundreds of
   similar little pieces of logic, often classes or objects, without
-  proper structure. If you never can remember if you have to use
+  proper structure. If you never can remember, if you have to use
   FurnitureTable, AssetTable or Table, or even TableNew for your
-  task at hand, you might be swimming in ravioli code.
+  task at hand, then you might be swimming in ravioli code.
 
 
 *******
@@ -384,13 +383,13 @@ in one file, and all low-level operations in another file. In this case,
 the interface file needs to import the low-level file. This is done with the
 ``import`` and ``from ... import`` statements.
 
-As soon as you use `import` statements you use modules. These can be either
+As soon as you use `import` statements, you use modules. These can be either
 built-in modules such as `os` and `sys`, third-party modules you have installed
 in your environment, or your project's internal modules.
 
 To keep in line with the style guide, keep module names short, lowercase, and
 be sure to avoid using special symbols like the dot (.) or question mark (?).
-So a file name like :file:`my.spam.py` is one you should avoid! Naming this way
+A file name like :file:`my.spam.py` is the one you should avoid! Naming this way
 will interfere with the way Python looks for modules.
 
 In the case of `my.spam.py` Python expects to find a :file:`spam.py` file in a
@@ -398,10 +397,10 @@ folder named :file:`my` which is not the case. There is an
 `example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the
 dot notation should be used in the Python docs.
 
-If you'd like you could name your module :file:`my_spam.py`, but even our
-friend the underscore should not be seen often in module names. However, using other
+If you like, you could name your module :file:`my_spam.py`, but even our trusty
+friend the underscore, should not be seen that often in module names. However, using other
 characters (spaces or hyphens) in module names will prevent importing
-(- is the subtract operator), so try to keep module names short so there is
+(- is the subtract operator). Try to keep module names short so there is
 no need to separate words. And, most of all, don't namespace with underscores; use submodules instead.
 
 .. code-block:: python
@@ -412,15 +411,15 @@ no need to separate words. And, most of all, don't namespace with underscores; u
   import library.foo_plugin
 
 Aside from some naming restrictions, nothing special is required for a Python
-file to be a module, but you need to understand the import mechanism in order
+file to be a module. But you need to understand the import mechanism in order
 to use this concept properly and avoid some issues.
 
 Concretely, the ``import modu`` statement will look for the proper file, which
-is :file:`modu.py` in the same directory as the caller if it exists.  If it is
+is :file:`modu.py` in the same directory as the caller, if it exists.  If it is
 not found, the Python interpreter will search for :file:`modu.py` in the "path"
-recursively and raise an ImportError exception if it is not found.
+recursively and raise an ImportError exception when it is not found.
 
-Once :file:`modu.py` is found, the Python interpreter will execute the module in
+When :file:`modu.py` is found, the Python interpreter will execute the module in
 an isolated scope. Any top-level statement in :file:`modu.py` will be executed,
 including other imports if any. Function and class definitions are stored in
 the module's dictionary.
@@ -437,7 +436,7 @@ unwanted effects, e.g. override an existing function with the same name.
 
 It is possible to simulate the more standard behavior by using a special syntax
 of the import statement: ``from modu import *``. This is generally considered
-bad practice. **Using** ``import *`` **makes code harder to read and makes
+bad practice. **Using** ``import *`` **makes the code harder to read and makes
 dependencies less compartmentalized**.
 
 Using ``from modu import func`` is a way to pinpoint the function you want to
@@ -493,20 +492,20 @@ modules, but with a special behavior for the :file:`__init__.py` file, which is
 used to gather all package-wide definitions.
 
 A file :file:`modu.py` in the directory :file:`pack/` is imported with the
-statement ``import pack.modu``. This statement will look for an
+statement ``import pack.modu``. This statement will look for
 :file:`__init__.py` file in :file:`pack` and execute all of its top-level
 statements. Then it will look for a file named :file:`pack/modu.py` and
 execute all of its top-level statements. After these operations, any variable,
 function, or class defined in :file:`modu.py` is available in the pack.modu
 namespace.
 
-A commonly seen issue is to add too much code to :file:`__init__.py`
+A commonly seen issue is adding too much code to :file:`__init__.py`
 files. When the project complexity grows, there may be sub-packages and
 sub-sub-packages in a deep directory structure. In this case, importing a
 single item from a sub-sub-package will require executing all
 :file:`__init__.py` files met while traversing the tree.
 
-Leaving an :file:`__init__.py` file empty is considered normal and even a good
+Leaving an :file:`__init__.py` file empty is considered normal and even good
 practice, if the package's modules and sub-packages do not need to share any
 code.
 
@@ -520,45 +519,44 @@ Object-oriented programming
 ***************************
 
 Python is sometimes described as an object-oriented programming language. This
-can be somewhat misleading and needs to be clarified.
+can be somewhat misleading and requires further clarifications.
 
 In Python, everything is an object, and can be handled as such. This is what is
 meant when we say, for example, that functions are first-class objects.
 Functions, classes, strings, and even types are objects in Python: like any
 object, they have a type, they can be passed as function arguments, and they
-may have methods and properties. In this understanding, Python is an
-object-oriented language.
+may have methods and properties. In this understanding, Python can be considered
+as an object-oriented language.
 
 However, unlike Java, Python does not impose object-oriented programming as the
 main programming paradigm. It is perfectly viable for a Python project to not
 be object-oriented, i.e. to use no or very few class definitions, class
 inheritance, or any other mechanisms that are specific to object-oriented
-programming.
+programming languages.
 
 Moreover, as seen in the modules_ section, the way Python handles modules and
 namespaces gives the developer a natural way to ensure the
 encapsulation and separation of abstraction layers, both being the most common
 reasons to use object-orientation. Therefore, Python programmers have more
-latitude to not use object-orientation, when it is not required by the business
+latitude as to not use object-orientation, when it is not required by the business
 model.
 
 There are some reasons to avoid unnecessary object-orientation. Defining
-custom classes is useful when we want to glue together some state and some
-functionality. The problem, as pointed out by the discussions about functional
+custom classes is useful when we want to glue some state and some
+functionality together. The problem, as pointed out by the discussions about functional
 programming, comes from the "state" part of the equation.
 
 In some architectures, typically web applications, multiple instances of Python
-processes are spawned to respond to external requests that can happen at the
-same time. In this case, holding some state in instantiated objects, which
+processes are spawned as a response to external requests that happen simultaneously.
+In this case, holding some state in instantiated objects, which
 means keeping some static information about the world, is prone to concurrency
 problems or race conditions. Sometimes, between the initialization of the state
 of an object (usually done with the ``__init__()`` method) and the actual use
 of the object state through one of its methods, the world may have changed, and
 the retained state may be outdated. For example, a request may load an item in
 memory and mark it as read by a user. If another request requires the deletion
-of this item at the same time, it may happen that the deletion actually occurs
-after the first process loaded the item, and then we have to mark as read a
-deleted object.
+of this item at the same time, the deletion may actually occur after the first
+process loaded the item, and then we have to mark a deleted object as read.
 
 This and other issues led to the idea that using stateless functions is a
 better programming paradigm.
@@ -572,7 +570,7 @@ or deletes data in a global variable or in the persistence layer, it is said to
 have a side-effect.
 
 Carefully isolating functions with context and side-effects from functions with
-logic (called pure functions) allow the following benefits:
+logic (called pure functions) allows the following benefits:
 
 - Pure functions are deterministic: given a fixed input,
   the output will always be the same.
@@ -714,7 +712,7 @@ type. In fact, in Python, variables are very different from what they are in
 many other languages, specifically statically-typed languages. Variables are not
 a segment of the computer's memory where some value is written, they are 'tags'
 or 'names' pointing to objects. It is therefore possible for the variable 'a' to
-be set to the value 1, then to the value 'a string', then to a function.
+be set to the value 1, then the value 'a string', to a function.
 
 The dynamic typing of Python is often considered to be a weakness, and indeed
 it can lead to complexities and hard-to-debug code. Something named 'a' can be
@@ -744,7 +742,7 @@ Some guidelines help to avoid this issue:
     def func():
         pass  # Do something
 
-Using short functions or methods helps reduce the risk
+Using short functions or methods helps to reduce the risk
 of using the same name for two unrelated things.
 
 It is better to use different names even for things that are related,
@@ -846,7 +844,7 @@ most idiomatic way to do this.
 
 One final thing to mention about strings is that using ``join()`` is not always
 best. In the instances where you are creating a new string from a pre-determined
-number of strings, using the addition operator is actually faster, but in cases
+number of strings, using the addition operator is actually faster. But in cases
 like above or in cases where you are adding to an existing string, using
 ``join()`` should be your preferred method.
 

@@ -9,8 +9,8 @@ Testing Your Code
 Testing your code is very important.
 
 Getting used to writing testing code and running this code in parallel is now
-considered a good habit. Used wisely, this method helps you define more
-precisely your code's intent and have a more decoupled architecture.
+considered a good habit. Used wisely, this method helps to define your
+code's intent more precisely and have a more decoupled architecture.
 
 Some general rules of testing:
 
@@ -294,6 +294,6 @@ always returns the same result (but only for the duration of the test).
         # get_search_results runs a search and iterates over the result
         self.assertEqual(len(myapp.get_search_results(q="fish")), 3)
 
-Mock has many other ways you can configure it and control its behavior.
+Mock has many other ways with which you can configure and control its behaviour.
 
     `mock <http://www.voidspace.org.uk/python/mock/>`_

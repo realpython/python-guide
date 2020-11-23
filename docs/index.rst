@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 .. meta::
-   :description: An opinionated guide to the Python programming language and a best practice handbook to the installation, configuration, and usage of Python on a daily basis.
+   :description: An opinionated guide to the Python programming language and a best practice handbook for the installation, configuration, and usage of Python on a daily basis.
 
 
 #################################
@@ -17,7 +17,7 @@ Greetings, Earthling! Welcome to The Hitchhiker's Guide to Python.
 `fork us on GitHub <https://github.com/realpython/python-guide>`_!
 
 This handcrafted guide exists to provide both novice and expert Python
-developers a best practice handbook to the installation, configuration, and
+developers a best practice handbook for the installation, configuration, and
 usage of Python on a daily basis.
 
 This guide is **opinionated** in a way that is almost, but not quite, entirely
@@ -25,7 +25,7 @@ This guide is **opinionated** in a way that is almost, but not quite, entirely
 available here. Rather, you'll find a nice concise list of highly recommended
 options.
 
-.. note:: The use of **Python 3** is *highly* preferred over Python 2. Consider upgrading your applications and infrastructure if you find yourself *still* using Python 2 in production today. If you are using Python 3, congratulations — you are indeed a person of excellent taste.
+.. note:: The use of **Python 3** is *highly* recommended over Python 2. Consider upgrading your applications and infrastructures if you find yourself *still* using Python 2 in production today. If you are using Python 3, congratulations — you are indeed a person of excellent taste.
   —*Kenneth Reitz*
 
 Let's get started! But first, let's make sure you know where your towel is.

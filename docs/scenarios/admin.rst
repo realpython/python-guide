@@ -199,7 +199,7 @@ Ansible
 *******
 
 `Ansible <http://ansible.com/>`_  is an open source system automation tool.
-The biggest advantage over Puppet or Chef is it does not require an agent on
+Its biggest advantage over Puppet or Chef is that it does not require an agent on
 the client machine. Playbooks are Ansible’s configuration, deployment, and
 orchestration language and are written in YAML with Jinja2 for templating.
 
