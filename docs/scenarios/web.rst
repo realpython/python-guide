@@ -280,13 +280,6 @@ how to set up your first application.
 
 Heroku is the recommended PaaS for deploying Python web applications today.
 
-Eldarion
---------
-
-`Eldarion <https://eldarion.cloud/>`_ (formerly known as Gondor) is a PaaS powered
-by Kubernetes, CoreOS, and Docker. They support any WSGI application and have a
-guide on deploying `Django projects <https://eldarion-gondor.github.io/docs/how-to/setup-deploy-first-django-project/>`_.
-
 
 **********
 Templating
