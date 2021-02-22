@@ -65,9 +65,9 @@ it is bad practice to have two disjointed statements on the same line of code.
 
 .. code-block:: python
 
-    print 'one'; print 'two'
+    print('one'); print('two')
 
-    if x == 1: print 'one'
+    if x == 1: print('one')
 
     if <complex comparison> and <other complex comparison>:
         # do something
@@ -76,11 +76,11 @@ it is bad practice to have two disjointed statements on the same line of code.
 
 .. code-block:: python
 
-    print 'one'
-    print 'two'
+    print('one')
+    print('two')
 
     if x == 1:
-        print 'one'
+        print('one')
 
     cond1 = <complex comparison>
     cond2 = <other complex comparison>
