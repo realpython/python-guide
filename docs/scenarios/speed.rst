@@ -176,17 +176,17 @@ What's the difference in speed? Let's try it!
 	#primes implemented with Python
 	import primes
 
-	print "Cython:"
+	print("Cython:")
 	t1= time.time()
-	print primesCy.primes(500)
+	print(primesCy.primes(500))
 	t2= time.time()
-	print "Cython time: %s" %(t2-t1)
-	print ""
-	print "Python"
+	print("Cython time: %s" %(t2-t1))
+	print("")
+	print("Python")
 	t1= time.time()
-	print primes.primes(500)
+	print(primes.primes(500))
 	t2= time.time()
-	print "Python time: %s" %(t2-t1)
+	print("Python time: %s" %(t2-t1))
 
 
 These lines both need a remark:
