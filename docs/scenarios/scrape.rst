@@ -87,8 +87,8 @@ Let's see what we got exactly:
 
 .. code-block:: python
 
-    print 'Buyers: ', buyers
-    print 'Prices: ', prices
+    print('Buyers: ', buyers)
+    print('Prices: ', prices)
 
 ::
 
