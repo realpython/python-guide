@@ -65,9 +65,9 @@ it is bad practice to have two disjointed statements on the same line of code.
 
 .. code-block:: python
 
-    print 'one'; print 'two'
+    print('one'); print('two')
 
-    if x == 1: print 'one'
+    if x == 1: print('one')
 
     if <complex comparison> and <other complex comparison>:
         # do something
@@ -76,11 +76,11 @@ it is bad practice to have two disjointed statements on the same line of code.
 
 .. code-block:: python
 
-    print 'one'
-    print 'two'
+    print('one')
+    print('two')
 
     if x == 1:
-        print 'one'
+        print('one')
 
     cond1 = <complex comparison>
     cond2 = <other complex comparison>
@@ -357,9 +357,7 @@ Instead, use a list comprehension:
 
 .. code-block:: python
 
-    four_lists = [[] for __ in xrange(4)]
-
-Note: Use range() instead of xrange() in Python 3.
+    four_lists = [[] for __ in range(4)]
 
 Create a string from a list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -584,10 +582,10 @@ list of what is considered false.
 .. code-block:: python
 
     if attr == True:
-        print 'True!'
+        print('True!')
 
     if attr == None:
-        print 'attr is None!'
+        print('attr is None!')
 
 **Good**:
 
@@ -595,15 +593,15 @@ list of what is considered false.
 
     # Just check the value
     if attr:
-        print 'attr is truthy!'
+        print('attr is truthy!')
 
     # or check for the opposite
     if not attr:
-        print 'attr is falsey!'
+        print('attr is falsey!')
 
     # or, since None is considered false, explicitly check for it
     if attr is None:
-        print 'attr is None!'
+        print('attr is None!')
 
 Access a Dictionary Element
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -617,9 +615,9 @@ or pass a default argument to :py:meth:`dict.get`.
 
     d = {'hello': 'world'}
     if d.has_key('hello'):
-        print d['hello']    # prints 'world'
+        print(d['hello'])    # prints 'world'
     else:
-        print 'default_value'
+        print('default_value')
 
 **Good**:
 
@@ -627,12 +625,12 @@ or pass a default argument to :py:meth:`dict.get`.
 
     d = {'hello': 'world'}
 
-    print d.get('hello', 'default_value') # prints 'world'
-    print d.get('thingy', 'default_value') # prints 'default_value'
+    print(d.get('hello', 'default_value')) # prints 'world'
+    print(d.get('thingy', 'default_value')) # prints 'default_value'
 
     # Or:
     if 'hello' in d:
-        print d['hello']
+        print(d['hello'])
 
 Short Ways to Manipulate Lists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -783,7 +781,7 @@ Use :py:func:`enumerate` keep a count of your place in the list.
 
     a = [3, 4, 5]
     for i, item in enumerate(a):
-        print i, item
+        print(i, item)
     # prints
     # 0 3
     # 1 4
@@ -804,7 +802,7 @@ files for you.
 
     f = open('file.txt')
     a = f.read()
-    print a
+    print(a)
     f.close()
 
 **Good**:
@@ -813,7 +811,7 @@ files for you.
 
     with open('file.txt') as f:
         for line in f:
-            print line
+            print(line)
 
 The ``with`` statement is better because it will ensure you always close the
 file, even if an exception is raised inside the ``with`` block.
