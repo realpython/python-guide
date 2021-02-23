@@ -168,25 +168,23 @@ What's the difference in speed? Let's try it!
 .. code-block:: python
 
 	import time
-	#activate pyx compiler
+	# Activate pyx compiler
 	import pyximport
-	pyximport.install()
-	#primes implemented with Cython
-	import primesCy
-	#primes implemented with Python
-	import primes
+	pyximport.install()	
+	import primesCy  # primes implemented with Cython
+	import primes  # primes implemented with Python
 
 	print("Cython:")
-	t1= time.time()
+	t1 = time.time()
 	print(primesCy.primes(500))
-	t2= time.time()
-	print("Cython time: %s" %(t2-t1))
+	t2 = time.time()
+	print("Cython time: %s" % (t2 - t1))
 	print("")
 	print("Python")
-	t1= time.time()
+	t1 = time.time()
 	print(primes.primes(500))
-	t2= time.time()
-	print("Python time: %s" %(t2-t1))
+	t2 = time.time()
+	print("Python time: %s" % (t2 - t1))
 
 
 These lines both need a remark:
