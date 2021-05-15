@@ -79,7 +79,7 @@ adding the following to your :file:`~/.bashrc` file:
 .. code-block:: console
 
     gpip() {
-        PIP_REQUIRE_VIRTUALENV="" pip "$@"
+        PIP_REQUIRE_VIRTUALENV=false pip "$@"
     }
 
 After saving the changes and sourcing your :file:`~/.bashrc` file you can now
