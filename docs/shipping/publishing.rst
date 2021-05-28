@@ -7,7 +7,7 @@ Publishing Your Code
 
 .. todo:: Replace this kitten with the photo we want.
 
-.. image:: https://placekitten.com/800/600
+.. image:: https://github.githubassets.com/images/modules/open_graph/github-octocat.png
 
 A healthy open source project needs a place to publish its code and project
 management stuff so other developers can collaborate with you. This lets your
