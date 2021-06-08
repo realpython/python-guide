@@ -130,7 +130,7 @@ structures in Python. One such example is below.
         import yaml
         with open('/tmp/file.yaml', 'r', newline='') as f:
             try:
-                print(yaml.load(f))
+                print(yaml.full_load(f))
             except yaml.YAMLError as ymlexcp:
                 print(ymlexcp)
 
