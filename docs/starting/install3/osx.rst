@@ -66,7 +66,7 @@ If you have OS X 10.12 (Sierra) or older use this line instead
 
 .. code-block:: console
 
-    export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+    export PATH=$PATH:/usr/local/bin:/usr/local/sbin
 
 Now, we can install Python 3:
 
@@ -90,7 +90,12 @@ Working with Python 3
 At this point, you have the system Python 2.7 available, potentially the
 :ref:`Homebrew version of Python 2 <install-osx>` installed, and the Homebrew
 version of Python 3 as well.
+.. code-block:: console
 
+    $ ln -s /usr/local/bin/python3 /usr/local/bin/python
+    $ ln -s /usr/local/bin/pip3 /usr/local/bin/pip
+    
+    
 .. code-block:: console
 
     $ python
