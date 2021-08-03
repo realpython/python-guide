@@ -6,7 +6,7 @@ docutils==0.14
 idna==2.7
 imagesize==1.0.0
 Jinja2==2.10
-MarkupSafe==1.0
+MarkupSafe==1.1.1
 packaging==17.1
 Pygments==2.2.0
 pyparsing==2.2.0
