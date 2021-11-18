@@ -661,15 +661,15 @@ msgstr "遗留的 Python 2 安装指南"
 
 #: ../../docs/starting/installation.rst:39
 msgid ":ref:`Python 2 on MacOS <install-osx>`."
-msgstr ":ref:`在 MacOS 上使用 Python 2 <install2-osx>`"
+msgstr ":ref:`在 MacOS 上使用 Python 2 <install-osx>`"
 
 #: ../../docs/starting/installation.rst:40
 msgid ":ref:`Python 2 on Microsoft Windows <install-windows>`."
-msgstr ":ref:`在 Windows 上使用 Python 2 <install2-windows>`"
+msgstr ":ref:`在 Windows 上使用 Python 2 <install-windows>`"
 
 #: ../../docs/starting/installation.rst:41
 msgid ":ref:`Python 2 on Linux <install-linux>`."
-msgstr ":ref:`在 Linux 上使用 Python 2 <install2-linux>`"
+msgstr ":ref:`在 Linux 上使用 Python 2 <install-linux>`"
 
 #: ../../docs/starting/which-python.rst:5
 msgid "Picking a Python Interpreter (3 vs 2)"
