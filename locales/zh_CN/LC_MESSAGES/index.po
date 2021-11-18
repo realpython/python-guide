@@ -44,7 +44,7 @@ msgid ""
 "**This is a living, breathing guide.**  If you'd like to contribute, "
 "`fork us on GitHub <https://github.com/realpython/python-guide>`_!"
 msgstr ""
-"**这是一个实时的指南**。"
+"**这是一份活着的、会呼吸的指南**。"
 "如果你想做出贡献，`fork 我们的 GitHub "
 "<https://github.com/realpython/python-guide>`_ ！"
 
@@ -78,14 +78,16 @@ msgid ""
 msgstr ""
 "强烈建议使用 **Python 3**，而不是 Python 2。"
 "如果你发现自己今天仍在生产中使用 Python 2，请考虑升级你的应用程序和基础设施。"
-"如果你正在使用 Python 3，那么恭喜你 -- 你确实是一个有品位的人。-*Kenneth Reitz*"
+"如果你正在使用 Python 3，那么恭喜你 —— 你确实是一个有品位的人。"
+"—— *Kenneth Reitz*"
 
 #: ../../docs/index.rst:31
 msgid ""
 "Let's get started! But first, let's make sure you know where your towel "
 "is."
 msgstr ""
-"让我们开始吧! 但首先，让我们确保你知道你的毛巾在哪里。"
+"让我们开始吧! 但首先，让我们确保你知道你的浴巾在哪里。"
+"（译者注：towel 浴巾的梗引自著名科幻小说《银河系漫游指南》，大概是说先准备好不起眼但很重要的东西。）"
 
 #: ../../docs/contents.rst.inc:2
 msgid "Getting Started with Python"
@@ -93,63 +95,67 @@ msgstr "Python 入门篇"
 
 #: ../../docs/contents.rst.inc:4
 msgid "New to Python? Let's properly setup up your Python environment:"
-msgstr ""
+msgstr "初次接触 Python？让我们适当地设置一下你的 Python 环境："
 
 #: ../../docs/contents.rst.inc:11
 msgid "Properly Install Python on your system:"
-msgstr ""
+msgstr "在系统中正确安装 Python："
 
 #: ../../docs/contents.rst.inc:25
 msgid "Using Virtualenvs with Pipenv:"
-msgstr ""
+msgstr "在 Pipenv 中使用 Virtualenvs："
 
 #: ../../docs/contents.rst.inc:34
 msgid "Python Development Environments"
-msgstr ""
+msgstr "Python 开发环境"
 
 #: ../../docs/contents.rst.inc:36
 msgid ""
 "This part of the guide focuses on the Python development environment, and"
 " the best-practice tools that are available for writing Python code."
 msgstr ""
+"这部分指南的重点是 Python 开发环境，以及可用于编写 Python 代码的最佳实践工具。"
 
 #: ../../docs/contents.rst.inc:50
 msgid "Writing Great Python Code"
-msgstr ""
+msgstr "编写优雅的 Python 代码"
 
 #: ../../docs/contents.rst.inc:52
 msgid ""
 "This part of the guide focuses on the best-practices for writing Python "
 "code."
 msgstr ""
+"这部分指南的重点是编写 Python 代码的最佳实践。"
 
 #: ../../docs/contents.rst.inc:69
 msgid "Scenario Guide for Python Applications"
-msgstr ""
+msgstr "Python 应用场景指南"
 
 #: ../../docs/contents.rst.inc:71
 msgid ""
 "This part of the guide focuses on tool and module advice based on "
 "different scenarios."
 msgstr ""
+"指南的这一部分侧重于基于不同场景的工具和模块建议。"
 
 #: ../../docs/contents.rst.inc:98
 msgid "Shipping Great Python Code"
-msgstr ""
+msgstr "运用伟大的 Python 代码"
 
 #: ../../docs/contents.rst.inc:100
 msgid "This part of the guide focuses on sharing and deploying your Python code."
-msgstr ""
+msgstr "这一部分指南的重点是分享和部署你的 Python 代码。"
 
 #: ../../docs/contents.rst.inc:111
 msgid "Additional Notes"
-msgstr ""
+msgstr "补充说明"
 
 #: ../../docs/contents.rst.inc:113
 msgid ""
 "This part of the guide, which is mostly prose, begins with some "
 "background information about Python, and then focuses on next steps."
 msgstr ""
+"指南的这一部分主要是序言，首先是关于 Python 的一些背景信息，然后重点是下一步。"
 
 #: ../../docs/contents.rst.inc:126
 msgid ""
@@ -160,5 +166,5 @@ msgstr ""
 
 #: ../../docs/contents.rst.inc:133
 msgid "Contribution notes and legal information (for those interested)."
-msgstr ""
+msgstr "贡献说明和法律信息（供感兴趣的人参考）。"
 

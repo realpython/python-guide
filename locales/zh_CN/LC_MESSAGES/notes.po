@@ -24,11 +24,11 @@ msgstr ""
 
 #: ../../docs/notes/contribute.rst:3
 msgid "Contribute"
-msgstr ""
+msgstr "贡献"
 
 #: ../../docs/notes/contribute.rst:7
 msgid "Python-guide is under active development, and contributors are welcome."
-msgstr ""
+msgstr "Python-guide 正在积极开发中，欢迎大家投稿。"
 
 #: ../../docs/notes/contribute.rst:9
 msgid ""
@@ -38,32 +38,37 @@ msgid ""
 "added to the `Contributors List <https://github.com/kennethreitz/python-"
 "guide/contributors>`_."
 msgstr ""
+"如果您有功能请求、修改建议或者 bug 报告，请在 GitHub_ 上新建议题。"
+"如果想要提交补丁，请直接到 GitHub_ 拉取请求。"
+"一旦您的修改被合并，您会被自动添加到 `贡献者清单 "
+"<https://github.com/kennethreitz/python-guide/contributors>`_ 中。"
 
 #: ../../docs/notes/contribute.rst:17
 msgid "Style Guide"
-msgstr ""
+msgstr "风格指南"
 
 #: ../../docs/notes/contribute.rst:19
 msgid "For all contributions, please follow the :ref:`guide-style-guide`."
-msgstr ""
+msgstr "对于所有的贡献，请遵循 :ref:`guide-style-guide`。"
 
 #: ../../docs/notes/contribute.rst:26
 msgid "Todo List"
-msgstr ""
+msgstr "待办清单"
 
 #: ../../docs/notes/contribute.rst:28
 msgid ""
 "If you'd like to contribute, there's plenty to do. Here's a short todo_ "
 "list."
 msgstr ""
+"如果你愿意做出贡献，有很多事情可以做。这里有一个简短的 todo_ 列表。"
 
 #: ../../TODO.rst:1
 msgid "Establish \"use this\" vs \"alternatives are....\" recommendations"
-msgstr ""
+msgstr "建立 \"use this\" 与 \"alternatives are....\" 的建议。"
 
 #: ../../docs/notes/license.rst:3
 msgid "License"
-msgstr ""
+msgstr "许可证"
 
 #: ../../docs/notes/license.rst:7
 msgid ""
@@ -74,7 +79,7 @@ msgstr ""
 
 #: ../../docs/notes/styleguide.rst:5
 msgid "The Guide Style Guide"
-msgstr ""
+msgstr "风格指南指引"
 
 #: ../../docs/notes/styleguide.rst:9
 msgid ""
@@ -83,44 +88,53 @@ msgid ""
 "digest, all contributions should fit within the rules of this style guide"
 " where appropriate."
 msgstr ""
+"与所有文档一样，拥有一致的格式有助于使文档更容易理解。"
+"为了使指南更容易被消化，所有的贡献都应酌情符合本风格指南的规则。"
 
 #: ../../docs/notes/styleguide.rst:14
 msgid "The Guide is written as :ref:`restructuredtext-ref`."
-msgstr ""
+msgstr "指南的写法是 :ref:`restructuredtext-ref`。"
 
 #: ../../docs/notes/styleguide.rst:16
 msgid ""
 "Parts of The Guide may not yet match this style guide. Feel free to "
 "update those parts to be in sync with The Guide Style Guide"
 msgstr ""
+"指南的部分内容可能还不符合本风格指南。"
+"请随时更新这些部分，以便指南的风格指南保持同步"
 
 #: ../../docs/notes/styleguide.rst:19
 msgid ""
 "On any page of the rendered HTML you can click \"Show Source\" to see how"
 " authors have styled the page."
 msgstr ""
+"在渲染的 HTML 的任何一页上，你可以点击 \"显示源码\" 来查看作者是如何设计页面的。"
 
 #: ../../docs/notes/styleguide.rst:25
 msgid "Relevancy"
-msgstr ""
+msgstr "相关性"
 
 #: ../../docs/notes/styleguide.rst:27
 msgid ""
 "Strive to keep any contributions relevant to the :ref:`purpose of The "
 "Guide <about-ref>`."
 msgstr ""
+"努力使任何贡献与 :ref:`指南的目的 <about-ref>` 相关。"
 
 #: ../../docs/notes/styleguide.rst:30
 msgid ""
 "Avoid including too much information on subjects that don't directly "
 "relate to Python development."
 msgstr ""
+"避免包括太多与 Python 开发没有直接关系的主题的信息。"
 
 #: ../../docs/notes/styleguide.rst:32
 msgid ""
 "Prefer to link to other sources if the information is already out there. "
 "Be sure to describe what and why you are linking."
 msgstr ""
+"如果信息已经存在，更愿意链接到其他来源。"
+"一定要描述你所链接的内容和原因。"
 
 #: ../../docs/notes/styleguide.rst:34
 msgid ""
@@ -128,6 +142,9 @@ msgid ""
 "doc.org/en/master/usage/restructuredtext/basics.html#citations>`_ "
 "references where needed."
 msgstr ""
+"在需要的地方 `引用 "
+"<https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#citations>`_ "
+"参考资料。"
 
 #: ../../docs/notes/styleguide.rst:36
 msgid ""
@@ -135,38 +152,41 @@ msgid ""
 " with Python (e.g., Git, GitHub, Databases), reference by linking to "
 "useful resources, and describe why it's useful to Python."
 msgstr ""
+"如果一个主题与 Python 不直接相关，但与 Python 结合起来很有用"
+"（例如，Git、GitHub、数据库），通过链接到有用的资源来参考，"
+"并描述为什么它对 Python 有用。"
 
 #: ../../docs/notes/styleguide.rst:39
 msgid "When in doubt, ask."
-msgstr ""
+msgstr "有疑问时，请询问。"
 
 #: ../../docs/notes/styleguide.rst:44
 msgid "Headings"
-msgstr ""
+msgstr "标题"
 
 #: ../../docs/notes/styleguide.rst:46
 msgid "Use the following styles for headings."
-msgstr ""
+msgstr "使用下列风格作为标题。"
 
 #: ../../docs/notes/styleguide.rst:48
 msgid "Chapter title:"
-msgstr ""
+msgstr "章节标题："
 
 #: ../../docs/notes/styleguide.rst:56
 msgid "Page title:"
-msgstr ""
+msgstr "章节标题："
 
 #: ../../docs/notes/styleguide.rst:64
 msgid "Section headings:"
-msgstr ""
+msgstr "小节标题："
 
 #: ../../docs/notes/styleguide.rst:71
 msgid "Sub section headings:"
-msgstr ""
+msgstr "小节标题："
 
 #: ../../docs/notes/styleguide.rst:81
 msgid "Prose"
-msgstr ""
+msgstr "换行"
 
 #: ../../docs/notes/styleguide.rst:83
 msgid ""
@@ -174,10 +194,12 @@ msgid ""
 "characters, especially if wrapping would make the source text more "
 "difficult to read."
 msgstr ""
+"以 78 个字符包住文本行。"
+"必要时，行的列数可以超过 78 个字符，特别是如果包裹会使源文本更难以阅读。"
 
 #: ../../docs/notes/styleguide.rst:87
 msgid "Use Standard American English, not British English."
-msgstr ""
+msgstr "使用标准的美式英语，而非英式英语。"
 
 #: ../../docs/notes/styleguide.rst:89
 msgid ""
@@ -186,66 +208,74 @@ msgid ""
 "submit content with a missing serial comma will result in permanent "
 "banishment from this project, due to complete and total lack of taste."
 msgstr ""
+"`序列逗号 <https://en.wikipedia.org/wiki/Serial_comma>`_ "
+"（serial comma） （也称为 Oxford comma，牛津逗号）的使用是 100% 没有选择的。"
+"任何尝试以缺少的连续逗号提交内容，将导致该项目的永久性移除，因为完全缺乏品味。"
 
 #: ../../docs/notes/styleguide.rst:94
 msgid "Banishment? Is this a joke? Hopefully we will never have to find out."
-msgstr ""
+msgstr "流放？ 您在开玩笑吗？ 希望我们永远不必找出来。"
 
 #: ../../docs/notes/styleguide.rst:99
 msgid "Code Examples"
-msgstr ""
+msgstr "代码例子"
 
 #: ../../docs/notes/styleguide.rst:101
 msgid "Wrap all code examples at 70 characters to avoid horizontal scrollbars."
-msgstr ""
+msgstr "所有代码示例要在 70 个字符进行换行，以避免出现水平滚动条。"
 
 #: ../../docs/notes/styleguide.rst:103
 msgid "Command line examples:"
-msgstr ""
+msgstr "命令行例子："
 
 #: ../../docs/notes/styleguide.rst:112
 msgid ""
 "Be sure to include the ``$`` prefix before each line for Unix console "
 "examples."
 msgstr ""
+"对于 Unix 控制台的例子，请确保在每一行之前包括 ``$`` 前缀。"
 
 #: ../../docs/notes/styleguide.rst:114
 msgid ""
 "For Windows console examples, use ``doscon`` or ``powershell`` instead of"
 " ``console``, and omit the ``$`` prefix."
 msgstr ""
+"对于 Windows 控制台的例子，使用 ``doscon`` 或 ``powershell`` 代替 "
+"``console``，并省略 ``$`` 前缀。"
 
 #: ../../docs/notes/styleguide.rst:117
 msgid "Python interpreter examples:"
-msgstr ""
+msgstr "Python 解释器的例子："
 
 #: ../../docs/notes/styleguide.rst:127
 msgid "Python examples:"
-msgstr ""
+msgstr "Python 例子："
 
 #: ../../docs/notes/styleguide.rst:141
 msgid "Externally Linking"
-msgstr ""
+msgstr "外部链接"
 
 #: ../../docs/notes/styleguide.rst:143
 msgid "Prefer labels for well known subjects (e.g. proper nouns) when linking:"
-msgstr ""
+msgstr "链接，倾向于为众所周知的主题（如专有名词）贴上标签："
 
 #: ../../docs/notes/styleguide.rst:151
 msgid ""
 "Prefer to use descriptive labels with inline links instead of leaving "
 "bare links:"
 msgstr ""
+"倾向于使用带有内联的描述性标签，而不是留下裸露的链接："
 
 #: ../../docs/notes/styleguide.rst:158
 msgid ""
 "Avoid using labels such as \"click here\", \"this\", etc., preferring "
 "descriptive labels (SEO worthy) instead."
 msgstr ""
+"避免使用诸如 \"点击这里\"、\"这个\" 等标签，而是选择描述性标签（具有 SEO 价值）。"
 
 #: ../../docs/notes/styleguide.rst:164
 msgid "Linking to Sections in The Guide"
-msgstr ""
+msgstr "链接到《指南》中的各章节"
 
 #: ../../docs/notes/styleguide.rst:166
 msgid ""
@@ -253,16 +283,20 @@ msgid ""
 "<https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html"
 "#role-ref>`_ keyword and labels."
 msgstr ""
+"要交叉引用本文档的其他部分，请使用 `:ref: "
+"<https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html"
+"#role-ref>`_ 关键字和标签。"
 
 #: ../../docs/notes/styleguide.rst:170
 msgid ""
 "To make reference labels more clear and unique, always add a ``-ref`` "
 "suffix:"
 msgstr ""
+"为了使参考标签更加清晰和独特，总是添加一个 ``-ref`` 后缀："
 
 #: ../../docs/notes/styleguide.rst:182
 msgid "Notes and Warnings"
-msgstr ""
+msgstr "注意和警告"
 
 #: ../../docs/notes/styleguide.rst:184
 msgid ""
@@ -270,18 +304,20 @@ msgid ""
 "doc.org/en/master/usage/restructuredtext/basics.html#directives>`_ when "
 "making notes."
 msgstr ""
+"在做笔记时要使用适当的 `admonitions 指令 "
+"<https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#directives>`_。"
 
 #: ../../docs/notes/styleguide.rst:187
 msgid "Notes:"
-msgstr ""
+msgstr "注意"
 
 #: ../../docs/notes/styleguide.rst:196
 msgid "Warnings:"
-msgstr ""
+msgstr "警告："
 
 #: ../../docs/notes/styleguide.rst:205
 msgid "TODOs"
-msgstr ""
+msgstr "要做的事"
 
 #: ../../docs/notes/styleguide.rst:207
 msgid ""
@@ -290,4 +326,8 @@ msgid ""
 "avoid cluttering the :ref:`todo-list-ref`, use a single ``todo`` for stub"
 " documents or large incomplete sections."
 msgstr ""
-
+"请用 `todo 指令 "
+"<https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>`_ "
+"标记《指南》中任何不完整的地方。"
+"为了避免弄乱 :ref:`todo-list-ref`，"
+"对存根文件或大的不完整部分使用单个 ``todo``。"
