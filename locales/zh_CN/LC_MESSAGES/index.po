@@ -37,7 +37,7 @@ msgstr "Python 搭车指南！"
 
 #: ../../docs/index.rst:14
 msgid "Greetings, Earthling! Welcome to The Hitchhiker's Guide to Python."
-msgstr "问候，地球人！欢迎来到 《Python 搭车指南》。"
+msgstr "你好，地球人！欢迎来到 《Python 搭车指南》。"
 
 #: ../../docs/index.rst:16
 msgid ""

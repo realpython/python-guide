@@ -18,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
+          python-version: "3.10"
       # 设定 conda 环境
       - uses: s-weigand/setup-conda@v1
       - run: conda --version
@@ -29,11 +29,6 @@ jobs:
         run: |
           pip install -r requirements.txt
           pip install sphinx-intl
-      
-      # # 安装 HTML 主题 & 国际化
-      # - name: Install theme
-      #   run: |
-      #     git clone https://github.com/sphinx-locales/packaging.python.org.git draft
 
       # 构建 Sphinx 文档
       - name: Build the book

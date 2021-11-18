@@ -664,11 +664,11 @@ msgstr ""
 
 #: ../../docs/starting/which-python.rst:5
 msgid "Picking a Python Interpreter (3 vs 2)"
-msgstr ""
+msgstr "挑选一个 Python 解释器（3 vs 2）"
 
 #: ../../docs/starting/which-python.rst:14
 msgid "The State of Python (3 & 2)"
-msgstr ""
+msgstr "Python 的现状（3 & 2）"
 
 #: ../../docs/starting/which-python.rst:16
 msgid ""
@@ -676,30 +676,32 @@ msgid ""
 "present: \"Should I choose Python 2 or Python 3\"? The answer is a bit "
 "more subtle than one might think."
 msgstr ""
+"当选择 Python 解释器时，一个迫在眉睫的问题始终存在："
+"\"我应该选择 Python 2 还是 Python 3？\" 。答案比人们想象的要微妙一些。"
 
 #: ../../docs/starting/which-python.rst:21
 msgid "The basic gist of the state of things is as follows:"
-msgstr ""
+msgstr "事情的基本要点如下："
 
 #: ../../docs/starting/which-python.rst:23
 msgid "Most production applications today use Python 3."
-msgstr ""
+msgstr "今天，大多数生产型应用都使用 Python 3。"
 
 #: ../../docs/starting/which-python.rst:24
 msgid "Python 3 is ready for the production deployment of applications today."
-msgstr ""
+msgstr "今天，Python 3 已经准备好用于应用程序的生产部署。"
 
 #: ../../docs/starting/which-python.rst:25
 msgid "Python 2 reached the end of its life on January 1, 2020 [#pep373_eol]_."
-msgstr ""
+msgstr "Python 2 在 2020 年 1 月 1 日达到其生命的终点 [#pep373_eol]_。"
 
 #: ../../docs/starting/which-python.rst:26
 msgid "The brand name \"Python\" encapsulates both Python 3 and Python 2."
-msgstr ""
+msgstr "品牌名称 \"Python\" 同时囊括了 Python 3 和 Python 2。"
 
 #: ../../docs/starting/which-python.rst:31
 msgid "Recommendations"
-msgstr ""
+msgstr "建议"
 
 #: ../../docs/starting/which-python.rst:34
 msgid ""
@@ -709,14 +711,17 @@ msgid ""
 "congratulations — you are indeed a person of excellent taste. —*Kenneth "
 "Reitz*"
 msgstr ""
+"强烈建议使用 **Python 3**，而不是 Python 2。"
+"如果你发现自己今天仍在生产中使用 Python 2，请考虑升级你的应用程序和基础设施。"
+"如果你正在使用 Python 3，那么恭喜你 -- 你确实是一个有品位的人。-- *Kenneth Reitz*"
 
 #: ../../docs/starting/which-python.rst:37
 msgid "I'll be blunt:"
-msgstr ""
+msgstr "那我直言不讳："
 
 #: ../../docs/starting/which-python.rst:39
 msgid "Use Python 3 for new Python applications."
-msgstr ""
+msgstr "在新的 Python 应用程序中使用 Python 3。"
 
 #: ../../docs/starting/which-python.rst:40
 msgid ""
@@ -724,14 +729,15 @@ msgid ""
 " Python 2.7 will be very useful, but not more useful than learning Python"
 " 3."
 msgstr ""
+"如果你是第一次学习 Python，熟悉 Python 2.7 将非常有用，但不会比学习 Python 3 更有用。"
 
 #: ../../docs/starting/which-python.rst:42
 msgid "Learn both. They are both \"Python\"."
-msgstr ""
+msgstr "两者都要学习。它们都是 \"Python\"。"
 
 #: ../../docs/starting/which-python.rst:47
 msgid "So.... 3?"
-msgstr ""
+msgstr "所以.... 3？"
 
 #: ../../docs/starting/which-python.rst:49
 msgid ""
@@ -739,6 +745,8 @@ msgid ""
 "newest Python 3.x, since every version brings new and improved standard "
 "library modules, security and bug fixes."
 msgstr ""
+"如果你选择使用 Python 解释器，我建议你使用最新的 Python 3.x，"
+"因为每个版本都会带来新的和改进的标准库模块、安全和错误修复。"
 
 #: ../../docs/starting/which-python.rst:53
 msgid ""
@@ -747,10 +755,13 @@ msgid ""
 "simplicity/familiarity, or, of course, you absolutely love and are "
 "inspired by Python 2. No harm in that."
 msgstr ""
+"鉴于此，只有在你有充分理由的情况下才使用 Python 2，"
+"例如预先存在的代码库、Python 2 专用库、简单性/熟悉性，"
+"或者，当然，你绝对喜欢 Python 2 并受到其启发。这样做没有坏处。"
 
 #: ../../docs/starting/which-python.rst:58
 msgid "`Further Reading <http://wiki.python.org/moin/Python2orPython3>`_"
-msgstr ""
+msgstr "`延伸阅读 <http://wiki.python.org/moin/Python2orPython3>`_"
 
 #: ../../docs/starting/which-python.rst:60
 msgid ""
@@ -759,10 +770,13 @@ msgid ""
 "trivial to hard depending upon the kind of software you are writing; if "
 "you're a beginner there are far more important things to worry about."
 msgstr ""
+"有可能 `写出能在 Python 2.6、2.7 和 Python 3 上运行的代码 "
+"<https://docs.python.org/3/howto/pyporting.html>`_。"
+"这取决于你所写的软件的种类，从微不足道到困难重重；如果你是一个初学者，有更重要的事情需要担心。"
 
 #: ../../docs/starting/which-python.rst:69
 msgid "Implementations"
-msgstr ""
+msgstr "实施方案"
 
 #: ../../docs/starting/which-python.rst:71
 msgid ""
@@ -770,6 +784,8 @@ msgid ""
 "also the CPython implementation. *Python* is actually a specification for"
 " a language that can be implemented in many different ways."
 msgstr ""
+"当人们谈到 *Python* 时，他们往往不仅仅是指语言，还包括 CPython 的实现。"
+"*Python* 实际上是一种语言的规范，可以用许多不同的方式来实现。"
 
 #: ../../docs/starting/which-python.rst:76
 msgid "CPython"
@@ -783,6 +799,9 @@ msgid ""
 "highest level of compatibility with Python packages and C extension "
 "modules."
 msgstr ""
+"`CPython <http://www.python.org>`_ 是用 C 语言编写的 Python 参考实现。"
+"它将 Python 代码编译成中间字节码，然后由虚拟机解释。"
+"CPython 提供了与 Python 包和 C 扩展模块的最高级别的兼容性。"
 
 #: ../../docs/starting/which-python.rst:83
 msgid ""
@@ -790,12 +809,15 @@ msgid ""
 "possible audience, targeting CPython is best. To use packages which rely "
 "on C extensions to function, CPython is your only implementation option."
 msgstr ""
+"如果你正在编写开源的 Python 代码，并希望达到最广泛的受众，以 CPython 为目标是最好的。"
+"要使用依赖 C 语言扩展功能的包，CPython 是你唯一的实现选择。"
 
 #: ../../docs/starting/which-python.rst:87
 msgid ""
 "All versions of the Python language are implemented in C because CPython "
 "is the reference implementation."
 msgstr ""
+"Python 语言的所有版本都用 C 语言实现，因为 CPython 是参考实现。"
 
 #: ../../docs/starting/which-python.rst:91
 msgid "PyPy"
@@ -808,12 +830,15 @@ msgid ""
 " The interpreter features a just-in-time compiler and supports multiple "
 "back-ends (C, CLI, JVM)."
 msgstr ""
+"`PyPy <http://pypy.org/>`_ 是一个 Python 解释器，用 Python 语言的限制性静态类型子集实现，称为 RPython。"
+"该解释器具有即时编译器的特点，并支持多种后端（C、CLI、JVM）。"
 
 #: ../../docs/starting/which-python.rst:97
 msgid ""
 "PyPy aims for maximum compatibility with the reference CPython "
 "implementation while improving performance."
 msgstr ""
+"PyPy 旨在与参考的 CPython 实现最大限度地兼容，同时提高性能。"
 
 #: ../../docs/starting/which-python.rst:100
 msgid ""
@@ -821,12 +846,15 @@ msgid ""
 "worth giving PyPy a try. On a suite of benchmarks, it's currently `over 5"
 " times faster than CPython <http://speed.pypy.org/>`_."
 msgstr ""
+"如果你想提高你的 Python 代码的性能，值得尝试 PyPy。"
+"在一套基准测试中，它目前比 CPython <http://speed.pypy.org/>`_ 快 5 倍以上。"
 
 #: ../../docs/starting/which-python.rst:104
 msgid ""
 "PyPy supports Python 2.7. PyPy3 [#pypy_ver]_, released in beta, targets "
 "Python 3."
 msgstr ""
+"PyPy 支持 Python 2.7。PyPy3 [#pypy_ver]_，在测试版中发布，针对 Python 3。"
 
 #: ../../docs/starting/which-python.rst:107
 msgid "Jython"
@@ -839,6 +867,9 @@ msgid ""
 "(Java Virtual Machine). Additionally, it is able to import and use any "
 "Java class like a Python module."
 msgstr ""
+"`Jython <http://www.jython.org/>`_ 是一个 Python 实现，"
+"它将 Python 代码编译成 Java 字节码，然后由 JVM（Java 虚拟机）执行。"
+"此外，它能够像 Python 模块一样导入和使用任何 Java 类。"
 
 #: ../../docs/starting/which-python.rst:114
 msgid ""
@@ -846,10 +877,11 @@ msgid ""
 "reasons to need to write Python code for the JVM, Jython is the best "
 "choice."
 msgstr ""
+"如果你需要与现有的 Java 代码库对接，或者有其他原因需要为 JVM 编写 Python 代码，Jython 是最好的选择。"
 
 #: ../../docs/starting/which-python.rst:117
 msgid "Jython currently supports up to Python 2.7. [#jython_ver]_"
-msgstr ""
+msgstr "Jython 目前最多支持 Python 2.7。[#jython_ver]_"
 
 #: ../../docs/starting/which-python.rst:120
 msgid "IronPython"
@@ -862,6 +894,8 @@ msgid ""
 "libraries, and can also expose Python code to other languages in the .NET"
 " framework."
 msgstr ""
+"`IronPython <http://ironpython.net/>`_ 是 Python 在 .NET 框架下的一个实现。"
+"它可以使用 Python 和 .NET 框架库，也可以将 Python 代码暴露给 .NET 框架中的其他语言。"
 
 #: ../../docs/starting/which-python.rst:126
 msgid ""
@@ -869,12 +903,16 @@ msgid ""
 "integrates IronPython directly into the Visual Studio development "
 "environment, making it an ideal choice for Windows developers."
 msgstr ""
+"`Visual Studio 的 Python 工具 <http://ironpython.net/tools/>`_ "
+"将 IronPython 直接集成到 Visual Studio 开发环境中，使其成为 Windows 开发者的理想选择。"
 
 #: ../../docs/starting/which-python.rst:130
 msgid ""
 "IronPython supports Python 2.7. [#iron_ver]_ IronPython 3 [#iron_ver3]_ "
 "is being developed, but is not ready for use as of September 2020."
 msgstr ""
+"IronPython 支持 Python 2.7。[#iron_ver]_ IronPython 3 [#iron_ver3]_ 正在开发中，"
+"但截至 2020 年 9 月，还没有准备好使用。"
 
 #: ../../docs/starting/which-python.rst:134
 msgid "PythonNet"
@@ -888,6 +926,9 @@ msgid ""
 "inverse approach to that taken by IronPython (see above), to which it is "
 "more complementary than competing with."
 msgstr ""
+"`Python for .NET <http://pythonnet.github.io/>`_ 是一个软件包，"
+"它提供了原生安装的 Python 与 .NET 通用语言运行时（CLR）的近乎无缝的集成。"
+"这与 IronPython（见上文）采取的方法相反，它对 IronPython 的补充作用大于竞争作用。"
 
 #: ../../docs/starting/which-python.rst:142
 msgid ""
@@ -896,10 +937,12 @@ msgid ""
 "within the .NET framework.  It can be run in addition to IronPython "
 "without conflict."
 msgstr ""
+"结合 Mono，pythonnet 使非 Windows 操作系统（如 OS X 和 Linux）上的本地 Python 安装在 .NET 框架内运行。"
+"它可以在 IronPython 的基础上运行而不发生冲突。"
 
 #: ../../docs/starting/which-python.rst:147
 msgid "Pythonnet is compatible with Python 2.7 and 3.5-3.8. [#pythonnet_ver1]_"
-msgstr ""
+msgstr "Pythonnet 与 Python 2.7 和 3.5-3.8 兼容。[#pythonnet_ver1]_"
 
 #: ../../docs/starting/which-python.rst:149
 msgid "https://pypy.org/compat.html"
