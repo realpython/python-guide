@@ -592,13 +592,14 @@ msgstr ""
 
 #: ../../docs/starting/installation.rst:6
 msgid "Properly Installing Python"
-msgstr ""
+msgstr "正确安装 Python"
 
 #: ../../docs/starting/installation.rst:10
 msgid ""
 "There's a good chance that you already have Python on your operating "
 "system."
 msgstr ""
+"很有可能你的操作系统上已经有了 Python。"
 
 #: ../../docs/starting/installation.rst:12
 msgid ""
@@ -609,6 +610,9 @@ msgid ""
 "should always install Setuptools, Pip, and Virtualenv — they make it much"
 " easier for you to use other third-party Python libraries."
 msgstr ""
+"如果是这样，你不需要安装或配置任何其他东西来使用 Python。"
+"说到这里，我强烈建议你在开始构建 Python 应用程序供现实世界使用之前，安装下面指南中描述的工具和库。"
+"特别是，你应该总是安装 Setuptools、Pip 和 Virtualenv -- 它们使你更容易使用其他第三方的 Python 库。"
 
 #: ../../docs/starting/installation.rst:19
 msgid ""
@@ -618,10 +622,13 @@ msgid ""
 "congratulations — you are indeed a person of excellent taste. —*Kenneth "
 "Reitz*"
 msgstr ""
+"使用 Python 3 比 Python 2 要高频。"
+"如果你发现自己今天仍在生产中使用 Python 2，请考虑升级你的应用程序和基础设施。"
+"如果你正在使用 Python 3，那么恭喜你 -- 你确实是一个有品位的人。-- *Kenneth Reitz*"
 
 #: ../../docs/starting/installation.rst:24
 msgid "Installation Guides"
-msgstr ""
+msgstr "安装指南"
 
 #: ../../docs/starting/installation.rst:26
 msgid ""
@@ -629,38 +636,40 @@ msgid ""
 "python>` for development purposes, as well as setuptools, pip and "
 "virtualenv."
 msgstr ""
+"这些指南介绍了为开发目的正确安装 :ref:`Python <which-python>`，"
+"以及 setuptools、pip 和 virtualenv。"
 
 #: ../../docs/starting/installation.rst:30
 msgid "Python 3 Installation Guides"
-msgstr ""
+msgstr "Python 3 安装指南"
 
 #: ../../docs/starting/installation.rst:32
 msgid ":ref:`Python 3 on MacOS <install3-osx>`."
-msgstr ""
+msgstr ":ref:`在 MacOS 上使用 Python 3 <install3-osx>`"
 
 #: ../../docs/starting/installation.rst:33
 msgid ":ref:`Python 3 on Windows <install3-windows>`."
-msgstr ""
+msgstr ":ref:`在 Windows 上使用 Python 3 <install3-windows>`"
 
 #: ../../docs/starting/installation.rst:34
 msgid ":ref:`Python 3 on Linux <install3-linux>`."
-msgstr ""
+msgstr ":ref:`在 Linux 上使用 Python 3 <install3-linux>`"
 
 #: ../../docs/starting/installation.rst:37
 msgid "Legacy Python 2 Installation Guides"
-msgstr ""
+msgstr "遗留的 Python 2 安装指南"
 
 #: ../../docs/starting/installation.rst:39
 msgid ":ref:`Python 2 on MacOS <install-osx>`."
-msgstr ""
+msgstr ":ref:`在 MacOS 上使用 Python 2 <install2-osx>`"
 
 #: ../../docs/starting/installation.rst:40
 msgid ":ref:`Python 2 on Microsoft Windows <install-windows>`."
-msgstr ""
+msgstr ":ref:`在 Windows 上使用 Python 2 <install2-windows>`"
 
 #: ../../docs/starting/installation.rst:41
 msgid ":ref:`Python 2 on Linux <install-linux>`."
-msgstr ""
+msgstr ":ref:`在 Linux 上使用 Python 2 <install2-linux>`"
 
 #: ../../docs/starting/which-python.rst:5
 msgid "Picking a Python Interpreter (3 vs 2)"
@@ -847,7 +856,7 @@ msgid ""
 " times faster than CPython <http://speed.pypy.org/>`_."
 msgstr ""
 "如果你想提高你的 Python 代码的性能，值得尝试 PyPy。"
-"在一套基准测试中，它目前比 CPython <http://speed.pypy.org/>`_ 快 5 倍以上。"
+"在一套基准测试中，它目前比 `CPython 快 5 倍以上 <http://speed.pypy.org/>`_。"
 
 #: ../../docs/starting/which-python.rst:104
 msgid ""
