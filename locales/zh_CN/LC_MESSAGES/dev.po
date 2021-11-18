@@ -1,0 +1,1228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-18 16:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/dev/env.rst:2
+msgid "Your Development Environment"
+msgstr ""
+
+#: ../../docs/dev/env.rst:8
+msgid "Text Editors"
+msgstr ""
+
+#: ../../docs/dev/env.rst:10
+msgid ""
+"Just about anything that can edit plain text will work for writing Python"
+" code; however, using a more powerful editor may make your life a bit "
+"easier."
+msgstr ""
+
+#: ../../docs/dev/env.rst:15
+msgid "Vim"
+msgstr ""
+
+#: ../../docs/dev/env.rst:17
+msgid ""
+"Vim is a text editor which uses keyboard shortcuts for editing instead of"
+" menus or icons. There are a couple of plugins and settings for the Vim "
+"editor to aid Python development. If you only develop in Python, a good "
+"start is to set the default settings for indentation and line-wrapping to"
+" values compliant with :pep:`8`. In your home directory, open a file "
+"called :file:`.vimrc` and add the following lines::"
+msgstr ""
+
+#: ../../docs/dev/env.rst:32
+msgid ""
+"With these settings, newlines are inserted after 79 characters and "
+"indentation is set to 4 spaces per tab. If you also use Vim for other "
+"languages, there is a handy plugin called indent_, which handles "
+"indentation settings for Python source files."
+msgstr ""
+
+#: ../../docs/dev/env.rst:37
+msgid ""
+"There is also a handy syntax plugin called syntax_ featuring some "
+"improvements over the syntax file included in Vim 6.1."
+msgstr ""
+
+#: ../../docs/dev/env.rst:40
+msgid ""
+"These plugins supply you with a basic environment for developing in "
+"Python. To get the most out of Vim, you should continually check your "
+"code for syntax errors and PEP8 compliance. Luckily pycodestyle_ and "
+"Pyflakes_ will do this for you. If your Vim is compiled with ``+python`` "
+"you can also utilize some very handy plugins to do these checks from "
+"within the editor."
+msgstr ""
+
+#: ../../docs/dev/env.rst:46
+msgid ""
+"For PEP8 checking and pyflakes, you can install vim-flake8_. Now you can "
+"map the function ``Flake8`` to any hotkey or action you want in Vim. The "
+"plugin will display errors at the bottom of the screen, and provide an "
+"easy way to jump to the corresponding line. It's very handy to call this "
+"function whenever you save a file. In order to do this, add the following"
+" line to your :file:`.vimrc`::"
+msgstr ""
+
+#: ../../docs/dev/env.rst:55
+msgid ""
+"If you are already using syntastic_, you can set it to run Pyflakes on "
+"write and show errors and warnings in the quickfix window. An example "
+"configuration to do that which also shows status and warning messages in "
+"the statusbar would be::"
+msgstr ""
+
+#: ../../docs/dev/env.rst:68
+msgid "Python-mode"
+msgstr ""
+
+#: ../../docs/dev/env.rst:70
+msgid ""
+"Python-mode_ is a complex solution for working with Python code in Vim. "
+"It has:"
+msgstr ""
+
+#: ../../docs/dev/env.rst:73
+msgid ""
+"Asynchronous Python code checking (``pylint``, ``pyflakes``, "
+"``pycodestyle``, ``mccabe``) in any combination"
+msgstr ""
+
+#: ../../docs/dev/env.rst:74
+msgid "Code refactoring and autocompletion with Rope"
+msgstr ""
+
+#: ../../docs/dev/env.rst:75
+msgid "Fast Python folding"
+msgstr ""
+
+#: ../../docs/dev/env.rst:76
+msgid "Virtualenv support"
+msgstr ""
+
+#: ../../docs/dev/env.rst:77
+msgid "Search through Python documentation and run Python code"
+msgstr ""
+
+#: ../../docs/dev/env.rst:78
+msgid "Auto pycodestyle_ error fixes"
+msgstr ""
+
+#: ../../docs/dev/env.rst:80
+msgid "And more."
+msgstr ""
+
+#: ../../docs/dev/env.rst:83
+msgid "SuperTab"
+msgstr ""
+
+#: ../../docs/dev/env.rst:85
+msgid ""
+"SuperTab_ is a small Vim plugin that makes code completion more "
+"convenient by using ``<Tab>`` key or any other customized keys."
+msgstr ""
+
+#: ../../docs/dev/env.rst:98
+msgid "Emacs"
+msgstr ""
+
+#: ../../docs/dev/env.rst:100
+msgid ""
+"Emacs is another powerful text editor. It is fully programmable (Lisp), "
+"but it can be some work to wire up correctly. A good start if you're "
+"already an Emacs user is `Python Programming in Emacs`_ at EmacsWiki."
+msgstr ""
+
+#: ../../docs/dev/env.rst:104
+msgid "Emacs itself comes with a Python mode."
+msgstr ""
+
+#: ../../docs/dev/env.rst:109
+msgid "TextMate"
+msgstr ""
+
+#: ../../docs/dev/env.rst:111
+msgid ""
+"`TextMate <http://macromates.com/>`_ brings Apple's approach to operating"
+" systems into the world of text editors. By bridging Unix underpinnings "
+"and GUI, TextMate cherry-picks the best of both worlds to the benefit of "
+"expert scripters and novice users alike."
+msgstr ""
+
+#: ../../docs/dev/env.rst:117
+msgid "Sublime Text"
+msgstr ""
+
+#: ../../docs/dev/env.rst:119
+msgid ""
+"`Sublime Text <http://www.sublimetext.com/>`_ is a sophisticated text "
+"editor for code, markup, and prose. You'll love the slick user interface,"
+" extraordinary features, and amazing performance."
+msgstr ""
+
+#: ../../docs/dev/env.rst:123
+msgid ""
+"Sublime Text has excellent support for editing Python code and uses "
+"Python for its plugin API. It also has a diverse variety of plugins, "
+"`some of which <https://github.com/SublimeLinter/SublimeLinter>`_ allow "
+"for in-editor PEP8 checking and code \"linting\"."
+msgstr ""
+
+#: ../../docs/dev/env.rst:129
+msgid "Atom"
+msgstr ""
+
+#: ../../docs/dev/env.rst:131
+msgid ""
+"`Atom <https://atom.io/>`_ is a hackable text editor for the 21st "
+"century, built on atom-shell, and based on everything we love about our "
+"favorite editors."
+msgstr ""
+
+#: ../../docs/dev/env.rst:135
+msgid ""
+"Atom is web native (HTML, CSS, JS), focusing on modular design and easy "
+"plugin development. It comes with native package control and a plethora "
+"of packages. Recommended for Python development is `Linter "
+"<https://github.com/steelbrain/linter>`_ combined with `linter-flake8 "
+"<https://github.com/AtomLinter/linter-flake8>`_."
+msgstr ""
+
+#: ../../docs/dev/env.rst:142
+msgid "Python (on Visual Studio Code)"
+msgstr ""
+
+#: ../../docs/dev/env.rst:144
+msgid ""
+"`Python for Visual Studio "
+"<https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_ "
+"is an extension for the `Visual Studio Code "
+"<https://code.visualstudio.com>`_. This is a free, lightweight, open "
+"source code editor, with support for Mac, Windows, and Linux. Built using"
+" open source technologies such as Node.js and Python, with compelling "
+"features such as Intellisense (autocompletion), local and remote "
+"debugging, linting, and the like."
+msgstr ""
+
+#: ../../docs/dev/env.rst:148
+msgid "MIT licensed."
+msgstr ""
+
+#: ../../docs/dev/env.rst:151
+msgid "IDEs"
+msgstr ""
+
+#: ../../docs/dev/env.rst:154
+msgid "PyCharm / IntelliJ IDEA"
+msgstr ""
+
+#: ../../docs/dev/env.rst:156
+msgid ""
+"`PyCharm <http://www.jetbrains.com/pycharm/>`_ is developed by JetBrains,"
+" also known for IntelliJ IDEA. Both share the same code base and most of "
+"PyCharm's features can be brought to IntelliJ with the free `Python Plug-"
+"In <https://plugins.jetbrains.com/plugin/?idea&pluginId=631>`_.  There "
+"are two versions of PyCharm: Professional Edition (Free 30-day trial) and"
+" Community Edition (Apache 2.0 License) with fewer features."
+msgstr ""
+
+#: ../../docs/dev/env.rst:165
+msgid "Enthought Canopy"
+msgstr ""
+
+#: ../../docs/dev/env.rst:166
+msgid ""
+"`Enthought Canopy <https://www.enthought.com/product/canopy/>`_ is a "
+"Python IDE which is focused towards Scientists and Engineers as it "
+"provides pre installed libraries for data analysis."
+msgstr ""
+
+#: ../../docs/dev/env.rst:171
+msgid "Eclipse"
+msgstr ""
+
+#: ../../docs/dev/env.rst:173
+msgid ""
+"The most popular Eclipse plugin for Python development is Aptana's `PyDev"
+" <https://pydev.org>`_."
+msgstr ""
+
+#: ../../docs/dev/env.rst:178
+msgid "Komodo IDE"
+msgstr ""
+
+#: ../../docs/dev/env.rst:180
+msgid ""
+"`Komodo IDE <https://www.activestate.com/products/komodo-ide/>`_ is "
+"developed by ActiveState and is a commercial IDE for Windows, Mac, and "
+"Linux. `KomodoEdit <https://github.com/Komodo/KomodoEdit>`_ is the open "
+"source alternative."
+msgstr ""
+
+#: ../../docs/dev/env.rst:187
+msgid "Spyder"
+msgstr ""
+
+#: ../../docs/dev/env.rst:189
+msgid ""
+"`Spyder <https://github.com/spyder-ide/spyder>`_ is an IDE specifically "
+"geared toward working with scientific Python libraries (namely `SciPy "
+"<https://www.scipy.org/>`_). It includes integration with pyflakes_, "
+"`pylint <https://www.logilab.org/857>`_ and `rope <https://github.com"
+"/python-rope/rope>`_."
+msgstr ""
+
+#: ../../docs/dev/env.rst:195
+msgid ""
+"Spyder is open source (free), offers code completion, syntax "
+"highlighting, a class and function browser, and object inspection."
+msgstr ""
+
+#: ../../docs/dev/env.rst:200
+msgid "WingIDE"
+msgstr ""
+
+#: ../../docs/dev/env.rst:202
+msgid ""
+"`WingIDE <http://wingware.com/>`_ is a Python specific IDE. It runs on "
+"Linux, Windows, and Mac (as an X11 application, which frustrates some Mac"
+" users)."
+msgstr ""
+
+#: ../../docs/dev/env.rst:205
+msgid ""
+"WingIDE offers code completion, syntax highlighting, source browser, "
+"graphical debugger and support for version control systems."
+msgstr ""
+
+#: ../../docs/dev/env.rst:210
+msgid "NINJA-IDE"
+msgstr ""
+
+#: ../../docs/dev/env.rst:212
+msgid ""
+"`NINJA-IDE <http://www.ninja-ide.org/>`_ (from the recursive acronym: "
+"\"Ninja-IDE Is Not Just Another IDE\") is a cross-platform IDE, specially"
+" designed to build Python applications, and runs on Linux/X11, Mac OS X, "
+"and Windows desktop operating systems. Installers for these platforms can"
+" be downloaded from the website."
+msgstr ""
+
+#: ../../docs/dev/env.rst:218
+msgid ""
+"NINJA-IDE is open source software (GPLv3 licence) and is developed in "
+"Python and Qt. The source files can be downloaded from `GitHub "
+"<https://github.com/ninja-ide>`_."
+msgstr ""
+
+#: ../../docs/dev/env.rst:224
+msgid "Eric (The Eric Python IDE)"
+msgstr ""
+
+#: ../../docs/dev/env.rst:226
+msgid ""
+"`Eric <http://eric-ide.python-projects.org/>`_ is a full featured Python "
+"IDE offering source code autocompletion, syntax highlighting, support for"
+" version control systems, Python 3 support, integrated web browser, "
+"python shell, integrated debugger, and a flexible plug-in system. Written"
+" in Python, it is based on the Qt GUI toolkit, integrating the Scintilla "
+"editor control. Eric is an open source software project (GPLv3 licence) "
+"with more than ten years of active development."
+msgstr ""
+
+#: ../../docs/dev/env.rst:235
+msgid "Mu"
+msgstr ""
+
+#: ../../docs/dev/env.rst:237
+msgid ""
+"`Mu <https://codewith.mu/>`_ is a minimalist Python IDE which can run "
+"Python 3 code locally and can also deploy code to the BBC micro:bit and "
+"to Adafruit boards running CircuitPython."
+msgstr ""
+
+#: ../../docs/dev/env.rst:241
+msgid ""
+"Intended for beginners, mu includes a Python 3 interpreter, and is easy "
+"to install on Windows, OS/X and Linux. It runs well on the Raspberry Pi."
+msgstr ""
+
+#: ../../docs/dev/env.rst:244
+msgid "There's an active support community on gitter."
+msgstr ""
+
+#: ../../docs/dev/env.rst:248
+msgid "Interpreter Tools"
+msgstr ""
+
+#: ../../docs/dev/env.rst:252
+msgid "Virtual Environments"
+msgstr ""
+
+#: ../../docs/dev/env.rst:254
+msgid ""
+"Virtual Environments provide a powerful way to isolate project package "
+"dependencies. This means that you can use packages particular to a Python"
+" project without installing them system wide and thus avoiding potential "
+"version conflicts."
+msgstr ""
+
+#: ../../docs/dev/env.rst:256
+msgid ""
+"To start using and see more information: `Virtual Environments "
+"<https://github.com/kennethreitz/python-"
+"guide/blob/master/docs/dev/virtualenvs.rst>`_ docs."
+msgstr ""
+
+#: ../../docs/dev/env.rst:261
+msgid "pyenv"
+msgstr ""
+
+#: ../../docs/dev/env.rst:263
+msgid ""
+"`pyenv <https://github.com/pyenv/pyenv>`_ is a tool to allow multiple "
+"versions of the Python interpreter to be installed at the same time.  "
+"This solves the problem of having different projects requiring different "
+"versions of Python. For example, it becomes very easy to install Python "
+"2.7 for compatibility in one project, while still using Python 3.4 as the"
+" default interpreter. pyenv isn't just limited to the CPython versions – "
+"it will also install PyPy, Anaconda, miniconda, stackless, Jython, and "
+"IronPython interpreters."
+msgstr ""
+
+#: ../../docs/dev/env.rst:271
+msgid ""
+"pyenv works by filling a ``shims`` directory with fake versions of the "
+"Python interpreter (plus other tools like ``pip`` and ``2to3``).  When "
+"the system looks for a program named ``python``, it looks inside the "
+"``shims`` directory first, and uses the fake version, which in turn "
+"passes the command on to pyenv.  pyenv then works out which version of "
+"Python should be run based on environment variables, ``.python-version`` "
+"files, and the global default."
+msgstr ""
+
+#: ../../docs/dev/env.rst:278
+msgid ""
+"pyenv isn't a tool for managing virtual environments, but there is the "
+"plugin `pyenv-virtualenv <https://github.com/pyenv/pyenv-virtualenv>`_ "
+"which automates the creation of different environments, and also makes it"
+" possible to use the existing pyenv tools to switch to different "
+"environments based on environment variables or ``.python-version`` files."
+msgstr ""
+
+#: ../../docs/dev/env.rst:285
+msgid "Other Tools"
+msgstr ""
+
+#: ../../docs/dev/env.rst:288
+msgid "IDLE"
+msgstr ""
+
+#: ../../docs/dev/env.rst:290
+msgid ""
+":ref:`IDLE <python:idle>` is an integrated development environment that "
+"is part of the Python standard distribution. It is completely written in "
+"Python and uses the Tkinter GUI toolkit. Though IDLE is not suited for "
+"full-blown development using Python, it is quite helpful to try out small"
+" Python snippets and experiment with different features in Python."
+msgstr ""
+
+#: ../../docs/dev/env.rst:296
+msgid "It provides the following features:"
+msgstr ""
+
+#: ../../docs/dev/env.rst:298
+msgid "Python Shell Window (interpreter)"
+msgstr ""
+
+#: ../../docs/dev/env.rst:299
+msgid "Multi window text editor that colorizes Python code"
+msgstr ""
+
+#: ../../docs/dev/env.rst:300
+msgid "Minimal debugging facility"
+msgstr ""
+
+#: ../../docs/dev/env.rst:304
+msgid "IPython"
+msgstr ""
+
+#: ../../docs/dev/env.rst:306
+msgid ""
+"`IPython <http://ipython.org/>`_ provides a rich toolkit to help you make"
+" the most out of using Python interactively. Its main components are:"
+msgstr ""
+
+#: ../../docs/dev/env.rst:309
+msgid "Powerful Python shells (terminal- and Qt-based)"
+msgstr ""
+
+#: ../../docs/dev/env.rst:310
+msgid ""
+"A web-based notebook with the same core features but support for rich "
+"media, text, code, mathematical expressions and inline plots"
+msgstr ""
+
+#: ../../docs/dev/env.rst:312
+msgid "Support for interactive data visualization and use of GUI toolkits"
+msgstr ""
+
+#: ../../docs/dev/env.rst:313
+msgid "Flexible, embeddable interpreters to load into your own projects"
+msgstr ""
+
+#: ../../docs/dev/env.rst:314
+msgid "Tools for high level and interactive parallel computing"
+msgstr ""
+
+#: ../../docs/dev/env.rst:320
+msgid ""
+"To download and install IPython with all its optional dependencies for "
+"the notebook, qtconsole, tests, and other functionalities:"
+msgstr ""
+
+#: ../../docs/dev/env.rst:327
+msgid "BPython"
+msgstr ""
+
+#: ../../docs/dev/env.rst:329
+msgid ""
+"`bpython <https://bpython-interpreter.org/>`_ is an alternative interface"
+" to the Python interpreter for Unix-like operating systems. It has the "
+"following features:"
+msgstr ""
+
+#: ../../docs/dev/env.rst:333
+msgid "In-line syntax highlighting"
+msgstr ""
+
+#: ../../docs/dev/env.rst:334
+msgid "Readline-like autocomplete with suggestions displayed as you type"
+msgstr ""
+
+#: ../../docs/dev/env.rst:335
+msgid "Expected parameter list for any Python function"
+msgstr ""
+
+#: ../../docs/dev/env.rst:336
+msgid ""
+"\"Rewind\" function to pop the last line of code from memory and re-"
+"evaluate"
+msgstr ""
+
+#: ../../docs/dev/env.rst:337
+msgid "Send entered code off to a pastebin"
+msgstr ""
+
+#: ../../docs/dev/env.rst:338
+msgid "Save entered code to a file"
+msgstr ""
+
+#: ../../docs/dev/env.rst:339
+msgid "Auto-indentation"
+msgstr ""
+
+#: ../../docs/dev/env.rst:340
+msgid "Python 3 support"
+msgstr ""
+
+#: ../../docs/dev/env.rst:347
+msgid "ptpython"
+msgstr ""
+
+#: ../../docs/dev/env.rst:349
+msgid ""
+"`ptpython <https://github.com/prompt-toolkit/ptpython>`_ is a REPL build "
+"on top of the `prompt_toolkit <https://github.com/prompt-toolkit/python-"
+"prompt-toolkit>`_ library. It is considered to be an alternative to "
+"BPython_. Features include:"
+msgstr ""
+
+#: ../../docs/dev/env.rst:353
+msgid "Syntax highlighting"
+msgstr ""
+
+#: ../../docs/dev/env.rst:354
+msgid "Autocompletion"
+msgstr ""
+
+#: ../../docs/dev/env.rst:355
+msgid "Multiline editing"
+msgstr ""
+
+#: ../../docs/dev/env.rst:356
+msgid "Emacs and Vim Modes"
+msgstr ""
+
+#: ../../docs/dev/env.rst:357
+msgid "Embedding REPL inside of your code"
+msgstr ""
+
+#: ../../docs/dev/env.rst:358
+msgid "Syntax validation"
+msgstr ""
+
+#: ../../docs/dev/env.rst:359
+msgid "Tab pages"
+msgstr ""
+
+#: ../../docs/dev/env.rst:360
+msgid ""
+"Support for integrating with IPython_'s shell, by installing IPython "
+"(``pip install ipython``) and running ``ptipython``."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:4
+msgid "Further Configuration of pip and Virtualenv"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:9
+msgid "Requiring an active virtual environment for ``pip``"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:11
+msgid ""
+"By now it should be clear that using virtual environments is a great way "
+"to keep your development environment clean and keeping different "
+"projects' requirements separate."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:15
+msgid ""
+"When you start working on many different projects, it can be hard to "
+"remember to activate the related virtual environment when you come back "
+"to a specific project.  As a result of this, it is very easy to install "
+"packages globally while thinking that you are actually installing the "
+"package for the virtual environment of the project. Over time this can "
+"result in a messy global package list."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:22
+msgid ""
+"In order to make sure that you install packages to your active virtual "
+"environment when you use ``pip install``, consider adding the following "
+"line to your :file:`~/.bashrc` file:"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:30
+msgid ""
+"After saving this change and sourcing the :file:`~/.bashrc` file with "
+"``source ~/.bashrc``, pip will no longer let you install packages if you "
+"are not in a virtual environment.  If you try to use ``pip install`` "
+"outside of a virtual environment pip will gently remind you that an "
+"activated virtual environment is needed to install packages."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:41
+msgid ""
+"You can also do this configuration by editing your :file:`pip.conf` or "
+":file:`pip.ini` file. :file:`pip.conf` is used by Unix and Mac OS X "
+"operating systems and it can be found at:"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:49
+msgid ""
+"Similarly, the :file:`pip.ini` file is used by Windows operating systems "
+"and it can be found at:"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:56
+msgid ""
+"If you don't have a :file:`pip.conf` or :file:`pip.ini` file at these "
+"locations, you can create a new file with the correct name for your "
+"operating system."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:59
+msgid ""
+"If you already have a configuration file, just add the following line "
+"under the ``[global]`` settings to require an active virtual environment:"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:66
+msgid ""
+"If you did not have a configuration file, you will need to create a new "
+"one and add the following lines to this new file:"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:75
+msgid ""
+"You will of course need to install some packages globally (usually ones "
+"that you use across different projects consistently) and this can be "
+"accomplished by adding the following to your :file:`~/.bashrc` file:"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:85
+msgid ""
+"After saving the changes and sourcing your :file:`~/.bashrc` file you can"
+" now install packages globally by running ``gpip install``. You can "
+"change the name of the function to anything you like, just keep in mind "
+"that you will have to use that name when trying to install packages "
+"globally with pip."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:91
+msgid "Caching packages for future use"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:93
+msgid ""
+"Every developer has preferred libraries and when you are working on a lot"
+" of different projects, you are bound to have some overlap between the "
+"libraries that you use. For example, you may be using the ``requests`` "
+"library in a lot of different projects."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:98
+msgid ""
+"It is surely unnecessary to re-download the same packages/libraries each "
+"time you start working on a new project (and in a new virtual environment"
+" as a result). Fortunately, starting with version 6.0, pip provides an "
+"`on-by-default caching mechanism "
+"<https://pip.pypa.io/en/stable/reference/pip_install/#caching>`_ that "
+"doesn't need any configuration."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:105
+msgid ""
+"When using older versions, you can configure pip in such a way that it "
+"tries to reuse already installed packages, too."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:108
+msgid ""
+"On Unix systems, you can add the following line to your :file:`.bashrc` "
+"or :file:`.bash_profile` file."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:115
+msgid ""
+"You can set the path to anywhere you like (as long as you have write "
+"access). After adding this line, ``source`` your :file:`.bashrc` (or "
+":file:`.bash_profile`) file and you will be all set."
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:119
+msgid ""
+"Another way of doing the same configuration is via the :file:`pip.conf` "
+"or :file:`pip.ini` files, depending on your system. If you are on "
+"Windows, you can add the following line to your :file:`pip.ini` file "
+"under ``[global]`` settings:"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:127
+msgid ""
+"Similarly, on Unix systems you should simply add the following line to "
+"your :file:`pip.conf` file under ``[global]`` settings:"
+msgstr ""
+
+#: ../../docs/dev/pip-virtualenv.rst:134
+msgid ""
+"Even though you can use any path you like to store your cache, it is "
+"recommended that you create a new folder *in* the folder where your "
+":file:`pip.conf` or :file:`pip.ini` file lives. If you don't trust "
+"yourself with all of this path voodoo, just use the values provided here "
+"and you will be fine."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:4
+msgid "Pipenv & Virtual Environments"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:8
+msgid "This tutorial walks you through installing and using Python packages."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:10
+msgid ""
+"It will show you how to install and use the necessary tools and make "
+"strong recommendations on best practices. Keep in mind that Python is "
+"used for a great many different purposes, and precisely how you want to "
+"manage your dependencies may change based on how you decide to publish "
+"your software. The guidance presented here is most directly applicable to"
+" the development and deployment of network services (including web "
+"applications), but is also very well suited to managing development and "
+"testing environments for any kind of project."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:18
+msgid ""
+"This guide is written for Python 3, however, these instructions should "
+"work fine on Python 2.7—if you are still using it, for some reason."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:23
+msgid "Make sure you've got Python & pip"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:25
+msgid ""
+"Before you go any further, make sure you have Python and that it's "
+"available from your command line. You can check this by simply running:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:32
+msgid ""
+"You should get some output like ``3.6.2``. If you do not have Python, "
+"please install the latest 3.x version from `python.org`_ or refer to the "
+"`Installing Python`_ section of this guide."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:36
+msgid "If you're newcomer and you get an error like this:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:45
+msgid ""
+"It's because this command is intended to be run in a *shell* (also called"
+" a *terminal* or *console*). See the Python for Beginners `getting "
+"started tutorial`_ for an introduction to using your operating system's "
+"shell and interacting with Python."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:50
+msgid ""
+"Additionally, you'll need to make sure you have `pip`_ available. You can"
+" check this by running:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:57
+msgid ""
+"If you installed Python from source, with an installer from "
+"`python.org`_, or via `Homebrew`_ you should already have pip. If you're "
+"on Linux and installed using your OS package manager, you may have to "
+"`install pip <https://pip.pypa.io/en/stable/installing/>`_ separately."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:69
+msgid "Installing Pipenv"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:71
+msgid ""
+"`Pipenv`_ is a dependency manager for Python projects. If you're familiar"
+" with Node.js' `npm`_ or Ruby's `bundler`_, it is similar in spirit to "
+"those tools. While `pip`_ can install Python packages, Pipenv is "
+"recommended as it's a higher-level tool that simplifies dependency "
+"management for common use cases."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:77
+msgid "Use ``pip`` to install Pipenv:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:84
+msgid ""
+"This does a `user installation`_ to prevent breaking any system-wide "
+"packages. If ``pipenv`` isn't available in your shell after installation,"
+" you'll need to add the `user base`_'s binary directory to your ``PATH``."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:88
+msgid ""
+"On Linux and macOS you can find the user base binary directory by running"
+" ``python -m site --user-base`` and adding ``bin`` to the end. For "
+"example, this will typically print ``~/.local`` (with ``~`` expanded to "
+"the absolute path to your home directory) so you'll need to add "
+"``~/.local/bin`` to your ``PATH``. You can set your ``PATH`` permanently "
+"by `modifying ~/.profile`_."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:95
+msgid ""
+"On Windows you can find the user base binary directory by running ``py -m"
+" site --user-site`` and replacing ``site-packages`` with ``Scripts``. For"
+" example, this could return "
+"``C:\\Users\\Username\\AppData\\Roaming\\Python36\\site-packages`` so you"
+" would need to set your ``PATH`` to include "
+"``C:\\Users\\Username\\AppData\\Roaming\\Python36\\Scripts``. You can set"
+" your user ``PATH`` permanently in the `Control Panel`_. You may need to "
+"log out for the ``PATH`` changes to take effect."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:113
+msgid "Installing packages for your project"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:115
+msgid ""
+"Pipenv manages dependencies on a per-project basis. To install packages, "
+"change into your project's directory (or just an empty directory for this"
+" tutorial) and run:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:124
+msgid ""
+"Pipenv will install the excellent `Requests`_ library and create a "
+"``Pipfile`` for you in your project's directory. The `Pipfile`_ is used "
+"to track which dependencies your project needs in case you need to re-"
+"install them, such as when you share your project with others. You should"
+" get output similar to this (although the exact paths shown will vary):"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:163
+msgid "Using installed packages"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:165
+msgid ""
+"Now that Requests is installed you can create a simple ``main.py`` file "
+"to use it:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:176
+msgid "Then you can run this script using ``pipenv run``:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:182
+msgid "You should get output similar to this:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:188
+msgid ""
+"Using ``$ pipenv run`` ensures that your installed packages are available"
+" to your script. It's also possible to spawn a new shell that ensures all"
+" commands have access to your installed packages with ``$ pipenv shell``."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:194
+msgid "Next steps"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:196
+msgid ""
+"Congratulations, you now know how to install and use Python packages! ✨ 🍰"
+" ✨"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:201
+msgid "Lower level: virtualenv"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:203
+msgid ""
+"`virtualenv <http://pypi.org/project/virtualenv>`_ is a tool to create "
+"isolated Python environments. virtualenv creates a folder which contains "
+"all the necessary executables to use the packages that a Python project "
+"would need."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:207
+msgid "It can be used standalone, in place of Pipenv."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:209
+msgid "Install virtualenv via pip:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:215
+msgid "Test your installation:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:222 ../../docs/dev/virtualenvs.rst:363
+msgid "Basic Usage"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:224
+msgid "Create a virtual environment for a project:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:231
+msgid ""
+"``virtualenv venv`` will create a folder in the current directory which "
+"will contain the Python executable files, and a copy of the ``pip`` "
+"library which you can use to install other packages. The name of the "
+"virtual environment (in this case, it was ``venv``) can be anything; "
+"omitting the name will place the files in the current directory instead."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:238
+msgid ""
+"'venv' is the general convention used globally. As it is readily "
+"available in ignore files (eg: .gitignore')"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:240
+msgid ""
+"This creates a copy of Python in whichever directory you ran the command "
+"in, placing it in a folder named :file:`venv`."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:243
+msgid ""
+"You can also use the Python interpreter of your choice (like "
+"``python2.7``)."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:250
+msgid "or change the interpreter globally with an env variable in ``~/.bashrc``:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:256
+msgid "To begin using the virtual environment, it needs to be activated:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:262
+msgid ""
+"The name of the current virtual environment will now appear on the left "
+"of the prompt (e.g. ``(venv)Your-Computer:project_folder UserName$``) to "
+"let you know that it's active. From now on, any package that you install "
+"using pip will be placed in the ``venv`` folder, isolated from the global"
+" Python installation."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:267
+msgid ""
+"For Windows, the same command mentioned in step 1 can be used to create a"
+" virtual environment. However, activating the environment requires a "
+"slightly different command."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:269
+msgid "Assuming that you are in your project directory:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:275
+msgid "Install packages using the ``pip`` command:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:281
+msgid ""
+"If you are done working in the virtual environment for the moment, you "
+"can deactivate it:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:288
+msgid ""
+"This puts you back to the system's default Python interpreter with all "
+"its installed libraries."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:291
+msgid ""
+"To delete a virtual environment, just delete its folder. (In this case, "
+"it would be ``rm -rf venv``.)"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:294
+msgid ""
+"After a while, though, you might end up with a lot of virtual "
+"environments littered across your system, and it's possible you'll forget"
+" their names or where they were placed."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:299
+msgid ""
+"Python has included venv module from version 3.3. For more details: `venv"
+" <https://docs.python.org/3/library/venv.html>`_."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:302
+msgid "Other Notes"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:304
+msgid ""
+"Running ``virtualenv`` with the option ``--no-site-packages`` will not "
+"include the packages that are installed globally. This can be useful for "
+"keeping the package list clean in case it needs to be accessed later. "
+"[This is the default behavior for ``virtualenv`` 1.7 and later.]"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:309
+msgid ""
+"In order to keep your environment consistent, it's a good idea to "
+"\"freeze\" the current state of the environment packages. To do this, "
+"run:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:316
+msgid ""
+"This will create a :file:`requirements.txt` file, which contains a simple"
+" list of all the packages in the current environment, and their "
+"respective versions. You can see the list of installed packages without "
+"the requirements format using ``pip list``. Later it will be easier for a"
+" different developer (or you, if you need to re-create the environment) "
+"to install the same packages using the same versions:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:327
+msgid ""
+"This can help ensure consistency across installations, across "
+"deployments, and across developers."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:330
+msgid ""
+"Lastly, remember to exclude the virtual environment folder from source "
+"control by adding it to the ignore list (see :ref:`Version Control "
+"Ignores<version_control_ignores>`)."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:336
+msgid "virtualenvwrapper"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:338
+msgid ""
+"`virtualenvwrapper "
+"<https://virtualenvwrapper.readthedocs.io/en/latest/index.html>`_ "
+"provides a set of commands which makes working with virtual environments "
+"much more pleasant. It also places all your virtual environments in one "
+"place."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:342 ../../docs/dev/virtualenvs.rst:354
+msgid "To install (make sure **virtualenv** is already installed):"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:350
+msgid ""
+"(`Full virtualenvwrapper install instructions "
+"<https://virtualenvwrapper.readthedocs.io/en/latest/install.html>`_.)"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:352
+msgid ""
+"For Windows, you can use the `virtualenvwrapper-win "
+"<https://github.com/davidmarble/virtualenvwrapper-win/>`_."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:360
+msgid "In Windows, the default path for WORKON_HOME is %USERPROFILE%\\\\Envs"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:365
+msgid "Create a virtual environment:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:371
+msgid "This creates the :file:`project_folder` folder inside :file:`~/Envs`."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:373
+msgid "Work on a virtual environment:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:379
+msgid ""
+"Alternatively, you can make a project, which creates the virtual "
+"environment, and also a project directory inside ``$WORKON_HOME``, which "
+"is ``cd``-ed into when you ``workon project_folder``."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:387
+msgid ""
+"**virtualenvwrapper** provides tab-completion on environment names. It "
+"really helps when you have a lot of environments and have trouble "
+"remembering their names."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:391
+msgid ""
+"``workon`` also deactivates whatever environment you are currently in, so"
+" you can quickly switch between environments."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:394
+msgid "Deactivating is still the same:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:400
+msgid "To delete:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:407
+msgid "Other useful commands"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:410
+msgid "``lsvirtualenv``"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:410
+msgid "List all of the environments."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:414
+msgid "``cdvirtualenv``"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:413
+msgid ""
+"Navigate into the directory of the currently activated virtual "
+"environment, so you can browse its :file:`site-packages`, for example."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:417
+msgid "``cdsitepackages``"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:417
+msgid "Like the above, but directly into :file:`site-packages` directory."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:420
+msgid "``lssitepackages``"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:420
+msgid "Shows contents of :file:`site-packages` directory."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:422
+msgid ""
+"`Full list of virtualenvwrapper commands "
+"<https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html>`_."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:425
+msgid "virtualenv-burrito"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:427
+msgid ""
+"With `virtualenv-burrito <https://github.com/brainsik/virtualenv-"
+"burrito>`_, you can have a working virtualenv + virtualenvwrapper "
+"environment in a single command."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:431
+msgid "direnv"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:432
+msgid ""
+"When you ``cd`` into a directory containing a :file:`.env`, `direnv "
+"<https://direnv.net>`_ automagically activates the environment."
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:435
+msgid "Install it on Mac OS X using ``brew``:"
+msgstr ""
+
+#: ../../docs/dev/virtualenvs.rst:441
+msgid "On Linux follow the instructions at `direnv.net <https://direnv.net>`_"
+msgstr ""
+

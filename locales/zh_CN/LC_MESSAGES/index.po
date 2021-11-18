@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# xinetzone <735613050@qq.com>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-18 16:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/index.rst:6
+msgid ""
+"An opinionated guide to the Python programming language and a best "
+"practice handbook for the installation, configuration, and usage of "
+"Python on a daily basis."
+msgstr ""
+"这是一本关于 Python 编程语言主观的指南，"
+"也是一本关于 Python 的安装、配置和日常使用的最佳实践手册。"
+
+#: ../../docs/index.rst:12
+msgid "The Hitchhiker's Guide to Python!"
+msgstr "Python 搭车指南！"
+
+#: ../../docs/index.rst:14
+msgid "Greetings, Earthling! Welcome to The Hitchhiker's Guide to Python."
+msgstr "问候，地球人！欢迎来到 《Python 搭车指南》。"
+
+#: ../../docs/index.rst:16
+msgid ""
+"**This is a living, breathing guide.**  If you'd like to contribute, "
+"`fork us on GitHub <https://github.com/realpython/python-guide>`_!"
+msgstr ""
+"**这是一个实时的指南**。"
+"如果你想做出贡献，`fork 我们的 GitHub "
+"<https://github.com/realpython/python-guide>`_ ！"
+
+#: ../../docs/index.rst:19
+msgid ""
+"This handcrafted guide exists to provide both novice and expert Python "
+"developers a best practice handbook for the installation, configuration, "
+"and usage of Python on a daily basis."
+msgstr ""
+"这本手工制作的指南旨在为 Python 新手和专业开发者提供"
+"一本关于 Python 的安装、配置和日常使用的最佳实践手册。"
+
+#: ../../docs/index.rst:23
+msgid ""
+"This guide is **opinionated** in a way that is almost, but not quite, "
+"entirely *unlike* Python's official documentation. You won't find a list "
+"of every Python web framework available here. Rather, you'll find a nice "
+"concise list of highly recommended options."
+msgstr ""
+"本指南是固执己见的，其方式几乎，但不完全，完全不像 Python 的官方文档。"
+"你不会在这里找到所有可用的 Python 网络框架的列表。"
+"相反，你会发现一个简明扼要的高度推荐选择清单。"
+
+#: ../../docs/index.rst:28
+msgid ""
+"The use of **Python 3** is *highly* recommended over Python 2. Consider "
+"upgrading your applications and infrastructures if you find yourself "
+"*still* using Python 2 in production today. If you are using Python 3, "
+"congratulations — you are indeed a person of excellent taste. —*Kenneth "
+"Reitz*"
+msgstr ""
+"强烈建议使用 **Python 3**，而不是 Python 2。"
+"如果你发现自己今天仍在生产中使用 Python 2，请考虑升级你的应用程序和基础设施。"
+"如果你正在使用 Python 3，那么恭喜你 -- 你确实是一个有品位的人。-*Kenneth Reitz*"
+
+#: ../../docs/index.rst:31
+msgid ""
+"Let's get started! But first, let's make sure you know where your towel "
+"is."
+msgstr ""
+"让我们开始吧! 但首先，让我们确保你知道你的毛巾在哪里。"
+
+#: ../../docs/contents.rst.inc:2
+msgid "Getting Started with Python"
+msgstr "Python 入门篇"
+
+#: ../../docs/contents.rst.inc:4
+msgid "New to Python? Let's properly setup up your Python environment:"
+msgstr ""
+
+#: ../../docs/contents.rst.inc:11
+msgid "Properly Install Python on your system:"
+msgstr ""
+
+#: ../../docs/contents.rst.inc:25
+msgid "Using Virtualenvs with Pipenv:"
+msgstr ""
+
+#: ../../docs/contents.rst.inc:34
+msgid "Python Development Environments"
+msgstr ""
+
+#: ../../docs/contents.rst.inc:36
+msgid ""
+"This part of the guide focuses on the Python development environment, and"
+" the best-practice tools that are available for writing Python code."
+msgstr ""
+
+#: ../../docs/contents.rst.inc:50
+msgid "Writing Great Python Code"
+msgstr ""
+
+#: ../../docs/contents.rst.inc:52
+msgid ""
+"This part of the guide focuses on the best-practices for writing Python "
+"code."
+msgstr ""
+
+#: ../../docs/contents.rst.inc:69
+msgid "Scenario Guide for Python Applications"
+msgstr ""
+
+#: ../../docs/contents.rst.inc:71
+msgid ""
+"This part of the guide focuses on tool and module advice based on "
+"different scenarios."
+msgstr ""
+
+#: ../../docs/contents.rst.inc:98
+msgid "Shipping Great Python Code"
+msgstr ""
+
+#: ../../docs/contents.rst.inc:100
+msgid "This part of the guide focuses on sharing and deploying your Python code."
+msgstr ""
+
+#: ../../docs/contents.rst.inc:111
+msgid "Additional Notes"
+msgstr ""
+
+#: ../../docs/contents.rst.inc:113
+msgid ""
+"This part of the guide, which is mostly prose, begins with some "
+"background information about Python, and then focuses on next steps."
+msgstr ""
+
+#: ../../docs/contents.rst.inc:126
+msgid ""
+"Notes defined within all diatonic and chromatic musical scales have been "
+"intentionally excluded from this list of additional notes. Additionally, "
+"this note."
+msgstr ""
+
+#: ../../docs/contents.rst.inc:133
+msgid "Contribution notes and legal information (for those interested)."
+msgstr ""
+

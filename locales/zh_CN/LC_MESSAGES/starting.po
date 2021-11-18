@@ -1,0 +1,927 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-18 16:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/starting/install/linux.rst:6
+msgid "Installing Python 2 on Linux"
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:11
+msgid ""
+"Check out our :ref:`guide for installing Python 3 on "
+"Linux<install3-linux>`."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:13
+msgid ""
+"The latest versions of CentOS, Red Hat Enterprise Linux (RHEL) and Ubuntu"
+" **come with Python 2.7 out of the box**."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:16
+msgid ""
+"To see which version of Python you have installed, open a command prompt "
+"and run"
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:22
+msgid ""
+"However, with the growing popularity of Python 3, some distributions, "
+"such as Fedora, don't come with Python 2 pre-installed. You can install "
+"the ``python2`` package with your distribution package manager:"
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:30
+msgid ""
+"You do not need to install or configure anything else to use Python. "
+"Having said that, I would strongly recommend that you install the tools "
+"and libraries described in the next section before you start building "
+"Python applications for real-world use. In particular, you should always "
+"install Setuptools and pip, as it makes it much easier for you to use "
+"other third-party Python libraries."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:39
+#: ../../docs/starting/install/osx.rst:96
+#: ../../docs/starting/install3/linux.rst:68
+msgid "Setuptools & Pip"
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:41
+#: ../../docs/starting/install/win.rst:60
+#: ../../docs/starting/install3/linux.rst:70
+msgid ""
+"The two most crucial third-party Python packages are `setuptools "
+"<https://pypi.org/project/setuptools>`_ and `pip "
+"<https://pip.pypa.io/en/stable/>`_."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:43
+#: ../../docs/starting/install/win.rst:62
+#: ../../docs/starting/install3/linux.rst:72
+msgid ""
+"Once installed, you can download, install and uninstall any compliant "
+"Python software product with a single command. It also enables you to add"
+" this network installation capability to your own Python software with "
+"very little work."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:47
+#: ../../docs/starting/install/win.rst:66
+#: ../../docs/starting/install3/linux.rst:76
+msgid ""
+"Python 2.7.9 and later (on the python2 series), and Python 3.4 and later "
+"include pip by default."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:50
+#: ../../docs/starting/install/win.rst:69
+#: ../../docs/starting/install3/linux.rst:79
+msgid "To see if pip is installed, open a command prompt and run"
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:56
+#: ../../docs/starting/install/win.rst:75
+#: ../../docs/starting/install3/linux.rst:85
+msgid ""
+"To install pip, `follow the official pip installation guide "
+"<https://pip.pypa.io/en/latest/installing/>`_ - this will automatically "
+"install the latest version of setuptools."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:61
+#: ../../docs/starting/install/osx.rst:118
+#: ../../docs/starting/install/win.rst:80
+msgid "Virtual Environments"
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:63
+#: ../../docs/starting/install/win.rst:82
+#: ../../docs/starting/install3/linux.rst:104
+#: ../../docs/starting/install3/osx.rst:130
+#: ../../docs/starting/install3/win.rst:45
+msgid ""
+"A Virtual Environment is a tool to keep the dependencies required by "
+"different projects in separate places, by creating virtual Python "
+"environments for them. It solves the \"Project X depends on version 1.x "
+"but, Project Y needs 4.x\" dilemma, and keeps your global site-packages "
+"directory clean and manageable."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:68
+#: ../../docs/starting/install/osx.rst:125
+#: ../../docs/starting/install/win.rst:87
+#: ../../docs/starting/install3/linux.rst:109
+#: ../../docs/starting/install3/osx.rst:135
+msgid ""
+"For example, you can work on a project which requires Django 1.10 while "
+"also maintaining a project which requires Django 1.8."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:71
+#: ../../docs/starting/install/osx.rst:128
+#: ../../docs/starting/install/win.rst:90
+msgid ""
+"To start using this and see more information: :ref:`Virtual Environments "
+"<virtualenvironments-ref>` docs."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:73
+msgid ""
+"You can also use :ref:`virtualenvwrapper <virtualenvwrapper-ref>` to make"
+" it easier to manage your virtual environments."
+msgstr ""
+
+#: ../../docs/starting/install/linux.rst:78
+#: ../../docs/starting/install/osx.rst:132
+#: ../../docs/starting/install/win.rst:95
+#: ../../docs/starting/install3/linux.rst:116
+#: ../../docs/starting/install3/osx.rst:142
+#: ../../docs/starting/install3/win.rst:57
+msgid ""
+"This page is a remixed version of `another guide "
+"<https://www.stuartellis.name/articles/python-development-windows/>`_, "
+"which is available under the same license."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:6
+msgid "Installing Python 2 on Mac OS X"
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:11
+msgid "Check out our :ref:`guide for installing Python 3 on OS X<install3-osx>`."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:13
+#: ../../docs/starting/install3/osx.rst:12
+msgid "**Mac OS X comes with Python 2.7 out of the box.**"
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:15
+msgid ""
+"You do not need to install or configure anything else to use Python. "
+"Having said that, I would strongly recommend that you install the tools "
+"and libraries described in the next section before you start building "
+"Python applications for real-world use. In particular, you should always "
+"install Setuptools, as it makes it much easier for you to install and "
+"manage other third-party Python libraries."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:21
+#: ../../docs/starting/install3/osx.rst:17
+msgid ""
+"The version of Python that ships with OS X is great for learning, but "
+"it's not good for development. The version shipped with OS X may be out "
+"of date from the `official current Python release "
+"<https://www.python.org/downloads/mac-osx/>`_, which is considered the "
+"stable production version."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:29
+#: ../../docs/starting/install3/osx.rst:25
+msgid "Doing it Right"
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:31
+#: ../../docs/starting/install3/osx.rst:27
+msgid "Let's install a real version of Python."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:33
+msgid ""
+"Before installing Python, you'll need to install a C compiler. The "
+"fastest way is to install the Xcode Command Line Tools by running "
+"``xcode-select --install``. You can also download the full version of "
+"`Xcode <https://developer.apple.com/xcode/>`_ from the Mac App Store, or "
+"the minimal but unofficial `OSX-GCC-Installer "
+"<https://github.com/kennethreitz/osx-gcc-installer#readme>`_ package."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:42
+#: ../../docs/starting/install3/osx.rst:36
+msgid ""
+"If you already have Xcode installed, do not install OSX-GCC-Installer. In"
+" combination, the software can cause issues that are difficult to "
+"diagnose."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:47
+#: ../../docs/starting/install3/osx.rst:41
+msgid ""
+"If you perform a fresh install of Xcode, you will also need to add the "
+"commandline tools by running ``xcode-select --install`` on the terminal."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:51
+msgid ""
+"While OS X comes with a large number of Unix utilities, those familiar "
+"with Linux systems will notice one key component missing: a decent "
+"package manager. `Homebrew <https://brew.sh>`_ fills this void."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:55
+#: ../../docs/starting/install3/osx.rst:48
+msgid ""
+"To `install Homebrew <https://brew.sh/#install>`_, open :file:`Terminal` "
+"or your favorite OS X terminal emulator and run"
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:62
+#: ../../docs/starting/install3/osx.rst:55
+msgid ""
+"The script will explain what changes it will make and prompt you before "
+"the installation begins. Once you've installed Homebrew, insert the "
+"Homebrew directory at the top of your :envvar:`PATH` environment "
+"variable. You can do this by adding the following line at the bottom of "
+"your :file:`~/.profile` file"
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:72
+msgid "Now, we can install Python 2.7:"
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:78
+msgid ""
+"Because ``python@2`` is a \"keg\", we need to update our ``PATH`` again, "
+"to point at our new installation:"
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:84
+msgid ""
+"Homebrew names the executable ``python2`` so that you can still run the "
+"system Python via the executable ``python``."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:98
+msgid "Homebrew installs Setuptools and ``pip`` for you."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:100
+msgid ""
+"Setuptools enables you to download and install any compliant Python "
+"software over a network (usually the Internet) with a single command "
+"(``easy_install``). It also enables you to add this network installation "
+"capability to your own Python software with very little work."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:105
+msgid ""
+"``pip`` is a tool for easily installing and managing Python packages, "
+"that is recommended over ``easy_install``. It is superior to "
+"``easy_install`` in `several ways <https://python-packaging-user-"
+"guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_, and is "
+"actively maintained."
+msgstr ""
+
+#: ../../docs/starting/install/osx.rst:120
+msgid ""
+"A Virtual Environment (commonly referred to as a 'virtualenv') is a tool "
+"to keep the dependencies required by different projects in separate "
+"places, by creating virtual Python environments for them. It solves the "
+"\"Project X depends on version 1.x but, Project Y needs 4.x\" dilemma, "
+"and keeps your global site-packages directory clean and manageable."
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:6
+msgid "Installing Python 2 on Windows"
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:11
+msgid ""
+"Check out our :ref:`guide for installing Python 3 on "
+"Windows<install3-windows>`."
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:13
+msgid ""
+"First, download the `latest version "
+"<https://www.python.org/ftp/python/2.7.15/python-2.7.15.msi>`_ of Python "
+"2.7 from the official website. If you want to be sure you are installing "
+"a fully up-to-date version, click the Downloads > Windows link from the "
+"home page of the `Python.org web site <https://python.org>`_ ."
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:18
+msgid ""
+"The Windows version is provided as an MSI package. To install it "
+"manually, just double-click the file. The MSI package format allows "
+"Windows administrators to automate installation with their standard "
+"tools."
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:22
+msgid ""
+"By design, Python installs to a directory with the version number "
+"embedded, e.g. Python version 2.7 will install at "
+":file:`C:\\\\Python27\\\\`, so that you can have multiple versions of "
+"Python on the same system without conflicts. Of course, only one "
+"interpreter can be the default application for Python file types. It also"
+" does not automatically modify the :envvar:`PATH` environment variable, "
+"so that you always have control over which copy of Python is run."
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:30
+msgid ""
+"Typing the full path name for a Python interpreter each time quickly gets"
+" tedious, so add the directories for your default Python version to the "
+":envvar:`PATH`. Assuming that your Python installation is in "
+":file:`C:\\\\Python27\\\\`, add this to your :envvar:`PATH`:"
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:39
+msgid "You can do this easily by running the following in ``powershell``:"
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:45
+msgid "This is also an option during the installation process."
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:47
+msgid ""
+"The second (:file:`Scripts`) directory receives command files when "
+"certain packages are installed, so it is a very useful addition. You do "
+"not need to install or configure anything else to use Python. Having said"
+" that, I would strongly recommend that you install the tools and "
+"libraries described in the next section before you start building Python "
+"applications for real-world use. In particular, you should always install"
+" Setuptools, as it makes it much easier for you to use other third-party "
+"Python libraries."
+msgstr ""
+
+#: ../../docs/starting/install/win.rst:58
+#: ../../docs/starting/install3/win.rst:25
+msgid "Setuptools + Pip"
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:6
+msgid "Installing Python 3 on Linux"
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:10
+msgid ""
+"This document describes how to install Python 3.6 or 3.8 on Ubuntu Linux "
+"machines."
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:12
+msgid ""
+"To see which version of Python 3 you have installed, open a command "
+"prompt and run"
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:18
+msgid ""
+"If you are using Ubuntu 16.10 or newer, then you can easily install "
+"Python 3.6 with the following commands::"
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:23
+msgid ""
+"If you're using another version of Ubuntu (e.g. the latest LTS release) "
+"or you want to use a more current Python, we recommend using the "
+"`deadsnakes PPA <https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa>`_"
+" to install Python 3.8::"
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:30
+msgid ""
+"If you are using other Linux distribution, chances are you already have "
+"Python 3 pre-installed as well. If not, use your distribution's package "
+"manager. For example on Fedora, you would use `dnf`:"
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:38
+msgid ""
+"Note that if the version of the ``python3`` package is not recent enough "
+"for you, there may be ways of installing more recent versions as well, "
+"depending on you distribution. For example installing the ``python3.9`` "
+"package on Fedora 32 to get Python 3.9. If you are a Fedora user, you "
+"might want to read about `multiple Python versions available in Fedora`_."
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:49
+#: ../../docs/starting/install3/osx.rst:88
+msgid "Working with Python 3"
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:51
+msgid "At this point, you may have system Python 2.7 available as well."
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:57
+msgid "This might launch the Python 2 interpreter."
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:63
+msgid "This will always launch the Python 3 interpreter."
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:87
+msgid ""
+"Note that on some Linux distributions including Ubuntu and Fedora the "
+"``pip`` command is meant for Python 2, while the ``pip3`` command is "
+"meant for Python 3."
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:94
+msgid ""
+"However, when using virtual environments (described below), you don't "
+"need to care about that."
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:100
+#: ../../docs/starting/install3/osx.rst:126
+#: ../../docs/starting/install3/win.rst:41
+msgid "Pipenv & Virtual Environments"
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:102
+#: ../../docs/starting/install3/osx.rst:128
+#: ../../docs/starting/install3/win.rst:43
+msgid ""
+"The next step is to install Pipenv, so you can install dependencies and "
+"manage virtual environments."
+msgstr ""
+
+#: ../../docs/starting/install3/linux.rst:112
+#: ../../docs/starting/install3/osx.rst:138
+#: ../../docs/starting/install3/win.rst:53
+msgid ""
+"So, onward! To the :ref:`Pipenv & Virtual Environments "
+"<virtualenvironments-ref>` docs!"
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:8
+msgid "Installing Python 3 on Mac OS X"
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:14
+msgid ""
+"You do not need to install or configure anything else to use Python 2. "
+"These instructions document the installation of Python 3."
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:29
+msgid ""
+"Before installing Python, you'll need to install GCC. GCC can be obtained"
+" by downloading `Xcode <https://developer.apple.com/xcode/>`_, the "
+"smaller `Command Line Tools <https://developer.apple.com/downloads/>`_ "
+"(must have an Apple account) or the even smaller `OSX-GCC-Installer "
+"<https://github.com/kennethreitz/osx-gcc-installer#readme>`_ package."
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:44
+msgid ""
+"While OS X comes with a large number of Unix utilities, those familiar "
+"with Linux systems will notice one key component missing: a package "
+"manager. `Homebrew <https://brew.sh>`_ fills this void."
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:65
+msgid "If you have OS X 10.12 (Sierra) or older use this line instead"
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:71
+msgid "Now, we can install Python 3:"
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:77
+msgid "This will take a minute or two."
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:81
+msgid "Pip"
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:83
+msgid "Homebrew installs ``pip`` pointing to the Homebrew'd Python 3 for you."
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:90
+msgid ""
+"At this point, you have the system Python 2.7 available, potentially the "
+":ref:`Homebrew version of Python 2 <install-osx>` installed, and the "
+"Homebrew version of Python 3 as well."
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:98
+#: ../../docs/starting/install3/osx.rst:110
+msgid "will launch the Homebrew-installed Python 3 interpreter."
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:104
+msgid "will launch the Homebrew-installed Python 2 interpreter (if any)."
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:112
+msgid ""
+"If the Homebrew version of Python 2 is installed then ``pip2`` will point"
+" to Python 2. If the Homebrew version of Python 3 is installed then "
+"``pip`` will point to Python 3."
+msgstr ""
+
+#: ../../docs/starting/install3/osx.rst:115
+msgid "The rest of the guide will assume that ``python`` references Python 3."
+msgstr ""
+
+#: ../../docs/starting/install3/win.rst:6
+msgid "Installing Python 3 on Windows"
+msgstr ""
+
+#: ../../docs/starting/install3/win.rst:10
+msgid ""
+"First, follow the installation instructions for `Chocolatey "
+"<https://chocolatey.org/install>`_. It's a community system packager "
+"manager for Windows 7+. (It's very much like Homebrew on OS X.)"
+msgstr ""
+
+#: ../../docs/starting/install3/win.rst:13
+msgid ""
+"Once done, installing Python 3 is very simple, because Chocolatey pushes "
+"Python 3 as the default."
+msgstr ""
+
+#: ../../docs/starting/install3/win.rst:19
+msgid ""
+"Once you've run this command, you should be able to launch Python "
+"directly from to the console. (Chocolatey is fantastic and automatically "
+"adds Python to your path.)"
+msgstr ""
+
+#: ../../docs/starting/install3/win.rst:27
+msgid ""
+"The two most crucial third-party Python packages are `setuptools "
+"<https://pypi.org/project/setuptools>`_ and `pip "
+"<https://pip.pypa.io/en/stable/>`_, which let you download, install and "
+"uninstall any compliant Python software product with a single command. It"
+" also enables you to add this network installation capability to your own"
+" Python software with very little work."
+msgstr ""
+
+#: ../../docs/starting/install3/win.rst:32
+msgid ""
+"All supported versions of Python 3 include pip, so just make sure it's up"
+" to date:"
+msgstr ""
+
+#: ../../docs/starting/install3/win.rst:50
+msgid ""
+"For example, you can work on a project which requires Django 2.0 while "
+"also maintaining a project which requires Django 1.8."
+msgstr ""
+
+#: ../../docs/starting/installation.rst:6
+msgid "Properly Installing Python"
+msgstr ""
+
+#: ../../docs/starting/installation.rst:10
+msgid ""
+"There's a good chance that you already have Python on your operating "
+"system."
+msgstr ""
+
+#: ../../docs/starting/installation.rst:12
+msgid ""
+"If so, you do not need to install or configure anything else to use "
+"Python. Having said that, I would strongly recommend that you install the"
+" tools and libraries described in the guides below before you start "
+"building Python applications for real-world use. In particular, you "
+"should always install Setuptools, Pip, and Virtualenv — they make it much"
+" easier for you to use other third-party Python libraries."
+msgstr ""
+
+#: ../../docs/starting/installation.rst:19
+msgid ""
+"The use of **Python 3** is *highly* preferred over Python 2. Consider "
+"upgrading your applications and infrastructure if you find yourself "
+"*still* using Python 2 in production today. If you are using Python 3, "
+"congratulations — you are indeed a person of excellent taste. —*Kenneth "
+"Reitz*"
+msgstr ""
+
+#: ../../docs/starting/installation.rst:24
+msgid "Installation Guides"
+msgstr ""
+
+#: ../../docs/starting/installation.rst:26
+msgid ""
+"These guides go over the proper installation of :ref:`Python <which-"
+"python>` for development purposes, as well as setuptools, pip and "
+"virtualenv."
+msgstr ""
+
+#: ../../docs/starting/installation.rst:30
+msgid "Python 3 Installation Guides"
+msgstr ""
+
+#: ../../docs/starting/installation.rst:32
+msgid ":ref:`Python 3 on MacOS <install3-osx>`."
+msgstr ""
+
+#: ../../docs/starting/installation.rst:33
+msgid ":ref:`Python 3 on Windows <install3-windows>`."
+msgstr ""
+
+#: ../../docs/starting/installation.rst:34
+msgid ":ref:`Python 3 on Linux <install3-linux>`."
+msgstr ""
+
+#: ../../docs/starting/installation.rst:37
+msgid "Legacy Python 2 Installation Guides"
+msgstr ""
+
+#: ../../docs/starting/installation.rst:39
+msgid ":ref:`Python 2 on MacOS <install-osx>`."
+msgstr ""
+
+#: ../../docs/starting/installation.rst:40
+msgid ":ref:`Python 2 on Microsoft Windows <install-windows>`."
+msgstr ""
+
+#: ../../docs/starting/installation.rst:41
+msgid ":ref:`Python 2 on Linux <install-linux>`."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:5
+msgid "Picking a Python Interpreter (3 vs 2)"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:14
+msgid "The State of Python (3 & 2)"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:16
+msgid ""
+"When choosing a Python interpreter, one looming question is always "
+"present: \"Should I choose Python 2 or Python 3\"? The answer is a bit "
+"more subtle than one might think."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:21
+msgid "The basic gist of the state of things is as follows:"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:23
+msgid "Most production applications today use Python 3."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:24
+msgid "Python 3 is ready for the production deployment of applications today."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:25
+msgid "Python 2 reached the end of its life on January 1, 2020 [#pep373_eol]_."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:26
+msgid "The brand name \"Python\" encapsulates both Python 3 and Python 2."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:31
+msgid "Recommendations"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:34
+msgid ""
+"The use of **Python 3** is *highly* recommended over Python 2. Consider "
+"upgrading your applications and infrastructure if you find yourself "
+"*still* using Python 2 in production today. If you are using Python 3, "
+"congratulations — you are indeed a person of excellent taste. —*Kenneth "
+"Reitz*"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:37
+msgid "I'll be blunt:"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:39
+msgid "Use Python 3 for new Python applications."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:40
+msgid ""
+"If you're learning Python for the first time, familiarizing yourself with"
+" Python 2.7 will be very useful, but not more useful than learning Python"
+" 3."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:42
+msgid "Learn both. They are both \"Python\"."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:47
+msgid "So.... 3?"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:49
+msgid ""
+"If you're choosing a Python interpreter to use, I recommend you use the "
+"newest Python 3.x, since every version brings new and improved standard "
+"library modules, security and bug fixes."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:53
+msgid ""
+"Given such, only use Python 2 if you have a strong reason to, such as a "
+"pre-existing code-base, a Python 2 exclusive library, "
+"simplicity/familiarity, or, of course, you absolutely love and are "
+"inspired by Python 2. No harm in that."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:58
+msgid "`Further Reading <http://wiki.python.org/moin/Python2orPython3>`_"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:60
+msgid ""
+"It is possible to `write code that works on Python 2.6, 2.7, and Python 3"
+" <https://docs.python.org/3/howto/pyporting.html>`_. This ranges from "
+"trivial to hard depending upon the kind of software you are writing; if "
+"you're a beginner there are far more important things to worry about."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:69
+msgid "Implementations"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:71
+msgid ""
+"When people speak of *Python* they often mean not just the language but "
+"also the CPython implementation. *Python* is actually a specification for"
+" a language that can be implemented in many different ways."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:76
+msgid "CPython"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:78
+msgid ""
+"`CPython <http://www.python.org>`_ is the reference implementation of "
+"Python, written in C. It compiles Python code to intermediate bytecode "
+"which is then interpreted by a virtual machine. CPython provides the "
+"highest level of compatibility with Python packages and C extension "
+"modules."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:83
+msgid ""
+"If you are writing open source Python code and want to reach the widest "
+"possible audience, targeting CPython is best. To use packages which rely "
+"on C extensions to function, CPython is your only implementation option."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:87
+msgid ""
+"All versions of the Python language are implemented in C because CPython "
+"is the reference implementation."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:91
+msgid "PyPy"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:93
+msgid ""
+"`PyPy <http://pypy.org/>`_ is a Python interpreter implemented in a "
+"restricted statically-typed subset of the Python language called RPython."
+" The interpreter features a just-in-time compiler and supports multiple "
+"back-ends (C, CLI, JVM)."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:97
+msgid ""
+"PyPy aims for maximum compatibility with the reference CPython "
+"implementation while improving performance."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:100
+msgid ""
+"If you are looking to increase performance of your Python code, it's "
+"worth giving PyPy a try. On a suite of benchmarks, it's currently `over 5"
+" times faster than CPython <http://speed.pypy.org/>`_."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:104
+msgid ""
+"PyPy supports Python 2.7. PyPy3 [#pypy_ver]_, released in beta, targets "
+"Python 3."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:107
+msgid "Jython"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:109
+msgid ""
+"`Jython <http://www.jython.org/>`_ is a Python implementation that "
+"compiles Python code to Java bytecode which is then executed by the JVM "
+"(Java Virtual Machine). Additionally, it is able to import and use any "
+"Java class like a Python module."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:114
+msgid ""
+"If you need to interface with an existing Java codebase or have other "
+"reasons to need to write Python code for the JVM, Jython is the best "
+"choice."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:117
+msgid "Jython currently supports up to Python 2.7. [#jython_ver]_"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:120
+msgid "IronPython"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:122
+msgid ""
+"`IronPython <http://ironpython.net/>`_  is an implementation of Python "
+"for the .NET framework. It can use both Python and .NET framework "
+"libraries, and can also expose Python code to other languages in the .NET"
+" framework."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:126
+msgid ""
+"`Python Tools for Visual Studio <http://ironpython.net/tools/>`_ "
+"integrates IronPython directly into the Visual Studio development "
+"environment, making it an ideal choice for Windows developers."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:130
+msgid ""
+"IronPython supports Python 2.7. [#iron_ver]_ IronPython 3 [#iron_ver3]_ "
+"is being developed, but is not ready for use as of September 2020."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:134
+msgid "PythonNet"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:136
+msgid ""
+"`Python for .NET <http://pythonnet.github.io/>`_ is a package which "
+"provides near seamless integration of a natively installed Python "
+"installation with the .NET Common Language Runtime (CLR).  This is the "
+"inverse approach to that taken by IronPython (see above), to which it is "
+"more complementary than competing with."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:142
+msgid ""
+"In conjunction with Mono, pythonnet enables native Python installations "
+"on non-Windows operating systems, such as OS X and Linux, to operate "
+"within the .NET framework.  It can be run in addition to IronPython "
+"without conflict."
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:147
+msgid "Pythonnet is compatible with Python 2.7 and 3.5-3.8. [#pythonnet_ver1]_"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:149
+msgid "https://pypy.org/compat.html"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:151
+msgid "https://hg.python.org/jython/file/412a8f9445f7/NEWS"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:153
+msgid "https://ironpython.net/download/"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:155
+msgid "https://github.com/IronLanguages/ironpython3"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:157
+msgid "https://pythonnet.github.io/"
+msgstr ""
+
+#: ../../docs/starting/which-python.rst:159
+msgid "https://www.python.org/dev/peps/pep-0373/#id2"
+msgstr ""
+
