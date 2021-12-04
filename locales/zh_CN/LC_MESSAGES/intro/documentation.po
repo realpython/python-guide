@@ -24,15 +24,15 @@ msgstr ""
 
 #: ../../intro/documentation.rst:5
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #: ../../intro/documentation.rst:12
 msgid "Official Documentation"
-msgstr ""
+msgstr "官方文档"
 
 #: ../../intro/documentation.rst:14
 msgid "The official Python Language and Library documentation can be found here:"
-msgstr ""
+msgstr "Python 语言和库的官方文档能够在这里找到："
 
 #: ../../intro/documentation.rst:16
 msgid "`Python 2.x <https://docs.python.org/2/>`_"
@@ -52,6 +52,7 @@ msgid ""
 " open source software. It holds documentation for many Python modules, "
 "both popular and exotic."
 msgstr ""
+"Read the Docs 是一个流行的社区项目，存放着开源软件的文档。它拥有很多 Python 模块，优秀且流行。"
 
 #: ../../intro/documentation.rst:28
 msgid "`Read the Docs <https://readthedocs.org/>`_"
@@ -68,10 +69,13 @@ msgid ""
 "shell. For example, if you needed a quick refresher on the :mod:`time` "
 "module, pulling up documentation would be as simple as:"
 msgstr ""
+":program:`pydoc` 是一个在您安装 Python 时跟着安装的工具。"
+"它允许您在 shell 中快速检索和查找文档。"
+"比如，如果您需要对 :mod:`time` 模块的进行快速回顾，查看文档就是像下面这么简单："
 
 #: ../../intro/documentation.rst:44
 msgid ""
 "The above command is essentially equivalent to opening the Python REPL "
 "and running:"
 msgstr ""
-
+"上面的命令和打开 Python REPL 然后运行下面指令是基本等价的："
