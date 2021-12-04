@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/crypto.rst:4
+msgid "Cryptography"
+msgstr ""
+
+#: ../../scenarios/crypto.rst:11
+msgid "cryptography"
+msgstr ""
+
+#: ../../scenarios/crypto.rst:13
+msgid ""
+"`cryptography <https://cryptography.io/en/latest/>`_ is an actively "
+"developed library that provides cryptographic recipes and primitives. It "
+"supports Python 2.6-2.7, Python 3.3+, and PyPy."
+msgstr ""
+
+#: ../../scenarios/crypto.rst:18
+msgid ""
+"cryptography is divided into two layers of recipes and hazardous "
+"materials (hazmat).  The recipes layer provides a simple API for proper "
+"symmetric encryption and the hazmat layer provides low-level "
+"cryptographic primitives."
+msgstr ""
+
+#: ../../scenarios/crypto.rst:25 ../../scenarios/crypto.rst:57
+msgid "Installation"
+msgstr ""
+
+#: ../../scenarios/crypto.rst:32 ../../scenarios/crypto.rst:62
+msgid "Example"
+msgstr ""
+
+#: ../../scenarios/crypto.rst:34
+msgid "Example code using high level symmetric encryption recipe:"
+msgstr ""
+
+#: ../../scenarios/crypto.rst:47
+msgid "GPGME bindings"
+msgstr ""
+
+#: ../../scenarios/crypto.rst:49
+msgid ""
+"The `GPGME Python bindings "
+"<https://dev.gnupg.org/source/gpgme/browse/master/lang/python/>`_ provide"
+" Pythonic access to `GPG Made Easy "
+"<https://dev.gnupg.org/source/gpgme/browse/master/>`_, a C API for the "
+"entire GNU Privacy Guard suite of projects, including GPG, libgcrypt, and"
+" gpgsm (the S/MIME engine). It supports Python 2.6, 2.7, 3.4, and above. "
+"Depends on the SWIG C interface for Python as well as the GnuPG software "
+"and libraries."
+msgstr ""
+
+#: ../../scenarios/crypto.rst:52
+msgid ""
+"A more comprehensive `GPGME Python Bindings HOWTO "
+"<https://dev.gnupg.org/source/gpgme/browse/master/lang/python/docs/GPGMEpythonHOWTOen.org>`_"
+" is available with the source, and an HTML version is available `at "
+"http://files.au.adversary.org "
+"<http://files.au.adversary.org/crypto/GPGMEpythonHOWTOen.html>`_.  Python"
+" 3 sample scripts from the examples in the HOWTO are also provided with "
+"the source and are accessible `at gnupg.org "
+"<https://dev.gnupg.org/source/gpgme/browse/master/lang/python/examples/howto/>`_."
+msgstr ""
+
+#: ../../scenarios/crypto.rst:54
+msgid ""
+"Available under the same terms as the rest of the GnuPG Project: GPLv2 "
+"and LGPLv2.1, both with the \"or any later version\" clause."
+msgstr ""
+
+#: ../../scenarios/crypto.rst:59
+msgid ""
+"Included by default when compiling GPGME if the configure script locates "
+"a supported python version (which it will if it's in $PATH during "
+"configuration)."
+msgstr ""
+

@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/imaging.rst:4
+msgid "Image Manipulation"
+msgstr ""
+
+#: ../../scenarios/imaging.rst:8
+msgid ""
+"Most image processing and manipulation techniques can be carried out "
+"effectively using two libraries: Python Imaging Library (PIL) and Open "
+"Source Computer Vision (OpenCV)."
+msgstr ""
+
+#: ../../scenarios/imaging.rst:12
+msgid "A brief description of both is given below."
+msgstr ""
+
+#: ../../scenarios/imaging.rst:17
+msgid "Python Imaging Library"
+msgstr ""
+
+#: ../../scenarios/imaging.rst:19
+msgid ""
+"The `Python Imaging Library <http://www.pythonware.com/products/pil/>`_, "
+"or PIL for short, is one of the core libraries for image manipulation in "
+"Python. Unfortunately, its development has stagnated, with its last "
+"release in 2009."
+msgstr ""
+
+#: ../../scenarios/imaging.rst:23
+msgid ""
+"Luckily for you, there's an actively-developed fork of PIL called `Pillow"
+" <http://python-pillow.github.io/>`_ -- it's easier to install, runs on "
+"all major operating systems, and supports Python 3."
+msgstr ""
+
+#: ../../scenarios/imaging.rst:28 ../../scenarios/imaging.rst:77
+msgid "Installation"
+msgstr ""
+
+#: ../../scenarios/imaging.rst:30
+msgid ""
+"Before installing Pillow, you'll have to install Pillow's prerequisites. "
+"Find the instructions for your platform in the `Pillow installation "
+"instructions "
+"<https://pillow.readthedocs.io/en/3.0.0/installation.html>`_."
+msgstr ""
+
+#: ../../scenarios/imaging.rst:34
+msgid "After that, it's straightforward:"
+msgstr ""
+
+#: ../../scenarios/imaging.rst:41 ../../scenarios/imaging.rst:92
+msgid "Example"
+msgstr ""
+
+#: ../../scenarios/imaging.rst:64
+msgid ""
+"There are more examples of the Pillow library in the `Pillow tutorial "
+"<https://pillow.readthedocs.io/en/3.0.x/handbook/tutorial.html>`_."
+msgstr ""
+
+#: ../../scenarios/imaging.rst:70
+msgid "Open Source Computer Vision"
+msgstr ""
+
+#: ../../scenarios/imaging.rst:72
+msgid ""
+"Open Source Computer Vision, more commonly known as OpenCV, is a more "
+"advanced image manipulation and processing software than PIL. It has been"
+" implemented in several languages and is widely used."
+msgstr ""
+
+#: ../../scenarios/imaging.rst:79
+msgid ""
+"In Python, image processing using OpenCV is implemented using the ``cv2``"
+" and ``NumPy`` modules.  The `installation instructions for OpenCV "
+"<http://docs.opencv.org/2.4/doc/tutorials/introduction/table_of_content_introduction/table_of_content_introduction.html"
+"#table-of-content-introduction>`_ should guide you through configuring "
+"the project for yourself."
+msgstr ""
+
+#: ../../scenarios/imaging.rst:84
+msgid "NumPy can be downloaded from the Python Package Index(PyPI):"
+msgstr ""
+
+#: ../../scenarios/imaging.rst:110
+msgid ""
+"There are more Python-implemented examples of OpenCV in this `collection "
+"of tutorials <https://opencv-python-"
+"tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html>`_."
+msgstr ""
+

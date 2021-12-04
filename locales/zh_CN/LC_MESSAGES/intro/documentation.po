@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../intro/documentation.rst:5
+msgid "Documentation"
+msgstr ""
+
+#: ../../intro/documentation.rst:12
+msgid "Official Documentation"
+msgstr ""
+
+#: ../../intro/documentation.rst:14
+msgid "The official Python Language and Library documentation can be found here:"
+msgstr ""
+
+#: ../../intro/documentation.rst:16
+msgid "`Python 2.x <https://docs.python.org/2/>`_"
+msgstr ""
+
+#: ../../intro/documentation.rst:17
+msgid "`Python 3.x <https://docs.python.org/3/>`_"
+msgstr ""
+
+#: ../../intro/documentation.rst:22
+msgid "Read the Docs"
+msgstr ""
+
+#: ../../intro/documentation.rst:24
+msgid ""
+"Read the Docs is a popular community project that hosts documentation for"
+" open source software. It holds documentation for many Python modules, "
+"both popular and exotic."
+msgstr ""
+
+#: ../../intro/documentation.rst:28
+msgid "`Read the Docs <https://readthedocs.org/>`_"
+msgstr ""
+
+#: ../../intro/documentation.rst:33
+msgid "pydoc"
+msgstr ""
+
+#: ../../intro/documentation.rst:35
+msgid ""
+":program:`pydoc` is a utility that is installed when you install Python. "
+"It allows you to quickly retrieve and search for documentation from your "
+"shell. For example, if you needed a quick refresher on the :mod:`time` "
+"module, pulling up documentation would be as simple as:"
+msgstr ""
+
+#: ../../intro/documentation.rst:44
+msgid ""
+"The above command is essentially equivalent to opening the Python REPL "
+"and running:"
+msgstr ""
+

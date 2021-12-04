@@ -1,0 +1,362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/speed.rst:4
+msgid "Speed"
+msgstr ""
+
+#: ../../scenarios/speed.rst:8
+msgid ""
+"CPython, the most commonly used implementation of Python, is slow for CPU"
+" bound tasks. `PyPy`_ is fast."
+msgstr ""
+
+#: ../../scenarios/speed.rst:11
+msgid ""
+"Using a slightly modified version of `David Beazley's`_ CPU bound test "
+"code (added loop for multiple tests), you can see the difference between "
+"CPython and PyPy's processing."
+msgstr ""
+
+#: ../../scenarios/speed.rst:43
+msgid "Context"
+msgstr ""
+
+#: ../../scenarios/speed.rst:47 ../../scenarios/speed.rst:65
+msgid "The GIL"
+msgstr ""
+
+#: ../../scenarios/speed.rst:49
+msgid ""
+"`The GIL`_ (Global Interpreter Lock) is how Python allows multiple "
+"threads to operate at the same time. Python's memory management isn't "
+"entirely thread-safe, so the GIL is required to prevent multiple threads "
+"from running the same Python code at once."
+msgstr ""
+
+#: ../../scenarios/speed.rst:54
+msgid ""
+"David Beazley has a great `guide`_ on how the GIL operates. He also "
+"covers the `new GIL`_ in Python 3.2. His results show that maximizing "
+"performance in a Python application requires a strong understanding of "
+"the GIL, how it affects your specific application, how many cores you "
+"have, and where your application bottlenecks are."
+msgstr ""
+
+#: ../../scenarios/speed.rst:61 ../../scenarios/speed.rst:73
+msgid "C Extensions"
+msgstr ""
+
+#: ../../scenarios/speed.rst:67
+msgid ""
+"`Special care`_ must be taken when writing C extensions to make sure you "
+"register your threads with the interpreter."
+msgstr ""
+
+#: ../../scenarios/speed.rst:77
+msgid "Cython"
+msgstr ""
+
+#: ../../scenarios/speed.rst:79
+msgid ""
+"`Cython <https://cython.org/>`_ implements a superset of the Python "
+"language with which you are able to write C and C++ modules for Python. "
+"Cython also allows you to call functions from compiled C libraries. Using"
+" Cython allows you to take advantage of Python's strong typing of "
+"variables and operations."
+msgstr ""
+
+#: ../../scenarios/speed.rst:84
+msgid "Here's an example of strong typing with Cython:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:111
+msgid ""
+"This implementation of an algorithm to find prime numbers has some "
+"additional keywords compared to the next one, which is implemented in "
+"pure Python:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:136
+msgid ""
+"Notice that in the Cython version you declare integers and integer arrays"
+" to be compiled into C types while also creating a Python list:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:159
+msgid ""
+"What is the difference? In the upper Cython version you can see the "
+"declaration of the variable types and the integer array in a similar way "
+"as in standard C. For example `cdef int n,k,i` in line 3. This additional"
+" type declaration (i.e. integer) allows the Cython compiler to generate "
+"more efficient C code from the second version. While standard Python code"
+" is saved in :file:`*.py` files, Cython code is saved in :file:`*.pyx` "
+"files."
+msgstr ""
+
+#: ../../scenarios/speed.rst:166
+msgid "What's the difference in speed? Let's try it!"
+msgstr ""
+
+#: ../../scenarios/speed.rst:190
+msgid "These lines both need a remark:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:198
+msgid ""
+"The `pyximport` module allows you to import :file:`*.pyx` files (e.g., "
+":file:`primesCy.pyx`) with the Cython-compiled version of the `primes` "
+"function. The `pyximport.install()` command allows the Python interpreter"
+" to start the Cython compiler directly to generate C code, which is "
+"automatically compiled to a :file:`*.so` C library. Cython is then able "
+"to import this library for you in your Python code, easily and "
+"efficiently. With the `time.time()` function you are able to compare the "
+"time between these 2 different calls to find 500 prime numbers. On a "
+"standard notebook (dual core AMD E-450 1.6 GHz), the measured values are:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:215
+msgid ""
+"And here is the output of an embedded `ARM beaglebone "
+"<http://beagleboard.org/Products/BeagleBone>`_ machine:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:225
+msgid "Pyrex"
+msgstr ""
+
+#: ../../scenarios/speed.rst:229
+msgid "Shedskin?"
+msgstr ""
+
+#: ../../scenarios/speed.rst:234
+msgid "Concurrency"
+msgstr ""
+
+#: ../../scenarios/speed.rst:238
+msgid "Concurrent.futures"
+msgstr ""
+
+#: ../../scenarios/speed.rst:240
+msgid ""
+"The `concurrent.futures`_ module is a module in the standard library that"
+" provides a \"high-level interface for asynchronously executing "
+"callables\". It abstracts away a lot of the more complicated details "
+"about using multiple threads or processes for concurrency, and allows the"
+" user to focus on accomplishing the task at hand."
+msgstr ""
+
+#: ../../scenarios/speed.rst:246
+msgid ""
+"The `concurrent.futures`_ module exposes two main classes, the "
+"`ThreadPoolExecutor` and the `ProcessPoolExecutor`. The "
+"ThreadPoolExecutor will create a pool of worker threads that a user can "
+"submit jobs to. These jobs will then be executed in another thread when "
+"the next worker thread becomes available."
+msgstr ""
+
+#: ../../scenarios/speed.rst:252
+msgid ""
+"The ProcessPoolExecutor works in the same way, except instead of using "
+"multiple threads for its workers, it will use multiple processes. This "
+"makes it possible to side-step the GIL; however, because of the way "
+"things are passed to worker processes, only picklable objects can be "
+"executed and returned."
+msgstr ""
+
+#: ../../scenarios/speed.rst:257
+msgid ""
+"Because of the way the GIL works, a good rule of thumb is to use a "
+"ThreadPoolExecutor when the task being executed involves a lot of "
+"blocking (i.e. making requests over the network) and to use a "
+"ProcessPoolExecutor executor when the task is computationally expensive."
+msgstr ""
+
+#: ../../scenarios/speed.rst:262
+msgid ""
+"There are two main ways of executing things in parallel using the two "
+"Executors. One way is with the `map(func, iterables)` method. This works "
+"almost exactly like the builtin `map()` function, except it will execute "
+"everything in parallel."
+msgstr ""
+
+#: ../../scenarios/speed.rst:284
+msgid ""
+"For even more control, the `submit(func, *args, **kwargs)` method will "
+"schedule a callable to be executed ( as `func(*args, **kwargs)`) and "
+"returns a `Future`_ object that represents the execution of the callable."
+msgstr ""
+
+#: ../../scenarios/speed.rst:288
+msgid ""
+"The Future object provides various methods that can be used to check on "
+"the progress of the scheduled callable. These include:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:291
+msgid "cancel()"
+msgstr ""
+
+#: ../../scenarios/speed.rst:292
+msgid "Attempt to cancel the call."
+msgstr ""
+
+#: ../../scenarios/speed.rst:293
+msgid "cancelled()"
+msgstr ""
+
+#: ../../scenarios/speed.rst:294
+msgid "Return True if the call was successfully cancelled."
+msgstr ""
+
+#: ../../scenarios/speed.rst:296
+msgid "running()"
+msgstr ""
+
+#: ../../scenarios/speed.rst:296
+msgid ""
+"Return True if the call is currently being executed and cannot be "
+"cancelled."
+msgstr ""
+
+#: ../../scenarios/speed.rst:298
+msgid "done()"
+msgstr ""
+
+#: ../../scenarios/speed.rst:299
+msgid "Return True if the call was successfully cancelled or finished running."
+msgstr ""
+
+#: ../../scenarios/speed.rst:301
+msgid "result()"
+msgstr ""
+
+#: ../../scenarios/speed.rst:301
+msgid ""
+"Return the value returned by the call. Note that this call will block "
+"until the scheduled callable returns by default."
+msgstr ""
+
+#: ../../scenarios/speed.rst:304
+msgid "exception()"
+msgstr ""
+
+#: ../../scenarios/speed.rst:304
+msgid ""
+"Return the exception raised by the call. If no exception was raised then "
+"this returns None. Note that this will block just like `result()`."
+msgstr ""
+
+#: ../../scenarios/speed.rst:309
+msgid "add_done_callback(fn)"
+msgstr ""
+
+#: ../../scenarios/speed.rst:307
+msgid ""
+"Attach a callback function that will be executed (as `fn(future)`) when "
+"the scheduled callable returns."
+msgstr ""
+
+#: ../../scenarios/speed.rst:348
+msgid ""
+"The `concurrent.futures`_ module contains two helper functions for "
+"working with Futures. The `as_completed(futures)` function returns an "
+"iterator over the list of futures, yielding the futures as they complete."
+msgstr ""
+
+#: ../../scenarios/speed.rst:352
+msgid ""
+"The `wait(futures)` function will simply block until all futures in the "
+"list of futures provided have completed."
+msgstr ""
+
+#: ../../scenarios/speed.rst:355
+msgid ""
+"For more information, on using the `concurrent.futures`_ module, consult "
+"the official documentation."
+msgstr ""
+
+#: ../../scenarios/speed.rst:359
+msgid "threading"
+msgstr ""
+
+#: ../../scenarios/speed.rst:361
+msgid ""
+"The standard library comes with a `threading`_ module that allows a user "
+"to work with multiple threads manually."
+msgstr ""
+
+#: ../../scenarios/speed.rst:364
+msgid ""
+"Running a function in another thread is as simple as passing a callable "
+"and its arguments to `Thread`'s constructor and then calling `start()`:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:379
+msgid "To wait until the thread has terminated, call `join()`:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:385
+msgid ""
+"After calling `join()`, it is always a good idea to check whether the "
+"thread is still alive (because the join call timed out):"
+msgstr ""
+
+#: ../../scenarios/speed.rst:395
+msgid ""
+"Because multiple threads have access to the same section of memory, "
+"sometimes there might be situations where two or more threads are trying "
+"to write to the same resource at the same time or where the output is "
+"dependent on the sequence or timing of certain events. This is called a "
+"`data race`_ or race condition. When this happens, the output will be "
+"garbled or you may encounter problems which are difficult to debug. A "
+"good example is this `Stack Overflow post`_."
+msgstr ""
+
+#: ../../scenarios/speed.rst:402
+msgid ""
+"The way this can be avoided is by using a `Lock`_ that each thread needs "
+"to acquire before writing to a shared resource. Locks can be acquired and"
+" released through either the contextmanager protocol (`with` statement), "
+"or by using `acquire()` and `release()` directly. Here is a (rather "
+"contrived) example:"
+msgstr ""
+
+#: ../../scenarios/speed.rst:434
+msgid ""
+"Here, we have a bunch of threads checking for changes on a list of sites "
+"and whenever there are any changes, they attempt to write those changes "
+"to a file by calling `log(changes)`. When `log()` is called, it will wait"
+" to acquire the lock with `with file_lock:`. This ensures that at any one"
+" time, only one thread is writing to the file."
+msgstr ""
+
+#: ../../scenarios/speed.rst:441
+msgid "Spawning Processes"
+msgstr ""
+
+#: ../../scenarios/speed.rst:445
+msgid "Multiprocessing"
+msgstr ""
+

@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/client.rst:4
+msgid "Network Applications"
+msgstr ""
+
+#: ../../scenarios/client.rst:11
+msgid "HTTP"
+msgstr ""
+
+#: ../../scenarios/client.rst:13
+msgid ""
+"The Hypertext Transfer Protocol (HTTP) is an application protocol for "
+"distributed, collaborative, hypermedia information systems. HTTP is the "
+"foundation of data communication for the World Wide Web."
+msgstr ""
+
+#: ../../scenarios/client.rst:18
+msgid "Requests"
+msgstr ""
+
+#: ../../scenarios/client.rst:20
+msgid ""
+"Python’s standard urllib2 module provides most of the HTTP capabilities "
+"you need, but the API is thoroughly broken. It was built for a different "
+"time — and a different web. It requires an enormous amount of work (even "
+"method overrides) to perform the simplest of tasks."
+msgstr ""
+
+#: ../../scenarios/client.rst:25
+msgid ""
+"Requests takes all of the work out of Python HTTP — making your "
+"integration with web services seamless. There’s no need to manually add "
+"query strings to your URLs, or to form-encode your POST data. Keep-alive "
+"and HTTP connection pooling are 100% automatic, powered by urllib3, which"
+" is embedded within Requests."
+msgstr ""
+
+#: ../../scenarios/client.rst:31
+msgid "`Documentation <http://docs.python-requests.org/en/latest/index.html>`_"
+msgstr ""
+
+#: ../../scenarios/client.rst:32
+msgid "`PyPi <http://pypi.org/project/requests>`_"
+msgstr ""
+
+#: ../../scenarios/client.rst:33
+msgid "`GitHub <https://github.com/kennethreitz/requests>`_"
+msgstr ""
+
+#: ../../scenarios/client.rst:38
+msgid "Distributed Systems"
+msgstr ""
+
+#: ../../scenarios/client.rst:42
+msgid "ZeroMQ"
+msgstr ""
+
+#: ../../scenarios/client.rst:44
+msgid ""
+"ØMQ (also spelled ZeroMQ, 0MQ or ZMQ) is a high-performance asynchronous "
+"messaging library aimed at use in scalable distributed or concurrent "
+"applications. It provides a message queue, but unlike message-oriented "
+"middleware, a ØMQ system can run without a dedicated message broker. The "
+"library is designed to have a familiar socket-style API."
+msgstr ""
+
+#: ../../scenarios/client.rst:51
+msgid "RabbitMQ"
+msgstr ""
+
+#: ../../scenarios/client.rst:53
+msgid ""
+"RabbitMQ is an open source message broker software that implements the "
+"Advanced Message Queuing Protocol (AMQP).  The RabbitMQ server is written"
+" in the Erlang programming language and is built on the Open Telecom "
+"Platform framework for clustering and failover. Client libraries to "
+"interface with the broker are available for all major programming "
+"languages."
+msgstr ""
+
+#: ../../scenarios/client.rst:59
+msgid "`Homepage <http://www.rabbitmq.com/>`_"
+msgstr ""
+
+#: ../../scenarios/client.rst:60
+msgid "`GitHub Organization <https://github.com/rabbitmq?page=1>`_"
+msgstr ""
+

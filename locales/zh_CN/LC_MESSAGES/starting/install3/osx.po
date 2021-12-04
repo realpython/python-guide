@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../starting/install3/osx.rst:8
+msgid "Installing Python 3 on Mac OS X"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:12
+msgid "**Mac OS X comes with Python 2.7 out of the box.**"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:14
+msgid ""
+"You do not need to install or configure anything else to use Python 2. "
+"These instructions document the installation of Python 3."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:17
+msgid ""
+"The version of Python that ships with OS X is great for learning, but "
+"it's not good for development. The version shipped with OS X may be out "
+"of date from the `official current Python release "
+"<https://www.python.org/downloads/mac-osx/>`_, which is considered the "
+"stable production version."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:25
+msgid "Doing it Right"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:27
+msgid "Let's install a real version of Python."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:29
+msgid ""
+"Before installing Python, you'll need to install GCC. GCC can be obtained"
+" by downloading `Xcode <https://developer.apple.com/xcode/>`_, the "
+"smaller `Command Line Tools <https://developer.apple.com/downloads/>`_ "
+"(must have an Apple account) or the even smaller `OSX-GCC-Installer "
+"<https://github.com/kennethreitz/osx-gcc-installer#readme>`_ package."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:36
+msgid ""
+"If you already have Xcode installed, do not install OSX-GCC-Installer. In"
+" combination, the software can cause issues that are difficult to "
+"diagnose."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:41
+msgid ""
+"If you perform a fresh install of Xcode, you will also need to add the "
+"commandline tools by running ``xcode-select --install`` on the terminal."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:44
+msgid ""
+"While OS X comes with a large number of Unix utilities, those familiar "
+"with Linux systems will notice one key component missing: a package "
+"manager. `Homebrew <https://brew.sh>`_ fills this void."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:48
+msgid ""
+"To `install Homebrew <https://brew.sh/#install>`_, open :file:`Terminal` "
+"or your favorite OS X terminal emulator and run"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:55
+msgid ""
+"The script will explain what changes it will make and prompt you before "
+"the installation begins. Once you've installed Homebrew, insert the "
+"Homebrew directory at the top of your :envvar:`PATH` environment "
+"variable. You can do this by adding the following line at the bottom of "
+"your :file:`~/.profile` file"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:65
+msgid "If you have OS X 10.12 (Sierra) or older use this line instead"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:71
+msgid "Now, we can install Python 3:"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:77
+msgid "This will take a minute or two."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:81
+msgid "Pip"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:83
+msgid "Homebrew installs ``pip`` pointing to the Homebrew'd Python 3 for you."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:88
+msgid "Working with Python 3"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:90
+msgid ""
+"At this point, you have the system Python 2.7 available, potentially the "
+":ref:`Homebrew version of Python 2 <install-osx>` installed, and the "
+"Homebrew version of Python 3 as well."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:98 ../../starting/install3/osx.rst:110
+msgid "will launch the Homebrew-installed Python 3 interpreter."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:104
+msgid "will launch the Homebrew-installed Python 2 interpreter (if any)."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:112
+msgid ""
+"If the Homebrew version of Python 2 is installed then ``pip2`` will point"
+" to Python 2. If the Homebrew version of Python 3 is installed then "
+"``pip`` will point to Python 3."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:115
+msgid "The rest of the guide will assume that ``python`` references Python 3."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:126
+msgid "Pipenv & Virtual Environments"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:128
+msgid ""
+"The next step is to install Pipenv, so you can install dependencies and "
+"manage virtual environments."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:130
+msgid ""
+"A Virtual Environment is a tool to keep the dependencies required by "
+"different projects in separate places, by creating virtual Python "
+"environments for them. It solves the \"Project X depends on version 1.x "
+"but, Project Y needs 4.x\" dilemma, and keeps your global site-packages "
+"directory clean and manageable."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:135
+msgid ""
+"For example, you can work on a project which requires Django 1.10 while "
+"also maintaining a project which requires Django 1.8."
+msgstr ""
+
+#: ../../starting/install3/osx.rst:138
+msgid ""
+"So, onward! To the :ref:`Pipenv & Virtual Environments "
+"<virtualenvironments-ref>` docs!"
+msgstr ""
+
+#: ../../starting/install3/osx.rst:142
+msgid ""
+"This page is a remixed version of `another guide "
+"<https://www.stuartellis.name/articles/python-development-windows/>`_, "
+"which is available under the same license."
+msgstr ""
+

@@ -288,3 +288,4 @@ intersphinx_mapping = {
 }
 
 locale_dirs = ['../locales']
+gettext_compact = False  # optional.
