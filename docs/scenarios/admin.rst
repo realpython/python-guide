@@ -190,7 +190,7 @@ tests (net, CPU) fail, it will send an email.
     server.quit()
 
 
-A full terminal application like a widely extended top is `glance <https://github.com/nicolargo/glances/>`_, which is based on psutil and has the ability for client-server monitoring.
+A full terminal application like a widely extended top is `Glance <https://github.com/nicolargo/glances/>`_, which is based on psutil and has the ability for client-server monitoring.
 
 *******
 Ansible
