@@ -6,78 +6,71 @@ Documentation
 
 .. image:: /_static/photos/35620636012_f66aa88f93_k_d.jpg
 
-Readability is a primary focus for Python developers, in both project
-and code documentation. Following some simple best practices can save
-both you and others a lot of time.
+La legibilidad es el enfoque primario para los desarrolladores en Python,
+tanto en proyectos como en la documentación del código. Seguir algunas 
+buenas prácticas puede ahorrarte y a los demás mucho tiempo. 
 
 
 *********************
-Project Documentation
+Documentación de proyectos
 *********************
 
-A :file:`README` file at the root directory should give general information
-to both users and maintainers of a project. It should be raw text or
-written in some very easy to read markup, such as :ref:`reStructuredText-ref`
-or Markdown. It should contain a few lines explaining the purpose of the
-project or library (without assuming the user knows anything about the
-project), the URL of the main source for the software, and some basic credit
-information. This file is the main entry point for readers of the code.
+Un archivo :file:`README` en el directorio raiz debería dar información general
+tanto a los usuarios como a los mantenedores de un proyecto. Debe ser un texto 
+plano o escrito en un lenguaje de marcas ligero como :ref:`reStructuredText-ref`
+o Markdown. Debe contener pocas líneas explicando el proposito del proyecto o 
+librería (sin asumir que el usuario sabe algo acerca del proyecto), la dirección URL 
+de la fuente principal del software, y alguna información básica sobre los créditos. 
+Este archivo es el punto de entrada principal para quienes leen el código. 
 
-An :file:`INSTALL` file is less necessary with Python.  The installation
-instructions are often reduced to one command, such as ``pip install
-module`` or ``python setup.py install``, and added to the :file:`README`
-file.
+Un archivo :file:`INSTALL` es menos necesario con Python. Las instrucciones
+de instalación se reducen normalmente a un solo comando como ``pip install
+module`` o ``python setup.py install``, y añadidos al archivo :file:`README`
 
-A :file:`LICENSE` file should *always* be present and specify the license
-under which the software is made available to the public.
+Un archivo :file:`LICENSE` siempre debe estar presente y especificar la licencia 
+bajo la cual el software se hace disponible al público.
 
-A :file:`TODO` file or a ``TODO`` section in :file:`README` should list the
-planned development for the code.
+Un archivo :file:`TODO` file o sección ``TODO`` en un archivo :file:`README` debe 
+contener la lista del desarrollo planeado para el código. 
 
-A :file:`CHANGELOG` file or section in :file:`README` should compile a short
-overview of the changes in the code base for the latest versions.
+Un archivo :file:`CHANGELOG` o una sección :file:`README` debe compilar una visión 
+general de los cambios en el código base para las últimas versiones. 
 
 
 *******************
-Project Publication
+Publicación del proyecto
 *******************
 
-Depending on the project, your documentation might include some or all
-of the following components:
+Dependiendo del proyecto, tu documentación puede incluir alguno o todos 
+los siguientes componentes: 
+- Una *introducción* debe dar un resumen de lo que se puede hacer con el producto,
+  usando uno o dos ejemplos sobresimplificados. Este es el discurso de 30 segundos de tu proyecto.
+  
+- Un *tutorial* debe mostrar algunos casos primarios de uso con mayor detalle. 
+  El lector seguirá paso a paso el procedimiento para establecer un prototipo funcional. 
 
-- An *introduction* should give a very short overview of what can be
-  done with the product, using one or two extremely simplified use
-  cases. This is the thirty-second pitch for your project.
+- Una *referencia del API* es generada tipicamente desde el código (consulta
+  :ref:`docstrings <docstring-ref>`). Esta enlista todas las interfaces disponibles publicamente,
+  parametros y valores de retorno. 
 
-- A *tutorial* should show some primary use cases in more detail. The reader
-  will follow a step-by-step procedure to set-up a working prototype.
-
-- An *API reference* is typically generated from the code (see
-  :ref:`docstrings <docstring-ref>`). It will list all publicly available
-  interfaces, parameters, and return values.
-
-- *Developer documentation* is intended for potential contributors. This can
-  include code convention and general design strategy of the project.
+- La *Documentación para desarrolladores* está destinada para contribuidores potenciales. 
+  Esta puede incluir convenciones de código y una estrategia general del proyecto.
 
 .. _sphinx-ref:
 
 Sphinx
 ~~~~~~
 
-Sphinx_ is far and away the most popular Python documentation
-tool. **Use it.**  It converts :ref:`restructuredtext-ref` markup language
-into a range of output formats including HTML, LaTeX (for printable
-PDF versions), manual pages, and plain text.
+Sphinx_ es por mucho la herramienta de documentación mas popular de Python. 
+**Usala.**  Convierte lenguaje de marcas ligero :ref:`restructuredtext-ref` 
+en diversos formatos de salida, incluidos HTML, LaTex (para versiones 
+imprimibles en PDF), páginas de manual y texto plano
 
-There is also **great**, **free** hosting for your Sphinx_ docs:
-`Read The Docs`_. Use it. You can configure it with commit hooks to
-your source repository so that rebuilding your documentation will
-happen automatically.
+Existe además un hospedaje **grandioso** y **gratuito** para tus documentos Sphinx_:
+`Read The Docs`_. Usalo. Puedes configurarlo commit hooks a tu repositorio fuente, 
+de forma que reconstruir tu documentación ocurrirá automáticamente. 
 
-When run, Sphinx_ will import your code and using Python's introspection
-features it will extract all function, method, and class signatures. It will
-also extract the accompanying docstrings, and compile it all into well
-structured and easily readable documentation for your project.
+Cuando se ejecuta, Sphinx_ importará tu código y usando las características de introspección de python, extraerá todas las funciones, métodos y classes signature. Tambien extraerá los docstrings que lo acompañan, y compilará todo en documentación bien estructurada y fácil de leer para tu proyecto.
 
 .. note::
 
