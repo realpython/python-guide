@@ -70,13 +70,16 @@ Existe además un hospedaje **grandioso** y **gratuito** para tus documentos Sph
 `Read The Docs`_. Usalo. Puedes configurarlo commit hooks a tu repositorio fuente, 
 de forma que reconstruir tu documentación ocurrirá automáticamente. 
 
-Cuando se ejecuta, Sphinx_ importará tu código y usando las características de introspección de python, extraerá todas las funciones, métodos y classes signature. Tambien extraerá los docstrings que lo acompañan, y compilará todo en documentación bien estructurada y fácil de leer para tu proyecto.
+Cuando se ejecuta, Sphinx_ importará tu código y usando las características de 
+introspección de python, extraerá todas las funciones, métodos y classes signature. 
+Tambien extraerá los docstrings que lo acompañan, y compilará todo en documentación
+bien estructurada y fácil de leer para tu proyecto.
 
-.. note::
+.. nota::
 
-    Sphinx is famous for its API generation, but it also works well
-    for general project documentation. This Guide is built with
-    Sphinx_ and is hosted on `Read The Docs`_
+    Sphinx es famoso por su generación de API, pero tambien funciona bien 
+    para documentación general de proyectos. Esta guía fue construida con
+    Sphinx_ y alojada en `Read The Docs`_
 
 .. _Sphinx: https://www.sphinx-doc.org
 .. _Read The Docs: http://readthedocs.org
@@ -86,58 +89,54 @@ Cuando se ejecuta, Sphinx_ importará tu código y usando las características d
 reStructuredText
 ~~~~~~~~~~~~~~~~
 
-Most Python documentation is written with reStructuredText_. It's like
-Markdown, but with all the optional extensions built in.
+La mayoría de la documentación de Python es escrita con reStructuredText_. 
+Es como Markdown, pero con todas las extensiones opcionales incorporadas. 
 
-The `reStructuredText Primer`_ and the `reStructuredText Quick
-Reference`_ should help you familiarize yourself with its syntax.
+El `reStructuredText Primer`_ y la `referencia rápida a reStructuredText`_ 
+debería ayudarte a familiarizarte con su sintaxis.
 
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
-.. _reStructuredText Primer: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
-.. _reStructuredText Quick Reference: http://docutils.sourceforge.net/docs/user/rst/quickref.html
+.. _reStructuredText Primer (inglés): https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+.. _reStructuredText Referencia rápida (inglés): http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 
 *************************
-Code Documentation Advice
+Consejo para documentar código
 *************************
 
-Comments clarify the code and they are added with purpose of making the
-code easier to understand. In Python, comments begin with a hash
-(number sign) (``#``).
+Los comentarios aclaran el código y son añadidos para hacer el código más fácil de entender. En Python, los comentarios empiezan con un signo numeral (``#``).
 
 .. _docstring-ref:
 
-In Python, *docstrings* describe modules, classes, and functions:
+En Python, los *docstrings* describen módulos, clases y funciones: 
 
 .. code-block:: python
 
     def square_and_rooter(x):
-        """Return the square root of self times self."""
+        """Regresa la raiz cuadrada de self multiplicado por si mismo."""
         ...
 
-In general, follow the comment section of :pep:`8#comments` (the "Python Style
-Guide"). More information about docstrings can be found at :pep:`0257#specification` (The Docstring Conventions Guide).
+En general, sigue sigue la seccion de comentarios de 
+:pep:`8#comments` (la "guia de estilo de Python"). Para mas información acerca de docstrings: 
+:pep:`0257#specification` (The Docstring Conventions Guide).
 
-Commenting Sections of Code
+Comentando secciones de código.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Do not use triple-quote strings to comment code*. This is not a good
-practice, because line-oriented command-line tools such as grep will
-not be aware that the commented code is inactive. It is better to add
-hashes at the proper indentation level for every commented line. Your
-editor probably has the ability to do this easily, and it is worth
-learning the comment/uncomment toggle.
+*No uses cadenas con comillas triples para comentar código* 
+No es una buena práctica, porque las herramientas orientadas a lineas de 
+las líneas de comando, como grep, no notarán que el código comentado está inactivo. 
+Es mejor añadir signos numerales (``#``) al nivel adecuado de indentación para cada línea comentada. 
+Tu editor probablemente tenga la habilidad de hacerlo fácilmente, 
+y vale la pena aprender aprender a comentar y descomentar.
 
 Docstrings and Magic
 ~~~~~~~~~~~~~~~~~~~~
 
-Some tools use docstrings to embed more-than-documentation behavior,
-such as unit test logic. Those can be nice, but you won't ever go
-wrong with vanilla "here's what this does."
+Algunas herramientas utilizan docstrings para insertar comportamientos mas allá de la documentación, como pruebas unitarias de lógica. 
+Estas pueden ser buenas, pero no puede salir mal el "esto es lo que hace" de la versión "vainilla". 
 
-Tools like Sphinx_ will parse your docstrings as reStructuredText and render it
-correctly as HTML. This makes it very easy to embed snippets of example code in
-a project's documentation.
+Herramientas como Sphinx_ analizarán tus docstrings como un reStructuredText y lo renderizarán correctamente como HTML. Esto hace muy fácil insertar snippets de código de ejemplo en la documentación de un proyecto.
 
 Additionally, Doctest_ will read all embedded docstrings that look like input
 from the Python commandline (prefixed with ">>>") and run them, checking to see
