@@ -208,14 +208,14 @@ el docstring es innecesario. Esto es porque con el módulo `inspect` de Python,
 ya es suficientemente sencillo encontrar esta información si es necesario, y 
 tambien está disponible a la vista al leer el código fuente. 
 
-In larger or more complex projects however, it is often a good idea to give
-more information about a function, what it does, any exceptions it may raise,
-what it returns, or relevant details about the parameters.
+Sin embargo, en proyectos mas grandes o complejos, usualmente es buena idea 
+dar mas información acerca de una función, lo que hace, cualquier excepción 
+que pueda dar, los retornos, o detalles importantes acerca de los parámetros.
 
-For more detailed documentation of code a popular style used, is the one used by the
-NumPy project, often called `NumPy style`_ docstrings. While it can take up more
-lines than the previous example, it allows the developer to include a lot
-more information about a method, function, or class. ::
+Para documentación mas detallada código, un estilo popular utilizado es el que 
+utiliza el proyecto NumPy, conocido como `NumPy style`_ docstrings. Mientras esto 
+puede llevar mas líneas que los ejemplos anteriores, permite al desarrollador
+incluir mucha más información acerca de un método, función o clase. ::
 
     def random_number_generator(arg1, arg2):
         """
@@ -238,18 +238,18 @@ more information about a method, function, or class. ::
         """
         return 42
 
-The `sphinx.ext.napoleon`_ plugin allows Sphinx to parse this style of
-docstrings, making it easy to incorporate NumPy style docstrings into your
-project.
+El plugin `sphinx.ext.napoleon`_ permite a Sphinx analizar este estilo de 
+docstrings, haciendo mas fácil incorporar el estilo de Numpy docstrings a 
+tu proyecto. 
 
-At the end of the day, it doesn't really matter what style is used for writing
-docstrings; their purpose is to serve as documentation for anyone who may need
-to read or make changes to your code. As long as it is correct, understandable,
-and gets the relevant points across then it has done the job it was designed to
-do.
+Al final del día, realmente no importa cual estilo se utilice para escribir
+docstrings; su proposito es servir como documentación para cualquiera que 
+pueda necesitar leer o hacer cambios en tu código. Mientras este sea correcto,
+entendible y tenga puntos relevantes, entonces ha hecho el trabajo para el que
+ha sido diseñado. 
 
 
-For further reading on docstrings, feel free to consult :pep:`257`
+Para mas información acerca de docstrings, sientete libre de consultar :pep:`257`
 
 .. _thomas-cokelaer.info: http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
 .. _sphinx.ext.napoleon: https://sphinxcontrib-napoleon.readthedocs.io/
@@ -257,32 +257,32 @@ For further reading on docstrings, feel free to consult :pep:`257`
 
 
 ***********
-Other Tools
+Otras herramientas
 ***********
 
-You might see these in the wild. Use :ref:`sphinx-ref`.
+Puedes haber visto las siguientes herramientas. Usa :ref:`sphinx-ref`.
 
 Pycco_
-    Pycco is a "literate-programming-style documentation generator"
-    and is a port of the node.js Docco_. It makes code into a
-    side-by-side HTML code and documentation.
-
+    Pycco is a "generador de documentación de estilo de programación alfabetizada"
+    y es portado de Docco, portado de node.js. Convierte el código a código 
+    HTML lado a lado, y documentación. 
+    
 .. _Pycco: https://pycco-docs.github.io/pycco/
 .. _Docco: http://jashkenas.github.com/docco
 
 Ronn_
-    Ronn builds Unix manuals. It converts human readable textfiles to roff
-    for terminal display, and also to HTML for the web.
-
+    Ronn construye manuales Unix. Convierte archivos de texto legibles por humanos a
+    roff para mostrarse en terminal, así como HTML para la web. 
+    
 .. _Ronn: https://github.com/rtomayko/ronn
 
 Epydoc_
-    Epydoc is discontinued. Use :ref:`sphinx-ref` instead.
+    Epydoc está descontinuado. Usa :ref:`sphinx-ref` en su lugar.
 
 .. _Epydoc: http://epydoc.sourceforge.net
 
 MkDocs_
-    MkDocs is a fast and simple static site generator that's geared towards
-    building project documentation with Markdown.
-
+    MkDocs es un rápido y simple generador de sitios estaticos enfocado a construir 
+    documentación de proyectos con Markdown. 
+    
 .. _MkDocs: http://www.mkdocs.org/
