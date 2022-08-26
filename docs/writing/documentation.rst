@@ -133,17 +133,21 @@ y vale la pena aprender aprender a comentar y descomentar.
 Docstrings and Magic
 ~~~~~~~~~~~~~~~~~~~~
 
-Algunas herramientas utilizan docstrings para insertar comportamientos mas allá de la documentación, como pruebas unitarias de lógica. 
-Estas pueden ser buenas, pero no puede salir mal el "esto es lo que hace" de la versión "vainilla". 
+Algunas herramientas utilizan docstrings para insertar
+comportamientos mas allá de la documentación, como pruebas 
+unitarias de lógica. Estas pueden ser buenas, pero no 
+puede salir mal el "esto es lo que hace" de la versión "vainilla". 
 
-Herramientas como Sphinx_ analizarán tus docstrings como un reStructuredText y lo renderizarán correctamente como HTML. Esto hace muy fácil insertar snippets de código de ejemplo en la documentación de un proyecto.
+Herramientas como Sphinx_ analizarán tus docstrings 
+como un reStructuredTexty lo renderizarán correctamente 
+como HTML. Esto hace muy fácil insertar snippets de código de ejemplo en la documentación de un proyecto.
 
-Additionally, Doctest_ will read all embedded docstrings that look like input
-from the Python commandline (prefixed with ">>>") and run them, checking to see
-if the output of the command matches the text on the following line. This
-allows developers to embed real examples and usage of functions alongside
-their source code. As a side effect, it also ensures that their code is
-tested and works.
+Adicionalmente, Doctest_ leerá todos los docstrings incrustados que parecen un input de 
+python en la línea de comandos (con el prefijo ">>>") y los correran, 
+verificando que las salidas de los comandos coincidan con el texto de 
+la línea siguiente. Esto permite a los desarrolladores insertar ejemplos
+reales y uso de funciones junto a su código fuente. Además, esto asegura
+que su código es probado y realmente funciona. 
 
 ::
 
@@ -158,49 +162,51 @@ tested and works.
 
 .. _Doctest: https://docs.python.org/3/library/doctest.html
 
-Docstrings versus Block comments
+Docstrings contra Block comments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These aren't interchangeable. For a function or class, the leading
-comment block is a programmer's note. The docstring describes the
-*operation* of the function or class:
+No son intercambiables. Para una función o clase, el bloque de 
+comentario inicial es una nota del programador. El docstring 
+describe la *operación* de la función o clase: 
 
 .. code-block:: python
 
-    # This function slows down program execution for some reason.
+    # Esta función alenta la ejecución del programa por alguna razón.
     def square_and_rooter(x):
-        """Returns the square root of self times self."""
+        """Devuelve la raiz cuadrada de sí mismo por sí mismo."""
 	...
 
-Unlike block comments, docstrings are built into the Python language itself.
-This means you can use all of Python's powerful introspection capabilities to
-access docstrings at runtime, compared with comments which are optimized out.
-Docstrings are accessible from both the `__doc__` dunder attribute for almost
-every Python object, as well as with the built in `help()` function.
+A diferencia de los bloques de comentario, los docstrings forman parte del 
+lenguaje de Python. 
+Eso significa que puedes usar todas las poderosas capacidades de instrospección
+de python para acceder a los docstrings en la ejecución, comparado con los comentarios 
+que están optimizados. 
+Los docstrings son accesibles desde el atributo dunder `__doc__` para casi 
+cualquier objeto de Python, así como la función `help()`.
 
-While block comments are usually used to explain *what* a section of code is
-doing, or the specifics of an algorithm, docstrings are more intended towards
-explaining other users of your code (or you in 6 months time) *how* a
-particular function can be used and the general purpose of a function, class,
-or module.
+Mientras los bloques de comentarios son usados generalmente para explicar *qué*
+hace una sección de código, o las especificaciones de un algorítmo, los docstrings
+se enfocan en explicar a otros usuarios tu código (o tú 6 meses despues) *cómo*
+una función particular puede ser usada y el propósito general de una función, 
+clase o módulo. 
 
-Writing Docstrings
+Escribiendo Docstrings
 ~~~~~~~~~~~~~~~~~~
 
-Depending on the complexity of the function, method, or class being written, a
-one-line docstring may be perfectly appropriate. These are generally used for
-really obvious cases, such as::
+Dependiendo de la complejidad de una función, método o clase siendo escrita, 
+un docstring de una línea puede ser perfectamente apropiado. Estos son generalmente
+utilizados para situaciones muy obvias como:: 
 
     def add(a, b):
         """Add two numbers and return the result."""
         return a + b
 
-The docstring should describe the function in a way that is easy to understand.
-For simple cases like trivial functions and classes, simply embedding the
-function's signature (i.e. `add(a, b) -> result`) in the docstring is
-unnecessary. This is because with Python's `inspect` module, it is already
-quite easy to find this information if needed, and it is also readily available
-by reading the source code.
+Los docstrings deben describir la función de forma que sea fácil de entender. 
+Para casos simples, como funciones triviales y clases, simplemente 
+agregando la firma de la función (por ejemplo `añadir(a, b) -> resultado`) en 
+el docstring es innecesario. Esto es porque con el módulo `inspect` de Python, 
+ya es suficientemente sencillo encontrar esta información si es necesario, y 
+tambien está disponible a la vista al leer el código fuente. 
 
 In larger or more complex projects however, it is often a good idea to give
 more information about a function, what it does, any exceptions it may raise,
