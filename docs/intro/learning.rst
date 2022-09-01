@@ -199,7 +199,23 @@ how to use Python to create progressively more elaborate 3D structures,
 making the process of learning Python fun and engaging.
 
     `Code the blocks <https://codetheblocks.com/tutorials/introduction>`_
+    
+    
+Compare Python courses
+~~~~~~~~~~~~~~~
 
+CoursesOnline is a learning course comparison website, which offers Python courses from a number of educational institutions for professionals looking to learn this skill, or enhance their existing knowledge
+
+"CoursesOnline: Python courses <https://www.coursesonline.co.uk/courses/python/>`_
+
+Programming Library
+~~~~~~~~~~~~~~~
+
+This course consists of over 2,500 hours of online course content covering a range of programming and development languages including C++, HTML, CSS, JavaScript, Java, Python, Ruby on Rails and more.
+
+The library is designed for a wide range of skill levels from new programmers through to experienced computer programmers looking to update and increase their knowledge.
+
+"ITonlinelearning: Programming Library course <https://www.itonlinelearning.com/package/programming-library/`_
 
 ************
 Intermediate
