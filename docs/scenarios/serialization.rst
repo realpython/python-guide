@@ -210,7 +210,7 @@ Pickle (nested data)
 ====================
 
 The native data serialization module for Python is called `Pickle
-<https://docs.python.org/2/library/pickle.html>`_.
+<https://docs.python.org/3/library/pickle.html>`_.
 
 Here's an example:
 
