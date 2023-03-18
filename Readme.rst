@@ -19,7 +19,7 @@ basis.
 
 
 Topics include:
-
+- How to install PYTHON IDLE
 - Platform and version-specific installations
 - Py2app, Py2exe, bbfreeze, pyInstaller
 - Pip
