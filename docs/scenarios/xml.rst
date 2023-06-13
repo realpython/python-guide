@@ -81,3 +81,30 @@ and then you can access elements, attributes, and values like this:
 xmltodict also lets you roundtrip back to XML with the unparse function,
 has a streaming mode suitable for handling files that don't fit in memory,
 and supports XML namespaces.
+
+**********
+xmlschema
+**********
+
+`xmlschema <https://github.com/sissaschool/xmlschema>`_ provides support for using XSD-Schemas in Python.
+Unlike other XML libraries, automatic type parsing is available, so f.e. if the schema defines an element to be of type ``int``, the parsed ``dict`` will contain also an ``int`` value for that element. 
+Moreover the library supports automatic and explicit validation of XML documents against a schema.
+
+.. code-block:: python
+
+    from xmlschema import XMLSchema, etree_tostring
+
+    # load a XSD schema file
+    schema = XMLSchema("your_schema.xsd")
+    
+    # validate against the schema
+    schema.validate("your_file.xml")
+    
+    # or
+    schema.is_valid("your_file.xml")
+    
+    # decode a file
+    data = schmema.decode("your_file.xml")
+    
+    # encode to string
+    s = etree_tostring(schema.encode(data))

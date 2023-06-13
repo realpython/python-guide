@@ -156,7 +156,7 @@ when you share your project with others. You should get output similar to this
     Adding requests to Pipfile's [packages]...
     P.S. You have excellent taste! ✨ 🍰 ✨
 
-.. _Requests: http://docs.python-requests.org/en/master/
+.. _Requests: https://requests.readthedocs.io/en/latest/
 
 
 Using installed packages

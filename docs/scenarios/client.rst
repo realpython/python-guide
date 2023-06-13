@@ -28,7 +28,7 @@ your URLs, or to form-encode your POST data. Keep-alive and HTTP connection
 pooling are 100% automatic, powered by urllib3, which is embedded within
 Requests.
 
-- `Documentation <http://docs.python-requests.org/en/latest/index.html>`_
+- `Documentation <https://requests.readthedocs.io/en/latest/>`_
 - `PyPi <http://pypi.org/project/requests>`_
 - `GitHub <https://github.com/kennethreitz/requests>`_
 

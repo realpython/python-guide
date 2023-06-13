@@ -253,7 +253,7 @@ and eventually an application, including a chapter on using zc.buildout.  Later
 chapters detail best practices such as writing documentation, test-driven
 development, version control, optimization, and profiling.
 
-    `Expert Python Programming <https://www.packtpub.com/application-development/expert-python-programming>`_
+    `Expert Python Programming <https://www.packtpub.com/product/expert-python-programming-third-edition/9781789808896>`_
 
 
 A Guide to Python's Magic Methods

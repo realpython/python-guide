@@ -43,7 +43,7 @@ reading. Each one of these projects is a paragon of Python coding.
   Requests is an Apache2 Licensed HTTP library, written in Python,
   for human beings.
 
-- `Tablib <https://github.com/kennethreitz/tablib>`_
+- `Tablib <https://github.com/jazzband/tablib>`_
   Tablib is a format-agnostic tabular dataset library, written in Python.
 
 
