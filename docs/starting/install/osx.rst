@@ -10,9 +10,10 @@ Installing Python 2 on Mac OS X
 .. note::
     Check out our :ref:`guide for installing Python 3 on OS X<install3-osx>`.
 
-**Mac OS X comes with Python 2.7 out of the box.**
+**Mac OS X comes with Python 2.7 out of the box between versions 10.8 and 12.3.**
 
-You do not need to install or configure anything else to use Python. Having said
+If your Mac OS X version is between the above versions,
+you do not need to install or configure anything else to use Python. Having said
 that, I would strongly recommend that you install the tools and libraries
 described in the next section before you start building Python applications for
 real-world use. In particular, you should always install Setuptools, as it makes
