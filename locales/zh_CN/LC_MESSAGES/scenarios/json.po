@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/json.rst:4
+msgid "JSON"
+msgstr ""
+
+#: ../../scenarios/json.rst:8
+msgid ""
+"The `json <https://docs.python.org/3/library/json.html>`_ library can "
+"parse JSON from strings or files. The library parses JSON into a Python "
+"dictionary or list. It can also convert Python dictionaries or lists into"
+" JSON strings."
+msgstr ""
+
+#: ../../scenarios/json.rst:15
+msgid "Parsing JSON"
+msgstr ""
+
+#: ../../scenarios/json.rst:17
+msgid "Take the following string containing JSON data:"
+msgstr ""
+
+#: ../../scenarios/json.rst:23
+msgid "It can be parsed like this:"
+msgstr ""
+
+#: ../../scenarios/json.rst:30
+msgid "and can now be used as a normal dictionary:"
+msgstr ""
+
+#: ../../scenarios/json.rst:37
+msgid "You can also convert the following to JSON:"
+msgstr ""
+

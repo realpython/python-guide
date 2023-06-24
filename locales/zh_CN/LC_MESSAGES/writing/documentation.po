@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../writing/documentation.rst:5
+msgid "Documentation"
+msgstr ""
+
+#: ../../writing/documentation.rst:9
+msgid ""
+"Readability is a primary focus for Python developers, in both project and"
+" code documentation. Following some simple best practices can save both "
+"you and others a lot of time."
+msgstr ""
+
+#: ../../writing/documentation.rst:16
+msgid "Project Documentation"
+msgstr ""
+
+#: ../../writing/documentation.rst:18
+msgid ""
+"A :file:`README` file at the root directory should give general "
+"information to both users and maintainers of a project. It should be raw "
+"text or written in some very easy to read markup, such as :ref"
+":`reStructuredText-ref` or Markdown. It should contain a few lines "
+"explaining the purpose of the project or library (without assuming the "
+"user knows anything about the project), the URL of the main source for "
+"the software, and some basic credit information. This file is the main "
+"entry point for readers of the code."
+msgstr ""
+
+#: ../../writing/documentation.rst:26
+msgid ""
+"An :file:`INSTALL` file is less necessary with Python.  The installation "
+"instructions are often reduced to one command, such as ``pip install "
+"module`` or ``python setup.py install``, and added to the :file:`README` "
+"file."
+msgstr ""
+
+#: ../../writing/documentation.rst:31
+msgid ""
+"A :file:`LICENSE` file should *always* be present and specify the license"
+" under which the software is made available to the public."
+msgstr ""
+
+#: ../../writing/documentation.rst:34
+msgid ""
+"A :file:`TODO` file or a ``TODO`` section in :file:`README` should list "
+"the planned development for the code."
+msgstr ""
+
+#: ../../writing/documentation.rst:37
+msgid ""
+"A :file:`CHANGELOG` file or section in :file:`README` should compile a "
+"short overview of the changes in the code base for the latest versions."
+msgstr ""
+
+#: ../../writing/documentation.rst:43
+msgid "Project Publication"
+msgstr ""
+
+#: ../../writing/documentation.rst:45
+msgid ""
+"Depending on the project, your documentation might include some or all of"
+" the following components:"
+msgstr ""
+
+#: ../../writing/documentation.rst:48
+msgid ""
+"An *introduction* should give a very short overview of what can be done "
+"with the product, using one or two extremely simplified use cases. This "
+"is the thirty-second pitch for your project."
+msgstr ""
+
+#: ../../writing/documentation.rst:52
+msgid ""
+"A *tutorial* should show some primary use cases in more detail. The "
+"reader will follow a step-by-step procedure to set-up a working "
+"prototype."
+msgstr ""
+
+#: ../../writing/documentation.rst:55
+msgid ""
+"An *API reference* is typically generated from the code (see "
+":ref:`docstrings <docstring-ref>`). It will list all publicly available "
+"interfaces, parameters, and return values."
+msgstr ""
+
+#: ../../writing/documentation.rst:59
+msgid ""
+"*Developer documentation* is intended for potential contributors. This "
+"can include code convention and general design strategy of the project."
+msgstr ""
+
+#: ../../writing/documentation.rst:65
+msgid "Sphinx"
+msgstr ""
+
+#: ../../writing/documentation.rst:67
+msgid ""
+"Sphinx_ is far and away the most popular Python documentation tool. **Use"
+" it.**  It converts :ref:`restructuredtext-ref` markup language into a "
+"range of output formats including HTML, LaTeX (for printable PDF "
+"versions), manual pages, and plain text."
+msgstr ""
+
+#: ../../writing/documentation.rst:72
+msgid ""
+"There is also **great**, **free** hosting for your Sphinx_ docs: `Read "
+"The Docs`_. Use it. You can configure it with commit hooks to your source"
+" repository so that rebuilding your documentation will happen "
+"automatically."
+msgstr ""
+
+#: ../../writing/documentation.rst:77
+msgid ""
+"When run, Sphinx_ will import your code and using Python's introspection "
+"features it will extract all function, method, and class signatures. It "
+"will also extract the accompanying docstrings, and compile it all into "
+"well structured and easily readable documentation for your project."
+msgstr ""
+
+#: ../../writing/documentation.rst:84
+msgid ""
+"Sphinx is famous for its API generation, but it also works well for "
+"general project documentation. This Guide is built with Sphinx_ and is "
+"hosted on `Read The Docs`_"
+msgstr ""
+
+#: ../../writing/documentation.rst:94
+msgid "reStructuredText"
+msgstr ""
+
+#: ../../writing/documentation.rst:96
+msgid ""
+"Most Python documentation is written with reStructuredText_. It's like "
+"Markdown, but with all the optional extensions built in."
+msgstr ""
+
+#: ../../writing/documentation.rst:99
+msgid ""
+"The `reStructuredText Primer`_ and the `reStructuredText Quick "
+"Reference`_ should help you familiarize yourself with its syntax."
+msgstr ""
+
+#: ../../writing/documentation.rst:109
+msgid "Code Documentation Advice"
+msgstr ""
+
+#: ../../writing/documentation.rst:111
+msgid ""
+"Comments clarify the code and they are added with purpose of making the "
+"code easier to understand. In Python, comments begin with a hash (number "
+"sign) (``#``)."
+msgstr ""
+
+#: ../../writing/documentation.rst:117
+msgid "In Python, *docstrings* describe modules, classes, and functions:"
+msgstr ""
+
+#: ../../writing/documentation.rst:125
+msgid ""
+"In general, follow the comment section of :pep:`8#comments` (the \"Python"
+" Style Guide\"). More information about docstrings can be found at "
+":pep:`0257#specification` (The Docstring Conventions Guide)."
+msgstr ""
+
+#: ../../writing/documentation.rst:129
+msgid "Commenting Sections of Code"
+msgstr ""
+
+#: ../../writing/documentation.rst:131
+msgid ""
+"*Do not use triple-quote strings to comment code*. This is not a good "
+"practice, because line-oriented command-line tools such as grep will not "
+"be aware that the commented code is inactive. It is better to add hashes "
+"at the proper indentation level for every commented line. Your editor "
+"probably has the ability to do this easily, and it is worth learning the "
+"comment/uncomment toggle."
+msgstr ""
+
+#: ../../writing/documentation.rst:139
+msgid "Docstrings and Magic"
+msgstr ""
+
+#: ../../writing/documentation.rst:141
+msgid ""
+"Some tools use docstrings to embed more-than-documentation behavior, such"
+" as unit test logic. Those can be nice, but you won't ever go wrong with "
+"vanilla \"here's what this does.\""
+msgstr ""
+
+#: ../../writing/documentation.rst:145
+msgid ""
+"Tools like Sphinx_ will parse your docstrings as reStructuredText and "
+"render it correctly as HTML. This makes it very easy to embed snippets of"
+" example code in a project's documentation."
+msgstr ""
+
+#: ../../writing/documentation.rst:149
+msgid ""
+"Additionally, Doctest_ will read all embedded docstrings that look like "
+"input from the Python commandline (prefixed with \">>>\") and run them, "
+"checking to see if the output of the command matches the text on the "
+"following line. This allows developers to embed real examples and usage "
+"of functions alongside their source code. As a side effect, it also "
+"ensures that their code is tested and works."
+msgstr ""
+
+#: ../../writing/documentation.rst:170
+msgid "Docstrings versus Block comments"
+msgstr ""
+
+#: ../../writing/documentation.rst:172
+msgid ""
+"These aren't interchangeable. For a function or class, the leading "
+"comment block is a programmer's note. The docstring describes the "
+"*operation* of the function or class:"
+msgstr ""
+
+#: ../../writing/documentation.rst:183
+msgid ""
+"Unlike block comments, docstrings are built into the Python language "
+"itself. This means you can use all of Python's powerful introspection "
+"capabilities to access docstrings at runtime, compared with comments "
+"which are optimized out. Docstrings are accessible from both the "
+"`__doc__` dunder attribute for almost every Python object, as well as "
+"with the built in `help()` function."
+msgstr ""
+
+#: ../../writing/documentation.rst:189
+msgid ""
+"While block comments are usually used to explain *what* a section of code"
+" is doing, or the specifics of an algorithm, docstrings are more intended"
+" towards explaining other users of your code (or you in 6 months time) "
+"*how* a particular function can be used and the general purpose of a "
+"function, class, or module."
+msgstr ""
+
+#: ../../writing/documentation.rst:196
+msgid "Writing Docstrings"
+msgstr ""
+
+#: ../../writing/documentation.rst:198
+msgid ""
+"Depending on the complexity of the function, method, or class being "
+"written, a one-line docstring may be perfectly appropriate. These are "
+"generally used for really obvious cases, such as::"
+msgstr ""
+
+#: ../../writing/documentation.rst:206
+msgid ""
+"The docstring should describe the function in a way that is easy to "
+"understand. For simple cases like trivial functions and classes, simply "
+"embedding the function's signature (i.e. `add(a, b) -> result`) in the "
+"docstring is unnecessary. This is because with Python's `inspect` module,"
+" it is already quite easy to find this information if needed, and it is "
+"also readily available by reading the source code."
+msgstr ""
+
+#: ../../writing/documentation.rst:213
+msgid ""
+"In larger or more complex projects however, it is often a good idea to "
+"give more information about a function, what it does, any exceptions it "
+"may raise, what it returns, or relevant details about the parameters."
+msgstr ""
+
+#: ../../writing/documentation.rst:217
+msgid ""
+"For more detailed documentation of code a popular style used, is the one "
+"used by the NumPy project, often called `NumPy style`_ docstrings. While "
+"it can take up more lines than the previous example, it allows the "
+"developer to include a lot more information about a method, function, or "
+"class. ::"
+msgstr ""
+
+#: ../../writing/documentation.rst:243
+msgid ""
+"The `sphinx.ext.napoleon`_ plugin allows Sphinx to parse this style of "
+"docstrings, making it easy to incorporate NumPy style docstrings into "
+"your project."
+msgstr ""
+
+#: ../../writing/documentation.rst:247
+msgid ""
+"At the end of the day, it doesn't really matter what style is used for "
+"writing docstrings; their purpose is to serve as documentation for anyone"
+" who may need to read or make changes to your code. As long as it is "
+"correct, understandable, and gets the relevant points across then it has "
+"done the job it was designed to do."
+msgstr ""
+
+#: ../../writing/documentation.rst:254
+msgid "For further reading on docstrings, feel free to consult :pep:`257`"
+msgstr ""
+
+#: ../../writing/documentation.rst:263
+msgid "Other Tools"
+msgstr ""
+
+#: ../../writing/documentation.rst:265
+msgid "You might see these in the wild. Use :ref:`sphinx-ref`."
+msgstr ""
+
+#: ../../writing/documentation.rst:270
+msgid "Pycco_"
+msgstr ""
+
+#: ../../writing/documentation.rst:268
+msgid ""
+"Pycco is a \"literate-programming-style documentation generator\" and is "
+"a port of the node.js Docco_. It makes code into a side-by-side HTML code"
+" and documentation."
+msgstr ""
+
+#: ../../writing/documentation.rst:277
+msgid "Ronn_"
+msgstr ""
+
+#: ../../writing/documentation.rst:276
+msgid ""
+"Ronn builds Unix manuals. It converts human readable textfiles to roff "
+"for terminal display, and also to HTML for the web."
+msgstr ""
+
+#: ../../writing/documentation.rst:282
+msgid "Epydoc_"
+msgstr ""
+
+#: ../../writing/documentation.rst:282
+msgid "Epydoc is discontinued. Use :ref:`sphinx-ref` instead."
+msgstr ""
+
+#: ../../writing/documentation.rst:288
+msgid "MkDocs_"
+msgstr ""
+
+#: ../../writing/documentation.rst:287
+msgid ""
+"MkDocs is a fast and simple static site generator that's geared towards "
+"building project documentation with Markdown."
+msgstr ""
+

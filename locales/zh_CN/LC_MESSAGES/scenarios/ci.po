@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/ci.rst:4
+msgid "Continuous Integration"
+msgstr ""
+
+#: ../../scenarios/ci.rst:9
+msgid "For advice on writing your tests, see :doc:`/writing/tests`."
+msgstr ""
+
+#: ../../scenarios/ci.rst:14
+msgid "Why?"
+msgstr ""
+
+#: ../../scenarios/ci.rst:16
+msgid ""
+"Martin Fowler, who first wrote about `Continuous Integration "
+"<http://martinfowler.com/articles/continuousIntegration.html>`_ (short: "
+"CI) together with Kent Beck, describes CI as follows:"
+msgstr ""
+
+#: ../../scenarios/ci.rst:19
+msgid ""
+"Continuous Integration is a software development practice where members "
+"of a team integrate their work frequently, usually each person integrates"
+" at least daily - leading to multiple integrations per day. Each "
+"integration is verified by an automated build (including test) to detect "
+"integration errors as quickly as possible. Many teams find that this "
+"approach leads to significantly reduced integration problems and allows a"
+" team to develop cohesive software more rapidly."
+msgstr ""
+
+#: ../../scenarios/ci.rst:30
+msgid "Jenkins"
+msgstr ""
+
+#: ../../scenarios/ci.rst:32
+msgid ""
+"`Jenkins CI <http://jenkins-ci.org>`_ is an extensible Continuous "
+"Integration engine. Use it."
+msgstr ""
+
+#: ../../scenarios/ci.rst:37
+msgid "Buildbot"
+msgstr ""
+
+#: ../../scenarios/ci.rst:39
+msgid ""
+"`Buildbot <http://docs.buildbot.net/current/>`_ is a Python system to "
+"automate the compile/test cycle to validate code changes."
+msgstr ""
+
+#: ../../scenarios/ci.rst:45
+msgid "Tox"
+msgstr ""
+
+#: ../../scenarios/ci.rst:47
+msgid ""
+"`tox <https://tox.readthedocs.io/en/latest/>`_ is an automation tool "
+"providing packaging, testing, and deployment of Python software right "
+"from the console or CI server. It is a generic virtualenv management and "
+"test command line tool which provides the following features:"
+msgstr ""
+
+#: ../../scenarios/ci.rst:52
+msgid ""
+"Checking that packages install correctly with different Python versions "
+"and interpreters"
+msgstr ""
+
+#: ../../scenarios/ci.rst:54
+msgid ""
+"Running tests in each of the environments, configuring your test tool of "
+"choice"
+msgstr ""
+
+#: ../../scenarios/ci.rst:56
+msgid ""
+"Acting as a front-end to Continuous Integration servers, reducing "
+"boilerplate and merging CI and shell-based testing"
+msgstr ""
+
+#: ../../scenarios/ci.rst:62
+msgid "Travis-CI"
+msgstr ""
+
+#: ../../scenarios/ci.rst:64
+msgid ""
+"`Travis-CI <https://travis-ci.org/>`_ is a distributed CI server which "
+"builds tests for open source projects for free. It provides multiple "
+"workers to run Python tests on and seamlessly integrates with GitHub. You"
+" can even have it comment on your Pull Requests whether this particular "
+"changeset breaks the build or not. So, if you are hosting your code on "
+"GitHub, Travis-CI is a great and easy way to get started with Continuous "
+"Integration."
+msgstr ""
+
+#: ../../scenarios/ci.rst:71
+msgid ""
+"In order to get started, add a :file:`.travis.yml` file to your "
+"repository with this example content::"
+msgstr ""
+
+#: ../../scenarios/ci.rst:87
+msgid ""
+"This will get your project tested on all the listed Python versions by "
+"running the given script, and will only build the ``master`` branch. "
+"There are a lot more options you can enable, like notifications, before "
+"and after steps, and much more. The `Travis-CI docs <https://docs.travis-"
+"ci.com/user/languages/python/>`_ explain all of these options, and are "
+"very thorough."
+msgstr ""
+
+#: ../../scenarios/ci.rst:93
+msgid ""
+"In order to activate testing for your project, go to `the Travis-CI site "
+"<https://travis-ci.org/>`_ and login with your GitHub account. Then "
+"activate your project in your profile settings and you're ready to go. "
+"From now on, your project's tests will be run on every push to GitHub."
+msgstr ""
+

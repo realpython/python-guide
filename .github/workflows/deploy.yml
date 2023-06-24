@@ -1,0 +1,38 @@
+name: deploy
+on:
+  push:
+    branches:
+      - xin
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+      - uses: s-weigand/setup-conda@v1
+      - run: conda --version
+      - run: which python
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install sphinx-intl
+
+      - name: Build the book
+        run: |
+          sphinx-build -b gettext docs build/gettext
+          sphinx-intl update -p build/gettext -l zh_CN
+          sphinx-build -D language=zh_CN -b html docs build/html
+
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/html
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
