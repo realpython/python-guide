@@ -127,8 +127,7 @@ expose Python code to other languages in the .NET framework.
 IronPython directly into the Visual Studio development environment, making it
 an ideal choice for Windows developers.
 
-IronPython supports Python 2.7. [#iron_ver]_ IronPython 3 [#iron_ver3]_
-is being developed, but is not ready for use as of September 2020.
+IronPython supports Python 2.7. [#iron_ver]_ IronPython 3 supports Python 3.4. [#iron_ver3]_ 
 
 PythonNet
 ---------
@@ -144,7 +143,7 @@ installations on non-Windows operating systems, such as OS X and
 Linux, to operate within the .NET framework.  It can be run in
 addition to IronPython without conflict.
 
-Pythonnet is compatible with Python 2.7 and 3.5-3.8. [#pythonnet_ver1]_
+Pythonnet is compatible with Python 2.7 and 3.7-3.11. [#pythonnet_ver1]_
 
 .. [#pypy_ver] https://pypy.org/compat.html
 
