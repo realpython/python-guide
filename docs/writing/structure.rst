@@ -225,7 +225,7 @@ Then, within the individual test modules, import the module like so:
 
 ::
 
-    from .context import sample
+    from context import sample
 
 This will always work as expected, regardless of installation method.
 
