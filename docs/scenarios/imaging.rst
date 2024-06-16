@@ -62,7 +62,7 @@ Example
     exif_data
 
 There are more examples of the Pillow library in the
-`Pillow tutorial <https://pillow.readthedocs.io/en/3.0.x/handbook/tutorial.html>`_.
+`Pillow tutorial <https://pillow.readthedocs.io/en/stable/handbook/tutorial.html>`_.
 
 
 ***************************
@@ -109,4 +109,4 @@ Example
 
 There are more Python-implemented examples of OpenCV in this `collection of
 tutorials
-<https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html>`_.
+<https://opencv-tutorial.readthedocs.io/en/latest/>`_.
