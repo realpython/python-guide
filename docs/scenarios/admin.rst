@@ -395,17 +395,3 @@ up. Buildout is primarily used to download and set up dependencies in `Python
 eggs <https://stackoverflow.com/questions/2051192/what-is-a-python-egg>`_
 format of the software being developed or deployed. Recipes for build tasks in
 any environment can be created, and many are already available.
-
-
-*******
-Shinken
-*******
-
-`Shinken <http://www.shinken-monitoring.org/>`_ is a modern, Nagios compatible
-monitoring framework written in Python. Its main goal is to give users a flexible
-architecture for their monitoring system that is designed to scale to large
-environments.
-
-Shinken is backwards-compatible with the Nagios configuration standard and
-plugins. It works on any operating system and architecture that supports Python,
-which includes Windows, Linux, and FreeBSD.
