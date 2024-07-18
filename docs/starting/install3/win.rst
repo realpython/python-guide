@@ -33,7 +33,7 @@ All supported versions of Python 3 include pip, so just make sure it's up to dat
 
 .. code-block:: doscon
 
-    python -m pip install -U pip
+    py -m pip install -U pip
 
 
 *****************************
