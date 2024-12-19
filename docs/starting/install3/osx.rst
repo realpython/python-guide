@@ -12,8 +12,7 @@ Installing Python 3 on Mac OS X
 **Mac OS X comes with Python 2.7 out of the box between versions 10.8 and 12.3.**
 
 If your Mac OS X version is between the above versions,
-you do not need to install or configure anything else to use Python 2. These
-instructions document the installation of Python 3.
+you do not need to install or configure anything else to use Python. 
 
 The version of Python that ships with OS X is great for learning, but it's not
 good for development. The version shipped with OS X may be out of date from the
@@ -88,8 +87,8 @@ Homebrew installs ``pip`` pointing to the Homebrew'd Python 3 for you.
 Working with Python 3
 *********************
 
-At this point, you have the system Python 2.7 available, potentially the
-:ref:`Homebrew version of Python 2 <install-osx>` installed, and the Homebrew
+
+At this point, you have the system Python available, and the Homebrew
 version of Python 3 as well.
 
 .. code-block:: console
@@ -100,17 +99,10 @@ will launch the Homebrew-installed Python 3 interpreter.
 
 .. code-block:: console
 
-    $ python2
-
-will launch the Homebrew-installed Python 2 interpreter (if any).
-
-.. code-block:: console
-
     $ python3
 
 will launch the Homebrew-installed Python 3 interpreter.
 
-If the Homebrew version of Python 2 is installed then ``pip2`` will point to Python 2.
 If the Homebrew version of Python 3 is installed then ``pip`` will point to Python 3.
 
 The rest of the guide will assume that ``python`` references Python 3.
@@ -119,7 +111,7 @@ The rest of the guide will assume that ``python`` references Python 3.
 
     # Do I have a Python 3 installed?
     $ python --version
-    Python 3.7.1 # Success!
+    Python 3.9.6 # Success!
 
 
 *****************************
