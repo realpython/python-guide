@@ -303,7 +303,7 @@ structures and algorithms. All concepts are illustrated with Python code along
 with interactive samples that can be run directly in the browser.
 
     `Problem Solving with Algorithms and Data Structures
-    <http://www.interactivepython.org/courselib/static/pythonds/index.html>`_
+    <https://runestone.academy/ns/books/published/pythonds/index.html>`_
 
 Programming Collective Intelligence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
