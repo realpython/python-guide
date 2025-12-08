@@ -6,6 +6,7 @@ The Community
 #############
 
 .. image:: /_static/photos/34689432801_78d97ecec9_k_d.jpg
+    :alt: Python community gathering photo
 
 
 ****
@@ -17,7 +18,7 @@ Benevolent Dictator For Life.
 
 
 **************************
-Python Software Foundation
+Python Software Foundation (PSF)
 **************************
 
 
@@ -25,7 +26,7 @@ The mission of the Python Software Foundation is to promote, protect, and
 advance the Python programming language, and to support and facilitate the
 growth of a diverse and international community of Python programmers.
 
-`Learn More about the PSF <http://www.python.org/psf/>`_.
+`Learn More about the PSF <https://www.python.org/psf/>`_.
 
 
 ****
@@ -63,17 +64,18 @@ There are a few PEPs that could be considered required reading:
     Gives guidelines for semantics and conventions associated with Python
     docstrings.
 
-You can read more at `The PEP Index <http://www.python.org/dev/peps/>`_.
+You can read more at `The PEP Index <https://www.python.org/dev/peps/>`_.
 
 Submitting a PEP
 ~~~~~~~~~~~~~~~~
 
-PEPs are peer-reviewed and accepted/rejected after much discussion. Anyone
-can write and submit a PEP for review.
+PEPs are peer-reviewed and accepted/rejected after much discussion. 
+Anyone can write and submit a PEP for review.
 
 Here's an overview of the PEP acceptance workflow:
 
 .. image:: ../_static/pep-0001-1.png
+    :alt: PEP acceptance workflow diagram
 
 
 ******************
@@ -84,7 +86,7 @@ The major events for the Python community are developer conferences. The two
 most notable conferences are PyCon, which is held in the US, and its European
 sibling, EuroPython.
 
-A comprehensive list of conferences is maintained at `pycon.org <http://www.pycon.org/>`_.
+A comprehensive list of conferences is maintained at `pycon.org <https://www.pycon.org/>`_.
 
 
 ******************
@@ -93,7 +95,7 @@ Python User Groups
 
 User Groups are where a bunch of Python developers meet to present or talk
 about Python topics of interest. A list of local user groups is maintained at
-the `Python Software Foundation Wiki <http://wiki.python.org/moin/LocalUserGroups>`_.
+the `Python Software Foundation Wiki <https://wiki.python.org/moin/LocalUserGroups>`_.
 
 
 ******************
