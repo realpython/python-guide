@@ -199,6 +199,20 @@ how to use Python to create progressively more elaborate 3D structures,
 making the process of learning Python fun and engaging.
 
     `Code the blocks <https://codetheblocks.com/tutorials/introduction>`_
+Simple Python Example
+---------------------
+
+The following example demonstrates a simple and readable Python function
+using type hints. This gives beginners a quick look at what real Python code
+looks like before exploring external learning resources.
+
+.. code-block:: python
+
+   def greet(name: str) -> str:
+       return f"Hello, {name}"
+
+This example improves clarity for new learners by showing clean syntax and
+basic function structure.
 
 
 ************
