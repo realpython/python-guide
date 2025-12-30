@@ -1,41 +1,40 @@
-
-
 #############
 Documentation
 #############
 
 .. image:: /_static/photos/35620636012_f66aa88f93_k_d.jpg
 
-Readability is a primary focus for Python developers, in both project
-and code documentation. Following some simple best practices can save
-both you and others a lot of time.
-
+Readability is a primary focus for Python developers, both in project
+documentation and in code documentation. Following a few simple best
+practices can save both you and others a significant amount of time.
 
 *********************
 Project Documentation
 *********************
 
-A :file:`README` file at the root directory should give general information
-to both users and maintainers of a project. It should be raw text or
-written in some very easy to read markup, such as :ref:`reStructuredText-ref`
-or Markdown. It should contain a few lines explaining the purpose of the
-project or library (without assuming the user knows anything about the
-project), the URL of the main source for the software, and some basic credit
-information. This file is the main entry point for readers of the code.
+A :file:`README` file at the root directory should provide general
+information to both users and maintainers of a project. It should be
+plain text or written in an easy-to-read markup language, such as
+:ref:`reStructuredText-ref` or Markdown. The README should include a
+brief explanation of the purpose of the project or library (without
+assuming prior knowledge), the URL of the main source repository, and
+basic credit information. This file serves as the primary entry point
+for readers of the code.
 
-An :file:`INSTALL` file is less necessary with Python.  The installation
-instructions are often reduced to one command, such as ``pip install
-module`` or ``python setup.py install``, and added to the :file:`README`
-file.
+An :file:`INSTALL` file is generally unnecessary for Python projects.
+Installation instructions are often reduced to a single command, such
+as ``pip install module`` or ``python setup.py install``, and are
+typically included in the :file:`README` file.
 
-A :file:`LICENSE` file should *always* be present and specify the license
-under which the software is made available to the public.
+A :file:`LICENSE` file should *always* be present and must specify the
+license under which the software is made available to the public.
 
-A :file:`TODO` file or a ``TODO`` section in :file:`README` should list the
-planned development for the code.
+A :file:`TODO` file, or a ``TODO`` section within the :file:`README`,
+should list planned future development for the project.
 
-A :file:`CHANGELOG` file or section in :file:`README` should compile a short
-overview of the changes in the code base for the latest versions.
+A :file:`CHANGELOG` file, or a section within the :file:`README`,
+should provide a concise overview of changes made in recent versions
+of the codebase.
 
 
 *******************
@@ -288,3 +287,20 @@ MkDocs_
     building project documentation with Markdown.
 
 .. _MkDocs: http://www.mkdocs.org/
+
+*************************
+Code Documentation Advice
+*************************
+
+Comments clarify code and are added to make it easier to understand.
+In Python, comments begin with a hash (number sign) (``#``).
+
+In general, follow the comment guidelines described in
+:pep:`8#comments` (the "Python Style Guide"). More information about
+docstrings can be found in :pep:`0257#specification`
+(The Docstring Conventions Guide).
+
+While block comments are typically used to explain *what* a section
+of code is doing or the details of an algorithm, docstrings are
+intended to explain *how* a function, class, or module should be used
+and its overall purpose.
