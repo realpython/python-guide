@@ -1,5 +1,5 @@
 docs/_build
-.idea
+.idea LOKA
 
 # Ignore irrelevant files from the Sublime Text editor
 *.sublime-workspace
