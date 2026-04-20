@@ -360,7 +360,7 @@ To install (make sure **virtualenv** is already installed):
 In Windows, the default path for WORKON_HOME is %USERPROFILE%\\Envs
 
 Basic Usage
-~~~~~~~~~~~
+-----------
 
 1. Create a virtual environment:
 
@@ -404,7 +404,7 @@ can quickly switch between environments.
    $ rmvirtualenv venv
 
 Other useful commands
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 ``lsvirtualenv``
   List all of the environments.
