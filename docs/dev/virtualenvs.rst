@@ -404,7 +404,7 @@ can quickly switch between environments.
    $ rmvirtualenv venv
 
 Other useful commands
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 ``lsvirtualenv``
   List all of the environments.
