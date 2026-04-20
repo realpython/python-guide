@@ -18,7 +18,7 @@ This is the official tutorial. It covers all the basics, and offers a tour of
 the language and the standard library. Recommended for those who need a
 quick-start guide to the language.
 
-    `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
+    `The Python Tutorial <https://docs.python.org/3/tutorial/index.html>`_
 
 Real Python
 ~~~~~~~~~~~
@@ -368,7 +368,7 @@ The Python Language Reference
 This is Python's reference manual. It covers the syntax and the core semantics
 of the language.
 
-    `The Python Language Reference <http://docs.python.org/reference/index.html>`_
+    `The Python Language Reference <https://docs.python.org/3/reference/index.html>`_
 
 Python Essential Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

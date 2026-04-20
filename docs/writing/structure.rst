@@ -394,7 +394,7 @@ will interfere with the way Python looks for modules.
 
 In the case of `my.spam.py` Python expects to find a :file:`spam.py` file in a
 folder named :file:`my` which is not the case. There is an
-`example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the
+`example <https://docs.python.org/3/tutorial/modules.html#packages>`_ of how the
 dot notation should be used in the Python docs.
 
 If you like, you could name your module :file:`my_spam.py`, but even our trusty

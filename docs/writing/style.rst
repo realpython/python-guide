@@ -573,7 +573,7 @@ Check if a variable equals a constant
 
 You don't need to explicitly compare a value to True, or None, or 0 -- you can
 just add it to the if statement. See `Truth Value Testing
-<http://docs.python.org/library/stdtypes.html#truth-value-testing>`_ for a
+<https://docs.python.org/3/library/stdtypes.html#truth-value-testing>`_ for a
 list of what is considered false.
 
 **Bad**:
@@ -596,7 +596,7 @@ list of what is considered false.
 
     # or check for the opposite
     if not attr:
-        print('attr is falsey!')
+        print('attr is falsy!')
 
     # or, since None is considered false, explicitly check for it
     if attr is None:
@@ -635,11 +635,11 @@ Short Ways to Manipulate Lists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `List comprehensions
-<http://docs.python.org/tutorial/datastructures.html#list-comprehensions>`_
+<https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions>`_
 provides a powerful, concise way to work with lists.
 
 `Generator expressions
-<http://docs.python.org/tutorial/classes.html#generator-expressions>`_
+<https://docs.python.org/3/tutorial/classes.html#generator-expressions>`_
 follows almost the same syntax as list comprehensions but return a generator
 instead of a list.
 
