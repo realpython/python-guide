@@ -33,7 +33,7 @@ include:
   Perl's `CPAN <https://www.cpan.org>`_. There is a thriving community
   of very powerful Python frameworks and tools like
   the `Django <https://www.djangoproject.com>`_ web framework and the
-  `NumPy <http://numpy.scipy.org>`_ set of math routines.
+  `NumPy <https://numpy.org/>`_ set of math routines.
 
 * **integration with other systems**
 
