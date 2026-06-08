@@ -48,10 +48,10 @@ master_doc = 'index'
 
 # General information about the project.
 current_year = datetime.datetime.now().year
-project = u'pythonguide'
+project = 'pythonguide'
 copyright = (u'2011-{} <a href="https://www.kennethreitz.org/projects">Kenneth Reitz</a>'
              ' &amp; <a href="https://realpython.com">Real Python</a>.'
-             ' <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>').format(current_year)
+             ' <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>').format(current_year)
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -203,7 +203,7 @@ htmlhelp_basename = 'pythonguidedoc'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'pythonguide.tex', u'Python Guide Documentation',
-   u'Kenneth Reitz', 'manual'),
+   [u'Kenneth Reitz'], 1)
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
