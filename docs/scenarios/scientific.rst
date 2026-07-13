@@ -47,7 +47,7 @@ Libraries
 NumPy
 -----
 
-`NumPy <http://numpy.scipy.org/>`_ is a low level library written in C (and
+`NumPy <https://numpy.org/>`_ is a low level library written in C (and
 Fortran) for high level mathematical functions. NumPy cleverly overcomes the
 problem of running slower algorithms on Python by using multidimensional arrays
 and functions that operate on arrays. Any algorithm can then be expressed as a
