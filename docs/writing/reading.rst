@@ -49,4 +49,4 @@ reading. Each one of these projects is a paragon of Python coding.
 
 .. todo:: Include code examples of exemplary code from each of the projects listed. Explain why it is excellent code. Use complex examples.
 
-.. todo:: Explain techniques to rapidly identify data structures and algorithms and determine what the code is doing.
+.. todo:: Explain techniques for rapidly identifying data structures and algorithms and determining what the code is doing.
