@@ -200,6 +200,15 @@ making the process of learning Python fun and engaging.
 
     `Code the blocks <https://codetheblocks.com/tutorials/introduction>`_
 
+Kikodo Interactive Python
+~~~~~~~~~~~~~~~~~~~~
+
+*Kikodo* is a free interactive python tutorial with real time live feedback.
+Learn all the basics of Python in bitesize exercises which guide you at every step.
+This tutorial is suitable to absolute beginners of any kind.
+
+    `Kikodo <https://www.kikodo.io>`_
+
 
 ************
 Intermediate
