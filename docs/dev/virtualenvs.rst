@@ -251,7 +251,7 @@ or change the interpreter globally with an env variable in ``~/.bashrc``:
 
 .. code-block:: console
 
-   $ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
+   $ export VIRTUALENV_PYTHON=/usr/bin/python2.7
 
 2. To begin using the virtual environment, it needs to be activated:
 
