@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-18 16:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/404.rst:5
+msgid "404 — Not Found"
+msgstr ""
+
+#: ../../docs/404.rst:7
+msgid "**Sorry, but we couldn't find the page you requested.**"
+msgstr ""
+
+#: ../../docs/404.rst:9
+msgid "It looks like this was the result of either:"
+msgstr ""
+
+#: ../../docs/404.rst:11
+msgid "a mistyped address"
+msgstr ""
+
+#: ../../docs/404.rst:12
+msgid "an out-of-date link"
+msgstr ""
+
+#: ../../docs/404.rst:14
+msgid "`Click here to go back to the homepage. <https://docs.python-guide.org/>`_"
+msgstr ""
+
+#: ../../docs/404.rst:16
+msgid "Or, try `searching <https://docs.python-guide.org/search/>`_."
+msgstr ""
+

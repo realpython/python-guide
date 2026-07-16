@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../intro/community.rst:6
+msgid "The Community"
+msgstr "社区"
+
+#: ../../intro/community.rst:13
+msgid "BDFL"
+msgstr ""
+
+#: ../../intro/community.rst:15
+msgid ""
+"Guido van Rossum, the creator of Python, is often referred to as the BDFL"
+" — the Benevolent Dictator For Life."
+msgstr ""
+"Python 的创始人 Guido van Rossum 通常被称为 BDFL —— 生活的仁慈独裁者。"
+
+#: ../../intro/community.rst:21
+msgid "Python Software Foundation"
+msgstr "Python 软件基金会"
+
+#: ../../intro/community.rst:24
+msgid ""
+"The mission of the Python Software Foundation is to promote, protect, and"
+" advance the Python programming language, and to support and facilitate "
+"the growth of a diverse and international community of Python "
+"programmers."
+msgstr ""
+"Python 软件基金会的任务是促进、保护和发展 Python 编程语言，"
+"同时支持和帮助 Python 编程者在多样化、国际化的社区中成长。"
+
+#: ../../intro/community.rst:28
+msgid "`Learn More about the PSF <http://www.python.org/psf/>`_."
+msgstr "`了解更多关于 PSF <http://www.python.org/psf/>`_。"
+
+#: ../../intro/community.rst:33
+msgid "PEPs"
+msgstr ""
+
+#: ../../intro/community.rst:35
+msgid ""
+"PEPs are *Python Enhancement Proposals*. They describe changes to Python "
+"itself, or the standards around it."
+msgstr ""
+"PEPs 是 *Python 增强提议* （Python Enhancement Proposals）。它们描述了 Python 自身或者相关库的变化。"
+
+#: ../../intro/community.rst:38
+msgid "There are three different types of PEPs (as defined by :pep:`1`):"
+msgstr "这里有三种不同的 PEPs 类型（由 :pep:`1` 定义）："
+
+#: ../../intro/community.rst:41
+msgid "**Standards**"
+msgstr ""
+
+#: ../../intro/community.rst:41
+msgid "Describes a new feature or implementation."
+msgstr "描述一项新特性或者实现。"
+
+#: ../../intro/community.rst:45
+msgid "**Informational**"
+msgstr ""
+
+#: ../../intro/community.rst:44
+msgid ""
+"Describes a design issue, general guidelines, or information to the "
+"community."
+msgstr "描述一个设计 issue、通用方针、或者社区信息。"
+
+#: ../../intro/community.rst:49
+msgid "**Process**"
+msgstr ""
+
+#: ../../intro/community.rst:48
+msgid "Describes a process related to Python."
+msgstr "描述和 Python 相关的过程。"
+
+#: ../../intro/community.rst:52
+msgid "Notable PEPs"
+msgstr "著名的 PEPs"
+
+#: ../../intro/community.rst:54
+msgid "There are a few PEPs that could be considered required reading:"
+msgstr "这里有少许 PEPs 可以认为是要求必读的："
+
+#: ../../intro/community.rst:57
+msgid ":pep:`8`: The Python Style Guide."
+msgstr ":pep:`8`：Python 风格指南。"
+
+#: ../../intro/community.rst:57
+msgid "Read this. All of it. Follow it."
+msgstr "完整阅读它，并照着做。"
+
+#: ../../intro/community.rst:60
+msgid ":pep:`20`: The Zen of Python."
+msgstr ":pep:`20`：Python 之禅。"
+
+#: ../../intro/community.rst:60
+msgid "A list of 19 statements that briefly explain the philosophy behind Python."
+msgstr "一个 19 行的小诗，简述了 Python 背后的哲学。"
+
+#: ../../intro/community.rst:64
+msgid ":pep:`257`: Docstring Conventions."
+msgstr ":pep:`257`：文档字符串约定。"
+
+#: ../../intro/community.rst:63
+msgid ""
+"Gives guidelines for semantics and conventions associated with Python "
+"docstrings."
+msgstr "给出了与 Python 文档字符串相关的语义和约定的指导方针。"
+
+#: ../../intro/community.rst:66
+msgid "You can read more at `The PEP Index <http://www.python.org/dev/peps/>`_."
+msgstr "您可以在 `PEP 索引 <http://www.python.org/dev/peps/>`_ 上了解更多。"
+
+#: ../../intro/community.rst:69
+msgid "Submitting a PEP"
+msgstr "提交一个 PEP"
+
+#: ../../intro/community.rst:71
+msgid ""
+"PEPs are peer-reviewed and accepted/rejected after much discussion. "
+"Anyone can write and submit a PEP for review."
+msgstr ""
+"PEPs 会被同行审阅，并在大量的讨论后决定接受或拒绝。任何人都能编写和提交 PEP 供以审阅。"
+
+#: ../../intro/community.rst:74
+msgid "Here's an overview of the PEP acceptance workflow:"
+msgstr "这里有一个接受 PEP 的工作流："
+
+#: ../../intro/community.rst:81
+msgid "Python Conferences"
+msgstr "Python 会议"
+
+#: ../../intro/community.rst:83
+msgid ""
+"The major events for the Python community are developer conferences. The "
+"two most notable conferences are PyCon, which is held in the US, and its "
+"European sibling, EuroPython."
+msgstr ""
+"Python 社区主要的事件就是开发者会议。"
+"两个最著名的会议就是在美国举办的 PyCon，和在欧洲举办的姊妹版会议 EuroPython。"
+
+#: ../../intro/community.rst:87
+msgid ""
+"A comprehensive list of conferences is maintained at `pycon.org "
+"<http://www.pycon.org/>`_."
+msgstr ""
+"会议的综合列表维护在 `pycon.org <http://www.pycon.org/>`_ 上。"
+
+#: ../../intro/community.rst:92
+msgid "Python User Groups"
+msgstr "Python 用户组"
+
+#: ../../intro/community.rst:94
+msgid ""
+"User Groups are where a bunch of Python developers meet to present or "
+"talk about Python topics of interest. A list of local user groups is "
+"maintained at the `Python Software Foundation Wiki "
+"<http://wiki.python.org/moin/LocalUserGroups>`_."
+msgstr ""
+"用户组就是一群 Python 开发者见面现身或讨论感兴趣的 Python 话题的地方。"
+"一系列本地用户组维护在 `Python 软件基金会 Wiki <http://wiki.python.org/moin/LocalUserGroups>`_ 中。"
+
+#: ../../intro/community.rst:101
+msgid "Online Communities"
+msgstr "在线社区"
+
+#: ../../intro/community.rst:103
+msgid ""
+"`PythonistaCafe <https://www.pythonistacafe.com>`_ is an invite-only, "
+"online community of Python and software development enthusiasts helping "
+"each other succeed and grow. Think of it as a club of mutual improvement "
+"for Pythonistas where a broad range of programming questions, career "
+"advice, and other topics are discussed every day."
+msgstr ""
+"`PythonistaCafe <https://www.pythonistacafe.com>`_ 是一个只接受邀请的 Python 和软件开发爱好者的在线社区，"
+"他们互相帮助，共同成功，共同成长。"
+"可以把它看作是 Pythonistas 的一个共同提高的俱乐部，在这里每天都会讨论广泛的编程问题、职业建议和其他话题。"
+
+#: ../../intro/community.rst:111
+msgid "Python Job Boards"
+msgstr "Python 工作公告栏"
+
+#: ../../intro/community.rst:113
+msgid ""
+"`Python Jobs HQ <https://www.pythonjobshq.com>`_ is a Python job board, "
+"by Python Developers for Python Developers. The site aggregates Python "
+"job postings from across the web and also allows employers to post Python"
+" job openings directly on the site."
+msgstr ""
+"`Python Jobs HQ <https://www.pythonjobshq.com>`_ 是一个面向 Python 开发人员的 Python 工作公告栏。"
+"该网站汇总了发布自网络的 Python 职位，并允许雇主直接在网站上发布 Python 职位。"

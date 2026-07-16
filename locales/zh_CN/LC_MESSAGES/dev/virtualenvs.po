@@ -1,0 +1,504 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../dev/virtualenvs.rst:4
+msgid "Pipenv & Virtual Environments"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:8
+msgid "This tutorial walks you through installing and using Python packages."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:10
+msgid ""
+"It will show you how to install and use the necessary tools and make "
+"strong recommendations on best practices. Keep in mind that Python is "
+"used for a great many different purposes, and precisely how you want to "
+"manage your dependencies may change based on how you decide to publish "
+"your software. The guidance presented here is most directly applicable to"
+" the development and deployment of network services (including web "
+"applications), but is also very well suited to managing development and "
+"testing environments for any kind of project."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:18
+msgid ""
+"This guide is written for Python 3, however, these instructions should "
+"work fine on Python 2.7—if you are still using it, for some reason."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:23
+msgid "Make sure you've got Python & pip"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:25
+msgid ""
+"Before you go any further, make sure you have Python and that it's "
+"available from your command line. You can check this by simply running:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:32
+msgid ""
+"You should get some output like ``3.6.2``. If you do not have Python, "
+"please install the latest 3.x version from `python.org`_ or refer to the "
+"`Installing Python`_ section of this guide."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:36
+msgid "If you're newcomer and you get an error like this:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:45
+msgid ""
+"It's because this command is intended to be run in a *shell* (also called"
+" a *terminal* or *console*). See the Python for Beginners `getting "
+"started tutorial`_ for an introduction to using your operating system's "
+"shell and interacting with Python."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:50
+msgid ""
+"Additionally, you'll need to make sure you have `pip`_ available. You can"
+" check this by running:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:57
+msgid ""
+"If you installed Python from source, with an installer from "
+"`python.org`_, or via `Homebrew`_ you should already have pip. If you're "
+"on Linux and installed using your OS package manager, you may have to "
+"`install pip <https://pip.pypa.io/en/stable/installing/>`_ separately."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:69
+msgid "Installing Pipenv"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:71
+msgid ""
+"`Pipenv`_ is a dependency manager for Python projects. If you're familiar"
+" with Node.js' `npm`_ or Ruby's `bundler`_, it is similar in spirit to "
+"those tools. While `pip`_ can install Python packages, Pipenv is "
+"recommended as it's a higher-level tool that simplifies dependency "
+"management for common use cases."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:77
+msgid "Use ``pip`` to install Pipenv:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:84
+msgid ""
+"This does a `user installation`_ to prevent breaking any system-wide "
+"packages. If ``pipenv`` isn't available in your shell after installation,"
+" you'll need to add the `user base`_'s binary directory to your ``PATH``."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:88
+msgid ""
+"On Linux and macOS you can find the user base binary directory by running"
+" ``python -m site --user-base`` and adding ``bin`` to the end. For "
+"example, this will typically print ``~/.local`` (with ``~`` expanded to "
+"the absolute path to your home directory) so you'll need to add "
+"``~/.local/bin`` to your ``PATH``. You can set your ``PATH`` permanently "
+"by `modifying ~/.profile`_."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:95
+msgid ""
+"On Windows you can find the user base binary directory by running ``py -m"
+" site --user-site`` and replacing ``site-packages`` with ``Scripts``. For"
+" example, this could return "
+"``C:\\Users\\Username\\AppData\\Roaming\\Python36\\site-packages`` so you"
+" would need to set your ``PATH`` to include "
+"``C:\\Users\\Username\\AppData\\Roaming\\Python36\\Scripts``. You can set"
+" your user ``PATH`` permanently in the `Control Panel`_. You may need to "
+"log out for the ``PATH`` changes to take effect."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:113
+msgid "Installing packages for your project"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:115
+msgid ""
+"Pipenv manages dependencies on a per-project basis. To install packages, "
+"change into your project's directory (or just an empty directory for this"
+" tutorial) and run:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:124
+msgid ""
+"Pipenv will install the excellent `Requests`_ library and create a "
+"``Pipfile`` for you in your project's directory. The `Pipfile`_ is used "
+"to track which dependencies your project needs in case you need to re-"
+"install them, such as when you share your project with others. You should"
+" get output similar to this (although the exact paths shown will vary):"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:163
+msgid "Using installed packages"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:165
+msgid ""
+"Now that Requests is installed you can create a simple ``main.py`` file "
+"to use it:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:176
+msgid "Then you can run this script using ``pipenv run``:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:182
+msgid "You should get output similar to this:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:188
+msgid ""
+"Using ``$ pipenv run`` ensures that your installed packages are available"
+" to your script. It's also possible to spawn a new shell that ensures all"
+" commands have access to your installed packages with ``$ pipenv shell``."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:194
+msgid "Next steps"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:196
+msgid ""
+"Congratulations, you now know how to install and use Python packages! ✨ 🍰"
+" ✨"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:201
+msgid "Lower level: virtualenv"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:203
+msgid ""
+"`virtualenv <http://pypi.org/project/virtualenv>`_ is a tool to create "
+"isolated Python environments. virtualenv creates a folder which contains "
+"all the necessary executables to use the packages that a Python project "
+"would need."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:207
+msgid "It can be used standalone, in place of Pipenv."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:209
+msgid "Install virtualenv via pip:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:215
+msgid "Test your installation:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:222 ../../dev/virtualenvs.rst:363
+msgid "Basic Usage"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:224
+msgid "Create a virtual environment for a project:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:231
+msgid ""
+"``virtualenv venv`` will create a folder in the current directory which "
+"will contain the Python executable files, and a copy of the ``pip`` "
+"library which you can use to install other packages. The name of the "
+"virtual environment (in this case, it was ``venv``) can be anything; "
+"omitting the name will place the files in the current directory instead."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:238
+msgid ""
+"'venv' is the general convention used globally. As it is readily "
+"available in ignore files (eg: .gitignore')"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:240
+msgid ""
+"This creates a copy of Python in whichever directory you ran the command "
+"in, placing it in a folder named :file:`venv`."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:243
+msgid ""
+"You can also use the Python interpreter of your choice (like "
+"``python2.7``)."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:250
+msgid "or change the interpreter globally with an env variable in ``~/.bashrc``:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:256
+msgid "To begin using the virtual environment, it needs to be activated:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:262
+msgid ""
+"The name of the current virtual environment will now appear on the left "
+"of the prompt (e.g. ``(venv)Your-Computer:project_folder UserName$``) to "
+"let you know that it's active. From now on, any package that you install "
+"using pip will be placed in the ``venv`` folder, isolated from the global"
+" Python installation."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:267
+msgid ""
+"For Windows, the same command mentioned in step 1 can be used to create a"
+" virtual environment. However, activating the environment requires a "
+"slightly different command."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:269
+msgid "Assuming that you are in your project directory:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:275
+msgid "Install packages using the ``pip`` command:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:281
+msgid ""
+"If you are done working in the virtual environment for the moment, you "
+"can deactivate it:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:288
+msgid ""
+"This puts you back to the system's default Python interpreter with all "
+"its installed libraries."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:291
+msgid ""
+"To delete a virtual environment, just delete its folder. (In this case, "
+"it would be ``rm -rf venv``.)"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:294
+msgid ""
+"After a while, though, you might end up with a lot of virtual "
+"environments littered across your system, and it's possible you'll forget"
+" their names or where they were placed."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:299
+msgid ""
+"Python has included venv module from version 3.3. For more details: `venv"
+" <https://docs.python.org/3/library/venv.html>`_."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:302
+msgid "Other Notes"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:304
+msgid ""
+"Running ``virtualenv`` with the option ``--no-site-packages`` will not "
+"include the packages that are installed globally. This can be useful for "
+"keeping the package list clean in case it needs to be accessed later. "
+"[This is the default behavior for ``virtualenv`` 1.7 and later.]"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:309
+msgid ""
+"In order to keep your environment consistent, it's a good idea to "
+"\"freeze\" the current state of the environment packages. To do this, "
+"run:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:316
+msgid ""
+"This will create a :file:`requirements.txt` file, which contains a simple"
+" list of all the packages in the current environment, and their "
+"respective versions. You can see the list of installed packages without "
+"the requirements format using ``pip list``. Later it will be easier for a"
+" different developer (or you, if you need to re-create the environment) "
+"to install the same packages using the same versions:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:327
+msgid ""
+"This can help ensure consistency across installations, across "
+"deployments, and across developers."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:330
+msgid ""
+"Lastly, remember to exclude the virtual environment folder from source "
+"control by adding it to the ignore list (see :ref:`Version Control "
+"Ignores<version_control_ignores>`)."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:336
+msgid "virtualenvwrapper"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:338
+msgid ""
+"`virtualenvwrapper "
+"<https://virtualenvwrapper.readthedocs.io/en/latest/index.html>`_ "
+"provides a set of commands which makes working with virtual environments "
+"much more pleasant. It also places all your virtual environments in one "
+"place."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:342 ../../dev/virtualenvs.rst:354
+msgid "To install (make sure **virtualenv** is already installed):"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:350
+msgid ""
+"(`Full virtualenvwrapper install instructions "
+"<https://virtualenvwrapper.readthedocs.io/en/latest/install.html>`_.)"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:352
+msgid ""
+"For Windows, you can use the `virtualenvwrapper-win "
+"<https://github.com/davidmarble/virtualenvwrapper-win/>`_."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:360
+msgid "In Windows, the default path for WORKON_HOME is %USERPROFILE%\\\\Envs"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:365
+msgid "Create a virtual environment:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:371
+msgid "This creates the :file:`project_folder` folder inside :file:`~/Envs`."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:373
+msgid "Work on a virtual environment:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:379
+msgid ""
+"Alternatively, you can make a project, which creates the virtual "
+"environment, and also a project directory inside ``$WORKON_HOME``, which "
+"is ``cd``-ed into when you ``workon project_folder``."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:387
+msgid ""
+"**virtualenvwrapper** provides tab-completion on environment names. It "
+"really helps when you have a lot of environments and have trouble "
+"remembering their names."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:391
+msgid ""
+"``workon`` also deactivates whatever environment you are currently in, so"
+" you can quickly switch between environments."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:394
+msgid "Deactivating is still the same:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:400
+msgid "To delete:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:407
+msgid "Other useful commands"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:410
+msgid "``lsvirtualenv``"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:410
+msgid "List all of the environments."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:414
+msgid "``cdvirtualenv``"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:413
+msgid ""
+"Navigate into the directory of the currently activated virtual "
+"environment, so you can browse its :file:`site-packages`, for example."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:417
+msgid "``cdsitepackages``"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:417
+msgid "Like the above, but directly into :file:`site-packages` directory."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:420
+msgid "``lssitepackages``"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:420
+msgid "Shows contents of :file:`site-packages` directory."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:422
+msgid ""
+"`Full list of virtualenvwrapper commands "
+"<https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html>`_."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:425
+msgid "virtualenv-burrito"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:427
+msgid ""
+"With `virtualenv-burrito <https://github.com/brainsik/virtualenv-"
+"burrito>`_, you can have a working virtualenv + virtualenvwrapper "
+"environment in a single command."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:431
+msgid "direnv"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:432
+msgid ""
+"When you ``cd`` into a directory containing a :file:`.env`, `direnv "
+"<https://direnv.net>`_ automagically activates the environment."
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:435
+msgid "Install it on Mac OS X using ``brew``:"
+msgstr ""
+
+#: ../../dev/virtualenvs.rst:441
+msgid "On Linux follow the instructions at `direnv.net <https://direnv.net>`_"
+msgstr ""
+

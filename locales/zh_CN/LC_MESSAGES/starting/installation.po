@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../starting/installation.rst:6
+msgid "Properly Installing Python"
+msgstr ""
+
+#: ../../starting/installation.rst:10
+msgid ""
+"There's a good chance that you already have Python on your operating "
+"system."
+msgstr ""
+
+#: ../../starting/installation.rst:12
+msgid ""
+"If so, you do not need to install or configure anything else to use "
+"Python. Having said that, I would strongly recommend that you install the"
+" tools and libraries described in the guides below before you start "
+"building Python applications for real-world use. In particular, you "
+"should always install Setuptools, Pip, and Virtualenv — they make it much"
+" easier for you to use other third-party Python libraries."
+msgstr ""
+
+#: ../../starting/installation.rst:19
+msgid ""
+"The use of **Python 3** is *highly* preferred over Python 2. Consider "
+"upgrading your applications and infrastructure if you find yourself "
+"*still* using Python 2 in production today. If you are using Python 3, "
+"congratulations — you are indeed a person of excellent taste. —*Kenneth "
+"Reitz*"
+msgstr ""
+
+#: ../../starting/installation.rst:24
+msgid "Installation Guides"
+msgstr ""
+
+#: ../../starting/installation.rst:26
+msgid ""
+"These guides go over the proper installation of :ref:`Python <which-"
+"python>` for development purposes, as well as setuptools, pip and "
+"virtualenv."
+msgstr ""
+
+#: ../../starting/installation.rst:30
+msgid "Python 3 Installation Guides"
+msgstr ""
+
+#: ../../starting/installation.rst:32
+msgid ":ref:`Python 3 on MacOS <install3-osx>`."
+msgstr ""
+
+#: ../../starting/installation.rst:33
+msgid ":ref:`Python 3 on Windows <install3-windows>`."
+msgstr ""
+
+#: ../../starting/installation.rst:34
+msgid ":ref:`Python 3 on Linux <install3-linux>`."
+msgstr ""
+
+#: ../../starting/installation.rst:37
+msgid "Legacy Python 2 Installation Guides"
+msgstr ""
+
+#: ../../starting/installation.rst:39
+msgid ":ref:`Python 2 on MacOS <install-osx>`."
+msgstr ""
+
+#: ../../starting/installation.rst:40
+msgid ":ref:`Python 2 on Microsoft Windows <install-windows>`."
+msgstr ""
+
+#: ../../starting/installation.rst:41
+msgid ":ref:`Python 2 on Linux <install-linux>`."
+msgstr ""
+

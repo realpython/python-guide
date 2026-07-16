@@ -1,0 +1,1046 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../writing/structure.rst:5
+msgid "Structuring Your Project"
+msgstr ""
+
+#: ../../writing/structure.rst:9
+msgid ""
+"By \"structure\" we mean the decisions you make concerning how your "
+"project best meets its objective. We need to consider how to best "
+"leverage Python's features to create clean, effective code. In practical "
+"terms, \"structure\" means making clean code whose logic and dependencies"
+" are clear as well as how the files and folders are organized in the "
+"filesystem."
+msgstr ""
+
+#: ../../writing/structure.rst:16
+msgid ""
+"Which functions should go into which modules? How does data flow through "
+"the project? What features and functions can be grouped together and "
+"isolated? By answering questions like these you can begin to plan, in a "
+"broad sense, what your finished product will look like."
+msgstr ""
+
+#: ../../writing/structure.rst:21
+msgid ""
+"In this section, we take a closer look at Python's modules and import "
+"systems as they are the central elements to enforcing structure in your "
+"project. We then discuss various perspectives on how to build code which "
+"can be extended and tested reliably."
+msgstr ""
+
+#: ../../writing/structure.rst:29
+msgid "Structure of the Repository"
+msgstr ""
+
+#: ../../writing/structure.rst:32
+msgid "It's Important."
+msgstr ""
+
+#: ../../writing/structure.rst:34
+msgid ""
+"Just as Code Style, API Design, and Automation are essential for a "
+"healthy development cycle. Repository structure is a crucial part of your"
+" project's `architecture "
+"<http://www.amazon.com/gp/product/1257638017/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=39095&creativeASIN=1257638017>`__."
+msgstr ""
+
+#: ../../writing/structure.rst:39
+msgid ""
+"When a potential user or contributor lands on your repository's page, "
+"they see a few things:"
+msgstr ""
+
+#: ../../writing/structure.rst:42
+msgid "Project Name"
+msgstr ""
+
+#: ../../writing/structure.rst:43
+msgid "Project Description"
+msgstr ""
+
+#: ../../writing/structure.rst:44
+msgid "Bunch O' Files"
+msgstr ""
+
+#: ../../writing/structure.rst:46
+msgid ""
+"Only when they scroll below the fold will the user see your project's "
+"README."
+msgstr ""
+
+#: ../../writing/structure.rst:49
+msgid ""
+"If your repo is a massive dump of files or a nested mess of directories, "
+"they might look elsewhere before even reading your beautiful "
+"documentation."
+msgstr ""
+
+#: ../../writing/structure.rst:53
+msgid "Dress for the job you want, not the job you have."
+msgstr ""
+
+#: ../../writing/structure.rst:55
+msgid ""
+"Of course, first impressions aren't everything. You and your colleagues "
+"will spend countless hours working with this repository, eventually "
+"becoming intimately familiar with every nook and cranny. The layout is "
+"important."
+msgstr ""
+
+#: ../../writing/structure.rst:60
+msgid "Sample Repository"
+msgstr ""
+
+#: ../../writing/structure.rst:62
+msgid ""
+"**tl;dr**: This is what `Kenneth Reitz recommended in 2013 "
+"<https://kennethreitz.org/essays/2013/01/27/repository-structure-and-"
+"python>`__."
+msgstr ""
+
+#: ../../writing/structure.rst:64
+msgid ""
+"This repository is `available on GitHub "
+"<https://github.com/kennethreitz/samplemod>`__."
+msgstr ""
+
+#: ../../writing/structure.rst:81
+msgid "Let's get into some specifics."
+msgstr ""
+
+#: ../../writing/structure.rst:84
+msgid "The Actual Module"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "Location"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "``./sample/`` or ``./sample.py``"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "Purpose"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "The code of interest"
+msgstr ""
+
+#: ../../writing/structure.rst:93
+msgid ""
+"Your module package is the core focus of the repository. It should not be"
+" tucked away:"
+msgstr ""
+
+#: ../../writing/structure.rst:100
+msgid ""
+"If your module consists of only a single file, you can place it directly "
+"in the root of your repository:"
+msgstr ""
+
+#: ../../writing/structure.rst:107
+msgid "Your library does not belong in an ambiguous src or python subdirectory."
+msgstr ""
+
+#: ../../writing/structure.rst:110
+msgid "License"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "``./LICENSE``"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "Lawyering up."
+msgstr ""
+
+#: ../../writing/structure.rst:120
+msgid ""
+"This is arguably the most important part of your repository, aside from "
+"the source code itself. The full license text and copyright claims should"
+" exist in this file."
+msgstr ""
+
+#: ../../writing/structure.rst:124
+msgid ""
+"If you aren't sure which license you should use for your project, check "
+"out `choosealicense.com <http://choosealicense.com>`_."
+msgstr ""
+
+#: ../../writing/structure.rst:127
+msgid ""
+"Of course, you are also free to publish code without a license, but this "
+"would prevent many people from potentially using or contributing to your "
+"code."
+msgstr ""
+
+#: ../../writing/structure.rst:131
+msgid "Setup.py"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "``./setup.py``"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "Package and distribution management."
+msgstr ""
+
+#: ../../writing/structure.rst:140
+msgid ""
+"If your module package is at the root of your repository, this should "
+"obviously be at the root as well."
+msgstr ""
+
+#: ../../writing/structure.rst:144
+msgid "Requirements File"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "``./requirements.txt``"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "Development dependencies."
+msgstr ""
+
+#: ../../writing/structure.rst:153
+msgid ""
+"A `pip requirements file <https://pip.pypa.io/en/stable/user_guide"
+"/#requirements-files>`__ should be placed at the root of the repository. "
+"It should specify the dependencies required to contribute to the project:"
+" testing, building, and generating documentation."
+msgstr ""
+
+#: ../../writing/structure.rst:159
+msgid ""
+"If your project has no development dependencies, or if you prefer setting"
+" up a development environment via ``setup.py``, this file may be "
+"unnecessary."
+msgstr ""
+
+#: ../../writing/structure.rst:164
+msgid "Documentation"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "``./docs/``"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "Package reference documentation."
+msgstr ""
+
+#: ../../writing/structure.rst:173
+msgid "There is little reason for this to exist elsewhere."
+msgstr ""
+
+#: ../../writing/structure.rst:176
+msgid "Test Suite"
+msgstr ""
+
+#: ../../writing/structure.rst:179
+msgid "*For advice on writing your tests, see* :doc:`/writing/tests`."
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "``./test_sample.py`` or ``./tests``"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "Package integration and unit tests."
+msgstr ""
+
+#: ../../writing/structure.rst:187
+msgid "Starting out, a small test suite will often exist in a single file:"
+msgstr ""
+
+#: ../../writing/structure.rst:193
+msgid "Once a test suite grows, you can move your tests to a directory, like so:"
+msgstr ""
+
+#: ../../writing/structure.rst:201
+msgid ""
+"Obviously, these test modules must import your packaged module to test "
+"it. You can do this a few ways:"
+msgstr ""
+
+#: ../../writing/structure.rst:204
+msgid "Expect the package to be installed in site-packages."
+msgstr ""
+
+#: ../../writing/structure.rst:205
+msgid ""
+"Use a simple (but *explicit*) path modification to resolve the package "
+"properly."
+msgstr ""
+
+#: ../../writing/structure.rst:208
+msgid ""
+"I highly recommend the latter. Requiring a developer to run ``setup.py "
+"develop`` to test an actively changing codebase also requires them to "
+"have an isolated environment setup for each instance of the codebase."
+msgstr ""
+
+#: ../../writing/structure.rst:213
+msgid ""
+"To give the individual tests import context, create a "
+"``tests/context.py`` file:"
+msgstr ""
+
+#: ../../writing/structure.rst:224
+msgid "Then, within the individual test modules, import the module like so:"
+msgstr ""
+
+#: ../../writing/structure.rst:230
+msgid "This will always work as expected, regardless of installation method."
+msgstr ""
+
+#: ../../writing/structure.rst:232
+msgid ""
+"Some people will assert that you should distribute your tests within your"
+" module itself -- I disagree. It often increases complexity for your "
+"users; many test suites often require additional dependencies and runtime"
+" contexts."
+msgstr ""
+
+#: ../../writing/structure.rst:238
+msgid "Makefile"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "``./Makefile``"
+msgstr ""
+
+#: ../../writing/structure.rst:1
+msgid "Generic management tasks."
+msgstr ""
+
+#: ../../writing/structure.rst:248
+msgid ""
+"If you look at most of my projects or any Pocoo project, you'll notice a "
+"Makefile lying around. Why? These projects aren't written in C... In "
+"short, make is an incredibly useful tool for defining generic tasks for "
+"your project."
+msgstr ""
+
+#: ../../writing/structure.rst:253
+msgid "**Sample Makefile:**"
+msgstr ""
+
+#: ../../writing/structure.rst:265
+msgid ""
+"Other generic management scripts (e.g. ``manage.py`` or ``fabfile.py``) "
+"belong at the root of the repository as well."
+msgstr ""
+
+#: ../../writing/structure.rst:269
+msgid "Regarding Django Applications"
+msgstr ""
+
+#: ../../writing/structure.rst:271
+msgid ""
+"I've noticed a new trend in Django applications since the release of "
+"Django 1.4. Many developers are structuring their repositories poorly due"
+" to the new bundled application templates."
+msgstr ""
+
+#: ../../writing/structure.rst:275
+msgid ""
+"How? Well, they go to their bare and fresh repository and run the "
+"following, as they always have:"
+msgstr ""
+
+#: ../../writing/structure.rst:282
+msgid "The resulting repository structure looks like this:"
+msgstr ""
+
+#: ../../writing/structure.rst:292
+msgid "Don't do this."
+msgstr ""
+
+#: ../../writing/structure.rst:294
+msgid ""
+"Repetitive paths are confusing for both your tools and your developers. "
+"Unnecessary nesting doesn't help anybody (unless they're nostalgic for "
+"monolithic SVN repos)."
+msgstr ""
+
+#: ../../writing/structure.rst:298
+msgid "Let's do it properly:"
+msgstr ""
+
+#: ../../writing/structure.rst:304
+msgid "Note the \"``.``\"."
+msgstr ""
+
+#: ../../writing/structure.rst:306
+msgid "The resulting structure:"
+msgstr ""
+
+#: ../../writing/structure.rst:320
+msgid "Structure of Code is Key"
+msgstr ""
+
+#: ../../writing/structure.rst:322
+msgid ""
+"Thanks to the way imports and modules are handled in Python, it is "
+"relatively easy to structure a Python project. Easy, here, means that you"
+" do not have many constraints and that the module importing model is easy"
+" to grasp. Therefore, you are left with the pure architectural task of "
+"crafting the different parts of your project and their interactions."
+msgstr ""
+
+#: ../../writing/structure.rst:329
+msgid ""
+"Easy structuring of a project means it is also easy to do it poorly. Some"
+" signs of a poorly structured project include:"
+msgstr ""
+
+#: ../../writing/structure.rst:333
+msgid ""
+"Multiple and messy circular dependencies: If the classes Table and Chair "
+"in :file:`furn.py` need to import Carpenter from :file:`workers.py` to "
+"answer a question such as ``table.isdoneby()``, and if conversely the "
+"class Carpenter needs to import Table and Chair to answer the question "
+"``carpenter.whatdo()``, then you have a circular dependency. In this case"
+" you will have to resort to fragile hacks such as using import statements"
+" inside your methods or functions."
+msgstr ""
+
+#: ../../writing/structure.rst:342
+msgid ""
+"Hidden coupling: Each and every change in Table's implementation breaks "
+"20 tests in unrelated test cases because it breaks Carpenter's code, "
+"which requires very careful surgery to adapt to the change. This means "
+"you have too many assumptions about Table in Carpenter's code or the "
+"reverse."
+msgstr ""
+
+#: ../../writing/structure.rst:348
+msgid ""
+"Heavy usage of global state or context: Instead of explicitly passing "
+"``(height, width, type, wood)`` to each other, Table and Carpenter rely "
+"on global variables that can be modified and are modified on the fly by "
+"different agents. You need to scrutinize all access to these global "
+"variables in order to understand why a rectangular table became a square,"
+" and discover that remote template code is also modifying this context, "
+"messing with the table dimensions."
+msgstr ""
+
+#: ../../writing/structure.rst:357
+msgid ""
+"Spaghetti code: multiple pages of nested if clauses and for loops with a "
+"lot of copy-pasted procedural code and no proper segmentation are known "
+"as spaghetti code. Python's meaningful indentation (one of its most "
+"controversial features) makes it very hard to maintain this kind of code."
+" The good news is that you might not see too much of it."
+msgstr ""
+
+#: ../../writing/structure.rst:364
+msgid ""
+"Ravioli code is more likely in Python: it consists of hundreds of similar"
+" little pieces of logic, often classes or objects, without proper "
+"structure. If you never can remember, if you have to use FurnitureTable, "
+"AssetTable or Table, or even TableNew for your task at hand, then you "
+"might be swimming in ravioli code."
+msgstr ""
+
+#: ../../writing/structure.rst:373
+msgid "Modules"
+msgstr ""
+
+#: ../../writing/structure.rst:375
+msgid ""
+"Python modules are one of the main abstraction layers available and "
+"probably the most natural one. Abstraction layers allow separating code "
+"into parts holding related data and functionality."
+msgstr ""
+
+#: ../../writing/structure.rst:379
+msgid ""
+"For example, a layer of a project can handle interfacing with user "
+"actions, while another would handle low-level manipulation of data. The "
+"most natural way to separate these two layers is to regroup all "
+"interfacing functionality in one file, and all low-level operations in "
+"another file. In this case, the interface file needs to import the low-"
+"level file. This is done with the ``import`` and ``from ... import`` "
+"statements."
+msgstr ""
+
+#: ../../writing/structure.rst:386
+msgid ""
+"As soon as you use `import` statements, you use modules. These can be "
+"either built-in modules such as `os` and `sys`, third-party modules you "
+"have installed in your environment, or your project's internal modules."
+msgstr ""
+
+#: ../../writing/structure.rst:390
+msgid ""
+"To keep in line with the style guide, keep module names short, lowercase,"
+" and be sure to avoid using special symbols like the dot (.) or question "
+"mark (?). A file name like :file:`my.spam.py` is the one you should "
+"avoid! Naming this way will interfere with the way Python looks for "
+"modules."
+msgstr ""
+
+#: ../../writing/structure.rst:395
+msgid ""
+"In the case of `my.spam.py` Python expects to find a :file:`spam.py` file"
+" in a folder named :file:`my` which is not the case. There is an `example"
+" <http://docs.python.org/tutorial/modules.html#packages>`_ of how the dot"
+" notation should be used in the Python docs."
+msgstr ""
+
+#: ../../writing/structure.rst:400
+msgid ""
+"If you like, you could name your module :file:`my_spam.py`, but even our "
+"trusty friend the underscore, should not be seen that often in module "
+"names. However, using other characters (spaces or hyphens) in module "
+"names will prevent importing (- is the subtract operator). Try to keep "
+"module names short so there is no need to separate words. And, most of "
+"all, don't namespace with underscores; use submodules instead."
+msgstr ""
+
+#: ../../writing/structure.rst:413
+msgid ""
+"Aside from some naming restrictions, nothing special is required for a "
+"Python file to be a module. But you need to understand the import "
+"mechanism in order to use this concept properly and avoid some issues."
+msgstr ""
+
+#: ../../writing/structure.rst:417
+msgid ""
+"Concretely, the ``import modu`` statement will look for the proper file, "
+"which is :file:`modu.py` in the same directory as the caller, if it "
+"exists.  If it is not found, the Python interpreter will search for "
+":file:`modu.py` in the \"path\" recursively and raise an ImportError "
+"exception when it is not found."
+msgstr ""
+
+#: ../../writing/structure.rst:422
+msgid ""
+"When :file:`modu.py` is found, the Python interpreter will execute the "
+"module in an isolated scope. Any top-level statement in :file:`modu.py` "
+"will be executed, including other imports if any. Function and class "
+"definitions are stored in the module's dictionary."
+msgstr ""
+
+#: ../../writing/structure.rst:427
+msgid ""
+"Then, the module's variables, functions, and classes will be available to"
+" the caller through the module's namespace, a central concept in "
+"programming that is particularly helpful and powerful in Python."
+msgstr ""
+
+#: ../../writing/structure.rst:431
+msgid ""
+"In many languages, an ``include file`` directive is used by the "
+"preprocessor to take all code found in the file and 'copy' it into the "
+"caller's code. It is different in Python: the included code is isolated "
+"in a module namespace, which means that you generally don't have to worry"
+" that the included code could have unwanted effects, e.g. override an "
+"existing function with the same name."
+msgstr ""
+
+#: ../../writing/structure.rst:437
+msgid ""
+"It is possible to simulate the more standard behavior by using a special "
+"syntax of the import statement: ``from modu import *``. This is generally"
+" considered bad practice. **Using** ``import *`` **makes the code harder "
+"to read and makes dependencies less compartmentalized**."
+msgstr ""
+
+#: ../../writing/structure.rst:442
+msgid ""
+"Using ``from modu import func`` is a way to pinpoint the function you "
+"want to import and put it in the local namespace. While much less harmful"
+" than ``import *`` because it shows explicitly what is imported in the "
+"local namespace, its only advantage over a simpler ``import modu`` is "
+"that it will save a little typing."
+msgstr ""
+
+#: ../../writing/structure.rst:448
+msgid "**Very bad**"
+msgstr ""
+
+#: ../../writing/structure.rst:457 ../../writing/structure.rst:827
+msgid "**Better**"
+msgstr ""
+
+#: ../../writing/structure.rst:465 ../../writing/structure.rst:837
+msgid "**Best**"
+msgstr ""
+
+#: ../../writing/structure.rst:473
+msgid ""
+"As mentioned in the :ref:`code_style` section, readability is one of the "
+"main features of Python. Readability means to avoid useless boilerplate "
+"text and clutter; therefore some efforts are spent trying to achieve a "
+"certain level of brevity. But terseness and obscurity are the limits "
+"where brevity should stop. Being able to tell immediately where a class "
+"or function comes from, as in the ``modu.func`` idiom, greatly improves "
+"code readability and understandability in all but the simplest single "
+"file projects."
+msgstr ""
+
+#: ../../writing/structure.rst:484
+msgid "Packages"
+msgstr ""
+
+#: ../../writing/structure.rst:486
+msgid ""
+"Python provides a very straightforward packaging system, which is simply "
+"an extension of the module mechanism to a directory."
+msgstr ""
+
+#: ../../writing/structure.rst:489
+msgid ""
+"Any directory with an :file:`__init__.py` file is considered a Python "
+"package. The different modules in the package are imported in a similar "
+"manner as plain modules, but with a special behavior for the "
+":file:`__init__.py` file, which is used to gather all package-wide "
+"definitions."
+msgstr ""
+
+#: ../../writing/structure.rst:494
+msgid ""
+"A file :file:`modu.py` in the directory :file:`pack/` is imported with "
+"the statement ``import pack.modu``. This statement will look for "
+":file:`__init__.py` file in :file:`pack` and execute all of its top-level"
+" statements. Then it will look for a file named :file:`pack/modu.py` and "
+"execute all of its top-level statements. After these operations, any "
+"variable, function, or class defined in :file:`modu.py` is available in "
+"the pack.modu namespace."
+msgstr ""
+
+#: ../../writing/structure.rst:502
+msgid ""
+"A commonly seen issue is adding too much code to :file:`__init__.py` "
+"files. When the project complexity grows, there may be sub-packages and "
+"sub-sub-packages in a deep directory structure. In this case, importing a"
+" single item from a sub-sub-package will require executing all "
+":file:`__init__.py` files met while traversing the tree."
+msgstr ""
+
+#: ../../writing/structure.rst:508
+msgid ""
+"Leaving an :file:`__init__.py` file empty is considered normal and even "
+"good practice, if the package's modules and sub-packages do not need to "
+"share any code."
+msgstr ""
+
+#: ../../writing/structure.rst:512
+msgid ""
+"Lastly, a convenient syntax is available for importing deeply nested "
+"packages: ``import very.deep.module as mod``. This allows you to use "
+"`mod` in place of the verbose repetition of ``very.deep.module``."
+msgstr ""
+
+#: ../../writing/structure.rst:519
+msgid "Object-oriented programming"
+msgstr ""
+
+#: ../../writing/structure.rst:521
+msgid ""
+"Python is sometimes described as an object-oriented programming language."
+" This can be somewhat misleading and requires further clarifications."
+msgstr ""
+
+#: ../../writing/structure.rst:524
+msgid ""
+"In Python, everything is an object, and can be handled as such. This is "
+"what is meant when we say, for example, that functions are first-class "
+"objects. Functions, classes, strings, and even types are objects in "
+"Python: like any object, they have a type, they can be passed as function"
+" arguments, and they may have methods and properties. In this "
+"understanding, Python can be considered as an object-oriented language."
+msgstr ""
+
+#: ../../writing/structure.rst:531
+msgid ""
+"However, unlike Java, Python does not impose object-oriented programming "
+"as the main programming paradigm. It is perfectly viable for a Python "
+"project to not be object-oriented, i.e. to use no or very few class "
+"definitions, class inheritance, or any other mechanisms that are specific"
+" to object-oriented programming languages."
+msgstr ""
+
+#: ../../writing/structure.rst:537
+msgid ""
+"Moreover, as seen in the modules_ section, the way Python handles modules"
+" and namespaces gives the developer a natural way to ensure the "
+"encapsulation and separation of abstraction layers, both being the most "
+"common reasons to use object-orientation. Therefore, Python programmers "
+"have more latitude as to not use object-orientation, when it is not "
+"required by the business model."
+msgstr ""
+
+#: ../../writing/structure.rst:544
+msgid ""
+"There are some reasons to avoid unnecessary object-orientation. Defining "
+"custom classes is useful when we want to glue some state and some "
+"functionality together. The problem, as pointed out by the discussions "
+"about functional programming, comes from the \"state\" part of the "
+"equation."
+msgstr ""
+
+#: ../../writing/structure.rst:549
+msgid ""
+"In some architectures, typically web applications, multiple instances of "
+"Python processes are spawned as a response to external requests that "
+"happen simultaneously. In this case, holding some state in instantiated "
+"objects, which means keeping some static information about the world, is "
+"prone to concurrency problems or race conditions. Sometimes, between the "
+"initialization of the state of an object (usually done with the "
+"``__init__()`` method) and the actual use of the object state through one"
+" of its methods, the world may have changed, and the retained state may "
+"be outdated. For example, a request may load an item in memory and mark "
+"it as read by a user. If another request requires the deletion of this "
+"item at the same time, the deletion may actually occur after the first "
+"process loaded the item, and then we have to mark a deleted object as "
+"read."
+msgstr ""
+
+#: ../../writing/structure.rst:561
+msgid ""
+"This and other issues led to the idea that using stateless functions is a"
+" better programming paradigm."
+msgstr ""
+
+#: ../../writing/structure.rst:564
+msgid ""
+"Another way to say the same thing is to suggest using functions and "
+"procedures with as few implicit contexts and side-effects as possible. A "
+"function's implicit context is made up of any of the global variables or "
+"items in the persistence layer that are accessed from within the "
+"function. Side-effects are the changes that a function makes to its "
+"implicit context. If a function saves or deletes data in a global "
+"variable or in the persistence layer, it is said to have a side-effect."
+msgstr ""
+
+#: ../../writing/structure.rst:572
+msgid ""
+"Carefully isolating functions with context and side-effects from "
+"functions with logic (called pure functions) allows the following "
+"benefits:"
+msgstr ""
+
+#: ../../writing/structure.rst:575
+msgid ""
+"Pure functions are deterministic: given a fixed input, the output will "
+"always be the same."
+msgstr ""
+
+#: ../../writing/structure.rst:578
+msgid ""
+"Pure functions are much easier to change or replace if they need to be "
+"refactored or optimized."
+msgstr ""
+
+#: ../../writing/structure.rst:581
+msgid ""
+"Pure functions are easier to test with unit tests: There is less need for"
+" complex context setup and data cleaning afterwards."
+msgstr ""
+
+#: ../../writing/structure.rst:584
+msgid "Pure functions are easier to manipulate, decorate, and pass around."
+msgstr ""
+
+#: ../../writing/structure.rst:586
+msgid ""
+"In summary, pure functions are more efficient building blocks than "
+"classes and objects for some architectures because they have no context "
+"or side-effects."
+msgstr ""
+
+#: ../../writing/structure.rst:589
+msgid ""
+"Obviously, object-orientation is useful and even necessary in many cases,"
+" for example when developing graphical desktop applications or games, "
+"where the things that are manipulated (windows, buttons, avatars, "
+"vehicles) have a relatively long life of their own in the computer's "
+"memory."
+msgstr ""
+
+#: ../../writing/structure.rst:597
+msgid "Decorators"
+msgstr ""
+
+#: ../../writing/structure.rst:599
+msgid ""
+"The Python language provides a simple yet powerful syntax called "
+"'decorators'. A decorator is a function or a class that wraps (or "
+"decorates) a function or a method. The 'decorated' function or method "
+"will replace the original 'undecorated' function or method. Because "
+"functions are first-class objects in Python, this can be done 'manually',"
+" but using the @decorator syntax is clearer and thus preferred."
+msgstr ""
+
+#: ../../writing/structure.rst:622
+msgid ""
+"This mechanism is useful for separating concerns and avoiding external "
+"unrelated logic 'polluting' the core logic of the function or method. A "
+"good example of a piece of functionality that is better handled with "
+"decoration is `memoization "
+"<https://en.wikipedia.org/wiki/Memoization#Overview>`__ or caching: you "
+"want to store the results of an expensive function in a table and use "
+"them directly instead of recomputing them when they have already been "
+"computed. This is clearly not part of the function logic."
+msgstr ""
+
+#: ../../writing/structure.rst:633
+msgid "Context Managers"
+msgstr ""
+
+#: ../../writing/structure.rst:635
+msgid ""
+"A context manager is a Python object that provides extra contextual "
+"information to an action. This extra information takes the form of "
+"running a callable upon initiating the context using the ``with`` "
+"statement, as well as running a callable upon completing all the code "
+"inside the ``with`` block. The most well known example of using a context"
+" manager is shown here, opening on a file:"
+msgstr ""
+
+#: ../../writing/structure.rst:646
+msgid ""
+"Anyone familiar with this pattern knows that invoking ``open`` in this "
+"fashion ensures that ``f``'s ``close`` method will be called at some "
+"point. This reduces a developer's cognitive load and makes the code "
+"easier to read."
+msgstr ""
+
+#: ../../writing/structure.rst:650
+msgid ""
+"There are two easy ways to implement this functionality yourself: using a"
+" class or using a generator. Let's implement the above functionality "
+"ourselves, starting with the class approach:"
+msgstr ""
+
+#: ../../writing/structure.rst:669
+msgid ""
+"This is just a regular Python object with two extra methods that are used"
+" by the ``with`` statement. CustomOpen is first instantiated and then its"
+" ``__enter__`` method is called and whatever ``__enter__`` returns is "
+"assigned to ``f`` in the ``as f`` part of the statement. When the "
+"contents of the ``with`` block is finished executing, the ``__exit__`` "
+"method is then called."
+msgstr ""
+
+#: ../../writing/structure.rst:675
+msgid ""
+"And now the generator approach using Python's own `contextlib "
+"<https://docs.python.org/3/library/contextlib.html>`_:"
+msgstr ""
+
+#: ../../writing/structure.rst:693
+msgid ""
+"This works in exactly the same way as the class example above, albeit "
+"it's more terse. The ``custom_open`` function executes until it reaches "
+"the ``yield`` statement. It then gives control back to the ``with`` "
+"statement, which assigns whatever was ``yield``'ed to `f` in the ``as f``"
+" portion. The ``finally`` clause ensures that ``close()`` is called "
+"whether or not there was an exception inside the ``with``."
+msgstr ""
+
+#: ../../writing/structure.rst:700
+msgid ""
+"Since the two approaches appear the same, we should follow the Zen of "
+"Python to decide when to use which. The class approach might be better if"
+" there's a considerable amount of logic to encapsulate. The function "
+"approach might be better for situations where we're dealing with a simple"
+" action."
+msgstr ""
+
+#: ../../writing/structure.rst:708
+msgid "Dynamic typing"
+msgstr ""
+
+#: ../../writing/structure.rst:710
+msgid ""
+"Python is dynamically typed, which means that variables do not have a "
+"fixed type. In fact, in Python, variables are very different from what "
+"they are in many other languages, specifically statically-typed "
+"languages. Variables are not a segment of the computer's memory where "
+"some value is written, they are 'tags' or 'names' pointing to objects. It"
+" is therefore possible for the variable 'a' to be set to the value 1, "
+"then the value 'a string', to a function."
+msgstr ""
+
+#: ../../writing/structure.rst:717
+msgid ""
+"The dynamic typing of Python is often considered to be a weakness, and "
+"indeed it can lead to complexities and hard-to-debug code. Something "
+"named 'a' can be set to many different things, and the developer or the "
+"maintainer needs to track this name in the code to make sure it has not "
+"been set to a completely unrelated object."
+msgstr ""
+
+#: ../../writing/structure.rst:723
+msgid "Some guidelines help to avoid this issue:"
+msgstr ""
+
+#: ../../writing/structure.rst:725
+msgid "Avoid using the same variable name for different things."
+msgstr ""
+
+#: ../../writing/structure.rst:727 ../../writing/structure.rst:751
+#: ../../writing/structure.rst:817
+msgid "**Bad**"
+msgstr ""
+
+#: ../../writing/structure.rst:736
+msgid "**Good**"
+msgstr ""
+
+#: ../../writing/structure.rst:745
+msgid ""
+"Using short functions or methods helps to reduce the risk of using the "
+"same name for two unrelated things."
+msgstr ""
+
+#: ../../writing/structure.rst:748
+msgid ""
+"It is better to use different names even for things that are related, "
+"when they have a different type:"
+msgstr ""
+
+#: ../../writing/structure.rst:759
+msgid ""
+"There is no efficiency gain when reusing names: the assignments will have"
+" to create new objects anyway. However, when the complexity grows and "
+"each assignment is separated by other lines of code, including 'if' "
+"branches and loops, it becomes harder to ascertain what a given "
+"variable's type is."
+msgstr ""
+
+#: ../../writing/structure.rst:765
+msgid ""
+"Some coding practices, like functional programming, recommend never "
+"reassigning a variable. In Java this is done with the `final` keyword. "
+"Python does not have a `final` keyword and it would be against its "
+"philosophy anyway. However, it may be a good discipline to avoid "
+"assigning to a variable more than once, and it helps in grasping the "
+"concept of mutable and immutable types."
+msgstr ""
+
+#: ../../writing/structure.rst:774
+msgid "Mutable and immutable types"
+msgstr ""
+
+#: ../../writing/structure.rst:776
+msgid "Python has two kinds of built-in or user-defined types."
+msgstr ""
+
+#: ../../writing/structure.rst:778
+msgid ""
+"Mutable types are those that allow in-place modification of the content. "
+"Typical mutables are lists and dictionaries: All lists have mutating "
+"methods, like :py:meth:`list.append` or :py:meth:`list.pop`, and can be "
+"modified in place. The same goes for dictionaries."
+msgstr ""
+
+#: ../../writing/structure.rst:783
+msgid ""
+"Immutable types provide no method for changing their content. For "
+"instance, the variable x set to the integer 6 has no \"increment\" "
+"method. If you want to compute x + 1, you have to create another integer "
+"and give it a name."
+msgstr ""
+
+#: ../../writing/structure.rst:796
+msgid ""
+"One consequence of this difference in behavior is that mutable types are "
+"not \"stable\", and therefore cannot be used as dictionary keys."
+msgstr ""
+
+#: ../../writing/structure.rst:800
+msgid ""
+"Using properly mutable types for things that are mutable in nature and "
+"immutable types for things that are fixed in nature helps to clarify the "
+"intent of the code."
+msgstr ""
+
+#: ../../writing/structure.rst:804
+msgid ""
+"For example, the immutable equivalent of a list is the tuple, created "
+"with ``(1, 2)``. This tuple is a pair that cannot be changed in-place, "
+"and can be used as a key for a dictionary."
+msgstr ""
+
+#: ../../writing/structure.rst:808
+msgid ""
+"One peculiarity of Python that can surprise beginners is that strings are"
+" immutable. This means that when constructing a string from its parts, "
+"appending each part to the string is inefficient because the entirety of "
+"the string is copied on each append. Instead, it is much more efficient "
+"to accumulate the parts in a list, which is mutable, and then glue "
+"(``join``) the parts together when the full string is needed. List "
+"comprehensions are usually the fastest and most idiomatic way to do this."
+msgstr ""
+
+#: ../../writing/structure.rst:845
+msgid ""
+"One final thing to mention about strings is that using ``join()`` is not "
+"always best. In the instances where you are creating a new string from a "
+"pre-determined number of strings, using the addition operator is actually"
+" faster. But in cases like above or in cases where you are adding to an "
+"existing string, using ``join()`` should be your preferred method."
+msgstr ""
+
+#: ../../writing/structure.rst:861
+msgid ""
+"You can also use the :ref:`% <python:string-formatting>` formatting "
+"operator to concatenate a pre-determined number of strings besides "
+":py:meth:`str.join` and ``+``. However, :pep:`3101` discourages the usage"
+" of the ``%`` operator in favor of the :py:meth:`str.format` method."
+msgstr ""
+
+#: ../../writing/structure.rst:878
+msgid "Vendorizing Dependencies"
+msgstr ""
+
+#: ../../writing/structure.rst:884
+msgid "Runners"
+msgstr ""
+
+#: ../../writing/structure.rst:889
+msgid "Further Reading"
+msgstr ""
+
+#: ../../writing/structure.rst:891
+msgid "http://docs.python.org/3/library/"
+msgstr ""
+
+#: ../../writing/structure.rst:892
+msgid "https://diveintopython3.net/"
+msgstr ""
+

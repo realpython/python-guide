@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/xml.rst:4
+msgid "XML parsing"
+msgstr ""
+
+#: ../../scenarios/xml.rst:11
+msgid "untangle"
+msgstr ""
+
+#: ../../scenarios/xml.rst:13
+msgid ""
+"`untangle <https://github.com/stchris/untangle>`_ is a simple library "
+"which takes an XML document and returns a Python object which mirrors the"
+" nodes and attributes in its structure."
+msgstr ""
+
+#: ../../scenarios/xml.rst:17
+msgid "For example, an XML file like this:"
+msgstr ""
+
+#: ../../scenarios/xml.rst:26
+msgid "can be loaded like this:"
+msgstr ""
+
+#: ../../scenarios/xml.rst:33
+msgid "and then you can get the child element's name attribute like this:"
+msgstr ""
+
+#: ../../scenarios/xml.rst:39
+msgid "untangle also supports loading XML from a string or a URL."
+msgstr ""
+
+#: ../../scenarios/xml.rst:44
+msgid "xmltodict"
+msgstr ""
+
+#: ../../scenarios/xml.rst:46
+msgid ""
+"`xmltodict <https://github.com/martinblech/xmltodict>`_ is another simple"
+" library that aims at making XML feel like working with JSON."
+msgstr ""
+
+#: ../../scenarios/xml.rst:49
+msgid "An XML file like this:"
+msgstr ""
+
+#: ../../scenarios/xml.rst:63
+msgid "can be loaded into a Python dict like this:"
+msgstr ""
+
+#: ../../scenarios/xml.rst:72
+msgid "and then you can access elements, attributes, and values like this:"
+msgstr ""
+
+#: ../../scenarios/xml.rst:81
+msgid ""
+"xmltodict also lets you roundtrip back to XML with the unparse function, "
+"has a streaming mode suitable for handling files that don't fit in "
+"memory, and supports XML namespaces."
+msgstr ""
+

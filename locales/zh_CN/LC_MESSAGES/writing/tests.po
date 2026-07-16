@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../writing/tests.rst:5
+msgid "Testing Your Code"
+msgstr ""
+
+#: ../../writing/tests.rst:9
+msgid "Testing your code is very important."
+msgstr ""
+
+#: ../../writing/tests.rst:11
+msgid ""
+"Getting used to writing testing code and running this code in parallel is"
+" now considered a good habit. Used wisely, this method helps to define "
+"your code's intent more precisely and have a more decoupled architecture."
+msgstr ""
+
+#: ../../writing/tests.rst:15
+msgid "Some general rules of testing:"
+msgstr ""
+
+#: ../../writing/tests.rst:17
+msgid ""
+"A testing unit should focus on one tiny bit of functionality and prove it"
+" correct."
+msgstr ""
+
+#: ../../writing/tests.rst:20
+msgid ""
+"Each test unit must be fully independent. Each test must be able to run "
+"alone, and also within the test suite, regardless of the order that they "
+"are called. The implication of this rule is that each test must be loaded"
+" with a fresh dataset and may have to do some cleanup afterwards. This is"
+" usually handled by :meth:`setUp()` and :meth:`tearDown()` methods."
+msgstr ""
+
+#: ../../writing/tests.rst:26
+msgid ""
+"Try hard to make tests that run fast. If one single test needs more than "
+"a few milliseconds to run, development will be slowed down or the tests "
+"will not be run as often as is desirable. In some cases, tests can't be "
+"fast because they need a complex data structure to work on, and this data"
+" structure must be loaded every time the test runs. Keep these heavier "
+"tests in a separate test suite that is run by some scheduled task, and "
+"run all other tests as often as needed."
+msgstr ""
+
+#: ../../writing/tests.rst:34
+msgid ""
+"Learn your tools and learn how to run a single test or a test case. Then,"
+" when developing a function inside a module, run this function's tests "
+"frequently, ideally automatically when you save the code."
+msgstr ""
+
+#: ../../writing/tests.rst:38
+msgid ""
+"Always run the full test suite before a coding session, and run it again "
+"after. This will give you more confidence that you did not break anything"
+" in the rest of the code."
+msgstr ""
+
+#: ../../writing/tests.rst:42
+msgid ""
+"It is a good idea to implement a hook that runs all tests before pushing "
+"code to a shared repository."
+msgstr ""
+
+#: ../../writing/tests.rst:45
+msgid ""
+"If you are in the middle of a development session and have to interrupt "
+"your work, it is a good idea to write a broken unit test about what you "
+"want to develop next. When coming back to work, you will have a pointer "
+"to where you were and get back on track faster."
+msgstr ""
+
+#: ../../writing/tests.rst:50
+msgid ""
+"The first step when you are debugging your code is to write a new test "
+"pinpointing the bug. While it is not always possible to do, those bug "
+"catching tests are among the most valuable pieces of code in your "
+"project."
+msgstr ""
+
+#: ../../writing/tests.rst:54
+msgid ""
+"Use long and descriptive names for testing functions. The style guide "
+"here is slightly different than that of running code, where short names "
+"are often preferred. The reason is testing functions are never called "
+"explicitly. ``square()`` or even ``sqr()`` is ok in running code, but in "
+"testing code you would have names such as ``test_square_of_number_2()``, "
+"``test_square_negative_number()``. These function names are displayed "
+"when a test fails, and should be as descriptive as possible."
+msgstr ""
+
+#: ../../writing/tests.rst:62
+msgid ""
+"When something goes wrong or has to be changed, and if your code has a "
+"good set of tests, you or other maintainers will rely largely on the "
+"testing suite to fix the problem or modify a given behavior. Therefore "
+"the testing code will be read as much as or even more than the running "
+"code. A unit test whose purpose is unclear is not very helpful in this "
+"case."
+msgstr ""
+
+#: ../../writing/tests.rst:69
+msgid ""
+"Another use of the testing code is as an introduction to new developers. "
+"When someone will have to work on the code base, running and reading the "
+"related testing code is often the best thing that they can do to start. "
+"They will or should discover the hot spots, where most difficulties "
+"arise, and the corner cases. If they have to add some functionality, the "
+"first step should be to add a test to ensure that the new functionality "
+"is not already a working path that has not been plugged into the "
+"interface."
+msgstr ""
+
+#: ../../writing/tests.rst:81
+msgid "The Basics"
+msgstr ""
+
+#: ../../writing/tests.rst:85
+msgid "unittest"
+msgstr ""
+
+#: ../../writing/tests.rst:87
+msgid ""
+":mod:`unittest` is the batteries-included test module in the Python "
+"standard library. Its API will be familiar to anyone who has used any of "
+"the JUnit/nUnit/CppUnit series of tools."
+msgstr ""
+
+#: ../../writing/tests.rst:91
+msgid ""
+"Creating test cases is accomplished by subclassing "
+":class:`unittest.TestCase`."
+msgstr ""
+
+#: ../../writing/tests.rst:104
+msgid "As of Python 2.7 unittest also includes its own test discovery mechanisms."
+msgstr ""
+
+#: ../../writing/tests.rst:106
+msgid ""
+"`unittest in the standard library documentation "
+"<http://docs.python.org/library/unittest.html>`_"
+msgstr ""
+
+#: ../../writing/tests.rst:110
+msgid "Doctest"
+msgstr ""
+
+#: ../../writing/tests.rst:112
+msgid ""
+"The :mod:`doctest` module searches for pieces of text that look like "
+"interactive Python sessions in docstrings, and then executes those "
+"sessions to verify that they work exactly as shown."
+msgstr ""
+
+#: ../../writing/tests.rst:116
+msgid ""
+"Doctests have a different use case than proper unit tests: they are "
+"usually less detailed and don't catch special cases or obscure regression"
+" bugs. They are useful as an expressive documentation of the main use "
+"cases of a module and its components. However, doctests should run "
+"automatically each time the full test suite runs."
+msgstr ""
+
+#: ../../writing/tests.rst:122
+msgid "A simple doctest in a function:"
+msgstr ""
+
+#: ../../writing/tests.rst:141
+msgid ""
+"When running this module from the command line as in ``python "
+"module.py``, the doctests will run and complain if anything is not "
+"behaving as described in the docstrings."
+msgstr ""
+
+#: ../../writing/tests.rst:148
+msgid "Tools"
+msgstr ""
+
+#: ../../writing/tests.rst:152
+msgid "py.test"
+msgstr ""
+
+#: ../../writing/tests.rst:154
+msgid ""
+"py.test is a no-boilerplate alternative to Python's standard unittest "
+"module."
+msgstr ""
+
+#: ../../writing/tests.rst:160
+msgid ""
+"Despite being a fully-featured and extensible test tool, it boasts a "
+"simple syntax. Creating a test suite is as easy as writing a module with "
+"a couple of functions:"
+msgstr ""
+
+#: ../../writing/tests.rst:173
+msgid "and then running the `py.test` command:"
+msgstr ""
+
+#: ../../writing/tests.rst:195
+msgid ""
+"is far less work than would be required for the equivalent functionality "
+"with the unittest module!"
+msgstr ""
+
+#: ../../writing/tests.rst:198
+msgid "`py.test <https://docs.pytest.org/en/latest/>`_"
+msgstr ""
+
+#: ../../writing/tests.rst:202
+msgid "Hypothesis"
+msgstr ""
+
+#: ../../writing/tests.rst:204
+msgid ""
+"Hypothesis is a library which lets you write tests that are parameterized"
+" by a source of examples.  It then generates simple and comprehensible "
+"examples that make your tests fail, letting you find more bugs with less "
+"work."
+msgstr ""
+
+#: ../../writing/tests.rst:212
+msgid ""
+"For example, testing lists of floats will try many examples, but report "
+"the minimal example of each bug (distinguished exception type and "
+"location):"
+msgstr ""
+
+#: ../../writing/tests.rst:228
+msgid ""
+"Hypothesis is practical as well as very powerful and will often find bugs"
+" that escaped all other forms of testing.  It integrates well with "
+"py.test, and has a strong focus on usability in both simple and advanced "
+"scenarios."
+msgstr ""
+
+#: ../../writing/tests.rst:232
+msgid "`hypothesis <https://hypothesis.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../writing/tests.rst:236
+msgid "tox"
+msgstr ""
+
+#: ../../writing/tests.rst:238
+msgid ""
+"tox is a tool for automating test environment management and testing "
+"against multiple interpreter configurations."
+msgstr ""
+
+#: ../../writing/tests.rst:245
+msgid ""
+"tox allows you to configure complicated multi-parameter test matrices via"
+" a simple INI-style configuration file."
+msgstr ""
+
+#: ../../writing/tests.rst:248
+msgid "`tox <https://tox.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../writing/tests.rst:252
+msgid "mock"
+msgstr ""
+
+#: ../../writing/tests.rst:254
+msgid ""
+":mod:`unittest.mock` is a library for testing in Python. As of Python "
+"3.3, it is available in the `standard library "
+"<https://docs.python.org/dev/library/unittest.mock>`_."
+msgstr ""
+
+#: ../../writing/tests.rst:258
+msgid "For older versions of Python:"
+msgstr ""
+
+#: ../../writing/tests.rst:264
+msgid ""
+"It allows you to replace parts of your system under test with mock "
+"objects and make assertions about how they have been used."
+msgstr ""
+
+#: ../../writing/tests.rst:267
+msgid "For example, you can monkey-patch a method:"
+msgstr ""
+
+#: ../../writing/tests.rst:278
+msgid ""
+"To mock classes or objects in a module under test, use the ``patch`` "
+"decorator. In the example below, an external search system is replaced "
+"with a mock that always returns the same result (but only for the "
+"duration of the test)."
+msgstr ""
+
+#: ../../writing/tests.rst:297
+msgid ""
+"Mock has many other ways with which you can configure and control its "
+"behaviour."
+msgstr ""
+
+#: ../../writing/tests.rst:299
+msgid "`mock <http://www.voidspace.org.uk/python/mock/>`_"
+msgstr ""
+

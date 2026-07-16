@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../writing/logging.rst:5
+msgid "Logging"
+msgstr ""
+
+#: ../../writing/logging.rst:9
+msgid ""
+"The :mod:`logging` module has been a part of Python's Standard Library "
+"since version 2.3.  It is succinctly described in :pep:`282`.  The "
+"documentation is notoriously hard to read, except for the `basic logging "
+"tutorial`_."
+msgstr ""
+
+#: ../../writing/logging.rst:13
+msgid ""
+"As an alternative, `loguru <https://github.com/Delgan/loguru>`_ provides "
+"an approach for logging, nearly as simple as using a simple ``print`` "
+"statement."
+msgstr ""
+
+#: ../../writing/logging.rst:15
+msgid "Logging serves two purposes:"
+msgstr ""
+
+#: ../../writing/logging.rst:17
+msgid ""
+"**Diagnostic logging** records events related to the application's "
+"operation. If a user calls in to report an error, for example, the logs "
+"can be searched for context."
+msgstr ""
+
+#: ../../writing/logging.rst:20
+msgid ""
+"**Audit logging** records events for business analysis. A user's "
+"transactions can be extracted and combined with other user details for "
+"reports or to optimize a business goal."
+msgstr ""
+
+#: ../../writing/logging.rst:27
+msgid "... or Print?"
+msgstr ""
+
+#: ../../writing/logging.rst:29
+msgid ""
+"The only time that ``print`` is a better option than logging is when the "
+"goal is to display a help statement for a command line application. Other"
+" reasons why logging is better than ``print``:"
+msgstr ""
+
+#: ../../writing/logging.rst:33
+msgid ""
+"The `log record`_, which is created with every logging event, contains "
+"readily available diagnostic information such as the file name, full "
+"path, function, and line number of the logging event."
+msgstr ""
+
+#: ../../writing/logging.rst:36
+msgid ""
+"Events logged in included modules are automatically accessible via the "
+"root logger to your application's logging stream, unless you filter them "
+"out."
+msgstr ""
+
+#: ../../writing/logging.rst:38
+msgid ""
+"Logging can be selectively silenced by using the method "
+":meth:`logging.Logger.setLevel` or disabled by setting the attribute "
+":attr:`logging.Logger.disabled` to ``True``."
+msgstr ""
+
+#: ../../writing/logging.rst:45
+msgid "Logging in a Library"
+msgstr ""
+
+#: ../../writing/logging.rst:47
+msgid ""
+"Notes for `configuring logging for a library`_ are in the `logging "
+"tutorial`_.  Because the *user*, not the library, should dictate what "
+"happens when a logging event occurs, one admonition bears repeating:"
+msgstr ""
+
+#: ../../writing/logging.rst:53
+msgid ""
+"It is strongly advised that you do not add any handlers other than "
+"NullHandler to your library’s loggers."
+msgstr ""
+
+#: ../../writing/logging.rst:57
+msgid ""
+"Best practice when instantiating loggers in a library is to only create "
+"them using the ``__name__`` global variable: the :mod:`logging` module "
+"creates a hierarchy of loggers using dot notation, so using ``__name__`` "
+"ensures no name collisions."
+msgstr ""
+
+#: ../../writing/logging.rst:62
+msgid ""
+"Here is an example of the best practice from the `requests source`_ -- "
+"place this in your ``__init__.py``:"
+msgstr ""
+
+#: ../../writing/logging.rst:73
+msgid "Logging in an Application"
+msgstr ""
+
+#: ../../writing/logging.rst:75
+msgid ""
+"The `twelve factor app <https://12factor.net>`_, an authoritative "
+"reference for good practice in application development, contains a "
+"section on `logging best practice <https://12factor.net/logs>`_. It "
+"emphatically advocates for treating log events as an event stream, and "
+"for sending that event stream to standard output to be handled by the "
+"application environment."
+msgstr ""
+
+#: ../../writing/logging.rst:83
+msgid "There are at least three ways to configure a logger:"
+msgstr ""
+
+#: ../../writing/logging.rst:88
+msgid "Using an INI-formatted file:"
+msgstr ""
+
+#: ../../writing/logging.rst:86
+msgid ""
+"**Pro**: possible to update configuration while running, using the "
+"function :func:`logging.config.listen` to listen on a socket."
+msgstr ""
+
+#: ../../writing/logging.rst:88
+msgid ""
+"**Con**: less control (e.g. custom subclassed filters or loggers) than "
+"possible when configuring a logger in code."
+msgstr ""
+
+#: ../../writing/logging.rst:93
+msgid "Using a dictionary or a JSON-formatted file:"
+msgstr ""
+
+#: ../../writing/logging.rst:91
+msgid ""
+"**Pro**: in addition to updating while running, it is possible to load "
+"from a file using the :mod:`json` module, in the standard library since "
+"Python 2.6."
+msgstr ""
+
+#: ../../writing/logging.rst:94
+msgid "**Con**: less control than when configuring a logger in code."
+msgstr ""
+
+#: ../../writing/logging.rst:98
+msgid "Using code:"
+msgstr ""
+
+#: ../../writing/logging.rst:96
+msgid "**Pro**: complete control over the configuration."
+msgstr ""
+
+#: ../../writing/logging.rst:97
+msgid "**Con**: modifications require a change to the source code."
+msgstr ""
+
+#: ../../writing/logging.rst:101
+msgid "Example Configuration via an INI File"
+msgstr ""
+
+#: ../../writing/logging.rst:103
+msgid ""
+"Let us say that the file is named ``logging_config.ini``. More details "
+"for the file format are in the `logging configuration`_ section of the "
+"`logging tutorial`_."
+msgstr ""
+
+#: ../../writing/logging.rst:132
+msgid "Then use :meth:`logging.config.fileConfig` in the code:"
+msgstr ""
+
+#: ../../writing/logging.rst:145
+msgid "Example Configuration via a Dictionary"
+msgstr ""
+
+#: ../../writing/logging.rst:147
+msgid ""
+"As of Python 2.7, you can use a dictionary with configuration details. "
+":pep:`391` contains a list of the mandatory and optional elements in the "
+"configuration dictionary."
+msgstr ""
+
+#: ../../writing/logging.rst:180
+msgid "Example Configuration Directly in Code"
+msgstr ""
+

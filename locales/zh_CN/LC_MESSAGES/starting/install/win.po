@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../starting/install/win.rst:6
+msgid "Installing Python 2 on Windows"
+msgstr ""
+
+#: ../../starting/install/win.rst:11
+msgid ""
+"Check out our :ref:`guide for installing Python 3 on "
+"Windows<install3-windows>`."
+msgstr ""
+
+#: ../../starting/install/win.rst:13
+msgid ""
+"First, download the `latest version "
+"<https://www.python.org/ftp/python/2.7.15/python-2.7.15.msi>`_ of Python "
+"2.7 from the official website. If you want to be sure you are installing "
+"a fully up-to-date version, click the Downloads > Windows link from the "
+"home page of the `Python.org web site <https://python.org>`_ ."
+msgstr ""
+
+#: ../../starting/install/win.rst:18
+msgid ""
+"The Windows version is provided as an MSI package. To install it "
+"manually, just double-click the file. The MSI package format allows "
+"Windows administrators to automate installation with their standard "
+"tools."
+msgstr ""
+
+#: ../../starting/install/win.rst:22
+msgid ""
+"By design, Python installs to a directory with the version number "
+"embedded, e.g. Python version 2.7 will install at "
+":file:`C:\\\\Python27\\\\`, so that you can have multiple versions of "
+"Python on the same system without conflicts. Of course, only one "
+"interpreter can be the default application for Python file types. It also"
+" does not automatically modify the :envvar:`PATH` environment variable, "
+"so that you always have control over which copy of Python is run."
+msgstr ""
+
+#: ../../starting/install/win.rst:30
+msgid ""
+"Typing the full path name for a Python interpreter each time quickly gets"
+" tedious, so add the directories for your default Python version to the "
+":envvar:`PATH`. Assuming that your Python installation is in "
+":file:`C:\\\\Python27\\\\`, add this to your :envvar:`PATH`:"
+msgstr ""
+
+#: ../../starting/install/win.rst:39
+msgid "You can do this easily by running the following in ``powershell``:"
+msgstr ""
+
+#: ../../starting/install/win.rst:45
+msgid "This is also an option during the installation process."
+msgstr ""
+
+#: ../../starting/install/win.rst:47
+msgid ""
+"The second (:file:`Scripts`) directory receives command files when "
+"certain packages are installed, so it is a very useful addition. You do "
+"not need to install or configure anything else to use Python. Having said"
+" that, I would strongly recommend that you install the tools and "
+"libraries described in the next section before you start building Python "
+"applications for real-world use. In particular, you should always install"
+" Setuptools, as it makes it much easier for you to use other third-party "
+"Python libraries."
+msgstr ""
+
+#: ../../starting/install/win.rst:58
+msgid "Setuptools + Pip"
+msgstr ""
+
+#: ../../starting/install/win.rst:60
+msgid ""
+"The two most crucial third-party Python packages are `setuptools "
+"<https://pypi.org/project/setuptools>`_ and `pip "
+"<https://pip.pypa.io/en/stable/>`_."
+msgstr ""
+
+#: ../../starting/install/win.rst:62
+msgid ""
+"Once installed, you can download, install and uninstall any compliant "
+"Python software product with a single command. It also enables you to add"
+" this network installation capability to your own Python software with "
+"very little work."
+msgstr ""
+
+#: ../../starting/install/win.rst:66
+msgid ""
+"Python 2.7.9 and later (on the python2 series), and Python 3.4 and later "
+"include pip by default."
+msgstr ""
+
+#: ../../starting/install/win.rst:69
+msgid "To see if pip is installed, open a command prompt and run"
+msgstr ""
+
+#: ../../starting/install/win.rst:75
+msgid ""
+"To install pip, `follow the official pip installation guide "
+"<https://pip.pypa.io/en/latest/installing/>`_ - this will automatically "
+"install the latest version of setuptools."
+msgstr ""
+
+#: ../../starting/install/win.rst:80
+msgid "Virtual Environments"
+msgstr ""
+
+#: ../../starting/install/win.rst:82
+msgid ""
+"A Virtual Environment is a tool to keep the dependencies required by "
+"different projects in separate places, by creating virtual Python "
+"environments for them. It solves the \"Project X depends on version 1.x "
+"but, Project Y needs 4.x\" dilemma, and keeps your global site-packages "
+"directory clean and manageable."
+msgstr ""
+
+#: ../../starting/install/win.rst:87
+msgid ""
+"For example, you can work on a project which requires Django 1.10 while "
+"also maintaining a project which requires Django 1.8."
+msgstr ""
+
+#: ../../starting/install/win.rst:90
+msgid ""
+"To start using this and see more information: :ref:`Virtual Environments "
+"<virtualenvironments-ref>` docs."
+msgstr ""
+
+#: ../../starting/install/win.rst:95
+msgid ""
+"This page is a remixed version of `another guide "
+"<https://www.stuartellis.name/articles/python-development-windows/>`_, "
+"which is available under the same license."
+msgstr ""
+

@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../starting/install3/linux.rst:6
+msgid "Installing Python 3 on Linux"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:10
+msgid ""
+"This document describes how to install Python 3.6 or 3.8 on Ubuntu Linux "
+"machines."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:12
+msgid ""
+"To see which version of Python 3 you have installed, open a command "
+"prompt and run"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:18
+msgid ""
+"If you are using Ubuntu 16.10 or newer, then you can easily install "
+"Python 3.6 with the following commands::"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:23
+msgid ""
+"If you're using another version of Ubuntu (e.g. the latest LTS release) "
+"or you want to use a more current Python, we recommend using the "
+"`deadsnakes PPA <https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa>`_"
+" to install Python 3.8::"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:30
+msgid ""
+"If you are using other Linux distribution, chances are you already have "
+"Python 3 pre-installed as well. If not, use your distribution's package "
+"manager. For example on Fedora, you would use `dnf`:"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:38
+msgid ""
+"Note that if the version of the ``python3`` package is not recent enough "
+"for you, there may be ways of installing more recent versions as well, "
+"depending on you distribution. For example installing the ``python3.9`` "
+"package on Fedora 32 to get Python 3.9. If you are a Fedora user, you "
+"might want to read about `multiple Python versions available in Fedora`_."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:49
+msgid "Working with Python 3"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:51
+msgid "At this point, you may have system Python 2.7 available as well."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:57
+msgid "This might launch the Python 2 interpreter."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:63
+msgid "This will always launch the Python 3 interpreter."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:68
+msgid "Setuptools & Pip"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:70
+msgid ""
+"The two most crucial third-party Python packages are `setuptools "
+"<https://pypi.org/project/setuptools>`_ and `pip "
+"<https://pip.pypa.io/en/stable/>`_."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:72
+msgid ""
+"Once installed, you can download, install and uninstall any compliant "
+"Python software product with a single command. It also enables you to add"
+" this network installation capability to your own Python software with "
+"very little work."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:76
+msgid ""
+"Python 2.7.9 and later (on the python2 series), and Python 3.4 and later "
+"include pip by default."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:79
+msgid "To see if pip is installed, open a command prompt and run"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:85
+msgid ""
+"To install pip, `follow the official pip installation guide "
+"<https://pip.pypa.io/en/latest/installing/>`_ - this will automatically "
+"install the latest version of setuptools."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:87
+msgid ""
+"Note that on some Linux distributions including Ubuntu and Fedora the "
+"``pip`` command is meant for Python 2, while the ``pip3`` command is "
+"meant for Python 3."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:94
+msgid ""
+"However, when using virtual environments (described below), you don't "
+"need to care about that."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:100
+msgid "Pipenv & Virtual Environments"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:102
+msgid ""
+"The next step is to install Pipenv, so you can install dependencies and "
+"manage virtual environments."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:104
+msgid ""
+"A Virtual Environment is a tool to keep the dependencies required by "
+"different projects in separate places, by creating virtual Python "
+"environments for them. It solves the \"Project X depends on version 1.x "
+"but, Project Y needs 4.x\" dilemma, and keeps your global site-packages "
+"directory clean and manageable."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:109
+msgid ""
+"For example, you can work on a project which requires Django 1.10 while "
+"also maintaining a project which requires Django 1.8."
+msgstr ""
+
+#: ../../starting/install3/linux.rst:112
+msgid ""
+"So, onward! To the :ref:`Pipenv & Virtual Environments "
+"<virtualenvironments-ref>` docs!"
+msgstr ""
+
+#: ../../starting/install3/linux.rst:116
+msgid ""
+"This page is a remixed version of `another guide "
+"<https://www.stuartellis.name/articles/python-development-windows/>`_, "
+"which is available under the same license."
+msgstr ""
+
