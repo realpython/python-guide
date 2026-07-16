@@ -377,13 +377,6 @@ every time the sshd configuration file is changed.
 For more information, refer to the `Puppet Labs Documentation <http://docs.puppetlabs.com>`_
 
 
-*********
-Blueprint
-*********
-
-.. todo:: Write about Blueprint
-
-
 ********
 Buildout
 ********
