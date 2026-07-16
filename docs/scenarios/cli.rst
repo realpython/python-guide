@@ -23,6 +23,15 @@ Some popular command-line applications include:
   system primarily written in Python
 
 
+****
+cli2
+****
+
+`cli2 <https://cli2.rtfd.io/>`_ creates dynamic and colorful command line from
+your Python objects, including functions and modules for example. It leverages
+modern features such as type hinting and auto-generates as much as possible by
+introspecting your code.
+
 *****
 Click
 *****
