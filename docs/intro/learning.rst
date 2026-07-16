@@ -70,6 +70,13 @@ Techbeamers.com provides step-by-step tutorials to teach Python. Each tutorial i
 `Learn Python Basic to Advanced <https://www.techbeamers.com/python-tutorial-step-by-step>`_
 
 
+Python Practice Problems for Beginner Coders
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This resource includes a Google Colab notebook, Python practice problems and solutions. This problem set is intended for people who already have familiarity with Python (or another language) and data types. Each problem highlights a few different skills, and they gradually become more complicated. It also provides additional resources to support each question, as well as additional Python coding exercises for more practice. 
+
+`Python Practice Problems for Beginner Coders <https://ischoolonline.berkeley.edu/blog/python-practice-problems/>`_
+
 Online Python Tutor
 ~~~~~~~~~~~~~~~~~~~
 
