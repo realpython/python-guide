@@ -1,4 +1,4 @@
-alabaster==0.7.11
+alabaster==0.7
 Babel==2.6.0
 certifi==2018.4.16
 chardet==3.0.4
