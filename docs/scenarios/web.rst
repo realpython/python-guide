@@ -73,7 +73,7 @@ The majority of new Python web applications today are built with Django.
 Flask
 -----
 
-`Flask <http://flask.pocoo.org/>`_ is a "microframework" for Python, and is
+`Flask <https://flask.palletsprojects.com/>`_ is a "microframework" for Python, and is
 an excellent choice for building smaller applications, APIs, and web services.
 
 Building an app with Flask is a lot like writing standard Python modules,
@@ -89,7 +89,7 @@ validation are not built-in functions of Flask.
 
 This is great, because many web applications don't need those features.
 For those that do, there are many
-`Extensions <http://flask.pocoo.org/extensions/>`_ available that may
+`Extensions <https://flask.palletsprojects.com/extensions/>`_ available that may
 suit your needs. Or, you can easily use any library you want yourself!
 
 Flask is default choice for any Python web application that isn't a good
