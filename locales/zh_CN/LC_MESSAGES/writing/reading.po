@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../writing/reading.rst:5
+msgid "Reading Great Code"
+msgstr ""
+
+#: ../../writing/reading.rst:9
+msgid ""
+"One of the secrets of becoming a great Python programmer is to read, "
+"understand, and comprehend excellent code."
+msgstr ""
+
+#: ../../writing/reading.rst:12
+msgid ""
+"Excellent code typically follows the guidelines outlined in "
+":ref:`code_style`, and does its best to express a clear and concise "
+"intent to the reader."
+msgstr ""
+
+#: ../../writing/reading.rst:16
+msgid ""
+"Included below is a list of recommended Python projects for reading. Each"
+" one of these projects is a paragon of Python coding."
+msgstr ""
+
+#: ../../writing/reading.rst:19
+msgid ""
+"`Howdoi <https://github.com/gleitz/howdoi>`_ Howdoi is a code search "
+"tool, written in Python."
+msgstr ""
+
+#: ../../writing/reading.rst:22
+msgid ""
+"`Flask <https://github.com/mitsuhiko/flask>`_ Flask is a microframework "
+"for Python based on Werkzeug and Jinja2. It's intended for getting "
+"started very quickly and was developed with best intentions in mind."
+msgstr ""
+
+#: ../../writing/reading.rst:27
+msgid ""
+"`Diamond <https://github.com/python-diamond/Diamond>`_ Diamond is a "
+"Python daemon that collects metrics and publishes them to Graphite or "
+"other backends. It is capable of collecting CPU, memory, network, I/O, "
+"load, and disk metrics. Additionally, it features an API for implementing"
+" custom collectors for gathering metrics from almost any source."
+msgstr ""
+
+#: ../../writing/reading.rst:34
+msgid ""
+"`Werkzeug <https://github.com/mitsuhiko/werkzeug>`_ Werkzeug started as a"
+" simple collection of various utilities for WSGI applications and has "
+"become one of the most advanced WSGI utility modules. It includes a "
+"powerful debugger, full-featured request and response objects, HTTP "
+"utilities to handle entity tags, cache control headers, HTTP dates, "
+"cookie handling, file uploads, a powerful URL routing system, and a bunch"
+" of community-contributed addon modules."
+msgstr ""
+
+#: ../../writing/reading.rst:42
+msgid ""
+"`Requests <https://github.com/kennethreitz/requests>`_ Requests is an "
+"Apache2 Licensed HTTP library, written in Python, for human beings."
+msgstr ""
+
+#: ../../writing/reading.rst:46
+msgid ""
+"`Tablib <https://github.com/kennethreitz/tablib>`_ Tablib is a format-"
+"agnostic tabular dataset library, written in Python."
+msgstr ""
+
+#: ../../writing/reading.rst:50 ../../writing/reading.rst:52
+msgid "待处理"
+msgstr ""
+
+#: ../../writing/reading.rst:50
+msgid ""
+"Include code examples of exemplary code from each of the projects listed."
+" Explain why it is excellent code. Use complex examples."
+msgstr ""
+
+#: ../../writing/reading.rst:52
+msgid ""
+"Explain techniques to rapidly identify data structures and algorithms and"
+" determine what the code is doing."
+msgstr ""
+

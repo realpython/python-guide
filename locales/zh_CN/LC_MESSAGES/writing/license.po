@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../writing/license.rst:5
+msgid "Choosing a License"
+msgstr ""
+
+#: ../../writing/license.rst:9
+msgid ""
+"Your source publication *needs* a license. In the US, unless a license is"
+" specified, users have no legal right to download, modify, or distribute "
+"the product. Furthermore, people can't contribute to your code unless you"
+" tell them what rules to play by. Choosing a license is complicated, so "
+"here are some pointers:"
+msgstr ""
+
+#: ../../writing/license.rst:14
+msgid ""
+"Open source. There are plenty of `open source licenses "
+"<http://opensource.org/licenses/alphabetical>`_ available to choose from."
+msgstr ""
+
+#: ../../writing/license.rst:18
+msgid "In general, these licenses tend to fall into one of two categories:"
+msgstr ""
+
+#: ../../writing/license.rst:20
+msgid ""
+"licenses that focus more on the user's freedom to do with the software as"
+" they please (these are the more permissive open source licenses such as "
+"the MIT, BSD, and Apache)"
+msgstr ""
+
+#: ../../writing/license.rst:24
+msgid ""
+"licenses that focus more on making sure that the code itself — including "
+"any changes made to it and distributed along with it — always remains "
+"free (these are the less permissive free software licenses such as the "
+"GPL and LGPL)"
+msgstr ""
+
+#: ../../writing/license.rst:29
+msgid ""
+"The latter are less permissive in the sense that they don't permit "
+"someone to add code to the software and distribute it without also "
+"including the source code for their changes."
+msgstr ""
+
+#: ../../writing/license.rst:33
+msgid ""
+"To help you choose one for your project, there's a `license chooser "
+"<http://choosealicense.com/>`_; **use it**."
+msgstr ""
+
+#: ../../writing/license.rst:36
+msgid "**More Permissive**"
+msgstr ""
+
+#: ../../writing/license.rst:38
+msgid ""
+"PSFL (Python Software Foundation License) -- for contributing to Python "
+"itself"
+msgstr ""
+
+#: ../../writing/license.rst:39
+msgid "MIT / BSD / ISC"
+msgstr ""
+
+#: ../../writing/license.rst:41
+msgid "MIT (X11)"
+msgstr ""
+
+#: ../../writing/license.rst:42
+msgid "New BSD"
+msgstr ""
+
+#: ../../writing/license.rst:43
+msgid "ISC"
+msgstr ""
+
+#: ../../writing/license.rst:45
+msgid "Apache"
+msgstr ""
+
+#: ../../writing/license.rst:47
+msgid "**Less Permissive:**"
+msgstr ""
+
+#: ../../writing/license.rst:49
+msgid "LGPL"
+msgstr ""
+
+#: ../../writing/license.rst:50
+msgid "GPL"
+msgstr ""
+
+#: ../../writing/license.rst:52
+msgid "GPLv2"
+msgstr ""
+
+#: ../../writing/license.rst:53
+msgid "GPLv3"
+msgstr ""
+
+#: ../../writing/license.rst:55
+msgid ""
+"A good overview of licenses with explanations of what one can, cannot, "
+"and must do using a particular software can be found at `tl;drLegal "
+"<https://tldrlegal.com/>`_."
+msgstr ""
+

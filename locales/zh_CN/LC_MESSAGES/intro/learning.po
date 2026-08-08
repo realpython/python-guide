@@ -1,0 +1,817 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../intro/learning.rst:5
+msgid "Learning Python"
+msgstr "学习 Python"
+
+#: ../../intro/learning.rst:12
+msgid "Beginner"
+msgstr "初学者"
+
+#: ../../intro/learning.rst:15
+msgid "The Python Tutorial"
+msgstr "Python 教程"
+
+#: ../../intro/learning.rst:17
+msgid ""
+"This is the official tutorial. It covers all the basics, and offers a "
+"tour of the language and the standard library. Recommended for those who "
+"need a quick-start guide to the language."
+msgstr ""
+"这是官方教程。它涵盖了所有的基础，并提供了 Python 语言和标准库的浏览。推荐给需要快速开始的人。"
+
+#: ../../intro/learning.rst:21
+msgid "`The Python Tutorial <http://docs.python.org/tutorial/index.html>`_"
+msgstr "`Python 教程 <http://docs.python.org/tutorial/index.html>`_"
+
+#: ../../intro/learning.rst:24
+msgid "Real Python"
+msgstr ""
+
+#: ../../intro/learning.rst:26
+msgid ""
+"Real Python is a repository of free and in-depth Python tutorials created"
+" by a diverse team of professional Python developers. At Real Python you "
+"can learn all things Python from the ground up. Everything from the "
+"absolute basics of Python, to web development and web scraping, to data "
+"visualization, and beyond."
+msgstr ""
+"Real Python 是由各种专业的 Python 开发团队创建的免费且深入的 Python 教程库。"
+"在 Real Python 中，您可以从头开始学习 Python 的所有内容。"
+"从 Python 的最基础的知识到 Web 开发和 Web 爬取，再到数据可视化等等。"
+
+#: ../../intro/learning.rst:28
+msgid "`Real Python <https://realpython.com/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:31
+msgid "Python Basics"
+msgstr "Python 基础"
+
+#: ../../intro/learning.rst:33
+msgid ""
+"pythonbasics.org is an introductory tutorial for beginners. The tutorial "
+"includes exercises. It covers the basics and there are also in-depth "
+"lessons like object oriented programming and regular expressions."
+msgstr ""
+"pythonbasics.org 是初学者的入门教程，包括练习、涵盖了基础知识，还有深入的课程（如面向对象编程和正则表达式）。"
+
+#: ../../intro/learning.rst:35
+msgid "`Python basics <https://pythonbasics.org/>`_"
+msgstr "`Python 基础 <https://pythonbasics.org/>`_"
+
+#: ../../intro/learning.rst:38
+msgid "Python for Beginners"
+msgstr ""
+
+#: ../../intro/learning.rst:40
+msgid ""
+"thepythonguru.com is a tutorial focused on beginner programmers. It "
+"covers many Python concepts in depth. It also teaches you some advanced "
+"constructs of Python like lambda expressions and regular expressions. And"
+" last it finishes off with the tutorial \"How to access MySQL db using "
+"Python\""
+msgstr ""
+"thepythonguru.com 是一个专注于初学程序员的教程。它深入涵盖了许多 Python 概念。"
+"它还教您一些 Python 的高级概念，如 lambda 表达式、正则表达式等。"
+"最后，它以教程 \"如何使用 Python 访问 MySQL 数据库\" 结束。"
+
+#: ../../intro/learning.rst:44
+msgid "`Python for Beginners <https://thepythonguru.com/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:47
+msgid "Learn Python Interactive Tutorial"
+msgstr ""
+
+#: ../../intro/learning.rst:49
+msgid ""
+"Learnpython.org is an easy non-intimidating way to get introduced to "
+"Python. The website takes the same approach used on the popular `Try Ruby"
+" <https://ruby.github.io/TryRuby>`_ website. It has an interactive Python"
+" interpreter built into the site that allows you to go through the "
+"lessons without having to install Python locally."
+msgstr ""
+"Learnpython.org 是一个简单易懂的了解 Python 的途径。"
+"网站采用了和流行的 Try Ruby 相同的方式，有一个交互式的 Python 解释器内建于网站中，"
+"允许您在学习 Python 课程时不需要在本地安装 Python。"
+
+#: ../../intro/learning.rst:55
+msgid "`Learn Python <http://www.learnpython.org/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:58
+msgid "Python for You and Me"
+msgstr ""
+
+#: ../../intro/learning.rst:60
+msgid ""
+"If you want a more traditional book, *Python For You and Me* is an "
+"excellent resource for learning all aspects of the language."
+msgstr ""
+"如果您想要更加传统的书籍，Python For You and Me 是一个极佳的学习 Python 所有方面的资源。"
+
+#: ../../intro/learning.rst:63
+msgid "`Python for You and Me <https://pymbook.readthedocs.io/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:66
+msgid "Learn Python Step by Step"
+msgstr ""
+
+#: ../../intro/learning.rst:68
+msgid ""
+"Techbeamers.com provides step-by-step tutorials to teach Python. Each "
+"tutorial is supplemented with logically added coding snippets and equips "
+"with a follow-up quiz on the subject learned. There is a section for "
+"`Python interview questions <https://www.techbeamers.com/python-"
+"interview-questions-programmers>`_ to help job seekers. You can also read"
+" essential `Python tips <https://www.techbeamers.com/essential-python-"
+"tips-tricks-programmers>`_ and learn `best coding practices "
+"<https://www.techbeamers.com/python-code-optimization-tips-tricks>`_ for "
+"writing quality code. Here, you'll get the right platform to learn Python"
+" quickly."
+msgstr ""
+"Techbeamers.com 提供了手把手的教程讲解 Python。"
+"每个教程都补充了相关代码段，并配备了关于所学主题的后续测验。"
+"里面的 `Python 面试题 <https://www.techbeamers.com/python-interview-questions-programmers>`_ 部分可以帮助求职者。"
+"您还可以阅读必备的 `Python 技巧 <https://www.techbeamers.com/essential-python-tips-tricks-programmers>`_，"
+"并学习编写高质量代码的 `最佳编程实践 <https://www.techbeamers.com/python-code-optimization-tips-tricks>`_。"
+"在这里，你将获得快速学习 Python 的正确平台。"
+
+#: ../../intro/learning.rst:70
+msgid ""
+"`Learn Python Basic to Advanced <https://www.techbeamers.com/python-"
+"tutorial-step-by-step>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:74
+msgid "Online Python Tutor"
+msgstr ""
+
+#: ../../intro/learning.rst:76
+msgid ""
+"Online Python Tutor gives you a visual step-by-step representation of how"
+" your program runs. Python Tutor helps people overcome a fundamental "
+"barrier to learning programming by understanding what happens as the "
+"computer executes each line of a program's source code."
+msgstr ""
+"Online Python Tutor 在视觉上向您一步步展示程序是如何运行的。"
+"Python Tutor 帮助人们克服 学习编程的基本障碍，让您明白程序源码中的每一行的执行会有怎样的结果。"
+
+#: ../../intro/learning.rst:82
+msgid "`Online Python Tutor <http://pythontutor.com/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:85
+msgid "Invent Your Own Computer Games with Python"
+msgstr ""
+
+#: ../../intro/learning.rst:87
+msgid ""
+"This beginner's book is for those with no programming experience at all. "
+"Each chapter has the source code to a small game, using these example "
+"programs to demonstrate programming concepts to give the reader an idea "
+"of what programs \"look like\"."
+msgstr ""
+"这个新手书籍是面向没有任何编程经验的对象。"
+"每个章节都有一个小游戏的源码，这些程序例子说明了 编程概念，让读者了解到程序是什么样的。"
+
+#: ../../intro/learning.rst:92
+msgid ""
+"`Invent Your Own Computer Games with Python "
+"<http://inventwithpython.com/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:96
+msgid "Hacking Secret Ciphers with Python"
+msgstr ""
+
+#: ../../intro/learning.rst:98
+msgid ""
+"This book teaches Python programming and basic cryptography for absolute "
+"beginners. The chapters provide the source code for various ciphers, as "
+"well as programs that can break them."
+msgstr ""
+"此书向完全的新手讲解了 Python 编程和基本的密码学知识。所有章节提供了多种加密源码，也提供了破解程序。"
+
+#: ../../intro/learning.rst:102
+msgid ""
+"`Hacking Secret Ciphers with Python "
+"<http://inventwithpython.com/hacking/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:106
+msgid "Learn Python the Hard Way"
+msgstr ""
+
+#: ../../intro/learning.rst:108
+msgid ""
+"This is an excellent beginner programmer's guide to Python. It covers "
+"\"hello world\" from the console to the web."
+msgstr ""
+"这是一部极佳的新手编程者的 Python 指南。它涵盖了从控制台到 web 的 \"hello world\"。"
+
+#: ../../intro/learning.rst:111
+msgid "`Learn Python the Hard Way <https://learnpythonthehardway.org/book/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:115
+msgid "Crash into Python"
+msgstr ""
+
+#: ../../intro/learning.rst:117
+msgid ""
+"Also known as *Python for Programmers with 3 Hours*, this guide gives "
+"experienced developers from other languages a crash course on Python."
+msgstr ""
+"这个指南也叫 *Python for Programmers with 3 Hours* ，"
+"它给有其他语言开发经验的开发人员提供一个关于 Python 的快速教程。"
+
+#: ../../intro/learning.rst:120
+msgid "`Crash into Python <https://stephensugden.com/crash_into_python/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:124
+msgid "Dive Into Python 3"
+msgstr ""
+
+#: ../../intro/learning.rst:126
+msgid ""
+"Dive Into Python 3 is a good book for those ready to jump in to Python 3."
+" It's a good read if you are moving from Python 2 to 3 or if you already "
+"have some experience programming in another language."
+msgstr ""
+"Dive Into Python 3 对准备使用 Python 3 的人来说是一本不错的书。"
+"如果您是从 Python 2 迁移到 Python 3 或者您已经有其他语言的编程经验，那么将会很好阅读。"
+
+#: ../../intro/learning.rst:130
+msgid "`Dive Into Python 3 <http://diveintopython3.problemsolving.io/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:134
+msgid "Think Python: How to Think Like a Computer Scientist"
+msgstr ""
+
+#: ../../intro/learning.rst:136
+msgid ""
+"Think Python attempts to give an introduction to basic concepts in "
+"computer science through the use of the Python language. The focus was to"
+" create a book with plenty of exercises, minimal jargon, and a section in"
+" each chapter devoted to the subject of debugging."
+msgstr ""
+"Think Python 通过使用 Python 语言来介绍计算机科学中的基本概念。"
+"重点是创建一本有大量练习的书，尽量减少专业术语，并在每一章中都有一节专门讨论调试的主题"。"
+
+#: ../../intro/learning.rst:141
+msgid ""
+"While exploring the various features available in the Python language the"
+" author weaves in various design patterns and best practices."
+msgstr ""
+"在探索 Python 语言的各种功能时，作者将各种设计模式和最佳实践编织在一起。"
+
+#: ../../intro/learning.rst:144
+msgid ""
+"The book also includes several case studies which have the reader explore"
+" the topics discussed in the book in greater detail by applying those "
+"topics to real-world examples. Case studies include assignments in GUI "
+"programming and Markov Analysis."
+msgstr ""
+"此书中还包括一些案例研究，将书中的主题应用到实际例子中，供读者对主题进行更深入的讨论。"
+"案例研究包括 GUI 和 Markov 分析的任务。"
+
+#: ../../intro/learning.rst:149
+msgid "`Think Python <http://greenteapress.com/thinkpython/html/index.html>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:153
+msgid "Python Koans"
+msgstr ""
+
+#: ../../intro/learning.rst:155
+msgid ""
+"Python Koans is a port of Edgecase's Ruby Koans.  It uses a test-driven "
+"approach to provide an interactive tutorial teaching basic Python "
+"concepts.  By fixing assertion statements that fail in a test script, "
+"this provides sequential steps to learning Python."
+msgstr ""
+"Python Koans 是 Edgecase's Ruby Koans 的迁移版。"
+"它使用测试驱动的方法提供一个交互式的教程，来讲解基本的 Python 概念。"
+"通过修复在测试脚本中失败的断言，从而提供连续的步骤来学习 Python。"
+
+#: ../../intro/learning.rst:160
+msgid ""
+"For those used to languages and figuring out puzzles on their own, this "
+"can be a fun, attractive option. For those new to Python and programming,"
+" having an additional resource or reference will be helpful."
+msgstr ""
+"对于那些使用语言并找出自己的困惑的人来说，这会是个有趣并有吸引力的选择。"
+"对于新手来说，拥有一个额外的资源或者参考会是很有用的。"
+
+#: ../../intro/learning.rst:164
+msgid "`Python Koans <https://github.com/gregmalcolm/python_koans>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:166
+msgid ""
+"More information about test driven development can be found at these "
+"resources:"
+msgstr "要了解更多关于测试驱动开发的内容，可以查看以下资源："
+
+#: ../../intro/learning.rst:168
+msgid ""
+"`Test Driven Development <https://en.wikipedia.org/wiki/Test-"
+"driven_development>`_"
+msgstr ""
+"`测试驱动开发 <https://en.wikipedia.org/wiki/Test-driven_development>`_"
+
+#: ../../intro/learning.rst:172
+msgid "A Byte of Python"
+msgstr ""
+
+#: ../../intro/learning.rst:174
+msgid ""
+"A free introductory book that teaches Python at the beginner level, it "
+"assumes no previous programming experience."
+msgstr "一本为新手讲解 Python 的免费入门书籍，它假定读者没有编程经验。"
+
+#: ../../intro/learning.rst:177
+msgid ""
+"`A Byte of Python for Python 2.x "
+"<http://www.ibiblio.org/swaroopch/byteofpython/read/>`_ `A Byte of Python"
+" for Python 3.x <https://python.swaroopch.com/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:182
+msgid "Computer Science Path on Codecademy"
+msgstr ""
+
+#: ../../intro/learning.rst:184
+msgid ""
+"A Codecademy course for the absolute Python beginner. This free and "
+"interactive course provides and teaches the basics (and beyond) of Python"
+" programming while testing the user's knowledge in between progress. This"
+" course also features a built-in interpreter for receiving instant "
+"feedback on your learning."
+msgstr ""
+"此 Codeacademy 课程面向绝对的 Python 初学者。"
+"这门免费、互动的课程提供和教授 Python 编程的基础（和以后）的内容，同时测试用户之间知识的进展。"
+"课程还内置了一个解释器，用于获取学习过程中的即时反馈。"
+
+#: ../../intro/learning.rst:189
+msgid ""
+"`Computer Science Path on Codecademy "
+"<https://www.codecademy.com/learn/paths/computer-science>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:193
+msgid "Code the blocks"
+msgstr ""
+
+#: ../../intro/learning.rst:195
+msgid ""
+"*Code the blocks* provides free and interactive Python tutorials for "
+"beginners. It combines Python programming with a 3D environment where you"
+" \"place blocks\" and construct structures. The tutorials teach you how "
+"to use Python to create progressively more elaborate 3D structures, "
+"making the process of learning Python fun and engaging."
+msgstr ""
+"Code the blocks 为初学者提供免费的交互式 Python 教程。"
+"它将 Python 编程与 3D 环境相结合，您可以在其中 \"放置方块\" 并构建结构。"
+"本教程将教您如何使用 Python 创建逐渐精细的 3D 结构，从而使得学习 Python 的过程变得有趣和吸引人。"
+
+#: ../../intro/learning.rst:201
+msgid "`Code the blocks <https://codetheblocks.com/tutorials/introduction>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:206
+msgid "Intermediate"
+msgstr "中级"
+
+#: ../../intro/learning.rst:209
+msgid "Python Tricks: The Book"
+msgstr ""
+
+#: ../../intro/learning.rst:211
+msgid ""
+"Discover Python's best practices with simple examples and start writing "
+"even more beautiful + Pythonic code. *Python Tricks: The Book* shows you "
+"exactly how."
+msgstr ""
+"通过简单的示例发现 Python 的最佳实践，并开始编写更美观的且 Pythonic 的代码。"
+"*Python Tricks: The Book* 向您展示了具体方法。"
+
+#: ../../intro/learning.rst:213
+msgid ""
+"You’ll master intermediate and advanced-level features in Python with "
+"practical examples and a clear narrative."
+msgstr "您将通过实际示例和清晰的叙述掌握 Python 的中级和高级功能："
+
+#: ../../intro/learning.rst:215
+msgid ""
+"`Python Tricks: The Book <https://realpython.com/products/python-tricks-"
+"book/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:218
+msgid "Effective Python"
+msgstr ""
+
+#: ../../intro/learning.rst:220
+msgid ""
+"This book contains 59 specific ways to improve writing Pythonic code. At "
+"227 pages, it is a very brief overview of some of the most common "
+"adaptations programmers need to make to become efficient intermediate "
+"level Python programmers."
+msgstr ""
+"本书包含 59 种具体方法来改进编写 Pythonic 代码。"
+"在这 227 页中，这是一个关于程序员需要做的一些最常见的程序以成为高效的中级 Python 程序员的非常简要的概述。"
+
+#: ../../intro/learning.rst:225
+msgid "`Effective Python <https://effectivepython.com/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:230
+msgid "Advanced"
+msgstr "高级"
+
+#: ../../intro/learning.rst:233
+msgid "Pro Python"
+msgstr ""
+
+#: ../../intro/learning.rst:235
+msgid ""
+"This book is for intermediate to advanced Python programmers who are "
+"looking to understand how and why Python works the way it does and how "
+"they can take their code to the next level."
+msgstr ""
+"面向从中级到高级，想明白 Python 是如何以及为何这样工作，如何将代码水平提高一级的 Python 程序员。"
+
+#: ../../intro/learning.rst:239
+msgid "`Pro Python <https://www.apress.com/gp/book/9781430227571>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:243
+msgid "Expert Python Programming"
+msgstr ""
+
+#: ../../intro/learning.rst:244
+msgid ""
+"Expert Python Programming deals with best practices in programming Python"
+" and is focused on the more advanced crowd."
+msgstr ""
+"Expert Python Programming 讲解编写 Python 的最佳实践，并专注更高级的人员。"
+
+#: ../../intro/learning.rst:247
+msgid ""
+"It starts with topics like decorators (with caching, proxy, and context "
+"manager case studies), method resolution order, using super() and meta-"
+"programming, and general :pep:`8` best practices."
+msgstr ""
+"它以诸如装饰器（伴随缓存、代理、上下文管理器、案例研究）、方法解析顺序、使用 super()、"
+"元编程和一般 :pep:`8` 上的最好实践开始。"
+
+#: ../../intro/learning.rst:251
+msgid ""
+"It has a detailed, multi-chapter case study on writing and releasing a "
+"package and eventually an application, including a chapter on using "
+"zc.buildout.  Later chapters detail best practices such as writing "
+"documentation, test-driven development, version control, optimization, "
+"and profiling."
+msgstr ""
+"它有一个详细的、多章的关于编写的案例研究，发行了一个包并最终成为一个应用，包含使用 zc.buildout 的一个章节。"
+"后面的章节详细讲述了最佳实践，比如编写文档、测试驱动开发、版本控制、优化和分析。"
+
+#: ../../intro/learning.rst:256
+msgid ""
+"`Expert Python Programming <https://www.packtpub.com/product/expert-"
+"python-programming-third-edition/9781789808896>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:260
+msgid "A Guide to Python's Magic Methods"
+msgstr ""
+
+#: ../../intro/learning.rst:262
+msgid ""
+"This is a collection of blog posts by Rafe Kettler which explain 'magic "
+"methods' in Python. Magic methods are surrounded by double underscores "
+"(i.e. __init__) and can make classes and objects behave in different and "
+"magical ways."
+msgstr ""
+"这是 Rafe Kettler 发表博文的集合，解释了 Python 中的 '魔法方法'。"
+"魔法方法由双下划线包围 （比如 `__init__`），能够使类和对象表现出不同的、魔法的行为。"
+
+#: ../../intro/learning.rst:266
+msgid ""
+"`A Guide to Python's Magic Methods "
+"<http://www.rafekettler.com/magicmethods.html>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:268
+msgid ""
+"Rafekettler.com is currently down; you can go to their GitHub version "
+"directly. Here you can find a PDF version: `A Guide to Python's Magic "
+"Methods (repo on GitHub) "
+"<https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_"
+msgstr ""
+"Rafekettler.com 目前已关闭，您可以直接访问他们的 GitHub 版本。在这里您可以找到一个 "
+"`PDF 版本 <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_。"
+
+#: ../../intro/learning.rst:274
+msgid "For Engineers and Scientists"
+msgstr "工程师和科学家"
+
+#: ../../intro/learning.rst:277
+msgid "A Primer on Scientific Programming with Python"
+msgstr ""
+
+#: ../../intro/learning.rst:279
+msgid ""
+"A Primer on Scientific Programming with Python, written by Hans Petter "
+"Langtangen, mainly covers Python's usage in the scientific field. In the "
+"book, examples are chosen from mathematics and the natural sciences."
+msgstr ""
+"A Primer on Scientific Programming with Python 由 Hans Petter Langtangen 编写，"
+"主要涵盖了 Python 在科学领域的使用。在这本书中，例子是从数学和自然科学中选出的。"
+
+#: ../../intro/learning.rst:283
+msgid ""
+"`A Primer on Scientific Programming with Python "
+"<https://www.springer.com/us/book/9783642302930#otherversion=9783642302923>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:286
+msgid "Numerical Methods in Engineering with Python"
+msgstr ""
+
+#: ../../intro/learning.rst:288
+msgid ""
+"Numerical Methods in Engineering with Python, written by Jaan Kiusalaas, "
+"puts the emphasis on numerical methods and how to implement them in "
+"Python."
+msgstr ""
+"Numerical Methods in Engineering with Python 由 Jaan Kiusalaas 编写，"
+"其重点是数值方法以及如何用 Python 来实现。"
+
+#: ../../intro/learning.rst:291
+msgid ""
+"`Numerical Methods in Engineering with Python "
+"<https://www.cambridge.org/us/academic/subjects/engineering/engineering-"
+"mathematics-and-programming/numerical-methods-engineering-python-2nd-"
+"edition>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:296
+msgid "Miscellaneous Topics"
+msgstr "各种各样的话题"
+
+#: ../../intro/learning.rst:299
+msgid "Problem Solving with Algorithms and Data Structures"
+msgstr ""
+
+#: ../../intro/learning.rst:301
+msgid ""
+"Problem Solving with Algorithms and Data Structures covers a range of "
+"data structures and algorithms. All concepts are illustrated with Python "
+"code along with interactive samples that can be run directly in the "
+"browser."
+msgstr ""
+"Problem Solving with Algorithms and Data Structures 涵盖了一系列数据结构和算法。"
+"所有概念都用 Python 代码说明，提供了可在浏览器中直接运行的交互式样例。"
+
+#: ../../intro/learning.rst:305
+msgid ""
+"`Problem Solving with Algorithms and Data Structures "
+"<http://www.interactivepython.org/courselib/static/pythonds/index.html>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:309
+msgid "Programming Collective Intelligence"
+msgstr ""
+
+#: ../../intro/learning.rst:311
+msgid ""
+"Programming Collective Intelligence introduces a wide array of basic "
+"machine learning and data mining methods. The exposition is not very "
+"mathematically formal, but rather focuses on explaining the underlying "
+"intuition and shows how to implement the algorithms in Python."
+msgstr ""
+"Programming Collective Intelligence 介绍了大量基础的机器学习和数据挖掘方法。"
+"其展示在数学上并不是很正式，而是更侧重于解释潜在的直觉，以及展示如何使用 Python 来实现算法。"
+
+#: ../../intro/learning.rst:316
+msgid ""
+"`Programming Collective Intelligence "
+"<http://shop.oreilly.com/product/9780596529321.do>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:320
+msgid "Transforming Code into Beautiful, Idiomatic Python"
+msgstr ""
+
+#: ../../intro/learning.rst:322
+msgid ""
+"Transforming Code into Beautiful, Idiomatic Python is a video by Raymond "
+"Hettinger. Learn to take better advantage of Python's best features and "
+"improve existing code through a series of code transformations: \"When "
+"you see this, do that instead.\""
+msgstr ""
+"Transforming Code into Beautiful, Idiomatic Python 是由 Raymond Hettinger 制作的视频。"
+"通过它可以学习到更好地使用 Python 的最佳特性，通过一系列的代码转换来改进现有代码：\"当您看见这个，就那样去做\"。"
+
+#: ../../intro/learning.rst:326
+msgid ""
+"`Transforming Code into Beautiful, Idiomatic Python "
+"<https://www.youtube.com/watch?v=OSGv2VnC0go>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:330
+msgid "Fullstack Python"
+msgstr ""
+
+#: ../../intro/learning.rst:332
+msgid ""
+"Fullstack Python offers a complete top-to-bottom resource for web "
+"development using Python."
+msgstr "Fullstack Python 为使用 Python 进行 Web 开发提供了完整的自顶向下的资源。"
+
+#: ../../intro/learning.rst:335
+msgid ""
+"From setting up the web server, to designing the front-end, choosing a "
+"database, optimizing/scaling, etc."
+msgstr "范围涵盖从设置 Web 服务器到设计前端、选择数据库、优化/缩放等。"
+
+#: ../../intro/learning.rst:338
+msgid ""
+"As the name suggests, it covers everything you need to build and run a "
+"complete web app from scratch."
+msgstr "顾名思义，它涵盖了从头开始构建和运行完整的 Web 应用程序所需的所有内容。"
+
+#: ../../intro/learning.rst:341
+msgid "`Fullstack Python <https://www.fullstackpython.com>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:345
+msgid "PythonistaCafe"
+msgstr ""
+
+#: ../../intro/learning.rst:347
+msgid ""
+"PythonistaCafe is an invite-only, online community of Python and software"
+" development enthusiasts helping each other succeed and grow. Think of it"
+" as a club of mutual improvement for Pythonistas where a broad range of "
+"programming questions, career advice, and other topics are discussed "
+"every day."
+msgstr ""
+"PythonistaCafe 是一个邀请式的在线社区，里面的 Python 和软件开发爱好者互帮互助、彼此成长。"
+"可以把它看做是 Pythonista 共同进行改进的俱乐部。"
+"在这里，每天都会讨论广泛的编程问题、职业建议，同时也会涉及其他主题。"
+
+#: ../../intro/learning.rst:349
+msgid "`PythonistaCafe <https://www.pythonistacafe.com>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:354
+msgid "References"
+msgstr "参考"
+
+#: ../../intro/learning.rst:357
+msgid "Python in a Nutshell"
+msgstr ""
+
+#: ../../intro/learning.rst:359
+msgid ""
+"Python in a Nutshell, written by Alex Martelli, covers most cross-"
+"platform Python usage, from its syntax to built-in libraries to advanced "
+"topics such as writing C extensions."
+msgstr ""
+"Python in a Nutshell 由 Alex Martelli 编写，涵盖了 Python 跨平台的多数用法，"
+"从它的语法到内建库，再到比如说编写 C 扩展的高级主题。"
+
+#: ../../intro/learning.rst:363
+msgid "`Python in a Nutshell <http://shop.oreilly.com/product/9780596001889.do>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:366
+msgid "The Python Language Reference"
+msgstr ""
+
+#: ../../intro/learning.rst:368
+msgid ""
+"This is Python's reference manual. It covers the syntax and the core "
+"semantics of the language."
+msgstr "这是 Python 的参考手册，它涵盖了这门语言的语法和核心语义。"
+
+#: ../../intro/learning.rst:371
+msgid ""
+"`The Python Language Reference "
+"<http://docs.python.org/reference/index.html>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:374
+msgid "Python Essential Reference"
+msgstr ""
+
+#: ../../intro/learning.rst:376
+msgid ""
+"Python Essential Reference, written by David Beazley, is the definitive "
+"reference guide to Python. It concisely explains both the core language "
+"and the most essential parts of the standard library. It covers Python 3 "
+"and 2.6 versions."
+msgstr ""
+"Python Essential Reference，由 David Beazley 撰写，是 Python 的最终参考指南。"
+"它简明扼要地解释了标准库的核心语言和最重要的部分。 它涵盖了 Python 3 和 2.6 版本。"
+
+#: ../../intro/learning.rst:380
+msgid "`Python Essential Reference <http://www.dabeaz.com/per.html>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:383
+msgid "Python Pocket Reference"
+msgstr ""
+
+#: ../../intro/learning.rst:385
+msgid ""
+"Python Pocket Reference, written by Mark Lutz, is an easy to use "
+"reference to the core language, with descriptions of commonly used "
+"modules and toolkits. It covers Python 3 and 2.6 versions."
+msgstr ""
+"Python Pocket Reference 由 Mark Lutz 编写，是一个了解核心语言的易于使用的参考，"
+"介绍了常用的模块和工具集。它涵盖了 Python 3 和 Python 2。"
+
+#: ../../intro/learning.rst:389
+msgid ""
+"`Python Pocket Reference "
+"<http://shop.oreilly.com/product/9780596158095.do>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:392
+msgid "Python Cookbook"
+msgstr ""
+
+#: ../../intro/learning.rst:394
+msgid ""
+"Python Cookbook, written by David Beazley and Brian K. Jones, is packed "
+"with practical recipes. This book covers the core Python language as well"
+" as tasks common to a wide variety of application domains."
+msgstr ""
+"Python Cookbook 由 David Beazley 和 Brian K. Jones 编写，打包了许多具有实践意义的“食谱”。"
+"这本书涵盖了核心 Python 语言，也涵盖了诸多不同应用的常见任务。"
+
+#: ../../intro/learning.rst:398
+msgid "`Python Cookbook <http://shop.oreilly.com/product/0636920027072.do>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:401
+msgid "Writing Idiomatic Python"
+msgstr ""
+
+#: ../../intro/learning.rst:403
+msgid ""
+"Writing Idiomatic Python, written by Jeff Knupp, contains the most common"
+" and important Python idioms in a format that maximizes identification "
+"and understanding.  Each idiom is presented as a recommendation of a way "
+"to write some commonly used piece of code, followed by an explanation of "
+"why the idiom is important. It also contains two code samples for each "
+"idiom: the \"Harmful\" way to write it and the \"Idiomatic\" way."
+msgstr ""
+"Writing Idiomatic Python 由 Jeff Knupp 编写，包含了最常见和最重要的 Python 习语，"
+"其形式尽可能地有辨识度和易于理解。"
+"每个习语都是编写一些常用代码片段的推荐方式，其后会解释为什么这个习语是重要的。"
+"每个习语均有两个代码样例：\"有害的\" 方式和 \"理想的\" 方式。"
+
+#: ../../intro/learning.rst:410
+msgid ""
+"`For Python 2.7.3+ <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-"
+"Knupp-ebook/dp/B00B5KG0F8/>`_"
+msgstr ""
+
+#: ../../intro/learning.rst:412
+msgid ""
+"`For Python 3.3+  <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-"
+"Knupp-ebook/dp/B00B5VXMRG/>`_"
+msgstr ""
+

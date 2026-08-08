@@ -1,0 +1,287 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../starting/which-python.rst:5
+msgid "Picking a Python Interpreter (3 vs 2)"
+msgstr ""
+
+#: ../../starting/which-python.rst:14
+msgid "The State of Python (3 & 2)"
+msgstr ""
+
+#: ../../starting/which-python.rst:16
+msgid ""
+"When choosing a Python interpreter, one looming question is always "
+"present: \"Should I choose Python 2 or Python 3\"? The answer is a bit "
+"more subtle than one might think."
+msgstr ""
+
+#: ../../starting/which-python.rst:21
+msgid "The basic gist of the state of things is as follows:"
+msgstr ""
+
+#: ../../starting/which-python.rst:23
+msgid "Most production applications today use Python 3."
+msgstr ""
+
+#: ../../starting/which-python.rst:24
+msgid "Python 3 is ready for the production deployment of applications today."
+msgstr ""
+
+#: ../../starting/which-python.rst:25
+msgid "Python 2 reached the end of its life on January 1, 2020 [#pep373_eol]_."
+msgstr ""
+
+#: ../../starting/which-python.rst:26
+msgid "The brand name \"Python\" encapsulates both Python 3 and Python 2."
+msgstr ""
+
+#: ../../starting/which-python.rst:31
+msgid "Recommendations"
+msgstr ""
+
+#: ../../starting/which-python.rst:34
+msgid ""
+"The use of **Python 3** is *highly* recommended over Python 2. Consider "
+"upgrading your applications and infrastructure if you find yourself "
+"*still* using Python 2 in production today. If you are using Python 3, "
+"congratulations — you are indeed a person of excellent taste. —*Kenneth "
+"Reitz*"
+msgstr ""
+
+#: ../../starting/which-python.rst:37
+msgid "I'll be blunt:"
+msgstr ""
+
+#: ../../starting/which-python.rst:39
+msgid "Use Python 3 for new Python applications."
+msgstr ""
+
+#: ../../starting/which-python.rst:40
+msgid ""
+"If you're learning Python for the first time, familiarizing yourself with"
+" Python 2.7 will be very useful, but not more useful than learning Python"
+" 3."
+msgstr ""
+
+#: ../../starting/which-python.rst:42
+msgid "Learn both. They are both \"Python\"."
+msgstr ""
+
+#: ../../starting/which-python.rst:47
+msgid "So.... 3?"
+msgstr ""
+
+#: ../../starting/which-python.rst:49
+msgid ""
+"If you're choosing a Python interpreter to use, I recommend you use the "
+"newest Python 3.x, since every version brings new and improved standard "
+"library modules, security and bug fixes."
+msgstr ""
+
+#: ../../starting/which-python.rst:53
+msgid ""
+"Given such, only use Python 2 if you have a strong reason to, such as a "
+"pre-existing code-base, a Python 2 exclusive library, "
+"simplicity/familiarity, or, of course, you absolutely love and are "
+"inspired by Python 2. No harm in that."
+msgstr ""
+
+#: ../../starting/which-python.rst:58
+msgid "`Further Reading <http://wiki.python.org/moin/Python2orPython3>`_"
+msgstr ""
+
+#: ../../starting/which-python.rst:60
+msgid ""
+"It is possible to `write code that works on Python 2.6, 2.7, and Python 3"
+" <https://docs.python.org/3/howto/pyporting.html>`_. This ranges from "
+"trivial to hard depending upon the kind of software you are writing; if "
+"you're a beginner there are far more important things to worry about."
+msgstr ""
+
+#: ../../starting/which-python.rst:69
+msgid "Implementations"
+msgstr ""
+
+#: ../../starting/which-python.rst:71
+msgid ""
+"When people speak of *Python* they often mean not just the language but "
+"also the CPython implementation. *Python* is actually a specification for"
+" a language that can be implemented in many different ways."
+msgstr ""
+
+#: ../../starting/which-python.rst:76
+msgid "CPython"
+msgstr ""
+
+#: ../../starting/which-python.rst:78
+msgid ""
+"`CPython <http://www.python.org>`_ is the reference implementation of "
+"Python, written in C. It compiles Python code to intermediate bytecode "
+"which is then interpreted by a virtual machine. CPython provides the "
+"highest level of compatibility with Python packages and C extension "
+"modules."
+msgstr ""
+
+#: ../../starting/which-python.rst:83
+msgid ""
+"If you are writing open source Python code and want to reach the widest "
+"possible audience, targeting CPython is best. To use packages which rely "
+"on C extensions to function, CPython is your only implementation option."
+msgstr ""
+
+#: ../../starting/which-python.rst:87
+msgid ""
+"All versions of the Python language are implemented in C because CPython "
+"is the reference implementation."
+msgstr ""
+
+#: ../../starting/which-python.rst:91
+msgid "PyPy"
+msgstr ""
+
+#: ../../starting/which-python.rst:93
+msgid ""
+"`PyPy <http://pypy.org/>`_ is a Python interpreter implemented in a "
+"restricted statically-typed subset of the Python language called RPython."
+" The interpreter features a just-in-time compiler and supports multiple "
+"back-ends (C, CLI, JVM)."
+msgstr ""
+
+#: ../../starting/which-python.rst:97
+msgid ""
+"PyPy aims for maximum compatibility with the reference CPython "
+"implementation while improving performance."
+msgstr ""
+
+#: ../../starting/which-python.rst:100
+msgid ""
+"If you are looking to increase performance of your Python code, it's "
+"worth giving PyPy a try. On a suite of benchmarks, it's currently `over 5"
+" times faster than CPython <http://speed.pypy.org/>`_."
+msgstr ""
+
+#: ../../starting/which-python.rst:104
+msgid ""
+"PyPy supports Python 2.7. PyPy3 [#pypy_ver]_, released in beta, targets "
+"Python 3."
+msgstr ""
+
+#: ../../starting/which-python.rst:107
+msgid "Jython"
+msgstr ""
+
+#: ../../starting/which-python.rst:109
+msgid ""
+"`Jython <http://www.jython.org/>`_ is a Python implementation that "
+"compiles Python code to Java bytecode which is then executed by the JVM "
+"(Java Virtual Machine). Additionally, it is able to import and use any "
+"Java class like a Python module."
+msgstr ""
+
+#: ../../starting/which-python.rst:114
+msgid ""
+"If you need to interface with an existing Java codebase or have other "
+"reasons to need to write Python code for the JVM, Jython is the best "
+"choice."
+msgstr ""
+
+#: ../../starting/which-python.rst:117
+msgid "Jython currently supports up to Python 2.7. [#jython_ver]_"
+msgstr ""
+
+#: ../../starting/which-python.rst:120
+msgid "IronPython"
+msgstr ""
+
+#: ../../starting/which-python.rst:122
+msgid ""
+"`IronPython <http://ironpython.net/>`_  is an implementation of Python "
+"for the .NET framework. It can use both Python and .NET framework "
+"libraries, and can also expose Python code to other languages in the .NET"
+" framework."
+msgstr ""
+
+#: ../../starting/which-python.rst:126
+msgid ""
+"`Python Tools for Visual Studio <http://ironpython.net/tools/>`_ "
+"integrates IronPython directly into the Visual Studio development "
+"environment, making it an ideal choice for Windows developers."
+msgstr ""
+
+#: ../../starting/which-python.rst:130
+msgid ""
+"IronPython supports Python 2.7. [#iron_ver]_ IronPython 3 [#iron_ver3]_ "
+"is being developed, but is not ready for use as of September 2020."
+msgstr ""
+
+#: ../../starting/which-python.rst:134
+msgid "PythonNet"
+msgstr ""
+
+#: ../../starting/which-python.rst:136
+msgid ""
+"`Python for .NET <http://pythonnet.github.io/>`_ is a package which "
+"provides near seamless integration of a natively installed Python "
+"installation with the .NET Common Language Runtime (CLR).  This is the "
+"inverse approach to that taken by IronPython (see above), to which it is "
+"more complementary than competing with."
+msgstr ""
+
+#: ../../starting/which-python.rst:142
+msgid ""
+"In conjunction with Mono, pythonnet enables native Python installations "
+"on non-Windows operating systems, such as OS X and Linux, to operate "
+"within the .NET framework.  It can be run in addition to IronPython "
+"without conflict."
+msgstr ""
+
+#: ../../starting/which-python.rst:147
+msgid "Pythonnet is compatible with Python 2.7 and 3.5-3.8. [#pythonnet_ver1]_"
+msgstr ""
+
+#: ../../starting/which-python.rst:149
+msgid "https://pypy.org/compat.html"
+msgstr ""
+
+#: ../../starting/which-python.rst:151
+msgid "https://hg.python.org/jython/file/412a8f9445f7/NEWS"
+msgstr ""
+
+#: ../../starting/which-python.rst:153
+msgid "https://ironpython.net/download/"
+msgstr ""
+
+#: ../../starting/which-python.rst:155
+msgid "https://github.com/IronLanguages/ironpython3"
+msgstr ""
+
+#: ../../starting/which-python.rst:157
+msgid "https://pythonnet.github.io/"
+msgstr ""
+
+#: ../../starting/which-python.rst:159
+msgid "https://www.python.org/dev/peps/pep-0373/#id2"
+msgstr ""
+

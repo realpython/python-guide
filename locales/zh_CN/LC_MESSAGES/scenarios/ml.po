@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/ml.rst:5
+msgid "Machine Learning"
+msgstr ""
+
+#: ../../scenarios/ml.rst:9
+msgid ""
+"Python has a vast number of libraries for data analysis, statistics, and "
+"Machine Learning itself, making it a language of choice for many data "
+"scientists."
+msgstr ""
+
+#: ../../scenarios/ml.rst:11
+msgid ""
+"Some widely used packages for Machine Learning and other data science "
+"applications are listed below."
+msgstr ""
+
+#: ../../scenarios/ml.rst:16
+msgid "SciPy Stack"
+msgstr ""
+
+#: ../../scenarios/ml.rst:18
+msgid ""
+"The SciPy stack consists of a bunch of core helper packages used in data "
+"science for statistical analysis and visualising data. Because of its "
+"huge number of functionalities and ease of use, the Stack is considered a"
+" must-have for most data science applications."
+msgstr ""
+
+#: ../../scenarios/ml.rst:20
+msgid ""
+"The Stack consists of the following packages (link to documentation "
+"given):"
+msgstr ""
+
+#: ../../scenarios/ml.rst:22
+msgid "`NumPy <http://www.numpy.org/>`_"
+msgstr ""
+
+#: ../../scenarios/ml.rst:23
+msgid "`SciPy library <https://www.scipy.org/>`_"
+msgstr ""
+
+#: ../../scenarios/ml.rst:24
+msgid "`Matplotlib <http://matplotlib.org/>`_"
+msgstr ""
+
+#: ../../scenarios/ml.rst:25
+msgid "`IPython <https://ipython.org/>`_"
+msgstr ""
+
+#: ../../scenarios/ml.rst:26
+msgid "`pandas <http://pandas.pydata.org/>`_"
+msgstr ""
+
+#: ../../scenarios/ml.rst:27
+msgid "`Sympy <http://www.sympy.org/en/index.html>`_"
+msgstr ""
+
+#: ../../scenarios/ml.rst:28
+msgid "`nose <http://nose.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../scenarios/ml.rst:30
+msgid ""
+"The stack also comes with Python bundled in, but has been excluded from "
+"the above list."
+msgstr ""
+
+#: ../../scenarios/ml.rst:33 ../../scenarios/ml.rst:49
+msgid "Installation"
+msgstr ""
+
+#: ../../scenarios/ml.rst:35
+msgid ""
+"For installing the full stack, or individual packages, you can refer to "
+"the instructions given `here <https://www.scipy.org/install.html>`_."
+msgstr ""
+
+#: ../../scenarios/ml.rst:37
+msgid ""
+"**NB:** `Anaconda <https://www.continuum.io/anaconda-overview>`_ is "
+"highly preferred and recommended for installing and maintaining data "
+"science packages seamlessly."
+msgstr ""
+
+#: ../../scenarios/ml.rst:42
+msgid "scikit-learn"
+msgstr ""
+
+#: ../../scenarios/ml.rst:44
+msgid ""
+"Scikit is a free and open source machine learning library for Python. It "
+"offers off-the-shelf functions to implement many algorithms like linear "
+"regression, classifiers, SVMs, k-means, Neural Networks, etc. It also has"
+" a few sample datasets which can be directly used for training and "
+"testing."
+msgstr ""
+
+#: ../../scenarios/ml.rst:46
+msgid ""
+"Because of its speed, robustness, and ease of, it's one of the most "
+"widely-used libraries for many Machine Learning applications."
+msgstr ""
+
+#: ../../scenarios/ml.rst:51
+msgid "Through PyPI:"
+msgstr ""
+
+#: ../../scenarios/ml.rst:57
+msgid "Through conda:"
+msgstr ""
+
+#: ../../scenarios/ml.rst:63
+msgid ""
+"scikit-learn also comes shipped with Anaconda (mentioned above). For more"
+" installation instructions, refer to `this link <http://scikit-"
+"learn.org/stable/install.html>`_."
+msgstr ""
+
+#: ../../scenarios/ml.rst:66
+msgid "Example"
+msgstr ""
+
+#: ../../scenarios/ml.rst:68
+msgid ""
+"For this example, we train a simple classifier on the `Iris dataset "
+"<http://en.wikipedia.org/wiki/Iris_flower_data_set>`_, which comes "
+"bundled in with scikit-learn."
+msgstr ""
+
+#: ../../scenarios/ml.rst:70
+msgid ""
+"The dataset takes four features of flowers: sepal length, sepal width, "
+"petal length, and petal width, and classifies them into three flower "
+"species (labels): setosa, versicolor, or virginica. The labels have been "
+"represented as numbers in the dataset: 0 (setosa), 1 (versicolor), and 2 "
+"(virginica)."
+msgstr ""
+
+#: ../../scenarios/ml.rst:72
+msgid ""
+"We shuffle the Iris dataset and divide it into separate training and "
+"testing sets, keeping the last 10 data points for testing and rest for "
+"training. We then train the classifier on the training set and predict on"
+" the testing set."
+msgstr ""
+
+#: ../../scenarios/ml.rst:115
+msgid ""
+"Since we're splitting randomly and the classifier trains on every "
+"iteration, the accuracy may vary. Running the above code gives:"
+msgstr ""
+
+#: ../../scenarios/ml.rst:123
+msgid ""
+"The first line contains the labels (i.e. flower species) of the testing "
+"data as predicted by our classifier, and the second line contains the "
+"actual flower species as given in the dataset. We thus get an accuracy of"
+" 100% this time."
+msgstr ""
+
+#: ../../scenarios/ml.rst:125
+msgid ""
+"More on scikit-learn can be read in the `documentation <http://scikit-"
+"learn.org/stable/user_guide.html>`_."
+msgstr ""
+

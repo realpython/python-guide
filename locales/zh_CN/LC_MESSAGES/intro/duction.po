@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# xinetzone <735613050@qq.com>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../intro/duction.rst:5
+msgid "Introduction"
+msgstr "介绍"
+
+#: ../../intro/duction.rst:9
+msgid "From the `official Python website <http://python.org/about/>`_:"
+msgstr "来自 `Python 官方网站 <http://python.org/about/>`_"
+
+#: ../../intro/duction.rst:11
+msgid ""
+"Python is a general-purpose, high-level programming language similar to "
+"Tcl, Perl, Ruby, Scheme, or Java. Some of its main key features include:"
+msgstr ""
+"Python 是一种类似于 Tcl、Perl、Ruby、Scheme 或 Java 通用的高级编程语言。"
+"它的一些主要特点包括："
+
+#: ../../intro/duction.rst:15
+msgid "**very clear, readable syntax**"
+msgstr "**非常清晰、可读的语法**"
+
+#: ../../intro/duction.rst:17
+msgid ""
+"Python's philosophy focuses on readability, from code blocks delineated "
+"with significant whitespace to intuitive keywords in place of inscrutable"
+" punctuation."
+msgstr ""
+"Python 的理念侧重于可读性，从用大量空白划定的代码块到用直观的关键词代替难以捉摸的标点符号。"
+
+#: ../../intro/duction.rst:21
+msgid ""
+"**extensive standard libraries and third party modules for virtually any "
+"task**"
+msgstr ""
+"大量的标准库和第三方模块可用于几乎任何任务"
+
+#: ../../intro/duction.rst:24
+msgid ""
+"Python is sometimes described with the words \"batteries included\" "
+"because of its extensive `standard library "
+"<http://docs.python.org/library/>`_, which includes modules for regular "
+"expressions, file IO, fraction handling, object serialization, and much "
+"more."
+msgstr ""
+"Python 有时被描述为 \"自带电池（batteries included）\"，"
+"就是因为它拥有大量的 `标准库 <http://docs.python.org/library/>`_，"
+"这包括正则表达式、文件 IO、分数处理、对象序列化等。"
+
+#: ../../intro/duction.rst:30
+msgid ""
+"Additionally, the `Python Package Index <https://pypi.org>`_ is available"
+" for users to submit their packages for widespread use, similar to Perl's"
+" `CPAN <https://www.cpan.org>`_. There is a thriving community of very "
+"powerful Python frameworks and tools like the `Django "
+"<https://www.djangoproject.com>`_ web framework and the `NumPy "
+"<http://numpy.scipy.org>`_ set of math routines."
+msgstr ""
+
+#: ../../intro/duction.rst:38
+msgid "**integration with other systems**"
+msgstr ""
+
+#: ../../intro/duction.rst:40
+msgid ""
+"Python can integrate with `Java libraries <http://www.jython.org>`_, "
+"enabling it to be used with the rich Java environment that corporate "
+"programmers are used to. It can also be `extended by C or C++ modules "
+"<http://docs.python.org/extending/>`_ when speed is of the essence."
+msgstr ""
+
+#: ../../intro/duction.rst:46
+msgid "**ubiquity on computers**"
+msgstr ""
+
+#: ../../intro/duction.rst:48
+msgid ""
+"Python is available on Windows, \\*nix, and Mac. It runs wherever the "
+"Java virtual machine runs, and the reference implementation CPython can "
+"help bring Python to wherever there is a working C compiler."
+msgstr ""
+
+#: ../../intro/duction.rst:52
+msgid "**friendly community**"
+msgstr ""
+
+#: ../../intro/duction.rst:54
+msgid ""
+"Python has a vibrant and large :ref:`community <the-community>` which "
+"maintains wikis, conferences, countless repositories, mailing lists, IRC "
+"channels, and so much more. Heck, the Python community is even helping to"
+" write this guide!"
+msgstr ""
+
+#: ../../intro/duction.rst:65
+msgid "About This Guide"
+msgstr "关于这份指南"
+
+#: ../../intro/duction.rst:68
+msgid "Purpose"
+msgstr "目的"
+
+#: ../../intro/duction.rst:70
+msgid ""
+"The Hitchhiker's Guide to Python exists to provide both novice and expert"
+" Python developers a best practice handbook for the installation, "
+"configuration, and usage of Python on a daily basis."
+msgstr ""
+"Hitchhiker 的 Python 指南旨在为 Python 初学者和专家提供一个关于 Python 安装、配置和日常使用的最佳实践手册。"
+
+#: ../../intro/duction.rst:76
+msgid "By the Community"
+msgstr "经由社区"
+
+#: ../../intro/duction.rst:78
+msgid ""
+"This guide is architected and maintained by `Kenneth Reitz "
+"<https://github.com/kennethreitz>`_ in an open fashion. This is a "
+"community-driven effort that serves one purpose: to serve the community."
+msgstr ""
+"本指南由 `Kenneth Reitz <https://github.com/kennethreitz>`_ 以开放的形式进行架构和维护。"
+"这是由社区驱动的成果，服务目标就是服务社区。"
+
+#: ../../intro/duction.rst:83
+msgid "For the Community"
+msgstr "面向社区"
+
+#: ../../intro/duction.rst:85
+msgid ""
+"All contributions to the Guide are welcome, from Pythonistas of all "
+"levels. If you think there's a gap in what the Guide covers, fork the "
+"Guide on GitHub and submit a pull request."
+msgstr ""
+"所有水平的 Python 编程者对本指南所有的贡献都是欢迎的。"
+"如果您觉得本指南没有覆盖到某些内容，请在 GitHub 上 fork 指南，并提交一个 pull 请求。
+
+#: ../../intro/duction.rst:89
+msgid ""
+"Contributions are welcome from everyone, whether they're an old hand or a"
+" first-time Pythonista, and the authors to the Guide will gladly help if "
+"you have any questions about the appropriateness, completeness, or "
+"accuracy of a contribution."
+msgstr ""
+"欢迎每个人的贡献，不管是高手还是新手。"
+"如果您对提交的合适性、完成度或者准确度方面有任何疑问，本指南的作者会非常愿意帮助您。"
+
+#: ../../intro/duction.rst:94
+msgid ""
+"To get started working on The Hitchhiker's Guide, see the "
+":doc:`/notes/contribute` page."
+msgstr ""
+"想要开始为 Hitchhiker 的指南做贡献，请见 :doc:`/notes/contribute` 页面。"

@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../notes/contribute.rst:3
+msgid "Contribute"
+msgstr ""
+
+#: ../../notes/contribute.rst:7
+msgid "Python-guide is under active development, and contributors are welcome."
+msgstr ""
+
+#: ../../notes/contribute.rst:9
+msgid ""
+"If you have a feature request, suggestion, or bug report, please open a "
+"new issue on GitHub_. To submit patches, please send a pull request on "
+"GitHub_. Once your changes get merged back in, you'll automatically be "
+"added to the `Contributors List <https://github.com/kennethreitz/python-"
+"guide/contributors>`_."
+msgstr ""
+
+#: ../../notes/contribute.rst:17
+msgid "Style Guide"
+msgstr ""
+
+#: ../../notes/contribute.rst:19
+msgid "For all contributions, please follow the :ref:`guide-style-guide`."
+msgstr ""
+
+#: ../../notes/contribute.rst:26
+msgid "Todo List"
+msgstr ""
+
+#: ../../notes/contribute.rst:28
+msgid ""
+"If you'd like to contribute, there's plenty to do. Here's a short todo_ "
+"list."
+msgstr ""
+
+#: ../../../TODO.rst:1
+msgid "Establish \"use this\" vs \"alternatives are....\" recommendations"
+msgstr ""
+

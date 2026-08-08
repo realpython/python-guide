@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../intro/news.rst:5
+msgid "News"
+msgstr "新闻"
+
+#: ../../intro/news.rst:12
+msgid "PyCoder’s Weekly"
+msgstr ""
+
+#: ../../intro/news.rst:14
+msgid ""
+"PyCoder’s Weekly is a free weekly Python newsletter for Python developers"
+" by Python developers (Projects, Articles, News, and Jobs)."
+msgstr ""
+"PyCoder's Weekly 是一个面向 Python 开发者的免费的每周简讯，包括项目、文章、新闻和工作。"
+
+#: ../../intro/news.rst:17
+msgid "`PyCoder’s Weekly <https://pycoders.com/>`_"
+msgstr ""
+
+#: ../../intro/news.rst:22
+msgid "Real Python"
+msgstr ""
+
+#: ../../intro/news.rst:24
+msgid ""
+"At Real Python you can learn all things Python from the ground up, with "
+"weekly free and in-depth tutorials. Everything from the absolute basics "
+"of Python, to web development and web scraping, to data visualization, "
+"and beyond."
+msgstr ""
+"在 Real Python 中，您可以通过每周免费且深入的教程从头开始学习 Python 的所有内容，"
+"包括 Python 最基础的知识，再到 Web 开发和 Web 爬取，再到数据可视化等等。"
+
+#: ../../intro/news.rst:26
+msgid "`Real Python <https://realpython.com/>`_"
+msgstr ""
+
+#: ../../intro/news.rst:31
+msgid "Planet Python"
+msgstr ""
+
+#: ../../intro/news.rst:33
+msgid "This is an aggregate of Python news from a growing number of developers."
+msgstr "这是一个聚合的，展示不断增长的开发者内容的 Python 新闻。"
+
+#: ../../intro/news.rst:35
+msgid "`Planet Python <https://planetpython.org>`_"
+msgstr ""
+
+#: ../../intro/news.rst:40
+msgid "/r/python"
+msgstr ""
+
+#: ../../intro/news.rst:42
+msgid ""
+"/r/python is the Reddit Python community where users contribute and vote "
+"on Python-related news."
+msgstr ""
+"/r/python 是 Reddit 的 Python 社区，在这里用户会贡献和投票出和 Python 相关的新闻。"
+
+#: ../../intro/news.rst:45
+msgid "`/r/python <https://reddit.com/r/python>`_"
+msgstr ""
+
+#: ../../intro/news.rst:50
+msgid "Talk Python Podcast"
+msgstr ""
+
+#: ../../intro/news.rst:52
+msgid "The #1 Python-focused podcast covering the people and ideas in Python."
+msgstr "第一个关注 Python 的播客，涵盖了 Python 中的人和想法。"
+
+#: ../../intro/news.rst:54
+msgid "`Talk Python To Me <https://talkpython.fm>`_"
+msgstr ""
+
+#: ../../intro/news.rst:59
+msgid "Python Bytes Podcast"
+msgstr ""
+
+#: ../../intro/news.rst:61
+msgid "A short-form Python podcast covering recent developer headlines."
+msgstr "一个简短的 Python 播客，涵盖了最近的开发人员头条。"
+
+#: ../../intro/news.rst:63
+msgid "`Python Bytes <https://pythonbytes.fm>`_"
+msgstr ""
+
+#: ../../intro/news.rst:68
+msgid "Python Weekly"
+msgstr ""
+
+#: ../../intro/news.rst:70
+msgid ""
+"Python Weekly is a free weekly newsletter featuring curated news, "
+"articles, new releases, jobs, etc. related to Python."
+msgstr ""
+"Python Weekly 是一个免费的每周简讯，其特色包括与 Python 相关的新闻、文章、新的发行版本、工作等。"
+
+#: ../../intro/news.rst:73
+msgid "`Python Weekly <https://www.pythonweekly.com/>`_"
+msgstr ""
+
+#: ../../intro/news.rst:78
+msgid "Python News"
+msgstr ""
+
+#: ../../intro/news.rst:80
+msgid ""
+"Python News is the news section in the official Python web site "
+"(www.python.org). It briefly highlights the news from the Python "
+"community."
+msgstr ""
+"Python News 是 Python 官方网站的新闻章节。它简短突出来自 Python 社区的新闻。"
+
+#: ../../intro/news.rst:83
+msgid "`Python News <http://www.python.org/blogs/>`_"
+msgstr ""
+
+#: ../../intro/news.rst:88
+msgid "Import Python Weekly"
+msgstr ""
+
+#: ../../intro/news.rst:90
+msgid ""
+"Weekly Python Newsletter containing Python Articles, Projects, Videos, "
+"and Tweets delivered in your inbox.  Keep Your Python Programming Skills "
+"Updated."
+msgstr ""
+"Weekly Python Newsletter 包含有 Python 文章、项目、视频、Tweets，并发送到您的收件箱。"
+"能够保持您的 Python 编程技能持续更新。"
+
+#: ../../intro/news.rst:93
+msgid ""
+"`Import Python Weekly Newsletter "
+"<http://www.importpython.com/newsletter/>`_"
+msgstr ""
+
+#: ../../intro/news.rst:98
+msgid "Awesome Python Newsletter"
+msgstr ""
+
+#: ../../intro/news.rst:100
+msgid "A weekly overview of the most popular Python news, articles, and packages."
+msgstr "每周最流行的 Python 新闻、文章和包的概述。"
+
+#: ../../intro/news.rst:102
+msgid "`Awesome Python Newsletter <https://python.libhunt.com/newsletter>`_"
+msgstr ""

@@ -1,0 +1,838 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../writing/style.rst:6
+msgid "Code Style"
+msgstr ""
+
+#: ../../writing/style.rst:10
+msgid ""
+"If you ask Python programmers what they like most about Python, they will"
+" often cite its high readability. Indeed, a high level of readability is "
+"at the heart of the design of the Python language, following the "
+"recognized fact that code is read much more often than it is written."
+msgstr ""
+
+#: ../../writing/style.rst:15
+msgid ""
+"One reason for the high readability of Python code is its relatively "
+"complete set of Code Style guidelines and \"Pythonic\" idioms."
+msgstr ""
+
+#: ../../writing/style.rst:18
+msgid ""
+"When a veteran Python developer (a Pythonista) calls portions of code not"
+" \"Pythonic\", they usually mean that these lines of code do not follow "
+"the common guidelines and fail to express its intent in what is "
+"considered the best (hear: most readable) way."
+msgstr ""
+
+#: ../../writing/style.rst:23
+msgid ""
+"On some border cases, no best way has been agreed upon on how to express "
+"an intent in Python code, but these cases are rare."
+msgstr ""
+
+#: ../../writing/style.rst:29
+msgid "General concepts"
+msgstr ""
+
+#: ../../writing/style.rst:32
+msgid "Explicit code"
+msgstr ""
+
+#: ../../writing/style.rst:34
+msgid ""
+"While any kind of black magic is possible with Python, the most explicit "
+"and straightforward manner is preferred."
+msgstr ""
+
+#: ../../writing/style.rst:37 ../../writing/style.rst:64
+msgid "**Bad**"
+msgstr ""
+
+#: ../../writing/style.rst:45 ../../writing/style.rst:75
+msgid "**Good**"
+msgstr ""
+
+#: ../../writing/style.rst:52
+msgid ""
+"In the good code above, x and y are explicitly received from the caller, "
+"and an explicit dictionary is returned. The developer using this function"
+" knows exactly what to do by reading the first and last lines, which is "
+"not the case with the bad example."
+msgstr ""
+
+#: ../../writing/style.rst:58
+msgid "One statement per line"
+msgstr ""
+
+#: ../../writing/style.rst:60
+msgid ""
+"While some compound statements such as list comprehensions are allowed "
+"and appreciated for their brevity and their expressiveness, it is bad "
+"practice to have two disjointed statements on the same line of code."
+msgstr ""
+
+#: ../../writing/style.rst:91
+msgid "Function arguments"
+msgstr ""
+
+#: ../../writing/style.rst:93
+msgid "Arguments can be passed to functions in four different ways."
+msgstr ""
+
+#: ../../writing/style.rst:95
+msgid ""
+"**Positional arguments** are mandatory and have no default values. They "
+"are the simplest form of arguments and they can be used for the few "
+"function arguments that are fully part of the function's meaning and "
+"their order is natural. For instance, in ``send(message, recipient)`` or "
+"``point(x, y)`` the user of the function has no difficulty remembering "
+"that those two functions require two arguments, and in which order."
+msgstr ""
+
+#: ../../writing/style.rst:102
+msgid ""
+"In those two cases, it is possible to use argument names when calling the"
+" functions and, doing so, it is possible to switch the order of "
+"arguments, calling for instance ``send(recipient='World', "
+"message='Hello')`` and ``point(y=2, x=1)`` but this reduces readability "
+"and is unnecessarily verbose, compared to the more straightforward calls "
+"to ``send('Hello', 'World')`` and ``point(1, 2)``."
+msgstr ""
+
+#: ../../writing/style.rst:109
+msgid ""
+"**Keyword arguments** are not mandatory and have default values. They are"
+" often used for optional parameters sent to the function. When a function"
+" has more than two or three positional parameters, its signature is more "
+"difficult to remember and using keyword arguments with default values is "
+"helpful. For instance, a more complete ``send`` function could be defined"
+" as ``send(message, to, cc=None, bcc=None)``. Here ``cc`` and ``bcc`` are"
+" optional, and evaluate to ``None`` when they are not passed another "
+"value."
+msgstr ""
+
+#: ../../writing/style.rst:117
+msgid ""
+"Calling a function with keyword arguments can be done in multiple ways in"
+" Python; for example, it is possible to follow the order of arguments in "
+"the definition without explicitly naming the arguments, like in "
+"``send('Hello', 'World', 'Cthulhu', 'God')``, sending a blind carbon copy"
+" to God. It would also be possible to name arguments in another order, "
+"like in ``send('Hello again', 'World', bcc='God', cc='Cthulhu')``. Those "
+"two possibilities are better avoided without any strong reason to not "
+"follow the syntax that is the closest to the function definition: "
+"``send('Hello', 'World', cc='Cthulhu', bcc='God')``."
+msgstr ""
+
+#: ../../writing/style.rst:127
+msgid ""
+"As a side note, following the `YAGNI "
+"<http://en.wikipedia.org/wiki/You_ain't_gonna_need_it>`_ principle, it is"
+" often harder to remove an optional argument (and its logic inside the "
+"function) that was added \"just in case\" and is seemingly never used, "
+"than to add a new optional argument and its logic when needed."
+msgstr ""
+
+#: ../../writing/style.rst:132
+msgid ""
+"The **arbitrary argument list** is the third way to pass arguments to a "
+"function. If the function intention is better expressed by a signature "
+"with an extensible number of positional arguments, it can be defined with"
+" the ``*args`` constructs. In the function body, ``args`` will be a tuple"
+" of all the remaining positional arguments. For example, ``send(message, "
+"*args)`` can be called with each recipient as an argument: "
+"``send('Hello', 'God', 'Mom', 'Cthulhu')``, and in the function body "
+"``args`` will be equal to ``('God', 'Mom', 'Cthulhu')``."
+msgstr ""
+
+#: ../../writing/style.rst:141
+msgid ""
+"However, this construct has some drawbacks and should be used with "
+"caution. If a function receives a list of arguments of the same nature, "
+"it is often more clear to define it as a function of one argument, that "
+"argument being a list or any sequence. Here, if ``send`` has multiple "
+"recipients, it is better to define it explicitly: ``send(message, "
+"recipients)`` and call it with ``send('Hello', ['God', 'Mom', "
+"'Cthulhu'])``. This way, the user of the function can manipulate the "
+"recipient list as a list beforehand, and it opens the possibility to pass"
+" any sequence, including iterators, that cannot be unpacked as other "
+"sequences."
+msgstr ""
+
+#: ../../writing/style.rst:150
+msgid ""
+"The **arbitrary keyword argument dictionary** is the last way to pass "
+"arguments to functions. If the function requires an undetermined series "
+"of named arguments, it is possible to use the ``**kwargs`` construct. In "
+"the function body, ``kwargs`` will be a dictionary of all the passed "
+"named arguments that have not been caught by other keyword arguments in "
+"the function signature."
+msgstr ""
+
+#: ../../writing/style.rst:157
+msgid ""
+"The same caution as in the case of *arbitrary argument list* is "
+"necessary, for similar reasons: these powerful techniques are to be used "
+"when there is a proven necessity to use them, and they should not be used"
+" if the simpler and clearer construct is sufficient to express the "
+"function's intention."
+msgstr ""
+
+#: ../../writing/style.rst:162
+msgid ""
+"It is up to the programmer writing the function to determine which "
+"arguments are positional arguments and which are optional keyword "
+"arguments, and to decide whether to use the advanced techniques of "
+"arbitrary argument passing. If the advice above is followed wisely, it is"
+" possible and enjoyable to write Python functions that are:"
+msgstr ""
+
+#: ../../writing/style.rst:168
+msgid "easy to read (the name and arguments need no explanations)"
+msgstr ""
+
+#: ../../writing/style.rst:170
+msgid ""
+"easy to change (adding a new keyword argument does not break other parts "
+"of the code)"
+msgstr ""
+
+#: ../../writing/style.rst:174
+msgid "Avoid the magical wand"
+msgstr ""
+
+#: ../../writing/style.rst:176
+msgid ""
+"A powerful tool for hackers, Python comes with a very rich set of hooks "
+"and tools allowing you to do almost any kind of tricky tricks. For "
+"instance, it is possible to do each of the following:"
+msgstr ""
+
+#: ../../writing/style.rst:180
+msgid "change how objects are created and instantiated"
+msgstr ""
+
+#: ../../writing/style.rst:182
+msgid "change how the Python interpreter imports modules"
+msgstr ""
+
+#: ../../writing/style.rst:184
+msgid ""
+"It is even possible (and recommended if needed) to embed C routines in "
+"Python."
+msgstr ""
+
+#: ../../writing/style.rst:186
+msgid ""
+"However, all these options have many drawbacks and it is always better to"
+" use the most straightforward way to achieve your goal. The main drawback"
+" is that readability suffers greatly when using these constructs. Many "
+"code analysis tools, such as pylint or pyflakes, will be unable to parse "
+"this \"magic\" code."
+msgstr ""
+
+#: ../../writing/style.rst:191
+msgid ""
+"We consider that a Python developer should know about these nearly "
+"infinite possibilities, because it instills confidence that no impassable"
+" problem will be on the way. However, knowing how and particularly when "
+"**not** to use them is very important."
+msgstr ""
+
+#: ../../writing/style.rst:196
+msgid ""
+"Like a kung fu master, a Pythonista knows how to kill with a single "
+"finger, and never to actually do it."
+msgstr ""
+
+#: ../../writing/style.rst:200
+msgid "We are all responsible users"
+msgstr ""
+
+#: ../../writing/style.rst:202
+msgid ""
+"As seen above, Python allows many tricks, and some of them are "
+"potentially dangerous. A good example is that any client code can "
+"override an object's properties and methods: there is no \"private\" "
+"keyword in Python. This philosophy, very different from highly defensive "
+"languages like Java, which give a lot of mechanisms to prevent any "
+"misuse, is expressed by the saying: \"We are all responsible users\"."
+msgstr ""
+
+#: ../../writing/style.rst:209
+msgid ""
+"This doesn't mean that, for example, no properties are considered "
+"private, and that no proper encapsulation is possible in Python. Rather, "
+"instead of relying on concrete walls erected by the developers between "
+"their code and others', the Python community prefers to rely on a set of "
+"conventions indicating that these elements should not be accessed "
+"directly."
+msgstr ""
+
+#: ../../writing/style.rst:215
+msgid ""
+"The main convention for private properties and implementation details is "
+"to prefix all \"internals\" with an underscore. If the client code breaks"
+" this rule and accesses these marked elements, any misbehavior or "
+"problems encountered if the code is modified is the responsibility of the"
+" client code."
+msgstr ""
+
+#: ../../writing/style.rst:220
+msgid ""
+"Using this convention generously is encouraged: any method or property "
+"that is not intended to be used by client code should be prefixed with an"
+" underscore. This will guarantee a better separation of duties and easier"
+" modification of existing code; it will always be possible to publicize a"
+" private property, but making a public property private might be a much "
+"harder operation."
+msgstr ""
+
+#: ../../writing/style.rst:227
+msgid "Returning values"
+msgstr ""
+
+#: ../../writing/style.rst:229
+msgid ""
+"When a function grows in complexity, it is not uncommon to use multiple "
+"return statements inside the function's body. However, in order to keep a"
+" clear intent and a sustainable readability level, it is preferable to "
+"avoid returning meaningful values from many output points in the body."
+msgstr ""
+
+#: ../../writing/style.rst:234
+msgid ""
+"There are two main cases for returning values in a function: the result "
+"of the function return when it has been processed normally, and the error"
+" cases that indicate a wrong input parameter or any other reason for the "
+"function to not be able to complete its computation or task."
+msgstr ""
+
+#: ../../writing/style.rst:239
+msgid ""
+"If you do not wish to raise exceptions for the second case, then "
+"returning a value, such as None or False, indicating that the function "
+"could not perform correctly might be needed. In this case, it is better "
+"to return as early as the incorrect context has been detected. It will "
+"help to flatten the structure of the function: all the code after the "
+"return-because-of-error statement can assume the condition is met to "
+"further compute the function's main result. Having multiple such return "
+"statements is often necessary."
+msgstr ""
+
+#: ../../writing/style.rst:247
+msgid ""
+"However, when a function has multiple main exit points for its normal "
+"course, it becomes difficult to debug the returned result, so it may be "
+"preferable to keep a single exit point. This will also help factoring out"
+" some code paths, and the multiple exit points are a probable indication "
+"that such a refactoring is needed."
+msgstr ""
+
+#: ../../writing/style.rst:270
+msgid "Idioms"
+msgstr ""
+
+#: ../../writing/style.rst:272
+msgid ""
+"A programming idiom, put simply, is a *way* to write code. The notion of "
+"programming idioms is discussed amply at `c2 "
+"<http://c2.com/cgi/wiki?ProgrammingIdiom>`_ and at `Stack Overflow "
+"<https://stackoverflow.com/questions/302459/what-is-a-programming-"
+"idiom>`_."
+msgstr ""
+
+#: ../../writing/style.rst:276
+msgid "Idiomatic Python code is often referred to as being *Pythonic*."
+msgstr ""
+
+#: ../../writing/style.rst:278
+msgid ""
+"Although there usually is one --- and preferably only one --- obvious way"
+" to do it; *the* way to write idiomatic Python code can be non-obvious to"
+" Python beginners. So, good idioms must be consciously acquired."
+msgstr ""
+
+#: ../../writing/style.rst:282
+msgid "Some common Python idioms follow:"
+msgstr ""
+
+#: ../../writing/style.rst:287
+msgid "Unpacking"
+msgstr ""
+
+#: ../../writing/style.rst:289
+msgid ""
+"If you know the length of a list or tuple, you can assign names to its "
+"elements with unpacking. For example, since ``enumerate()`` will provide "
+"a tuple of two elements for each item in list:"
+msgstr ""
+
+#: ../../writing/style.rst:298
+msgid "You can use this to swap variables as well:"
+msgstr ""
+
+#: ../../writing/style.rst:304
+msgid "Nested unpacking works too:"
+msgstr ""
+
+#: ../../writing/style.rst:310
+msgid ""
+"In Python 3, a new method of extended unpacking was introduced by "
+":pep:`3132`:"
+msgstr ""
+
+#: ../../writing/style.rst:321
+msgid "Create an ignored variable"
+msgstr ""
+
+#: ../../writing/style.rst:323
+msgid ""
+"If you need to assign something (for instance, in :ref:`unpacking-ref`) "
+"but will not need that variable, use ``__``:"
+msgstr ""
+
+#: ../../writing/style.rst:333
+msgid ""
+"Many Python style guides recommend the use of a single underscore "
+"\"``_``\" for throwaway variables rather than the double underscore "
+"\"``__``\" recommended here. The issue is that \"``_``\" is commonly used"
+" as an alias for the :func:`~gettext.gettext` function, and is also used "
+"at the interactive prompt to hold the value of the last operation. Using "
+"a double underscore instead is just as clear and almost as convenient, "
+"and eliminates the risk of accidentally interfering with either of these "
+"other use cases."
+msgstr ""
+
+#: ../../writing/style.rst:343
+msgid "Create a length-N list of the same thing"
+msgstr ""
+
+#: ../../writing/style.rst:345
+msgid "Use the Python list ``*`` operator:"
+msgstr ""
+
+#: ../../writing/style.rst:352
+msgid "Create a length-N list of lists"
+msgstr ""
+
+#: ../../writing/style.rst:354
+msgid ""
+"Because lists are mutable, the ``*`` operator (as above) will create a "
+"list of N references to the `same` list, which is not likely what you "
+"want. Instead, use a list comprehension:"
+msgstr ""
+
+#: ../../writing/style.rst:363
+msgid "Create a string from a list"
+msgstr ""
+
+#: ../../writing/style.rst:365
+msgid ""
+"A common idiom for creating strings is to use :py:meth:`str.join` on an "
+"empty string."
+msgstr ""
+
+#: ../../writing/style.rst:373
+msgid ""
+"This will set the value of the variable *word* to 'spam'. This idiom can "
+"be applied to lists and tuples."
+msgstr ""
+
+#: ../../writing/style.rst:377
+msgid "Searching for an item in a collection"
+msgstr ""
+
+#: ../../writing/style.rst:379
+msgid ""
+"Sometimes we need to search through a collection of things. Let's look at"
+" two options: lists and sets."
+msgstr ""
+
+#: ../../writing/style.rst:382
+msgid "Take the following code for example:"
+msgstr ""
+
+#: ../../writing/style.rst:395
+msgid ""
+"Even though both functions look identical, because *lookup_set* is "
+"utilizing the fact that sets in Python are hashtables, the lookup "
+"performance between the two is very different. To determine whether an "
+"item is in a list, Python will have to go through each item until it "
+"finds a matching item. This is time consuming, especially for long lists."
+" In a set, on the other hand, the hash of the item will tell Python where"
+" in the set to look for a matching item. As a result, the search can be "
+"done quickly, even if the set is large. Searching in dictionaries works "
+"the same way. For more information see this `StackOverflow "
+"<https://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-"
+"up-table>`_ page. For detailed information on the amount of time various "
+"common operations take on each of these data structures, see `this page "
+"<https://wiki.python.org/moin/TimeComplexity?>`_."
+msgstr ""
+
+#: ../../writing/style.rst:409
+msgid ""
+"Because of these differences in performance, it is often a good idea to "
+"use sets or dictionaries instead of lists in cases where:"
+msgstr ""
+
+#: ../../writing/style.rst:412
+msgid "The collection will contain a large number of items"
+msgstr ""
+
+#: ../../writing/style.rst:414
+msgid "You will be repeatedly searching for items in the collection"
+msgstr ""
+
+#: ../../writing/style.rst:416
+msgid "You do not have duplicate items."
+msgstr ""
+
+#: ../../writing/style.rst:418
+msgid ""
+"For small collections, or collections which you will not frequently be "
+"searching through, the additional time and memory required to set up the "
+"hashtable will often be greater than the time saved by the improved "
+"search speed."
+msgstr ""
+
+#: ../../writing/style.rst:426
+msgid "Zen of Python"
+msgstr ""
+
+#: ../../writing/style.rst:428
+msgid "Also known as :pep:`20`, the guiding principles for Python's design."
+msgstr ""
+
+#: ../../writing/style.rst:455
+msgid ""
+"For some examples of good Python style, see `these slides from a Python "
+"user group <https://github.com/hblanks/zen-of-python-by-example>`_."
+msgstr ""
+
+#: ../../writing/style.rst:461
+msgid "PEP 8"
+msgstr ""
+
+#: ../../writing/style.rst:463
+msgid ""
+":pep:`8` is the de facto code style guide for Python. A high quality, "
+"easy-to-read version of PEP 8 is also available at `pep8.org "
+"<http://pep8.org/>`_."
+msgstr ""
+
+#: ../../writing/style.rst:466
+msgid ""
+"This is highly recommended reading. The entire Python community does "
+"their best to adhere to the guidelines laid out within this document. "
+"Some project may sway from it from time to time, while others may `amend "
+"its recommendations <http://docs.python-"
+"requests.org/en/master/dev/contributing/#kenneth-reitz-s-code-style>`_."
+msgstr ""
+
+#: ../../writing/style.rst:471
+msgid ""
+"That being said, conforming your Python code to PEP 8 is generally a good"
+" idea and helps make code more consistent when working on projects with "
+"other developers. There is a command-line program, `pycodestyle "
+"<https://github.com/PyCQA/pycodestyle>`_ (previously known as ``pep8``), "
+"that can check your code for conformance. Install it by running the "
+"following command in your terminal:"
+msgstr ""
+
+#: ../../writing/style.rst:483
+msgid ""
+"Then run it on a file or series of files to get a report of any "
+"violations."
+msgstr ""
+
+#: ../../writing/style.rst:498
+msgid "Auto-Formatting"
+msgstr ""
+
+#: ../../writing/style.rst:500
+msgid ""
+"There are several auto-formatting tools that can reformat your code, in "
+"order to comply with PEP 8."
+msgstr ""
+
+#: ../../writing/style.rst:503
+msgid "**autopep8**"
+msgstr ""
+
+#: ../../writing/style.rst:505
+msgid ""
+"The program `autopep8 <https://pypi.org/project/autopep8/>`_ can be used "
+"to automatically reformat code in the PEP 8 style. Install the program "
+"with:"
+msgstr ""
+
+#: ../../writing/style.rst:512
+msgid "Use it to format a file in-place with:"
+msgstr ""
+
+#: ../../writing/style.rst:518
+msgid ""
+"Excluding the ``--in-place`` flag will cause the program to output the "
+"modified code directly to the console for review. The ``--aggressive`` "
+"flag will perform more substantial changes and can be applied multiple "
+"times for greater effect."
+msgstr ""
+
+#: ../../writing/style.rst:522
+msgid "**yapf**"
+msgstr ""
+
+#: ../../writing/style.rst:524
+msgid ""
+"While autopep8 focuses on solving the PEP 8 violations, `yapf "
+"<https://github.com/google/yapf>`_ tries to improve the format of your "
+"code aside from complying with PEP 8. This formatter aims at providing as"
+" good looking code as a programmer who writes PEP 8 compliant code. It "
+"gets installed with:"
+msgstr ""
+
+#: ../../writing/style.rst:534
+msgid "Run the auto-formatting of a file with:"
+msgstr ""
+
+#: ../../writing/style.rst:540
+msgid ""
+"Similar to autopep8, running the command without the ``--in-place`` flag "
+"will output the diff for review before applying the changes."
+msgstr ""
+
+#: ../../writing/style.rst:543
+msgid "**black**"
+msgstr ""
+
+#: ../../writing/style.rst:545
+msgid ""
+"The auto-formatter `black <https://github.com/psf/black>`_ offers an "
+"opinionated and deterministic reformatting of your code base. Its main "
+"focus lies in providing a uniform code style without the need of "
+"configuration throughout its users. Hence, users of black are able to "
+"forget about formatting altogether. Also, due to the deterministic "
+"approach minimal git diffs with only the relevant changes are guaranteed."
+" You can install the tool as follows:"
+msgstr ""
+
+#: ../../writing/style.rst:557
+msgid "A python file can be formatted with:"
+msgstr ""
+
+#: ../../writing/style.rst:563
+msgid ""
+"Adding the ``--diff`` flag provides the code modification for review "
+"without direct application."
+msgstr ""
+
+#: ../../writing/style.rst:568
+msgid "Conventions"
+msgstr ""
+
+#: ../../writing/style.rst:570
+msgid ""
+"Here are some conventions you should follow to make your code easier to "
+"read."
+msgstr ""
+
+#: ../../writing/style.rst:573
+msgid "Check if a variable equals a constant"
+msgstr ""
+
+#: ../../writing/style.rst:575
+msgid ""
+"You don't need to explicitly compare a value to True, or None, or 0 -- "
+"you can just add it to the if statement. See `Truth Value Testing "
+"<http://docs.python.org/library/stdtypes.html#truth-value-testing>`_ for "
+"a list of what is considered false."
+msgstr ""
+
+#: ../../writing/style.rst:580 ../../writing/style.rst:612
+#: ../../writing/style.rst:650 ../../writing/style.rst:691
+#: ../../writing/style.rst:708 ../../writing/style.rst:753
+#: ../../writing/style.rst:799 ../../writing/style.rst:834
+msgid "**Bad**:"
+msgstr ""
+
+#: ../../writing/style.rst:590 ../../writing/style.rst:622
+#: ../../writing/style.rst:657 ../../writing/style.rst:671
+#: ../../writing/style.rst:697 ../../writing/style.rst:727
+#: ../../writing/style.rst:766 ../../writing/style.rst:808
+#: ../../writing/style.rst:845
+msgid "**Good**:"
+msgstr ""
+
+#: ../../writing/style.rst:607
+msgid "Access a Dictionary Element"
+msgstr ""
+
+#: ../../writing/style.rst:609
+msgid ""
+"Don't use the :py:meth:`dict.has_key` method. Instead, use ``x in d`` "
+"syntax, or pass a default argument to :py:meth:`dict.get`."
+msgstr ""
+
+#: ../../writing/style.rst:636
+msgid "Short Ways to Manipulate Lists"
+msgstr ""
+
+#: ../../writing/style.rst:638
+msgid ""
+"`List comprehensions <http://docs.python.org/tutorial/datastructures.html"
+"#list-comprehensions>`_ provides a powerful, concise way to work with "
+"lists."
+msgstr ""
+
+#: ../../writing/style.rst:642
+msgid ""
+"`Generator expressions <http://docs.python.org/tutorial/classes.html"
+"#generator-expressions>`_ follows almost the same syntax as list "
+"comprehensions but return a generator instead of a list."
+msgstr ""
+
+#: ../../writing/style.rst:647
+msgid ""
+"Creating a new list requires more work and uses more memory. If you are "
+"just going to loop through the new list, prefer using an iterator "
+"instead."
+msgstr ""
+
+#: ../../writing/style.rst:664
+msgid ""
+"Use list comprehensions when you really need to create a second list, for"
+" example if you need to use the result multiple times."
+msgstr ""
+
+#: ../../writing/style.rst:668
+msgid ""
+"If your logic is too complicated for a short list comprehension or "
+"generator expression, consider using a generator function instead of "
+"returning a list."
+msgstr ""
+
+#: ../../writing/style.rst:689
+msgid "Never use a list comprehension just for its side effects."
+msgstr ""
+
+#: ../../writing/style.rst:706
+msgid "Filtering a list"
+msgstr ""
+
+#: ../../writing/style.rst:710
+msgid "Never remove items from a list while you are iterating through it."
+msgstr ""
+
+#: ../../writing/style.rst:720
+msgid "Don't make multiple passes through the list."
+msgstr ""
+
+#: ../../writing/style.rst:729
+msgid "Use a list comprehension or generator expression."
+msgstr ""
+
+#: ../../writing/style.rst:741
+msgid "Possible side effects of modifying the original list"
+msgstr ""
+
+#: ../../writing/style.rst:743
+msgid ""
+"Modifying the original list can be risky if there are other variables "
+"referencing it. But you can use *slice assignment* if you really want to "
+"do that."
+msgstr ""
+
+#: ../../writing/style.rst:752
+msgid "Modifying the values in a list"
+msgstr ""
+
+#: ../../writing/style.rst:755
+msgid ""
+"Remember that assignment never creates a new object. If two or more "
+"variables refer to the same list, changing one of them changes them all."
+msgstr ""
+
+#: ../../writing/style.rst:768
+msgid "It's safer to create a new list object and leave the original alone."
+msgstr ""
+
+#: ../../writing/style.rst:778
+msgid "Use :py:func:`enumerate` keep a count of your place in the list."
+msgstr ""
+
+#: ../../writing/style.rst:790
+msgid ""
+"The :py:func:`enumerate` function has better readability than handling a "
+"counter manually. Moreover, it is better optimized for iterators."
+msgstr ""
+
+#: ../../writing/style.rst:794
+msgid "Read From a File"
+msgstr ""
+
+#: ../../writing/style.rst:796
+msgid ""
+"Use the ``with open`` syntax to read from files. This will automatically "
+"close files for you."
+msgstr ""
+
+#: ../../writing/style.rst:816
+msgid ""
+"The ``with`` statement is better because it will ensure you always close "
+"the file, even if an exception is raised inside the ``with`` block."
+msgstr ""
+
+#: ../../writing/style.rst:820
+msgid "Line Continuations"
+msgstr ""
+
+#: ../../writing/style.rst:822
+msgid ""
+"When a logical line of code is longer than the accepted limit, you need "
+"to split it over multiple physical lines. The Python interpreter will "
+"join consecutive lines if the last character of the line is a backslash. "
+"This is helpful in some cases, but should usually be avoided because of "
+"its fragility: a white space added to the end of the line, after the "
+"backslash, will break the code and may have unexpected results."
+msgstr ""
+
+#: ../../writing/style.rst:829
+msgid ""
+"A better solution is to use parentheses around your elements. Left with "
+"an unclosed parenthesis on an end-of-line, the Python interpreter will "
+"join the next line until the parentheses are closed. The same behavior "
+"holds for curly and square braces."
+msgstr ""
+
+#: ../../writing/style.rst:858
+msgid ""
+"However, more often than not, having to split a long logical line is a "
+"sign that you are trying to do too many things at the same time, which "
+"may hinder readability."
+msgstr ""
+

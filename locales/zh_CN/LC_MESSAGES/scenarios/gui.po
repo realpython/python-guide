@@ -1,0 +1,270 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/gui.rst:4
+msgid "GUI Applications"
+msgstr ""
+
+#: ../../scenarios/gui.rst:9
+msgid "Alphabetical list of GUI Applications."
+msgstr ""
+
+#: ../../scenarios/gui.rst:14
+msgid "Camelot"
+msgstr ""
+
+#: ../../scenarios/gui.rst:16
+msgid ""
+"`Camelot <http://www.python-camelot.com>`_ provides components for "
+"building applications on top of Python, SQLAlchemy, and Qt.  It is "
+"inspired by the Django admin interface."
+msgstr ""
+
+#: ../../scenarios/gui.rst:20
+msgid ""
+"The main resource for information is the website: http://www.python-"
+"camelot.com and the mailing list https://groups.google.com/forum/#!forum"
+"/project-camelot."
+msgstr ""
+
+#: ../../scenarios/gui.rst:27
+msgid "Cocoa"
+msgstr ""
+
+#: ../../scenarios/gui.rst:29
+msgid ""
+"The Cocoa framework is only available on OS X. Don't pick this if you're "
+"writing a cross-platform application!"
+msgstr ""
+
+#: ../../scenarios/gui.rst:34
+msgid "GTk"
+msgstr ""
+
+#: ../../scenarios/gui.rst:36
+msgid ""
+"PyGTK provides Python bindings for the GTK+ toolkit. However, it has been"
+" superseded by PyGObject. PyGTK should not be used for new projects and "
+"existing projects should be ported to PyGObject."
+msgstr ""
+
+#: ../../scenarios/gui.rst:41
+msgid "PyGObject aka (PyGi)"
+msgstr ""
+
+#: ../../scenarios/gui.rst:43
+msgid ""
+"`PyGObject <https://wiki.gnome.org/Projects/PyGObject>`_ provides Python "
+"bindings which gives access to the entire GNOME software platform. It is "
+"fully compatible with GTK+ 3. Here is a tutorial to get started with "
+"`Python GTK+ 3 Tutorial <https://python-"
+"gtk-3-tutorial.readthedocs.io/en/latest/>`_."
+msgstr ""
+
+#: ../../scenarios/gui.rst:48
+msgid "`API Reference <http://lazka.github.io/pgi-docs/>`_"
+msgstr ""
+
+#: ../../scenarios/gui.rst:53
+msgid "Kivy"
+msgstr ""
+
+#: ../../scenarios/gui.rst:55
+msgid ""
+"`Kivy <http://kivy.org>`_ is a Python library for development of multi-"
+"touch enabled media rich applications. The aim is to allow for quick and "
+"easy interaction design and rapid prototyping, while making your code "
+"reusable and deployable."
+msgstr ""
+
+#: ../../scenarios/gui.rst:60
+msgid ""
+"Kivy is written in Python, based on OpenGL, and supports different input "
+"devices such as: Mouse, Dual Mouse, TUIO, WiiMote, WM_TOUCH, HIDtouch, "
+"Apple's products, and so on."
+msgstr ""
+
+#: ../../scenarios/gui.rst:64
+msgid ""
+"Kivy is actively being developed by a community and is free to use. It "
+"operates on all major platforms (Linux, OS X, Windows, Android)."
+msgstr ""
+
+#: ../../scenarios/gui.rst:67
+msgid "The main resource for information is the website: http://kivy.org"
+msgstr ""
+
+#: ../../scenarios/gui.rst:72
+msgid "PyObjC"
+msgstr ""
+
+#: ../../scenarios/gui.rst:74
+msgid ""
+"Only available on OS X. Don't pick this if you're writing a cross-"
+"platform application."
+msgstr ""
+
+#: ../../scenarios/gui.rst:79
+msgid "PySide"
+msgstr ""
+
+#: ../../scenarios/gui.rst:81
+msgid ""
+"PySide is a Python binding of the cross-platform GUI toolkit Qt. The "
+"package name depends on the major Qt version (`PySide` for Qt4, `PySide2`"
+" for Qt5, and `PySide6` for Qt6). This set of bindings is developed by "
+"`The Qt Company <https://qt.io>`_."
+msgstr ""
+
+#: ../../scenarios/gui.rst:90
+msgid "https://pyside.org"
+msgstr ""
+
+#: ../../scenarios/gui.rst:95
+msgid "PyQt"
+msgstr ""
+
+#: ../../scenarios/gui.rst:97
+msgid ""
+"If your software does not fully comply with the GPL you will need a "
+"commercial license!"
+msgstr ""
+
+#: ../../scenarios/gui.rst:99
+msgid "PyQt provides Python bindings for the Qt Framework (see below)."
+msgstr ""
+
+#: ../../scenarios/gui.rst:101
+msgid "http://www.riverbankcomputing.co.uk/software/pyqt/download"
+msgstr ""
+
+#: ../../scenarios/gui.rst:106
+msgid "Pyjs Desktop (formerly Pyjamas Desktop)"
+msgstr ""
+
+#: ../../scenarios/gui.rst:108
+msgid ""
+"Pyjs Desktop is a application widget set for desktop and a cross-platform"
+" framework. It allows the exact same Python web application source code "
+"to be executed as a standalone desktop application."
+msgstr ""
+
+#: ../../scenarios/gui.rst:113
+msgid "The main website: `pyjs <http://pyjs.org/>`_."
+msgstr ""
+
+#: ../../scenarios/gui.rst:118
+msgid "Qt"
+msgstr ""
+
+#: ../../scenarios/gui.rst:120
+msgid ""
+"`Qt <http://qt-project.org/>`_ is a cross-platform application framework "
+"that is widely used for developing software with a GUI but can also be "
+"used for non-GUI applications."
+msgstr ""
+
+#: ../../scenarios/gui.rst:127
+msgid "PySimpleGUI"
+msgstr ""
+
+#: ../../scenarios/gui.rst:129
+msgid ""
+"`PySimpleGUI <https://pysimplegui.readthedocs.io/>`_ is a  wrapper for "
+"Tkinter and Qt (others on the way).  The amount of code required to "
+"implement custom GUIs is much shorter using PySimpleGUI than if the same "
+"GUI were written directly using Tkinter or Qt.  PySimpleGUI code can be "
+"\"ported\" between GUI frameworks by changing import statements."
+msgstr ""
+
+#: ../../scenarios/gui.rst:139
+msgid ""
+"PySimpleGUI is contained in a single PySimpleGUI.py file.  Should pip "
+"installation be impossible, copying the PySimpleGUI.py file into a "
+"project's folder is all that's required to import and begin using."
+msgstr ""
+
+#: ../../scenarios/gui.rst:146
+msgid "Toga"
+msgstr ""
+
+#: ../../scenarios/gui.rst:148
+msgid ""
+"`Toga <https://toga.readthedocs.io/en/latest/>`_ is a Python native, OS "
+"native, cross platform GUI toolkit. Toga consists of a library of base "
+"components with a shared interface to simplify platform-agnostic GUI "
+"development."
+msgstr ""
+
+#: ../../scenarios/gui.rst:152
+msgid ""
+"Toga is available on macOS, Windows, Linux (GTK), and mobile platforms "
+"such as Android and iOS."
+msgstr ""
+
+#: ../../scenarios/gui.rst:158
+msgid "Tk"
+msgstr ""
+
+#: ../../scenarios/gui.rst:160
+msgid ""
+"Tkinter is a thin object-oriented layer on top of Tcl/Tk. **It has the "
+"advantage of being included with the Python standard library, making it "
+"the most convenient and compatible toolkit to program with.**"
+msgstr ""
+
+#: ../../scenarios/gui.rst:164
+msgid ""
+"Both Tk and Tkinter are available on most Unix platforms, as well as on "
+"Windows and Macintosh systems. Starting with the 8.0 release, Tk offers "
+"native look and feel on all platforms."
+msgstr ""
+
+#: ../../scenarios/gui.rst:168
+msgid ""
+"There's a good multi-language Tk tutorial with Python examples at `TkDocs"
+" <http://www.tkdocs.com/tutorial/index.html>`_. There's more information "
+"available on the `Python Wiki <http://wiki.python.org/moin/TkInter>`_."
+msgstr ""
+
+#: ../../scenarios/gui.rst:175
+msgid "wxPython"
+msgstr ""
+
+#: ../../scenarios/gui.rst:177
+msgid ""
+"wxPython is a GUI toolkit for the Python programming language. It allows "
+"Python programmers to create programs with a robust, highly functional "
+"graphical user interface, simply and easily. It is implemented as a "
+"Python extension module (native code) that wraps the popular wxWidgets "
+"cross platform GUI library, which is written in C++."
+msgstr ""
+
+#: ../../scenarios/gui.rst:183
+msgid ""
+"**Install (Stable) wxPython** *go to "
+"https://www.wxpython.org/pages/downloads/ and download the appropriate "
+"package for your OS.*"
+msgstr ""
+

@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/scrape.rst:4
+msgid "HTML Scraping"
+msgstr ""
+
+#: ../../scenarios/scrape.rst:11
+msgid "Web Scraping"
+msgstr ""
+
+#: ../../scenarios/scrape.rst:13
+msgid ""
+"Web sites are written using HTML, which means that each web page is a "
+"structured document. Sometimes it would be great to obtain some data from"
+" them and preserve the structure while we're at it. Web sites don't "
+"always provide their data in comfortable formats such as CSV or JSON."
+msgstr ""
+
+#: ../../scenarios/scrape.rst:18
+msgid ""
+"This is where web scraping comes in. Web scraping is the practice of "
+"using a computer program to sift through a web page and gather the data "
+"that you need in a format most useful to you while at the same time "
+"preserving the structure of the data."
+msgstr ""
+
+#: ../../scenarios/scrape.rst:26
+msgid "lxml and Requests"
+msgstr ""
+
+#: ../../scenarios/scrape.rst:28
+msgid ""
+"`lxml <http://lxml.de/>`_ is a pretty extensive library written for "
+"parsing XML and HTML documents very quickly, even handling messed up tags"
+" in the process. We will also be using the `Requests <http://docs.python-"
+"requests.org/en/latest/>`_ module instead of the already built-in urllib2"
+" module due to improvements in speed and readability. You can easily "
+"install both using ``pip install lxml`` and ``pip install requests``."
+msgstr ""
+
+#: ../../scenarios/scrape.rst:36
+msgid "Let's start with the imports:"
+msgstr ""
+
+#: ../../scenarios/scrape.rst:43
+msgid ""
+"Next we will use ``requests.get`` to retrieve the web page with our data,"
+" parse it using the ``html`` module, and save the results in ``tree``:"
+msgstr ""
+
+#: ../../scenarios/scrape.rst:51
+msgid ""
+"(We need to use ``page.content`` rather than ``page.text`` because "
+"``html.fromstring`` implicitly expects ``bytes`` as input.)"
+msgstr ""
+
+#: ../../scenarios/scrape.rst:54
+msgid ""
+"``tree`` now contains the whole HTML file in a nice tree structure which "
+"we can go over two different ways: XPath and CSSSelect. In this example, "
+"we will focus on the former."
+msgstr ""
+
+#: ../../scenarios/scrape.rst:58
+msgid ""
+"XPath is a way of locating information in structured documents such as "
+"HTML or XML documents. A good introduction to XPath is on `W3Schools "
+"<http://www.w3schools.com/xml/xpath_intro.asp>`_ ."
+msgstr ""
+
+#: ../../scenarios/scrape.rst:62
+msgid ""
+"There are also various tools for obtaining the XPath of elements such as "
+"FireBug for Firefox or the Chrome Inspector. If you're using Chrome, you "
+"can right click an element, choose 'Inspect element', highlight the code,"
+" right click again, and choose 'Copy XPath'."
+msgstr ""
+
+#: ../../scenarios/scrape.rst:67
+msgid ""
+"After a quick analysis, we see that in our page the data is contained in "
+"two elements -- one is a div with title 'buyer-name' and the other is a "
+"span with class 'item-price':"
+msgstr ""
+
+#: ../../scenarios/scrape.rst:76
+msgid ""
+"Knowing this we can create the correct XPath query and use the lxml "
+"``xpath`` function like this:"
+msgstr ""
+
+#: ../../scenarios/scrape.rst:86
+msgid "Let's see what we got exactly:"
+msgstr ""
+
+#: ../../scenarios/scrape.rst:106
+msgid ""
+"Congratulations! We have successfully scraped all the data we wanted from"
+" a web page using lxml and Requests. We have it stored in memory as two "
+"lists. Now we can do all sorts of cool stuff with it: we can analyze it "
+"using Python or we can save it to a file and share it with the world."
+msgstr ""
+
+#: ../../scenarios/scrape.rst:111
+msgid ""
+"Some more cool ideas to think about are modifying this script to iterate "
+"through the rest of the pages of this example dataset, or rewriting this "
+"application to use threads for improved speed."
+msgstr ""
+

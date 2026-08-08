@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2021 <a
+# href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a
+# href="https://realpython.com">Real Python</a>. <a
+# href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA
+# 3.0</a>
+# This file is distributed under the same license as the pythonguide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pythonguide 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 19:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../scenarios/network.rst:4
+msgid "Networking"
+msgstr ""
+
+#: ../../scenarios/network.rst:11
+msgid "Twisted"
+msgstr ""
+
+#: ../../scenarios/network.rst:13
+msgid ""
+"`Twisted <https://twistedmatrix.com/trac/>`_ is an event-driven "
+"networking engine. It can be used to build applications around many "
+"different networking protocols, including HTTP servers and clients, "
+"applications using SMTP, POP3, IMAP, or SSH protocols, instant messaging,"
+" and `much more <https://twistedmatrix.com/trac/wiki/Documentation>`_."
+msgstr ""
+
+#: ../../scenarios/network.rst:22
+msgid "PyZMQ"
+msgstr ""
+
+#: ../../scenarios/network.rst:24
+msgid ""
+"`PyZMQ <https://zeromq.github.com/pyzmq/>`_ is the Python binding for "
+"`ZeroMQ <http://zeromq.org/>`_, which is a high-performance asynchronous "
+"messaging library. One great advantage of ZeroMQ is that it can be used "
+"for message queuing without a message broker. The basic patterns for this"
+" are:"
+msgstr ""
+
+#: ../../scenarios/network.rst:29
+msgid ""
+"request-reply: connects a set of clients to a set of services. This is a "
+"remote procedure call and task distribution pattern."
+msgstr ""
+
+#: ../../scenarios/network.rst:31
+msgid ""
+"publish-subscribe: connects a set of publishers to a set of subscribers. "
+"This is a data distribution pattern."
+msgstr ""
+
+#: ../../scenarios/network.rst:33
+msgid ""
+"push-pull (or pipeline): connects nodes in a fan-out/fan-in pattern that "
+"can have multiple steps and loops. This is a parallel task distribution "
+"and collection pattern."
+msgstr ""
+
+#: ../../scenarios/network.rst:37
+msgid ""
+"For a quick start, read the `ZeroMQ guide "
+"<http://zguide.zeromq.org/page:all>`_."
+msgstr ""
+
+#: ../../scenarios/network.rst:42
+msgid "gevent"
+msgstr ""
+
+#: ../../scenarios/network.rst:44
+msgid ""
+"`gevent <http://www.gevent.org/>`_ is a coroutine-based Python networking"
+" library that uses greenlets to provide a high-level synchronous API on "
+"top of the libev event loop."
+msgstr ""
+
