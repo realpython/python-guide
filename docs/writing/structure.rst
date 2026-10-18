@@ -59,7 +59,7 @@ becoming intimately familiar with every nook and cranny. The layout is important
 Sample Repository
 :::::::::::::::::
 
-**tl;dr**: This is what `Kenneth Reitz recommended in 2013 <https://kennethreitz.org/essays/2013/01/27/repository-structure-and-python>`__.
+**tl;dr**: This is what `Kenneth Reitz recommended in 2013 <https://kennethreitz.org/essays/2013-01-repository_structure_and_python>`__.
 
 This repository is `available on
 GitHub <https://github.com/kennethreitz/samplemod>`__.
