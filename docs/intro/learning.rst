@@ -201,6 +201,16 @@ making the process of learning Python fun and engaging.
     `Code the blocks <https://codetheblocks.com/tutorials/introduction>`_
 
 
+Coddy Python Course
+~~~~~~~~~~~~~~~~~~~
+
+Coddy's Python course is a free, interactive course for complete beginners.
+Every lesson pairs a short explanation with a coding challenge that runs in the
+browser, with hints when you get stuck, so there is nothing to install.
+
+    `Learn Python on Coddy <https://coddy.tech/landing/python>`_
+
+
 ************
 Intermediate
 ************
