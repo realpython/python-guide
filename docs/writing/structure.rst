@@ -780,6 +780,40 @@ mutables are lists and dictionaries: All lists have mutating methods, like
 :py:meth:`list.append` or :py:meth:`list.pop`, and can be modified in place.
 The same goes for dictionaries.
 
+
+.. note::
+
+   Be careful when assigning mutable objects to new variables.
+   Assigning a list to another variable does not create a copy;
+   both variables refer to the same list. Modifying the list
+   through either variable will affect the shared object.
+
+   For example:
+
+   .. code-block:: python
+
+       class Data:
+           mylist = [1, 2, 3, 4]
+
+       def test_function():
+           local_list = Data.mylist
+           local_list += [5]
+
+       test_function()
+       print(Data.mylist)  # [1, 2, 3, 4, 5]
+
+   To avoid modifying the original list, create a copy before
+   making changes:
+
+   .. code-block:: python
+
+       def test_function():
+           local_list = Data.mylist.copy()
+           local_list += [5]
+      test_function()
+      print(Data.mylist)  # [1, 2, 3, 4]
+
+
 Immutable types provide no method for changing their content. For instance, the
 variable x set to the integer 6 has no "increment" method. If you want to
 compute x + 1, you have to create another integer and give it a name.
