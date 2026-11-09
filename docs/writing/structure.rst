@@ -788,7 +788,7 @@ The same goes for dictionaries.
    both variables refer to the same list. Modifying the list
    through either variable will affect the shared object.
 
-For example:
+   For example:
 
    .. code-block:: python
 
@@ -814,6 +814,19 @@ For example:
        test_function()
        print(Data.mylist)  # [1, 2, 3, 4]
 
+
+Immutable types provide no method for changing their content. For instance, the
+variable x set to the integer 6 has no "increment" method. If you want to
+compute x + 1, you have to create another integer and give it a name.
+
+.. code-block:: python
+
+    my_list = [1, 2, 3]
+    my_list[0] = 4
+    print(my_list)  # [4, 2, 3] <- The same list has changed
+
+    x = 6
+    x = x + 1  # The new x is another object
 One consequence of this difference in behavior is that mutable
 types are not "stable", and therefore cannot be used as dictionary
 keys.
